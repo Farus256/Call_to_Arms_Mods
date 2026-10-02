@@ -3144,18 +3144,18 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/ufb_crew_safety.inc",
-      "bytes": 3203,
-      "sha256": "4432e48bdc729dca6e3c555d078d59cc0a53097559a1e35a00220a2eaa56cc47"
+      "bytes": 3207,
+      "sha256": "e5a3b762184208dbf1f5bd8ccb0f3ba112906eec63f7f491c3d08630907ead00"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/ufb_crew_skirmish.inc",
-      "bytes": 3135,
-      "sha256": "f34188bb28b4ca4417815064fe3b761350ba8bb99c9ee4220e8a8df644af75de"
+      "bytes": 3139,
+      "sha256": "23e3bb860cf7c5239b5fdbc0a5fd89d6df12f366599ad4151e87a497f31822b0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/ufb_infantry_profile.inc",
-      "bytes": 919,
-      "sha256": "2822f6790d6c66fb85fc2efedf92250ef5fb5cb1342f53d016b7198662209347"
+      "bytes": 921,
+      "sha256": "90c51fe149d6ac2a1672a0cb6c28a009e0c2e975d7eca878277561ead2934762"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/properties/bm_limb_b.ext",

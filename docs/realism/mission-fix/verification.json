@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-02",
+  "reportedGameVersion": "1.067.0",
+  "reportedMission": "multi/4v4_dubovka:evacuation",
+  "fatalError": "string/ident/integer expected (dda_accessorraw.cpp:311)",
+  "rootCause": "Bare decimal advance_ratio in mission actor_state/ai; native scripts serialize fractional ratios as quoted strings.",
+  "missionFilesChecked": 443,
+  "invalidRatiosBefore": 5,
+  "invalidRatiosAfter": 0,
+  "changedResourceFiles": 3,
+  "regressionTests": 13,
+  "staticResourceReferencesChecked": 1933,
+  "missingStaticResourceReferences": 0,
+  "contextDependentReferences": 159,
+  "effectiveFilesInMacroAudit": 13109,
+  "macroDefinitions": 1288,
+  "nestedModRisks": 0,
+  "installedFilesMatchingRepository": 916,
+  "excludedHistoricalBackupFiles": 2,
+  "gameLaunched": false,
+  "runtimeSuccessConfirmed": false,
+  "unresolvedLogWarnings": [
+    "No MIP levels in selection textures and 1x1 invisible radius BMP",
+    "Missing enumerator bones on vehicles in Dubovka",
+    "Missing fuel1..fuel4 components on T-34 and Tiger map objects"
+  ],
+  "limitations": [
+    "The targeted mission checker does not validate every GEM command or engine value type.",
+    "Structural parsing and macro/reference checks cannot establish runtime correctness of all mods.",
+    "Context-dependent resource references are not counted as resolved static references."
+  ]
+}

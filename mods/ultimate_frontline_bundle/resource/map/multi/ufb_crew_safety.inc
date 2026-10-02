@@ -20,7 +20,7 @@
     {actions
         {"actor_state"
             {selector ("ufb_crew_candidates")}
-            {ai {advance_ratio 0.1} {retreat_ratio 2} {no_retreat off}}
+            {ai {advance_ratio "0.1"} {retreat_ratio 2} {no_retreat off}}
         }
         {"entity_state" {selector ("ufb_crew_candidates")} {tag_add _ufb_crew_profile}}
         {"delay" {time 3}}
@@ -59,7 +59,7 @@
             {fire_mode open}
             {move_mode zone} {move_radius 12}
             {ai_move {mode enable}}
-            {ai {advance_ratio 0.1} {retreat_ratio 2} {no_retreat off}}
+            {ai {advance_ratio "0.1"} {retreat_ratio 2} {no_retreat off}}
         }
         {"actor_to_cover" {selector {tag _ufb_crew_pending}} {drop orders}}
         {"entity_state" {selector {tag _ufb_crew_pending}} {tag_add _ufb_crew_safe}}

@@ -17,7 +17,7 @@
     {actions
         {"actor_state"
             {selector ("ufb_infantry_candidates")}
-            {ai {advance_ratio 0.5} {retreat_ratio 3}}
+            {ai {advance_ratio "0.5"} {retreat_ratio 3}}
         }
         {"entity_state" {selector ("ufb_infantry_candidates")} {tag_add _ufb_infantry_profile}}
         {"delay" {time 3}}
