@@ -1,0 +1,29 @@
+{
+  "checks": 1602,
+  "localSDLFilesParsed": 851,
+  "localLuaFilesParsed": 14,
+  "effectiveSDLFilesParsed": 13109,
+  "macroDefinitionsAnalyzed": 1288,
+  "transitiveNestedModsBefore": 130,
+  "transitiveNestedModsAfter": 0,
+  "syntaxErrorsAfter": [],
+  "unresolvedConditionalMacros": [],
+  "changedFiles": 1,
+  "addedFiles": 2,
+  "surplusClosingsRemoved": 8,
+  "engineLaunched": false,
+  "limitations": [
+    "Implicit family presets and explicit include namespaces are modeled; unrecognized engine commands are not expanded.",
+    "All branches are checked conservatively, without executing game loader conditions.",
+    "Launch and live battles after this fix have not been tested at user request."
+  ],
+  "installedFilesHashMatched": 912,
+  "regressionGateRejectedPreFix": true,
+  "logAudit": {
+    "lastWriteTimeLocal": "2026-10-02 17:11:38",
+    "fatalError": "Nested mods not supported",
+    "otherFatalErrorsFound": 0,
+    "localizationRedefinitions": 6520,
+    "entityRedefinitions": 3
+  }
+}

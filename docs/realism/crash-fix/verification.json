@@ -21,6 +21,7 @@
   "failures": [],
   "engineLaunched": false,
   "limitations": [
+    "The previous direct-call check missed accuracy_spg -> curve_direct invoked inside a native mod block; the user observed a second loader crash.",
     "Native mod precedence is modeled from vanilla resource examples, not tested by launching the game.",
     "Crash log contains one fatal nested-mod error; later loading/battle failures cannot be excluded without a subsequent user run."
   ],
@@ -29,5 +30,7 @@
     "fatalError": "Nested mods not supported",
     "otherFatalErrorsFound": 0,
     "localizationRedefinitionWarnings": 6520
-  }
+  },
+  "status": "superseded_indirect_macro_expansion_missed",
+  "supersededBy": "../macro-fix/verification.json"
 }

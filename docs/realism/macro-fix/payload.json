@@ -1,0 +1,79 @@
+{
+  "changedFiles": 1,
+  "addedFiles": 2,
+  "canceledAccuracyModeBranches": 130,
+  "restoredAccuracyTables": 26,
+  "surplusClosingsRemoved": 8,
+  "records": [
+    {
+      "path": "set/stuff/gun/.presets",
+      "before": "c4f8a47ea0d1e5b3b104dc8ec2950a967c51330c4523bc1c5687419e1cf3d465",
+      "after": "2562e4ac7df3f8dcb5891ba57fec222f979f2f9669ea571b19985a4e806de886",
+      "reason": "Restore original curve_direct macro; remove mode-dependent accuracy overrides from a macro called indirectly inside native mod not mp.",
+      "macro": "curve_direct",
+      "canceledModeBranches": 130,
+      "restoredAccuracyTables": 26,
+      "retainedWeaponRanges": true
+    },
+    {
+      "path": "set/multiplayer/units/early/units_eng.set",
+      "before": null,
+      "after": "bc0468d687b86c38f1f24fe02cb0affc7debc161e97bc09da5215acb8d19a617",
+      "reason": "Remove four surplus closing parentheses in squad_rec_mc_early_all/def/irr/off; preserve all unit values and comments.",
+      "sourceHash": "b6c708aff31ef4f708a6a8108241f36491ed77b3c0d601382114b9691118b78d",
+      "source": "Vanilla gamelogic.pak",
+      "corrections": [
+        {
+          "line": 361,
+          "old": "(\"squad_with2types_doc\" side(eng) name(squad_rec_mc_early_all) d(early_eng_allround) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t())) ;// 7 rifles. recon perk",
+          "next": "(\"squad_with2types_doc\" side(eng) name(squad_rec_mc_early_all) d(early_eng_allround) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t()) ;// 7 rifles. recon perk"
+        },
+        {
+          "line": 390,
+          "old": "(\"squad_with2types_doc\" side(eng) name(squad_rec_mc_early_def) d(early_eng_defensive) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t())) ;// 7 rifles. recon perk",
+          "next": "(\"squad_with2types_doc\" side(eng) name(squad_rec_mc_early_def) d(early_eng_defensive) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t()) ;// 7 rifles. recon perk"
+        },
+        {
+          "line": 418,
+          "old": "(\"squad_with2types_doc\" side(eng) name(squad_rec_mc_early_irr) d(early_eng_irregular) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t())) ;// 7 rifles. recon perk",
+          "next": "(\"squad_with2types_doc\" side(eng) name(squad_rec_mc_early_irr) d(early_eng_irregular) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t()) ;// 7 rifles. recon perk"
+        },
+        {
+          "line": 448,
+          "old": "(\"squad_with2types_doc\" side(eng) name(squad_rec_mc_early_off) d(early_eng_offensive) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t())) ;// 7 rifles. recon perk",
+          "next": "(\"squad_with2types_doc\" side(eng) name(squad_rec_mc_early_off) d(early_eng_offensive) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t()) ;// 7 rifles. recon perk"
+        }
+      ]
+    },
+    {
+      "path": "set/multiplayer/units/other_gamemodes/early/units_eng.set",
+      "before": null,
+      "after": "2f2cde1aa6f6b43a80b27680f2c3513e3c76d9d1b7cbe6c50a085d48069b3f7b",
+      "reason": "Remove four surplus closing parentheses in squad_rec_mc_early_all/def/irr/off; preserve all unit values and comments.",
+      "sourceHash": "73a17ca3b513f73ac4b69c9a1d2e23f3740233ff9355997ba077979b2d0cc4a7",
+      "source": "Horten Frontline gamelogic.pak",
+      "corrections": [
+        {
+          "line": 334,
+          "old": "(\"squad_with2types_doc\" \t\t\tside(eng) name(squad_rec_mc_early_all) \t\t\t\td(early_eng_allround) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t())) ;// 7 rifles. recon perk",
+          "next": "(\"squad_with2types_doc\" \t\t\tside(eng) name(squad_rec_mc_early_all) \t\t\t\td(early_eng_allround) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t()) ;// 7 rifles. recon perk"
+        },
+        {
+          "line": 365,
+          "old": "(\"squad_with2types_doc\" \t\t\tside(eng) name(squad_rec_mc_early_def) \t\t\t\td(early_eng_defensive) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t())) ;// 7 rifles. recon perk",
+          "next": "(\"squad_with2types_doc\" \t\t\tside(eng) name(squad_rec_mc_early_def) \t\t\t\td(early_eng_defensive) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t()) ;// 7 rifles. recon perk"
+        },
+        {
+          "line": 396,
+          "old": "(\"squad_with2types_doc\" \t\t\tside(eng) name(squad_rec_mc_early_irr) \t\t\t\td(early_eng_irregular) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t())) ;// 7 rifles. recon perk",
+          "next": "(\"squad_with2types_doc\" \t\t\tside(eng) name(squad_rec_mc_early_irr) \t\t\t\td(early_eng_irregular) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t()) ;// 7 rifles. recon perk"
+        },
+        {
+          "line": 427,
+          "old": "(\"squad_with2types_doc\" \t\t\tside(eng) name(squad_rec_mc_early_off) \t\t\t\td(early_eng_offensive) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t())) ;// 7 rifles. recon perk",
+          "next": "(\"squad_with2types_doc\" \t\t\tside(eng) name(squad_rec_mc_early_off) \t\t\t\td(early_eng_offensive) period(early) scf(1) cd(0) ci(60) g(squad_2_recon) c1(rec_sec_com:1) c2(rec_rifle:6) b(inf1) t()) ;// 7 rifles. recon perk"
+        }
+      ]
+    }
+  ]
+}

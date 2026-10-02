@@ -1,11 +1,14 @@
 # Отчёты и история
 
-Текущее состояние описано в [README репозитория](../README.md), [исправлении сбоя загрузки](realism/crash-fix/REPORT_RU.md) и [отчёте пакета реализма](realism/REPORT_RU.md).
+Текущее состояние описано в [исправлении косвенных макросов](realism/macro-fix/REPORT_RU.md), [README репозитория](../README.md), [исправлении сбоя загрузки](realism/crash-fix/REPORT_RU.md) и [отчёте пакета реализма](realism/REPORT_RU.md).
 
 | Файл | Содержание |
 |---|---|
+| [realism/macro-fix/REPORT_RU.md](realism/macro-fix/REPORT_RU.md) | Второй сбой: косвенные макросы, восстановление curve_direct, восемь лишних скобок, расширенный анализ |
+| [realism/macro-fix/verification.json](realism/macro-fix/verification.json) | Проверка 13 109 эффективных SDL-файлов, 1 288 макросов и двух локальных модов; ограничения |
+| [realism/macro-fix/payload.json](realism/macro-fix/payload.json) | Три исправленных ресурса, SHA-256 и точные изменения |
 | [realism/crash-fix/REPORT_RU.md](realism/crash-fix/REPORT_RU.md) | Исправление Nested mods, проверка обоих модов, сохранение сюжета и отменённые авиационные/sIG33 изменения |
-| [realism/crash-fix/verification.json](realism/crash-fix/verification.json) | 6 604 проверок; 849 SDL-файлов, 14 Lua-файлов; ограничения без запуска |
+| [realism/crash-fix/verification.json](realism/crash-fix/verification.json) | Исторические 6 604 проверки; пропущены косвенные макросы, результат заменён следующим исправлением |
 | [realism/crash-fix/payload.json](realism/crash-fix/payload.json) | 255 исправленных файлов и SHA-256 до/после |
 | [realism/REPORT_RU.md](realism/REPORT_RU.md) | Дальние бои, здоровье/ветераны, ремонт, дым, волны, нагрузка, решения по всем 30 пунктам и анализ анимаций |
 | [realism/manifest.json](realism/manifest.json) | 259 файлов пакета, изменения и контрольные суммы |
@@ -17,7 +20,7 @@
 | [phase3/REPORT_RU.md](phase3/REPORT_RU.md) | Последующие правки ИИ, скрытие кругов, КО ×2, исследование возврата ЛС и ограничения |
 | [phase3/changes.json](phase3/changes.json) | Старые/новые значения последнего этапа |
 | [phase3/payload.json](phase3/payload.json) | 62 файла последнего этапа с контрольными суммами до/после |
-| [current-files.json](current-files.json) | Полный актуальный снимок 910 файлов двух модов, относительные пути, размеры и SHA-256 |
+| [current-files.json](current-files.json) | Полный актуальный снимок 912 файлов двух модов, относительные пути, размеры и SHA-256 |
 
 Отчёты сохранены как история выполненной работы. Упоминания абсолютных путей, `_ai_work`, установщиков, резервных копий и ранних манифестов относятся к исходной рабочей машине. Эти временные инструменты и извлечённые архивы не входят в репозиторий; для установки следует использовать полные папки `mods`, а не исторические команды отката из отчётов.
 

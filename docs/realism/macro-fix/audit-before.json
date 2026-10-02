@@ -1,0 +1,2882 @@
+{
+  "filesParsed": 13107,
+  "macroDefinitions": 1288,
+  "conditionalRootCalls": 1,
+  "syntaxErrors": [
+    {
+      "file": "set/multiplayer/units/early/units_eng.set",
+      "error": "Unbalanced SDL at 21213"
+    },
+    {
+      "file": "set/multiplayer/units/other_gamemodes/early/units_eng.set",
+      "error": "Unbalanced SDL at 12696"
+    }
+  ],
+  "risks": [
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 68086,
+      "end": 68474
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 68475,
+      "end": 68861
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 68862,
+      "end": 69248
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 69249,
+      "end": 69635
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 69636,
+      "end": 70037
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 70364,
+      "end": 70752
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 70753,
+      "end": 71139
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 71140,
+      "end": 71526
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 71527,
+      "end": 71913
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 71914,
+      "end": 72315
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 72648,
+      "end": 73045
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 73046,
+      "end": 73441
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 73442,
+      "end": 73837
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 73838,
+      "end": 74233
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 74234,
+      "end": 74644
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 74979,
+      "end": 75376
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 75377,
+      "end": 75772
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 75773,
+      "end": 76168
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 76169,
+      "end": 76564
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 76565,
+      "end": 76975
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 77303,
+      "end": 77691
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 77692,
+      "end": 78078
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 78079,
+      "end": 78465
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 78466,
+      "end": 78852
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 78853,
+      "end": 79254
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 79594,
+      "end": 80000
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 80001,
+      "end": 80405
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 80406,
+      "end": 80810
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 80811,
+      "end": 81215
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 81216,
+      "end": 81635
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 81977,
+      "end": 82383
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 82384,
+      "end": 82788
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 82789,
+      "end": 83193
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 83194,
+      "end": 83598
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 83599,
+      "end": 84018
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 84359,
+      "end": 84765
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 84766,
+      "end": 85170
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 85171,
+      "end": 85575
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 85576,
+      "end": 85980
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 85981,
+      "end": 86400
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 86743,
+      "end": 87149
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 87150,
+      "end": 87554
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 87555,
+      "end": 87959
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 87960,
+      "end": 88364
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 88365,
+      "end": 88784
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 89128,
+      "end": 89534
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 89535,
+      "end": 89939
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 89940,
+      "end": 90344
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 90345,
+      "end": 90749
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 90750,
+      "end": 91169
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 91511,
+      "end": 91917
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 91918,
+      "end": 92322
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 92323,
+      "end": 92727
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 92728,
+      "end": 93132
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 93133,
+      "end": 93552
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 93895,
+      "end": 94301
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 94302,
+      "end": 94706
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 94707,
+      "end": 95111
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 95112,
+      "end": 95516
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 95517,
+      "end": 95936
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 96276,
+      "end": 96682
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 96683,
+      "end": 97087
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 97088,
+      "end": 97492
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 97493,
+      "end": 97897
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 97898,
+      "end": 98317
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 98658,
+      "end": 99064
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 99065,
+      "end": 99469
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 99470,
+      "end": 99874
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 99875,
+      "end": 100279
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 100280,
+      "end": 100699
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 101039,
+      "end": 101445
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 101446,
+      "end": 101850
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 101851,
+      "end": 102255
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 102256,
+      "end": 102660
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 102661,
+      "end": 103080
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 103420,
+      "end": 103826
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 103827,
+      "end": 104231
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 104232,
+      "end": 104636
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 104637,
+      "end": 105041
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 105042,
+      "end": 105461
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 105780,
+      "end": 106161
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 106162,
+      "end": 106541
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 106542,
+      "end": 106921
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 106922,
+      "end": 107301
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 107302,
+      "end": 107696
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 108071,
+      "end": 108452
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 108453,
+      "end": 108832
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 108833,
+      "end": 109212
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 109213,
+      "end": 109592
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 109593,
+      "end": 109987
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 110363,
+      "end": 110744
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 110745,
+      "end": 111124
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 111125,
+      "end": 111504
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 111505,
+      "end": 111884
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 111885,
+      "end": 112279
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 112654,
+      "end": 113035
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 113036,
+      "end": 113415
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 113416,
+      "end": 113795
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 113796,
+      "end": 114175
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 114176,
+      "end": 114570
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 114945,
+      "end": 115326
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 115327,
+      "end": 115706
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 115707,
+      "end": 116086
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 116087,
+      "end": 116466
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 116467,
+      "end": 116861
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 117236,
+      "end": 117617
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 117618,
+      "end": 117997
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 117998,
+      "end": 118377
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 118378,
+      "end": 118757
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 118758,
+      "end": 119152
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 119547,
+      "end": 119956
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 119957,
+      "end": 120364
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 120365,
+      "end": 120772
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 120773,
+      "end": 121180
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 121181,
+      "end": 121603
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 122001,
+      "end": 122410
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 122411,
+      "end": 122818
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 122819,
+      "end": 123226
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 123227,
+      "end": 123634
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 123635,
+      "end": 124057
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 124455,
+      "end": 124864
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 124865,
+      "end": 125272
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 125273,
+      "end": 125680
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 125681,
+      "end": 126088
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 126089,
+      "end": 126511
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:battle_zones"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 126909,
+      "end": 127318
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:ammunition"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 127319,
+      "end": 127726
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:evacuation"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 127727,
+      "end": 128134
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:frontlines"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 128135,
+      "end": 128542
+    },
+    {
+      "root": "set/stuff/gun/150mm_sig33",
+      "chain": [
+        {
+          "call": "accuracy_spg",
+          "caller": "set/stuff/gun/150mm_sig33",
+          "definition": "set/stuff/gun/.presets"
+        },
+        {
+          "call": "curve_direct",
+          "caller": "set/stuff/gun/.presets",
+          "definition": "set/stuff/gun/.presets"
+        }
+      ],
+      "condition": [
+        "gametype:campaign_capture_the_flag"
+      ],
+      "macro": "curve_direct",
+      "definition": "set/stuff/gun/.presets",
+      "start": 128543,
+      "end": 128965
+    }
+  ],
+  "unresolvedCallNames": [],
+  "limitations": [
+    "Implicit family presets and explicit include namespaces are modeled; unrecognized engine commands are not expanded.",
+    "All branches are checked conservatively, without executing game loader conditions."
+  ]
+}
