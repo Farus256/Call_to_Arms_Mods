@@ -1,0 +1,34 @@
+{squads
+	{competitive
+		;// old values
+		;//{placerMin				6.5}	;// min distance between units in cluster, meters
+		;//{placerMax				200.0}	;// max distance between units in cluster, meters
+		;//{placerRadius			75.0}	;// max distance between units allowed for placer, meters
+		;//{placerCommanderAhead	0}		;// distance between commander and his squad
+
+		{placerMin				4.25}	;// min distance between units in cluster, meters
+		{placerMax				109.0}	;// max distance between units in cluster, meters
+		{placerRadius			47.0}	;// max distance between units allowed for placer, meters
+		{placerCommanderAhead	-4}		;// distance between commander and his squad
+	
+; UFB: non-story dispersed formation, centered commander.
+(mod "gametype:battle_zones" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+(mod "gametype:ammunition" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+(mod "gametype:evacuation" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+(mod "gametype:frontlines" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+(mod "gametype:campaign_capture_the_flag" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+}
+	{cooperative
+		{placerMin				4.25}	;// min distance between units in cluster, meters
+		{placerMax				109.0}	;// max distance between units in cluster, meters
+		{placerRadius			47.0}	;// max distance between units allowed for placer, meters
+		{placerCommanderAhead	-4}		;// distance between commander and his squad
+	
+; UFB: non-story dispersed formation, centered commander.
+(mod "gametype:battle_zones" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+(mod "gametype:ammunition" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+(mod "gametype:evacuation" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+(mod "gametype:frontlines" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+(mod "gametype:campaign_capture_the_flag" {placerMin 5.5} {placerMax 12.0} {placerRadius 24.0} {placerCommanderAhead 0})
+}
+}

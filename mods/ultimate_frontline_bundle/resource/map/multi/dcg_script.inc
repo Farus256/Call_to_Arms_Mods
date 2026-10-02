@@ -11189,7 +11189,7 @@
 							}
 							{distance
 								{mode near_than}
-								{meters 195}
+								{meters 292.5}
 							}
 							{tag
 								{"tag pair"}
@@ -13555,7 +13555,31 @@
 											{state
 												{state linked}
 											}
-										}
+										
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag bleeding}}
+{tag {tag _bleeding}}
+{tag {tag wounded_animation_playing}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+}
 									}
 									{amount 4
 									}
@@ -18125,7 +18149,7 @@
 							}
 							{distance
 								{mode near_than}
-								{meters 90}
+								{meters 135}
 							}
 							{tag
 								{"tag pair"}
@@ -18358,7 +18382,7 @@
 											{group
 												{select
 													{tag
-														{tag "_noted "}
+														{tag _noted}
 													}
 												}
 												{include
@@ -18383,10 +18407,10 @@
 									{"entity_state"
 										{selector
 											{ignore_captured_by_user 0}
-											{tag "_noted "}
+											{tag _noted}
 										}
 										{tag_add noted_by_ai}
-										{tag_remove "_noted "}
+										{tag_remove _noted}
 									}
 								}
 								{"default"
@@ -18395,7 +18419,7 @@
 											{ignore_captured_by_user 0}
 											{tag _noted}
 										}
-										{tag_remove "_noted "}
+										{tag_remove _noted}
 									}
 								}
 							}
@@ -18407,9 +18431,9 @@
 							{"entity_state"
 								{selector
 									{ignore_captured_by_user 0}
-									{tag "_noted "}
+									{tag _noted}
 								}
-								{tag_remove "_noted "}
+								{tag_remove _noted}
 							}
 						}
 					}

@@ -121,7 +121,7 @@ local function calculateFlagPriority(f, team, enemyTeam, teamIsLosing, totalFlag
         elseif f.location == "enemy" and teamIsLosing and totalFlags == 3 then
             return f.priority * 3
         end
-        if f.location == "enemy" and not teamIsLosing and f.owner == "enemy" then
+        if f.location == "enemy" and not teamIsLosing and f.owner == enemyTeam then
             return f.priority * 2
         end
     end
@@ -152,9 +152,24 @@ function GetFlagToCapture(flagPoints, getPriority, getPosition)
     searchDestroy = CalculateSearchDestroyValue(capturableFlags, alliedFlags, opponentFlags)
     local flags = PrepareFlags(flagPoints, getPriority, getPosition)
 
-    return GetRandomItem(flags, function(f)
+    -- Another ally may have captured the rear before our first assignment.
+    if captureBackFlag and #flags > 0 then
+        local hasBackTarget = false
+        for _, f in ipairs(flags) do
+            if f.location == "friendly" and f.owner ~= team and f.priority > 0 then
+                hasBackTarget = true
+                break
+            end
+        end
+        if not hasBackTarget then captureBackFlag = false end
+    end
+
+    local selectedFlag = GetRandomItem(flags, function(f)
         return calculateFlagPriority(f, team, enemyTeam, teamIsLosing, totalFlags)
     end)
+    -- Release the opening back-flag preference after a real assignment.
+    if selectedFlag then captureBackFlag = false end
+    return selectedFlag
 end
 
 function GetCurrentSpawnWaitTime()

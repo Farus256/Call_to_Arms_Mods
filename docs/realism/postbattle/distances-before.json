@@ -1,0 +1,948 @@
+[
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf officer system/offmap supply arrived",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 10}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/looting/go loot %weapon",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 10}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/mine clearing/clear mines tag",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 140}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf arty ai/part 1",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 480}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf arty ai/part 1.1",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 390}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf arty ai/part 1.2",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 607.5}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf arty ai/part 2",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 465}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf arty ai/part 2.1",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 375}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf arty ai/part 2.2",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 600}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf arty ai/part 4",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 30}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf arty ai/part 5",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 35}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 50}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf medic ai/heal",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 20} {max 90} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf medic ai/medic near target cooldown",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 15} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 15}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/melee/melee",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 10} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 10}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/grenade ap",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 18} {max 26} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/grenade smoke 120m",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 65} {max 120} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/grenade smoke 60m",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 33} {max 60} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/near player",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 13} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 13}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/grenade at",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 18} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 18}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/rocketlauncher 30m",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 16} {max 50} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/rocketlauncher 40m",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 16} {max 40} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/rocketlauncher 50m",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 16} {max 60} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/rocketlauncher 60m",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 16} {max 70} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/rocketlauncher 70m",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 16} {max 80} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/rocketlauncher 90m",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 16} {max 100} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/under mg fire",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 40} {max 120} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/ai mgunner",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 30} {max 120} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/ai reloads",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 24} {max 80} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/pilot surrender",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 90} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 90}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/grenade smoke wirecutter",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 7} {max 44} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/barbwire detect and tag",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 40}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/barbwire cut detect",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 3}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf inf ai/barbwire cut action",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 3}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 5}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf tank ai/finish off",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 0} {max 190} }"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode in_range} {min 0} {max 180} }"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf tank ai/range %r1",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters (* 1.5 %r2)} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters (* 1.5 %r2)}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters (* 1.5 %r2)} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters (* 1.5 %r2)}"
+      }
+    ]
+  },
+  {
+    "file": "HF-dcg_script.inc",
+    "trigger": "hf tank ai/range %r1",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters (* 1.5 %r2)} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters (* 1.5 %r2)}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "parachute",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 100}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "music/music_detect",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 45}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "music/hero",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 80}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "dcg/warning_mines",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 46}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 46}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/ai_untow",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 195} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 195}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 22}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/bail_portables",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 33} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 33}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/ai_unhold",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 55} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 55}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 66} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 66}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/tank_alt_fight",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 180} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 180}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 100}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 100}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/recrew_portables",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 48} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 48}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 45} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 45}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 100}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/ai_flag_smoke",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 140} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 140}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 170}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/chance_ai_pursue",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 85}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 60}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/recrew_tank",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 50} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 50}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 46} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 46}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 90}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/ai_tnt_hedgehogs",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 10}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 20}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 10}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 16}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "ai/ai_tnt_do",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 2}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 10}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "lua/at_flag_ignore",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 61}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 62}"
+      }
+    ]
+  },
+  {
+    "file": "dcg_script.inc",
+    "trigger": "lua/in_transit_act",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 90} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 90}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "parachute",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 100}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "ai/ai_untow",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 200} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 200}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 180} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 180}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 22}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "ai/ai_unhold",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 58} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 58}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 60} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 60}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "ai/tank_alt_fight",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 180} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 180}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 170} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 170}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 100}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 100}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "ai/bail_portables",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 36} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 36}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 33} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 33}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "ai/recrew_portables",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 47} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 47}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 50} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 50}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 45} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 45}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 45} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 45}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 110}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "ai/ai_flag_smoke",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 95} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 95}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 90} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 90}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 150}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "ai/chance_ai_pursue",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 80}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 80}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 80}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 60}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 60}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "lua/ignore",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance 18}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 150}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 19}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "ai/recrew_tank",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 50} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 50}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 53} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 53}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance 90}"
+      }
+    ]
+  },
+  {
+    "file": "1_frontlines/fr_triggers.inc",
+    "trigger": "lua/in_transit_act",
+    "fields": [
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 90} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 90}"
+      },
+      {
+        "key": "distance",
+        "value": "{distance {mode near_than} {meters 75} }"
+      },
+      {
+        "key": "meters",
+        "value": "{meters 75}"
+      }
+    ]
+  }
+]

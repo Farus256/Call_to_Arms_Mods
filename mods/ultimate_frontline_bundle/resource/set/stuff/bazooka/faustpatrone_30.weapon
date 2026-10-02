@@ -23,6 +23,11 @@
 (mod "gametype:frontlines" {range 45 45})
 (mod "gametype:campaign_capture_the_flag" {range 45 45})
 	{projectileDamageTable {31 140} {36 0}}
+(mod "gametype:battle_zones" {projectileDamageTable {46.5 140} {54 0}})
+(mod "gametype:ammunition" {projectileDamageTable {46.5 140} {54 0}})
+(mod "gametype:evacuation" {projectileDamageTable {46.5 140} {54 0}})
+(mod "gametype:frontlines" {projectileDamageTable {46.5 140} {54 0}})
+(mod "gametype:campaign_capture_the_flag" {projectileDamageTable {46.5 140} {54 0}})
 	("armor health" damage(250))
 	("human health" damage(500))
 	("standard_slope")

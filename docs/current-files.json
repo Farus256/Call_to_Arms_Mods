@@ -1534,868 +1534,868 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_arnhem/ammunition.mi",
-      "bytes": 246648,
-      "sha256": "0e8fd743b536921ff3476916606cb9dde2be3be9fe6e6aaa77321df3f2e1abe3"
+      "bytes": 247874,
+      "sha256": "624236ee6713ac335a022d2660bf3b3c4fbce0606cb1329208256186dd64fabc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_arnhem/battle_zones.mi",
-      "bytes": 242114,
-      "sha256": "0f78e74d70b5f17c3b285dc5d5ee1d93284a644ae3b12c8d9544dfcde86043bf"
+      "bytes": 243340,
+      "sha256": "a4d690684a5d6aad0a2025328b85414c97151b0ed1b8ec280415aede21ba6cd3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_bergen_radar/ammunition.mi",
-      "bytes": 265228,
-      "sha256": "db0748eba5e6f83e4fb6d87d8eaa48b1cc550ec4b0358052e63ecc7daef4da14"
+      "bytes": 266454,
+      "sha256": "ceb78bdf59409b98d4fbbbc5e4c1a0b8cdac2360f511c8c40a47f8e5d087f614"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_bergen_radar/battle_zones.mi",
-      "bytes": 278377,
-      "sha256": "4c292056629f223bad192d9927dbb87de7640db615e6dbdbac74bc614e599075"
+      "bytes": 279603,
+      "sha256": "6bd90c1a6b2f18412509202c42fc62d5816de0fae033ed7e2944ec71dac77c8c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_berlin/ammunition.mi",
-      "bytes": 281952,
-      "sha256": "fad3dab1cdc31b3c74cbfe244b7d81b22978d669d012d01cb41aeae33d59d9ca"
+      "bytes": 283178,
+      "sha256": "9a1a75c0a287246f71882ab49fa5c32cb464189604b3b20185588f647a26d7fb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_berlin/battle_zones.mi",
-      "bytes": 280649,
-      "sha256": "d615b8a697b375329113f954fd09477a0cfd7cf82225933e8f0c06a948882182"
+      "bytes": 281875,
+      "sha256": "3d9480d1486a26605da025c701e78889095f88871722a819e97f5be157cfe41f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_bretteville_sur_odon/ammunition.mi",
-      "bytes": 245806,
-      "sha256": "da85915b779a83b677e496348101932de0268df2583bec97a259b1f5ff079dd8"
+      "bytes": 247032,
+      "sha256": "486aa3258fc5b99e1f45c69505ba25c4138c134fab9352a8c539bb68091c7be4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_bretteville_sur_odon/battle_zones.mi",
-      "bytes": 264854,
-      "sha256": "a669e4a5e451d86d231dd92144dbda0bb6c5aad4c538f941e2b4f398da551ac4"
+      "bytes": 266080,
+      "sha256": "6b4a35c87e0770c942487fbf236d52a4718ae2c15fad379839366353f462fd30"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_carpiquet/ammunition.mi",
-      "bytes": 263598,
-      "sha256": "cb4a01cf4e37fa6e3d1442dc36d50382a8423fec6b7554553c99d831497c2b84"
+      "bytes": 264824,
+      "sha256": "18f24a8b743ec762a901303a3eb673b3c573c66cbafe61c790420709df6a1625"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_carpiquet/battle_zones.mi",
-      "bytes": 268525,
-      "sha256": "b74eee447c04a9e4ec1e951ed5deaf58160f94af8f0bd8f7429d41bcfdacfd65"
+      "bytes": 269751,
+      "sha256": "f31a25fc24395c1ce0d0ee4bc24ede8df619ed86bef35fb849cdb20975b62731"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_dunkirk/ammunition.mi",
-      "bytes": 275016,
-      "sha256": "6a438e525c597596735601770206462d524f606dd270aaf56626c007c974ba9a"
+      "bytes": 276242,
+      "sha256": "071d42055f1eee93a43311700772383fe283d1fa74b14c3c5e7659137f0278b1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_dunkirk/battle_zones.mi",
-      "bytes": 275253,
-      "sha256": "46d23d415a43a1b2e6f0ed9e3b216f7a1bfd9a3e5f3a073fa0f4e1fbf972c730"
+      "bytes": 276479,
+      "sha256": "09ec81c541b330ed55a0ac6c9322ed2573ae74f871a7b377810797bcffc71872"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_dunkirk_small/ammunition.mi",
-      "bytes": 264134,
-      "sha256": "eb6098024993fa1cf7331b251efcc4f1fd54e61c4148749a571c561a1354d874"
+      "bytes": 265360,
+      "sha256": "97914093fa8512999cf7bcb7ec009dc56bafd724ab45f377fdf512590333194f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_dunkirk_small/battle_zones.mi",
-      "bytes": 261371,
-      "sha256": "4548f6bbd46712d93a3d460254bf8d61810d80bf847fbb9e27a738f1d510dba5"
+      "bytes": 262597,
+      "sha256": "06f59f19c1c5c5ed532070f64933735d30b115b8a93d2d7a7f58922bde406ba9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_hamburg/ammunition.mi",
-      "bytes": 331339,
-      "sha256": "2b42618cd0663bc1c8f78a2fbd120d94c91fd822607eb7b5848697e2bc22b0d5"
+      "bytes": 332565,
+      "sha256": "0d03296d902d4c907397679ba8b66693665487004d3576b135d2da47e7bc2d27"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_hamburg/battle_zones.mi",
-      "bytes": 316001,
-      "sha256": "229967b66652280fc5ba2ff9b2a8bf05e33e15cfcbd552c71b96f0d7a24bb461"
+      "bytes": 317227,
+      "sha256": "8e90a78b64a7b02bd93a688bb0b6a8f6a3a57b59f93f7865cfbad8d57176367f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_hamburg_small/ammunition.mi",
-      "bytes": 294433,
-      "sha256": "58ebd0bc906d0e79a1a17b25010a37a48cf4e51df3409eb95e5c036768606a24"
+      "bytes": 295659,
+      "sha256": "2a12fe6b613745bfccefbcad4a9990639aa713703b0f0358e3edc64272e6d54a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_hamburg_small/battle_zones.mi",
-      "bytes": 284522,
-      "sha256": "d2f2cd1668f4693f41a1464abeb271a0ce773b3e65fe3b2055cd4145ea0f3b95"
+      "bytes": 285748,
+      "sha256": "5afaa76e7a3b2b87dc3740f1764bd1930489980a9725bb747a715deb0a91d341"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_kiev/ammunition.mi",
-      "bytes": 253992,
-      "sha256": "a4c5a7fbcaaf6361ade1f0b619a53d858e31be59d710d66e945e2e4b3d9980ed"
+      "bytes": 255218,
+      "sha256": "4322326c8ef528311bf07cf5671837e6ae71a5caf7e0f3a6a4098ece799e0611"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_kiev/battle_zones.mi",
-      "bytes": 246941,
-      "sha256": "dc9962393dabdf2e28cd127d87874348350bc9a1dcd50d4c045b14e62e4d9175"
+      "bytes": 248167,
+      "sha256": "1eb8982be54f058e7f0420b2ef4e54002163820bb441c52f75d04efa7509ba24"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_konigsberg/ammunition.mi",
-      "bytes": 252675,
-      "sha256": "f01c11146bf84895e6cf7f877f489f8f30502a521b9be3f57805bec762f7baf3"
+      "bytes": 253901,
+      "sha256": "c4ec2f8ed60e9bc06c5b9bbe09ef9f7460182358a773e5d5f067cb05ecf3ad76"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_konigsberg/battle_zones.mi",
-      "bytes": 234809,
-      "sha256": "c1a7fefca9615e3c5a206bd5518339c8ce8bf8bc12f5e54f68bb8bd0b36ac0f9"
+      "bytes": 236035,
+      "sha256": "dab986d7aca169302ec8d69ebdd23ee334c1c6d04578cfea03e9d773c4802135"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_middenhof/ammunition.mi",
-      "bytes": 249975,
-      "sha256": "2011545890c2dff60710c28eef55f14c12340544dd8a11e1323a483c617dd991"
+      "bytes": 251201,
+      "sha256": "e210d220dcfc2ea52bc5f234b86d13a099d415cb0b23d2273286b0097c8b71d6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_middenhof/battle_zones.mi",
-      "bytes": 254858,
-      "sha256": "a2a509e669cb97903386a3796b32aa114982a37ee161d46ec9e4cb7c79107bbd"
+      "bytes": 256084,
+      "sha256": "e53f9118def0930f1b303096ce72c375dd828cb90d802e47b8697aff65cc06e4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_oberhundem/ammunition.mi",
-      "bytes": 266237,
-      "sha256": "7e85ea6cbf694fb4bf80e4561da7d83197d3b2539cb7a9e67a47b56a2b6ab90e"
+      "bytes": 267463,
+      "sha256": "49d6eb6dbf2d2386421836f512a0da652d2626affed339deb4178b980997e80a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_oberhundem/battle_zones.mi",
-      "bytes": 265345,
-      "sha256": "0be4a760b49116403756fb0fd9a3fef28509ecccef1abf2a61b1fe1003c5f26c"
+      "bytes": 266571,
+      "sha256": "069bac76fcd6e5c983ec49c858d4af2ab1999a87860b01bff9d24782abf86ae4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_oosterbek/ammunition.mi",
-      "bytes": 247675,
-      "sha256": "07898bef78ef60b6c95d270b35d1b77b9acf4553ec70c00900cf2cf34d6a5dd7"
+      "bytes": 248901,
+      "sha256": "868a38420825248b2a668d3161806b7202a1a9faed1966c0c700f688e052543a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_oosterbek/battle_zones.mi",
-      "bytes": 242614,
-      "sha256": "d196f0905b2c247ac0c1cf90e7ceda027cdfaa1df4c979a55f716c7e4c1646d8"
+      "bytes": 243840,
+      "sha256": "67c6f957dca126b24df0fb8ce5be9dc0b612c17234cc0a7cadba6bfc2acbc7dd"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_oostkapelle/ammunition.mi",
-      "bytes": 244188,
-      "sha256": "6e4da5a514b4ee88b4ceadf38561a7c23a01baf540a4595f1e42bca8eb3f4382"
+      "bytes": 245414,
+      "sha256": "726028f702fd0b60106ac76d9055b3e8b9463770959ba53324322faeb9449c13"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_oostkapelle/battle_zones.mi",
-      "bytes": 262526,
-      "sha256": "999f51904c1b0b65505d49c51ac86fab0805cc628a005a3b194dbe663f773ac0"
+      "bytes": 263752,
+      "sha256": "1aad6caffd4788dd7df7c6576356d7b1a29656c88a93b5182ed3518d2e1f6e8d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_pavlovs_house/ammunition.mi",
-      "bytes": 277354,
-      "sha256": "b5aad32095dcfe3ae8ce9209aa5fe922a48112d2017b16c40ba8abe58d2c02d0"
+      "bytes": 278580,
+      "sha256": "d4cab947987353e79012aa0cf27e39f5f1b20de568cfc33a20996d73c3399c7b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_pavlovs_house/battle_zones.mi",
-      "bytes": 269701,
-      "sha256": "3beac3844c8c3e79531fd49e1964453caca89e3a1f62a06789509660bee9ff3d"
+      "bytes": 270927,
+      "sha256": "c02b3b42049857c26fba217204dae835f73bada47bf0a4efe929d7e42eda882c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_ruhr_factory/ammunition.mi",
-      "bytes": 363773,
-      "sha256": "c4d148d66010e4f0f3a8398cc443b6ba6d7e95557f309ad8d59bd64056c1bdb3"
+      "bytes": 364999,
+      "sha256": "753e13ae390f2887a5b1ecb3769a7f8ce6756d284713501555e5799e6142613a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_ruhr_factory/battle_zones.mi",
-      "bytes": 362743,
-      "sha256": "0ad0a8ba8bbd93ff4ebea894d3589853930907285473dd0c5570b2db7b04bf6d"
+      "bytes": 363969,
+      "sha256": "c740f044a1c1247e2d8a2c81fc84b1539e103d43ec423fa51f51613bd926664d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_siegfried/ammunition.mi",
-      "bytes": 369278,
-      "sha256": "2688415c9f06c127634923cbd1733b68ba697dcef65ab66ea4738d18aa5e2eb7"
+      "bytes": 370504,
+      "sha256": "409237f29c14d63b526738e5c321cc904f27bf69ed4eaed1d3c59bf1ba331945"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_siegfried/battle_zones.mi",
-      "bytes": 353973,
-      "sha256": "3df7b5544bbe6305b7d48bccc01d501e1f262556a39e1cdcda70b02322c09124"
+      "bytes": 355199,
+      "sha256": "0de85ba8baeb946e8ce1386e049c3b9d26d4b6d8c772b938f7423999f9f568ee"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_sword_beach/ammunition.mi",
-      "bytes": 244899,
-      "sha256": "bf1bc5fa2acd5437567a251298b51d5f17266e0577a6bac6d10c41f6c4b5f350"
+      "bytes": 246125,
+      "sha256": "f1cd45d6472a64b7d6dfccb1d260010858c369c11be0558c9c528c4462cd59f7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_sword_beach/battle_zones.mi",
-      "bytes": 239473,
-      "sha256": "b412750354b08689b9ef860fd8262b6fc233818a173879113adcc126e3ddf0e7"
+      "bytes": 240699,
+      "sha256": "6f8a857814fa4a3fdfba1ed0e8a0a5e2d8fb15c9d5f03ec49bd107a5b34f9c47"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_villers_bocage/ammunition.mi",
-      "bytes": 252451,
-      "sha256": "1b799071858e82dc3eb24ce13ab9113d1611abc7ed41608c43b119d15bf8d909"
+      "bytes": 253677,
+      "sha256": "a8bba446c6d07def22e4bd8848d4240f74687472eef8271138864acf04744d11"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/+HF_8v8_villers_bocage/battle_zones.mi",
-      "bytes": 251988,
-      "sha256": "df811dbd170bcdecf606186905ea13494a315cc47ef45bb26e7768151a343e5e"
+      "bytes": 253214,
+      "sha256": "0994ade9daef982c6a52c252ca5bcc41017f026ed63739f0ac722308ff0ee411"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-berlin/frontlines.mi",
-      "bytes": 819858,
-      "sha256": "fed5c5dda17c6b9b4bea709be89b4c1aa67d07688372e56b1014d304401fbcf8"
+      "bytes": 821086,
+      "sha256": "3bcb0e8de2c2ccc02bbcce5816cb0f038de841fbf84f280f2bf19c6f2fa4af45"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-hurtgen_forest/frontlines.mi",
-      "bytes": 869356,
-      "sha256": "2a72fec633609ca524a0a77e34e359ceab2210dcb964d0c16b094da3ca59667f"
+      "bytes": 870584,
+      "sha256": "4c57342d3f5881b8d850ef410957410a647db90da7fa0d377dab9edf7ac85b19"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-ilomantsi/frontlines.mi",
-      "bytes": 790403,
-      "sha256": "9bc10cd4c778cf4fcd5491b8f1a9b32f5410670cec04266c7f4ed51770654d6c"
+      "bytes": 791631,
+      "sha256": "31cd3399e3ee7c6697d5c6e2e7a8ccc5029d7a9b632db26bb747f2bd8c602697"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-kerch/frontlines.mi",
-      "bytes": 795104,
-      "sha256": "10217197d3c8f22f7b8abe49d19cb9241e4d8009a44be3364ce95ddadd95866f"
+      "bytes": 796332,
+      "sha256": "b71a8e878756eef7cf0c1c405104623562d3926d9cbceadef55792cbb2bfe003"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-kharkov/frontlines.mi",
-      "bytes": 1254289,
-      "sha256": "36c055c8ec44e59ce49333a69dc419ac5a850a9c05ad1a7dd323f64a9e3ba374"
+      "bytes": 1255517,
+      "sha256": "cdb339652627cfdd5138d0af20ec0b218670c65a7e5722c72cc7f47496bf0f7e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-konigsberg/frontlines.mi",
-      "bytes": 846338,
-      "sha256": "c7d01d4cb4e1c50a82470bf8904388ad32a214752ba104cd1aa178930fce5c20"
+      "bytes": 847566,
+      "sha256": "d98905e6640b8a042f9eeba823861e572f61c63d6eccbf88b1faa0b0db13b3ec"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-krasny_bor/frontlines.mi",
-      "bytes": 649413,
-      "sha256": "3616074e3ff439310abf020da440324972460eb2cf3da09aa0b9bade074bdad3"
+      "bytes": 650641,
+      "sha256": "f725756a1f24f96c8b0efbd8a75ddc03d57154ba41714198010f5900d5ba63f5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-moscow/frontlines.mi",
-      "bytes": 839977,
-      "sha256": "f7ea2ebfb7225dce92edffb1cdc87efc6201e47936fc08c89cd6b8ad7e395138"
+      "bytes": 841205,
+      "sha256": "53156be4fc28c20cb35950959c28118ce6356576d7bde7f7edbd4c4168ec8d6a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-normandy/frontlines.mi",
-      "bytes": 802304,
-      "sha256": "561c477353952153a0a14126d13521efe3ab45bd0c1617cba7e99487e67b2c8c"
+      "bytes": 803532,
+      "sha256": "1b0c104dd5d7f2ceba345ed9112f95ea01193ea8e10ddbf901759daa32f4e9cb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-op_bagration/frontlines.mi",
-      "bytes": 810778,
-      "sha256": "b503e55bbc9b015a5dce7a148794f5b52b662d33af3e68d538f4f374b639eb87"
+      "bytes": 812006,
+      "sha256": "c9f340e0e4a8f76b55d43f84f536477cc8c191b6a1f346348feeb68c2fcd793b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-pavlovs_house/frontlines.mi",
-      "bytes": 842381,
-      "sha256": "36d5b5bfddaf7b5df6257be91104aa0c7b3dcfd4541af733d42e31ad40fcf719"
+      "bytes": 843609,
+      "sha256": "5a84d1cc927cdea44a44acf8a232d16551bae940fe869929f615c8f5b99c6067"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-petrovka/frontlines.mi",
-      "bytes": 777968,
-      "sha256": "2b671e79995bf0475c584a458017a962f7360ef38b066b59ecf15ce30b19cd6b"
+      "bytes": 779196,
+      "sha256": "343907053a5a5b2c9b1d041837d6abb8de4ba15081330bac5fa58a39a9b07086"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-petrozavodsk/frontlines.mi",
-      "bytes": 837336,
-      "sha256": "7b07e1113e5efa880800846ac768ec2420a6be09dc5372625a4be7957c481dd3"
+      "bytes": 838564,
+      "sha256": "c4613514a82411b1e01d29996cf804e315588289dcb603f07685d2cb8e2e9982"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-polar_fox_alakurtti/frontlines.mi",
-      "bytes": 791759,
-      "sha256": "651b1b634e095bc9a3cf16e4acb6c942eb77270ce52b932ae625298772a45d04"
+      "bytes": 792987,
+      "sha256": "7a8bb98d774570518ee5ca9fb4132dcaabe38c92818551f9f2fbb68abe71feba"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-seelow_heights/frontlines.mi",
-      "bytes": 890142,
-      "sha256": "417bb65e96f95606d1eadc066c84d8d54979369efc323fecf966a7ab592350ba"
+      "bytes": 891370,
+      "sha256": "cab4bd68e669a115ad1d680c05baa4f1468a48199f065cdf1b285232175051a5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-smolensk/frontlines.mi",
-      "bytes": 790176,
-      "sha256": "66e71b0255be87af3bdb21b229950a3eeb195dd4f368626ec0ce5d4206e31afc"
+      "bytes": 791404,
+      "sha256": "a1917fecca43d626ed0e4ebe7804dd9525a94168e1f857889ec13b9b1c52d7fd"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-stalingrad_factory/frontlines.mi",
-      "bytes": 880217,
-      "sha256": "0ae9496d96fc9b47a267bb11ec18b1ec9b44987f5ca75b0728876fbcb0fc6569"
+      "bytes": 881445,
+      "sha256": "063eeb6e3894c7a94d91a3afa72adeda65b0c10160a5028c3e32367d9492ec94"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-tali_ihantala/frontlines.mi",
-      "bytes": 789166,
-      "sha256": "174b70ba138d8da61e9cecfc923b399a5a32ef2f83430ea3d201e7c97ade6340"
+      "bytes": 790394,
+      "sha256": "f16dedefd58c0204f3cd9b401ba4596aa341f9a1052744273420c14dc90f0e11"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-utah_beach/frontlines.mi",
-      "bytes": 804707,
-      "sha256": "6f7e52b29c5c42356438b850247af703e8b5c27405c80b06ce03e1baaa25ce29"
+      "bytes": 805935,
+      "sha256": "9f765cc8b0fca1971feda0475d06de4df59ba90b9b549e5b8989d6623ccd129c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr-winterstorm/frontlines.mi",
-      "bytes": 819651,
-      "sha256": "559b136149c111bc6d71e58f093111ec19b340bae3dc26cd9eded85f0f3ef934"
+      "bytes": 820879,
+      "sha256": "e0d3c36036bef141d2441298b344ed2d197e979a709ca29ef7c525edf0438964"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1_frontlines/fr_triggers.inc",
-      "bytes": 508551,
-      "sha256": "29d98253ec297fbeee1effc580905658ffd9810d5900207632ad4081d0109e65"
+      "bytes": 509779,
+      "sha256": "a0a316600343e827866a6cd07f5caba92bd907283fc0097b3c92ccbd1c7ad958"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_Hiekalla/ammunition.mi",
-      "bytes": 279704,
-      "sha256": "fc21d03ad23e4062c98edf912799ca8b0742cc5f41a5b6f7d1d530d023adc68f"
+      "bytes": 280930,
+      "sha256": "974617e7f304ad1415eb63afc567428afb3c129ce18adc355603c029338ff432"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_Hiekalla/battle_zones.mi",
-      "bytes": 275665,
-      "sha256": "b99ca7f008d197589dd42285ee909e2df8de78861cdac4861b0f76a6248674b5"
+      "bytes": 276891,
+      "sha256": "c5aa528a874e5cac7f4d77f52a73301ce35178b35dad26788eea2742ca992eea"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_Jarven/ammunition.mi",
-      "bytes": 246000,
-      "sha256": "b8f2ab3bb0fc3ae603c80180d3671dec61bbd6bbec9268879fb963feafaa2035"
+      "bytes": 247226,
+      "sha256": "1b53fee247e3908270ac4f9f8da6b4914190982182b10771adebae8b1b377ecb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_Jarven/battle_zones.mi",
-      "bytes": 230069,
-      "sha256": "d3e44b9d9ef959cd8211d9ec9d602da994245517aef6d70a6b6aee3542f95166"
+      "bytes": 231295,
+      "sha256": "20f8f49fc2559fed7d0ae01334de691ebb5dad1885eb4466375e308912b55e85"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_Reka/ammunition.mi",
-      "bytes": 250951,
-      "sha256": "db101c2401b7d384ff0a284574f174fbc1436fce3231515c03a602475fcae9b7"
+      "bytes": 252177,
+      "sha256": "910d40e8a6da3f4ea642d3cc6373fa312e85ac317c0be329fdc063bcc33ec207"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_Reka/battle_zones.mi",
-      "bytes": 232335,
-      "sha256": "b13dd2e70ee5121123828401d84cff299ce0f887bd1a13b67dd0497c5e57ab07"
+      "bytes": 233561,
+      "sha256": "a4dd2680eaf98aa2fc2f792cc56901b1b3ae8526f43512603d77ab23512959f9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_balzerweg/ammunition.mi",
-      "bytes": 249930,
-      "sha256": "a3f3bdd82ab9473602972014e9f68d8857488e4e1f51061cbf84f2b97e1c5f1f"
+      "bytes": 251156,
+      "sha256": "317872f194dc062ccbd8b8f91111295314d62bc580b4275f3492e4e05364a83d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_balzerweg/battle_zones.mi",
-      "bytes": 240780,
-      "sha256": "36c8a7c4824657c0e8ecc37dc31b1720df060c308704a771776bfb2dc12cc39b"
+      "bytes": 242006,
+      "sha256": "e68257bf4a5f92b2cb8c4d7b0af0f096e53f4f64d0c0d57fb77f1f1aa520916a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_crossing/battle_zones.mi",
-      "bytes": 234937,
-      "sha256": "d5db2395e98c615263e0c9039d8a0d67614c00722e10ad0d2ac3a2e2410981b9"
+      "bytes": 236163,
+      "sha256": "99361a9a1614e84d95dcd02c765c115c403f24191c5aab1dc73bcec7cc6c238e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_fall_gelb_sum/ammunition.mi",
-      "bytes": 244783,
-      "sha256": "a355ba322d0fbfc3928cf2720acbf87aaa3e9493542e3900193d3b1ded004a25"
+      "bytes": 246009,
+      "sha256": "d58b831c8667de138912f73974f25565cd3e4025f205e328b499a147ca529a78"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_fall_gelb_sum/battle_zones.mi",
-      "bytes": 237216,
-      "sha256": "cc696610482d7fc38a0b49680cd07396952bccc5845645aa3eaeeba4194c86db"
+      "bytes": 238442,
+      "sha256": "06bd9fa770a4de1bf7e3c41984267fa79994e5c0a12c3bec487b492686cd50f2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_farmland/ammunition.mi",
-      "bytes": 266556,
-      "sha256": "0c9c36c49c878e69a06ed0d672ab35d672a0a3c76e08d1525a9e0fbb8e9a8fde"
+      "bytes": 267782,
+      "sha256": "090e1d0a8fb345f0254016e879ff0d9806304bf1f943f14eb107bd4ade9e39a7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_farmland/battle_zones.mi",
-      "bytes": 242598,
-      "sha256": "d99c41c44b6caf339fe080786b89b405e10c47c716be7e499cd8d16c07463e41"
+      "bytes": 243824,
+      "sha256": "9ad207a9d4d1038f31df6067d781a937c631d7a623f9c5b5dff62ba796a76249"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_farmstead/ammunition.mi",
-      "bytes": 262804,
-      "sha256": "e4272d97d460495af228a03e4529231c923de169fe40a5a9defa4d5a890946a2"
+      "bytes": 264030,
+      "sha256": "722ad73673f78a930eec25ac9c3e55adfb24fad650f5f8327217cb3411025e0b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_farmstead/battle_zones.mi",
-      "bytes": 211463,
-      "sha256": "db6f68f480970f6c0e23d09f88964d41a7a296ce63f9db1b45397bb5a59c78e1"
+      "bytes": 212689,
+      "sha256": "0b859827d85fc4daf70d2d809680332323b668acabd8c585d02fe72d9786ebfc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_forssa_dam/ammunition.mi",
-      "bytes": 255164,
-      "sha256": "56bf199d15c5fa97c3d6ba0b9fc4af275818863971a22b8b4ffbd8dc5dac3697"
+      "bytes": 256390,
+      "sha256": "ce6a47c82386c6797f5aaa728b34d7366ae318e5cf60655d96ea3a30b0fa6efd"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_forssa_dam/battle_zones.mi",
-      "bytes": 236155,
-      "sha256": "05c280636ba4737be5f29c4cf373f55c45d0f69add0d3ee54178c9d31b23cc0b"
+      "bytes": 237381,
+      "sha256": "8107572ec1fea1f2d4a394b64dec8b85d7a1b262ae40fa2d276a008a56ab7305"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_holzbach/ammunition.mi",
-      "bytes": 298588,
-      "sha256": "cb5ebe63d075964d3a8396d865d7c10f137cfc881da80e782380ef7950527fe8"
+      "bytes": 299814,
+      "sha256": "a233a3075da12a3ada7218e25244f8135343704e5d4d4967481b2c1b0ff65b97"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_holzbach/battle_zones.mi",
-      "bytes": 294569,
-      "sha256": "2f10fe48185da5c42ec2822887d36c7b1351a2e7f6d80e08315efe2ce29f13c8"
+      "bytes": 295795,
+      "sha256": "92987ab702568edad19b3ffbca716cd3541dc92c98d0cce95bb509347c4fba4a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_isigny_ruins/ammunition.mi",
-      "bytes": 220686,
-      "sha256": "d1812669cf66f13162ee957d24782615bf87c5a039c93f5bf4196933f2c93e65"
+      "bytes": 221912,
+      "sha256": "a77dfc6264681202caa185782f144b76b441ca120866aa287b11af9583a1dab4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_isigny_ruins/battle_zones.mi",
-      "bytes": 239742,
-      "sha256": "ada31c79bb41de041435598111e6e6326c1f8a5630e3cf4df5dcaac2de38ac05"
+      "bytes": 240968,
+      "sha256": "96f9a6e1241f9df63ee50e56fc140aa96544843b38a5c4a3eb027d38e2c11b35"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_kalinin/ammunition.mi",
-      "bytes": 268604,
-      "sha256": "859d96a4cfd8e88bd289a30b5eb9dd5e83855d9599966e24686a449344caf1c5"
+      "bytes": 269830,
+      "sha256": "9411a9d662ac25450cc188cde872cdadac1665e44a1dff3874c0bd0b5873e9bb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_kalinin/battle_zones.mi",
-      "bytes": 251329,
-      "sha256": "b37d6e7d478ea853e3705afc01379764858942b526252737ad5387eae42f6d43"
+      "bytes": 252555,
+      "sha256": "c8801cbc02d29563f4f22564a8b2fd774e3c2ab0ca3b0b0b0e4001063196f09e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_ladoga/ammunition.mi",
-      "bytes": 264614,
-      "sha256": "eab16adea66a7d5db8d0e0ddb7e05ffab106abff4634424c132c8b2d482e0667"
+      "bytes": 265840,
+      "sha256": "059a43df1f56ae9048fe2b17f3f5da25a018be07e6dc243458d3f1fd76dfa98b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_ladoga/battle_zones.mi",
-      "bytes": 236072,
-      "sha256": "b00cd2c019d32d6aa6da7781077d2a5ca945f586445fa3c4b0a8591f8116f907"
+      "bytes": 237298,
+      "sha256": "038a26a329ed69220e353b17f419324f921e724c96c9d4c0b6d0aa40665ed24f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_losheim_gap/ammunition.mi",
-      "bytes": 268595,
-      "sha256": "e345ab1b2efa4cad1fd00fc09356f834487f8a98df5846a38281a1a43c67ea98"
+      "bytes": 269821,
+      "sha256": "63b3f126df232bc0ea0b62a6970b8b8ad7cf53136b96d0794f4c1ee41000067d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_losheim_gap/battle_zones.mi",
-      "bytes": 260741,
-      "sha256": "e1e810dd68c7f9e064308f106fd8619f04b35ca3c4ff1c4c7521322728ca01cb"
+      "bytes": 261967,
+      "sha256": "afc3091cc8aa74771876a4bba443e7a7a8e46b512289a8382f66f414190c9a08"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_nevel/battle_zones.mi",
-      "bytes": 248783,
-      "sha256": "385a2d4397e9a8c2c438c9cfde4f8d4577a9874f72989273dafabb7f93c1154b"
+      "bytes": 250009,
+      "sha256": "4514f0021cf9c3817a81ec12f70a358bc0fbb4316677c3e97d5dd7c40d86f641"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_oosterbeek_sum/ammunition.mi",
-      "bytes": 241074,
-      "sha256": "b6e1396e0cc6cab07ba07e4f447bc06ba1eadbe3ce2d8d153fef3ecc6b5e9e05"
+      "bytes": 242300,
+      "sha256": "9a8e19f0391172617caf6fd49e446cc787929150d5eb5f538bdb3a9cc14548e3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_oosterbeek_sum/battle_zones.mi",
-      "bytes": 237761,
-      "sha256": "6d21c2b147a0eb196fc445f28a74b162a29f760c06d87fdf5ddf2079c76dc80e"
+      "bytes": 238987,
+      "sha256": "72f615007d2aa06c6b5e58f0d39b16f8477c0db0040f4a90eb760fb6ed59e0b8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_oryol/ammunition.mi",
-      "bytes": 269866,
-      "sha256": "0f051c19e87cc866cf1cb25571b9c255d2f424244cbb5499048c9e641ec76ac2"
+      "bytes": 271092,
+      "sha256": "dfb9decd50dbc17001e174287798f871eab143e26e07c1ba9ab11b4d602cf716"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_oryol/battle_zones.mi",
-      "bytes": 227073,
-      "sha256": "e94563a18e22dfa5d5189fbe68b96c5097f16df992210dfe01d435cd3b136035"
+      "bytes": 228299,
+      "sha256": "c87db6f587089ff5af4c04f344cd9c07203ea7f9b548225892a21dfab5219782"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_ouren_valley/ammunition.mi",
-      "bytes": 318411,
-      "sha256": "e3902ce6ce432461040bdbf613b55ccd7897b35eb0828ca627130161e8130358"
+      "bytes": 319637,
+      "sha256": "4560bfb3d1e25d55016acda7c5730754e7d3c93819db43bf9f2ad140697d8010"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_ouren_valley/battle_zones.mi",
-      "bytes": 309614,
-      "sha256": "a1984b9d46fea72234ed2a804eaebb8a975366233cb56e965d6c8693c8213f8d"
+      "bytes": 310840,
+      "sha256": "387fbdd52624ac241b89d81cffb435c8b6f53d52930558fffb45221e58e8115b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_radar_hill/ammunition.mi",
-      "bytes": 222504,
-      "sha256": "a33aabcdf4a7e43d942307cdde00fde138156541accd5d2b8f38d7c329febbe6"
+      "bytes": 223730,
+      "sha256": "5670a9d292f5c7f1b695353921d375c6433fdf92a8a2fab0f1a565c9f9d2306b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_radar_hill/battle_zones.mi",
-      "bytes": 236334,
-      "sha256": "7ca265bf64d073570e73171607ec7f29f72574058c445cec000d06e4c04e3115"
+      "bytes": 237560,
+      "sha256": "7f7b76f3cc4c1ee7fc20b6e5edb73a7c0ea9deaee48f96c9029af7294b7a82af"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_riverbank/battle_zones.mi",
-      "bytes": 241994,
-      "sha256": "b497eaf6cc190e14b324ece596493a410f25a7a7eb510bff5608001e74bb0570"
+      "bytes": 243220,
+      "sha256": "f56af80d2aecadc0191136e14f901e6219f1f83d1bdcf404f0ecffdfccb545f4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_solingen_factory_aut/ammunition.mi",
-      "bytes": 268484,
-      "sha256": "baae4396e91286be992c26d1a34e47712189a4fc8860b3181c073c1acd9b61e5"
+      "bytes": 269710,
+      "sha256": "3fe54c383267db6cfd5da1bdbe2c4cc9942ec5b3079fc1c90a59f7d8991cdff3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_solingen_factory_aut/battle_zones.mi",
-      "bytes": 262641,
-      "sha256": "90f79030b4aa973205d717f66fdf05b4f3e9b9f1cd617572ac97b557965b321f"
+      "bytes": 263867,
+      "sha256": "d41857d99d53ed6b329c8986a7880576886a7bfc6a999de7d130ebe6aafd1bab"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_tormasenvaara/ammunition.mi",
-      "bytes": 249839,
-      "sha256": "1e64cf82a05a92a1f24d80575faa39744f2ada6b3e2ce45f3d2746bf346039ad"
+      "bytes": 251065,
+      "sha256": "faf1b175b510a4b56182293c40a6c3200702b59f8d4de269d88a443bdfdec45f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_tormasenvaara/battle_zones.mi",
-      "bytes": 231396,
-      "sha256": "33fabb28fd223e1ca3b3ab69c95cc2f899cf07051ef1b9518174af275ca09bed"
+      "bytes": 232622,
+      "sha256": "bd1ada6754000187f67600edf9e3a6cad4a404243cbe18aa624f897875aa25e5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_uran/ammunition.mi",
-      "bytes": 352293,
-      "sha256": "cb046c0538e5a6277a9a53e828b70b3e280fc028d6f94a48e9017af6ffd062f4"
+      "bytes": 353519,
+      "sha256": "88bda9d1e946c0de3d5418263f19c4194afa86a5938a0e85d19fe09d83e65259"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_uran/battle_zones.mi",
-      "bytes": 305639,
-      "sha256": "e2a75dfe9a917a0ca515b43b5d0c56317ff5bd64ed60c67777902204ef4ef94b"
+      "bytes": 306865,
+      "sha256": "ef0b49761793a71205476a678829a6ee30102ce070fb4ae2f3c906c26ce077c3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_valley/ammunition.mi",
-      "bytes": 256807,
-      "sha256": "2e0e34cc45821a0690fb3c8f7a459e7eab841a3472f5b5a15fc73abfeb2595b5"
+      "bytes": 258033,
+      "sha256": "2914a94e55cb6a2c3c46abee5a106a4a385d80dad391b530c06969dd436b67d2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_valley/battle_zones.mi",
-      "bytes": 238298,
-      "sha256": "8485c9279bd13a10ce22479d9ef7ad7850bb331e7f73bb45d426d283fb5a36b6"
+      "bytes": 239524,
+      "sha256": "728ef3e0d4ae2b11ad8032d400782b14b02b1bbd5307f209f2298ad3515374bb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_volokolamsk/battle_zones.mi",
-      "bytes": 335512,
-      "sha256": "b1cb7e8e9c05aad09223fc25df881ca58ee9eb506243aa69daa3059db2963cde"
+      "bytes": 336738,
+      "sha256": "5ca45e0a1b1962343827a87edff734ea6216c5e681e97398f3ce8a91a407aa1f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_weteringsteeg/ammunition.mi",
-      "bytes": 273908,
-      "sha256": "7da387f09bd13ede7bf7477be12797692a323e212f38e2faf3c79ff359b3caaf"
+      "bytes": 275134,
+      "sha256": "80a90a9b97bd5f8d250b3cae7b34f84d173b01bb4180e4f76e9c41b19b8111a6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_weteringsteeg/battle_zones.mi",
-      "bytes": 263502,
-      "sha256": "04f04829d1032b15a26810adbdb375340c011ebf5ddaff1265fb3381e35143d4"
+      "bytes": 264728,
+      "sha256": "fa49181535dc707490e4bd9b07cac381e5fcd8eeb9ef70559ae600608969c781"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_workshop/ammunition.mi",
-      "bytes": 291975,
-      "sha256": "4bcd11bac14d622a3b2b7c51ebfcee8b32f27e8d33b6fe032f58e4c5be62da6f"
+      "bytes": 293201,
+      "sha256": "b6f1dc099bc7c9335ea2bd6d573b9c070f3993b636a3645c3551536b1d2a6b29"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/1v1_workshop/battle_zones.mi",
-      "bytes": 263351,
-      "sha256": "62577fa0c8c14025181f3c1ed654f824c987057d7cd9dc1991e214ef7b0f110a"
+      "bytes": 264577,
+      "sha256": "f81f2e437ab0210edcace25f2f16ac79af159a14e94ec48614860261f39cc478"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_Hakola/ammunition.mi",
-      "bytes": 300138,
-      "sha256": "8f19eaa174afad1221afda595178b9796d67ce58776ce52db6a0088f4ab563e7"
+      "bytes": 301364,
+      "sha256": "8b47bee8b8aaf91c4c462d726828e3f9d3092f7918e50158763af0c2e0c29fcd"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_Hakola/battle_zones.mi",
-      "bytes": 281624,
-      "sha256": "ff119b9eb7d9d62fd49103159e24e6801e60af982c2aaa27b4461db6edb0dc7b"
+      "bytes": 282850,
+      "sha256": "e9b1e96420612ac873d8f62aad6fcf706a8ffa583027b6e7963c7727627f05fc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_Kainuo/ammunition.mi",
-      "bytes": 246400,
-      "sha256": "1f040385445446bba29a70458d3a5e9de93dda5051ebf3b278eb81254d3d69f0"
+      "bytes": 247626,
+      "sha256": "46ce4de51f9bfec38180a8ab1d9b5191ad9182a4b2f88745f24f9dc97144c5e6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_Kainuo/battle_zones.mi",
-      "bytes": 235441,
-      "sha256": "36773a5108e7e3fc68e4f3e6c1a7dc9cbc579f69c21b787220b147b8b6a28e75"
+      "bytes": 236667,
+      "sha256": "5cf7a73e6559441c5fb146a28c7ebfa3c10c7c2ef30312dbf7202005a6e23404"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_Vainikalan/ammunition.mi",
-      "bytes": 247751,
-      "sha256": "28301cb46240764f1e60aa42dacd49043d85bb45af0d03a40d78660ee22a5eee"
+      "bytes": 248977,
+      "sha256": "f920e94d76cd53fc1cf5e6150734182e1a92e0f6ce027dabd4ddaefc2d9dad71"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_Vainikalan/battle_zones.mi",
-      "bytes": 237903,
-      "sha256": "7f7c2cdc45510ddb08645504384b04e5b7075b9fa355bbe805e960d362b683f5"
+      "bytes": 239129,
+      "sha256": "223c5f95e8094f1357c09f0041b70c2c1956e663aaf37068ce401e1c936a46b1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_blizzard/ammunition.mi",
-      "bytes": 383285,
-      "sha256": "94e941e0ec871a518adabfbae8a2d0b261fa31d58d51f934b0a382c2f9250721"
+      "bytes": 384511,
+      "sha256": "f97b4f25ea6934caf5266e6ae463fcbcbd271a806b1b1cc3a436ce52a2223537"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_blizzard/battle_zones.mi",
-      "bytes": 368549,
-      "sha256": "e937cca0fdb9b4b7a6d2a1f5f7a0bd298d9a90cd2f5c654f5c1e71e5793a2b2f"
+      "bytes": 369775,
+      "sha256": "10eeab72aa981dab6a1637f090a2a5e863131bdc4d29d3291c4796b32fac796d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_bubingen/ammunition.mi",
-      "bytes": 239803,
-      "sha256": "bc9297c292944724072f398b08cdc3117e231371294269daa81f1355abaf7dde"
+      "bytes": 241029,
+      "sha256": "101c652a32d48126e1f99dbe72db1422e8f4e8f78f365d4dcf9772fe5a86edbd"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_bubingen/battle_zones.mi",
-      "bytes": 229721,
-      "sha256": "bee8d29b694481f3fe1ef95acc824b62fa8fa08a9a641b43828194c031713487"
+      "bytes": 230947,
+      "sha256": "6bcbfbf9c765c7a7a5b3959ffe47c42a313d536400e12267cc1c4d3e5a3bafef"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_countryside/ammunition.mi",
-      "bytes": 316405,
-      "sha256": "88026adca82b182c20b1df2e3e396957cb30e5dc86681132abbd0f09788f2527"
+      "bytes": 317631,
+      "sha256": "5176e450eacb36fbaab76e35a960c1895a113159556e8ef700fd591bdaf07fd1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_countryside/battle_zones.mi",
-      "bytes": 306441,
-      "sha256": "0c785d43abe43ac8f5c0e3f0d382cbb883ef110a78a85b3f886b64c8538632cc"
+      "bytes": 307667,
+      "sha256": "264fc2db4c18d705176ecd6e8812781f02e86c49d3cdda81a8db820ed04948a1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_courtyard/ammunition.mi",
-      "bytes": 252246,
-      "sha256": "4320bcefde62c288a3009b45cc84306eef82ee4b06bfc5418e1823948ffb1456"
+      "bytes": 253472,
+      "sha256": "d2965237d5b2e526d787f36563ea532e829f0cefaa3c4cfa5f9abd7b9f491718"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_courtyard/battle_zones.mi",
-      "bytes": 239064,
-      "sha256": "ff2354eb7e7ccf9f07d475380f5da5e90f197f6bb01758c447334000621a37e1"
+      "bytes": 240290,
+      "sha256": "8d859743a56482fbe37e9227283b2f5431d981c403cd9ee4ae2d3e87dd0917b8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_dunkirk_dunes_sum/ammunition.mi",
-      "bytes": 244015,
-      "sha256": "bc6854f43793df7bb7099fd76756b99be80d7c89e2d36a00d546146258ead0c0"
+      "bytes": 245241,
+      "sha256": "cb2489ec744bed6e05acdf0a9cb3fe4bb5e0d3bf90b8ff6fb1da0f47f2e9855f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_dunkirk_dunes_sum/battle_zones.mi",
-      "bytes": 238428,
-      "sha256": "4e11b8d42d870d4318f4677c1d01d7fdebc84294840cf7d907fa4b23b714a7e9"
+      "bytes": 239654,
+      "sha256": "b68a23707a09a440c89dfc609868dc01c2d515779c56611c85e35e8cf22db65b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_fall/ammunition.mi",
-      "bytes": 300862,
-      "sha256": "760fc2655714d2500b50c1b430480add6ae99a1d581805a7a7a0f3489fb821c8"
+      "bytes": 302088,
+      "sha256": "a09ef5451ba9ca75437f138088a07d6e8f9f654e5fa336148e995b2969a1db43"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_fall/battle_zones.mi",
-      "bytes": 311688,
-      "sha256": "c42ed79ae785c0eebbdba4be6670f228e940ed69ddcf997e2e98873051afbf7b"
+      "bytes": 312914,
+      "sha256": "498807737ae7aa9e24dbcddfdfba668334caf6df66de25ea670f26eba59b2f7a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_gelid/ammunition.mi",
-      "bytes": 284241,
-      "sha256": "7e20f853b8c2510c154dc14d77f90fb8de8746c4e69fee07b4b4bd7bd345696b"
+      "bytes": 285467,
+      "sha256": "0eef2eb15a6f40c7e2d446250e2648e81fe5a78782cd39c1df4c6da64fe054f5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_gelid/battle_zones.mi",
-      "bytes": 272705,
-      "sha256": "89e2ba1cf29bf03fa6fa8e6b68125bdda5ccc996c4addbd88afaccc33ed805c1"
+      "bytes": 273931,
+      "sha256": "14a1649c14f13ba1a84e091deb97371dbc739f840992039ce6a7326b46993213"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_glubinka/ammunition.mi",
-      "bytes": 291276,
-      "sha256": "a9763fb835949bb882a845d74472bd15cbdd4db502e7ffc260a0479f72975567"
+      "bytes": 292502,
+      "sha256": "e893ff2aacd12262e21a636bd1084966184eaf84d3a077d2a9576de55ccfc4c8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_glubinka/battle_zones.mi",
-      "bytes": 282622,
-      "sha256": "0925d4c0deba22c1038a671e131a6d6a646c5d1c2b3e3ff634ce0c0eda5423a6"
+      "bytes": 283848,
+      "sha256": "5254842fc7267a76be8ef68ae357ee64b4cf3ef615615a2908b66c44e6dd933e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_grave_sum/ammunition.mi",
-      "bytes": 241347,
-      "sha256": "72cf2fefc985f7922630bf7e31a7bf88fa84fd19b5ee13615c6c3eb9cb1aaab7"
+      "bytes": 242573,
+      "sha256": "e8b20b5d45be031f62b3f17656398514af04b341032ab1ca98d7ce7cbdad7fee"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_grave_sum/battle_zones.mi",
-      "bytes": 240077,
-      "sha256": "89d7ca8dd9fc84b4a5714efa8d8d818fc662b28240ce7bdf2748d6ba356813a8"
+      "bytes": 241303,
+      "sha256": "062683a6399db2a6652ccc06f9a1f61ea749333bfc29e844c92fefee04572f65"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_heelsum_sum/ammunition.mi",
-      "bytes": 248803,
-      "sha256": "3e66f491228f89e0ef681f9204ea39d021dfd877d3b1b5f5762ff82591f5c9ba"
+      "bytes": 250029,
+      "sha256": "e57fa66bfc90c56f5725c3155b822568d0c87e53cc417d3106d86dd080b2b3e6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_heelsum_sum/battle_zones.mi",
-      "bytes": 242303,
-      "sha256": "ec72d6a93b9ee0649472fed8a8e1c2c903a86b1985ab33d4cc22e8ae8d746086"
+      "bytes": 243529,
+      "sha256": "215bc6469716a527b4dd8db9f0510737765c51cb4cae096a764ab739b3e2979f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_hunting/ammunition.mi",
-      "bytes": 247036,
-      "sha256": "5260e6dd87ec2ec88294dc9711a65ba51feac595492a2db8a90b501311706349"
+      "bytes": 248262,
+      "sha256": "58b8c2e329b17d4501f1d072f63dc655b241a9a2515028b82cbecebb86414bcc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_hunting/battle_zones.mi",
-      "bytes": 235474,
-      "sha256": "36aeb55aefaa5272a48d698f0228b39208ff81fc15a2a80e6baa517f977e99b2"
+      "bytes": 236700,
+      "sha256": "20b129ed8c2a632ca5fca0c5bcf09bcbfbddea196c492eacc2a32ce61ee6a327"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_hutor/ammunition.mi",
-      "bytes": 287048,
-      "sha256": "f7922e01911e3ef357927bd296fd3bf7d55e279fcf69e1d991fd3e5e8c3aa98d"
+      "bytes": 288274,
+      "sha256": "250caf2f656fd6ecbb6152b7a6124d0bed44bdc03f99f190838c95405e3af770"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_hutor/battle_zones.mi",
-      "bytes": 281218,
-      "sha256": "bc6492c6e40ecb951cf88ee2761066458da0b4dbed707043d333e95723e7d3ff"
+      "bytes": 282444,
+      "sha256": "9b71c6f5963a312ea9cdbaac1cc178ca468202faae886e2396b6fe6330a4fa63"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_industry/ammunition.mi",
-      "bytes": 288998,
-      "sha256": "b2cf6c8e29affd87ae7ae82375658046d44698016482d368a2348e136a255c31"
+      "bytes": 290224,
+      "sha256": "686bb6896a77aecfa8e5d313859b9ded7a1dd06bd85c630a3e51980a1a0ade9b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_industry/battle_zones.mi",
-      "bytes": 271174,
-      "sha256": "3684c7e172f0a54344460c8c21bae1f905d312ef3947d5a9f9dd9aa0ca0cf352"
+      "bytes": 272400,
+      "sha256": "6c0840bac662f50686d09e4c22183b04c7efb60cf466428194bce5db65e5325f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_invanovka/battle_zones.mi",
-      "bytes": 275389,
-      "sha256": "9226e0415df9bbf2b864848800b30ef08edc63b0a3c2532c0c6dd295406e24f2"
+      "bytes": 276615,
+      "sha256": "c054b72d32552cab7ef8fc5fa410e551a268614b5f776c420a258be44744a639"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_karvola/ammunition.mi",
-      "bytes": 397619,
-      "sha256": "2dfa67244161ec47131566948c43b7c9a06dc1be21cb68c60a3a8922b7b86528"
+      "bytes": 398845,
+      "sha256": "cf3941bc731e1d335bb25e5a76c84660ec8916c49a2b7d955790b426562dcf5f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_karvola/battle_zones.mi",
-      "bytes": 383317,
-      "sha256": "f3cf88b7806b2c0a1d978affe6e7e0edbf8501db2907c325a1dc368d6363c13d"
+      "bytes": 384543,
+      "sha256": "16f5fb15654689c5e7d48d78f2dc722766bbffc7cb4f3e32656c38f3cba6c9e7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_katrinovo/ammunition.mi",
-      "bytes": 247667,
-      "sha256": "c63f2f3325c042b60ccaabfd9b16f690768be52bf3be5b123d92c99b02abadfd"
+      "bytes": 248893,
+      "sha256": "2fc4447592b3e7d0987a7e21b1a77d84fdbf3c40588ca387ed0394187336f09d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_katrinovo/battle_zones.mi",
-      "bytes": 231505,
-      "sha256": "39d9aac4761a7de8878d4d8789106ccc51507a2333ff8a3e52661c534fbb7540"
+      "bytes": 232731,
+      "sha256": "2d0e2676995a0015b199ad9380f8e0ecad1748d34c449dcf6fb5b19f85512bbe"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_kavichy_factory/battle_zones.mi",
-      "bytes": 270848,
-      "sha256": "b72ba82931da0fa6bffba25882cf345b4f541e90aef980c91f56162905a8b8c9"
+      "bytes": 272074,
+      "sha256": "e530de7a65e1d8b5a3d7725cfc293fc9c7a555b3f622447c02e453164898a096"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_mannerheim/ammunition.mi",
-      "bytes": 340968,
-      "sha256": "56e196f0ccc2cca340ba4e98006692cb66854ba0803571156868b3fc905f502d"
+      "bytes": 342194,
+      "sha256": "736cbfd2671917d8720b9e35a841e7e4635222162404fe52b4b8502339e3c5a3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_mannerheim/battle_zones.mi",
-      "bytes": 325718,
-      "sha256": "ab68d0f7b07f4cf1ea9e2e27a29fc3ecb176a526a0b1dbd9deb1d3061c18ebe0"
+      "bytes": 326944,
+      "sha256": "11a5f81fa35a4682d2c3b0c0f3748a6eba0a929cfad2cd2bd4769bc835eeaa15"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_marvie_ridge/ammunition.mi",
-      "bytes": 339450,
-      "sha256": "c002b3c7d737468e6d4b9dae1b407d2becf3c0fccbbf4c433253939dbc4839f1"
+      "bytes": 340676,
+      "sha256": "bd85389899b2605ce3b3457b2f4b8d777f3b8cf98f5af0f5bc2249fff51b96f7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_marvie_ridge/battle_zones.mi",
-      "bytes": 342634,
-      "sha256": "bca6767b5416573863c8d12ff417f910b59eeaffdfdfbab4e8766af9b9eb1408"
+      "bytes": 343860,
+      "sha256": "9b9b4b2cae178af72937d9bcd6e82677bee748274cb92d3275293b06bcbd6838"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_monastery/ammunition.mi",
-      "bytes": 280531,
-      "sha256": "fb8d66da1ff5730354e93bf7cd5571cfefc0de8ca1a172c148b57ef8c1a9491a"
+      "bytes": 281757,
+      "sha256": "d6ef62a480bc62970e538cff2d2513cbb0baf3b1f5a75dd8e0c0d38ddba1aca2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_monastery/battle_zones.mi",
-      "bytes": 260408,
-      "sha256": "5d33cdc8cf1f6b149a241b28adb7b00466e555a939eb7d78dd1d7ac7e3a0132a"
+      "bytes": 261634,
+      "sha256": "e5f94bd2d87b4d6abb88621485c4f4282f3cd58a43ca745219c035dc9b999cd3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_mortain/ammunition.mi",
-      "bytes": 243236,
-      "sha256": "70f26d17314ec81a9847830a223dbbc0b5f5a1d9391c64cdfd588e5aa46a6a2b"
+      "bytes": 244462,
+      "sha256": "6ce05819ce406d734dfd198f5f92d79bcb9b6f86c4d6dea31513ec5f6d9279fe"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_mortain/battle_zones.mi",
-      "bytes": 236422,
-      "sha256": "3d9c20f3269eeb490ad3cb1d24719f8e7df14c9b3a90fe914665998af2b36e90"
+      "bytes": 237648,
+      "sha256": "f351c823e6dceacd67fe0c4c701675f32f5da2b023975fb7cccdd9eecb1eec67"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_olshanka/ammunition.mi",
-      "bytes": 253193,
-      "sha256": "5b25a93f56bb3a4c03059db6904d6a80667c24c18edc6b9072596ccf6aecc6b0"
+      "bytes": 254419,
+      "sha256": "29161644cc078b247705d5903e0c81fe71882f07be818607ae43cc069e38d9fa"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_olshanka/battle_zones.mi",
-      "bytes": 237301,
-      "sha256": "89562ecba6fd2eb39e12c23c3c92e60974dc0ab8e5f8718185045ec4592549ed"
+      "bytes": 238527,
+      "sha256": "f01abbd1dcbd226b2bfdf9d9c3d3ed9d2347c89671812dfd5f07ee77c1563865"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_rouncy/ammunition.mi",
-      "bytes": 213404,
-      "sha256": "4d4c25627612b2e3ffefa5fe2fb87f988f2ce931aeb099e8981a5d2ccc858174"
+      "bytes": 214630,
+      "sha256": "ea76e373c60b6592b117d14d379d88523961062e173215f3a92db3cfa8e01c72"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_rouncy/battle_zones.mi",
-      "bytes": 231431,
-      "sha256": "11c3445ecd3025b407d7d18701cc39788b6164b7a9aa16cb6c3b05bb25c9b093"
+      "bytes": 232657,
+      "sha256": "88ccc5c904d6cff2f9701879fc533b1174cd938002e759693e97901b457e75d4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_sainte_marie_du_mont/ammunition.mi",
-      "bytes": 227712,
-      "sha256": "1708cf9359af323ac5deb4cbbbf239325e63809dc2587a6283600d182625cdca"
+      "bytes": 228938,
+      "sha256": "ba7c4a07d13196175af6dc82f265a87705f55aad96c002fc209b8a8431ae6c79"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_sainte_marie_du_mont/battle_zones.mi",
-      "bytes": 243140,
-      "sha256": "8125fb376bf692aba7e17f115c9b0ff32c413a8adb47bcb3ef5276275825c121"
+      "bytes": 244366,
+      "sha256": "eaf89b5328fb7d45dcc5c8b9990e2c068749790faee29b29c3b2be8090e914ab"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_shaforovo/ammunition.mi",
-      "bytes": 271665,
-      "sha256": "b83b2df6e65baaecb37a52e1277b56629cfba623d3ad84a755d1097ee3689c2e"
+      "bytes": 272891,
+      "sha256": "0b15bde5056501283396dba6bf875c59214ae1ac78ec60ec04cf0c9cf60ace06"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_shaforovo/battle_zones.mi",
-      "bytes": 260067,
-      "sha256": "063499064e49063ee3174b8f31ac7232b1f87d454456751c8dd0cafb3c979ebd"
+      "bytes": 261293,
+      "sha256": "e51d9068e0a5b0c7142bf1529fd1cd225d5c6186b7874db0588b5325ef717f10"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_st_vith/ammunition.mi",
-      "bytes": 239545,
-      "sha256": "8679ea54c1a481ac4e2cd6939f53ec107432db4d37d39e3bb3f844fe2f67c67c"
+      "bytes": 240771,
+      "sha256": "8d089ed6bc354ca16a6552d1507e194ce3afcfd2b7ce2555dc74c3b9dcfa269b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_st_vith/battle_zones.mi",
-      "bytes": 233768,
-      "sha256": "7ac04237252733465c3867e892a64fdcd6d98acb1b7f3c51c68bdc064c0c40a0"
+      "bytes": 234994,
+      "sha256": "33826e6bc49aec513adb38044e169814b319f89c7054cc33833d5212ef4b521e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_stalingrad/ammunition.mi",
-      "bytes": 263257,
-      "sha256": "51524b692c918865d5f56b9b9eaba709e148c1a13e73cf2cc1f54d5de7b04666"
+      "bytes": 264483,
+      "sha256": "9de932b22470f51157cbbe6df9f42e7e77816b5f7855e663da7b1d5351adf4bb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_stalingrad/battle_zones.mi",
-      "bytes": 254772,
-      "sha256": "b526532bba8929acf8ac52a90043cab846d5eeb57f43e1a76f2e636cdc9b37c4"
+      "bytes": 255998,
+      "sha256": "67629dde44a322334e3c950b3c733df51021c6fe7d0ffc32f3f4104f365e7a30"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_suburbs/ammunition.mi",
-      "bytes": 250470,
-      "sha256": "254d098d6f1320852015760dd08dba7fd44923b932fdb10ac08d906bf136b09c"
+      "bytes": 251696,
+      "sha256": "4c76114d3e811f1b9da5db76a9d64f9ed6868a8c99a75dfa5741ec4cf41b427f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_suburbs/battle_zones.mi",
-      "bytes": 241893,
-      "sha256": "a126e310c830bd6b96f42755706258df652181ceb003203ee272ae6d39eeb3fc"
+      "bytes": 243119,
+      "sha256": "cb8e533fb049e3d2e93bc6de1ba5727174a7b7f12096f5e0118e61191adcf3fc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_suishka/ammunition.mi",
-      "bytes": 306582,
-      "sha256": "1fda27e1348d31b07274bf46364c768374fb7e240a3144277b1f1d7b2c0783df"
+      "bytes": 307808,
+      "sha256": "abe3bd9173b8be4bee6c7bec264ac2b580a5aac332d6fc75b9e395c5d94540b1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_suishka/battle_zones.mi",
-      "bytes": 291469,
-      "sha256": "29cfffd4d1e2cded25d1a089b6708b5fbfff38aad5c336c6ad16898923c49229"
+      "bytes": 292695,
+      "sha256": "46afe17674b873b71779fd5460f85123d0e2ba866cc75b1520b34f8e13b69f26"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_tikhvin/ammunition.mi",
@@ -2404,118 +2404,118 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_tikhvin/battle_zones.mi",
-      "bytes": 278960,
-      "sha256": "ce31c6d5e82b4d8d77d30acbfbc2bc9e6d6e302f330e64748a67985649bab90f"
+      "bytes": 280186,
+      "sha256": "88af999b79d7f4f28f74d25342bf5d8fd4f7f6115cf12d9b47e01f06b5e3891e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_urban_hell/ammunition.mi",
-      "bytes": 257011,
-      "sha256": "3e54a38b073b0aefd274c057aaac94d2b596732d1fd1e47cee8723a9c9e8832f"
+      "bytes": 258237,
+      "sha256": "57df95224a1b0c4e22cc75c7db7f3f1ff5f3c0cfec64846187ea13c8e8959c8c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_urban_hell/battle_zones.mi",
-      "bytes": 237512,
-      "sha256": "07f0baa3b2987e030ab0769e8d6df6a2fa06b3072a27ab5abea97a3a431af840"
+      "bytes": 238738,
+      "sha256": "2d55e382e8968ced984f87e7bcdb3d7ef57687d64247be7e0716f3f1d9323dcd"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_wesel_aut/ammunition.mi",
-      "bytes": 272823,
-      "sha256": "e1c3048fdda6ac929bac55467fec115a038b0e542d61e50bf57aba5ddba7fb3d"
+      "bytes": 274049,
+      "sha256": "09c01a4721b1897baba32aac1ecc2cb1c6ae7677e0cddc174952ac9c8f528d53"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_wesel_aut/battle_zones.mi",
-      "bytes": 273745,
-      "sha256": "4a8a6b74fbe06eb035c994cb840e4c1f189ad066598e4b1a79d80fa0eee3e1c0"
+      "bytes": 274971,
+      "sha256": "7c82a72ead2d9c9bbd70e3f90b2d6e519d60f46a49aa05f5423b2a4f33b1fe38"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_ziborovo/ammunition.mi",
-      "bytes": 258427,
-      "sha256": "df0fa08e3d70a9564e4e9b340d5a709ff43b03e593a83fa362ffc1387ae1df8a"
+      "bytes": 259653,
+      "sha256": "2d944f108a45367930bef9bef2180b08697856b0f8293fc2eadf8690c88a4b83"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/2v2_ziborovo/battle_zones.mi",
-      "bytes": 240440,
-      "sha256": "30a5d9248b2b884ff8eef6d2077405f8197f8a2255b49198e779a20440f598e5"
+      "bytes": 241666,
+      "sha256": "157a051aae66a1617317a7ece7b35157596b0a02998246c32500c165db01f76f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_Hqvistvaara/ammunition.mi",
-      "bytes": 247771,
-      "sha256": "c7829b96ba97e5fa3f044955005d7853803c98214c6ce44f1f0d2f3777683b0a"
+      "bytes": 248997,
+      "sha256": "09e92b8084a32e4d4e38e88d591be6ea2111692dd3d883eee1a6cdc432693a7e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_Hqvistvaara/battle_zones.mi",
-      "bytes": 234891,
-      "sha256": "6bed1e9b54728543a604fe337c04758766ff2f7b89fbb42d76e706ea7a5385c6"
+      "bytes": 236117,
+      "sha256": "b859aff9889d8173c0d58e3de3b81407fbb7da339b531b5a98dbc38ec8322337"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_Natramala/ammunition.mi",
-      "bytes": 246655,
-      "sha256": "9b2ff5265d3a83ee46660997de160a6b30f1b3964918ea4b6133240d87f554be"
+      "bytes": 247881,
+      "sha256": "2219e9530d1818b1a9f6204a16f49558fc2f3a23629ac43cd7ba87c89fbadf18"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_Natramala/battle_zones.mi",
-      "bytes": 238891,
-      "sha256": "083f4426c0b347630eebbc9b24d0ae8c10990fc83c48553580952fdab00738c5"
+      "bytes": 240117,
+      "sha256": "061e747fb4e767fb84c87d08eb3b81207ce746723de356b07f8e3cfc53247a5f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_barrikady/ammunition.mi",
-      "bytes": 267149,
-      "sha256": "1d6e7e268660b620c00262a90c7762e8f4b9f0e615a7a10c68069e2f8e561b8c"
+      "bytes": 268375,
+      "sha256": "df567a02c98463fa2678b131e7da4a858734b8102d95435af1404a1ab0990767"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_barrikady/battle_zones.mi",
-      "bytes": 260843,
-      "sha256": "110f69c3f25494bd530b8e4cad7e38874f434fdfec5ffe810e1b67468567b50c"
+      "bytes": 262069,
+      "sha256": "c17a2b5fe061aad57fcc703d3d08ca86f7344a1ea3dec07aeb6bc5e3b86fa5f9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_brozha/ammunition.mi",
-      "bytes": 244249,
-      "sha256": "2bf56487254ae517b7e1d125dddc16a9d5589f510beba79cd75dc2f29d0d19f6"
+      "bytes": 245475,
+      "sha256": "f8523837a9408ee6f7049c6ff28d500af8dcf1abd70cea4308bd3818f812d9c1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_brozha/battle_zones.mi",
-      "bytes": 243981,
-      "sha256": "cf24667c8abd8c2f420361520ec31e1df5ff190b733f6607fe36005cb6d3ece5"
+      "bytes": 245207,
+      "sha256": "57ade0cf63ab0623a188a0370b90cd32e927b8bb9c2caab46667963c82f897c2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_canals_sum/ammunition.mi",
-      "bytes": 258770,
-      "sha256": "44c5d0ba560d289bb5ecf73a8aba107ca498aaab25c5fa573505ad24385db239"
+      "bytes": 259996,
+      "sha256": "04c25a903b8ddc828428bdf17d67d4188f2d95462a0e8f3d8e4cc8406f64225d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_canals_sum/battle_zones.mi",
-      "bytes": 258482,
-      "sha256": "b8d576567d68f65b5d3cdf8f2f2542eced433f46c610b112a81033dc28c354ca"
+      "bytes": 259708,
+      "sha256": "193c7bbb5396562b18b93c5641d6c52e9531f45cabe1d8de5d5864031d828852"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_elanskaya/ammunition.mi",
-      "bytes": 259529,
-      "sha256": "acc5d661a0e1071f388a0cb623fe44a8b86b1746239ead8384bb84f5a0013ef7"
+      "bytes": 260755,
+      "sha256": "ff540d82ad5ce8290a3890e69c9d23f67c0c6ac268ac8b3614a25b7f574375f4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_elanskaya/battle_zones.mi",
-      "bytes": 242081,
-      "sha256": "a46c76e41c1e34ef6ff2604e69c7c623fcfb2267e6422086d2f21c822b205b9f"
+      "bytes": 243307,
+      "sha256": "b7bdd4c017180542abc23aba40f84d2e08c54c78676bd77819afe4fe6019346c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_factory/ammunition.mi",
-      "bytes": 325290,
-      "sha256": "2b7fd3fae9d9cf696a68528915d50cec1d382e6c6c845d266f27c36f9153adce"
+      "bytes": 326516,
+      "sha256": "7306c43cdd2e975486b5519e3e04e7ecac455b7bc2350dff852f009b91040da2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_factory/battle_zones.mi",
-      "bytes": 312612,
-      "sha256": "70189305dc9e47ff29914e08cf23fe5a7725328505a4e80d3bb4e89051b35eed"
+      "bytes": 313838,
+      "sha256": "2e3ce6d6ba263651094ab58c3d8ec9250db3f79824a6b29bfaf906b6291d3a94"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_general_winter/ammunition.mi",
-      "bytes": 394261,
-      "sha256": "841d04c91fd1cc9a7569ebf201b11783e860ee7b54fa2e3257d967484080e605"
+      "bytes": 395487,
+      "sha256": "b76774fb28d48883b17fc14355e8657768ccb75d5d2dd62f22ed1e00cf4a8454"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_general_winter/battle_zones.mi",
-      "bytes": 392528,
-      "sha256": "7f5e7cef97e6ad60adf23ce6e0fdd18835ad682fc112c0e1da8df1f05e598f48"
+      "bytes": 393754,
+      "sha256": "bec89488737c74e969b28753e5f7850d6a470cb2c58e519f0bdbe7f7736ce29c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_general_winter/evacuation.mi",
@@ -2524,53 +2524,53 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_glushkovo/ammunition.mi",
-      "bytes": 355816,
-      "sha256": "535ac7ae8ebc18fd6153ed52c66de099f7ecd542c368b34a568808f0f61dc5c4"
+      "bytes": 357042,
+      "sha256": "64a9bd9ac72f9932b4bde62910f1f783d9bfb242a95d9b03cef30079e1da4720"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_glushkovo/battle_zones.mi",
-      "bytes": 349025,
-      "sha256": "e4ab7d086306c4f942e148cef0f36626bce0a7c3682a8d9f25e57c57e088b1d5"
+      "bytes": 350251,
+      "sha256": "f248abc9402585ef806c48e955667850d580de11ebf22ed42acebcc28f8fe304"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_hamminkeln_aut/ammunition.mi",
-      "bytes": 334624,
-      "sha256": "b01636dac1340c528a01b847c1ef53f0eaa87e1726a8e3945c9c1655aba7702f"
+      "bytes": 335850,
+      "sha256": "4488aa961a367a27f8a887edd711a81e23d7671beaaaeb7db038f232ad3d5819"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_hamminkeln_aut/battle_zones.mi",
-      "bytes": 333816,
-      "sha256": "3eb829e6dfc28a92ff0deed3184a8166753d122ff009b0779d2b3404f4f2a4cd"
+      "bytes": 335042,
+      "sha256": "b1ab0782b7e3e5a52009ca4fc181e52dfd9939dda31dc17e3531dd170c614674"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_hungary/ammunition.mi",
-      "bytes": 259638,
-      "sha256": "6dda42f553924e15699013c1215e2a71b69964f593d59c0d263e1fbccc382aa1"
+      "bytes": 260864,
+      "sha256": "c51db54ef5c407185edfde90bff040070b0a7197e795a2e6fcaf5ec3c706e844"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_hungary/battle_zones.mi",
-      "bytes": 257537,
-      "sha256": "cd3617e5f16de66c1c66b12025c05d5ab1c5ecac98b26905ae3c76082adc6d4a"
+      "bytes": 258763,
+      "sha256": "de72ab97ca7a4a66959d8d4a0f85210a80a94e3283bf109dcd6704fab77e419e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_hurtgenwald/ammunition.mi",
-      "bytes": 299367,
-      "sha256": "60341c159395b95aa8c92ba42ec39285a7facf8e50951c7b3d27ad139603cf99"
+      "bytes": 300593,
+      "sha256": "5349b0a61f759ce127df75ef1a6325f18ba6a11eb7c8c18c6edbf4dfb0288f7c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_hurtgenwald/battle_zones.mi",
-      "bytes": 290893,
-      "sha256": "d9c4c7438ef2ac1c76ed8a54e0a1e5fcb539803252005d60f2fb4b3fab2aa6c2"
+      "bytes": 292119,
+      "sha256": "d8fbd46315a1a66873eede2820e107c37645ca840f7f11d2f9e4271de92bfe8c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_king_of_the_hill/ammunition.mi",
-      "bytes": 263725,
-      "sha256": "a0e1144569bd82c39fbce0ea59037b9688196d00ba268eb0119607dec5dc9323"
+      "bytes": 264951,
+      "sha256": "c53444536f592081babf416a450ec721c6d56040061b5d918eee9d41837db12a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_king_of_the_hill/battle_zones.mi",
-      "bytes": 250834,
-      "sha256": "105fdac293e3d7645b45eaf70d223b3fb595466cee31cc407d451e78bfb181c6"
+      "bytes": 252060,
+      "sha256": "8b168b69940a7265f7195bc96b0e260543b3771a1ae45e4112a5af025a5e6151"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_king_of_the_hill/evacuation.mi",
@@ -2579,88 +2579,88 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_lakeside_airfield/ammunition.mi",
-      "bytes": 241985,
-      "sha256": "ee9360235e515442c43165bdfe7b899ce496b9633f7002922e43cc5decb8a637"
+      "bytes": 243211,
+      "sha256": "7543c5c1eef02718a9e048c6109b64222aee3b70cc0fdffb1236cfbe041cc8a5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_lakeside_airfield/battle_zones.mi",
-      "bytes": 231709,
-      "sha256": "5527b79ca84114b6d58d14bd54575b2055c770940d71acde3812fd9c2988241c"
+      "bytes": 232935,
+      "sha256": "6cf28856c74b0e2ee512822bf6b50455114d94d6aed56a01adcf557aa21638bf"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_lakhta/ammunition.mi",
-      "bytes": 240314,
-      "sha256": "7c5b132c535d286a6cdaf9aac85c76d881a82ef4d18e5dab62b43a6acf93bc7c"
+      "bytes": 241540,
+      "sha256": "32670933f174583eb2f1b744d38bdbdf305308608ddccc0f891b2a2ba17c6a8d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_lakhta/battle_zones.mi",
-      "bytes": 235040,
-      "sha256": "ee15da251d50f89ccf9dd046b16edbcf253bb7ca43e69ea6ad9c3da3eae4c841"
+      "bytes": 236266,
+      "sha256": "1105fa6c23df37e354313c4d2b50fe6b282f2b30673b4a51119c185de3def9f7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_lalobbe/ammunition.mi",
-      "bytes": 366579,
-      "sha256": "1edf13b13020d900e8a7c7de1641ec9cea38792185264c25362a70f2e7df4cbf"
+      "bytes": 367805,
+      "sha256": "37fab51f8a22e93020ce30a200257dc7f67e8952a1372224f9bd2de38e78679f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_lalobbe/battle_zones.mi",
-      "bytes": 358141,
-      "sha256": "88647befa8db2cb2fbb5cbfc5902fc9208c8d4bb60133fea238d72bc040e598d"
+      "bytes": 359367,
+      "sha256": "fe2e90c97d0bf89223d7134b989d36472749bdc599daf707443813028227b733"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_mikli/ammunition.mi",
-      "bytes": 256394,
-      "sha256": "f2c192303ff42da4796206a487a18817f8bb72a436606b446e64286a0d7d085f"
+      "bytes": 257620,
+      "sha256": "33de7b8813e9799001833a602a2f98557b0b721df506aa7499f8a5ff0809e79b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_mikli/battle_zones.mi",
-      "bytes": 241889,
-      "sha256": "e4fdf2e47de1b8e4dd0ea4b2f0b0dd8e44c385842d8f6b49fc33ab50df930730"
+      "bytes": 243115,
+      "sha256": "a3554dc33332c541ff424a152891aedef7aedc9eccc65a568c52e5cdc2a694d1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_mont_cassel/ammunition.mi",
-      "bytes": 242995,
-      "sha256": "d302089b3f448ffb4af24c9a4379f752e4a0c197195a56dad174ab3ecdd65954"
+      "bytes": 244221,
+      "sha256": "ae47dfad1880630b8429434c27254ff864c5cf8da248658e3181ab8abc3edd30"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_mont_cassel/battle_zones.mi",
-      "bytes": 244476,
-      "sha256": "e8263e56eafd877cd219137c4ab8ad2adcbc35fa709d5b3476520ffca23a7218"
+      "bytes": 245702,
+      "sha256": "a86a232f0df05ebc7d3b77d8b31368d9d289f3e0644008a2cd9757212eeacc7d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_mortain_station/ammunition.mi",
-      "bytes": 252026,
-      "sha256": "e78e22cf1561ab6be247476fc0a2ea397ab767a139e2e4bdc16483a8a1881e48"
+      "bytes": 253252,
+      "sha256": "08dd524130f062f726b4411ce80b6c1c4cfcfc02836fc00e2e8629a6222cab44"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_mortain_station/battle_zones.mi",
-      "bytes": 240323,
-      "sha256": "6c7e01c14d9ae98b636ab9ab2905d0f1f1a448482fb423cf1fdf70d4d3f6c6b0"
+      "bytes": 241549,
+      "sha256": "66fd92d52e463bc9f86639692e6132cba922bdf73a2bfee6c4d2803dab6e8348"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_posenov/ammunition.mi",
-      "bytes": 251080,
-      "sha256": "bca9d0b7dd81b594e41fbd1c821bf7e014579326e1710fab0c45f4130fe8087c"
+      "bytes": 252306,
+      "sha256": "e92f9e9aa21eebff6fe0e973cbc9a291be99a5886a6edcd6e5bc589aae675934"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_posenov/battle_zones.mi",
-      "bytes": 243062,
-      "sha256": "f53cb05436bcc49ae023c0cf559c0ef71e0887cc6359b4711c4cd0d72aeed426"
+      "bytes": 244288,
+      "sha256": "105e117a2d46d8b070693805451981dfd50f27dc9d235ce21b0e0ea6deb4fdc7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_radusha_airfield/ammunition.mi",
-      "bytes": 340462,
-      "sha256": "7c40efde35afa5c4ebd38ee1de25252d3deb6a6c81530f114c98cc4afd9db928"
+      "bytes": 341688,
+      "sha256": "9c7374af16ac966ecce7d4646fdf49682428e5315612bc6dadabf2d916bdc5a8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_radusha_airfield/battle_zones.mi",
-      "bytes": 338800,
-      "sha256": "c490c682f61f62887893beb2856ecc1f97b995a4faa1d766c2bf743c4195fcde"
+      "bytes": 340026,
+      "sha256": "4ac0d78561f9f1def35e199fda8d9ae4ff287195350047fd13248e05b8799447"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_ranes/ammunition.mi",
-      "bytes": 250430,
-      "sha256": "3b62d3d71bbdd1a1112139537efa44444ff082720cf5dc11410f5aae323afcdd"
+      "bytes": 251656,
+      "sha256": "8a19db313cfafc2f10eb0eb1db3762345bc8899be9f69d6d685311124a246748"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_ranes/battle_zones.mi",
@@ -2669,63 +2669,63 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_samree/ammunition.mi",
-      "bytes": 450819,
-      "sha256": "c641f24473e0def2c72a9cfa19934157fa173a70ce7946616e6e11c264284fb4"
+      "bytes": 452045,
+      "sha256": "f0504ddf40e8a313d1af1e300a527a4178769ea490a082f0a28d760204c32b00"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_samree/battle_zones.mi",
-      "bytes": 436335,
-      "sha256": "87f7936ef9eb5e69fde47d378487008602039e3246929673b45687bb03e5db5b"
+      "bytes": 437561,
+      "sha256": "cd6d9cdfc765d5043965fe1c770ce4bd645a34d36610102e148dfa07545db1f0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_sopheke_quarry/ammunition.mi",
-      "bytes": 254109,
-      "sha256": "56e7fd4ad81d1bbf75c6dfb448cdd7b20a5637c0e80a9726c92c1492bc59bbc4"
+      "bytes": 255335,
+      "sha256": "8af6a61d7cabdf323055b54b534d360bc0ae627222dde6639376fc8c9c2fac7a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_sopheke_quarry/battle_zones.mi",
-      "bytes": 249368,
-      "sha256": "677a11b431e10da18c87e68f3a8d40e52d9d4e02c16774f52f09ef9c4c3e5529"
+      "bytes": 250594,
+      "sha256": "b94c7554ce74e10458790e94695143e0b36d4293faa9eae725fa2885e792b713"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_steppe/ammunition.mi",
-      "bytes": 254370,
-      "sha256": "ed5a98989a9be6683261ea3e94ba83009cec9a4fb7958569b0bfc8fa3efd229e"
+      "bytes": 255596,
+      "sha256": "7a3efff1fb893c0f605190aee1a4982ec0b26a0655490ba1c700f6c712f6d8f7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_steppe/battle_zones.mi",
-      "bytes": 239534,
-      "sha256": "74fcf72f5a769d2fdd206d0233c7e9844cee2de3e32687e89d56a3ea34e4e8a2"
+      "bytes": 240760,
+      "sha256": "aeddfa9d91a7778e7566f485f9dc85cb027feef4c02d44ee5716e8c03c60d1f6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_trenches/ammunition.mi",
-      "bytes": 269361,
-      "sha256": "194558dfca9e7215db25318960ea33630946d1039185f95fe7c0b2902fc2c2cf"
+      "bytes": 270587,
+      "sha256": "7feddaa8a8f2db437c0d794bff4962ddd9936e463e4e478f93e65081de1c284f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_trenches/battle_zones.mi",
-      "bytes": 265945,
-      "sha256": "efe7c1ce23391615dc2b40bd5e70c1b384bf5aa53c9a7c503d1e1082aa327f68"
+      "bytes": 267171,
+      "sha256": "f82b6186ae3621badc6a868baa8e6c0ae2ce93155f6c1c3f74b7f1bc9296d9ac"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_voronezh/ammunition.mi",
-      "bytes": 266580,
-      "sha256": "ead4378df0cf75b11369f9a3be615b6cf0fe05d1ce4ca7c9e44139be190c91a8"
+      "bytes": 267806,
+      "sha256": "fada3b6ef6080ac4958dd129970a0a0fc21635c419f7dfa4217cfbc46e38479e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_voronezh/battle_zones.mi",
-      "bytes": 265510,
-      "sha256": "a3121137d5a66f1bcf4ae7d032ee1ffe0722c39d9583d3750a6ba4d5d26bb0f3"
+      "bytes": 266736,
+      "sha256": "f6c235a5fb6ce604a9813e1d5e8b67438381abda6db2ebc2ae35b6a7a0b3380e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_wotan/ammunition.mi",
-      "bytes": 282077,
-      "sha256": "5900b30c7b7cde9a18e510a1cdd637c5352ab90ac026ba9696a6d7978d928d88"
+      "bytes": 283303,
+      "sha256": "01c71fb769295d3d3c6d2aa281608e23a82ceb432a6e9a9274949bfa9237c810"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_wotan/battle_zones.mi",
-      "bytes": 268549,
-      "sha256": "2e931e18b33145e750c1e83495825b1346b3ebd4d7726c807fb11d8cd88560ba"
+      "bytes": 269775,
+      "sha256": "0ef74202dceccf252a3b2492450ce9000e1e75264afa3412afaa201f51a12055"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_wotan/evacuation.mi",
@@ -2734,23 +2734,23 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_zeeland_sum/ammunition.mi",
-      "bytes": 242680,
-      "sha256": "73b5f61433ad34c8592156c04d150ca0aa4b2ba25df4aab16eeed00c98019ced"
+      "bytes": 243906,
+      "sha256": "61ff04f35cdd3485c039636699e1ac94d6ecdde0bb0054c1db055043be2b1b10"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/3v3_zeeland_sum/battle_zones.mi",
-      "bytes": 242058,
-      "sha256": "dd2bde3af5fcc72b706909342c51c5b69726e02e26997fba5823ea87ac29ae4f"
+      "bytes": 243284,
+      "sha256": "e95dced70ed0774e84cab02e0fd90d0bd9662210f40c7a25ac05efbd51b0a066"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Rikila/ammunition.mi",
-      "bytes": 258552,
-      "sha256": "6d75b18706b2d39f29d38f0f40dfd9b722bfffc0e29438bb712fe71c493751e6"
+      "bytes": 259778,
+      "sha256": "4abbddcbe5ff5f061dfb10497ec8f6b8220b75a51c02ec889f43999509d97397"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Rikila/battle_zones.mi",
-      "bytes": 245243,
-      "sha256": "0fd0104ac4f0c2555eaf0da4d8de9451ae0157b1c10a881f24f191546be04315"
+      "bytes": 246469,
+      "sha256": "978cce125140ac909a124db1c172ba6416ebc683d8efee12c6266fe8bfec2a7c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Rikila/evacuation.mi",
@@ -2759,13 +2759,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Sikovitsy/ammunition.mi",
-      "bytes": 309110,
-      "sha256": "1a4cb22889363fc56424a18f075a9c0ee068a0666db9da17961d28ec4e818f1b"
+      "bytes": 310336,
+      "sha256": "f10e0de2cf49fc5bbc906fe016f7786e71c278d0fb744f77c3b6ee269ab4f791"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Sikovitsy/battle_zones.mi",
-      "bytes": 300274,
-      "sha256": "ebecedd4889ce8e5140df8618a4edc71c5dfe5e2fdcc5a4f522cd7d090f67e1c"
+      "bytes": 301500,
+      "sha256": "9c2ddaad308cfb0d5d7fd9b7b72366002675c9487fdb7c26f7109cad9101cdd2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Sikovitsy/evacuation.mi",
@@ -2774,13 +2774,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Vahikkala/ammunition.mi",
-      "bytes": 351388,
-      "sha256": "0b8b0548e555026f3e4e3b1b18cc8adde37217cc93c83654079bbfb2d34c5d7b"
+      "bytes": 352614,
+      "sha256": "7ae68ecb9984abf53d457ac5101007e4187b4becb2c8c4a539ddfd8f4563e811"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Vahikkala/battle_zones.mi",
-      "bytes": 340674,
-      "sha256": "be216b2480ff270e5c24a6e986f579b9abc15790b35c0c70c324b761dd87b6ed"
+      "bytes": 341900,
+      "sha256": "e6406abfc36d79ef756e9a597d6c98a5405619644975e5bb584492dee1fd1043"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_Vahikkala/evacuation.mi",
@@ -2789,13 +2789,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_arras_countryside_sum/ammunition.mi",
-      "bytes": 262324,
-      "sha256": "62dca646d831e1135d861404086010af481a43971b1dbe7a7b4e826fc54ac411"
+      "bytes": 263550,
+      "sha256": "5d758e6a4780e02754a6771c3d6fac7b4a404403604420d0346bc2280f1fd31e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_arras_countryside_sum/battle_zones.mi",
-      "bytes": 267172,
-      "sha256": "11e941dc1d388bb57290437d97a4a04ca4d644ad9fd7a156da49b0a662a0fb3f"
+      "bytes": 268398,
+      "sha256": "e50cecc7bd2feab47c65ce5ac92227647fa2106262a0dacd7ac8a6f33ac8d5e5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_arras_countryside_sum/evacuation.mi",
@@ -2804,13 +2804,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_dubovka/ammunition.mi",
-      "bytes": 322634,
-      "sha256": "6e48a4fe0ebb1f22d991e2630a0228c2e615eaf0cb6ce776ae6e9ce75b2b0294"
+      "bytes": 323860,
+      "sha256": "62566fa7d9d947c4769a5afa797d2636c6cb07ba426a319b39a16f8024ca1e60"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_dubovka/battle_zones.mi",
-      "bytes": 316113,
-      "sha256": "1aad47a7a76c05922d50700263d4d8372b9d77a9036e361059f96c4259658d4d"
+      "bytes": 317339,
+      "sha256": "155ebf0ed7d35681b000595586c7a6a92ae210597ad2b9d39c0910b39a53ab2e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_dubovka/evacuation.mi",
@@ -2819,13 +2819,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_eindhoven/ammunition.mi",
-      "bytes": 256152,
-      "sha256": "ecb0d70324ef7edcace779b79a70b270824b3833f54b23fe81458d29cef3ea87"
+      "bytes": 257378,
+      "sha256": "33f996849f91a5369cf81d01a172b5051eaba43ae06490d6f216015acca946b4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_eindhoven/battle_zones.mi",
-      "bytes": 241747,
-      "sha256": "26b07b0ca398cd83dfc704bbfcb1911772bf55aef5311e1a0794e1a4a891ad32"
+      "bytes": 242973,
+      "sha256": "12ed6cb2efbf28f7458003e8875dacd1e6a83ac4d7ff246fb0f3e400ca5c9c82"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_eindhoven/evacuation.mi",
@@ -2834,13 +2834,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_fields/ammunition.mi",
-      "bytes": 246403,
-      "sha256": "20369b23f032421a98fd9d7437a1649aae12543401c99afea387c6af52e0676f"
+      "bytes": 247629,
+      "sha256": "3b36cef080cc48d4b2612459a0bea516f1236822e01402acc76c29a5615dc267"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_fields/battle_zones.mi",
-      "bytes": 238341,
-      "sha256": "88d52a2a7a07d0b657aa066735b805e2629d032bc32e67db8ed3725d8eee1f6a"
+      "bytes": 239567,
+      "sha256": "e7846bae856acb191fa5cbb344dab988e58e3c1a5e926c886a2f1407c35ed2f4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_fields/evacuation.mi",
@@ -2849,13 +2849,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_grassland/ammunition.mi",
-      "bytes": 263241,
-      "sha256": "308225bede047394ffd8d20a75ee6d0f3920f343952fa81343846ee4d0743679"
+      "bytes": 264467,
+      "sha256": "9b46e046aecfb3e31caa296660a37746be1a4b19a311834f70fddfe9f174bd71"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_grassland/battle_zones.mi",
-      "bytes": 246418,
-      "sha256": "467cfc907c5cb3de4fe1bfcf3256aea377aaef209195d256d77b757a5deec800"
+      "bytes": 247644,
+      "sha256": "99030c2741a7a2a63c0dcd6c6291bf87855a50b6a6570d8f6863dd35ec5cd439"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_grassland/evacuation.mi",
@@ -2864,13 +2864,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hanhijarvi/ammunition.mi",
-      "bytes": 258840,
-      "sha256": "e41c374654e25d38d06be9bf71b3ab53a9b6cabde1116dee9a4d4760179ffbe2"
+      "bytes": 260066,
+      "sha256": "8d6cc4cfa312152c74a6b40869ff04bd81f469728a5c1e193174e842e4e5e64f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hanhijarvi/battle_zones.mi",
-      "bytes": 243938,
-      "sha256": "15ae100cf22172b9889df021f21c472cd3904d331d3a5124d1c16667ba4add62"
+      "bytes": 245164,
+      "sha256": "bcdec9ce9fd672388b1e501bc8eafaa35741317ad683be8b0a2b85b0a7ef7836"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hanhijarvi/evacuation.mi",
@@ -2879,13 +2879,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hill_331/ammunition.mi",
-      "bytes": 335409,
-      "sha256": "a8db11e1f1b2b60a82de016075bcb92300f037725d1641748f88577ad406f0b6"
+      "bytes": 336635,
+      "sha256": "2b988c89eef3f80c59bb0d68516f5ed5de7804226b1634ee75f546ffbfd2ea5e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hill_331/battle_zones.mi",
-      "bytes": 328553,
-      "sha256": "87abb1d09cab98defcf74123da316f315cfe471f032405fb800202fa58ef797f"
+      "bytes": 329779,
+      "sha256": "50063083cea58d6fdcc48d502a2e770a729268a46d130491f8f4df219bfa2594"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hill_331/evacuation.mi",
@@ -2894,13 +2894,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hills/ammunition.mi",
-      "bytes": 349845,
-      "sha256": "e1fa74c815eb33ba43e747f2fcf9005e5306188a146cbd21d83bc5e29ccb0cab"
+      "bytes": 351071,
+      "sha256": "9be176c870bcd7101af6363cb1513fe16ef21f0462dfdc7c74f631d1e1fb29c9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hills/battle_zones.mi",
-      "bytes": 342548,
-      "sha256": "06166e022d7fd0ca0bf7cd2204fd527a6b7a4ea2c6b6e40d09788b4a84cfdc62"
+      "bytes": 343774,
+      "sha256": "ea7996d24d8a9512864f570c9f104fc5af1cf799a222db9972ec318063d08b9e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_hills/evacuation.mi",
@@ -2909,13 +2909,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_houdremont/ammunition.mi",
-      "bytes": 302839,
-      "sha256": "52dbee35607878a2135c36d5139a23a457e350f5ded5e2a4a1c6d9e42dd167e8"
+      "bytes": 304065,
+      "sha256": "f8953e36bb71dd20cbdafb403559a3f0cee07b28eb27b5b1c663274c4e5efd2c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_houdremont/battle_zones.mi",
-      "bytes": 303794,
-      "sha256": "1d0dd79df8d4fae919fcedb805af4fc81c474ebdb496ec7ca081ce5547f60d9c"
+      "bytes": 305020,
+      "sha256": "14dc60c370059a44e9b23683d56b290f55c4cd0450777c6bcc2a307880f8a6d2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_houdremont/evacuation.mi",
@@ -2924,13 +2924,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_kirjavala/ammunition.mi",
-      "bytes": 347621,
-      "sha256": "1a86b8d3d7f214c50439416891131b2cd493b73fa9f9fb928664a37446ffecda"
+      "bytes": 348847,
+      "sha256": "a7f9cacffea805fc8772dabf5da10f46b0c59119f18f735c4c9147e8cf1ac315"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_kirjavala/battle_zones.mi",
-      "bytes": 338727,
-      "sha256": "19694f6ebd70b531faeacadce4e845b915a77d0b9762c2dc5aa6e7554c09fa36"
+      "bytes": 339953,
+      "sha256": "7640f35526e0fadd78e7f33f72e73020650c5b8399f814373bd17661f9c95e72"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_kirjavala/evacuation.mi",
@@ -2944,13 +2944,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_kylmapuro/ammunition.mi",
-      "bytes": 252210,
-      "sha256": "822de7f8074eb16e21e7f89825166eb31177a259c6b65a4646d5818f40db8db8"
+      "bytes": 253436,
+      "sha256": "c1df1e0ad9312a9c4532b6a5fe4a94eb048e1c365473315686bc8d63c0b26541"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_kylmapuro/battle_zones.mi",
-      "bytes": 237556,
-      "sha256": "7e666dcbe33d98b1ff4c54823f7c5af7c46f17faadc707337e8c9ce909036d8f"
+      "bytes": 238782,
+      "sha256": "d7c28a7f55ac9cb5485f80224d0f320d674adeee58be6cdf43fd775614938ef4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_kylmapuro/evacuation.mi",
@@ -2959,13 +2959,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_lysovo/ammunition.mi",
-      "bytes": 297547,
-      "sha256": "8692100aa7e397eae2058540aee773d01daa578d8cb2e51f3070a1edc3dae338"
+      "bytes": 298773,
+      "sha256": "3a3f1ab7533e6e59e3f16b41fc81e10cf9a9ddc1be2cde7a890ae05fbfafa3ba"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_lysovo/battle_zones.mi",
-      "bytes": 285841,
-      "sha256": "6509dd7def4cac8e0febaf43f683043a06afe09b8a7e78ca7c0f338d14b5badc"
+      "bytes": 287067,
+      "sha256": "b2490dd04f63758f47c98e49bdf05d4a43701e496a931a29df2f974332be0643"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_lysovo/evacuation.mi",
@@ -2974,13 +2974,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_martinville_ridge/ammunition.mi",
-      "bytes": 242968,
-      "sha256": "6dfecce4051c6adb26e6caeb33f660bdaffcd8c08497b2d8967e5f283c755bcd"
+      "bytes": 244194,
+      "sha256": "5048d6630da7d882035264e87e61a9cba30ffe9000586fdd65dde453b5a0febf"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_martinville_ridge/battle_zones.mi",
-      "bytes": 236453,
-      "sha256": "47152047aeb6adcc7847f7d76bcc431358f957d918b3bdecc5bc74d26259f6fb"
+      "bytes": 237679,
+      "sha256": "6094320998e7bfffeaaebd2665c65449acd3906f16e4bb505e27dd2461261530"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_martinville_ridge/evacuation.mi",
@@ -2989,13 +2989,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_niemen/ammunition.mi",
-      "bytes": 253529,
-      "sha256": "32118bf2466a70437ba6817a8489291ec344e008c9a5a15d9d60e86df8158823"
+      "bytes": 254755,
+      "sha256": "fcfcbae3c39a1a0b6bd45837e27376bb084d0ff1f2133613f6b7fb0c95dbe04d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_niemen/battle_zones.mi",
-      "bytes": 248078,
-      "sha256": "bd25bcf232dcd0d448e3951a1d6658656996bbe750d96db8bdfeb14955611570"
+      "bytes": 249304,
+      "sha256": "81a951c5d3a8f043f4c96e20c4396aca6fd5462c5777349312f2f2bd62f3a280"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_niemen/evacuation.mi",
@@ -3004,13 +3004,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_olkhovatka/ammunition.mi",
-      "bytes": 252534,
-      "sha256": "6ebf7d4ca72524c9e70bfefce2d3183e9db322f5bc84ffda7e21b23f6847b483"
+      "bytes": 253760,
+      "sha256": "eaaebb0b115ca308dcb3cf24607674cc4000e1cee9d473dce3ebcf109b8c0522"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_olkhovatka/battle_zones.mi",
-      "bytes": 234244,
-      "sha256": "8d0a6fadf8c92c2c2d5dd270f4679d56653ed353f17dca61d0e860dff4ded995"
+      "bytes": 235470,
+      "sha256": "d7f9ad501d7a31a0a65c02c459b8d35f492dad0622d0622852c8d1423e8b485c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_olkhovatka/evacuation.mi",
@@ -3019,13 +3019,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_purple_heart_lane/ammunition.mi",
-      "bytes": 259413,
-      "sha256": "8572aec756bbfa1882752e74135196c2aad7b77d99ece5fbfd2e929ce2909896"
+      "bytes": 260639,
+      "sha256": "851849f1ab618f778336d56f607ea20c0939eb0fb5755e4030f691a40d947380"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_purple_heart_lane/battle_zones.mi",
-      "bytes": 253437,
-      "sha256": "88c839e3ce6a31f6ce4b619a7f1997006d51239354802be47a8b72b5ef4ee9e5"
+      "bytes": 254663,
+      "sha256": "38d32df435c425d5e985eedb65c0902deaa199a5aba52e3d40a5f9a873a5dd52"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_purple_heart_lane/evacuation.mi",
@@ -3034,13 +3034,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_remagen_aut/ammunition.mi",
-      "bytes": 289463,
-      "sha256": "69df7824c14c4f06af637ebbff217d148010ec50b5dd74f4a6e56e8100956189"
+      "bytes": 290689,
+      "sha256": "f064b38e9a7ee8a1cdec01152b8e78faa10bdeb07ad05f1fcce3901c72ce3f79"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_remagen_aut/battle_zones.mi",
-      "bytes": 291993,
-      "sha256": "453010ef1ca4675006818ac1f68e8229f3a6cbd7dd0474787b82c432da2e130f"
+      "bytes": 293219,
+      "sha256": "b04bf353ae6eb641716711b7b992000d1e0c9633c6dce8180531d95f9f6673f3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_remagen_aut/evacuation.mi",
@@ -3049,13 +3049,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_schoppen/ammunition.mi",
-      "bytes": 343893,
-      "sha256": "20b691cca479ccf434cc8ff9f0468dbfeebe0712ef7443f57f10a50a5a438f5f"
+      "bytes": 345119,
+      "sha256": "039cd585657fbae698b533baf422b5d5765740706484fe5c5cb7f197f299f9f2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_schoppen/battle_zones.mi",
-      "bytes": 345941,
-      "sha256": "36672530704dce73a6b470e056f75f005d6914c43e463da883162577cef26ffd"
+      "bytes": 347167,
+      "sha256": "6d0a524de9b347c390a5af038f7c4ab50f590edf7da18ec8cfe46777ede72007"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_schoppen/evacuation.mi",
@@ -3064,13 +3064,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_shiryayevo/ammunition.mi",
-      "bytes": 267681,
-      "sha256": "f26217a53b4a7ecb6e240cccb58844f720c14b1200cf4a22b208d5d45894c326"
+      "bytes": 268907,
+      "sha256": "3953b570dd781f9843e781dfa2bdc1e7f3f56a8e2551ce3fbde3ab2f46e61d9e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_shiryayevo/battle_zones.mi",
-      "bytes": 260762,
-      "sha256": "9f1ea90acf3214166696dcd5dea8cfe938f602bf123771404f55db3e3e9e3f81"
+      "bytes": 261988,
+      "sha256": "b527b2c860e0e2bac2bde87727f819c0d4979e040ecdb50e36e0de1d7714b75b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_shiryayevo/evacuation.mi",
@@ -3079,23 +3079,23 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_swamp/ammunition.mi",
-      "bytes": 324405,
-      "sha256": "44b33ee0397edd11399b30c6c0206f32d5a25508844f02cdca21d7351ab5e305"
+      "bytes": 325631,
+      "sha256": "4ee6fcb8105ac8bafb4704c29b65b88ccc15c32514f5198997ecfef17c005160"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_swamp/battle_zones.mi",
-      "bytes": 313957,
-      "sha256": "8c8cc33a13ebc98b1417f7d9dbfd61794290b29011b2cc712c357044431764db"
+      "bytes": 315183,
+      "sha256": "db8828be67dab9b07f17fa4c97c779e769b3ccf63fb80593ce862ae7a80e5690"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_vitebsk/ammunition.mi",
-      "bytes": 247031,
-      "sha256": "35442289d4941652915ca1734a1020e3b8205fb0588c6b8577f65f0445ddfc74"
+      "bytes": 248257,
+      "sha256": "704c140738c2070ad45abcde03dda13dce4a28cf63806bbb1a0a859b3c1a8287"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_vitebsk/battle_zones.mi",
-      "bytes": 246145,
-      "sha256": "cc1d90d9241eb26134e6088135a575295b962d3fba14aabbc2efdb561d7d9e4c"
+      "bytes": 247371,
+      "sha256": "d36d30fcfaf65b4e7def08115ef978c991eeab9cbf306720694b5efb022fc117"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_vitebsk/evacuation.mi",
@@ -3104,13 +3104,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_vlissingen_breach/ammunition.mi",
-      "bytes": 304452,
-      "sha256": "2ee5f96d6fc43b0243568934729776bdc39a37a8fa821bedce8f53f0cac92d22"
+      "bytes": 305678,
+      "sha256": "242f3fb1648acae2cd0d01f88b277616cdb2276654ca4b78da93308c44634ab8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_vlissingen_breach/battle_zones.mi",
-      "bytes": 304989,
-      "sha256": "3171c6bf19d58eaa986a949f75e6946c14504872aa9f140e497b21cdf452d365"
+      "bytes": 306215,
+      "sha256": "8b616cbf5c09c4ac88f0435e7a63dc1dbf41c716ba9998271bc4eecf319260e3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/4v4_vlissingen_breach/evacuation.mi",
@@ -3134,13 +3134,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/HF-dcg_script.inc",
-      "bytes": 324766,
-      "sha256": "3f0a6ae966c0ceab797aafd918c204cd7f092fa8fcdff38784901d88727e2954"
+      "bytes": 328910,
+      "sha256": "90ab58839398572abb59625cbbd1e9b9d6b6f54facd7e4a5019eb1264d3045f2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/dcg_script.inc",
-      "bytes": 471559,
-      "sha256": "78095befa4027c8d3c581d69716d7d4779c919fd4ac583d254743edc114b11dd"
+      "bytes": 472156,
+      "sha256": "af1785ee655752850e125ee44ccbe143ad993007eaa16ebafa355e1c01727e27"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/map/multi/ufb_crew_safety.inc",
@@ -3184,8 +3184,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/modes/battlezones.lua",
-      "bytes": 14305,
-      "sha256": "578dbfbe29569e727cc26c9f9fe0ff08cca37c127fa6dff5003f30a94e285d7b"
+      "bytes": 14906,
+      "sha256": "b46194686f0130c80e1c25eedae624e6c145f304e9b62188704e2079e7c546fc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/modes/conquest/orders.lua",
@@ -3209,8 +3209,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/ufb_order_guard.lua",
-      "bytes": 2177,
-      "sha256": "9a7bac6756f69a3659d6f0b57ddbf0441e52e6de3661203bab137bf2600273f5"
+      "bytes": 2317,
+      "sha256": "a07126fcdfdf8c9826e6df0b7ad8582058280d69d92b9b808c475b51ca2d68ff"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/ability/veterancy.set",
@@ -3338,29 +3338,39 @@
       "sha256": "95fd4eced44dc3a3b70a8277d0caa48c87f8a1f7cbd086afbf622ece182d721c"
     },
     {
+      "path": "mods/ultimate_frontline_bundle/resource/set/squads.set",
+      "bytes": 2205,
+      "sha256": "673b2ffafbb91869c9b3acad3f139a1eebbbffe44892253ff364fa730ea0ff3c"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/.presets",
+      "bytes": 947,
+      "sha256": "21f565c894a291b8c602aa99c1f70ce393c2fa3f54b56885201602e0d97b4866"
+    },
+    {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/faustpatrone_30.weapon",
-      "bytes": 765,
-      "sha256": "20b183985e8f0622918096f736e33e425e9f81bbfd6d322d702d11a67a87e96b"
+      "bytes": 1132,
+      "sha256": "b92891aa6ba16b521d8051504cffd324a8ed950d1b42462c2d3374e3aa9b4596"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/panzerfaust_100.weapon",
-      "bytes": 765,
-      "sha256": "18f95fd13026f3fabc6897f229f4cce97ae7161f1500c2b12f243d0801487d9f"
+      "bytes": 1132,
+      "sha256": "47d1bf22dcb5451ec85606152c6ff21379543725792a7335f66961545bfb6116"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/panzerfaust_30.weapon",
-      "bytes": 763,
-      "sha256": "c55378d5fd84728a014fc72a5d05f322045cdfdb0ba92dc8cce0e84200e8fd46"
+      "bytes": 1130,
+      "sha256": "e2658dbeb4d527d2afff778f234d32b231af203fd129d5564d1b5ab39bb23641"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/panzerfaust_30_fin.weapon",
-      "bytes": 771,
-      "sha256": "d8ac3f136a43087445ebbad3535c5d459fcd0ec8f880f5e15babede1ecc53b10"
+      "bytes": 1138,
+      "sha256": "ff739767daa85392a94f3ae12cc3542abc5c9b2d6eb0983d0f31d7cedbd7d21d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/panzerfaust_60.weapon",
-      "bytes": 763,
-      "sha256": "b366c6700e4af4bb4627b8114a8745dc576b0447a126e2f6341b4004f11364f7"
+      "bytes": 1130,
+      "sha256": "d34562566a028fd97e25cfe05ebdedd04964c8fc26a2bf13f81fcd1503f41748"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/piat.weapon",
@@ -3369,8 +3379,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/recoilless_m18.weapon",
-      "bytes": 1068,
-      "sha256": "47ff42156288e12061be6c58f7d7d429e6efed7461d7631d47b8142c1686b938"
+      "bytes": 1440,
+      "sha256": "ce38ece55e6127d22efe0bdb844192bbf387700eabfc3736f36d5fd06b287576"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/rpg_weapon.pattern",
@@ -3989,8 +3999,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/20mm_lahti_l39",
-      "bytes": 1121,
-      "sha256": "5547863e63ea20b136d2f6c6dd0588d8e98e8fbd975d1fbe23b8059c70ba5678"
+      "bytes": 1648,
+      "sha256": "e74fccce1671d96de0ff404f1dfca14b08e8d8f2ec5c759de63ecd10e41c74c5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/20mm_oerlikon_mk1",

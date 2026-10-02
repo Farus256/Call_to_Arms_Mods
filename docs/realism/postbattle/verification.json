@@ -1,0 +1,20 @@
+{
+  "resources": 300,
+  "assertions": 1072,
+  "luaBehaviorChecks": 42,
+  "oldFlagBugReproduced": "[string \"...\"]:87: back flag preference never released",
+  "log": {
+    "mission": "multi/3v3_wotan:battle_zones",
+    "fatalExceptions": 0,
+    "cleanExit": true,
+    "invalidStatsActor": 226,
+    "invalidStatsActorFollowedBySpawn": 226,
+    "callerNil": 260,
+    "missingMaterial": 17
+  },
+  "limitations": [
+    "Mocked Lua API verifies decision/control flow, not engine pathfinding or visual behavior.",
+    "The successful battle log predates this package.",
+    "No game/editor was launched."
+  ]
+}

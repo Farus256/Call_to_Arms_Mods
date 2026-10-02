@@ -10893,7 +10893,29 @@
 										{tag
 											{tag reloading}
 										}
-									}
+									
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+{with_item {type amount} {item "flame_thrower"} {min 1}}
+}
 								}
 							}
 							{enemy
@@ -10931,7 +10953,7 @@
 							{distance
 								{mode in_range}
 								{min 16}
-								{max 50}
+								{max 45}
 							}
 							{detection visible}
 							{tag
@@ -11072,7 +11094,29 @@
 										{tag
 											{tag reloading}
 										}
-									}
+									
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+{with_item {type amount} {item "flame_thrower"} {min 1}}
+}
 								}
 							}
 							{enemy
@@ -11110,7 +11154,7 @@
 							{distance
 								{mode in_range}
 								{min 16}
-								{max 40}
+								{max 60}
 							}
 							{detection visible}
 							{tag
@@ -11251,7 +11295,29 @@
 										{tag
 											{tag reloading}
 										}
-									}
+									
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+{with_item {type amount} {item "flame_thrower"} {min 1}}
+}
 								}
 							}
 							{enemy
@@ -11289,7 +11355,7 @@
 							{distance
 								{mode in_range}
 								{min 16}
-								{max 60}
+								{max 75}
 							}
 							{detection visible}
 							{tag
@@ -11430,7 +11496,29 @@
 										{tag
 											{tag reloading}
 										}
-									}
+									
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+{with_item {type amount} {item "flame_thrower"} {min 1}}
+}
 								}
 							}
 							{enemy
@@ -11468,7 +11556,7 @@
 							{distance
 								{mode in_range}
 								{min 16}
-								{max 70}
+								{max 90}
 							}
 							{detection visible}
 							{tag
@@ -11609,7 +11697,29 @@
 										{tag
 											{tag reloading}
 										}
-									}
+									
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+{with_item {type amount} {item "flame_thrower"} {min 1}}
+}
 								}
 							}
 							{enemy
@@ -11647,7 +11757,7 @@
 							{distance
 								{mode in_range}
 								{min 16}
-								{max 80}
+								{max 105}
 							}
 							{detection visible}
 							{tag
@@ -11788,7 +11898,29 @@
 										{tag
 											{tag reloading}
 										}
-									}
+									
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+{with_item {type amount} {item "flame_thrower"} {min 1}}
+}
 								}
 							}
 							{enemy
@@ -11826,7 +11958,7 @@
 							{distance
 								{mode in_range}
 								{min 16}
-								{max 100}
+								{max 135}
 							}
 							{detection visible}
 							{tag
@@ -11959,7 +12091,29 @@
 										{tag
 											{tag reloading}
 										}
-									}
+									
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+{state {state linked}}
+}
 								}
 							}
 							{enemy
@@ -12019,7 +12173,7 @@
 							{distance
 								{mode in_range}
 								{min 40}
-								{max 120}
+								{max 180}
 							}
 							{detection visible}
 							{tag
@@ -12074,7 +12228,8 @@
 					{"delay"
 						{time 5}
 					}
-					{"trigger"
+					{"entity_state" {selector {tag _ai_mg_target}} {tag_remove _ai_mg_target}}
+{"trigger"
 						{name "hf inf ai/under mg fire"}
 					}
 				}
@@ -12131,7 +12286,29 @@
 										{tag
 											{tag reloading}
 										}
-									}
+									
+{tag {tag crew}}
+{tag {tag _ai_medic}}
+{tag {tag bot_medic}}
+{tag {tag tcrew}}
+{tag {tag ecrew}}
+{tag {tag ecrew_a}}
+{tag {tag ecrew_b}}
+{tag {tag _ufb_crew_safe}}
+{tag {tag _ai_ap_grenade}}
+{tag {tag _ai_at_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+{tag {tag _ai_at_launcher_30}}
+{tag {tag _ai_at_launcher_40}}
+{tag {tag _ai_at_launcher_50}}
+{tag {tag _ai_at_launcher_60}}
+{tag {tag _ai_at_launcher_70}}
+{tag {tag _ai_at_launcher_90}}
+{prop {prop crew}}
+{state {state linked}}
+}
 								}
 							}
 							{enemy
@@ -12187,7 +12364,7 @@
 							{distance
 								{mode in_range}
 								{min 30}
-								{max 120}
+								{max 180}
 							}
 							{detection visible}
 							{tag
@@ -17135,9 +17312,7 @@
 									}
 								}
 								{exclude
-									{tag
-										{tag _ai_tank_alert_cooldown}
-									}
+									; UFB: actor already reserved by this range task.
 								}
 							}
 						}
@@ -17176,25 +17351,7 @@
 					{"delay"
 						{time 3}
 					}
-					{"actor_state"
-						{selector
-							{source advanced}
-							{group
-								{select
-									{tag
-										{tag _ai_tank_range_%r1_alert}
-									}
-								}
-								{exclude
-									{tag
-										{tag _ai_tank_alert_cooldown}
-									}
-								}
-							}
-						}
-						{fire_mode open}
-						{move_mode hold}
-					}
+					; UFB: retain the existing 20m maneuver zone; no indefinite hold.
 					{"delay"
 						{time 0.1}
 					}
@@ -17368,9 +17525,7 @@
 									}
 								}
 								{exclude
-									{tag
-										{tag _ai_tank_alert_cooldown}
-									}
+									; UFB: actor already reserved by this range task.
 								}
 							}
 						}
@@ -17409,25 +17564,7 @@
 					{"delay"
 						{time 3}
 					}
-					{"actor_state"
-						{selector
-							{source advanced}
-							{group
-								{select
-									{tag
-										{tag _ai_tank_range_%r1_alert}
-									}
-								}
-								{exclude
-									{tag
-										{tag _ai_tank_alert_cooldown}
-									}
-								}
-							}
-						}
-						{fire_mode open}
-						{move_mode hold}
-					}
+					; UFB: retain the existing 20m maneuver zone; no indefinite hold.
 					{"delay"
 						{time 0.1}
 					}
