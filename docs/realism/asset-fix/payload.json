@@ -1,0 +1,546 @@
+{
+  "changedFiles": 82,
+  "addedFiles": 4,
+  "circleFrameReferencesFixed": 44,
+  "missingShadowIncludesRemoved": 36,
+  "missingWeatherIncludesRemoved": 1,
+  "ammoSelectorsFixed": 1,
+  "UIPropertyPlacementsFixed": 2,
+  "records": [
+    {
+      "path": "entity/-vehicle/+finland/car/volvo_127d_ammo/supply_zone.ebm",
+      "before": "b73bab46995c1d5c2b4df3af83a7470a7eb7d22eb73dfb230f122224940fb8db",
+      "after": "6fd2b4edd9d8fed0026e80bb47df4efc548b625d6343c013d98f52b64c15455f",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/+germany/btr/sdkfz251c_8/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/+germany/car/opel_maultier_eng/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/+germany/car/opel_maultier_transport/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_oyc_fuel/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_oyd_art_ammo/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_oyd_engineer/supply_zone.ebm",
+      "before": "575358d7720da05afc5954882add4dbedc28f7879bcfb587be425b5c02417e2b",
+      "after": "b34066f2a8420f51e5c8ad133c42f9b4875257848baea0acb9ac67f29709918c",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_qld_art_ammo/supply_zone.ebm",
+      "before": "1f74e0805d72e09319349dee96cbb6c5108a45580a52bb01b6bc0b96869db0ec",
+      "after": "fc00aba2fbb519954fca50fd09f1eab8e3d00a1f924a567a588e85d3397257f4",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_qld_engineer/supply_zone.ebm",
+      "before": "575358d7720da05afc5954882add4dbedc28f7879bcfb587be425b5c02417e2b",
+      "after": "b34066f2a8420f51e5c8ad133c42f9b4875257848baea0acb9ac67f29709918c",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/eng/trailer/ammo_trailer_eng/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_3ton_ammo/supply_zone.ebm",
+      "before": "b73bab46995c1d5c2b4df3af83a7470a7eb7d22eb73dfb230f122224940fb8db",
+      "after": "6fd2b4edd9d8fed0026e80bb47df4efc548b625d6343c013d98f52b64c15455f",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_3ton_eng/supply_zone.ebm",
+      "before": "575358d7720da05afc5954882add4dbedc28f7879bcfb587be425b5c02417e2b",
+      "after": "b34066f2a8420f51e5c8ad133c42f9b4875257848baea0acb9ac67f29709918c",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_3ton_fuel/supply_zone.ebm",
+      "before": "27d2cd01b93937e9bf8c0c65680333b1dd584a262705185477278bade081ae96",
+      "after": "ccfbd4187126e977216c0d41be5420faf3262691d7e66f6deb190635c4930cec",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_v3000_ammo/supply_zone.ebm",
+      "before": "b73bab46995c1d5c2b4df3af83a7470a7eb7d22eb73dfb230f122224940fb8db",
+      "after": "6fd2b4edd9d8fed0026e80bb47df4efc548b625d6343c013d98f52b64c15455f",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_v3000_eng/supply_zone.ebm",
+      "before": "575358d7720da05afc5954882add4dbedc28f7879bcfb587be425b5c02417e2b",
+      "after": "b34066f2a8420f51e5c8ad133c42f9b4875257848baea0acb9ac67f29709918c",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_v3000_fuel/supply_zone.ebm",
+      "before": "27d2cd01b93937e9bf8c0c65680333b1dd584a262705185477278bade081ae96",
+      "after": "ccfbd4187126e977216c0d41be5420faf3262691d7e66f6deb190635c4930cec",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_eng/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_fin/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_ger/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_rus/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_usa/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/btr/sdkfz6_cargo/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/car/blitz3_6_art_ammo/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/car/blitz3_6_engineering/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/car/blitz3_6_fuel/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/car/kettenkrad_eng/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/car/opel_maultier/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/trailer/ammo_trailer/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/trailer/infantry_cart_if8/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/germany/trailer/sdah_57_1/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/usa/car/cckw_art_ammo/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/usa/car/cckw_engineer/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/usa/car/cckw_fuel/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/usa/car/cckw_redball/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/usa/trailer/ammo_trailer_usa/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/ussr/car/gaz_aaa_supply/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/ussr/car/gaz_fuel/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/ussr/car/zis5eng/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/-vehicle/ussr/trailer/ap_2/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/construction/_military/boxes/crates_set02_resupply/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/construction/_military/medic_rally/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/service/-multiplayer/ammo_point/ammo/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/service/-multiplayer/flag_point/flagpoint_ammo/supply_zone.ebm",
+      "before": "1ecb7fddc1c5eafd5493a29149d147ca289e31e3730c1e1bdb3ed424f29a6020",
+      "after": "85316cdc272b81c30dde459ba59c9922f5df8c85a66203244df9a99997a996fa",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "entity/service/pointer/automedic.ebm",
+      "before": "e4161f021f2b9b937d25563883db98bab55f8b9de9e2d6a730570a9b5f91741d",
+      "after": "985dc0da3c1393400a9729228fb3199d1b89f9033412e5335dbb1a5557e6c7b7",
+      "reason": "Correct missing radius texture reference; retain all bitmap settings."
+    },
+    {
+      "path": "texture/common/ufb/invisible_radius.bmp",
+      "before": null,
+      "after": "d80b8fefa02691e6db599c1876069ad674be8757923817a6995a49c1f1266ab1",
+      "reason": "Bundle a byte-identical copy of the native black pixel under a private namespace.",
+      "source": "texture/fx/explosion/black.bmp",
+      "sourceHash": "d80b8fefa02691e6db599c1876069ad674be8757923817a6995a49c1f1266ab1"
+    },
+    {
+      "path": "properties/resupply.inc",
+      "before": "18fa02a1bdcd778500c4cc542a248949747b347c78a708c5b23131a314382cfd",
+      "after": "e66ff4d1371927db6ba76107a636f9151b9f8c95614be604c3f415b6d4a41856",
+      "reason": "Select dyakonov HEAT ammunition by its explicit unique compatibility tag; keep quantity and cost.",
+      "old": "dyakonov heat",
+      "next": "ufb_dyakonov_heat",
+      "quantityPreserved": 1,
+      "costPreserved": 5
+    },
+    {
+      "path": "interface/layout/pagemain.xml",
+      "before": null,
+      "after": "b744e08cad7ef91014130255eaa7ccd059298d66340be119c25979757822ad9c",
+      "reason": "Move MinSize and MaxSize from Children into their DialogRef, retaining dimensions.",
+      "source": "Horten interface/layout/PageMain.xml",
+      "sourceHash": "cd7f4ba7b4d17b7bec7df8fd5148dff643141f6bea4dbbc224c7096ac791c666"
+    },
+    {
+      "path": "entity/particle/bm_arm1/bm_arm1.def",
+      "before": "b13eb64f0cbcd77a635f0d84de2aae89db25be377bd242bedd317bd93cd1095f",
+      "after": "3551d5d4667b1818f91779dee3fbd41463baff5912d3aac3a74141878cb72048",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_arm1b/bm_arm1b.def",
+      "before": "6bd12a0fa37c9bd7aaba73fddb7528b1ad4e11266eeb454ce6c4fd13cd3026b5",
+      "after": "1c03fca2fac5e2fbab78bafc0b730b30b34bf04c91b280e1cd79932bc1d6a3cb",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_arm2/bm_arm2.def",
+      "before": "28d731430e79d96add10375809fab55f291d67e33e7ee6bfd05c998579752f12",
+      "after": "630dd99380a994d866b147d5ff453b17303e64322b1469d60cb92334b2401387",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_arm2b/bm_arm2b.def",
+      "before": "7709ac3c6a7bcf750c9a67dd60e6e3d7c1e17a835afc207862136ed776cb2334",
+      "after": "dee3bb593860a04b3ca1a30e85b51d41d0b02b8911dd78cfa371b13cb61a2e05",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_arm3/bm_arm3.def",
+      "before": "2f991c2ea153cd03ce2900da9d06667b960d846e391dcf32970360f5c613682d",
+      "after": "40ece71e0549baa20f8352e26e283c5726d41fc8ec27016e5bb027ef2fbfe0d2",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_arm3b/bm_arm3b.def",
+      "before": "2eaf9b4d67bb25cacd24e47afd0570eb3d6fc70608a789e3ba32170a2b4777db",
+      "after": "1e60ae70e40443d8e9980e96c34bae7e4457a38a60b7b53ff90e52a1adaab2ea",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_arm4/bm_arm4.def",
+      "before": "a3c988e83ec3370f80a3d9bde279567693a4bee074a21be556d58baacda514e9",
+      "after": "6b51688d01d3a30abb2ab008d40cd624915ad5c71ee8eea1ebee03a855ac7685",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_arm4b/bm_arm4b.def",
+      "before": "8b12a917874746e208ca6c0a14f4cee22bbaf55372c5c64d9eb361f862b393ca",
+      "after": "a24ddbefdcadc925ad664d1be69dd484ce1e9bec6ffd30a1f332ab40c675337e",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_chunk3/bm_chunk3.def",
+      "before": "77c949e6906c75c5847dfdadd78dd1ada002cd7a7ea6277b66cabd1cf686dddd",
+      "after": "f8a142be54b7d5061628d813b1d20a5ff3ec1f5714714570bf25423976e45f49",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_chunk4/bm_chunk4.def",
+      "before": "b46ae9c78c7cb7d999a25c3cb926d3b31adc88c54f71c37d38fa313bb15d86f5",
+      "after": "1d9311ae889e808e0353721c08ac8ffc84a4f3fe0ccb197d218077ce4f6c53f6",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_foot1/bm_foot1.def",
+      "before": "51070995f948e7d727eba68b93cc94785d8ef00122178e8de55c368661599204",
+      "after": "c4a8e4afaf7eda4d15c4cbf18e660410615d45e4881c6739ee92c235aad45689",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_foot2/bm_foot2.def",
+      "before": "c55dfe7b0c78041476a0a4f9fd6775082dc0b6963b0e77e2734a24cdf4c30b9b",
+      "after": "8183eee74bbe34c70f3426805e9884d3ba9f3eda6c3beca454e5eb3156c23c9a",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_foot3/bm_foot3.def",
+      "before": "7be27b304a37f50e9818fd2ad3307aca88fe6d6dc0b83090ce38094aa140473b",
+      "after": "5245f044bee10340e054d2d727ffef4163ab3248ad59ca498029cd36f3580f25",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_hand1/bm_hand1.def",
+      "before": "94f3d581658d0a77395a9fb8ff554d430dd06fec65098dbb687fa37b29e2a073",
+      "after": "7de86462a2dd458f800d95f364595f013c6795f555f80ea534e1b703427011d6",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_head1/bm_head1.def",
+      "before": "466032335192ca119c75546455a0fc7495596c1de2518e08daffd49b55fbc8db",
+      "after": "2b9efc9e22edc061c3341fb54dbb132e29b40270f36d38c9268f6f0104a0daff",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_head2/bm_head2.def",
+      "before": "6cabb59c7a5011fd02bb89fa92254927c4f256772801da26173034e6afd25f5f",
+      "after": "edd6c8d3a372ca21f214b39bf088fe2914d24d7ac1d4f86f0c28a54ec30de60b",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_head3/bm_head3.def",
+      "before": "b8d6f0d20364b16431ce1127b7f90d8eab43e7a570ad340cc682bb6c765feb97",
+      "after": "8a310a6aca06dbc08adf8a95cd3a73507c6015f079801ae5e2216a615a085b41",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "entity/particle/bm_stump4/bm_stump4.def",
+      "before": "1fc86a3f5d865df041e3f1024f83b2297d1b5f7b72a400238f7d605ca719f437",
+      "after": "35cd8306857bec71e730b3474925c9068a5cb3cff1e7dd7486f041af03e9d611",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_arm1/bm_arm1.def",
+      "before": "b13eb64f0cbcd77a635f0d84de2aae89db25be377bd242bedd317bd93cd1095f",
+      "after": "3551d5d4667b1818f91779dee3fbd41463baff5912d3aac3a74141878cb72048",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_arm1b/bm_arm1b.def",
+      "before": "6bd12a0fa37c9bd7aaba73fddb7528b1ad4e11266eeb454ce6c4fd13cd3026b5",
+      "after": "1c03fca2fac5e2fbab78bafc0b730b30b34bf04c91b280e1cd79932bc1d6a3cb",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_arm2/bm_arm2.def",
+      "before": "28d731430e79d96add10375809fab55f291d67e33e7ee6bfd05c998579752f12",
+      "after": "630dd99380a994d866b147d5ff453b17303e64322b1469d60cb92334b2401387",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_arm2b/bm_arm2b.def",
+      "before": "7709ac3c6a7bcf750c9a67dd60e6e3d7c1e17a835afc207862136ed776cb2334",
+      "after": "dee3bb593860a04b3ca1a30e85b51d41d0b02b8911dd78cfa371b13cb61a2e05",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_arm3/bm_arm3.def",
+      "before": "2f991c2ea153cd03ce2900da9d06667b960d846e391dcf32970360f5c613682d",
+      "after": "40ece71e0549baa20f8352e26e283c5726d41fc8ec27016e5bb027ef2fbfe0d2",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_arm3b/bm_arm3b.def",
+      "before": "2eaf9b4d67bb25cacd24e47afd0570eb3d6fc70608a789e3ba32170a2b4777db",
+      "after": "1e60ae70e40443d8e9980e96c34bae7e4457a38a60b7b53ff90e52a1adaab2ea",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_arm4/bm_arm4.def",
+      "before": "a3c988e83ec3370f80a3d9bde279567693a4bee074a21be556d58baacda514e9",
+      "after": "6b51688d01d3a30abb2ab008d40cd624915ad5c71ee8eea1ebee03a855ac7685",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_arm4b/bm_arm4b.def",
+      "before": "8b12a917874746e208ca6c0a14f4cee22bbaf55372c5c64d9eb361f862b393ca",
+      "after": "a24ddbefdcadc925ad664d1be69dd484ce1e9bec6ffd30a1f332ab40c675337e",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_chunk3/bm_chunk3.def",
+      "before": "77c949e6906c75c5847dfdadd78dd1ada002cd7a7ea6277b66cabd1cf686dddd",
+      "after": "f8a142be54b7d5061628d813b1d20a5ff3ec1f5714714570bf25423976e45f49",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_chunk4/bm_chunk4.def",
+      "before": "b46ae9c78c7cb7d999a25c3cb926d3b31adc88c54f71c37d38fa313bb15d86f5",
+      "after": "1d9311ae889e808e0353721c08ac8ffc84a4f3fe0ccb197d218077ce4f6c53f6",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_foot1/bm_foot1.def",
+      "before": "51070995f948e7d727eba68b93cc94785d8ef00122178e8de55c368661599204",
+      "after": "c4a8e4afaf7eda4d15c4cbf18e660410615d45e4881c6739ee92c235aad45689",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_foot2/bm_foot2.def",
+      "before": "c55dfe7b0c78041476a0a4f9fd6775082dc0b6963b0e77e2734a24cdf4c30b9b",
+      "after": "8183eee74bbe34c70f3426805e9884d3ba9f3eda6c3beca454e5eb3156c23c9a",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_foot3/bm_foot3.def",
+      "before": "7be27b304a37f50e9818fd2ad3307aca88fe6d6dc0b83090ce38094aa140473b",
+      "after": "5245f044bee10340e054d2d727ffef4163ab3248ad59ca498029cd36f3580f25",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_hand1/bm_hand1.def",
+      "before": "94f3d581658d0a77395a9fb8ff554d430dd06fec65098dbb687fa37b29e2a073",
+      "after": "7de86462a2dd458f800d95f364595f013c6795f555f80ea534e1b703427011d6",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_head1/bm_head1.def",
+      "before": "466032335192ca119c75546455a0fc7495596c1de2518e08daffd49b55fbc8db",
+      "after": "2b9efc9e22edc061c3341fb54dbb132e29b40270f36d38c9268f6f0104a0daff",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_head2/bm_head2.def",
+      "before": "6cabb59c7a5011fd02bb89fa92254927c4f256772801da26173034e6afd25f5f",
+      "after": "edd6c8d3a372ca21f214b39bf088fe2914d24d7ac1d4f86f0c28a54ec30de60b",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_head3/bm_head3.def",
+      "before": "b8d6f0d20364b16431ce1127b7f90d8eab43e7a570ad340cc682bb6c765feb97",
+      "after": "8a310a6aca06dbc08adf8a95cd3a73507c6015f079801ae5e2216a615a085b41",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "___high_res_textures/entity/particle/bm_stump4/bm_stump4.def",
+      "before": "1fc86a3f5d865df041e3f1024f83b2297d1b5f7b72a400238f7d605ca719f437",
+      "after": "35cd8306857bec71e730b3474925c9068a5cb3cff1e7dd7486f041af03e9d611",
+      "reason": "Remove an unavailable legacy blob-shadow include; retain particle model, physics and tags."
+    },
+    {
+      "path": "map/multi/4v4_winter_walk/battle_zones.mi",
+      "before": "7c75ba92b4769fc14181a1d739d32fda6ae88cd7f593be8d4b43734650d74aa8",
+      "after": "9d9e1050dd3d1da614912db353a110e095f1bf5a33e6df19df7d04cbf55e8f90",
+      "reason": "Remove an unsupported mission-options block that only includes the missing weather_options.inc; preserve all other map data."
+    },
+    {
+      "path": "interface/layout/components/changelog.xml",
+      "before": null,
+      "after": "31e3a8a5c0aec7e085ace88c5b9dd2c871f6445d2e1ff4302d70804dd377ba62",
+      "source": "Horten interface/layout/components/Changelog.xml",
+      "sourceHash": "bf5e6a260c386a8ba25d4c7ff4824c73310891a28e6ad394c22b2eccb008db51",
+      "reason": "Remove three unsupported MenuLinkButton attributes; keep text, URL and placement.",
+      "attributesRemoved": [
+        "zoomMode",
+        "centerX",
+        "centerY"
+      ]
+    },
+    {
+      "path": "set/stuff/rifle/grenade/dyakonov.heat.ammo",
+      "before": null,
+      "after": "d6d39dd59750f8e3879c9127f01f8e12ba9f0460849060f341738e5bc31d0d7a",
+      "source": "Effective original dyakonov.heat.ammo from active game/mod archives",
+      "sourceHash": "36a2a6f685ae412c17285dcbc4951549997fb035644c4a8747cb53309fba51c4",
+      "reason": "Append a unique explicit compatibility tag for the HEAT supply query; preserve every existing ammunition parameter and tag.",
+      "compatibilityTag": "ufb_dyakonov_heat"
+    }
+  ],
+  "UIUnsupportedAttributesRemoved": 3
+}

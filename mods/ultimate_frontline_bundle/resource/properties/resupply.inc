@@ -217,7 +217,7 @@
 
 ;// AT
 	{item "dyakonov"				"ammo" 1  {value 5}}
-	{item "dyakonov heat"			"ammo" 1  {value 5}}
+	{item "ufb_dyakonov_heat"			"ammo" 1  {value 5}}
 	{item "vpgs41"					"ammo" 1  {value 5}}
 
 ;// Light weaponry

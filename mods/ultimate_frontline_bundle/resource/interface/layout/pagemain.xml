@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Layout xmlns="http://www.digitalmindsoft.eu/xmllayout"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.digitalmindsoft.eu/xmllayout LayoutSchema.xsd"
+        id="page_main" version="1" skin="main_menu_dark_skin">
+    <Content>
+        <StackPanel>
+          <Children>
+              <DialogRef refid="gui_background" shared="true"/>
+              <StackPanel  placement="bottom">
+                  <Children>
+                      <FlowPanel halign="left">
+                          <Insets left="8" top="8"/>
+                          <Children>
+                              <StaticText id="GAME_VERSION">
+                              <Text value="0.000.0 Alpha"/>
+                                  <TextStyle value="f(anka)s(12)e(shadow)b+c(240 240 240)"/>
+                          </StaticText>
+                          </Children>
+                      </FlowPanel>
+                      <FlowPanel halign="right">
+                          <Insets right="8"  top="8"/>
+                          <Children>
+                              <DialogRef refid="online_counter" shared="true"/>
+                          </Children>
+                      </FlowPanel>
+                  </Children>
+              </StackPanel>
+                <FrameView resource="/interface/skin/game/frame/bkg" header="false"/>
+                <DockPanel>
+                    <Children>
+                        <PercentPanel  direction="horizontal" placement="bottom">
+                            <MaxSize x="2184" y="1088" />
+                            <Children>
+                                <FlowPanel placement="left" halign="left" valign="bottom" justify="false">
+                                    <Insets bottom="25" left="25" top="22"/>
+                                    <Children>
+<!--                                        <BackgroundPanel backgroundResource="/interface/skin/game/frame/window_single/halo_bkg_line" placement="center" zoomMode="stretch"/>-->
+                                        <DialogRef resource="components/MenuUserProfile.xml">
+                                            <MinSize x="270" y="64"/>
+                                            <MaxSize x="270" y="64"/>
+                                        </DialogRef>
+                                    </Children>
+                                </FlowPanel>
+                            </Children>
+                        </PercentPanel>
+                        <StackPanel placement="center">
+                            <Insets left="28" right="28" bottom="28"/>
+                            <Children>
+                                <PercentPanel stretch="true" direction="horizontal" gap="8">
+                                    <MaxSize x="2184" y="1088" />
+                                    <Children>
+                                        <FlowPanel direction="horizontal" placement="center" justify="false" valign="center" halign="center">
+                                            <Children>
+                                        <StackPanel placement="center">
+                                            <Children>
+                                                <DockPanel>
+                                                    <Children>
+                                                        <StackPanel placement="center" >
+                                                            <PreferredSize x="350" y="350"/>
+                                                            <Children>
+                                                                <PictureDialog resource="/interface/pages/main/logo.png" placement="left" zoomMode="fit" centerX="true" centerY="true"/>
+                                                            </Children>
+                                                        </StackPanel>
+                                                    </Children>
+                                                </DockPanel>
+                                            </Children>
+                                        </StackPanel>
+                                            </Children>
+                                        </FlowPanel>
+                                    </Children>
+                                </PercentPanel>
+                            </Children>
+                            <Children>
+                                <FlowPanel direction="vertical" placement="center" justify="false" valign="center" halign="center">
+                                    <Insets top="400"/>
+                                    <Children>
+                                        <DialogRef resource="components/PageHeaderSingle.xml" placement="center"/>
+
+                                    </Children>
+                                </FlowPanel>
+                            </Children>
+                            <Children>
+                            </Children>
+                        </StackPanel>
+                    </Children>
+                </DockPanel>
+                        <FlowPanel placement="right" halign="right" valign="bottom" justify="false">
+                            <Insets right="25" bottom="25"/>
+                            <Children>
+                               <DialogRef resource="components/Changelog.xml">
+                                    <MinSize x="270" y="64"/>
+                                    <MaxSize x="270" y="64"/>
+                               </DialogRef>
+                            </Children>
+                        </FlowPanel>
+            </Children>
+        </StackPanel>
+    </Content>
+</Layout>

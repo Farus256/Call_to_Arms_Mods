@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Layout xmlns="http://www.digitalmindsoft.eu/xmllayout"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.digitalmindsoft.eu/xmllayout ../LayoutSchema.xsd"
+		version="1" skin="main_menu_dark_skin">
+	<Content>
+		<StackPanel placement="bottom">
+			<Children>
+				<PictureButton id="btn_changelog">
+					<Sound value="gui/misc_gui_select"/>
+					<Resource value="/interface/skin/game/button/changelog_button"/>
+				</PictureButton>
+				<MenuLinkButton placement="right">
+					<Text key="button/changelog" textTransform="toUpper" />
+					<Url value="https://steamcommunity.com/sharedfiles/filedetails/changelog/3359417100"/>
+				</MenuLinkButton>
+			</Children>
+		</StackPanel>
+	</Content>
+</Layout>

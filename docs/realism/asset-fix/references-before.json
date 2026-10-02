@@ -1,0 +1,1294 @@
+{
+  "indexedAssets": 402273,
+  "staticReferencesChecked": 1966,
+  "missing": [
+    {
+      "file": "entity/-vehicle/+finland/car/volvo_127d_ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/+germany/btr/sdkfz251c_8/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/+germany/car/opel_maultier_eng/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/+germany/car/opel_maultier_transport/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/eng/car/bedford_oyc_fuel/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/eng/car/bedford_oyd_art_ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/eng/car/bedford_oyd_engineer/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/eng/car/bedford_qld_art_ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/eng/car/bedford_qld_engineer/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/eng/trailer/ammo_trailer_eng/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/finland/car/ford_3ton_ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/finland/car/ford_3ton_eng/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/finland/car/ford_3ton_fuel/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/finland/car/ford_v3000_ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/finland/car/ford_v3000_eng/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/finland/car/ford_v3000_fuel/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/generic/special/inf_crate_eng/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/generic/special/inf_crate_fin/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/generic/special/inf_crate_ger/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/generic/special/inf_crate_rus/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/generic/special/inf_crate_usa/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/btr/sdkfz6_cargo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/car/blitz3_6_art_ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/car/blitz3_6_engineering/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/car/blitz3_6_fuel/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/car/kettenkrad_eng/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/car/opel_maultier/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/trailer/ammo_trailer/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/trailer/infantry_cart_if8/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/germany/trailer/sdah_57_1/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/usa/car/cckw_art_ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/usa/car/cckw_engineer/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/usa/car/cckw_fuel/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/usa/car/cckw_redball/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/usa/trailer/ammo_trailer_usa/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/ussr/car/gaz_aaa_supply/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/ussr/car/gaz_fuel/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/ussr/car/zis5eng/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/-vehicle/ussr/trailer/ap_2/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/construction/_military/boxes/crates_set02_resupply/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/construction/_military/medic_rally/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/particle/bm_arm1/bm_arm1.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_arm1b/bm_arm1b.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_arm2/bm_arm2.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_arm2b/bm_arm2b.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_arm3/bm_arm3.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_arm3b/bm_arm3b.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_arm4/bm_arm4.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_arm4b/bm_arm4b.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_chunk3/bm_chunk3.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_chunk4/bm_chunk4.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_foot1/bm_foot1.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_foot2/bm_foot2.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_foot3/bm_foot3.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_hand1/bm_hand1.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_head1/bm_head1.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_head2/bm_head2.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_head3/bm_head3.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/particle/bm_stump4/bm_stump4.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "entity/service/-multiplayer/ammo_point/ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/service/-multiplayer/flag_point/flagpoint_ammo/supply_zone.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "entity/service/pointer/automedic.ebm",
+      "key": "frame",
+      "reference": "$/fx/explosion/black.bmp",
+      "resolved": "texture/common/fx/explosion/black.bmp"
+    },
+    {
+      "file": "map/multi/4v4_winter_walk/battle_zones.mi",
+      "key": "include",
+      "reference": "../weather_options.inc",
+      "resolved": "map/multi/weather_options.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_arm1/bm_arm1.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_arm1b/bm_arm1b.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_arm2/bm_arm2.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_arm2b/bm_arm2b.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_arm3/bm_arm3.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_arm3b/bm_arm3b.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_arm4/bm_arm4.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_arm4b/bm_arm4b.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_chunk3/bm_chunk3.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_chunk4/bm_chunk4.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_foot1/bm_foot1.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_foot2/bm_foot2.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_foot3/bm_foot3.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_hand1/bm_hand1.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_head1/bm_head1.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_head2/bm_head2.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_head3/bm_head3.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    },
+    {
+      "file": "___high_res_textures/entity/particle/bm_stump4/bm_stump4.def",
+      "key": "include",
+      "reference": "/properties/shadow/human_part.inc",
+      "resolved": "properties/shadow/human_part.inc"
+    }
+  ],
+  "contextDependent": [
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/budget_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/budget_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/budget_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_early.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_early.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_late.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_late.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    }
+  ],
+  "syntaxErrors": [],
+  "limitations": [
+    "Relative references inside macros and parameterized paths are recorded separately because they depend on expansion context.",
+    "Only typed SDL file references are checked; this does not emulate all resource registration or runtime requests."
+  ]
+}

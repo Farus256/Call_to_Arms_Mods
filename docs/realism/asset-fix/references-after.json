@@ -1,0 +1,807 @@
+{
+  "indexedAssets": 402274,
+  "staticReferencesChecked": 1933,
+  "missing": [],
+  "contextDependent": [
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "properties/resupply.inc",
+      "key": "sprite",
+      "reference": "supply_zone.ebm"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontlines/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits_frontline.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/frontline/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/last_stand/bots_standard.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/budget_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/budget_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/unitlimits.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/budget_custom.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_early.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_early.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_late.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_late.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/budget.inc"
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_mid.inc",
+      "key": "include",
+      "reference": "global_parameters/bots_generic.inc"
+    }
+  ],
+  "syntaxErrors": [],
+  "limitations": [
+    "Relative references inside macros and parameterized paths are recorded separately because they depend on expansion context.",
+    "Only typed SDL file references are checked; this does not emulate all resource registration or runtime requests."
+  ]
+}

@@ -2,5 +2,5 @@
 	{Axis  1024 1024 }
 	{Filtering  1 }
 	{Blend  Light }
-	{Frame "$/fx/explosion/black.bmp"}
+	{Frame "$/ufb/invisible_radius.bmp"}
 }

@@ -1,0 +1,34 @@
+{
+  "checks": 270,
+  "localSDLFilesParsed": 896,
+  "localLuaFilesParsed": 14,
+  "indexedAssetsBefore": 402273,
+  "staticReferencesChecked": 1933,
+  "missingStaticReferencesBefore": 81,
+  "missingStaticReferencesAfter": 0,
+  "contextDependentReferences": 159,
+  "changedFiles": 82,
+  "addedFiles": 4,
+  "nativeBlackBitmapCopied": true,
+  "nativeXMLSchemaErrorsBefore": 4,
+  "nativeXMLSchemaErrorsAfter": 0,
+  "ammoSelectorBeforeMatches": [],
+  "ammoSelectorAfterMatches": [
+    "dyakonov.heat"
+  ],
+  "ammoSelectionUsesExplicitCompatibilityTag": true,
+  "effectiveSDLFilesParsed": 13109,
+  "macroDefinitionsAnalyzed": 1288,
+  "transitiveNestedModsAfter": 0,
+  "engineLaunched": false,
+  "installedFilesHashMatched": 916,
+  "logLastWriteTimeLocal": "2026-10-02 17:32:19",
+  "logFatalError": "File not found - resource/texture/common/fx/explosion/black.bmp",
+  "limitations": [
+    "Relative references inside macros and parameterized paths are recorded separately because they depend on expansion context.",
+    "Only typed SDL file references are checked; this does not emulate all resource registration or runtime requests.",
+    "Ammo selection is statically checked by explicit tags; runtime resupply has not been executed.",
+    "Native XML schema was validated with the .NET UPA compilation check disabled because vanilla schema content models are ambiguous under that compiler rule.",
+    "Creation of a skirmish, visuals, sound, binary-model internals and actual battle behavior remain untested without launching the game."
+  ]
+}

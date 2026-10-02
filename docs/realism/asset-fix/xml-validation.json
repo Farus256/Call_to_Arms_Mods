@@ -1,0 +1,15 @@
+{
+  "originalErrors": [
+    "The element 'Children' in namespace 'http://www.digitalmindsoft.eu/xmllayout' has invalid child element 'MinSize' in namespace 'http://www.digitalmindsoft.eu/xmllayout'. List of possible elements expected: 'AbstractDialog, SceneMenuPanel, SceneGameFrontBar, SceneGameActionBar, AbstractButton, AbstractPanel, AbstractSubPanel, Dialog, Button, PictureButton, PictureStateButton, AnimatedBackgroundButton, TextButton, CheckBox, MenuButton, MenuTextButton, MenuLinkButton, MenuNavigationButton, MarketNavigationButton, SmallMenuButton, MediumMenuButton, LargeMenuButton, MenuRadioButton, LargeMenuRadioButton, MediumMenuRadioButton, DialogRef, StaticText, WrapText, UserNameView, SquadLogoView, ItemBackground, PictureDialog, ClickablePictureDialog, AvatarView, InputLine, MenuInputBox, FrameView, ListBox, MultiSelectListBox, Panel, BackgroundPanel, StackPanel, DockPanel, FlowPanel, GridPanel, WrapPanel, ScrollableWrapPanel, PercentPanel, RelativePanel, CardPanel, ProgressBar, ComboBox, TabPanel, FramedTabPanel, FadeDialog, BlurDialog, ScrollPane, StepScrollPane, ScrollableContent, WebView, WebBrowser, FrameButton, LargeFrameButton' in namespace 'http://www.digitalmindsoft.eu/xmllayout'."
+  ],
+  "correctedErrors": [],
+  "componentOriginalErrors": [
+    "The 'zoomMode' attribute is not declared.",
+    "The 'centerX' attribute is not declared.",
+    "The 'centerY' attribute is not declared."
+  ],
+  "componentCorrectedErrors": [],
+  "nativeSchemaValidated": true,
+  "dotNetUpaCompilationCheck": false,
+  "note": "Native schema content models are ambiguous under the .NET UPA compilation rule; layout validation remains enabled."
+}

@@ -4281,9 +4281,7 @@
 		{vars
 			(include "../bz_vars.inc")
 		}
-		{mission_options
-			(include "../weather_options.inc")
-		}
+		; UFB compatibility: unavailable weather_options.inc removed; existing weather triggers retained.
 		{triggers
 			(include "../bz_triggers.inc")
 			{"environment_any"
