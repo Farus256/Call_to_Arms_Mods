@@ -25,7 +25,7 @@
 	{traceFreq 0}
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 50 50})))))
+{range 50 50}
 (mod "gametype:battle_zones" {range 75 75})
 (mod "gametype:ammunition" {range 75 75})
 (mod "gametype:evacuation" {range 75 75})
@@ -46,7 +46,7 @@
 		{short 1 0.1}		; burst shots on long distance, rand (+-)shots
 		{long 6 0.75}		; burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.25})))))
+{rangeKoef 0.25}
 (mod "gametype:battle_zones" {rangeKoef 0.166667})
 (mod "gametype:ammunition" {rangeKoef 0.166667})
 (mod "gametype:evacuation" {rangeKoef 0.166667})

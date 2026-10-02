@@ -15,7 +15,7 @@
 
 	{spreading
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 3.5} {120 10.5} {159.99 21} {160 70}})))))
+{radiusTable {0 3.5} {120 10.5} {159.99 21} {160 70}}
 (mod "gametype:battle_zones" {radiusTable {0 3.5} {120 10.5} {159.99 21} {240 37.8} {240.01 70}})
 (mod "gametype:ammunition" {radiusTable {0 3.5} {120 10.5} {159.99 21} {240 37.8} {240.01 70}})
 (mod "gametype:evacuation" {radiusTable {0 3.5} {120 10.5} {159.99 21} {240 37.8} {240.01 70}})

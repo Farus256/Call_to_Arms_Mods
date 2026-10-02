@@ -10,7 +10,7 @@
 	{foresight "Foresight2"}
 	{AimingTolerance 3}			; degrees
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 30})))))
+{aimRange 30}
 (mod "gametype:battle_zones" {aimRange 34.5})
 (mod "gametype:ammunition" {aimRange 34.5})
 (mod "gametype:evacuation" {aimRange 34.5})

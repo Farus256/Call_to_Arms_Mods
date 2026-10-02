@@ -57,70 +57,70 @@
 
 ;// Grenade
 	{item "grenade" "m24"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m24_splinter"			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m39_early"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m39_mid"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m39_late"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m43"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m43_splinter"			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m45"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "handgranate_337r" 		1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})} 	;//rgd33
 	{item "grenade" "handgranate_310r" 		1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -128,28 +128,28 @@
 (mod "gametype:campaign_capture_the_flag" {value 6})} 	;//f1
 	
 	{item "grenade" "m24_geballteladung"	1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "hafthohlladung"		1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "pwm_l"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "molotov_cocktail"		1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
@@ -157,21 +157,21 @@
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 
 	{item "grenade" "m24_smoke"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "nbk39"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "nbks"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -232,35 +232,35 @@
 
 ;// Grenade
 	{item "grenade" "f1" 					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "rgd33" 				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "rg14"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "rg14_30"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "rg42" 					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -268,35 +268,35 @@
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	
 	{item "grenade" "rg14_bundle"			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}	
 	{item "grenade" "rgd33_bundle"			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "rpg40"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "rpg43"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "molotov_cocktail"		1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
@@ -304,14 +304,14 @@
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 
 	{item "grenade" "rdg1_smoke" 			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "s1_smoke" 				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -345,21 +345,21 @@
 
 ;// Grenade
 	{item "grenade" "m32"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m32_stick"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m36"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -367,21 +367,21 @@
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 
 	{item "grenade" "m32_satchel"			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "molotov_bundle_fin"	1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "molotov_cocktail_fin"	1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
@@ -389,21 +389,21 @@
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 
 	{item "grenade" "svkkr_pm"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m42_wp"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m43_smoke"				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -468,7 +468,7 @@
 
 ;// Grenade
 	{item "grenade" "mk2" 					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -476,7 +476,7 @@
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 
 	{item "grenade" "m7"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
@@ -484,14 +484,14 @@
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 
 	{item "grenade" "anm8_smoke" 			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "m15_wp" 				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -546,56 +546,56 @@
 
 ;// Grenade
 	{item "grenade" "no36m_early" 			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "no36m" 				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "no69" 					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "no73"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "no74"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "no75"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "no76_ic" 				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "no82"					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
@@ -603,21 +603,21 @@
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 
 	{item "grenade" "no76_ic" 				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "no8_smoke" 			1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
 (mod "gametype:frontlines" {value 6})
 (mod "gametype:campaign_capture_the_flag" {value 6})}
 	{item "grenade" "no77_wp" 				1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -634,7 +634,7 @@
 
 ;// Grenade
 	{item "grenade" "mk2" 					1  ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 5})))))
+{value 5}
 (mod "gametype:battle_zones" {value 6})
 (mod "gametype:ammunition" {value 6})
 (mod "gametype:evacuation" {value 6})
@@ -1198,14 +1198,14 @@
 
 ;// grenade mine hybrid
 	{item "grenade" "m7"						1 ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})
 (mod "gametype:frontlines" {value 12})
 (mod "gametype:campaign_capture_the_flag" {value 12})}
 	{item "grenade" "no75"						1 ; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {value 10})))))
+{value 10}
 (mod "gametype:battle_zones" {value 12})
 (mod "gametype:ammunition" {value 12})
 (mod "gametype:evacuation" {value 12})

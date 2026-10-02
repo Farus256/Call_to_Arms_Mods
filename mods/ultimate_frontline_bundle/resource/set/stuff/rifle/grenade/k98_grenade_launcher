@@ -16,7 +16,7 @@
 			{SpreadXYRatio 0.75}
 		}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 80 80})))))
+{range 80 80}
 (mod "gametype:battle_zones" {range 120 120})
 (mod "gametype:ammunition" {range 120 120})
 (mod "gametype:evacuation" {range 120 120})
@@ -27,7 +27,7 @@
 	{parameters "heat" ;gew.pz.gr.30 Feb '42
 		{cursorReloading "gun_heat"}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 60 60})))))
+{range 60 60}
 (mod "gametype:battle_zones" {range 90 90})
 (mod "gametype:ammunition" {range 90 90})
 (mod "gametype:evacuation" {range 90 90})
@@ -39,7 +39,7 @@
 	{parameters "heata" ;gew.pz.gr.gross Nov. '42
 		{cursorReloading "gun_heat"}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 60 60})))))
+{range 60 60}
 (mod "gametype:battle_zones" {range 90 90})
 (mod "gametype:ammunition" {range 90 90})
 (mod "gametype:evacuation" {range 90 90})

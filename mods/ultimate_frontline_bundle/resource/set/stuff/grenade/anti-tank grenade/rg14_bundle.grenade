@@ -23,7 +23,7 @@
 
 	{throw
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 19.7})))))
+{range 19.7}
 (mod "gametype:battle_zones" {range 22.655})
 (mod "gametype:ammunition" {range 22.655})
 (mod "gametype:evacuation" {range 22.655})

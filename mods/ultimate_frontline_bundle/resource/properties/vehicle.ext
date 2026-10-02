@@ -162,7 +162,7 @@
 
 	{component "gun"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.2 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.2 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.2 %repair)})
@@ -184,7 +184,7 @@
 
 	{component "gun1"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.2 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.2 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.2 %repair)})
@@ -203,7 +203,7 @@
 
 	{component "gun2"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.2 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.2 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.2 %repair)})
@@ -222,7 +222,7 @@
 
 	{component "gun3"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.2 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.2 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.2 %repair)})
@@ -241,7 +241,7 @@
 
 	{component "gun4"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.2 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.2 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.2 %repair)})
@@ -260,7 +260,7 @@
 
 	{component "gun5"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.2 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.2 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.2 %repair)})
@@ -279,7 +279,7 @@
 
 	{component "gun6"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.2 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.2 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.2 %repair)})
@@ -343,7 +343,7 @@
 
 	{component "engine"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.25 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.25 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.25 %repair)})
@@ -370,7 +370,7 @@
 
 	{component "turret"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.2 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.2 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.2 %repair)})
@@ -708,7 +708,7 @@
 
 	{component "trackleft"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.15 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.15 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.15 %repair)})
@@ -719,7 +719,7 @@
 	}
 	{component "trackright"
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RepairTime %repair})))))
+{RepairTime %repair}
 (mod "gametype:battle_zones" {RepairTime (* 1.15 %repair)})
 (mod "gametype:ammunition" {RepairTime (* 1.15 %repair)})
 (mod "gametype:evacuation" {RepairTime (* 1.15 %repair)})

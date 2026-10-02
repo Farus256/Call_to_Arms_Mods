@@ -11,7 +11,7 @@
 	("heavy_artillery")
 	{calibre 140}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 400 400})))))
+{range 400 400}
 (mod "gametype:battle_zones" {range 600 600})
 (mod "gametype:ammunition" {range 600 600})
 (mod "gametype:evacuation" {range 600 600})
@@ -26,7 +26,7 @@
 
 	{parameters "he2"	;// 82-lb shell (1944)
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 420 420})))))
+{range 420 420}
 (mod "gametype:battle_zones" {range 630 630})
 (mod "gametype:ammunition" {range 630 630})
 (mod "gametype:evacuation" {range 630 630})

@@ -10,14 +10,14 @@
 	{mass 1000}
 	{foresight "Foresight1"}							;// bone for muzzleflash fx
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 15})))))
+{aimRange 15}
 (mod "gametype:battle_zones" {aimRange 22.5})
 (mod "gametype:ammunition" {aimRange 22.5})
 (mod "gametype:evacuation" {aimRange 22.5})
 (mod "gametype:frontlines" {aimRange 22.5})
 (mod "gametype:campaign_capture_the_flag" {aimRange 22.5})										;// Maximum fire range for AI. Expressed as {range 15 25} equals the same thing.
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 25})))))
+{maxRange 25}
 (mod "gametype:battle_zones" {maxRange 37.5})
 (mod "gametype:ammunition" {maxRange 37.5})
 (mod "gametype:evacuation" {maxRange 37.5})

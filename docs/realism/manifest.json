@@ -13168,5 +13168,8 @@
       "_ufb_smoke_60m_target",
       "_ufb_smoke_wirecutter_target"
     ]
-  }
+  },
+  "snapshotStatus": "historical_before_native_mod_fix",
+  "currentHashes": "../current-files.json",
+  "correctionManifest": "crash-fix/payload.json"
 }

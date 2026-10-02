@@ -12,7 +12,7 @@
 	{foresight "foresight1"}
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 45 45})))))
+{range 45 45}
 (mod "gametype:battle_zones" {range 54 54})
 (mod "gametype:ammunition" {range 54 54})
 (mod "gametype:evacuation" {range 54 54})

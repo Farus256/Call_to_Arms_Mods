@@ -7,7 +7,7 @@
 		{short 5 1}			;// short burst shots on long distance, rand (+-)shots
 		{long 7 1}				;// long burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.8})))))
+{rangeKoef 0.8}
 (mod "gametype:battle_zones" {rangeKoef 0.533333})
 (mod "gametype:ammunition" {rangeKoef 0.533333})
 (mod "gametype:evacuation" {rangeKoef 0.533333})
@@ -15,11 +15,11 @@
 (mod "gametype:campaign_capture_the_flag" {rangeKoef 0.533333})			;// rangeKoef * aimRange = max long burst distance
 	}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.25}	;30m, 0.5s
 		{0.5 0.5}	;60m, 1.0s
 		{1.0 0.75}	;120m, 2.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
@@ -32,7 +32,7 @@
 		{short 11 3}
 		{long 16 2}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.6})))))
+{rangeKoef 0.6}
 (mod "gametype:battle_zones" {rangeKoef 0.4})
 (mod "gametype:ammunition" {rangeKoef 0.4})
 (mod "gametype:evacuation" {rangeKoef 0.4})
@@ -40,11 +40,11 @@
 (mod "gametype:campaign_capture_the_flag" {rangeKoef 0.4})
 	}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.25}	;30m, 0.5s
 		{0.5 0.5}	;60m, 1.0s
 		{1.0 0.75}	;120m, 2.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
@@ -57,7 +57,7 @@
 		{short 10 2}
 		{long 25 2}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.4})))))
+{rangeKoef 0.4}
 (mod "gametype:battle_zones" {rangeKoef 0.266667})
 (mod "gametype:ammunition" {rangeKoef 0.266667})
 (mod "gametype:evacuation" {rangeKoef 0.266667})
@@ -65,11 +65,11 @@
 (mod "gametype:campaign_capture_the_flag" {rangeKoef 0.266667})
 	}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.25}	;30m, 0.5s
 		{0.5 0.5}	;60m, 1.0s
 		{1.0 0.75}	;120m, 2.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
@@ -82,7 +82,7 @@
 		{short 14 3}
 		{long 35 3}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.55})))))
+{rangeKoef 0.55}
 (mod "gametype:battle_zones" {rangeKoef 0.366667})
 (mod "gametype:ammunition" {rangeKoef 0.366667})
 (mod "gametype:evacuation" {rangeKoef 0.366667})
@@ -90,11 +90,11 @@
 (mod "gametype:campaign_capture_the_flag" {rangeKoef 0.366667})
 	}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.25}	;30m, 0.5s
 		{0.5 0.5}	;60m, 1.0s
 		{1.0 0.75}	;120m, 2.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
@@ -107,7 +107,7 @@
 		{short 14 3}
 		{long 25 3}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.5})))))
+{rangeKoef 0.5}
 (mod "gametype:battle_zones" {rangeKoef 0.333333})
 (mod "gametype:ammunition" {rangeKoef 0.333333})
 (mod "gametype:evacuation" {rangeKoef 0.333333})
@@ -115,11 +115,11 @@
 (mod "gametype:campaign_capture_the_flag" {rangeKoef 0.333333})
 	}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.25}	;30m, 0.5s
 		{0.5 0.5}	;60m, 1.0s
 		{1.0 0.75}	;120m, 2.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
@@ -132,7 +132,7 @@
 		{short 50 3}
 		{long 125 3}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.6})))))
+{rangeKoef 0.6}
 (mod "gametype:battle_zones" {rangeKoef 0.4})
 (mod "gametype:ammunition" {rangeKoef 0.4})
 (mod "gametype:evacuation" {rangeKoef 0.4})
@@ -140,11 +140,11 @@
 (mod "gametype:campaign_capture_the_flag" {rangeKoef 0.4})
 	}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.25}	;30m, 0.5s
 		{0.5 0.5}	;60m, 1.0s
 		{1.0 0.75}	;120m, 2.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.25} {0.333333 0.5} {0.666667 0.75}})
@@ -157,7 +157,7 @@
 		{short 3 1}
 		{long 6 2}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.6})))))
+{rangeKoef 0.6}
 (mod "gametype:battle_zones" {rangeKoef 0.4})
 (mod "gametype:ammunition" {rangeKoef 0.4})
 (mod "gametype:evacuation" {rangeKoef 0.4})
@@ -251,21 +251,9 @@
 )
 
 (define "airborne_mg"
-	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 140 140})))))
-(mod "gametype:battle_zones" {range 210 210})
-(mod "gametype:ammunition" {range 210 210})
-(mod "gametype:evacuation" {range 210 210})
-(mod "gametype:frontlines" {range 210 210})
-(mod "gametype:campaign_capture_the_flag" {range 210 210})
+	{range 140 140}
 	(mod not "mp"
-		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 300 500})))))
-(mod "gametype:battle_zones" {range 450 750})
-(mod "gametype:ammunition" {range 450 750})
-(mod "gametype:evacuation" {range 450 750})
-(mod "gametype:frontlines" {range 450 750})
-(mod "gametype:campaign_capture_the_flag" {range 450 750})
+		{range 300 500}
 	)
 
 	{spreading

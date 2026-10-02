@@ -14,7 +14,7 @@
 	{parameters "apds"	;// custom accuracy for 17pdr APDS as it had big issues With accuracy due to sabot separation and yawing
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0} {50 0.5} {100 1.15} {140 2.15} {209.99 3.25} {260 10}})))))
+{radiusTable {0 0} {50 0.5} {100 1.15} {140 2.15} {209.99 3.25} {260 10}}
 (mod "gametype:battle_zones" {radiusTable {0 0} {50 0.5} {100 1.15} {140 2.15} {209.99 3.25} {260 10} {390 18}})
 (mod "gametype:ammunition" {radiusTable {0 0} {50 0.5} {100 1.15} {140 2.15} {209.99 3.25} {260 10} {390 18}})
 (mod "gametype:evacuation" {radiusTable {0 0} {50 0.5} {100 1.15} {140 2.15} {209.99 3.25} {260 10} {390 18}})

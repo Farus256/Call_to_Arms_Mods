@@ -11,14 +11,14 @@
 
 	{spreading
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable
+{radiusTable
 			{0 0}
 			{100 10}
 			{200 20}
 			{269.99 35} ;// max range, 3.7km
 			{270 100}
 			{290 200}
-		})))))
+		}
 (mod "gametype:battle_zones" {radiusTable {0 0} {100 10} {200 20} {269.99 35} {405 63} {405.01 100} {425.01 200}})
 (mod "gametype:ammunition" {radiusTable {0 0} {100 10} {200 20} {269.99 35} {405 63} {405.01 100} {425.01 200}})
 (mod "gametype:evacuation" {radiusTable {0 0} {100 10} {200 20} {269.99 35} {405 63} {405.01 100} {425.01 200}})
@@ -34,7 +34,7 @@
 
 	{minRange 50}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 270 270})))))
+{range 270 270}
 (mod "gametype:battle_zones" {range 405 405})
 (mod "gametype:ammunition" {range 405 405})
 (mod "gametype:evacuation" {range 405 405})

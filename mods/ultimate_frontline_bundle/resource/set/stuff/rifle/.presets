@@ -12,7 +12,7 @@
 (define "semi_rifle"
 	{tag "auto_eject semi_auto autorifle"}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 120 120})))))
+{range 120 120}
 (mod "gametype:battle_zones" {range 180 180})
 (mod "gametype:ammunition" {range 180 180})
 (mod "gametype:evacuation" {range 180 180})
@@ -25,7 +25,7 @@
 		{short 1}		; burst shots on long distance, rand (+-)shots
 		{long 3}		; burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.1})))))
+{rangeKoef 0.1}
 (mod "gametype:battle_zones" {rangeKoef 0.066667})
 (mod "gametype:ammunition" {rangeKoef 0.066667})
 (mod "gametype:evacuation" {rangeKoef 0.066667})
@@ -41,11 +41,11 @@
 	("fire rate" rpm(150))
 	{FiringTimeout 2.0 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.13 0.1}	
 		{0.38 0.75}	
 		{0.8 1.0}	
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.086667 0.1} {0.253333 0.75} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.086667 0.1} {0.253333 0.75} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.086667 0.1} {0.253333 0.75} {0.533333 1.0}})
@@ -60,7 +60,7 @@
 (define "auto_rifle" ;full size rifle calibers with full auto capability; AVT40
 	{tag "autorifle_sup auto_eject rifle_shell autorifle"}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 120 120})))))
+{range 120 120}
 (mod "gametype:battle_zones" {range 180 180})
 (mod "gametype:ammunition" {range 180 180})
 (mod "gametype:evacuation" {range 180 180})
@@ -73,7 +73,7 @@
 		{short 1}		; burst shots on long distance, rand (+-)shots
 		{long 2.25 0.5}			; burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.3})))))
+{rangeKoef 0.3}
 (mod "gametype:battle_zones" {rangeKoef 0.2})
 (mod "gametype:ammunition" {rangeKoef 0.2})
 (mod "gametype:evacuation" {rangeKoef 0.2})
@@ -89,12 +89,12 @@
 	{SyncedProjectiles 0}		;// not for automatic weapons
 	{FiringTimeout 2.0 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.15 0.25}	;24m, 1.3s
 		{0.399 0.85};47.9m, 1.7s //still fires bursts
 		{0.4 0.75}	;48m, 1.5s // switches to single fire only
 		{0.8 1.0}	;96m, 2.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.1 0.25} {0.266 0.85} {0.266667 0.75} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.1 0.25} {0.266 0.85} {0.266667 0.75} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.1 0.25} {0.266 0.85} {0.266667 0.75} {0.533333 1.0}})
@@ -109,7 +109,7 @@
 (define "battle_rifle" ;full size rifle calibers with full auto capability; BAR
 	{tag "autorifle_sup auto_eject rifle_shell"}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 120 120})))))
+{range 120 120}
 (mod "gametype:battle_zones" {range 180 180})
 (mod "gametype:ammunition" {range 180 180})
 (mod "gametype:evacuation" {range 180 180})
@@ -122,7 +122,7 @@
 		{short 3 1}		; burst shots on long distance, rand (+-)shots
 		{long 5 1}			; burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.33})))))
+{rangeKoef 0.33}
 (mod "gametype:battle_zones" {rangeKoef 0.22})
 (mod "gametype:ammunition" {rangeKoef 0.22})
 (mod "gametype:evacuation" {rangeKoef 0.22})
@@ -137,10 +137,10 @@
 	{SyncedProjectiles 0}		;// not for automatic weapons
 	{FiringTimeout 2.0 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.2 0.55}	;24m, 1.3s
 		{0.6 0.9}	;72m, 2.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.133333 0.55} {0.4 0.9}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.133333 0.55} {0.4 0.9}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.133333 0.55} {0.4 0.9}})
@@ -155,7 +155,7 @@
 (define "battle_rifle_fg42" ;full size rifle calibers with full auto capability; FG42
 	{tag "autorifle_sup auto_eject rifle_shell"}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 120 120})))))
+{range 120 120}
 (mod "gametype:battle_zones" {range 180 180})
 (mod "gametype:ammunition" {range 180 180})
 (mod "gametype:evacuation" {range 180 180})
@@ -168,7 +168,7 @@
 		{short 1}			; burst shots on long distance, rand (+-)shots
 		{long 4 1}			; burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.65})))))
+{rangeKoef 0.65}
 (mod "gametype:battle_zones" {rangeKoef 0.433333})
 (mod "gametype:ammunition" {rangeKoef 0.433333})
 (mod "gametype:evacuation" {rangeKoef 0.433333})
@@ -183,12 +183,12 @@
 	{SyncedProjectiles 0}		;// not for automatic weapons
 	{FiringTimeout 1.75 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.15 0.25}	;24m, 1.1375s
 		{0.649 0.5}	;77.9m, 1.75s //still fires bursts
 		{0.65 0.6}	;78m, 1.05s // switches to single fire only
 		{0.8 0.7}	;96m, 1.225s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.1 0.25} {0.432667 0.5} {0.433333 0.6} {0.533333 0.7}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.1 0.25} {0.432667 0.5} {0.433333 0.6} {0.533333 0.7}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.1 0.25} {0.432667 0.5} {0.433333 0.6} {0.533333 0.7}})
@@ -203,7 +203,7 @@
 (define "assault_rifle" ;small size rifle calibers with full auto capability; stg44
 	{tag "autorifle_sup auto_eject"}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 100 100})))))
+{range 100 100}
 (mod "gametype:battle_zones" {range 150 150})
 (mod "gametype:ammunition" {range 150 150})
 (mod "gametype:evacuation" {range 150 150})
@@ -220,12 +220,12 @@
 	{SyncedProjectiles 0}		;// not for automatic weapons
 	{FiringTimeout 1.5 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.2 0.35}	;20m, 1.05s
 		{0.499 0.95};49.9m, 1.425s //still fires bursts
 		{0.5 0.5}	;50m, 0.75s //switches to single fire only
 		{1.0 0.7}	;100m, 1.05s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.133333 0.35} {0.332667 0.95} {0.333333 0.5} {0.666667 0.7}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.133333 0.35} {0.332667 0.95} {0.333333 0.5} {0.666667 0.7}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.133333 0.35} {0.332667 0.95} {0.333333 0.5} {0.666667 0.7}})
@@ -235,7 +235,7 @@
 		{short 3.5 0.5}			; burst shots on long distance, rand (+-)shots
 		{long 4.5 1}		; burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.5})))))
+{rangeKoef 0.5}
 (mod "gametype:battle_zones" {rangeKoef 0.333333})
 (mod "gametype:ammunition" {rangeKoef 0.333333})
 (mod "gametype:evacuation" {rangeKoef 0.333333})
@@ -252,7 +252,7 @@
 (define "carbine_rifle" ;small size rifle calibers; m1 carbine
 	{tag "autorifle_sup auto_eject autorifle"}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 100 100})))))
+{range 100 100}
 (mod "gametype:battle_zones" {range 150 150})
 (mod "gametype:ammunition" {range 150 150})
 (mod "gametype:evacuation" {range 150 150})
@@ -269,11 +269,11 @@
 	{SyncedProjectiles 0}		;// not for automatic weapons
 	{FiringTimeout 1.5 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.2 0.35}	;20m, 0.9s
 		{0.4 0.7}	;40m, 1.05s
 		{1.0 1.0}	;100m, 1.5s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.133333 0.35} {0.266667 0.7} {0.666667 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.133333 0.35} {0.266667 0.7} {0.666667 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.133333 0.35} {0.266667 0.7} {0.666667 1.0}})
@@ -283,7 +283,7 @@
 		{short 1}			; burst shots on long distance, rand (+-)shots
 		{long 1}		; burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 1})))))
+{rangeKoef 1}
 (mod "gametype:battle_zones" {rangeKoef 0.666667})
 (mod "gametype:ammunition" {rangeKoef 0.666667})
 (mod "gametype:evacuation" {rangeKoef 0.666667})
@@ -303,12 +303,12 @@
 (define "m38_rate"
 	{FiringTimeout 3.5 0.5}		;// 3.5 0.5
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.15 0.1}	;24m, 1.75s
 		{0.4 0.6}	;48m, 2.8s
 		{0.6 0.8}	;72m, 3.15s
 		{0.8 1.0}	;96m, 3.5s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
@@ -320,12 +320,12 @@
 (define "k98_rate"
 	{FiringTimeout 3.5 0.5}		;// 3.5 0.5
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.15 0.1}	;24m, 1.75s
 		{0.4 0.6}	;48m, 2.8s
 		{0.6 0.8}	;72m, 3.15s
 		{0.8 1.0}	;96m, 3.5s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
@@ -337,12 +337,12 @@
 (define "finnish_rate"
 	{FiringTimeout 3.5 0.5}		;// 3.5 0.5
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.15 0.1}	;24m, 1.75s
 		{0.4 0.6}	;48m, 2.8s
 		{0.6 0.8}	;72m, 3.15s
 		{0.8 1.0}	;96m, 3.5s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
@@ -355,12 +355,12 @@
 (define "mosin_rate"
 	{FiringTimeout 4 0.5}		;// 4 0.5
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.15 0.1}	;24m, 1.75s
 		{0.4 0.6}	;48m, 2.8s
 		{0.6 0.8}	;72m, 3.15s
 		{0.8 1.0}	;96m, 3.5s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
@@ -372,12 +372,12 @@
 (define "vg2_rate"
 	{FiringTimeout 4 0.5}		;// 4 0.5
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.15 0.1}	;24m, 1.75s
 		{0.4 0.6}	;48m, 2.8s
 		{0.6 0.8}	;72m, 3.15s
 		{0.8 1.0}	;96m, 3.5s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.1 0.1} {0.266667 0.6} {0.4 0.8} {0.533333 1.0}})
@@ -389,12 +389,12 @@
 (define "enfield_no1_rate"
 	{FiringTimeout 3.1 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.2 0.5}	;24m, 1.55s
 		{0.4 0.8}	;48m, 2.48s
 		{0.6 0.9}	;72m, 2.79s
 		{0.8 1.0}	;96m, 3.1s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})
@@ -407,12 +407,12 @@
 (define "enfield_no4_rate"
 	{FiringTimeout 2.9 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.2 0.5}	;24m, 1.45s
 		{0.4 0.8}	;48m, 2.32s
 		{0.6 0.9}	;72m, 2.61s
 		{0.8 1.0}	;96m, 2.9s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})
@@ -424,7 +424,7 @@
 
 (define "bolt_action"
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 120 120})))))
+{range 120 120}
 (mod "gametype:battle_zones" {range 180 180})
 (mod "gametype:ammunition" {range 180 180})
 (mod "gametype:evacuation" {range 180 180})
@@ -445,7 +445,7 @@
 		{short 1}		; burst shots on long distance, rand (+-)shots
 		{long 1}			; burst shots on short distance, rand (+-)shots
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 1})))))
+{rangeKoef 1}
 (mod "gametype:battle_zones" {rangeKoef 0.666667})
 (mod "gametype:ammunition" {rangeKoef 0.666667})
 (mod "gametype:evacuation" {rangeKoef 0.666667})

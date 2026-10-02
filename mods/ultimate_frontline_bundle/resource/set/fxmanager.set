@@ -33,14 +33,14 @@
 		{fx "tracewheel06"}
 		{fx "traceski01"}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {countLimit 9999})))))
+{countLimit 9999}
 (mod "gametype:battle_zones" {countLimit 3000})
 (mod "gametype:ammunition" {countLimit 3000})
 (mod "gametype:evacuation" {countLimit 3000})
 (mod "gametype:frontlines" {countLimit 3000})
 (mod "gametype:campaign_capture_the_flag" {countLimit 3000})
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {timeLimit 9999})))))
+{timeLimit 9999}
 (mod "gametype:battle_zones" {timeLimit 1800})
 (mod "gametype:ammunition" {timeLimit 1800})
 (mod "gametype:evacuation" {timeLimit 1800})

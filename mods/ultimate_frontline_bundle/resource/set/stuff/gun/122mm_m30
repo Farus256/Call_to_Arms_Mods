@@ -11,7 +11,7 @@
 	("medium_artillery")
 	{calibre 122}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 365 365})))))
+{range 365 365}
 (mod "gametype:battle_zones" {range 547.5 547.5})
 (mod "gametype:ammunition" {range 547.5 547.5})
 (mod "gametype:evacuation" {range 547.5 547.5})
@@ -32,7 +32,7 @@
 	;("penetration_medium" shell(sr) range(365) a(37) b(31) c(29) d(26) e(22)) ; Pen data for shrapnel shell 
 	{parameters "sr" 
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 325 325})))))
+{range 325 325}
 (mod "gametype:battle_zones" {range 487.5 487.5})
 (mod "gametype:ammunition" {range 487.5 487.5})
 (mod "gametype:evacuation" {range 487.5 487.5})

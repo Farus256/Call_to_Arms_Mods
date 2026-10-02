@@ -12,7 +12,7 @@
 	("reload time" seconds(3))
 	("velocity" mps(250))
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 80 80})))))
+{range 80 80}
 (mod "gametype:battle_zones" {range 120 120})
 (mod "gametype:ammunition" {range 120 120})
 (mod "gametype:evacuation" {range 120 120})
@@ -27,10 +27,10 @@
 	}
 	{FiringTimeout 2.5 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.5}	;20m, 1.25s
 		{1.0 1.0}	;80m, 2.5s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.5} {0.666667 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.5} {0.666667 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.5} {0.666667 1.0}})

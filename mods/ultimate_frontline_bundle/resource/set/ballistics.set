@@ -6,7 +6,7 @@
 
 {ballistics
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "bullet"			;// bolt action 70 dmg 120 range
+{curve "bullet"			;// bolt action 70 dmg 120 range
 		{0.05	3.00}		;// 0-12m  	 210d
 		{0.1	2.00}		;// 12-24m   140d
 		{0.2	1.35}		;// 24-36m   95d
@@ -14,7 +14,7 @@
 		{0.65	0.80}		;// 80-120m  56d
 		{1.0	0.40}		;// 120-132m 28d
 		{1.1	0.10}		;// 132+ 	 7d
-	})))))
+	}
 (mod "gametype:battle_zones" {curve "bullet" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.80} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 (mod "gametype:ammunition" {curve "bullet" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.80} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 (mod "gametype:evacuation" {curve "bullet" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.80} {0.666667 0.40} {1 0.26} {1.1 0.1}})
@@ -22,7 +22,7 @@
 (mod "gametype:campaign_capture_the_flag" {curve "bullet" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.80} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "autorifle"		;// automatic, semi-automatic, battle, damage 70, range 120
+{curve "autorifle"		;// automatic, semi-automatic, battle, damage 70, range 120
 		{0.05	3.00}		;// 0-12m    210d
 		{0.1	2.00}		;// 12-24m   140d
 		{0.2	1.35}		;// 24-36m   95d
@@ -30,7 +30,7 @@
 		{0.65	0.70}		;// 80-120m  49d
 		{1.0	0.30}		;// 120-132m 21d
 		{1.1	0.10}		;// 132+ 	 7d
-	})))))
+	}
 (mod "gametype:battle_zones" {curve "autorifle" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.70} {0.666667 0.30} {1 0.195} {1.1 0.1}})
 (mod "gametype:ammunition" {curve "autorifle" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.70} {0.666667 0.30} {1 0.195} {1.1 0.1}})
 (mod "gametype:evacuation" {curve "autorifle" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.70} {0.666667 0.30} {1 0.195} {1.1 0.1}})
@@ -38,14 +38,14 @@
 (mod "gametype:campaign_capture_the_flag" {curve "autorifle" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.70} {0.666667 0.30} {1 0.195} {1.1 0.1}})
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "assaultrifle"	;// assault rifles (stg), damage 65, range 100
+{curve "assaultrifle"	;// assault rifles (stg), damage 65, range 100
 		{0.1	2.00}		;// 0-20m 	 130d
 		{0.2	1.50}		;// 20-30m   98d
 		{0.3	1.00}		;// 30-50m   65d
 		{0.5	0.77}		;// 50-100m  50d
 		{1.0	0.30}		;// 100-110m 20d
 		{1.1	0.10}		;// 110+ 	 6.5d
-	})))))
+	}
 (mod "gametype:battle_zones" {curve "assaultrifle" {0.066667 2.00} {0.133333 1.50} {0.2 1.00} {0.333333 0.77} {0.666667 0.30} {1 0.195} {1.1 0.1}})
 (mod "gametype:ammunition" {curve "assaultrifle" {0.066667 2.00} {0.133333 1.50} {0.2 1.00} {0.333333 0.77} {0.666667 0.30} {1 0.195} {1.1 0.1}})
 (mod "gametype:evacuation" {curve "assaultrifle" {0.066667 2.00} {0.133333 1.50} {0.2 1.00} {0.333333 0.77} {0.666667 0.30} {1 0.195} {1.1 0.1}})
@@ -53,14 +53,14 @@
 (mod "gametype:campaign_capture_the_flag" {curve "assaultrifle" {0.066667 2.00} {0.133333 1.50} {0.2 1.00} {0.333333 0.77} {0.666667 0.30} {1 0.195} {1.1 0.1}})
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "bullet_smg"     ;// sub-machine guns, damage 55, range 80
+{curve "bullet_smg"     ;// sub-machine guns, damage 55, range 80
         {0.1    1.25}       ;// 0-20m   69d
         {0.25   1.00}       ;// 20-40m  55d
         {0.5    0.60}       ;// 40-60m  33d
         {0.75   0.40}       ;// 60-80m  22d
         {1.0    0.20}       ;// 80-88m  11d
         {1.1    0.10}       ;// 88+     6d
-    })))))
+    }
 (mod "gametype:battle_zones" {curve "bullet_smg" {0.066667 1.25} {0.166667 1.00} {0.333333 0.60} {0.5 0.40} {0.666667 0.20} {1 0.13} {1.1 0.08000000000000002}})
 (mod "gametype:ammunition" {curve "bullet_smg" {0.066667 1.25} {0.166667 1.00} {0.333333 0.60} {0.5 0.40} {0.666667 0.20} {1 0.13} {1.1 0.08000000000000002}})
 (mod "gametype:evacuation" {curve "bullet_smg" {0.066667 1.25} {0.166667 1.00} {0.333333 0.60} {0.5 0.40} {0.666667 0.20} {1 0.13} {1.1 0.08000000000000002}})
@@ -68,7 +68,7 @@
 (mod "gametype:campaign_capture_the_flag" {curve "bullet_smg" {0.066667 1.25} {0.166667 1.00} {0.333333 0.60} {0.5 0.40} {0.666667 0.20} {1 0.13} {1.1 0.08000000000000002}})
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "bullet_mg"        ;// machine guns, damage 80, range 120
+{curve "bullet_mg"        ;// machine guns, damage 80, range 120
         {0.05    1.50}        ;// 0-12          120d
         {0.1     1.25}        ;// 12-24m    	100d
         {0.2     1.00}        ;// 24-36m    	80d
@@ -76,7 +76,7 @@
         {0.75    0.65}        ;// 90-120m   	52d
         {1.0     0.35}        ;// 120-150m  	28d
         {1.25    0.25}        ;// 150+        	20d
-    })))))
+    }
 (mod "gametype:battle_zones" {curve "bullet_mg" {0.033333 1.50} {0.066667 1.25} {0.133333 1.00} {0.2 0.80} {0.5 0.65} {0.666667 0.35} {1 0.2275} {1.1 0.1}})
 (mod "gametype:ammunition" {curve "bullet_mg" {0.033333 1.50} {0.066667 1.25} {0.133333 1.00} {0.2 0.80} {0.5 0.65} {0.666667 0.35} {1 0.2275} {1.1 0.1}})
 (mod "gametype:evacuation" {curve "bullet_mg" {0.033333 1.50} {0.066667 1.25} {0.133333 1.00} {0.2 0.80} {0.5 0.65} {0.666667 0.35} {1 0.2275} {1.1 0.1}})
@@ -84,7 +84,7 @@
 (mod "gametype:campaign_capture_the_flag" {curve "bullet_mg" {0.033333 1.50} {0.066667 1.25} {0.133333 1.00} {0.2 0.80} {0.5 0.65} {0.666667 0.35} {1 0.2275} {1.1 0.1}})
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "bullet_hmg"		;// heavy machine guns, damage 160, range 140
+{curve "bullet_hmg"		;// heavy machine guns, damage 160, range 140
 		{0.05	1.25}		;// 0-14m     200d
 		{0.1	1.125}		;// 14-35m    180d
 		{0.25	1.00}		;// 35-70m    160d
@@ -92,7 +92,7 @@
 		{0.75	0.6}		;// 105-140m  96d
 		{1.0	0.40}		;// 140-175m  64d
 		{1.25	0.20}		;// 175+  	  32d
-	})))))
+	}
 (mod "gametype:battle_zones" {curve "bullet_hmg" {0.033333 1.25} {0.066667 1.125} {0.166667 1.00} {0.333333 0.75} {0.5 0.6} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 (mod "gametype:ammunition" {curve "bullet_hmg" {0.033333 1.25} {0.066667 1.125} {0.166667 1.00} {0.333333 0.75} {0.5 0.6} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 (mod "gametype:evacuation" {curve "bullet_hmg" {0.033333 1.25} {0.066667 1.125} {0.166667 1.00} {0.333333 0.75} {0.5 0.6} {0.666667 0.40} {1 0.26} {1.1 0.1}})
@@ -100,13 +100,13 @@
 (mod "gametype:campaign_capture_the_flag" {curve "bullet_hmg" {0.033333 1.25} {0.066667 1.125} {0.166667 1.00} {0.333333 0.75} {0.5 0.6} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "bullet_pistol"	;// pistols, damage 60, 120 if silenced, 70 range
+{curve "bullet_pistol"	;// pistols, damage 60, 120 if silenced, 70 range
 		{0.1	1.5}		;// 0-14m    90d
 		{0.2	1.0}		;// 14-35m   60d
 		{0.5	0.5}		;// 35-70m   30d
 		{1.0	0.2}		;// 70-77m   12d
 		{1.1	0.1}		;// 77+   	 6d
-	})))))
+	}
 (mod "gametype:battle_zones" {curve "bullet_pistol" {0.066667 1.5} {0.133333 1.0} {0.333333 0.5} {0.666667 0.2} {1 0.13} {1.1 0.08000000000000002}})
 (mod "gametype:ammunition" {curve "bullet_pistol" {0.066667 1.5} {0.133333 1.0} {0.333333 0.5} {0.666667 0.2} {1 0.13} {1.1 0.08000000000000002}})
 (mod "gametype:evacuation" {curve "bullet_pistol" {0.066667 1.5} {0.133333 1.0} {0.333333 0.5} {0.666667 0.2} {1 0.13} {1.1 0.08000000000000002}})
@@ -114,7 +114,7 @@
 (mod "gametype:campaign_capture_the_flag" {curve "bullet_pistol" {0.066667 1.5} {0.133333 1.0} {0.333333 0.5} {0.666667 0.2} {1 0.13} {1.1 0.08000000000000002}})
 	
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "bullet_sniper"	;// sniper rifles 100 dmg 130 range
+{curve "bullet_sniper"	;// sniper rifles 100 dmg 130 range
 		{0.05	3.00}		;// 0-13m  	 300d
 		{0.1	2.00}		;// 13-26m   200d
 		{0.2	1.35}		;// 26-39m   135d
@@ -122,7 +122,7 @@
 		{0.65	0.80}		;// 85-130m  80d
 		{1.0	0.40}		;// 130-143m 40d
 		{1.1	0.10}		;// 143+ 	 10d
-	})))))
+	}
 (mod "gametype:battle_zones" {curve "bullet_sniper" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.80} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 (mod "gametype:ammunition" {curve "bullet_sniper" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.80} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 (mod "gametype:evacuation" {curve "bullet_sniper" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.80} {0.666667 0.40} {1 0.26} {1.1 0.1}})
@@ -130,14 +130,14 @@
 (mod "gametype:campaign_capture_the_flag" {curve "bullet_sniper" {0.033333 3.00} {0.066667 2.00} {0.133333 1.35} {0.2 1.00} {0.433333 0.80} {0.666667 0.40} {1 0.26} {1.1 0.1}})
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "shotgun"		;// shotguns, damage 100, range 50
+{curve "shotgun"		;// shotguns, damage 100, range 50
 		{0.2	5.0}		;// 0-15m    500d
 		{0.3	2.5}		;// 15-25m   250d
 		{0.5	1.0}		;// 25-35m   100d
 		{0.75	0.75}		;// 35-50m   75d
 		{1.0	0.5}		;// 50-60m   50d
 		{1.1	0.2}		;// 60+   	 20d
-	})))))
+	}
 (mod "gametype:battle_zones" {curve "shotgun" {0.133333 5.0} {0.2 2.5} {0.333333 1.0} {0.5 0.75} {0.666667 0.5} {1 0.325} {1.1 0.1}})
 (mod "gametype:ammunition" {curve "shotgun" {0.133333 5.0} {0.2 2.5} {0.333333 1.0} {0.5 0.75} {0.666667 0.5} {1 0.325} {1.1 0.1}})
 (mod "gametype:evacuation" {curve "shotgun" {0.133333 5.0} {0.2 2.5} {0.333333 1.0} {0.5 0.75} {0.666667 0.5} {1 0.325} {1.1 0.1}})
@@ -145,12 +145,12 @@
 (mod "gametype:campaign_capture_the_flag" {curve "shotgun" {0.133333 5.0} {0.2 2.5} {0.333333 1.0} {0.5 0.75} {0.666667 0.5} {1 0.325} {1.1 0.1}})
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {curve "gun_autocannon"	;// 20-25mm auto cannons
+{curve "gun_autocannon"	;// 20-25mm auto cannons
 		{0		1.5}		;//WTF
 		{0.5	1.25}		;//Section 9 property. Do not copy without approval.
 		{1		1.0}
 		{1.1	0.25}
-	})))))
+	}
 (mod "gametype:battle_zones" {curve "gun_autocannon" {0 1.5} {0.333333 1.25} {0.666667 1.0} {1 0.65} {1.1 0.1}})
 (mod "gametype:ammunition" {curve "gun_autocannon" {0 1.5} {0.333333 1.25} {0.666667 1.0} {1 0.65} {1.1 0.1}})
 (mod "gametype:evacuation" {curve "gun_autocannon" {0 1.5} {0.333333 1.25} {0.666667 1.0} {1 0.65} {1.1 0.1}})

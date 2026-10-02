@@ -23,7 +23,7 @@
 
 	{curve "bullet_sniper"}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 130 130})))))
+{range 130 130}
 (mod "gametype:battle_zones" {range 195 195})
 (mod "gametype:ammunition" {range 195 195})
 (mod "gametype:evacuation" {range 195 195})
@@ -41,12 +41,12 @@
 	("penetration" args 6.5 3.5)
 	{FiringTimeout 3.5 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.2 0.5}	;24m, 1.75s
 		{0.4 0.8}	;48m, 2.8s
 		{0.6 0.9}	;72m, 3.15s
 		{0.8 1.0}	;96m, 3.5s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.133333 0.5} {0.266667 0.8} {0.4 0.9} {0.533333 1.0}})

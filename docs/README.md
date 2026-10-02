@@ -1,12 +1,15 @@
 # Отчёты и история
 
-Текущее состояние описано в [README репозитория](../README.md) и [отчёте пакета реализма](realism/REPORT_RU.md).
+Текущее состояние описано в [README репозитория](../README.md), [исправлении сбоя загрузки](realism/crash-fix/REPORT_RU.md) и [отчёте пакета реализма](realism/REPORT_RU.md).
 
 | Файл | Содержание |
 |---|---|
+| [realism/crash-fix/REPORT_RU.md](realism/crash-fix/REPORT_RU.md) | Исправление Nested mods, проверка обоих модов, сохранение сюжета и отменённые авиационные/sIG33 изменения |
+| [realism/crash-fix/verification.json](realism/crash-fix/verification.json) | 6 604 проверок; 849 SDL-файлов, 14 Lua-файлов; ограничения без запуска |
+| [realism/crash-fix/payload.json](realism/crash-fix/payload.json) | 255 исправленных файлов и SHA-256 до/после |
 | [realism/REPORT_RU.md](realism/REPORT_RU.md) | Дальние бои, здоровье/ветераны, ремонт, дым, волны, нагрузка, решения по всем 30 пунктам и анализ анимаций |
 | [realism/manifest.json](realism/manifest.json) | 259 файлов пакета, изменения и контрольные суммы |
-| [realism/verification.json](realism/verification.json) | 5 031 проверка структуры и расчётов; ограничения проверки |
+| [realism/verification.json](realism/verification.json) | Исторические 5 031 проверка; пропущен запрет вложенных mod, результат заменён исправлением |
 | [realism/representative-ranges.json](realism/representative-ranges.json) | 20 представителей оружия и 31 набор параметров с раскрытием наследования |
 | [REPORT_RU.md](REPORT_RU.md) | Первый анализ оригинального ИИ, Horten, приоритетов модов и первая поставка |
 | [PLAN_RU.md](PLAN_RU.md) | План первого этапа; исторические предложения не равнозначны установленным изменениям |

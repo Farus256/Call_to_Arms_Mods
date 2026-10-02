@@ -9,7 +9,7 @@
 	{cursor "ironsights/smg"}
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 70 70})))))
+{range 70 70}
 (mod "gametype:battle_zones" {range 105 105})
 (mod "gametype:ammunition" {range 105 105})
 (mod "gametype:evacuation" {range 105 105})
@@ -23,10 +23,10 @@
 
 	{FiringTimeout 1.0 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.3 0.5}	;21m, 0.5s
 		{1.0 1.0}	;70m, 1.0s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.2 0.5} {0.666667 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.2 0.5} {0.666667 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.2 0.5} {0.666667 1.0}})

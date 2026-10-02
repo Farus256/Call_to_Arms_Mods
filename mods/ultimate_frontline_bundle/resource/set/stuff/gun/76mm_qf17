@@ -30,7 +30,7 @@
 	{parameters "he2" ;HE/HC reduced
 		("velocity" mps(550))
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 180 180})))))
+{range 180 180}
 (mod "gametype:battle_zones" {range 270 270})
 (mod "gametype:ammunition" {range 270 270})
 (mod "gametype:evacuation" {range 270 270})
@@ -44,7 +44,7 @@
 		{spreading
 			;{radiusTable {0 0} {50 1.25} {100 1.75} {140 2.75} {209.99 4.75} {260 10}}
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0} {50 0.65} {100 1.3} {140 2.275} {209.99 3.4125} {260 10}})))))
+{radiusTable {0 0} {50 0.65} {100 1.3} {140 2.275} {209.99 3.4125} {260 10}}
 (mod "gametype:battle_zones" {radiusTable {0 0} {50 0.65} {100 1.3} {140 2.275} {209.99 3.4125} {260 10} {390 18}})
 (mod "gametype:ammunition" {radiusTable {0 0} {50 0.65} {100 1.3} {140 2.275} {209.99 3.4125} {260 10} {390 18}})
 (mod "gametype:evacuation" {radiusTable {0 0} {50 0.65} {100 1.3} {140 2.275} {209.99 3.4125} {260 10} {390 18}})

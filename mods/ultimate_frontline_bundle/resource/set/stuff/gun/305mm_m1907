@@ -11,7 +11,7 @@
 	("super_heavy_artillery")
 	{calibre 305}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 700 700})))))
+{range 700 700}
 (mod "gametype:battle_zones" {range 1050 1050})
 (mod "gametype:ammunition" {range 1050 1050})
 (mod "gametype:evacuation" {range 1050 1050})

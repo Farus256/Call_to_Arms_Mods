@@ -3154,13 +3154,13 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/properties/human.ext",
-      "bytes": 8171,
-      "sha256": "bc984a1efcdc8772a71ca5815474ea72023c1705427a29c8d1b15784ccbe13ed"
+      "bytes": 7463,
+      "sha256": "106447085a34fd5750464422230e6f4f32ed0721e635e59e241643c04e0dfde7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/properties/resupply.inc",
-      "bytes": 67370,
-      "sha256": "fa02b3226f6fbb15a10aa72249652164ee9101274c8bdf1f6f3c1517f0b24306"
+      "bytes": 57458,
+      "sha256": "18fa02a1bdcd778500c4cc542a248949747b347c78a708c5b23131a314382cfd"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/properties/small_part_harmless.inc",
@@ -3169,8 +3169,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/properties/vehicle.ext",
-      "bytes": 25943,
-      "sha256": "23c711d4469701d70100c1fb487c7935ea5d0e532dcd3ab807169e1f9ced1f32"
+      "bytes": 23996,
+      "sha256": "cc8a3134592acffee39e07d432fc4b9329b8e2347124de72577108a21ab2d7b7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/modes/battlezones.lua",
@@ -3204,23 +3204,23 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/ability/veterancy.set",
-      "bytes": 7753,
-      "sha256": "e0e905b80b6f6e4f56f7dd37a9ce937c5d433b79d11f9cc0f90b59bc27aca479"
+      "bytes": 5983,
+      "sha256": "80eff0abe65aea8d9f522b5ddbadb061ec21ef18d6e49716c4b7176ddb2dac01"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/ballistics.set",
-      "bytes": 13334,
-      "sha256": "fd6a5eafb1c1bcfff78d086b48ae4881248214e1498b7b5a7067b0ece9e6f797"
+      "bytes": 11564,
+      "sha256": "fe4683d6a632969667e0fbacc605bdeef5e802586d24b862c2573e766768093e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/entitymanager.set",
-      "bytes": 9731,
-      "sha256": "68be3514a47e61d0f3b3a9f340af4f88f34bd2b142d210b3e49b66fea58d87ed"
+      "bytes": 5081,
+      "sha256": "265750b7616036900fc9936575cadaeaecbfcac50f467a208b3c09d9f35f01cc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/fxmanager.set",
-      "bytes": 2054,
-      "sha256": "45a442d4dea66fe4cf569b8fee7cc0d81a179eaa1dd2ebbf45fe12dd20332ab8"
+      "bytes": 1700,
+      "sha256": "b79448a9893bdca2e05d3fd7771eb07ae6a8adc6161e43ed5f85467af8c4721b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/interaction_entity/dummy.inc",
@@ -3234,8 +3234,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/interaction_entity/human.inc",
-      "bytes": 88474,
-      "sha256": "c80c278c32c6b737857e27fc3e13336bbfcef8b77b5a9a04e57e306f2ade87b8"
+      "bytes": 88120,
+      "sha256": "1c2792b0e1fe0de034b9c61867d2e520e907e9b7d9a8409ecff8008691fe2b2b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/multiplayer/games/presets/frontline_early.inc",
@@ -3314,423 +3314,423 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/small_firearms_accuracy.inc",
-      "bytes": 19959,
-      "sha256": "0cd578f564a8f60f61400ed737a4271194da8269b546cdfa151ee924f06fdb31"
+      "bytes": 18720,
+      "sha256": "95fd4eced44dc3a3b70a8277d0caa48c87f8a1f7cbd086afbf622ece182d721c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/faustpatrone_30.weapon",
-      "bytes": 942,
-      "sha256": "29e959933630f6a51af4b853f5a5450a02606f716539bfd49794c7e8cebb03b1"
+      "bytes": 765,
+      "sha256": "20b183985e8f0622918096f736e33e425e9f81bbfd6d322d702d11a67a87e96b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/panzerfaust_100.weapon",
-      "bytes": 942,
-      "sha256": "d89d4a18b027e0b179c02517ce8a0359f094e279c36b5257a1a3702cdddd48f7"
+      "bytes": 765,
+      "sha256": "18f95fd13026f3fabc6897f229f4cce97ae7161f1500c2b12f243d0801487d9f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/panzerfaust_30_fin.weapon",
-      "bytes": 948,
-      "sha256": "2528184d43baa56c5bab45fa1efb946280306167fc04e8e04dce892e77f46e1b"
+      "bytes": 771,
+      "sha256": "d8ac3f136a43087445ebbad3535c5d459fcd0ec8f880f5e15babede1ecc53b10"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/panzerfaust_30.weapon",
-      "bytes": 940,
-      "sha256": "fc2fb1eef93fbb68f9ae7c1504763a5dcffdcaeb98c376d2e054958560a342c3"
+      "bytes": 763,
+      "sha256": "c55378d5fd84728a014fc72a5d05f322045cdfdb0ba92dc8cce0e84200e8fd46"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/panzerfaust_60.weapon",
-      "bytes": 940,
-      "sha256": "c7c5df5ce6691398ee815f0a514dfb8eeeac9f09871e0b5d3f7b0773c5636baa"
+      "bytes": 763,
+      "sha256": "b366c6700e4af4bb4627b8114a8745dc576b0447a126e2f6341b4004f11364f7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/piat.weapon",
-      "bytes": 1974,
-      "sha256": "7e634b595fbb6bb398fdfa3c457b6a4d160e1ad992ff3ba381a761435c1bf03c"
+      "bytes": 1443,
+      "sha256": "bdcb71afebbfa261ff0cd6cf3984c10c20be2bb5905897300a10ad59b2b27914"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/recoilless_m18.weapon",
-      "bytes": 1245,
-      "sha256": "9420491cecf3f787d514a8ac623e96d596a275da42338d3b3ea8e93acdf60307"
+      "bytes": 1068,
+      "sha256": "47ff42156288e12061be6c58f7d7d429e6efed7461d7631d47b8142c1686b938"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bazooka/rpg_weapon.pattern",
-      "bytes": 2233,
-      "sha256": "5efe5c750fcf7f11aaae61e24b1db174938b76a5d4fe72a80077767f7f3b61c9"
+      "bytes": 1879,
+      "sha256": "0410a92243e87345c898f47af9b6a6a5db7dff0817975f14435093e9094c4e85"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/bombing/.presets",
-      "bytes": 722,
-      "sha256": "44dd77a4c718b513497bcb717e108bc884f32a3c4914dfeb09fa52faedeaafcc"
+      "bytes": 545,
+      "sha256": "797947f90118bbfa7002065a2f2e24ba95441354f0a3ce339593f9ef07c6afb6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/explosive/bdsh_canister_x2.weapon",
-      "bytes": 775,
-      "sha256": "e4620ed2d6374963d64ac8dc1265b61d1ff74f5845a9a6b7bbc2fe2c0968a6bc"
+      "bytes": 598,
+      "sha256": "4178ec63154263b222381ec99676e76e745ee70b23248e5f2769970eab3c30b0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/explosive/explosive.pattern",
-      "bytes": 1002,
-      "sha256": "045ca1d07cd164154ae07845af4cfff1568c893f48b87253454247766742dad0"
+      "bytes": 825,
+      "sha256": "290a5ec7f268935ce98f7e4add57328dfebd634600f000068d8f61401325c56e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/14mm_flammenwerfer_251_16_L",
-      "bytes": 856,
-      "sha256": "9cc395d41eb8da31d46642fc730a19b679a022e7b5f38c56d24283b5e8c0de2b"
+      "bytes": 679,
+      "sha256": "b486ff60b6ae190616fba3cf9fd5dd4c5de67a1c995bcad655f4691c4f7fd971"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/14mm_flammenwerfer_pz3",
-      "bytes": 901,
-      "sha256": "8a8ba81f199c2b6eff189aafc059ff7d79991a8cfe1d5814d5f824388692ff8a"
+      "bytes": 724,
+      "sha256": "5938e70329ad1c051957e2555b44184847308527cae9d3f4fb65a5be515bb1ff"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/ato_41_flame_thrower",
-      "bytes": 775,
-      "sha256": "60a4c0207329ff04e29f99b569486725f99a1d68677c80b884fa576479ba12ac"
+      "bytes": 598,
+      "sha256": "2d1b01bb2d8c29e487a97b141d8f66c95215c837cdb993a0585c8779d0e4a2f0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/ato_42_flame_thrower",
-      "bytes": 775,
-      "sha256": "d54a62847843b477c2e62a4180ff5917e5e4225eac9cc3215ba756f581720855"
+      "bytes": 598,
+      "sha256": "82233837360b07fb6461d571b32ab964247a0b0080de9489e1a979da6d38549c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/croc_flame_thrower",
-      "bytes": 934,
-      "sha256": "e96c23c549c3dac4d9b430c5ba53cdb5e17e203f9c3ebe10fafd18db9d6022f5"
+      "bytes": 757,
+      "sha256": "b2633a5df621ca229be236501044498b703d2c16eab96ff8f425ff862163d307"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/e4_5_flame_thrower",
-      "bytes": 846,
-      "sha256": "22ba9ac370a5a907026b5c7628869fbfe9a8f0d4d2540b248f31956d59acf159"
+      "bytes": 669,
+      "sha256": "09e0055d05f61e885ee443078ca5ed76b867114474526402820023eb635669e0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/flame_thrower.pattern",
-      "bytes": 1554,
-      "sha256": "ab5d6441e7cf12dea73e87e62ccb7c4295f86007c8b8d69dd7808802927a4845"
+      "bytes": 1377,
+      "sha256": "a80725bbddcfd43a43578548e4cafd9f53556c6c13d604ae01dc9a574b9df8fb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/flammenwerfer_b2",
-      "bytes": 763,
-      "sha256": "a8e7e8477993ae6afa91fd389952e379985fc6371f338752d4d8d03c6ce1de7e"
+      "bytes": 586,
+      "sha256": "511966019cce0de79af06f0e368f67c84262d9ff81a91e2db272a19f574a14a9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/fmw_35_flame_thrower",
-      "bytes": 652,
-      "sha256": "94ab90dc1dc8cd406a14038f357ae81ceea07c48076a11fa39b470763ee88694"
+      "bytes": 475,
+      "sha256": "30e6997be4b310f65b1eaa506da56fb7417f9e4aa5c9aa64efb4b1835cc5438b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/fmw_41_flame_thrower",
-      "bytes": 652,
-      "sha256": "740dd50fd8b181f664a70f3b37447a814aca2444190ef3a0f0ecc9b7fa7fe005"
+      "bytes": 475,
+      "sha256": "4901359500d970ea99d2cf210ffcbe34fe8f229f4b7a025aa59c47474f20c2d6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/ks_24_flame_thrower",
-      "bytes": 844,
-      "sha256": "449c1c0a0d2276c1f2723486cf5e1a23cf72e66d656ef7f7cec0c9e79f2398f3"
+      "bytes": 667,
+      "sha256": "53f919d0a54433d865f7973a83e606eb10614f456f1d78d39246c6c3764f9bd9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/ks_25_flame_thrower",
-      "bytes": 845,
-      "sha256": "243461282d8d704c4571d991efb1a341e1af3bf7b8b0ad26340595c1c006ea04"
+      "bytes": 668,
+      "sha256": "2313954ace3b2abaf33cc4307f5e079d6ceb14b507de88077159f97d79572660"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/ks_25_flame_thrower_fin",
-      "bytes": 849,
-      "sha256": "dfdaae18c34084bfe66bfbcc364f61e0a2aa3fcd0c45871eedc754967014e3a0"
+      "bytes": 672,
+      "sha256": "ceac58ee70618ffb0244a4e958856ae89cdc766623247618144a71ef755335f9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/m1_flame_thrower",
-      "bytes": 662,
-      "sha256": "f61793d356813a21908ee2f670db027bf3cd47e57816a56fb92a290432cb23dc"
+      "bytes": 485,
+      "sha256": "39288cb9dd9a286d1a947303afb926163765876cf50f65369a706825040107f1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/m1a1_flame_thrower",
-      "bytes": 649,
-      "sha256": "f1cf11062c4676357204fefb87fdc941ad77faa80a905b4187ef3ee3db9cdf13"
+      "bytes": 472,
+      "sha256": "3e51d1d685fd56d64f35581ae6986e601777f68a242909ced7b04fe7e6c3fb18"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/m2_flame_thrower",
-      "bytes": 646,
-      "sha256": "6e57aad059214ceb5c37ac69c4f8060983bd027291fcd42cbb2fac54a53828d7"
+      "bytes": 469,
+      "sha256": "db083e53f5d0f7fd2f8d28b51bf018f8818795309cec5ff467a454d19d17062c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/no2_flame_thrower",
-      "bytes": 657,
-      "sha256": "e58e37c27c53eb0d8c8ad073bd1b5ae6e197fc7c2a4b7fdd648bdf51aa44b030"
+      "bytes": 480,
+      "sha256": "7ae9b1379d0986f347086776296b96a2329bf11c78a3f91833db3d14ac36d29a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/panzer2_flamm_L",
-      "bytes": 815,
-      "sha256": "867c80e0e352f53833df279b3f469c40bc89d798abc6a6567dabf268c6c45d7e"
+      "bytes": 638,
+      "sha256": "cbdf74bee5c50c14c4daeb94e309616819741a7f0f304fa3c82b60699b83ffb9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/roks_2_flame_thrower",
-      "bytes": 652,
-      "sha256": "b9ccf65f71bb737cd8c4b68784855a9a4b5fc7f7d19e2ff74386990087c68077"
+      "bytes": 475,
+      "sha256": "822a68d762e9623d9dcba627b62f82dd193fd2c90bbbd6c867ddd26e0641ff16"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/roks_3_flame_thrower",
-      "bytes": 652,
-      "sha256": "903eedc3e35a8ed477a8d6bbea2805aee9368b0f3189132fe22707a32c52d6e5"
+      "bytes": 475,
+      "sha256": "85fdf710987cf8fbdbf59dad062eb6ab4d4ac738655f28b723b7563fa3a2278f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/flame/wasp_flame_thrower",
-      "bytes": 837,
-      "sha256": "96222fbec3641aac2caccc3e661510c860a91c0ad9a6a66dbec3100e40bd171e"
+      "bytes": 660,
+      "sha256": "b795a6c356df1d234060915f8c341184df148e147c0d979048337f05016d80a2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/f1.grenade",
-      "bytes": 863,
-      "sha256": "e5546b3a4d5633f63aea36ee527645c0ba7f4c4ba56201d6b24add673f048473"
+      "bytes": 686,
+      "sha256": "9b457d4968e808883b11cd906e0ecf5853ad2c25ff9ae5db678b447f79d37cd4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/handgranate_310r.grenade",
-      "bytes": 877,
-      "sha256": "e698693002db1aae24ef0d7d4117ea12e64d0e9cecc1feefaab15543a9824f00"
+      "bytes": 700,
+      "sha256": "99356f5a99c17b915fccb15f1d6ffc85c24d9e73207cca9c6d279c3e44c18f15"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/handgranate_337r.grenade",
-      "bytes": 889,
-      "sha256": "29f682ce1e10148cb406ec8cdd8258b669e2cd1c3e1b71c9bf759fc2a3776891"
+      "bytes": 712,
+      "sha256": "c070bb079cf42d9a25fb20a4697b14ad6e4ac39fa9e529fbb4a3b9f360170cfc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m24_splinter.grenade",
-      "bytes": 818,
-      "sha256": "e356b95e9f483040776db54a2bf8d14e64f01854125d8a9edc61b0021df12b04"
+      "bytes": 641,
+      "sha256": "26ea841a9c68fe6e810cea241af64c639ce19bcdd9a25a46a9920758a0c059ac"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m24.grenade",
-      "bytes": 808,
-      "sha256": "58b601a79d2ee1b1a08f9f2608c43dc9ff5aa7c75e5afb91934d7b155dcb6334"
+      "bytes": 631,
+      "sha256": "7b23ab2f35a29cee96bfe3de206aadcf1e86d29cc02ca9bb2252a168afb1b4cb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m32_stick.grenade",
-      "bytes": 847,
-      "sha256": "f86a262d1927ad1046834a5030c2b98231a07cc32d8688921716431b9b03232e"
+      "bytes": 670,
+      "sha256": "72550b2843c7b3728cc67db94308ec077d8140df4b0e054ab88e2334e167d18c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m32.grenade",
-      "bytes": 867,
-      "sha256": "c3b0116ae076a2ca7e731e029dbeaa0303d1dc85167582481b088a427b0a6d74"
+      "bytes": 690,
+      "sha256": "3cc14a36a4a574e3ec9a0461a7acd5d8c5a354602242b5010a1c902de5bcd7f8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m36.grenade",
-      "bytes": 840,
-      "sha256": "c072ebbae0f9988448b2940cc9188872f55ea741ec96093b40753f9f72e14459"
+      "bytes": 663,
+      "sha256": "dc52eef90307e0b96cd3d0d2796a20a99b1b9318e08d96cf88ff74e77ef27a7a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m39_early.grenade",
-      "bytes": 870,
-      "sha256": "2fc7244ce9d9f07557f3a8e8c83769a9a01e7ce90e182a705e8d74b304986d0c"
+      "bytes": 693,
+      "sha256": "e331dfddf5f85b0fe4deaaba745f92903f03625e0bfcf196d90b3975b17b8e1e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m39_late.grenade",
-      "bytes": 869,
-      "sha256": "1f58b99ff7e2ba8ef87b6bfb825ae2c1084dea90c096eba96f694138c7034c84"
+      "bytes": 692,
+      "sha256": "e623117045abf947167a119628e887be14c343dbf0b2cef4a4573b7b328901c2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m39_mid.grenade",
-      "bytes": 868,
-      "sha256": "02121aeef366b454fc5b52b41685be21b63a081716edeb35fee5fa8b3016d8fc"
+      "bytes": 691,
+      "sha256": "e5f94c415b6a1a2b685cf75a80004b8189d0fd76d60c4ca2785af3fe48ade2c8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m43_splinter.grenade",
-      "bytes": 852,
-      "sha256": "a806a821a69420caf9b40fe47481ea1ca6c1f576155d56389710acdc9e4d6ed1"
+      "bytes": 675,
+      "sha256": "41fd29bcc02b1d6b1c96af95248d488a8562ab51c3b8e4f6b08fc046fb3d4d45"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m43.grenade",
-      "bytes": 842,
-      "sha256": "07611468a470b3a0ebf18f8ecdd64e59cc17238b8f498289585f775a6e852d26"
+      "bytes": 665,
+      "sha256": "326616b31695f31781216e9b312db11473b2e92ba60883c7804df7ec586e936e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/m45.grenade",
-      "bytes": 866,
-      "sha256": "52a58729e993ebf4b69d32ad5e6810bd4bc26bb7f98f5565ed4be2e15feedd34"
+      "bytes": 689,
+      "sha256": "2d13b78542d7c328082d5a694aaeeabedfa7a1a794a5cb6c2eb6b21aee784336"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/mk2.grenade",
-      "bytes": 864,
-      "sha256": "c043ac0331b3355ff9596ba66449159719045238425f9398de49bc3bd4a96c3f"
+      "bytes": 687,
+      "sha256": "50c303dc472c96519615e1767babe9743be4220c8baa5e30c46a9953ffb08995"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/no36m_early.grenade",
-      "bytes": 872,
-      "sha256": "35d99b0b009ea224b11f1c168227ff3ceab595eb49d84813b93db7a26c115f59"
+      "bytes": 695,
+      "sha256": "f4a844a73cb5db93d6b47b4c251911831a0c11872b96e0902374a907f0e68a60"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/no36m.grenade",
-      "bytes": 870,
-      "sha256": "bb2e5976227f4ba6d6ba29dc8aeb06353623f8d76652a43ffe6ae51a8171b603"
+      "bytes": 693,
+      "sha256": "4145452cbbc8cc531acd0300743c16354cda4dc00066c9fb9655db4a08de6566"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/no69.grenade",
-      "bytes": 841,
-      "sha256": "774854637f41723116920ad8643af97461f0c8a064e7deb0957dfc3a7aeea51b"
+      "bytes": 664,
+      "sha256": "9d1e0279620ca7893faf10dd44853618f51ab128c38e847b3efa9e565dbf4509"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/rg14_30.grenade",
-      "bytes": 882,
-      "sha256": "4f48e7fbae8418a5ef05f941bdb4e48c0f3c57ab16331573bae481e15abda16c"
+      "bytes": 705,
+      "sha256": "0ac87807ac7a1a204ad48932418919ffbb95cba43eb5f41337c00c21b7d0308c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/rg14.grenade",
-      "bytes": 878,
-      "sha256": "a1596e873bc2964b891eea3fd96c935d2050fbced78d66f4a20d81ac556a94cf"
+      "bytes": 701,
+      "sha256": "9d35e52e2b7f717378285662ac6a686a5de1f16a5feeeb78e3015e0682268948"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/rg42.grenade",
-      "bytes": 863,
-      "sha256": "af7180851b10b89fbb3bb3880177961de47efca7ac29b9d87fe84fb06c30a527"
+      "bytes": 686,
+      "sha256": "1027ad6ad2afc0ba55385f91242b96c54aa04aedbb23ef29b2395a31c3c06f17"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel grenade/rgd33.grenade",
-      "bytes": 878,
-      "sha256": "9da55234866a699b7ad9744345768b045fe1a5e73ed37b26e0d0e6d5a07add0f"
+      "bytes": 701,
+      "sha256": "b6cd0c0a843ae940acfb46346393d9b5ad96633a0c744d21787cd199efc3a245"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel_contact.pattern",
-      "bytes": 862,
-      "sha256": "8bcc69782f0dd7f403b0c312fdebe54aba1edf9ef73425102aae3678305afa53"
+      "bytes": 685,
+      "sha256": "fb3ffc5d12eb3315df23db90f3cd9cd1c2b2e21f3bd4e62e4dc1ea6b116f3f2c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-personnel.pattern",
-      "bytes": 942,
-      "sha256": "5175b0d6bae0d5cae965d219370285d17f0f5a4aa68db59ef792cda9aed4a832"
+      "bytes": 765,
+      "sha256": "16ebfacb8c13f99ea2bbba603a953e4d363901c2d6ec8d1708f044accbe559ba"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-tank grenade/molotov_bundle_fin.grenade",
-      "bytes": 976,
-      "sha256": "2fcd64a84adeb3d43b7d26ac9ed3a1467f6fa0f1e575717733e06e11bfc35290"
+      "bytes": 799,
+      "sha256": "cc3e49ff74db7438047483eb1c713bd07285c8f04a02830b9342f77ebe607b6d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-tank grenade/molotov_cocktail_fin.grenade",
-      "bytes": 978,
-      "sha256": "315165ca35f05d569974d30ba72bea6bc5346ee403d5e5afe1710aa7c63df767"
+      "bytes": 801,
+      "sha256": "bdb101066a7c22467489d3788e52dd1c2c8a86762d30d759abe78fa2c8a444f2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-tank grenade/molotov_cocktail.grenade",
-      "bytes": 974,
-      "sha256": "13a7b31a82d4ceb2d1df3e8548e116b235bd977cb8a4d3079170e165cebc8fab"
+      "bytes": 797,
+      "sha256": "3a0c086915966a5cebeb641f97b3e7448393fff72178a10deccf26893ddd76d2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-tank grenade/no76_ic.grenade",
-      "bytes": 954,
-      "sha256": "152a3c23aa5f3cd9532f911cd385aa36b53a02789dcebdaf54f40cb0910186a6"
+      "bytes": 777,
+      "sha256": "f704026acfb66aff0764012aa3435578dd4913af8adbde3db6b421a127edd033"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-tank grenade/no82.grenade",
-      "bytes": 947,
-      "sha256": "6131321c8b13e6913a4b7f8943f092631f3d75de361c89366f22191a458c08cf"
+      "bytes": 770,
+      "sha256": "2543f033139206b855f253e44b7a221154ff7eeb22caa8c0232110bd56f15435"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-tank grenade/rg14_bundle.grenade",
-      "bytes": 1126,
-      "sha256": "73d5f3c09dd909c81df8d2f5be127768ea86729d4ac1e238b1a1d3ccefc14722"
+      "bytes": 949,
+      "sha256": "a25dafb5568426c7100cc9d63bf5d06450eeb2e025dc33e167dbc302248887e7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/anti-tank.pattern",
-      "bytes": 870,
-      "sha256": "eb69ebe68ff963fc7962585a06fc6f371775eeee3c4284f654a65a96b4dc61cd"
+      "bytes": 693,
+      "sha256": "c64f6cbb7c1b4daa5bc5bf236334d4970f21f03bc365194afb8582807f6bbcc8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/anm8_smoke.grenade",
-      "bytes": 610,
-      "sha256": "9298bf0db784e4088910b50fb2e0bbcd75fc2c58bb2fd53d96f04363ea293e79"
+      "bytes": 433,
+      "sha256": "a5141fa9d769f002e1c8bb307447cfe1dc8c078a2eaa6fc0e5f0cf27c2b0044a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/m15_wp.grenade",
-      "bytes": 605,
-      "sha256": "cebd300eb4d0bf699dd9cb519561ec117a52b55bb9ca0ddab0d6a2869ee21979"
+      "bytes": 428,
+      "sha256": "486a772548a175b4ae707775a5247af82ae377a2a8eea5810ce0a379f41028c7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/m24_smoke_supplies.grenade",
-      "bytes": 595,
-      "sha256": "dcb8f663877cf1b423957cc2388c2199922878a2877d4eeb1a4205988369be84"
+      "bytes": 418,
+      "sha256": "1274567ffdd21fe0ac5c69e60c5ea112aff805045907f4b7f2e71178159fbc31"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/m24_smoke.grenade",
-      "bytes": 586,
-      "sha256": "a0441efbba9ce021ebdc8914ad07c12274016155b23f5414a52e296123b46537"
+      "bytes": 409,
+      "sha256": "902ec7e6356fd0337ad9ea3fe01291b75d4a2ed6c315f553653dad0264a35ae8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/m42_wp.grenade",
-      "bytes": 604,
-      "sha256": "01b556bf5447cfe3d8ecc974e6360e335e1ecf8bda1f87c4870462362fb98377"
+      "bytes": 427,
+      "sha256": "9898a6d41aa2891166abb88e940a3b7e30d9c1603434252174584e4b12e522d4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/m43_smoke.grenade",
-      "bytes": 607,
-      "sha256": "c86a30211c1c236bed33f5b35f26b3ffb9a0a0c54e839d126c3b3ac563d8eae6"
+      "bytes": 430,
+      "sha256": "0fcee0f8cb23ca44f11d2ad405b0dc99e323b15b3f29d544c6406a451f97b5ce"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/nbk39.grenade",
-      "bytes": 612,
-      "sha256": "3c965a00765865bc0606a914763d73566a7d5dbe6f700afdc34500c47c43cb24"
+      "bytes": 435,
+      "sha256": "9a7bca041945062903836accb666f9bd64284ffdf0bab03d079796e59ba15d8f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/nbks.grenade",
-      "bytes": 611,
-      "sha256": "7f5fd90186ae79fb286d3fbb25b3feb659e4479e307d31e4923a7cec0f5be313"
+      "bytes": 434,
+      "sha256": "6955d21f46b203b9544338ae391023cd0a0426f1a9213f611b120f89d4e67e46"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/no77_wp.grenade",
-      "bytes": 607,
-      "sha256": "6d4a0a3eaaa96a6ecbe3c4184c3bd5d8dc216b788473fc3232246753c1cb5b61"
+      "bytes": 430,
+      "sha256": "a7563fd0322c81ed17017762cb21cf787094b41974252c6171c7a4b902da325c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/no8_smoke.grenade",
-      "bytes": 616,
-      "sha256": "6d89e4cfcd44d8579be2168fc3312d5c2f07e3ba619dcc172e2c0888e6e088c0"
+      "bytes": 439,
+      "sha256": "ca110cb5d88cbd15a750afbba88da495d731144881bd0474e340cba2b7ed53d9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/rdg1_smoke_supplies.grenade",
-      "bytes": 598,
-      "sha256": "d8f02df243ac0787470eaabaa344e8b5173f723618b9833da88b7cbcf48854b4"
+      "bytes": 421,
+      "sha256": "b72e0abd58357db6cd2f6dfc78b279f6b3d97e4d63bc0afb49dc185ec1ee38b8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/rdg1_smoke.grenade",
-      "bytes": 589,
-      "sha256": "b991562565d149ca5f1e4caa3b1a28af83a6bcf5bca8464f501eb39e21c23668"
+      "bytes": 412,
+      "sha256": "37b9608dcde576c1c4266adb31e66b4c5abab5ad24474fbb992396dc1f93f646"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/s1_smoke.grenade",
-      "bytes": 638,
-      "sha256": "5864cde183fbc035e974549c5f2b06af3224492188878dfd5e3bfda6f1026e26"
+      "bytes": 461,
+      "sha256": "df731106b6db26c73ce374b079a307b3aaf07a886e6d4bc55cd51a9776981240"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke grenade/svkkr_pm.grenade",
-      "bytes": 606,
-      "sha256": "939f45f27b79d42dd9c22647449c772a100deed9189a0a5072f5533a7c57346d"
+      "bytes": 429,
+      "sha256": "6aad0c7d695cc96b0452122dc58d3199523fac5a68b056d11fa5076e3e26ce06"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/grenade/smoke.pattern",
-      "bytes": 647,
-      "sha256": "99d0bc3dcce0b7a4b628858427819144c9a559837a68eeae14300a5412fbf294"
+      "bytes": 470,
+      "sha256": "d913824f065e8eeea9c49983253ec3c204f0c45219f5ab4d9ab4468a9616773b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/.presets",
-      "bytes": 194491,
-      "sha256": "22664de1a966a81aeb6793b6b609fc4f0c013ec38eb5e3d8cc6584e4e0b4810c"
+      "bytes": 177242,
+      "sha256": "c4f8a47ea0d1e5b3b104dc8ec2950a967c51330c4523bc1c5687419e1cf3d465"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/105mm_k13",
-      "bytes": 2422,
-      "sha256": "7c9c05671ff9145f1784571194ebe9d237841886e8a312b6e4c8fa2b5b634dbe"
+      "bytes": 2068,
+      "sha256": "30646abd5525457deefe6404c935e9fefe6b23988fb8b532b9dc998db2804360"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/105mm_k34",
-      "bytes": 1524,
-      "sha256": "ea005d810b15b89e97d71170bf31540b6a8b77afc5dce442ca1d5c59009e0a50"
+      "bytes": 1347,
+      "sha256": "21369c86088ea1e1014aa2d368d4131e2572d27188a1818bd78343f0a8ffb556"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/105mm_lefh18",
-      "bytes": 1812,
-      "sha256": "2aa61d70954dcf31db481a073c71368828cca2fa6a4758803c080d8a22d618ea"
+      "bytes": 1635,
+      "sha256": "2ecf7c71aaacde689c58a5fa789b96037bb1a6c6aef84b24beea259c10d73162"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/105mm_lefh18m",
-      "bytes": 1796,
-      "sha256": "2c3b3b1a73a0149bcd7af87680e7d65137c94a1795452c2bf699adc250ea5d8e"
+      "bytes": 1619,
+      "sha256": "78f83251a5335d18c147be9daa7a96e6da7455bba88ae2ab2c2326626074a920"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/105mm_m10525",
@@ -3739,818 +3739,818 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/105mm_m2a1",
-      "bytes": 1629,
-      "sha256": "4834d84398ab132c59cb271f38413963e3a3000176af302e9adb76a524195b1e"
+      "bytes": 1452,
+      "sha256": "e24d3cafcee059aa4421985000a2e10c90dccb1215c453eec2c166001e543350"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/105mm_m3",
-      "bytes": 1628,
-      "sha256": "c216023858ff061fdfd6dfb408229240b01c3ce050789946b3ceb38db10eba28"
+      "bytes": 1451,
+      "sha256": "d96414052aa91b5907a8be11a701e460b60f1c9d5d4b891feecef0a2bb9303b6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/105mm_sk18",
-      "bytes": 1811,
-      "sha256": "c459458e938b0944e6490901d45c471cdf01f148c9a819a7a79a3392ff530af0"
+      "bytes": 1634,
+      "sha256": "6a086772fa9591e98abe4237e936a0ed63d88de598cf35e1e937295d5e9fd082"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/107mm_m1910",
-      "bytes": 2488,
-      "sha256": "50dd7787ee19310f664814cbbdfa88f03dc38b853d26e16b842cf1240cd6c232"
+      "bytes": 2134,
+      "sha256": "f6de295863809340c465af4eb5deb4d63558dca0c6f20b82757fd14f6c589479"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/107mm_m1910_30",
-      "bytes": 2465,
-      "sha256": "4e4c08a76b8deb01d32ac44d58b0bfbd0980753dbce1f55f070b187d66608e00"
+      "bytes": 2111,
+      "sha256": "f555beab4281cbb95cab5e20ecb017a0f663b4b17762430524bd172fc03fd93e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/107mm_m1940",
-      "bytes": 1496,
-      "sha256": "f39c82e5c6a1fcd467e14a21bb85e7b0f2b43f88e2db507b5cb25708cf0767e1"
+      "bytes": 1319,
+      "sha256": "50fdc0c09bc9a81d6b993e8d072095ecf499fb60840ba61ab4ac22ec7f493a88"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/114mm_bl4_5",
-      "bytes": 1512,
-      "sha256": "f0ebf61612732863634cdfcfdd921a4a75e1961943239f43af2f3ebb16f70e1f"
+      "bytes": 1335,
+      "sha256": "88ced510302a80226dfb07ac6b856d3da1884856d13b8627c8d5508c6bc44a04"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/114mm_m1",
-      "bytes": 1539,
-      "sha256": "05cc4816e3a6d63a5fdf9dd55a6f7762c149378dd3cc5bcf1e8b795a99af4f37"
+      "bytes": 1362,
+      "sha256": "216f63c499c5418c62efcda56ff3fdb4a6a5173170dfd4d609e94d664759f03d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/114mm_qf4_5",
-      "bytes": 1520,
-      "sha256": "3f9c06dbf51b494b725287f3a6fdff4adc94d62965f983ebfde01a83c56b55c3"
+      "bytes": 1343,
+      "sha256": "f81cf69336c7d845df270d91f658184aefaf28f8efb23fe7eb873f7112b5b21c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/120mm_k78_31",
-      "bytes": 1525,
-      "sha256": "141b90434d98ba68646980e006a6bedab4058c930efecda866cb712d446c8bf0"
+      "bytes": 1348,
+      "sha256": "56714bd1d12dd5761348ed54a6f6a36c17e68abe83e789249c778fea9fa8762c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/120mm_qf4_7_mk9",
-      "bytes": 1513,
-      "sha256": "1615d497b3ee48803132c5b94c3fc2a2ccaa2455f59f283c7fdd8c4e8cde87b0"
+      "bytes": 1336,
+      "sha256": "fb497aab25d26e76509c1af7c5fd30c0841d2a8325c57a6a51a2becc2af0d326"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/122mm_a19",
-      "bytes": 1959,
-      "sha256": "03b6f4ee82c327e020106c1dea691132f6d26c9dcde19a4e931f54aace63e926"
+      "bytes": 1782,
+      "sha256": "74a6364976c8006c8b949c7973ec9d82245781c44ed3ae5e2a0c775c15ee04bd"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/122mm_m1910",
-      "bytes": 2289,
-      "sha256": "d8d96e0cf618b87789a04f77967b86bdd4fbd26e52617755a098b56028f8578c"
+      "bytes": 1935,
+      "sha256": "d3866af63246d4fa237c3912ef13128c38ea198ba25a569ea77b3a25e37d98f6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/122mm_m30",
-      "bytes": 2428,
-      "sha256": "e2434fa28256c9c02c8c064fabd02e12b28d6c0b690ab0034609e2eb061143a9"
+      "bytes": 2074,
+      "sha256": "1ef9abaa8c64c6888ff5f1f6ddb88e34eb6fe930069740755c9df5c9dafd15a4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/125mm_ampulomet",
-      "bytes": 974,
-      "sha256": "e90fe006a15dd5684ed5f336077d3a535ca03408102044cb2f2e4a9a9fcbce54"
+      "bytes": 797,
+      "sha256": "e731cccfc7725515e1d6c741fe030ce91dce569527d5b9cbf20aeba1977832b0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/128mm_pak44",
-      "bytes": 1458,
-      "sha256": "15506c39bfb0e6702d6f69276e9d6a4bd08b8c08804b21adbc271aa6bc210cd1"
+      "bytes": 1281,
+      "sha256": "bb29a20c8469651beb6bf04f46329937c181b560c62d6680fa2766d33c4be243"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/140mm_bl5_5",
-      "bytes": 2095,
-      "sha256": "a49bed0cb6699273df52d4983c7019d90705811a8ac33eb8b269ad39b80ce7b9"
+      "bytes": 1741,
+      "sha256": "fb9cd078826448cd81c7d57d12b08b5f261bbecedef6c9bbf5ba6cd0268dd792"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/150mm_sfh18",
-      "bytes": 2254,
-      "sha256": "6957794b9cf4922e703d3ee337e5ead1b490b631c24091c824f25b0423ec58df"
+      "bytes": 2077,
+      "sha256": "23cc8cfdb83216024be1af7583bec893d0cd5afeb89bcacb51042c7a4742e31a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/150mm_sig33",
-      "bytes": 2715,
-      "sha256": "25580c06e3e528313813a4c9c45dde73bad5c2ec7f638d1c763e80cea68aa783"
+      "bytes": 1057,
+      "sha256": "ab7bd85e31e0a5e85fe145cbd411ac6174d3158d8e52a0b2368319652623f603"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/150mm_sig33_2",
-      "bytes": 3019,
-      "sha256": "640f4c6fe69c8395035f680967ca3d07a1dde26d9ce1050cc7c99c9fe5de60b8"
+      "bytes": 2488,
+      "sha256": "4c2bf5add2d8b853dacfae73ca1723be6b6394bbce0504aad29285fbfc249f5f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/150mm_stuh43",
-      "bytes": 1589,
-      "sha256": "48b8b5c1e2765fd328516983d8748cd9bcd99480ffa409c60d650dcc1f42b76e"
+      "bytes": 1412,
+      "sha256": "b2e9e3748a5771fcdad391789e503b5535642c32d695b124b9e07c34e02c5368"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/152mm_bl6_26cwt",
-      "bytes": 1485,
-      "sha256": "2bbc1000c0093b26f9201a39270248306f7b702d1d9d251a531f82891631ef6d"
+      "bytes": 1308,
+      "sha256": "037b27d789f64d6f1b0bc3bed6e149a5b1c0ececb6f2f2071f36f1dbd704a0fa"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/152mm_bl6_mk19",
-      "bytes": 1493,
-      "sha256": "38aee5f08b42ca9ed19984ae3b340053626d3a60e4347dfae6abca8429898c89"
+      "bytes": 1316,
+      "sha256": "7004c9ad689b2102d5db6b9a60b47f7b2edd4228d448a895cef8ac3c0636c22d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/152mm_br2",
-      "bytes": 1529,
-      "sha256": "552df91f5576165f3f58028d4d209e9f50bd1c59042c6489272e14a827ff7bef"
+      "bytes": 1352,
+      "sha256": "f38afcc0c5a085adb887d0d361ce3ea288b8c9b253a348726d2829838abed43d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/152mm_d1",
-      "bytes": 2577,
-      "sha256": "ee9b27f0991a3b85cb34b907639b092a9f221157e95df8f94dbf92d8e5b3a7bd"
+      "bytes": 2223,
+      "sha256": "6a78b3a622b6d5d8e8a1ad0a6d481f5a5dcf5c4c0df8b5dc56f37a47d2b3adb8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/152mm_m1909",
-      "bytes": 2018,
-      "sha256": "80141b0f44b7e475325b4b4d3fc25f9f51b3ac1fac2299187ecb9316f97eb4fb"
+      "bytes": 1664,
+      "sha256": "d1f93fef74d8247a67f10f477f8eba52520f880550bf80347948165e3dbbc81c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/152mm_ml20",
-      "bytes": 2894,
-      "sha256": "f0f84b1911f844d9f3cb694790f10a27e2c23ab21b3b06d2244a9269b4777ca2"
+      "bytes": 2540,
+      "sha256": "a74607321223fb5af498ab8746fd37091bee92a93d618114544cde0aebf4a19b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/155mm_gpf",
-      "bytes": 1821,
-      "sha256": "ef43873b961aa25efe55e819f32b206125cdfb2a8be1a5962c5f8fca9db34f47"
+      "bytes": 1644,
+      "sha256": "fc140c4c180da93f717f1213b2ece8b59ac2b30f30e3e18a706e6317875bb456"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/155mm_gpf_bunker",
-      "bytes": 725,
-      "sha256": "72b64eef847793439af42312cc7e191f029cde445aabbe7ec3f435a640bcdc5e"
+      "bytes": 548,
+      "sha256": "437508557f9a9006d0a5fa920e97c04a717ceaea95f6835dc87f1607257b9c3e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/155mm_h17",
-      "bytes": 1520,
-      "sha256": "dd11f0979f9ec0ce4ce344aa7d0f5d059440c9b216595a938f058901c5943cc7"
+      "bytes": 1343,
+      "sha256": "e1629a839fcc12d1402e2829507b446c784ec7f6fdceed4c87b889aefd9c2f7c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/155mm_k17",
-      "bytes": 1516,
-      "sha256": "e487d44d63c09fd78ed8db655dc94fef5fd7306339c9ee4f0e9e954520113e0e"
+      "bytes": 1339,
+      "sha256": "a5b7634b176076cfba18e59613e4e3ce6be8a5bbd52b21ce3439dff0409b6034"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/155mm_m1",
-      "bytes": 1482,
-      "sha256": "b7804e7b04e272b93058d3b4d8408df129a6365dd09a460ef7ab045a9ffd615a"
+      "bytes": 1305,
+      "sha256": "ab1108b25b610c3755699dc05fadccdcf2679a399b4b5e9caec81b28bd1eb8d1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/155mm_m1918m1",
-      "bytes": 1758,
-      "sha256": "4c84d9d29b21d023bd8490f0511a822f31059cdf913a001ccd249034377cd2b9"
+      "bytes": 1581,
+      "sha256": "ecea2c4b77c2e63822505d9889b2bf50f2e0b86cca197127877fdff3f61e054b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/155mm_m1a1_longtom",
-      "bytes": 1796,
-      "sha256": "5d263b65fadd52ff7b179ae50ba8f723a02f763fe7fbb0e697dd6601dd7b6efe"
+      "bytes": 1619,
+      "sha256": "cf6530861f751c90cb4db17c016ffbd32a108b0ebb02b56499b525bba6fea8d3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/15mm_besa",
-      "bytes": 1487,
-      "sha256": "abed3ec2015b1e6a55b03e6af2a864be23c6e10174d64e2622358a5e5c63c30c"
+      "bytes": 1310,
+      "sha256": "f1acef1b1ab446f98d2587af7898080c9d421256adf802848d852dcb93175c96"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/15mm_mg151_x3",
-      "bytes": 1750,
-      "sha256": "a80641e3b16b9a04daf328b0214b3c39ae43dd987cbd4f8376f0eca1cd1b00a0"
+      "bytes": 1573,
+      "sha256": "ee93bdcc1fe4e9b06fb3e35a4ba972ba8a5a190041d5bfc3280981a164822e0e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/170mm_k18",
-      "bytes": 1522,
-      "sha256": "8f2a5082adf5fecc180b2231a97472808f547d79a40f69185557920ec77386a1"
+      "bytes": 1345,
+      "sha256": "363ec28899042e79bc8e28d8cd8f31c07ae92db4f93b049dc27bbca3a461893f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/180mm_tm1",
-      "bytes": 1456,
-      "sha256": "835b81632bc67a306643d77f72a131001f165a1293ebe8e49a88ebd3e60d3543"
+      "bytes": 1279,
+      "sha256": "eed77d27f37f8f2a63b805a42e8ac6ce195eb7c25b91b5835970181628a7df4c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/183mm_bl7_2",
-      "bytes": 1435,
-      "sha256": "4524a3389fc4cd155165e7f69bd2dd56d30e826c94e501d849b7390b808ee80d"
+      "bytes": 1258,
+      "sha256": "1a7e5d93c933c035edba1561302a820c124588aa5a9b447b388313a72989357b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/183mm_bl7_2_mk6",
-      "bytes": 1439,
-      "sha256": "3334c9487b2a640897de9d6dfa98b03ed5c57c5d3c5f71181d89b1dc28cae2f4"
+      "bytes": 1262,
+      "sha256": "d2731200063061f72820a3aeb78a7620b530286e2322c0d26a8c7779bc6a03d4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/203mm_b4",
-      "bytes": 1437,
-      "sha256": "230e139677230232304f72e71913fad2fc87b6166942e5f846d002ea6494357d"
+      "bytes": 1260,
+      "sha256": "53abc98ad202b43b73d350e14b40e24a7749c06679708b96e66ae444bb48f167"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/203mm_h17",
-      "bytes": 1445,
-      "sha256": "7ffd88e524a82887f93a706295cb586df3f5604c1370f21042d2aae5242042fb"
+      "bytes": 1268,
+      "sha256": "90fea66463baa5faf1c5e0380004dad9ccb8c9da11c3ebe321f563aa64eae68e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/203mm_m1",
-      "bytes": 1465,
-      "sha256": "00fbc817ea79273624becf356897cb4b45ead3ac817a6f6b2695a7bd8ced3def"
+      "bytes": 1288,
+      "sha256": "c9273ddb20f889c5ced9c274be0fe678ecc101ad204b3533879f13ff0987b71f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/20mm_flak38",
-      "bytes": 1722,
-      "sha256": "aaedde7c70a3e483bda0ef0c3f47c81b8bde3aeeaef40c168feebc0634d44cb1"
+      "bytes": 1545,
+      "sha256": "d603f051b8f0f174087cab220a58a29f012d14325fab66bddbf567244da61781"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/20mm_itk35",
-      "bytes": 1649,
-      "sha256": "6bbafd6e5a6162fb4eb2f75c3c608b2020b806a2cce3e395e8325f36e87b0ba3"
+      "bytes": 1472,
+      "sha256": "20034afa14a98642ef64845cd6c4abc70421e0f4a66ea94512d5b3c839fdee2e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/20mm_itk40",
-      "bytes": 1628,
-      "sha256": "075bfe20c60e5eb282d42b3e748d6ec32871d3f21e7742f6e8e8c66de73a9324"
+      "bytes": 1451,
+      "sha256": "7aebef9d9a90acfe64696bc72b94e3d26e433783c627a43b92d443e4de77ebf3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/20mm_lahti_l39",
-      "bytes": 1298,
-      "sha256": "caa406ac02b0b582bc4a6ab8293b42d000ae2ea77d3e2068d4d9c450bc32b9f1"
+      "bytes": 1121,
+      "sha256": "5547863e63ea20b136d2f6c6dd0588d8e98e8fbd975d1fbe23b8059c70ba5678"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/20mm_oerlikon_mk1",
-      "bytes": 1617,
-      "sha256": "e2afd43902b392aed2621eff24bb577db2c553369446065203d396c95bdce968"
+      "bytes": 1440,
+      "sha256": "93fc400a98ce3934ca7724a83a6ee5fc3003611c4157b5ebc26cdfba1e5d474a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/210mm_h17",
-      "bytes": 1449,
-      "sha256": "c8c6d67ff2664f42a1f0433c4a96ea7d7c0242fc5efc7ff9c9a705859ee33aac"
+      "bytes": 1272,
+      "sha256": "13534f0dbadba92e5396f038f2f3311399678585553c3b07c6b80f26ba3d98bb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/210mm_k39",
-      "bytes": 1444,
-      "sha256": "7aa18e36856345012a64d8716dffb70ce22c4b53adc4cc535fe5161fe74f859b"
+      "bytes": 1267,
+      "sha256": "4fc9384be60428539c794ad53b3e92ba2c3d948c249979ad9cd029882a0b3f0a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/210mm_morser",
-      "bytes": 1446,
-      "sha256": "d26f7ec71a389f08a1f7fd2fde16b818644e15a0c51230c4fabf3db71c6ed779"
+      "bytes": 1269,
+      "sha256": "17ec94454c02bc40038e5a6358875b53a62ca1c4af1076af30d4f0db06adf3c6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/220mm_morser531f",
-      "bytes": 1455,
-      "sha256": "81db4613f95c4dfe2e0e3c0607be1c5166f5700767473f163ee9a85ad857e8d1"
+      "bytes": 1278,
+      "sha256": "d32edca3b9996ec80842a2b31eb82ba17148d740ded6f8724685552092adf462"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/230mm_petard",
-      "bytes": 1006,
-      "sha256": "dfb3feef8f2df336515442b5672d20a3580f1f2b35061fe9f085c566bf68e903"
+      "bytes": 829,
+      "sha256": "23809062e8a2b3d50ff14e96cb5fdf2471d7dccb901d4c0e7f6be4bcac91ba08"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/230mm_spigot_mortar",
-      "bytes": 1898,
-      "sha256": "3b35ec3b51787601a54e08e71db08f2954ff8a095de3da386b82dff114f432be"
+      "bytes": 1544,
+      "sha256": "0ad71f78f7da6616e5e7e77897fc97e6952e57a00a9fa59b11be948704647063"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/280mm_br5",
-      "bytes": 1449,
-      "sha256": "0d3068761a8edd5f1f21957a62f8adbf4a9280f0208327af9172adb84c7443fc"
+      "bytes": 1272,
+      "sha256": "6605fb06a477a15c82816034ac22766b29eabac610c5a345c657380acf35c60e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/305mm_m1907",
-      "bytes": 1487,
-      "sha256": "7b030b7eb87ae6f93bee51ea5ae007d9a2c4d77b50ff67a8094661cf2e4d8ebf"
+      "bytes": 1310,
+      "sha256": "a4c3c4c7026ddea2b2e3886b2294761198c814092af9608b9fe78c12dcd3f7cc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/37mm_m3",
-      "bytes": 1274,
-      "sha256": "f46141a7f2ef3c82e69e61540ea29f8a7c6b4d1e2ceab3b9416efbcdc6ac9a42"
+      "bytes": 1097,
+      "sha256": "255200b266038069926c632ad3cc7cd7bdaebdfa249058bd312ad8d8717c5f73"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/37mm_pak35",
-      "bytes": 1840,
-      "sha256": "74f7227571bf8212853ecb74f4e6b30d16d5d4ef33548dc2d22ec0fa81b82c3f"
+      "bytes": 1663,
+      "sha256": "eab792e30a3955c849e86ac6c386cd3951f97cae0da10823d83013b6c098f83e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/45mm_m42",
-      "bytes": 1475,
-      "sha256": "be8ce4e0ce13535ff6a5a7d7a5ac2b23e7379549fdef45178a74fd6fa70ca55b"
+      "bytes": 1298,
+      "sha256": "7821414486c8a7219fd13f86dd8ceed575b2bdf31ec84c2b4843694c1c525ff0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/47mm_m4740",
-      "bytes": 1243,
-      "sha256": "00c637e57d49d512acd79c6b5353cfbe5e9a5bc7fcd6b0f6b96883e95384a643"
+      "bytes": 1066,
+      "sha256": "e879ee3bd313a70a291a7e12d239fe7905a20142d86ee31ffb25f006dc2cd592"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/47mm_pakt",
-      "bytes": 1337,
-      "sha256": "d45d1653efa8093f22c01509561d37a90db4b29eb4a39b319c28b80edf3d0767"
+      "bytes": 1160,
+      "sha256": "09fdc0877c50519f3001369991c43c31b209fa8ba72aff5eb74870d405611fc7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/47mm_pstk39",
-      "bytes": 1303,
-      "sha256": "f7b249b0912883e1327943045fe526777abad20be4dcd66cfafc4c2b1a0d4aa9"
+      "bytes": 1126,
+      "sha256": "9af70cf9bb2bd9de3f819c0444992baa80ffbc079a61fd5fa563c082504cf597"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/50mm_kwk38",
-      "bytes": 1697,
-      "sha256": "6a0ccde991e429dc4995654ba11cb62206f6106c691aaeeb5b8be03cf06abdce"
+      "bytes": 1520,
+      "sha256": "b8cada4fb5b1181bfb6361932266ccd9111569f90df1d7a9845dfd80833a1e9a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/50mm_kwk39",
-      "bytes": 1512,
-      "sha256": "e4242dab6afe9a5234929f4930741a180165af28da393da6a2139592d408bc5b"
+      "bytes": 1335,
+      "sha256": "b361587b30ad1c1c8e317450753f4b19eec56d6acb16a10b503eee3c2f813743"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/50mm_pak38",
-      "bytes": 1415,
-      "sha256": "c7fac57275212ba413c85d088a57a4af369783b0c8cb01cca8198af509b95907"
+      "bytes": 1238,
+      "sha256": "841ea7c314449360adaec7f6e6325466378cf643875dfee85ff7db17f4a054f2"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/57mm_zis2",
-      "bytes": 1917,
-      "sha256": "c5e7e9b4dc5faa3d4b79a584e08c0cd1458579cdc1bdc72a5e5836fa8a25140d"
+      "bytes": 1740,
+      "sha256": "5d07cfb3559a30ab6280971ad21888c9d896a2ceeea9133a690ed5ed8e1c3dd8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/600mm_karl",
-      "bytes": 2111,
-      "sha256": "3ae95a8a42aae13d5e5069c94a3991e531b11cc64515c5b69585847d2ad93414"
+      "bytes": 1757,
+      "sha256": "b1cca1650b3d36c60f24b70bd62946c6857d59e3fa6b4a74c01f4314d5746082"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/75mm_fk18",
-      "bytes": 1817,
-      "sha256": "e2c49153f7027d2f21fa32f6e31a9ccf6f98887564720e26f5183d0a8b83519b"
+      "bytes": 1640,
+      "sha256": "cb0753384ad614ac12075a3721b236e9d7637e6918254107ff44b7b9c01ce9ec"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/75mm_k44",
-      "bytes": 1722,
-      "sha256": "65d0f82194e73da0101130983c3cf6a16ca862ab0e298cc68bc93299158a4d9a"
+      "bytes": 1545,
+      "sha256": "4c8ba95f455e9ca64caae77b6ded2883d0227b99401f9ed88cec106bf64f7e85"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/75mm_kwk40",
-      "bytes": 1717,
-      "sha256": "12a1a683f15c9a10cddc55406d4832ec85bc579f6c7b9e4e935a579653f8e7d2"
+      "bytes": 1540,
+      "sha256": "c62c842e256cb00e2b97b89734ae2fa703f6d942042a8803e220454159b68b93"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/75mm_kwk42",
-      "bytes": 1366,
-      "sha256": "331e0f7cb74877eb57efa9883994436a827174da9b85d273bfa64bfcf9ecfc03"
+      "bytes": 1189,
+      "sha256": "517db8761fd0c6a619cb2ae73a8e77f6d5f84dc66345fabbaddc913f0b94b642"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/75mm_m7546",
-      "bytes": 1593,
-      "sha256": "7d5f5d7c94ad0719463f1cdc2cfcdf80555f0e57d9f94b5b1e6133f690f15a32"
+      "bytes": 1239,
+      "sha256": "cfb752f2c93726c7c236db90cc545a448da203fdf6a05064ba1a9fd2e54bd536"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/75mm_pak39",
-      "bytes": 1760,
-      "sha256": "692ed583d44b784daa05f673706750053e9b95c2633299889f2bc9ebd034cf0a"
+      "bytes": 1583,
+      "sha256": "5a810d04559c4a01fd5b765f572813c8d3309f684ae5706f51f4c650fc2855a8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/75mm_pak40",
-      "bytes": 2351,
-      "sha256": "16c0539c1321e888600978e7b1ba9bfadf7cc2c5530aaa009f30bd1c23de2f43"
+      "bytes": 1997,
+      "sha256": "941892bb2eee0f54de6ae7c822cd6ba90232baac7fc6f01d2b8270c4e9c6cbcf"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/75mm_pak9738",
-      "bytes": 1769,
-      "sha256": "d2d015ccc15c4385ce87359cbb7160dcb6c92ebc1047dd0b6cc0a23a33b9ea8d"
+      "bytes": 1592,
+      "sha256": "0b6bef201fa59af96c0e7b72cf92e65f8eb6c3912f95b2751fbf2b9b9f4007e8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_f22",
-      "bytes": 2727,
-      "sha256": "7672875ffa0906e54dfe9dbe11ded340ad275019a17eb3f0d31344c684662acd"
+      "bytes": 2550,
+      "sha256": "48dd5d737d06d8995117dcd6ff0a7f39d8ca515942fba66911e1ecc4b21b27a0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_f32",
-      "bytes": 2642,
-      "sha256": "07002fca0dba0397c0f4bc0573522ead2e898506cc74a813d028aa0cdafb4b19"
+      "bytes": 2465,
+      "sha256": "db7e04c3aba59bbb3b338980d3212ecdf69e775477a299f4b1dc6c147a5847a1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_f34",
-      "bytes": 2997,
-      "sha256": "c2e26cced64943bb5aafeab120c986a1f99c76e073e4ffb480a70bca9dd3fa09"
+      "bytes": 2820,
+      "sha256": "001529c09ca939597580e44a2bc909c45d84c65b1ff13270cbe295c1abbe314f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_k00",
-      "bytes": 2488,
-      "sha256": "791398eb9c5b0d3e12db2e3b3bbd312d2bbda378205b1aac0f654ec8bb7994a1"
+      "bytes": 2311,
+      "sha256": "cd2d9d42fce08407f225949e963c873ab50e84696099209b900e43e70a0e9fc1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_kt26",
-      "bytes": 1743,
-      "sha256": "db09e71bc853d99779653dc49867cb55101550a37ec686f6cccfa4fdc6bc35a9"
+      "bytes": 1566,
+      "sha256": "e8ad149142fcb6517f0894a6e9ddacaacb3e29adc3713f35cd2063616dd35602"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_l10",
-      "bytes": 2214,
-      "sha256": "8a08456887a55269b8dfd5b886dc379b145f0d9290e3c4a23d653fa4f62b7d13"
+      "bytes": 2037,
+      "sha256": "1af0cebfc368310b90d3a78035667cb1fe363eac32fca0f12a20b08c8a370f2d"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_m1902",
-      "bytes": 2502,
-      "sha256": "23ff55981a829ed2fdc0db413ed921503b598c927ce4fd56eac3f1a4c3819630"
+      "bytes": 2325,
+      "sha256": "96253fa27e88c302b6f6f934984a732b96b09429f236e410d0971c10613db8f9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_m1902_30_40",
-      "bytes": 2273,
-      "sha256": "ad63894aaf994918abaa53d758dff990bbdd93370cf48c77cf56def2becc872e"
+      "bytes": 2096,
+      "sha256": "6388f6407de1b5e9160a33e4fa0500a4fecf3ac2c82e346f88a1d5e0eacb79d9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_m1913",
-      "bytes": 2190,
-      "sha256": "e6e55c53bd31057bde8f7989ab3714abfc4ba798f942a457e8a43fe19a040ccb"
+      "bytes": 2013,
+      "sha256": "e1ef779a1603412d46e5c91eac5b8986b387365a830672e9b8d06d39e1cdbd59"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_m1927",
-      "bytes": 2208,
-      "sha256": "0948f23053db8a2f73ba7ebccb3177ec2b53b9954079e571679888376c1da591"
+      "bytes": 2031,
+      "sha256": "a6d768fc88f78e8c411ffbaccb2a793e958b1989298d59c683ce5573064e48a8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_m1933",
-      "bytes": 1515,
-      "sha256": "eedec295ee5663320bb7a65f806cd92d9e6e2e3e9118cd4177ddb853a541e50b"
+      "bytes": 1338,
+      "sha256": "ae8faa337baea247360cabebd3d8ccd885286f9fada81c39b1a5ab8c6eee1989"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_m1938",
-      "bytes": 1830,
-      "sha256": "522a051ac1b38f1510573c59b6bd64ee73dc7e87def78230523c7be5606ef100"
+      "bytes": 1653,
+      "sha256": "9ed9972f095c6dd3fa050521bc0ffc012de69b314b17a825725c3bf973794024"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_m1a1",
-      "bytes": 1507,
-      "sha256": "9d527b3d63f80ad5219c576efcd3ddd0b07a0747e985854f08b5e8db6620defe"
+      "bytes": 1330,
+      "sha256": "605aac974c2b833d89b61baecf466e6380696113ee5ad8e4f84dd7321c3d21be"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_m5",
-      "bytes": 1519,
-      "sha256": "12af83aa0887abfd8807ec215ca2d3bfd580f3ac05360b0818e32356426dc4ad"
+      "bytes": 1342,
+      "sha256": "6a75b5ac1f3d09732aa875a45135dc1d7008f88bdc496f2416c595d01a918aec"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_qf17",
-      "bytes": 3031,
-      "sha256": "dd1f97e3d52644b83d56e298a0f7f900d3e73aadf3c2eda5e238551a11763f07"
+      "bytes": 2677,
+      "sha256": "a220737a71dea8eff294fc56ae2464a1510a15495d966379642e56723558fce1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/76mm_qf17_mk4_vet",
-      "bytes": 1383,
-      "sha256": "6467248d8e5ab0e480ec1948b8dca557e2fb239c16b65c0db52247f9d87cbab2"
+      "bytes": 1206,
+      "sha256": "ad989814f7e595156edfc908127b08872f79a6f2cbfd7d50996d1d2d1a5eeecf"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/77mm_qf_hv",
-      "bytes": 1334,
-      "sha256": "6b75cf58c3610b1982761dd7605f57622530d259e05af35bedfc55df7dd5e131"
+      "bytes": 1157,
+      "sha256": "79feba4f43a4d52dc9677640c2d412a724f07ac3cf41b4820e7b961ea38b85e7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/84mm_qf18_mk4",
-      "bytes": 1691,
-      "sha256": "3a1c078ed282b0bf3141e16a75e43cbed9cd98593ff3faef7e4ed6349261ecd2"
+      "bytes": 1514,
+      "sha256": "64751434fb04ad42e24d8c7e57a0c248f4ba4d640405692224d85d94ca0d846c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/88mm_flak41",
-      "bytes": 1682,
-      "sha256": "25fbe6343698eed744130d1268383a09a4f81028b883b00112400d4f495001b3"
+      "bytes": 1505,
+      "sha256": "982921809524c3c42d425992a967f7cceccd2693554e97c59b8565411529662f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/88mm_kwk43",
-      "bytes": 1515,
-      "sha256": "7c9f75b3e68815b4217c54d0fb03871dee473991c5c586b5f45641b884cfcc45"
+      "bytes": 1338,
+      "sha256": "2da9da4bc1d65b2df9f55906ea9a2c522c38e6c7603615160e54e7161f87e074"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/88mm_qf25_bishop",
-      "bytes": 1715,
-      "sha256": "1b6761a44468bc642b71fef9b8f5c637cae0525c4278b08850ba530a609e80f9"
+      "bytes": 1538,
+      "sha256": "ef43b7fffa6bf100cbaa8316c1d22169905801eebc446a5d64bf3839ce5bc5e3"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/88mm_qf25_mk1",
-      "bytes": 1750,
-      "sha256": "c7a6e89cea861bcbe55293aaf51f4afca4b2d6e681103132eb444cab5ab167b0"
+      "bytes": 1573,
+      "sha256": "1bd497813214501ae612277d8a6a2012ffcc772d55fb690dc2b5f0514fdce292"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/88mm_qf25_mk2",
-      "bytes": 1461,
-      "sha256": "cef5863d6760b1724920920904cf5e05b68ac1974d792f579f0cdf5e26eda19c"
+      "bytes": 1284,
+      "sha256": "9f75fe6a7d78363cf986faa625c225c0d0d57b4405b72085065fd7c9d22cd582"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/binocular_vehicle_barrage",
-      "bytes": 1078,
-      "sha256": "cbf94de1fc171e0aada38fdebe8e64bf57f661149820d419b541f4b2044c3d91"
+      "bytes": 901,
+      "sha256": "fc3b6a3bd5df353e882db29498b36ab9afccc4dc72e238bcbbaf1b858dec73e4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/gun/gun.pattern",
-      "bytes": 5007,
-      "sha256": "0af4f6d21a8636554218d78b2a70f2b1aa1c3deacc24d1e2a726d7e1498f3d6b"
+      "bytes": 4653,
+      "sha256": "9ecd174726dda7753e88564ef6f9ce11b64ebda0c356f4c3ffba2f5afa2958f6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mgun/.presets",
-      "bytes": 12254,
-      "sha256": "4d6ea79912c8816e1f8fd312beda02d4eeac1fa843ec691f81542725dab27f06"
+      "bytes": 9021,
+      "sha256": "d13d9bb6898b02d3313ffb3c64b83c529849b1e4c0727b1d1f23ad62bfea8fa6"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mgun/hmgun.pattern",
-      "bytes": 2039,
-      "sha256": "e4701304be805c25fdad5e94890f7ba3edfae17559676c4513e30bb87d41a092"
+      "bytes": 1685,
+      "sha256": "20e74ee2c6ec8d581e078787e1d9fcaa7a05cd7af77f00f26dfc7c62876aaae7"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mgun/mg131",
-      "bytes": 1923,
-      "sha256": "a9543af31026179062c00e0344d7b02099a7c29113682841fa4097853692f957"
+      "bytes": 1569,
+      "sha256": "448748d04a1d26334c6a0aa3796911fb193f7fb34eb1d05e04794b2247453a89"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mgun/mgun_generic.pattern",
-      "bytes": 2124,
-      "sha256": "c17dfd404d8e7d8bb77cbde40ee64d47bcb36220850f62ada967d9aa1def040b"
+      "bytes": 1770,
+      "sha256": "bd5fd205ddd4496201627da3b3be89bd2281df703d63acd6f511be2447ed9ca8"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mortar/.presets",
-      "bytes": 13107,
-      "sha256": "63bd3dfbcbee981b7885cb8924db5c739bc249cb1cab400b3dbcf9ff8713da55"
+      "bytes": 9921,
+      "sha256": "a45a7ef58924b6d62c60afa1cc977b25fff83799eb49b431bbb51ab822656c65"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mortar/160mm_mt13.weapon",
-      "bytes": 2250,
-      "sha256": "30b766527d77fe16028cb5cdc5b704b57ffce3568c6d1efd90fdeddf7b309f55"
+      "bytes": 1719,
+      "sha256": "c9d2e8a1312a34d68091b6b1161e24969e7ad4d4886c33b0dc65e9cdc7686daf"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mortar/200mm_ldgw40.weapon",
-      "bytes": 1298,
-      "sha256": "c14a4b47f0dacc9eaac8994b8120676dc4126eddbe0a6ac8727749ee9f86c42e"
+      "bytes": 1121,
+      "sha256": "f756aa431b172ba05a2bbb9b1d6b36c46e31e781aea371995238e4b83fd292c9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mortar/300mm_krh42.weapon",
-      "bytes": 2215,
-      "sha256": "cbeb125384bacc26fe9f5440a043a9edbc4c67adef56c5d86bdf7e2d35d85798"
+      "bytes": 1684,
+      "sha256": "57f44f5649259d550a04b1ef496542dc389e547f045e4799aa0d52acc1e49d0f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mortar/81mm_m1.weapon",
-      "bytes": 1293,
-      "sha256": "a5eaab4dd056fe7d6fced080e9308829100d6c2ea21be5cd37d1b4b3bc6c8e6c"
+      "bytes": 939,
+      "sha256": "13519d9a94cdf8b2565341ea608eb630a9241d2793e9d3b76d436ec59e4bee8e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/mortar/92mm_nahverteidigungswaffe.weapon",
-      "bytes": 2165,
-      "sha256": "cde2480967226bcd2f7661edd140782d3b3d68470d282b3e07b7fbd8c3969419"
+      "bytes": 1634,
+      "sha256": "daa3618bf744f00dd594d8d880e31d85f0e2777f573fcd350631d10cf1f91471"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/pistol/.presets",
-      "bytes": 4117,
-      "sha256": "fb7717ad71bc75c18c633655f08db12acd882170dcbc9b7f123f5225d16acd6a"
+      "bytes": 3232,
+      "sha256": "86bf1ddcdf3db1ad4d44496a232037d62d9fa069ce5986ae37762d8c096614eb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/pistol/flare_pistol_mk5_sp",
-      "bytes": 610,
-      "sha256": "4ad6e17f1d6fffbbaa17dc7717106e49fda1d004b71a7545ff06b8de9de30b51"
+      "bytes": 433,
+      "sha256": "dc073c4bb0b0b119857db88c1f6863504a70c6570468e9b8a7a68fa73fc89de4"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/pistol/kampfpistole",
-      "bytes": 3375,
-      "sha256": "5ccac13b14bf4200850537784ef9c4a88833c32dc61ae4a7a790cefb420c9628"
+      "bytes": 2667,
+      "sha256": "b2bdd5c61279322b8fca5ed0a684397609136b231bd924991f3918481faad9aa"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/pistol/pistol.pattern",
-      "bytes": 1940,
-      "sha256": "a2432190701e8c7cfdb846588a5fda6ec7bbebd510ab9d76fc70278ebd10ad67"
+      "bytes": 1586,
+      "sha256": "b99ba032f0fcd9a956d7b1ccb09064cb9a61ab4329d01a107ae7902f8e6b0625"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/.presets",
-      "bytes": 2070,
-      "sha256": "4dccc5cfc968fec56be5ebcc50fa35c4e613416f4839f1fa706175020d1fb70a"
+      "bytes": 1716,
+      "sha256": "f9740b1a78c0d07282d9e28abf498a70e7c50a4272b31c35716e0db72a6e5024"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/114mm_m8_p47.weapon",
-      "bytes": 1087,
-      "sha256": "2988e2f1e75c0d455d3d416fe7ae013a50a5ef8f835db3f4841eecd3b3e4301d"
+      "bytes": 910,
+      "sha256": "67a89781d6e04cab6d77f418a1d2d3045a4c3ab5ea4227605ff1b6bccadf819c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/114mm_t34_calliope.weapon",
-      "bytes": 1942,
-      "sha256": "16c5326fe7f56c5aaa2271532b85dc60ae492ad38a2d79bd3d5fb71c308ca590"
+      "bytes": 1588,
+      "sha256": "2a0bc0b0e207f269d8d86b7d84da4a7e7bca8d08a8d0be1dab0dad672a82e21e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/127mm_hvar_10.weapon",
-      "bytes": 1153,
-      "sha256": "0aa930c99c5e6f5b3f97fa5d6b688c68039ff9aef2c09bcc1d1542099b81d790"
+      "bytes": 976,
+      "sha256": "5e71723026961520c2d0bb823ac6e97b918b0c39e9183faafaa40204e8cb49f9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/127mm_hvar_4.weapon",
-      "bytes": 1101,
-      "sha256": "2b031b4de9b764c5e898333648bbe7b9169286594548c0fd5f185a90b28d8602"
+      "bytes": 924,
+      "sha256": "194df92bece2b11dcdb15725d514fc9d4e74d2b8375a36909dc3e6523aeed398"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/132mm_bm13.weapon",
-      "bytes": 2421,
-      "sha256": "efd9f5d562a1792d015231cee64bf389705ac6588315317b213387636cd68589"
+      "bytes": 1890,
+      "sha256": "e90952ba50c3ca432f73f7f5181dd7594c81393faa5f403a11160bdbabf9463e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/150mm_nebelwerfer.weapon",
-      "bytes": 4535,
-      "sha256": "1a6da4b62a247abec7824270ca2c71ff3331d1f44a30b71d1155afb4280053f2"
+      "bytes": 3473,
+      "sha256": "006db92d9330143942b1e4f79eb0ce24a434c6143a3eb2284cfa509b9602779f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/150mm_panzerwerfer.weapon",
-      "bytes": 4527,
-      "sha256": "d3de8b094ed25f1c0811f7f194d0a76ffce7fae9f416f273f0e3c8f3b8bd895a"
+      "bytes": 3465,
+      "sha256": "f25e2f75dc3549575589dcd251d5c8e45cb084948d2f0bcb303808a442a13356"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/210mm_nebelwerfer.weapon",
-      "bytes": 2395,
-      "sha256": "11e7813a9e0b67e6ff29d5a97714da0b2131fb6cd7bfc37365331a2d18e11e94"
+      "bytes": 1864,
+      "sha256": "a4baff0b78cb28f0caec4e47d39e6db17d812dcd5eb7b8cb9b42d857a32a2d7c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/280mm_w40_x2.weapon",
-      "bytes": 2388,
-      "sha256": "8f3b79f86b93421400137629f7e5bc217357029cec973c1cac71c84543639ded"
+      "bytes": 1857,
+      "sha256": "f38506074c1734a099eab5733174053172523a0801509e0245ae445f9d7ed53c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/280mm_w40_x6.weapon",
-      "bytes": 2447,
-      "sha256": "e0d7b24a7ec55c31d1f9de385d766567e87f2afa69ccb4905a01527009d30b4b"
+      "bytes": 1916,
+      "sha256": "3f4f86a5e18c60a8dd77ac422e26678f786a0444e7d6fcd0ea9195cc217792cb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/300mm_bm30.weapon",
-      "bytes": 2410,
-      "sha256": "b5336d570bfb78d22248910d45e282732a5098187420c3f2527d959d166dffa4"
+      "bytes": 1879,
+      "sha256": "f69a9d6f28c1a99163f92d245043405aa43a2f100ebfef1d71453de2b042c29b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/300mm_m30.weapon",
-      "bytes": 2384,
-      "sha256": "56f5ba26e4cf3c0e9099a081c464db0838714175e054182d3b78d11c57e0870e"
+      "bytes": 1853,
+      "sha256": "4d623f2c5a79c860af716f30f41f9b3bd7f15a10506d79449da8596047efdf06"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/300mm_m31.weapon",
-      "bytes": 2404,
-      "sha256": "94ef5a43c8bf5559d5e420af0ce288479f5002dfbcbfec37b513c5b53e058110"
+      "bytes": 1873,
+      "sha256": "13200f43a0a69a0d08228bbeab09510cf03568ecc366406f1fec7adc4d4ccd2b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/300mm_nebelwerfer.weapon",
-      "bytes": 2399,
-      "sha256": "fdba875ba8d9200d522b1dbdbbac62a915ea79e7fb24097a1a3c2f6daadaa654"
+      "bytes": 1868,
+      "sha256": "d17256d8807f2f17f14b0c1679815f3237ff5a2183c6dfe8402d9a2d1010997f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/300mm_w40_x4.weapon",
-      "bytes": 1898,
-      "sha256": "aad6d1c00284e2839e2f1affc70597298bd4068708a7bcaa74b2a5197ed38a15"
+      "bytes": 1544,
+      "sha256": "aa1628ef53817cd172a1b8920a4987594d23d42684e62f4a218a594d4dc49471"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/300mm_w40_x6.weapon",
-      "bytes": 2380,
-      "sha256": "21d47175dfd2e61a238a66d177ca8359503e1d131560329c64609fb86d6bae94"
+      "bytes": 1849,
+      "sha256": "4a8edd7db9ec866f0b880089fa9419c7c3eb865223acdc85f29eac732998bc1e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/380mm_rw61.weapon",
-      "bytes": 1930,
-      "sha256": "b32f8daebfd9f1fc6831bbb7aa3a44256d344a8a5a3135e8e3e9d1b244cd0ec3"
+      "bytes": 1576,
+      "sha256": "6c2566b11d16bad5850beb5f24460d7e64273c83626e9a8fb10352111fac0d4c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/50mm_rocketprojector.weapon",
-      "bytes": 2234,
-      "sha256": "ff7cfb7aff440be550dd5d6348a1f62a587ae2997d7437ec4d471de7d5df8d69"
+      "bytes": 1703,
+      "sha256": "60067f7de44f77617851be3ce03f572fa3353a286b1a139a12678137ba48a3d0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/76mm_landmattress.weapon",
-      "bytes": 2415,
-      "sha256": "6286bd59cfacc1208c195ce5417867782eca8f0a562ef8a89e16a226c4ef8833"
+      "bytes": 1884,
+      "sha256": "1e9a6626117db30a580210c9fc19be63020ade1627f92f50891ec126d822c3a5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/76mm_rp3_x2.weapon",
-      "bytes": 2265,
-      "sha256": "c3049239f1532ee9ac3e93c5196b3835995b555f9d7a6fe144152fd00d3c0e36"
+      "bytes": 1734,
+      "sha256": "96e51143339797b09b5205ea4189601dad6cbca1fb4e4650872239684a9223c9"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/82mm_bm8_24.weapon",
-      "bytes": 2399,
-      "sha256": "2b8d0c214fb47e9d7baa17fdc39eaa6cb863cfe36a57ebb22aaf06214c308662"
+      "bytes": 1868,
+      "sha256": "88d46a9056f12fdbe32692fa69fd8b20720cebec810073cbedabb72b2f469baa"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/reactive/82mm_rs82.weapon",
-      "bytes": 1062,
-      "sha256": "f49d9a6f27a7e85829f025494502ab748a2465a2e48e64f9a78738038dae0c4e"
+      "bytes": 885,
+      "sha256": "eeb0cc7e86a7ca01b4d2e2e7ddd5e152e742e18ac3904256ad2bbfe49a9980bb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/.presets",
-      "bytes": 25273,
-      "sha256": "9be46e4119be90605ed5eafb96391466d2e0b3fa3f594ea4d313681bd9e2dcc4"
+      "bytes": 20494,
+      "sha256": "fb6601ae0e6a7d5e8a24f2fbaf90afd434d2cd9eb2b09941c3b961294a571677"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/de_lisle_carbine",
-      "bytes": 1987,
-      "sha256": "61b20c0771bbc72f18aa5e3dcb4ee05d55a30fc7cad28fa6427695e30bbbada4"
+      "bytes": 1633,
+      "sha256": "b31bcc78d2abffb659a84bec9cadd38d0436c65ae236f39718c9943c77bfd207"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/grenade/enfield_no1_mk3_grenade_launcher",
-      "bytes": 1560,
-      "sha256": "5ea211251fd52113bec2bb03432bf629c7fe085fe561ff10509b6c444eda6508"
+      "bytes": 1206,
+      "sha256": "ee09847dab1534a98a092d7495670cc66989b08b8a0cd7bda9417d2b2739f5fb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/grenade/enfield_no4_mk1_grenade_launcher",
-      "bytes": 1560,
-      "sha256": "5d010a7bf7707b171f63a7369ce435d934d6b31f23c65bd8c1b987564a6e5efe"
+      "bytes": 1206,
+      "sha256": "98e58091c176faedbce51f47f9772196a2daba9248b299715e428e8046108b40"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/grenade/garand_grenade_launcher",
-      "bytes": 3384,
-      "sha256": "f119c2b14fcf5688b0714d215c7f37d381a76bd4f267496bae49647ab70ee766"
+      "bytes": 2499,
+      "sha256": "d6c578bd53442f5a0e16177bbb3b7235c71fab37e681eaa0c68a7db5094bda23"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/grenade/k98_antitank",
-      "bytes": 833,
-      "sha256": "20e17bef6f27556f69771ddcdf380e65439642c838d17e8137cad85efb49aba5"
+      "bytes": 656,
+      "sha256": "98c3dc4a397dfccbf57387f84dbb08c4a6c55eb70b90af71b472bcdb71de1a01"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/grenade/k98_grenade_launcher",
-      "bytes": 2138,
-      "sha256": "2845503d0c33f41684fa88b97266afda523619303e41343a9e92bab687f5e1da"
+      "bytes": 1607,
+      "sha256": "4cf78021b0c77fc11b2e92b1ba87b9081a1b531843249dea90d03057a4cebb7b"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/grenade/m1_carbine_grenade_launcher",
-      "bytes": 3443,
-      "sha256": "d95ed6e76fd5b3f3e5828400927849106f1718c09bcd6a58137c516eefccbeae"
+      "bytes": 2558,
+      "sha256": "fdd1f8374fb6cec420121725c0c9799c8d3709cecede44362382e2d516b74c2f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/grenade/mosin_antitank",
-      "bytes": 834,
-      "sha256": "a5c444c8da14632b6c21f306722685b39c223e24b23e701c02f3dd964722370e"
+      "bytes": 657,
+      "sha256": "9f860bfcca1acf84f0777af3d2880d0ff0d453a3e5181256e75ff4282c2471a5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/grenade/mosin_grenade_launcher",
-      "bytes": 1498,
-      "sha256": "71fd58e05ece7f115449412e2a208d8dcf3b1c0cd4529dccf50928e35464e601"
+      "bytes": 1144,
+      "sha256": "b3a0f350d6b245a9903e916ea479fcef7225e3d7f10930a40a30c5f734a5b9e0"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/m12_shotgun",
-      "bytes": 2048,
-      "sha256": "8e8046fc75c5a11cf9230d92aebc709f65a7a7cef26b37b7f4d559c0e2ea583f"
+      "bytes": 1694,
+      "sha256": "459fc0f83d9d4927dc8d74954b4f7f373585e286601f86dd44c53dbc111fb98f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/ptr/at_rifle.pattern",
-      "bytes": 2049,
-      "sha256": "f27d238d0b376c96eb721ac0494cfd368385b9f644bc62a479415997e2339152"
+      "bytes": 1695,
+      "sha256": "9dd59f20993897aa27ed488aeaffd6d6786005d64a0ecb4a713dca80e55f9dcc"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/ptr/ptrs",
-      "bytes": 1078,
-      "sha256": "95d190819360e75f1a8c2c679dbdf9c9838a737d6222005d3da272db4d6ada27"
+      "bytes": 901,
+      "sha256": "99f310379a01428922a6d7106f6f73dbcf40974becc4fc186d30b40d34f7ba2a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/shotgun",
-      "bytes": 1965,
-      "sha256": "19268562725c25dc96ba6e198d4da94d2e01dfb9000f48fd629254d864a9bba4"
+      "bytes": 1611,
+      "sha256": "0898c29b530a4a4ed738781f0e19250dcd23b6dc826f8344051563b733cd5249"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/sniper/semi_sniper_rifle.pattern",
-      "bytes": 2039,
-      "sha256": "ac26b635066651807b15f48c1c51d16618766adf5803cf0cb9c9f056b11c6667"
+      "bytes": 1685,
+      "sha256": "db258b4a94f49c75f8bf336cbfdb2f340fdcda52ec0b2e2841c8eed8cdfdbb27"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/sniper/sniper_rifle.pattern",
-      "bytes": 2253,
-      "sha256": "bff1fd99ea901f486932c3989870a928dd3b0bea53ee893db25591d316da4d3f"
+      "bytes": 1899,
+      "sha256": "27c60c19cc96411967a154fcc715fe0e73d901075b04c6e1afa340cb95195cff"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/rifle/stg44_curved",
-      "bytes": 880,
-      "sha256": "78e445af8014b3ba00ec83b2b430295a931209d4a072af5c6307058c43c70dea"
+      "bytes": 703,
+      "sha256": "1325efbec21619386fc287be41032116eb16d2e645a1412e57a7d8017f5468fb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/smg/.presets",
-      "bytes": 5086,
-      "sha256": "bdf0bc5b100ecdc135271fccc39896a6d89c7e8c9f676f7080047c70dac40f71"
+      "bytes": 4024,
+      "sha256": "d798a88a8c80773a23dfe267ea8da06aea9b3c56fbc7c2b4fd6fdde2cfdab5ca"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/smg/smg.pattern",
-      "bytes": 1243,
-      "sha256": "012310d0972f9831d3926c2d2990d89546fd4766915e02ccc32cb35e9411648e"
+      "bytes": 1066,
+      "sha256": "430dc9d5e9f35b89d3837209672ea64d6beabcdfb2ac5332d45e18c6287dbb9f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/special/binocular",
-      "bytes": 2078,
-      "sha256": "a8de5ca346666dfb15ff163d2167d59813fb7d44faae1d72dc3cab0350c255f1"
+      "bytes": 1901,
+      "sha256": "b6be25a67127a25692fd5be7ec34a0a0a6e352b7d0fe9243b4240145ce76473f"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/special/binocular_vehicle",
-      "bytes": 2078,
-      "sha256": "a4cb05cbc2be205bc56f5e8a4a421f34511fd979fc18f1862350cb192af3304d"
+      "bytes": 1901,
+      "sha256": "d7cc85394b00d12558d64d8509508246f2897e95f3d2d5f2a81ce879b7ef5b8c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/special/commander_vision",
-      "bytes": 698,
-      "sha256": "884dd5b0ec9efdd764dd653ff3fe26d634c9b32e8e29ddfa3ffb65883de69eb6"
+      "bytes": 521,
+      "sha256": "d9b5fb1519e7e18a7d966ba92a481a0dd93db402e9977070d03f9ce6f37c432a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/special/searchlight",
-      "bytes": 591,
-      "sha256": "7dd88c512f845385f31918298419edcda5a36e776079bd18a0662559696a8031"
+      "bytes": 414,
+      "sha256": "e1b86d7a52731ff245149d8bb310e9bc7c946117251f4c2975ad040a44295600"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/thrower_v",
-      "bytes": 1077,
-      "sha256": "a317350a4c1df873145164d422b359c683dd3cb4804a18c27e39e143ecc5daf2"
+      "bytes": 723,
+      "sha256": "c97f79c2252a07b7a19691fabb22773d49fa2e33706253f8d75f5094fe76430a"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/stuff/thrower.hand",
-      "bytes": 1043,
-      "sha256": "2f3cc4e4391ea57a5be062e372daaa737e4b5d1b35a8939139fc0885b020c9b8"
+      "bytes": 866,
+      "sha256": "878ad45d584bb7c0027cd5a15999e4bb632f9e3c8c04d7a1858f5ced4cf82fb5"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/vision/vision.set",
-      "bytes": 1292,
-      "sha256": "e7daaaa1f99fd5e85b10cf809328b7b00c9520878d9f6c2e51192511f9aa6368"
+      "bytes": 582,
+      "sha256": "50f617ff93fa3e09a2a7ee9faf104864c6b453cf48f0d1fa3e6d8899d2b4116d"
     }
   ]
 }

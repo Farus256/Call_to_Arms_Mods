@@ -5,7 +5,7 @@
 
 {from "88mm_qf25_mk1"			; L/28 "qf 25pdr"
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 370 370})))))
+{range 370 370}
 (mod "gametype:battle_zones" {range 555 555})
 (mod "gametype:ammunition" {range 555 555})
 (mod "gametype:evacuation" {range 555 555})

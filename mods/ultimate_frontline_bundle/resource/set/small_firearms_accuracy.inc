@@ -84,7 +84,7 @@
  	(define "pistol_range"
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.02} {30 (* %globalaccuracy %r1)} {60 (* %globalaccuracy %r2)}})))))
+{radiusTable {0 0.02} {30 (* %globalaccuracy %r1)} {60 (* %globalaccuracy %r2)}}
 (mod "gametype:battle_zones" {radiusTable {0 0.02} {30 (* %globalaccuracy %r1)} {60 (* %globalaccuracy %r2)} {90 (* 1.8 (* %globalaccuracy %r2))}})
 (mod "gametype:ammunition" {radiusTable {0 0.02} {30 (* %globalaccuracy %r1)} {60 (* %globalaccuracy %r2)} {90 (* 1.8 (* %globalaccuracy %r2))}})
 (mod "gametype:evacuation" {radiusTable {0 0.02} {30 (* %globalaccuracy %r1)} {60 (* %globalaccuracy %r2)} {90 (* 1.8 (* %globalaccuracy %r2))}})
@@ -95,7 +95,7 @@
 	(define "smg_range"
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.02} {60 (* %globalaccuracy %r1)} {110 (* %globalaccuracy %r2)}})))))
+{radiusTable {0 0.02} {60 (* %globalaccuracy %r1)} {110 (* %globalaccuracy %r2)}}
 (mod "gametype:battle_zones" {radiusTable {0 0.02} {60 (* %globalaccuracy %r1)} {110 (* %globalaccuracy %r2)} {165 (* 1.8 (* %globalaccuracy %r2))}})
 (mod "gametype:ammunition" {radiusTable {0 0.02} {60 (* %globalaccuracy %r1)} {110 (* %globalaccuracy %r2)} {165 (* 1.8 (* %globalaccuracy %r2))}})
 (mod "gametype:evacuation" {radiusTable {0 0.02} {60 (* %globalaccuracy %r1)} {110 (* %globalaccuracy %r2)} {165 (* 1.8 (* %globalaccuracy %r2))}})
@@ -106,7 +106,7 @@
  	(define "rifle_range"
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.05} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)}})))))
+{radiusTable {0 0.05} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)}}
 (mod "gametype:battle_zones" {radiusTable {0 0.05} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)} {180 (* 1.8 (* %globalaccuracy %r3))}})
 (mod "gametype:ammunition" {radiusTable {0 0.05} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)} {180 (* 1.8 (* %globalaccuracy %r3))}})
 (mod "gametype:evacuation" {radiusTable {0 0.05} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)} {180 (* 1.8 (* %globalaccuracy %r3))}})
@@ -117,7 +117,7 @@
 	(define "sniper_range"
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.02} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)} {130 (* %globalaccuracy %r3)} {180 5}})))))
+{radiusTable {0 0.02} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)} {130 (* %globalaccuracy %r3)} {180 5}}
 (mod "gametype:battle_zones" {radiusTable {0 0.02} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)} {130 (* %globalaccuracy %r3)} {180 5} {270 9}})
 (mod "gametype:ammunition" {radiusTable {0 0.02} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)} {130 (* %globalaccuracy %r3)} {180 5} {270 9}})
 (mod "gametype:evacuation" {radiusTable {0 0.02} {30 %r0} {60 (* %globalaccuracy %r1)} {95 (* %globalaccuracy %r2)} {120 (* %globalaccuracy %r3)} {130 (* %globalaccuracy %r3)} {180 5} {270 9}})
@@ -128,7 +128,7 @@
 	(define "mg_range"
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.04} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {120 (* %globalaccuracy %r3)} {180 5}})))))
+{radiusTable {0 0.04} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {120 (* %globalaccuracy %r3)} {180 5}}
 (mod "gametype:battle_zones" {radiusTable {0 0.04} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {120 (* %globalaccuracy %r3)} {180 5} {270 9}})
 (mod "gametype:ammunition" {radiusTable {0 0.04} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {120 (* %globalaccuracy %r3)} {180 5} {270 9}})
 (mod "gametype:evacuation" {radiusTable {0 0.04} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {120 (* %globalaccuracy %r3)} {180 5} {270 9}})
@@ -139,7 +139,7 @@
 	(define "hmg_range"
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.02} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {140 (* %globalaccuracy %r3)} {200 5}})))))
+{radiusTable {0 0.02} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {140 (* %globalaccuracy %r3)} {200 5}}
 (mod "gametype:battle_zones" {radiusTable {0 0.02} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {140 (* %globalaccuracy %r3)} {200 5} {300 9}})
 (mod "gametype:ammunition" {radiusTable {0 0.02} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {140 (* %globalaccuracy %r3)} {200 5} {300 9}})
 (mod "gametype:evacuation" {radiusTable {0 0.02} {40 (* %globalaccuracy %r1)} {80 (* %globalaccuracy %r2)} {110 (* %globalaccuracy %r3)} {140 (* %globalaccuracy %r3)} {200 5} {300 9}})
@@ -150,7 +150,7 @@
 	(define "plane_range"
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 1} {100 (* 3 (* %globalaccuracy %r1))} {200 (* 5 (* %globalaccuracy %r1))} {300 (* 8 (* %globalaccuracy %r1))} {400 (* 10 (* %globalaccuracy %r1))}})))))
+{radiusTable {0 1} {100 (* 3 (* %globalaccuracy %r1))} {200 (* 5 (* %globalaccuracy %r1))} {300 (* 8 (* %globalaccuracy %r1))} {400 (* 10 (* %globalaccuracy %r1))}}
 (mod "gametype:battle_zones" {radiusTable {0 1} {100 (* 3 (* %globalaccuracy %r1))} {200 (* 5 (* %globalaccuracy %r1))} {300 (* 8 (* %globalaccuracy %r1))} {400 (* 10 (* %globalaccuracy %r1))} {600 (* 1.8 (* 10 (* %globalaccuracy %r1)))}})
 (mod "gametype:ammunition" {radiusTable {0 1} {100 (* 3 (* %globalaccuracy %r1))} {200 (* 5 (* %globalaccuracy %r1))} {300 (* 8 (* %globalaccuracy %r1))} {400 (* 10 (* %globalaccuracy %r1))} {600 (* 1.8 (* 10 (* %globalaccuracy %r1)))}})
 (mod "gametype:evacuation" {radiusTable {0 1} {100 (* 3 (* %globalaccuracy %r1))} {200 (* 5 (* %globalaccuracy %r1))} {300 (* 8 (* %globalaccuracy %r1))} {400 (* 10 (* %globalaccuracy %r1))} {600 (* 1.8 (* 10 (* %globalaccuracy %r1)))}})

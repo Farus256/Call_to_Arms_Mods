@@ -8,7 +8,7 @@
 	{mass 13}
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 140 140})))))
+{range 140 140}
 (mod "gametype:battle_zones" {range 210 210})
 (mod "gametype:ammunition" {range 210 210})
 (mod "gametype:evacuation" {range 210 210})
@@ -25,10 +25,10 @@
 	("penetration" args 7 5 3 1 0)
 	{FiringTimeout 1.5 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.0}	;35m
 		{0.75 1.0}	;105m
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})

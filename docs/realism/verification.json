@@ -4,8 +4,11 @@
   "weaponFilesAudited": 1085,
   "scopedFiles": 255,
   "limitations": [
+    "The original 5031 checks did not reject nested mod blocks and therefore missed the observed loader crash. These results do not validate the current installed package.",
     "Native game loader and live battle not run at user request.",
     "Gametype conditions evaluated structurally, not inside engine.",
     "No measured FPS or animation playback results."
-  ]
+  ],
+  "status": "superseded_native_loader_constraint_missed",
+  "supersededBy": "crash-fix/verification.json"
 }

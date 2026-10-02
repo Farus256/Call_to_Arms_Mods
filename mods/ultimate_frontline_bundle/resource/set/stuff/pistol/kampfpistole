@@ -5,7 +5,7 @@
 	{fireSound "pistol/flare"}
 	{fireSoundclose "pistol/flare/3p/"}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 65 70})))))
+{range 65 70}
 (mod "gametype:battle_zones" {range 97.5 105})
 (mod "gametype:ammunition" {range 97.5 105})
 (mod "gametype:evacuation" {range 97.5 105})
@@ -18,7 +18,7 @@
 		{cursor "ironsights/grenade"}
 		{cursorReloading "gun_he"}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 70 70})))))
+{range 70 70}
 (mod "gametype:battle_zones" {range 105 105})
 (mod "gametype:ammunition" {range 105 105})
 (mod "gametype:evacuation" {range 105 105})
@@ -30,7 +30,7 @@
 		{cursorReloading "gun_sm"}
 		("reload time" seconds(5))
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 70 70})))))
+{range 70 70}
 (mod "gametype:battle_zones" {range 105 105})
 (mod "gametype:ammunition" {range 105 105})
 (mod "gametype:evacuation" {range 105 105})
@@ -40,7 +40,7 @@
 
 	{spreading
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.5} {20 0.5} {69.99 3} {70 10} {100 20}})))))
+{radiusTable {0 0.5} {20 0.5} {69.99 3} {70 10} {100 20}}
 (mod "gametype:battle_zones" {radiusTable {0 0.5} {20 0.5} {69.99 3} {105 5.4} {105.01 10} {135.01 20}})
 (mod "gametype:ammunition" {radiusTable {0 0.5} {20 0.5} {69.99 3} {105 5.4} {105.01 10} {135.01 20}})
 (mod "gametype:evacuation" {radiusTable {0 0.5} {20 0.5} {69.99 3} {105 5.4} {105.01 10} {135.01 20}})

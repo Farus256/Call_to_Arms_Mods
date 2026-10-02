@@ -23,13 +23,7 @@
 
 	(mod not "mp"
 		("accuracy_spg" r1(1.25) range_ap(170) range_he(210) range_heat(170))
-		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 210 210})))))
-(mod "gametype:battle_zones" {range 315 315})
-(mod "gametype:ammunition" {range 315 315})
-(mod "gametype:evacuation" {range 315 315})
-(mod "gametype:frontlines" {range 315 315})
-(mod "gametype:campaign_capture_the_flag" {range 315 315})
+		{range 210 210}
 	)
 	{unlimitedRangeTPC 0}   ;// restrict range in TPC/FPC
 
@@ -37,21 +31,9 @@
 		("reload time" seconds(30))
 		{speed 100}
 		{gravity 3}
-		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 150 150})))))
-(mod "gametype:battle_zones" {range 225 225})
-(mod "gametype:ammunition" {range 225 225})
-(mod "gametype:evacuation" {range 225 225})
-(mod "gametype:frontlines" {range 225 225})
-(mod "gametype:campaign_capture_the_flag" {range 225 225})
+		{range 150 150}
 		{spreading
-			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0} {50 5} {100 10} {150 15} {155 50}})))))
-(mod "gametype:battle_zones" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
-(mod "gametype:ammunition" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
-(mod "gametype:evacuation" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
-(mod "gametype:frontlines" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
-(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
+			{radiusTable {0 0} {50 5} {100 10} {150 15} {155 50}}
 		}
 	}
 }

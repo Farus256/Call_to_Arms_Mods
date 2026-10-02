@@ -8,7 +8,7 @@
 	{rechargeTime 40}
 	{automatic}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 200})))))
+{aimRange 200}
 (mod "gametype:battle_zones" {aimRange 300})
 (mod "gametype:ammunition" {aimRange 300})
 (mod "gametype:evacuation" {aimRange 300})

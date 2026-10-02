@@ -1,0 +1,33 @@
+{
+  "checks": 6604,
+  "SDLFilesParsed": 849,
+  "LuaFilesParsed": 14,
+  "fixedFiles": 255,
+  "nestedModChainsRemoved": 611,
+  "storyContexts": [
+    "single",
+    "cooperative mp",
+    "cooperative offline",
+    "unknown"
+  ],
+  "gameplayModesChecked": [
+    "battle_zones",
+    "ammunition",
+    "evacuation",
+    "frontlines",
+    "campaign_capture_the_flag"
+  ],
+  "macroRisks": [],
+  "failures": [],
+  "engineLaunched": false,
+  "limitations": [
+    "Native mod precedence is modeled from vanilla resource examples, not tested by launching the game.",
+    "Crash log contains one fatal nested-mod error; later loading/battle failures cannot be excluded without a subsequent user run."
+  ],
+  "installedFilesHashMatched": 910,
+  "logAudit": {
+    "fatalError": "Nested mods not supported",
+    "otherFatalErrorsFound": 0,
+    "localizationRedefinitionWarnings": 6520
+  }
+}

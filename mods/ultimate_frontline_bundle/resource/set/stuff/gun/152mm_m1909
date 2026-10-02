@@ -10,7 +10,7 @@
 	("heavy_artillery")
 	{calibre 152.4}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 340 340})))))
+{range 340 340}
 (mod "gametype:battle_zones" {range 510 510})
 (mod "gametype:ammunition" {range 510 510})
 (mod "gametype:evacuation" {range 510 510})
@@ -24,7 +24,7 @@
 
 	{parameters "sr" 
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 310 310})))))
+{range 310 310}
 (mod "gametype:battle_zones" {range 465 465})
 (mod "gametype:ammunition" {range 465 465})
 (mod "gametype:evacuation" {range 465 465})

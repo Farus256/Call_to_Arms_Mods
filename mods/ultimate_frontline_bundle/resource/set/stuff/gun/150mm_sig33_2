@@ -11,7 +11,7 @@
 	("heavy_artillery")
 	{calibre 150}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 280 280})))))
+{range 280 280}
 (mod "gametype:battle_zones" {range 420 420})
 (mod "gametype:ammunition" {range 420 420})
 (mod "gametype:evacuation" {range 420 420})
@@ -41,7 +41,7 @@
 		{speed 100}
 		{gravity 3}
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 150 150})))))
+{range 150 150}
 (mod "gametype:battle_zones" {range 225 225})
 (mod "gametype:ammunition" {range 225 225})
 (mod "gametype:evacuation" {range 225 225})
@@ -49,7 +49,7 @@
 (mod "gametype:campaign_capture_the_flag" {range 225 225})
 		{spreading
 			; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0} {50 5} {100 10} {150 15} {155 50}})))))
+{radiusTable {0 0} {50 5} {100 10} {150 15} {155 50}}
 (mod "gametype:battle_zones" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
 (mod "gametype:ammunition" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
 (mod "gametype:evacuation" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})

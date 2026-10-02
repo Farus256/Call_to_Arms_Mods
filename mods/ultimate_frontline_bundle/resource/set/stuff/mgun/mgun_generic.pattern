@@ -15,7 +15,7 @@
 	{cursorReloading "carbine_reload"}
 
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 120 120})))))
+{range 120 120}
 (mod "gametype:battle_zones" {range 180 180})
 (mod "gametype:ammunition" {range 180 180})
 (mod "gametype:evacuation" {range 180 180})
@@ -43,11 +43,11 @@
 	("armor health" damage(4))
 	{FiringTimeout 1.75 0.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+{FiringTimeoutDistanceFactor
 		{0.25 0.6}	;30m, 1.05s
 		{0.8 0.85}	;96m, 1.5s
 		{1.0 1.0}	;120m, 1.75s
-	})))))
+	}
 (mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.6} {0.533333 0.85} {0.666667 1.0}})
 (mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.6} {0.533333 0.85} {0.666667 1.0}})
 (mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.6} {0.533333 0.85} {0.666667 1.0}})

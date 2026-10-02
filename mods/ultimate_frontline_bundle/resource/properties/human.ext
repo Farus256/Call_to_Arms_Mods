@@ -7,7 +7,7 @@
 		{max		100}	;// max health
 		{current	100}	;// current health
 		; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {inc		1.0})))))
+{inc		1.0}
 (mod "gametype:battle_zones" {inc 0.25})
 (mod "gametype:ammunition" {inc 0.25})
 (mod "gametype:evacuation" {inc 0.25})
@@ -150,14 +150,14 @@
 	{Visor "telescope"}
 	{AttackZone 10.5}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {MinRecognizeTime 0.01})))))
+{MinRecognizeTime 0.01}
 (mod "gametype:battle_zones" {MinRecognizeTime 0.15})
 (mod "gametype:ammunition" {MinRecognizeTime 0.15})
 (mod "gametype:evacuation" {MinRecognizeTime 0.15})
 (mod "gametype:frontlines" {MinRecognizeTime 0.15})
 (mod "gametype:campaign_capture_the_flag" {MinRecognizeTime 0.15})
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {RecognizeTime 0.01})))))
+{RecognizeTime 0.01}
 (mod "gametype:battle_zones" {RecognizeTime 0.25})
 (mod "gametype:ammunition" {RecognizeTime 0.25})
 (mod "gametype:evacuation" {RecognizeTime 0.25})
@@ -201,7 +201,7 @@
 		{Back		8  0 0	10.5  1.22	"run_back_spot_gun_up" 		  "run_back_spot_gun_down"}
 	}
 	; UFB realism: native non-story gametype conditions
-(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {Injured 0.85})))))
+{Injured 0.85}
 (mod "gametype:battle_zones" {Injured 0.70})
 (mod "gametype:ammunition" {Injured 0.70})
 (mod "gametype:evacuation" {Injured 0.70})
