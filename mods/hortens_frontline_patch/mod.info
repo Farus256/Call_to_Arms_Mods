@@ -1,0 +1,7 @@
+{mod
+	{name "hortens_frontline_patch"}
+	{tags "Patch, Compatibility"}
+	{desc "Local patch adapting Horten's Frontline (workshop 3359417100, v3.14.5) to game 1.067: new modular Conquest AI (vanilla conquest.lua), HF rosters in new schema, bot economy, 114 dcg maps with garrison waypoints/forward zones, granular automatic-weapon sounds merged into HF interaction_entity. Load right after Horten's Frontline."}
+	{minGameVersion "1.066"}
+	{maxGameVersion "1.068"}
+}

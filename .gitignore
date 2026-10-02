@@ -1,0 +1,15 @@
+# Runtime, local settings and temporary build inputs
+*.log
+*.bak
+*.tmp
+*.temp
+*.dmp
+node_modules/
+_ai_work/
+.env
+.env.*
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

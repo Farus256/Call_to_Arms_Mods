@@ -1,0 +1,377 @@
+{
+    "Target":  "mods/ultimate_frontline_bundle",
+    "Files":  [
+                  {
+                      "Path":  "resource/entity/-vehicle/+finland/car/volvo_127d_ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "B73BAB46995C1D5C2B4DF3AF83A7470A7EB7D22EB73DFB230F122224940FB8DB"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/+germany/btr/sdkfz251c_8/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/+germany/car/opel_maultier_eng/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/+germany/car/opel_maultier_transport/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/eng/car/bedford_oyc_fuel/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/eng/car/bedford_oyd_art_ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/eng/car/bedford_oyd_engineer/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "575358D7720DA05AFC5954882ADD4DBEDC28F7879BCFB587BE425B5C02417E2B"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/eng/car/bedford_qld_art_ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1F74E0805D72E09319349DEE96CBB6C5108A45580A52BB01B6BC0B96869DB0EC"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/eng/car/bedford_qld_engineer/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "575358D7720DA05AFC5954882ADD4DBEDC28F7879BCFB587BE425B5C02417E2B"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/eng/trailer/ammo_trailer_eng/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/finland/car/ford_3ton_ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "B73BAB46995C1D5C2B4DF3AF83A7470A7EB7D22EB73DFB230F122224940FB8DB"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/finland/car/ford_3ton_eng/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "575358D7720DA05AFC5954882ADD4DBEDC28F7879BCFB587BE425B5C02417E2B"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/finland/car/ford_3ton_fuel/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "27D2CD01B93937E9BF8C0C65680333B1DD584A262705185477278BADE081AE96"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/finland/car/ford_v3000_ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "B73BAB46995C1D5C2B4DF3AF83A7470A7EB7D22EB73DFB230F122224940FB8DB"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/finland/car/ford_v3000_eng/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "575358D7720DA05AFC5954882ADD4DBEDC28F7879BCFB587BE425B5C02417E2B"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/finland/car/ford_v3000_fuel/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "27D2CD01B93937E9BF8C0C65680333B1DD584A262705185477278BADE081AE96"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/generic/special/inf_crate_eng/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/generic/special/inf_crate_fin/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/generic/special/inf_crate_ger/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/generic/special/inf_crate_rus/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/generic/special/inf_crate_usa/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/btr/sdkfz6_cargo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/car/blitz3_6_art_ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/car/blitz3_6_engineering/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/car/blitz3_6_fuel/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/car/kettenkrad_eng/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/car/opel_maultier/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/trailer/ammo_trailer/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/trailer/infantry_cart_if8/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/germany/trailer/sdah_57_1/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/usa/car/cckw_art_ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/usa/car/cckw_engineer/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/usa/car/cckw_fuel/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/usa/car/cckw_redball/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/usa/trailer/ammo_trailer_usa/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/ussr/car/gaz_aaa_supply/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/ussr/car/gaz_fuel/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/ussr/car/zis5eng/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/-vehicle/ussr/trailer/ap_2/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/construction/_military/boxes/crates_set02_resupply/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/construction/_military/medic_rally/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/service/-multiplayer/ammo_point/ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/service/-multiplayer/flag_point/flagpoint_ammo/supply_zone.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1ECB7FDDC1C5EAFD5493A29149D147CA289E31E3730C1E1BDB3ED424F29A6020"
+                  },
+                  {
+                      "Path":  "resource/entity/service/pointer/automedic.ebm",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "E4161F021F2B9B937D25563883DB98BAB55F8B9DE9E2D6A730570A9B5F91741D"
+                  },
+                  {
+                      "Path":  "resource/entity/service/pointer/medic_zone_vis.def",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "387330CCE3598F30CFB6E2B1C682DDDF8E90AAB0908C9898237EDF7DEAD10584"
+                  },
+                  {
+                      "Path":  "resource/map/multi/HF-dcg_script.inc",
+                      "Existed":  true,
+                      "BeforeHash":  "FD6726B492FCEC25B75B684250A846390C74133C22DD629AEAF8ED4741334CB0",
+                      "AfterHash":  "172339F4DBEE0D0A589954CB220F1C07E4A2E1F3CED5275425CE9A8DC6BE1DA0"
+                  },
+                  {
+                      "Path":  "resource/script/multiplayer/ufb_order_guard.lua",
+                      "Existed":  true,
+                      "BeforeHash":  "4F3C038D761DF431B1239979C5E3CF00718EDD59C123FBF4E9873D58D160C1C6",
+                      "AfterHash":  "D1029FF3A73B82ECF082601E7658F1649B89B88E6B1ABEE1D9B381215C092420"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/frontlines_early.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "F9EC684A177368C3A04B2D9B2E41A99B8DD6666530017870258B3B1A84E8B9C8"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/frontlines_late.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "CCEC76ED7CDA13F1460A1E7E6459BD7134FAA2A90AA67FDC419F49F8749B43D4"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/frontlines_mid.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1715AC5CDCF12F123388D7E3728F0ED5ADE806417232248FFB9FA8FA78594BAB"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/frontline_early.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "FA572A15DF6C1C0570F3772E740BDD3956AE4690261976F884E870FF1DCEE7F5"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/frontline_late.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "FA0D5CC797E402089C90D32EC619ADE9562E2EDC278BB627CB1F71646C090BCD"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/frontline_mid.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "E0D7AF198F061507F7AAD79FCCDDB6DBBDFFBD20159A93BC3CB7F07A56E32AE8"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/laststand_early.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "35804A4B98E0EDCDF4AEC6A910A16BFFCA4134574DC2796B7715EF9D87A7CFDB"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/laststand_late.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "C8A8711D75C6379B328ACFC785878E8D70BCE6CA2DD0D756C51F1557E552CC20"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/laststand_mid.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "62FD962D7FA96B96B4CBCBB5E38AFE92FB899502B2A76DBFD36FFD37B0CE8C2C"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/preset_early.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "73490DCCE12CB328477C4F3805FC1BCA055A75A5E33B967286C5340B76E98F66"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/preset_late.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "7E73B2666942E77806A422DD4B00D77929E179FCD4B298EFC4FAAE1DFBAE3F39"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/preset_mid.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "3D12BCB033F8F94080741674E25138BEB82C557C946CB42D2EFAFDFC7FF43B45"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/preset_test_early.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "315CE0613CB5FF4134EE124FDD3012388C40001603525C81CE7D9C5BF67C0A71"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/preset_test_late.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "1B7161E9FA1B3424714EDA186A10B0FC6209A77B5202F35B547B714010CE4E91"
+                  },
+                  {
+                      "Path":  "resource/set/multiplayer/games/presets/preset_test_mid.inc",
+                      "Existed":  false,
+                      "BeforeHash":  null,
+                      "AfterHash":  "8DF1AE3142C4024CF0A38BB341D396E9D912CA6C75F43ED869D7744954E5D3F8"
+                  }
+              ]
+}

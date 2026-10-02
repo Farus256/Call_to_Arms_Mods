@@ -1,0 +1,48 @@
+;=============================================================================
+; MERGED fxmanager.set
+; Uses Persistent Everything's maximum limits for all FX groups
+; Bundle: Ultimate Frontline Bundle (No PBR)
+;=============================================================================
+{fxmanager
+	{group
+;		{fx "shellhole_big"}
+;		{fx "shellhole_medium"}
+;		{fx "shellhole_small"}
+;		{fx "fire_shellhole"}
+		{countLimit 9999}
+	}
+	{group
+		{fx "tracks_big"}
+		{fx "tracks_mid"}
+		{fx "tracks_sm"}
+		{fx "tracks_sm2"}
+		{fx "tracewheel01"}
+		{fx "tracewheel01a"}
+		{fx "tracewheel01d"}
+		{fx "tracewheel02"}
+		{fx "tracewheel02a"}
+		{fx "tracewheel02d"}
+		{fx "tracewheel03"}
+		{fx "tracewheel03a"}
+		{fx "tracewheel03d"}
+		{fx "tracewheel04"}
+		{fx "tracewheel04d"}
+		{fx "tracewheel05"}
+		{fx "tracewheel05a"}
+		{fx "tracewheel05d"}
+		{fx "tracewheel06"}
+		{fx "traceski01"}
+		{countLimit 9999}
+		{timeLimit 9999}			; seconds
+	}
+	{group
+		{fx "flashred"}
+		{fx "flashgreen"}
+		{fx "flashblue"}
+		{fx "flashcover"}
+		{fx "flashattack"}
+		{fx "flashattackat"}
+		{fx "flashsmoke"}
+		{timeLimit 0.05}
+	}
+}

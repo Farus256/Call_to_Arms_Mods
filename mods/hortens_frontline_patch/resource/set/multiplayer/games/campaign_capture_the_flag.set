@@ -1,0 +1,101 @@
+(define "bot_state"
+	{unitset
+		{value "conquest"}
+		{available "all infantry sniper armor light medium heavy artillery airborne mechanized"}
+	}
+	{unitLimits "bonus_huge=1;bonus=2;vehicle=4;light_tank=4;medium_tank=4;heavy_tank=4;artillery=2;signaller=2;officer=1;medic=3;limit0=0;limit1=1;limit1b=1;limit1c=1;limit1d=1;limit1e=1;limit1f=1;limit1g=1;limit1h=1;limit1j=1;limit1k=1;limit1a=1;limit2=2;limit2a=2;limit2b=2;limit2c=2;limit2d=2;limit2e=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10"}
+	{chargeFactors
+		{value "*=0"}
+		{customize "0;0.5;1.0;1.5;2.0;2.5;5.0;10.0"}
+	}
+	{budgets
+		{vehicle
+			{mode "standard"}
+			{resource
+				{start		%mpStart}
+				{finish		%mpFinish}
+				{growTime	1} ;// in seconds
+				{growTable	"1"} ;// each entry divides divides grow time: # of entries = growtime / #		
+				{payback
+					{cp			"0		10		20		30		40		51"}
+					{restore	"0		0		0		0		0		0"}
+				}
+			}
+			{buttons "inf1 inf2 empl vehicles tanks"}
+		}
+	}
+	{balancingFactorBonus {cp %cp} {mpStart 1.0} {mpFinish 1.0} {payback %payback}} ;// overridden in dynamic campaign difficulty files
+)
+
+{game
+	{order -1}
+	{parameters "points_table_player=0/0.000,0.333/0.277,0.5/0.333,0.667/0.416,1.00/0.555;points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"}
+	;rate to time to reach score if 1000
+	;0.139	=	120min
+	;0.167	=	100min
+	;0.208	=	80min
+	;0.277	=	60min
+	;0.333	=	50min
+	;0.416	=	40min
+	;0.476	=	35min
+	;0.555	=	30min
+	;0.667	=	25min
+	;0.833	=	20min
+	;1.111	=	15min
+	;1.667	=	10min
+	{settings
+		{difficulty				multiplayer}
+		{scoreFinal				1020}
+		{preparationTime		600} ; seconds. is sets how long before bot begins an attack when player is the defender.
+		{pauseDuringPreparation false} ; controls if simulation is paused during preparation time
+		{impregnableTimeout		10}	; seconds. Spawn protection time
+		{floraRespawn			0}
+		{friendlyFire			1}
+		{showPiercing			1}
+		{showDamageReports		1}
+		{enableBots				1}
+		{randomSpawnPoints		1}
+		{useManualCharge		none}
+	}
+	{teamSettings
+		{teamsMode normal}
+		{armySelectionMode alliance}
+		{teams
+			{"a" {minTeamSlots 1}{maxTeamSlots 8}}
+			{"b" {minTeamSlots 1}}
+		}
+		{alliances
+			(include "presets/alliances_generic.inc")
+		}
+	}
+	{ranked
+		{enabled}
+	}
+	{presets
+		{"d:campaign"
+			{gameMode "campaign"}
+			{unitMode "all"}
+			{ranked}
+			{common
+				{unitset
+					{value "conquest"}
+					{available "all infantry sniper armor light medium heavy artillery airborne mechanized"}
+				}
+			}
+			{bots
+				{easy
+					("bot_state" cp(1.00) mpStart(1) mpFinish(1) payback(0.0))
+				}
+				{normal
+					("bot_state" cp(1.00) mpStart(1) mpFinish(1) payback(0.0))
+				}
+				{hard
+					("bot_state" cp(1.00) mpStart(1) mpFinish(1) payback(0.0))
+				}
+				{heroic
+					("bot_state" cp(1.00) mpStart(1) mpFinish(1) payback(0.0))
+				}
+			}
+		}
+	}
+}

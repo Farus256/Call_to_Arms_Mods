@@ -1,0 +1,10 @@
+{Game_entity
+	(include "/properties/bm_limb_b.ext")
+	(include "/properties/shadow/human_part.inc" scale(0.2))
+	{props "bm_limb_b" "flesh"}	
+	{Extension "bm_hand1.mdl"}
+	{Volume "bm_hand1"
+		{able clear {visible} {bullet} {touch} {contact_ground} {contact} {blast}}
+	}
+	{mass 4}
+}

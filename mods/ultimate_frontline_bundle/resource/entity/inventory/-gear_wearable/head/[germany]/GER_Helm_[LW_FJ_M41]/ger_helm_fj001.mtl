@@ -1,0 +1,7 @@
+{material bump
+	{diffuse 	"$/_hum/ger_headwear/luftwaffe/ger_helm_fj_41"}
+	{bump 		"$/_hum/ger_headwear/ger_helm_fj_bp"}
+	{specular 	"$/_hum/ger_headwear/ger_helm_fj_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

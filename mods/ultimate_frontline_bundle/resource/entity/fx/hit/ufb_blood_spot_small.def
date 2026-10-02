@@ -1,0 +1,21 @@
+{fx
+	;// UFB: persistent blood spot on the ground (grounddynamic, under smoke). Spawn with random_orientation.
+	{spriteview
+		{sprite "$/particle/blood_splash"
+			{visibility 1
+				{linear
+					{min 0.8 0.1}
+					{max 0}
+				}
+			}
+			{timer
+				{duration 9999}
+			}
+			{scale 0.03 0.01}
+			{preturn 90 90}
+		}
+		{ground}
+		{layer grounddynamic}
+		{notifyowner}
+	}
+}

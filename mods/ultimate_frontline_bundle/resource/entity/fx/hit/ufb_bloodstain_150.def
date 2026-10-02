@@ -1,0 +1,28 @@
+{fx
+	;// Ultimate Frontline Bundle: vanilla corpse pool, drawn as a ground decal (grounddynamic) so smoke covers it.
+	;// Spreads to ~95% of its size in ~150 s (npower pow 198 over 9999 s), then stays; fades only slightly.
+	{spriteview
+		{sprite "$/particle/bloodstain"
+			{timer
+				{duration 9999}
+			}
+			{scale 1
+				{npower
+					{min 0.05}
+					{max 0.25}
+					{pow 198}
+				}
+			}
+			{visibility 1
+				{linear
+					{min 1}
+					{max 0.7}
+				}
+			}
+			{preturn 90 90}
+		}
+		{ground}
+		{layer grounddynamic}
+		{notifyowner}
+	}
+}

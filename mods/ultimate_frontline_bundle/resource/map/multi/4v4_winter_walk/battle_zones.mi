@@ -1,0 +1,4521 @@
+{mission
+	{Entity "flag_point_1" 0x802f
+		{Position -1833.41 -2488.18}
+		{xform zl 177.6}
+		{Placer
+			{State "ammo" {Unlinked}}
+		}
+		{Extender "map_point"
+			{name center1}
+			{zone
+				{radius 0}
+				{zoneId "f1"}
+			}
+			{phase 0}
+			{order 1}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_straight"}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+			}
+		}
+		{Player 0}
+		{MID 48}
+	}
+	{Entity "flag_point_2" 0x8013
+		{Position -7775.7 -6399.05}
+		{xform zl -160.14}
+		{Extender "map_point"
+			{name team_a_back1}
+			{zone
+				{radius 0}
+				{zoneId "f2"}
+			}
+			{phase 0}
+			{order 2}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_straight"}
+				{manual
+					{0
+						0.971 -0.238 0
+						0.238 0.971 0
+						0 0 1
+						-7456.78 -6578.55 78
+					}
+					{1
+						0.937 -0.348 0
+						0.348 0.937 0
+						0 0 1
+						-7378.15 -6472.46 90.138
+					}
+					{2
+						0.924 0.38 0
+						-0.38 0.924 0
+						0 0 1
+						-7379.39 -6399.64 95.95
+					}
+					{3
+						-0.041 -0.999 0
+						0.999 -0.041 0
+						0 0 1
+						-7774.09 -6865.2 98
+					}
+					{4
+						0.647 -0.762 0
+						0.762 0.647 0
+						0 0 0.999
+						-7705.22 -6841.51 92.139
+					}
+					{5
+						0.244 -0.969 0
+						0.969 0.244 0
+						0 0 1
+						-7612.06 -6783.85 84
+					}
+					{6
+						0.837 -0.546 0
+						0.546 0.837 0
+						0 0 1
+						-7552.78 -6741.55 78.858
+					}
+					{7
+						0.552 -0.833 0
+						0.833 0.552 0
+						0 0 1
+						-7498.71 -6638.11 74.836
+					}
+				}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+				{manual
+					{0
+						0.817 -0.575 0
+						0.575 0.817 0
+						0 0 1
+						-7504.84 -6589.26 77.063
+					}
+					{1
+						0.999 0.017 0
+						-0.017 0.999 0
+						0 0 1
+						-7411.9 -6436.62 96
+					}
+					{2
+						0.325 -0.945 0
+						0.945 0.325 0
+						0 0 1
+						-7750.43 -6822.03 96
+					}
+					{3
+						0.58 -0.814 0
+						0.814 0.58 0
+						0 0 1
+						-7601.67 -6735.73 84
+					}
+				}
+			}
+		}
+		{Player 0}
+		{MID 18}
+	}
+	{Entity "flag_point_5" 0x8003
+		{Position -2803.78 -4407.83}
+		{xform zl -4.13}
+		{Placer
+			{State "ammo" {Unlinked}}
+		}
+		{Extender "map_point"
+			{name team_b_back2}
+			{zone
+				{radius 0}
+				{zoneId "f5"}
+			}
+			{phase 0}
+			{order 5}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_straight"}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+			}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "flag_point_3" 0xc004
+		{Position 3921.36 605.21}
+		{xform zl -173.96}
+		{Extender "map_point"
+			{name team_b_back1}
+			{zone
+				{radius 0}
+				{zoneId "f3"}
+			}
+			{phase 0}
+			{order 3}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_curved"}
+				{manual
+					{0
+						-0.625 0.779 0
+						-0.779 -0.625 0
+						0 0 1
+						3744.93 910.279 -4
+					}
+					{1
+						-0.962 0.27 0
+						-0.27 -0.962 0
+						0 0 1
+						3695.1 561.566 -21
+					}
+					{2
+						-0.918 -0.394 0
+						0.394 -0.918 0
+						0 0 1
+						3699.54 495.051 -19.813
+					}
+					{3
+						-0.851 -0.525 0
+						0.525 -0.851 0
+						0 0 1
+						3726.43 437.242 -19.192
+					}
+					{4
+						-0.332 -0.943 0
+						0.943 -0.332 0
+						0 0 1
+						3778.34 395.417 -23.573
+					}
+					{5
+						-0.739 0.672 0
+						-0.672 -0.739 0
+						0 0 1
+						3708.26 854.825 -9.129
+					}
+					{6
+						-0.998 0.058 0
+						-0.058 -0.998 0
+						0 0 1
+						3682.38 793.395 -14.415
+					}
+					{7
+						0.003 0.999 0
+						-0.999 0.003 0
+						0 0 1
+						3807.87 932.256 -2.643
+					}
+				}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+				{manual
+					{0
+						-0.33 0.943 0
+						-0.943 -0.33 0
+						0 0 1
+						3787.71 888.9 -4
+					}
+					{1
+						-0.997 -0.066 0
+						0.066 -0.997 0
+						0 0 1
+						3731.52 530.591 -23
+					}
+					{2
+						-0.627 -0.778 0
+						0.778 -0.627 0
+						0 0 1
+						3773.89 443.026 -24
+					}
+					{3
+						-0.921 0.388 0
+						-0.388 -0.921 0
+						0 0 1
+						3726.91 810.808 -13.952
+					}
+				}
+			}
+		}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "flag_point_4" 0xe000
+		{Position -511.53 -147.14}
+		{Placer
+			{State "ammo" {Unlinked}}
+		}
+		{Extender "map_point"
+			{name center2}
+			{zone
+				{radius 0}
+				{zoneId "f4"}
+			}
+			{phase 0}
+			{order 4}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_curved"}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+			}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "flag_point_6" 0xd000
+		{Position 871.37 2642.72}
+		{xform zl 105.62}
+		{Placer
+			{State "ammo" {Unlinked}}
+		}
+		{Extender "map_point"
+			{name center3}
+			{zone
+				{radius 0}
+				{zoneId "f6"}
+			}
+			{phase 6}
+			{order 0}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_curved"}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+			}
+		}
+		{Player 0}
+		{MID 14}
+	}
+	{Entity "flag_point_7" 0xd003
+		{Position -4442.85 -7533.98}
+		{xform zl -27.13}
+		{Placer
+			{State "ammo" {Unlinked}}
+		}
+		{Extender "map_point"
+			{name team_a_back2}
+			{zone
+				{radius 0}
+				{zoneId "f7"}
+			}
+			{phase 0}
+			{order 7}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_curved"}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+			}
+		}
+		{Player 0}
+		{MID 15}
+	}
+	{Entity "flag_point_8" 0xa000
+		{Position -162.63 -3834.81}
+		{xform zl 30.57}
+		{Placer
+			{State "ammo" {Unlinked}}
+		}
+		{Extender "map_point"
+			{name team_b_back3}
+			{zone
+				{radius 0}
+				{zoneId "f8"}
+			}
+			{phase 0}
+			{order 8}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_curved"}
+				{manual
+					{0
+						-0.509 0.86 0
+						-0.86 -0.509 0
+						0 0 1
+						612.563 -3584.98 7.929
+					}
+					{1
+						-0.448 0.893 0
+						-0.893 -0.448 0
+						0 0 0.999
+						483.973 -3652.78 18.661
+					}
+					{2
+						-0.927 0.373 0
+						-0.373 -0.927 0
+						0 0 0.999
+						436.049 -3704.86 19
+					}
+					{3
+						-0.955 0.294 0
+						-0.294 -0.955 0
+						0 0 1
+						-292.53 -3890.84 3.619
+					}
+					{4
+						-0.911 -0.411 0
+						0.411 -0.911 0
+						0 0 0.999
+						-288.097 -3961.47 0.792
+					}
+					{5
+						-0.291 0.956 0
+						-0.956 -0.291 0
+						0 0 1
+						-211.012 -3724.57 5.769
+					}
+					{6
+						-0.851 0.524 0
+						-0.524 -0.851 0
+						0 0 1
+						-267.026 -3767.81 5
+					}
+					{7
+						0.187 0.982 0
+						-0.982 0.187 0
+						0 0 1
+						682.271 -3572.77 12.38
+					}
+				}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+				{manual
+					{0
+						-0.172 0.985 0
+						-0.985 -0.172 0
+						0 0 1
+						653.199 -3611.9 6.783
+					}
+					{1
+						-0.735 0.677 0
+						-0.677 -0.735 0
+						0 0 1
+						484.683 -3701.53 19.198
+					}
+					{2
+						-0.998 -0.062 0
+						0.062 -0.998 0
+						0 0 1
+						-256.847 -3924.06 6.37
+					}
+					{3
+						-0.611 0.791 0
+						-0.791 -0.611 0
+						0 0 1
+						-218.528 -3772.73 19.182
+					}
+				}
+			}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "flag_point_9" 0x9000
+		{Position -3403.52 -1232.35}
+		{xform zl 105.69}
+		{Placer
+			{State "ammo" {Unlinked}}
+		}
+		{Extender "map_point"
+			{name team_a_back3}
+			{zone
+				{radius 0}
+				{zoneId "f9"}
+			}
+			{phase 0}
+			{order 9}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Extender "fortification"
+			{level
+				{steps 2}
+				{radius 5}
+				{azimuth "+2"}
+				{buildTime 60}
+				{entity "sandbag_structured_curved"}
+				{manual
+					{0
+						0.821 0.57 0
+						-0.57 0.821 0
+						0 0 0.999
+						-3166.11 -859.348 -1
+					}
+					{1
+						-0.996 0.087 0
+						-0.087 -0.996 0
+						0 0 0.999
+						-3592.05 -1512.13 -17.736
+					}
+					{2
+						-0.804 -0.593 0
+						0.593 -0.804 0
+						0 0 0.999
+						-3572.91 -1580.27 -10.174
+					}
+					{3
+						0.475 -0.879 0
+						0.879 0.475 0
+						0 0 0.999
+						-3139.29 -1538.77 0.447
+					}
+					{4
+						0.938 -0.344 0
+						0.344 0.938 0
+						0 0 1
+						-3092.97 -1485.27 0
+					}
+					{5
+						-0.677 0.735 0
+						-0.735 -0.677 0
+						0 0 1
+						-3764.21 -927.436 -13
+					}
+					{6
+						-0.994 0.103 0
+						-0.103 -0.994 0
+						0 0 1
+						-3795.95 -990.686 -9.285
+					}
+					{7
+						0.993 -0.115 0
+						0.115 0.993 0
+						0 0 1
+						-3148.89 -927.99 -3.641
+					}
+				}
+			}
+			{level
+				{steps 1}
+				{radius 3}
+				{buildTime 60}
+				{entity "sandbag_framed_straight"}
+				{manual
+					{0
+						0.969 0.243 0
+						-0.243 0.969 0
+						0 0 0.999
+						-3190.02 -901.828 -1.045
+					}
+					{1
+						-0.962 -0.27 0
+						0.27 -0.962 0
+						0 0 1
+						-3550.2 -1537.13 -18.451
+					}
+					{2
+						0.756 -0.654 0
+						0.654 0.756 0
+						0 0 1
+						-3141.48 -1490.07 0
+					}
+					{3
+						-0.893 0.448 0
+						-0.448 -0.893 0
+						0 0 1
+						-3750.11 -974.102 -9.006
+					}
+				}
+			}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "flagpoint_ammo" 0x800c
+		{Extender "supply_zone"
+			{enabled}
+			{current 0}
+		}
+	}
+	{Entity "flagpoint_ammo" 0x800d
+		{Extender "supply_zone"
+			{enabled}
+			{current 0}
+		}
+	}
+	{Entity "map_point" 0x800e
+		{Position -10704.9 2985.37}
+		{xform zl -10.21}
+		{Extender "map_point"
+			{name a1}
+			{team a}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "map_point" 0x800f
+		{Position -10906.2 2660.43 -12.06}
+		{xform zl -27.19}
+		{Extender "map_point"
+			{name a2}
+			{team a}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "map_point" 0xc000
+		{Position -11122.4 2245.38 2.32}
+		{xform zl -27.19}
+		{Extender "map_point"
+			{name a3}
+			{team a}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 20}
+	}
+	{Entity "map_point" 0x8016
+		{Position -11389 1811.92 9.77}
+		{xform zl -89.27}
+		{Extender "map_point"
+			{name a4}
+			{team a}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 29}
+	}
+	{Entity "map_point" 0x8014
+		{Position -11158.5 1607.22 33.24}
+		{xform zl -78.86}
+		{Extender "map_point"
+			{name a5}
+			{team a}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 5}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 24}
+	}
+	{Entity "map_point" 0x8017
+		{Position -10704.4 2074.3 26.37}
+		{xform zl -23.05}
+		{Extender "map_point"
+			{name a6}
+			{team a}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 6}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 25}
+	}
+	{Entity "map_point" 0x8018
+		{Position -10510.3 2374.3}
+		{xform zl -23.05}
+		{Extender "map_point"
+			{name a7}
+			{team a}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 7}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 26}
+	}
+	{Entity "map_point" 0x8019
+		{Position -10236.8 2841.49 11.12}
+		{xform zl -23.05}
+		{Extender "map_point"
+			{name a8}
+			{team a}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 8}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 27}
+	}
+	{Entity "map_point" 0xa001
+		{Position 7148.44 -8187.05}
+		{xform zl 178.84}
+		{Extender "map_point"
+			{name b1}
+			{team b}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 16}
+	}
+	{Entity "map_point" 0x8010
+		{Position 7329.08 -7824.92 -0.2}
+		{xform zl 147.25}
+		{Extender "map_point"
+			{name b2}
+			{team b}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 19}
+	}
+	{Entity "map_point" 0xc001
+		{Position 7506.67 -7501.15 -0.23}
+		{xform zl 138.25}
+		{Extender "map_point"
+			{name b3}
+			{team b}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 21}
+	}
+	{Entity "map_point" 0x8015
+		{Position 7709.75 -7215.38}
+		{xform zl 91.43}
+		{Extender "map_point"
+			{name b4}
+			{team b}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 28}
+	}
+	{Entity "map_point" 0xa002
+		{Position 7624.39 -6862.58 -7.51}
+		{xform zl 91.43}
+		{Extender "map_point"
+			{name b5}
+			{team b}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 5}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "map_point" 0xa003
+		{Position 7211.86 -7205.09 -5.22}
+		{xform zl 145.57}
+		{Extender "map_point"
+			{name b6}
+			{team b}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 6}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "map_point" 0xa004
+		{Position 6975.91 -7627.32 25.46}
+		{xform zl 145.57}
+		{Extender "map_point"
+			{name b7}
+			{team b}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 7}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 22}
+	}
+	{Entity "map_point" 0x8012
+		{Position 6756.79 -8197.18 -2.06}
+		{xform zl -171.32}
+		{Extender "map_point"
+			{name b8}
+			{team b}
+			{zone
+				{radius 0}
+				{zoneId ""}
+			}
+			{phase 0}
+			{order 8}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 23}
+	}
+	{Link 0x800c {0x8013 "ammo"}}
+	{Link 0x800d {0xc004 "ammo"}}
+	{Tags "snow" 0x77}
+	{Tags "snow" 0x2020}
+	{Tags "snow" 0x2026}
+	{Tags "snow" 0x2036}
+	{Tags "snow" 0x205d}
+	{Tags "snow" 0x2062}
+	{Tags "snow" 0x1008}
+	{Tags "snow" 0x100d}
+	{Tags "snow" 0x1011}
+	{Tags "snow" 0x1014}
+	{Tags "snow" 0x1018}
+	{Tags "snow" 0x101a}
+	{Tags "snow" 0x101b}
+	{Tags "snow" 0x101f}
+	{Tags "snow" 0x1021}
+	{Tags "snow" 0x1024}
+	{Tags "snow" 0x1029}
+	{Tags "snow" 0x102d}
+	{Tags "snow" 0x102e}
+	{Tags "snow" 0x1031}
+	{Tags "snow" 0x1033}
+	{Tags "snow" 0x1036}
+	{Tags "snow" 0x103b}
+	{Tags "snow" 0x103e}
+	{Tags "snow" 0x1040}
+	{Tags "snow" 0x1041}
+	{Tags "snow" 0x1044}
+	{Tags "snow" 0x104c}
+	{Tags "snow" 0x1052}
+	{Tags "snow" 0x1057}
+	{Tags "snow" 0x105c}
+	{Tags "snow" 0x1060}
+	{Tags "snow" 0x1062}
+	{Tags "snow" 0x1063}
+	{Tags "snow" 0x1078}
+	{Tags "snow" 0x107a}
+	{Tags "snow" 0x107e}
+	{Tags "snow" 0x1087}
+	{Tags "snow" 0x1088}
+	{Tags "snow" 0x1089}
+	{Tags "snow" 0x108a}
+	{Tags "snow" 0x108b}
+	{Tags "snow" 0x108c}
+	{Tags "snow" 0x108d}
+	{Tags "snow" 0x1092}
+	{Tags "snow" 0x1095}
+	{Tags "snow" 0x1096}
+	{Tags "snow" 0x1099}
+	{Tags "snow" 0x109e}
+	{Tags "snow" 0x109f}
+	{Tags "snow" 0x10a2}
+	{Tags "snow" 0x10a5}
+	{Tags "snow" 0x7a}
+	{Tags "snow" 0x7c}
+	{Tags "snow" 0x7f}
+	{Tags "snow" 0x84}
+	{Tags "snow" 0x87}
+	{Tags "snow" 0x8c}
+	{Tags "snow" 0x8f}
+	{Tags "snow" 0x90}
+	{Tags "snow" 0x91}
+	{Tags "snow" 0x92}
+	{Tags "snow" 0x94}
+	{Tags "snow" 0x98}
+	{Tags "snow" 0x9c}
+	{Tags "snow" 0xa0}
+	{Tags "snow" 0xa1}
+	{Tags "snow" 0xa3}
+	{Tags "snow" 0xa4}
+	{Tags "snow" 0xa5}
+	{Tags "snow" 0xa6}
+	{Tags "snow" 0xa7}
+	{Tags "snow" 0xa9}
+	{Tags "snow" 0xaa}
+	{Tags "snow" 0xac}
+	{Tags "snow" 0xae}
+	{Tags "snow" 0xaf}
+	{Tags "snow" 0xb1}
+	{Tags "snow" 0xb2}
+	{Tags "snow" 0xb6}
+	{Tags "snow" 0xb7}
+	{Tags "snow" 0xb8}
+	{Tags "snow" 0xb9}
+	{Tags "snow" 0xba}
+	{Tags "snow" 0x404a}
+	{Tags "snow" 0x404e}
+	{Tags "snow" 0x404f}
+	{Tags "snow" 0x4050}
+	{Tags "snow" 0x4051}
+	{Tags "snow" 0x4052}
+	{Tags "snow" 0x4061}
+	{Tags "snow" 0x4062}
+	{Tags "snow" 0x4063}
+	{Tags "snow" 0x4064}
+	{Tags "snow" 0x4065}
+	{Tags "snow" 0x4067}
+	{Tags "snow" 0x4068}
+	{Tags "snow" 0x4069}
+	{Tags "snow" 0x406b}
+	{Tags "snow" 0x406d}
+	{Tags "snow" 0x406e}
+	{Tags "snow" 0x406f}
+	{Tags "snow" 0x4072}
+	{Tags "snow" 0x4075}
+	{Tags "snow" 0x4078}
+	{Tags "snow" 0x4079}
+	{Tags "snow" 0x407b}
+	{Tags "snow" 0x70da}
+	{Tags "snow" 0x70e9}
+	{Tags "snow" 0x70eb}
+	{Tags "snow" 0x70ec}
+	{Tags "snow" 0x407f}
+	{Tags "snow" 0x10af}
+	{Tags "snow" 0x10b8}
+	{Tags "snow" 0x10bb}
+	{Tags "snow" 0x6073}
+	{Tags "snow" 0x58a7}
+	{Tags "snow" 0x58a8}
+	{Tags "snow" 0x153}
+	{Tags "snow" 0x607f}
+	{Tags "snow" 0x6080}
+	{Tags "snow" 0x6081}
+	{Tags "snow" 0x6082}
+	{Tags "snow" 0x6083}
+	{Tags "snow" 0x6084}
+	{Tags "snow" 0x6086}
+	{Tags "snow" 0x6088}
+	{Tags "snow" 0x608a}
+	{Tags "snow" 0x608c}
+	{Tags "snow" 0x608d}
+	{Tags "snow" 0x508a}
+	{Tags "snow" 0x4083}
+	{Tags "snow" 0x4084}
+	{Tags "snow" 0x4085}
+	{Tags "snow" 0x4086}
+	{Tags "snow" 0x4089}
+	{Tags "snow" 0x408b}
+	{Tags "snow" 0x408c}
+	{Tags "snow" 0x4090}
+	{Tags "snow" 0x4092}
+	{Tags "snow" 0x4097}
+	{Tags "snow" 0x4098}
+	{Tags "snow" 0x4099}
+	{Tags "snow" 0x409a}
+	{Tags "snow" 0x409f}
+	{Tags "snow" 0x207d}
+	{Tags "snow" 0x164}
+	{Tags "snow" 0x165}
+	{Tags "snow" 0x4801}
+	{Tags "snow" 0x4852}
+	{Tags "snow" 0x58b3}
+	{Tags "snow" 0x58b4}
+	{Tags "snow" 0x58c0}
+	{Tags "snow" 0x187}
+	{Tags "snow" 0x1b0}
+	{Tags "snow" 0x1b1}
+	{Tags "snow" 0x20e8}
+	{Tags "snow" 0x10b0}
+	{Tags "snow" 0x10b4}
+	{Tags "snow" 0x4856}
+	{Tags "snow" 0x4858}
+	{Tags "snow" 0x485a}
+	{Tags "snow" 0x485c}
+	{Tags "snow" 0x485e}
+	{Tags "snow" 0x4868}
+	{Tags "snow" 0x486e}
+	{Tags "snow" 0x486f}
+	{Tags "snow" 0x4870}
+	{Tags "snow" 0x4875}
+	{Tags "snow" 0x4893}
+	{Tags "snow" 0x303a}
+	{Tags "snow" 0x1821}
+	{Tags "snow" 0x1828}
+	{Tags "snow" 0x182a}
+	{Tags "snow" 0x20f0}
+	{Tags "snow" 0x305a}
+	{Tags "snow" 0x305c}
+	{Tags "snow" 0x305d}
+	{Tags "snow" 0x6855}
+	{Tags "snow" 0x828}
+	{Tags "snow" 0x82f}
+	{Tags "snow" 0x140e}
+	{Tags "snow" 0x58c2}
+	{Tags "snow" 0x58d3}
+	{Tags "snow" 0x58dc}
+	{Tags "snow" 0x58e4}
+	{Tags "snow" 0x58e5}
+	{Tags "snow" 0x58e7}
+	{Tags "snow" 0x58f2}
+	{Tags "snow" 0x58f3}
+	{Tags "snow" 0x2003}
+	{Tags "snow" 0x2106}
+	{Tags "snow" 0x4115}
+	{Tags "snow" 0x10d3}
+	{Tags "snow" 0x10eb}
+	{Tags "snow" 0x10ec}
+	{Tags "snow" 0x10fb}
+	{Tags "snow" 0x10fc}
+	{Tags "snow" 0x50b4}
+	{Tags "snow" 0x50b5}
+	{Tags "snow" 0x50b7}
+	{Tags "snow" 0x50b9}
+	{Tags "snow" 0x2140}
+	{Tags "snow" 0x2141}
+	{Tags "snow" 0x2148}
+	{Tags "snow" 0x214b}
+	{Tags "snow" 0x2152}
+	{Tags "snow" 0x2154}
+	{Tags "snow" 0x2159}
+	{Tags "snow" 0x215b}
+	{Tags "snow" 0x2160}
+	{Tags "snow" 0x216a}
+	{Tags "snow" 0x302}
+	{Tags "snow" 0x305}
+	{Tags "snow" 0x307}
+	{Tags "snow" 0x308}
+	{Tags "snow" 0x30a}
+	{Tags "snow" 0x30b}
+	{Tags "snow" 0x30c}
+	{Tags "snow" 0x312}
+	{Tags "snow" 0x313}
+	{Tags "snow" 0x316}
+	{Tags "snow" 0x317}
+	{Tags "snow" 0x318}
+	{Tags "snow" 0x319}
+	{Tags "snow" 0x111e}
+	{Tags "snow" 0x6872}
+	{Tags "snow" 0x687a}
+	{Tags "snow" 0x687f}
+	{Tags "snow" 0x6881}
+	{Tags "snow" 0x6886}
+	{Tags "snow" 0x688d}
+	{Tags "snow" 0x688e}
+	{Tags "snow" 0x6895}
+	{Tags "snow" 0x6897}
+	{Tags "snow" 0x482}
+	{Tags "snow" 0x399}
+	{Tags "snow" 0x3a2}
+	{Tags "snow" 0x3a5}
+	{Tags "snow" 0x3ae}
+	{Tags "snow" 0x3af}
+	{Tags "snow" 0x3b0}
+	{Tags "snow" 0x3b1}
+	{Tags "snow" 0x3b2}
+	{Tags "snow" 0x3b4}
+	{Tags "snow" 0x3b5}
+	{Tags "snow" 0x3b6}
+	{Tags "snow" 0x3ba}
+	{Tags "snow" 0x3d2}
+	{Tags "snow" 0x3d4}
+	{Tags "snow" 0x3d5}
+	{Tags "snow" 0x3d6}
+	{Tags "snow" 0x3d9}
+	{Tags "snow" 0x3da}
+	{Tags "snow" 0x3dc}
+	{Tags "snow" 0x3de}
+	{Tags "snow" 0x3f3}
+	{Tags "snow" 0x3f4}
+	{Tags "snow" 0x3fb}
+	{Tags "snow" 0x3fc}
+	{Tags "snow" 0x498}
+	{Tags "snow" 0x4a2}
+	{Tags "snow" 0x4a3}
+	{Tags "snow" 0x4a5}
+	{Tags "snow" 0x4a6}
+	{Tags "snow" 0x4a7}
+	{Tags "snow" 0x4a9}
+	{Tags "snow" 0x4c3}
+	{Tags "snow" 0x4c4}
+	{Tags "snow" 0x4c9}
+	{Tags "snow" 0x4ca}
+	{Tags "snow" 0x4cb}
+	{Tags "snow" 0x615f}
+	{Tags "snow" 0x6175}
+	{Tags "snow" 0x6177}
+	{Tags "snow" 0x38c}
+	{Tags "snow" 0x38e}
+	{Tags "snow" 0x48a}
+	{Tags "snow" 0x49a}
+	{Tags "snow" 0x4d1}
+	{Tags "snow" 0x4d2}
+	{Tags "snow" 0x4de}
+	{Tags "snow" 0x4e2}
+	{Tags "snow" 0x4ed}
+	{Tags "snow" 0x4f0}
+	{Tags "snow" 0x4f2}
+	{Tags "snow" 0x4f4}
+	{Tags "snow" 0x501}
+	{Tags "snow" 0x504}
+	{Tags "snow" 0x506}
+	{Tags "snow" 0x50a}
+	{Tags "snow" 0x50f}
+	{Tags "snow" 0x514}
+	{Tags "snow" 0x519}
+	{Tags "snow" 0x51c}
+	{Tags "snow" 0x524}
+	{Tags "snow" 0x526}
+	{Tags "snow" 0x528}
+	{Tags "snow" 0x52d}
+	{Tags "snow" 0x53a}
+	{Tags "snow" 0x53b}
+	{Tags "snow" 0x53d}
+	{Tags "snow" 0x53f}
+	{Tags "snow" 0x544}
+	{Tags "snow" 0x545}
+	{Tags "snow" 0x546}
+	{Tags "snow" 0x548}
+	{Tags "snow" 0x55a}
+	{Tags "snow" 0x55c}
+	{Tags "snow" 0x55d}
+	{Tags "snow" 0x567}
+	{Tags "snow" 0x56e}
+	{Tags "snow" 0x574}
+	{Tags "snow" 0x57a}
+	{Tags "snow" 0x57f}
+	{Tags "snow" 0x585}
+	{Tags "snow" 0x586}
+	{Tags "snow" 0x59c}
+	{Tags "snow" 0x59d}
+	{Tags "snow" 0x5a7}
+	{Tags "snow" 0x5ae}
+	{Tags "snow" 0x5b0}
+	{Tags "snow" 0x5b4}
+	{Tags "snow" 0x5bc}
+	{Tags "snow" 0x5bd}
+	{Tags "snow" 0x3093}
+	{Tags "snow" 0x309f}
+	{Tags "snow" 0x30a2}
+	{Tags "snow" 0x30a7}
+	{Tags "snow" 0x30ae}
+	{Tags "snow" 0x30b3}
+	{Tags "snow" 0x30b6}
+	{Tags "snow" 0x30ba}
+	{Tags "snow" 0x30c0}
+	{Tags "snow" 0x30cb}
+	{Tags "snow" 0x30d2}
+	{Tags "snow" 0x30db}
+	{Tags "snow" 0x30e2}
+	{Tags "snow" 0x30e8}
+	{Tags "snow" 0x30ea}
+	{Tags "snow" 0x30ee}
+	{Tags "snow" 0x50d2}
+	{Tags "snow" 0x50d4}
+	{Tags "snow" 0x50d6}
+	{Tags "snow" 0x50d9}
+	{Tags "snow" 0x50dc}
+	{Tags "snow" 0x50ef}
+	{Tags "snow" 0x50f0}
+	{Tags "snow" 0x50f3}
+	{Tags "snow" 0x1121}
+	{Tags "snow" 0x1122}
+	{Tags "snow" 0x1128}
+	{Tags "snow" 0x112e}
+	{Tags "snow" 0x1131}
+	{Tags "snow" 0x1133}
+	{Tags "snow" 0x113a}
+	{Tags "snow" 0x1141}
+	{Tags "snow" 0x1152}
+	{Tags "snow" 0x1155}
+	{Tags "snow" 0x1156}
+	{Tags "snow" 0x115c}
+	{Tags "snow" 0x1161}
+	{Tags "snow" 0x1165}
+	{Tags "snow" 0x1167}
+	{Tags "snow" 0x116f}
+	{Tags "snow" 0x1171}
+	{Tags "snow" 0x1178}
+	{Tags "snow" 0x1179}
+	{Tags "snow" 0x117f}
+	{Tags "snow" 0x1184}
+	{Tags "snow" 0x6197}
+	{Tags "snow" 0x61e5}
+	{Tags "snow" 0x61f5}
+	{Tags "snow" 0x61f6}
+	{Tags "snow" 0x61f9}
+	{Tags "snow" 0x61fb}
+	{Tags "snow" 0x61fc}
+	{Tags "snow" 0x61ff}
+	{Tags "snow" 0x6201}
+	{Tags "snow" 0x6202}
+	{Tags "snow" 0x6205}
+	{Tags "snow" 0x6207}
+	{Tags "snow" 0x6208}
+	{Tags "snow" 0x620b}
+	{Tags "snow" 0x620d}
+	{Tags "snow" 0x620e}
+	{Tags "snow" 0x6211}
+	{Tags "snow" 0x6219}
+	{Tags "snow" 0x621b}
+	{Tags "snow" 0x621c}
+	{Tags "snow" 0x622c}
+	{Tags "snow" 0x6231}
+	{Tags "snow" 0x6233}
+	{Tags "snow" 0x6235}
+	{Tags "snow" 0x416f}
+	{Tags "snow" 0x4170}
+	{Tags "snow" 0x4175}
+	{Tags "snow" 0x4177}
+	{Tags "snow" 0x4179}
+	{Tags "snow" 0x417c}
+	{Tags "snow" 0x4187}
+	{Tags "snow" 0x2177}
+	{Tags "snow" 0x2184}
+	{Tags "snow" 0x2186}
+	{Tags "snow" 0x218d}
+	{Tags "snow" 0x218e}
+	{Tags "snow" 0x2190}
+	{Tags "snow" 0x2192}
+	{Tags "snow" 0x2197}
+	{Tags "snow" 0x671}
+	{Tags "snow" 0x672}
+	{Tags "snow" 0x674}
+	{Tags "snow" 0x676}
+	{Tags "snow" 0x680}
+	{Tags "snow" 0x681}
+	{Tags "snow" 0x41c3}
+	{Tags "snow" 0x41c6}
+	{Tags "snow" 0x625a}
+	{Tags "snow" 0x625f}
+	{Tags "snow" 0x6265}
+	{Tags "snow" 0x6274}
+	{Tags "snow" 0x6275}
+	{Tags "snow" 0x6279}
+	{Tags "snow" 0x627e}
+	{Tags "snow" 0x6283}
+	{Tags "snow" 0x6287}
+	{Tags "snow" 0x628b}
+	{Tags "snow" 0x6a7}
+	{Tags "snow" 0x50a7}
+	{Tags "snow" 0x50ff}
+	{Tags "snow" 0x5100}
+	{Tags "snow" 0x510a}
+	{Tags "snow" 0x510f}
+	{Tags "snow" 0x5110}
+	{Tags "snow" 0x5114}
+	{Tags "snow" 0x5116}
+	{Tags "snow" 0x9b1}
+	{Tags "snow" 0x9b3}
+	{Tags "snow" 0x4666}
+	{Tags "snow" 0x72b9}
+	{Tags "snow" 0x22de}
+	{Tags "snow" 0x2310}
+	{Tags "snow" 0x2313}
+	{Tags "snow" 0x238d}
+	{Tags "snow" 0x23a5}
+	{Tags "snow" 0x23a6}
+	{Tags "snow" 0x23a9}
+	{Tags "snow" 0x23aa}
+	{Tags "snow" 0x23d3}
+	{Tags "snow" 0x23d6}
+	{Tags "snow" 0x23d7}
+	{Tags "snow" 0x23fc}
+	{Tags "snow" 0x23ff}
+	{Tags "snow" 0x2457}
+	{Tags "snow" 0x2458}
+	{Tags "snow" 0x245b}
+	{Tags "snow" 0x245c}
+	{Tags "snow" 0x2465}
+	{Tags "snow" 0x248d}
+	{Tags "snow" 0x24b6}
+	{Tags "snow" 0x24c2}
+	{Tags "snow" 0x24c4}
+	{Tags "snow" 0x24c5}
+	{Tags "snow" 0x24cb}
+	{Tags "snow" 0x24d3}
+	{Tags "snow" 0x24d6}
+	{Tags "snow" 0x24d7}
+	{Tags "snow" 0x24dc}
+	{Tags "snow" 0x24ed}
+	{Tags "snow" 0x2538}
+	{Tags "snow" 0x253d}
+	{Tags "snow" 0x2542}
+	{Tags "snow" 0x2546}
+	{Tags "snow" 0x2547}
+	{Tags "snow" 0x2566}
+	{Tags "snow" 0x256e}
+	{Tags "snow" 0x2576}
+	{Tags "snow" 0x2578}
+	{Tags "snow" 0x2579}
+	{Tags "snow" 0x9f3}
+	{Tags "snow" 0xab1}
+	{Tags "snow" 0x4359}
+	{Tags "snow" 0x437c}
+	{Tags "snow" 0x1210}
+	{Tags "snow" 0x41a1}
+	{Tags "snow" 0x6087}
+	{Tags "snow" 0x6237}
+	{Tags "snow" 0x732}
+	{Tags "snow" 0x1823}
+	{Tags "snow" 0x182c}
+	{Tags "snow" 0x1a40}
+	{Tags "snow" 0x1a41}
+	{Tags "snow" 0x1a42}
+	{Tags "snow" 0x1a43}
+	{Tags "snow" 0x1a44}
+	{Tags "snow" 0x1a45}
+	{Tags "snow" 0x1a46}
+	{Tags "snow" 0x59a8}
+	{Tags "snow" 0x59ad}
+	{Tags "snow" 0x1009}
+	{Tags "snow" 0x9c9}
+	{Tags "snow" 0x9cf}
+	{Tags "snow" 0x9d1}
+	{Tags "snow" 0xae2}
+	{Tags "snow" 0x46ec}
+	{Tags "snow" 0x46ed}
+	{Tags "snow" 0x46ee}
+	{Tags "snow" 0x46ef}
+	{Tags "snow" 0x46fd}
+	{Tags "snow" 0x46fe}
+	{Tags "snow" 0x470d}
+	{Tags "snow" 0x470e}
+	{Tags "snow" 0x4711}
+	{Tags "snow" 0x4718}
+	{Tags "snow" 0x5147}
+	{Tags "snow" 0x5148}
+	{Tags "snow" 0x515f}
+	{Tags "snow" 0x5167}
+	{Tags "snow" 0x516a}
+	{Tags "snow" 0x51b0}
+	{Tags "snow" 0x51b1}
+	{Tags "snow" 0x51b9}
+	{Tags "snow" 0x51bf}
+	{Tags "snow" 0x51c2}
+	{Tags "snow" 0x51e9}
+	{Tags "snow" 0x51ef}
+	{Tags "snow" 0x51f8}
+	{Tags "snow" 0x522c}
+	{Tags "snow" 0x523a}
+	{Tags "snow" 0x523c}
+	{Tags "snow" 0x523d}
+	{Tags "snow" 0x523e}
+	{Tags "snow" 0x5241}
+	{Tags "snow" 0x5243}
+	{Tags "snow" 0x5244}
+	{Tags "snow" 0x526e}
+	{Tags "snow" 0x5276}
+	{Tags "snow" 0x527f}
+	{Tags "snow" 0x5280}
+	{Tags "snow" 0x7313}
+	{Tags "snow" 0x7319}
+	{Tags "snow" 0x3129}
+	{Tags "snow" 0x313f}
+	{Tags "snow" 0x3147}
+	{Tags "snow" 0x315a}
+	{Tags "snow" 0x3170}
+	{Tags "snow" 0x3171}
+	{Tags "snow" 0x3172}
+	{Tags "snow" 0x3179}
+	{Tags "snow" 0x3184}
+	{Tags "snow" 0x318c}
+	{Tags "snow" 0x3194}
+	{Tags "snow" 0x31a6}
+	{Tags "snow" 0x31a8}
+	{Tags "snow" 0x31b5}
+	{Tags "snow" 0x789c}
+	{Tags "snow" 0x78a1}
+	{Tags "snow" 0x78d5}
+	{Tags "snow" 0x78d9}
+	{Tags "snow" 0x78e1}
+	{Tags "snow" 0x78ec}
+	{Tags "snow" 0x78ed}
+	{Tags "snow" 0x78f2}
+	{Tags "snow" 0x78f6}
+	{Tags "snow" 0x78fb}
+	{Tags "snow" 0x39d6}
+	{Tags "snow" 0x39da}
+	{Tags "snow" 0x3a04}
+	{Tags "snow" 0x3a09}
+	{Tags "snow" 0x3a0d}
+	{Tags "snow" 0x3a55}
+	{Tags "snow" 0x3a58}
+	{Tags "snow" 0x643c}
+	{Tags "snow" 0x6453}
+	{Tags "snow" 0x2814}
+	{Tags "snow" 0x5290}
+	{Tags "snow" 0x31f7}
+	{Tags "snow" 0x2651}
+	{Tags "snow" 0x2656}
+	{Tags "snow" 0x7364}
+	{Tags "snow" 0x736e}
+	{Tags "snow" 0x736f}
+	{Tags "snow" 0x790c}
+	{Tags "snow" 0x7918}
+	{Tags "snow" 0x7919}
+	{Tags "snow" 0x791b}
+	{Tags "snow" 0x791e}
+	{Tags "snow" 0x7938}
+	{Tags "snow" 0x1417}
+	{Tags "snow" 0x141b}
+	{Tags "snow" 0x1436}
+	{Tags "snow" 0x1449}
+	{Tags "snow" 0xbd9}
+	{Tags "snow" 0x2690}
+	{Tags "snow" 0x2691}
+	{Tags "snow" 0x1084}
+	{Tags "snow" 0x1093}
+	{Tags "bare" 0x64bd}
+	{Tags "bare" 0x64be}
+	{Tags "bare" 0x64bf}
+	{Tags "bare" 0x64c0}
+	{Tags "bare" 0x64c1}
+	{Tags "bare" 0x64c2}
+	{Tags "bare" 0x64c3}
+	{Tags "bare" 0x64c4}
+	{Tags "bare" 0x64c5}
+	{Tags "bare" 0x64c6}
+	{Tags "bare" 0x64c7}
+	{Tags "bare" 0x64c8}
+	{Tags "bare" 0x64c9}
+	{Tags "bare" 0x64ca}
+	{Tags "bare" 0x64cb}
+	{Tags "bare" 0x64cc}
+	{Tags "bare" 0x64cd}
+	{Tags "bare" 0x64ce}
+	{Tags "bare" 0x64d3}
+	{Tags "bare" 0x64d4}
+	{Tags "bare" 0x64d5}
+	{Tags "bare" 0x64d7}
+	{Tags "bare" 0x64d8}
+	{Tags "bare" 0x64d9}
+	{Tags "bare" 0x64db}
+	{Tags "bare" 0x64dc}
+	{Tags "bare" 0x64dd}
+	{Tags "bare" 0x64de}
+	{Tags "bare" 0x64df}
+	{Tags "bare" 0x64e3}
+	{Tags "bare" 0x64e4}
+	{Tags "bare" 0x64e5}
+	{Tags "bare" 0x64e8}
+	{Tags "bare" 0x64e9}
+	{Tags "bare" 0x64ea}
+	{Tags "bare" 0x64eb}
+	{Tags "bare" 0x64ec}
+	{Tags "bare" 0x64ed}
+	{Tags "bare" 0x64ee}
+	{Tags "bare" 0x64f0}
+	{Tags "bare" 0x64f1}
+	{Tags "bare" 0x64f2}
+	{Tags "bare" 0x64f3}
+	{Tags "bare" 0x64f4}
+	{Tags "bare" 0x64f6}
+	{Tags "bare" 0x64f7}
+	{Tags "bare" 0x64f8}
+	{Tags "bare" 0x64fa}
+	{Tags "bare" 0x64fb}
+	{Tags "bare" 0x64fc}
+	{Tags "bare" 0x64fd}
+	{Tags "bare" 0x64fe}
+	{Tags "bare" 0x64ff}
+	{Tags "bare" 0x6500}
+	{Tags "bare" 0x6501}
+	{Tags "bare" 0x6502}
+	{Tags "bare" 0x6503}
+	{Tags "bare" 0x6504}
+	{Tags "bare" 0x6505}
+	{Tags "bare" 0x6509}
+	{Tags "bare" 0xe1a}
+	{Tags "bare" 0xe1b}
+	{Tags "bare" 0xe1c}
+	{Tags "bare" 0xe1e}
+	{Tags "bare" 0xe1f}
+	{Tags "bare" 0xe20}
+	{Tags "bare" 0xe21}
+	{Tags "bare" 0xe22}
+	{Tags "bare" 0xe28}
+	{Tags "bare" 0xe2a}
+	{Tags "bare" 0xe2b}
+	{Tags "bare" 0xe2d}
+	{Tags "bare" 0xe2e}
+	{Tags "bare" 0xe2f}
+	{Tags "bare" 0xe30}
+	{Tags "bare" 0xe31}
+	{Tags "bare" 0xe32}
+	{Tags "bare" 0xe33}
+	{Tags "bare" 0xe34}
+	{Tags "bare" 0xe35}
+	{Tags "bare" 0xe37}
+	{Tags "bare" 0xe38}
+	{Tags "bare" 0xe3a}
+	{Tags "bare" 0xe42}
+	{Tags "bare" 0xe48}
+	{Tags "bare" 0xe49}
+	{Tags "bare" 0xe4a}
+	{Tags "bare" 0xe4b}
+	{Tags "bare" 0xe4d}
+	{Tags "bare" 0xe4e}
+	{Tags "bare" 0xe4f}
+	{Tags "bare" 0xe50}
+	{Tags "bare" 0xe51}
+	{Tags "bare" 0xe52}
+	{Tags "bare" 0xe53}
+	{Tags "bare" 0xe54}
+	{Tags "bare" 0xe55}
+	{Tags "bare" 0xe56}
+	{Tags "bare" 0xe57}
+	{Tags "bare" 0xe58}
+	{Tags "bare" 0xe59}
+	{Tags "bare" 0xe5a}
+	{Tags "bare" 0xe5b}
+	{Tags "bare" 0xe5c}
+	{Tags "bare" 0xe5d}
+	{Tags "bare" 0xe5e}
+	{Tags "bare" 0xe5f}
+	{Tags "bare" 0xe60}
+	{Tags "bare" 0xe61}
+	{Tags "bare" 0xe62}
+	{Tags "bare" 0xe63}
+	{Tags "bare" 0xe64}
+	{Tags "bare" 0xe65}
+	{Tags "bare" 0xe66}
+	{Tags "bare" 0xe68}
+	{Tags "bare" 0xe69}
+	{Tags "bare" 0xe6a}
+	{Tags "bare" 0xe6b}
+	{Tags "bare" 0xe6f}
+	{Tags "bare" 0xe74}
+	{Tags "bare" 0xe75}
+	{Tags "bare" 0xe76}
+	{Tags "bare" 0xe77}
+	{Tags "bare" 0xe78}
+	{Tags "bare" 0xe79}
+	{Tags "bare" 0xe7a}
+	{Tags "bare" 0x479e}
+	{Tags "bare" 0x47a0}
+	{Tags "bare" 0x47a1}
+	{Tags "bare" 0x47a2}
+	{Tags "bare" 0x47a3}
+	{Tags "bare" 0x47a4}
+	{Tags "bare" 0x47ab}
+	{Tags "bare" 0x47ad}
+	{Tags "bare" 0x47ae}
+	{Tags "bare" 0x47b1}
+	{Tags "bare" 0x47b2}
+	{Tags "bare" 0x47b3}
+	{Tags "bare" 0x47b4}
+	{Tags "bare" 0x47b6}
+	{Tags "snow" 0x6511}
+	{Tags "snow" 0x6521}
+	{Tags "snow" 0x6523}
+	{Tags "bare" 0x20e0}
+	{Tags "bare" 0xd5a}
+	{Tags "bare" 0xd5b}
+	{Tags "bare" 0x5a0a}
+	{Tags "bare" 0x5a0c}
+	{Tags "bare" 0x2623}
+	{Tags "bare" 0x262e}
+	{Tags "bare" 0x2637}
+	{Tags "snow" 0xbd3}
+	{Tags "snow" 0xbe1}
+	{Tags "snow" 0xbea}
+	{Tags "snow" 0xbed}
+	{Tags "snow" 0x4000}
+	{Tags "snow" 0x473c}
+	{Tags "snow" 0x4744}
+	{Tags "snow" 0x474f}
+	{Tags "snow" 0x1140}
+	{Tags "snow" 0x1146}
+	{Tags "bare" 0xbb5}
+	{Tags "bare" 0xbb6}
+	{Tags "bare" 0xbbb}
+	{Tags "bare" 0xbc2}
+	{Tags "bare" 0x62cb}
+	{Tags "bare" 0x62cc}
+	{Tags "bare" 0x62cd}
+	{Tags "bare" 0x62ce}
+	{Tags "snow" 0x62da}
+	{Tags "snow" 0x62db}
+	{Tags "snow" 0x62dc}
+	{Tags "snow" 0x62dd}
+	{Tags "snow" 0x62df}
+	{Tags "snow" 0xc72}
+	{Tags "snow" 0xc73}
+	{Tags "snow" 0xc74}
+	{Tags "snow" 0xc75}
+	{Tags "snow" 0xd02}
+	{Tags "snow" 0xd03}
+	{Tags "snow" 0xd04}
+	{Tags "snow" 0xd05}
+	{Tags "snow" 0xd06}
+	{Tags "snow" 0xd07}
+	{Tags "snow" 0xd08}
+	{Tags "snow" 0xd0b}
+	{Tags "snow" 0xd0c}
+	{Tags "snow" 0xd0d}
+	{Tags "snow" 0xd0e}
+	{Tags "snow" 0xd0f}
+	{Tags "snow" 0xd10}
+	{Tags "snow" 0xd11}
+	{Tags "snow" 0xd12}
+	{Tags "snow" 0xd14}
+	{Tags "snow" 0xd15}
+	{Tags "snow" 0xd16}
+	{Tags "snow" 0xd17}
+	{Tags "snow" 0xd18}
+	{Tags "snow" 0xd19}
+	{Tags "snow" 0xd1a}
+	{Tags "snow" 0xd1d}
+	{Tags "snow" 0xd1e}
+	{Tags "snow" 0xd21}
+	{Tags "snow" 0xd22}
+	{Tags "snow" 0xd23}
+	{Tags "snow" 0xd24}
+	{Tags "snow" 0xd25}
+	{Tags "snow" 0x405c}
+	{Tags "snow" 0x41fc}
+	{Tags "snow" 0x4202}
+	{Tags "snow" 0x4228}
+	{Tags "snow" 0x430f}
+	{Tags "snow" 0x43f5}
+	{Tags "snow" 0x43f8}
+	{Tags "snow" 0x43f9}
+	{Tags "snow" 0x43fa}
+	{Tags "snow" 0x43fd}
+	{Tags "snow" 0x43fe}
+	{Tags "snow" 0x43ff}
+	{Tags "snow" 0x4403}
+	{Tags "snow" 0x441f}
+	{Tags "snow" 0x442b}
+	{Tags "snow" 0x442c}
+	{Tags "snow" 0x454f}
+	{Tags "snow" 0x4553}
+	{Tags "snow" 0x4554}
+	{Tags "snow" 0x4555}
+	{Tags "snow" 0x4556}
+	{Tags "snow" 0x4573}
+	{Tags "snow" 0x4574}
+	{Tags "snow" 0x4583}
+	{Tags "snow" 0x4585}
+	{Tags "snow" 0x4586}
+	{Tags "snow" 0x4588}
+	{Tags "snow" 0x4589}
+	{Tags "snow" 0x458a}
+	{Tags "snow" 0x458d}
+	{Tags "snow" 0x458e}
+	{Tags "snow" 0x458f}
+	{Tags "snow" 0x4590}
+	{Tags "snow" 0x4591}
+	{Tags "snow" 0x4592}
+	{Tags "snow" 0x4593}
+	{Tags "snow" 0x4596}
+	{Tags "snow" 0x4597}
+	{Tags "snow" 0x4598}
+	{Tags "snow" 0x459a}
+	{Tags "snow" 0x459c}
+	{Tags "snow" 0x45a3}
+	{Tags "snow" 0x45a4}
+	{Tags "snow" 0x45a5}
+	{Tags "snow" 0x45a6}
+	{Tags "snow" 0x45a7}
+	{Tags "snow" 0x45a8}
+	{Tags "snow" 0x45a9}
+	{Tags "snow" 0x45aa}
+	{Tags "snow" 0x45ab}
+	{Tags "snow" 0x45ac}
+	{Tags "snow" 0x45ad}
+	{Tags "snow" 0x45ae}
+	{Tags "snow" 0x45af}
+	{Tags "snow" 0x45cd}
+	{Tags "snow" 0x45ee}
+	{Tags "snow" 0x45ef}
+	{Tags "snow" 0x45f7}
+	{Tags "snow" 0x4627}
+	{Tags "snow" 0x4628}
+	{Tags "snow" 0x4629}
+	{Tags "snow" 0x462b}
+	{Tags "snow" 0x462f}
+	{Tags "snow" 0x4630}
+	{Tags "snow" 0x4631}
+	{Tags "snow" 0x46c3}
+	{Tags "snow" 0x46e3}
+	{Tags "snow" 0x4854}
+	{Tags "snow" 0x48fc}
+	{Tags "snow" 0x48fe}
+	{Tags "snow" 0x48ff}
+	{Tags "snow" 0x4948}
+	{Tags "snow" 0x4949}
+	{Tags "snow" 0x494b}
+	{Tags "snow" 0x494d}
+	{Tags "snow" 0x494f}
+	{Tags "snow" 0x498d}
+	{Tags "snow" 0x49bd}
+	{Tags "snow" 0x49fe}
+	{Tags "snow" 0x4a4c}
+	{Tags "snow" 0x4a52}
+	{Tags "snow" 0x4a7c}
+	{Tags "snow" 0x4a7e}
+	{Tags "snow" 0x4a89}
+	{Tags "snow" 0x4a97}
+	{Tags "snow" 0x4a98}
+	{Tags "snow" 0x4a99}
+	{Tags "snow" 0x4a9a}
+	{Tags "snow" 0x4a9b}
+	{Tags "snow" 0x4a9c}
+	{Tags "snow" 0x4a9e}
+	{Tags "snow" 0x4a9f}
+	{Tags "snow" 0x4aa0}
+	{Tags "snow" 0x4aa1}
+	{Tags "snow" 0x4aa2}
+	{Tags "snow" 0x4aa3}
+	{Tags "snow" 0x4aa4}
+	{Tags "snow" 0x4aa5}
+	{Tags "snow" 0x4aa6}
+	{Tags "snow" 0x4aa7}
+	{Tags "snow" 0x4aa8}
+	{Tags "snow" 0x4aa9}
+	{Tags "snow" 0x4aaa}
+	{Tags "snow" 0x4aab}
+	{Tags "snow" 0x4aac}
+	{Tags "snow" 0x4aad}
+	{Tags "snow" 0x4aae}
+	{Tags "snow" 0x4ab0}
+	{Tags "snow" 0x4ab1}
+	{Tags "snow" 0x4ab2}
+	{Tags "snow" 0x4ab5}
+	{Tags "snow" 0x4ab6}
+	{Tags "snow" 0x4aba}
+	{Tags "snow" 0x4abb}
+	{Tags "snow" 0x4abc}
+	{Tags "snow" 0x4abe}
+	{Tags "snow" 0x4ac0}
+	{Tags "snow" 0x4ac3}
+	{Tags "snow" 0x4ac4}
+	{Tags "snow" 0x4ac5}
+	{Tags "snow" 0x4ac6}
+	{Tags "snow" 0x21aa}
+	{Tags "snow" 0x21b1}
+	{Tags "snow" 0x21b3}
+	{Tags "snow" 0x2469}
+	{Tags "snow" 0x2754}
+	{Tags "snow" 0x2755}
+	{Tags "snow" 0x2757}
+	{Tags "snow" 0x2758}
+	{Tags "snow" 0x2759}
+	{Tags "snow" 0x275a}
+	{Tags "snow" 0x275c}
+	{Tags "snow" 0x275d}
+	{Tags "snow" 0x275e}
+	{Tags "snow" 0x275f}
+	{Tags "snow" 0x2760}
+	{Tags "snow" 0x2761}
+	{Tags "snow" 0x2762}
+	{Tags "snow" 0x2764}
+	{Tags "snow" 0x2765}
+	{Tags "snow" 0x2767}
+	{Tags "snow" 0x2768}
+	{Tags "snow" 0x276a}
+	{Tags "snow" 0x276b}
+	{Tags "snow" 0x276c}
+	{Tags "snow" 0x276d}
+	{Tags "snow" 0x276e}
+	{Tags "snow" 0x276f}
+	{Tags "snow" 0x2770}
+	{Tags "snow" 0x2772}
+	{Tags "snow" 0x2773}
+	{Tags "snow" 0x2774}
+	{Tags "snow" 0x2776}
+	{Tags "snow" 0x2777}
+	{Tags "snow" 0x2778}
+	{Tags "snow" 0x2779}
+	{Tags "snow" 0x277a}
+	{Tags "snow" 0x277b}
+	{Tags "snow" 0x277c}
+	{Tags "snow" 0x277d}
+	{Tags "snow" 0x277e}
+	{Tags "snow" 0x277f}
+	{Tags "snow" 0x2780}
+	{Tags "snow" 0x2781}
+	{Tags "snow" 0x2782}
+	{Tags "snow" 0x2783}
+	{Tags "snow" 0x2784}
+	{Tags "snow" 0x2785}
+	{Tags "snow" 0x2786}
+	{Tags "snow" 0x2787}
+	{Tags "snow" 0x2788}
+	{Tags "snow" 0x2789}
+	{Tags "snow" 0x278a}
+	{Tags "snow" 0x278b}
+	{Tags "snow" 0x278c}
+	{Tags "snow" 0x278d}
+	{Tags "snow" 0x278e}
+	{Tags "snow" 0x278f}
+	{Tags "snow" 0x2791}
+	{Tags "snow" 0x2792}
+	{Tags "snow" 0x2793}
+	{Tags "bare" 0x2794}
+	{Tags "bare" 0x2795}
+	{Tags "snow" 0x2796}
+	{Tags "snow" 0x2797}
+	{Tags "snow" 0x2798}
+	{Tags "snow" 0x2799}
+	{Tags "snow" 0x279a}
+	{Tags "snow" 0x279b}
+	{Tags "snow" 0x279c}
+	{Tags "snow" 0x279d}
+	{Tags "snow" 0x279e}
+	{Tags "snow" 0x279f}
+	{Tags "snow" 0x27a0}
+	{Tags "snow" 0x27a1}
+	{Tags "snow" 0x27a2}
+	{Tags "snow" 0x27a4}
+	{Tags "snow" 0x27a5}
+	{Tags "snow" 0x27a6}
+	{Tags "snow" 0x27a7}
+	{Tags "snow" 0x27a8}
+	{Tags "snow" 0x27a9}
+	{Tags "snow" 0x27aa}
+	{Tags "snow" 0x27ab}
+	{Tags "snow" 0x27ac}
+	{Tags "snow" 0x27ad}
+	{Tags "snow" 0x27ae}
+	{Tags "snow" 0x27af}
+	{Tags "snow" 0x27b0}
+	{Tags "snow" 0x27b1}
+	{Tags "snow" 0x27b2}
+	{Tags "snow" 0x27b4}
+	{Tags "snow" 0x27b5}
+	{Tags "snow" 0x27b6}
+	{Tags "snow" 0x27b7}
+	{Tags "snow" 0x27b8}
+	{Tags "snow" 0x27b9}
+	{Tags "snow" 0x27ba}
+	{Tags "snow" 0x27bb}
+	{Tags "snow" 0x27bc}
+	{Tags "snow" 0x27bf}
+	{Tags "snow" 0x27c1}
+	{Tags "snow" 0x27c3}
+	{Tags "snow" 0x27c5}
+	{Tags "snow" 0x27c7}
+	{Tags "snow" 0x27cc}
+	{Tags "snow" 0x27cd}
+	{Tags "snow" 0x27dd}
+	{Tags "snow" 0x27de}
+	{Tags "snow" 0x27df}
+	{Tags "snow" 0x27e0}
+	{Tags "snow" 0x27e1}
+	{Tags "snow" 0x27e2}
+	{Tags "snow" 0x27e3}
+	{Tags "snow" 0x27e4}
+	{Tags "snow" 0x27e5}
+	{Tags "snow" 0x27e6}
+	{Tags "snow" 0x27e7}
+	{Tags "snow" 0x27e8}
+	{Tags "snow" 0x27e9}
+	{Tags "snow" 0x27ea}
+	{Tags "snow" 0x27eb}
+	{Tags "snow" 0x27ec}
+	{Tags "snow" 0x27ed}
+	{Tags "snow" 0x27ee}
+	{Tags "snow" 0x27ef}
+	{Tags "snow" 0x27f0}
+	{Tags "snow" 0x27f1}
+	{Tags "snow" 0x27f2}
+	{Tags "snow" 0x27f3}
+	{Tags "snow" 0x27f5}
+	{Tags "snow" 0x27f6}
+	{Tags "snow" 0x7346}
+	{Tags "snow" 0x7347}
+	{Tags "snow" 0x7348}
+	{Tags "snow" 0x7349}
+	{Tags "snow" 0x734e}
+	{Tags "snow" 0x734f}
+	{Tags "snow" 0x7350}
+	{Tags "snow" 0x7351}
+	{Tags "snow" 0x7352}
+	{Tags "snow" 0x7353}
+	{Tags "snow" 0x7377}
+	{Tags "snow" 0x7378}
+	{Tags "snow" 0x7438}
+	{Tags "snow" 0x7441}
+	{Tags "snow" 0x7442}
+	{Tags "snow" 0x7443}
+	{Tags "snow" 0x7444}
+	{Tags "snow" 0x7445}
+	{Tags "snow" 0x7446}
+	{Tags "snow" 0x7447}
+	{Tags "snow" 0x7448}
+	{Tags "snow" 0x7449}
+	{Tags "snow" 0x744a}
+	{Tags "snow" 0x744b}
+	{Tags "snow" 0x744c}
+	{Tags "snow" 0x744e}
+	{Tags "snow" 0x7450}
+	{Tags "snow" 0x7451}
+	{Tags "snow" 0x7452}
+	{Tags "snow" 0x7453}
+	{Tags "snow" 0x7454}
+	{Tags "snow" 0x7455}
+	{Tags "snow" 0x7456}
+	{Tags "bare" 0x745a}
+	{Tags "snow" 0x745b}
+	{Tags "snow" 0x745c}
+	{Tags "snow" 0x745d}
+	{Tags "snow" 0x745e}
+	{Tags "snow" 0x745f}
+	{Tags "snow" 0x7460}
+	{Tags "snow" 0x7461}
+	{Tags "snow" 0x7462}
+	{Tags "snow" 0x7463}
+	{Tags "snow" 0x7464}
+	{Tags "snow" 0x7465}
+	{Tags "snow" 0x7466}
+	{Tags "snow" 0x7467}
+	{Tags "snow" 0x7468}
+	{Tags "snow" 0x7469}
+	{Tags "snow" 0x746a}
+	{Tags "snow" 0x746b}
+	{Tags "snow" 0x746c}
+	{Tags "snow" 0x746d}
+	{Tags "snow" 0x746e}
+	{Tags "snow" 0x746f}
+	{Tags "snow" 0x7470}
+	{Tags "snow" 0x7471}
+	{Tags "snow" 0x7472}
+	{Tags "snow" 0x7473}
+	{Tags "snow" 0x7474}
+	{Tags "snow" 0x7477}
+	{Tags "snow" 0x7478}
+	{Tags "snow" 0x7479}
+	{Tags "snow" 0x747a}
+	{Tags "snow" 0x747b}
+	{Tags "snow" 0x747c}
+	{Tags "snow" 0x747d}
+	{Tags "snow" 0x747e}
+	{Tags "snow" 0x747f}
+	{Tags "snow" 0x7480}
+	{Tags "snow" 0x7481}
+	{Tags "snow" 0x7482}
+	{Tags "snow" 0x7483}
+	{Tags "snow" 0x7484}
+	{Tags "snow" 0x7485}
+	{Tags "snow" 0x7486}
+	{Tags "snow" 0x7487}
+	{Tags "snow" 0x7488}
+	{Tags "snow" 0x7489}
+	{Tags "snow" 0x748a}
+	{Tags "snow" 0x748b}
+	{Tags "snow" 0x748c}
+	{Tags "snow" 0x748d}
+	{Tags "snow" 0x748e}
+	{Tags "snow" 0x748f}
+	{Tags "snow" 0x7490}
+	{Tags "snow" 0x7492}
+	{Tags "snow" 0x7493}
+	{Tags "snow" 0x7494}
+	{Tags "snow" 0x7495}
+	{Tags "snow" 0x7496}
+	{Tags "snow" 0x7497}
+	{Tags "snow" 0x7498}
+	{Tags "snow" 0x7499}
+	{Tags "snow" 0x749a}
+	{Tags "snow" 0x749b}
+	{Tags "snow" 0x749c}
+	{Tags "snow" 0x749d}
+	{Tags "snow" 0x749e}
+	{Tags "snow" 0x749f}
+	{Tags "snow" 0x74a0}
+	{Tags "snow" 0x74a1}
+	{Tags "snow" 0x74a2}
+	{Tags "snow" 0x74a3}
+	{Tags "snow" 0x74a4}
+	{Tags "snow" 0x74a5}
+	{Tags "snow" 0x74a6}
+	{Tags "snow" 0x74a7}
+	{Tags "snow" 0x74a8}
+	{Tags "snow" 0x74a9}
+	{Tags "snow" 0x74aa}
+	{Tags "snow" 0x74ab}
+	{Tags "snow" 0x74ae}
+	{Tags "snow" 0x74af}
+	{Tags "snow" 0x74b0}
+	{Tags "snow" 0x74b1}
+	{Tags "snow" 0x74b2}
+	{Tags "snow" 0x74b3}
+	{Tags "snow" 0x74b4}
+	{Tags "snow" 0x74b5}
+	{Tags "snow" 0x74b6}
+	{Tags "snow" 0x74b7}
+	{Tags "snow" 0x74b8}
+	{Tags "snow" 0x74b9}
+	{Tags "snow" 0x74ba}
+	{Tags "snow" 0x74bb}
+	{Tags "snow" 0x74bc}
+	{Tags "snow" 0x74bd}
+	{Tags "snow" 0x74be}
+	{Tags "snow" 0x74bf}
+	{Tags "snow" 0x74c0}
+	{Tags "snow" 0x31db}
+	{Tags "snow" 0x31dc}
+	{Tags "snow" 0x31dd}
+	{Tags "snow" 0x31de}
+	{Tags "snow" 0x31df}
+	{Tags "snow" 0x31e0}
+	{Tags "snow" 0x31e1}
+	{Tags "snow" 0x31e2}
+	{Tags "snow" 0x31e3}
+	{Tags "snow" 0x31e4}
+	{Tags "snow" 0x31e6}
+	{Tags "snow" 0x31e7}
+	{Tags "snow" 0x31e8}
+	{Tags "snow" 0x31e9}
+	{Tags "snow" 0x31ea}
+	{Tags "snow" 0x31eb}
+	{Tags "snow" 0x31ec}
+	{Tags "snow" 0x31ed}
+	{Tags "snow" 0x31ee}
+	{Tags "snow" 0x31ef}
+	{Tags "snow" 0x31f0}
+	{Tags "snow" 0x31f1}
+	{Tags "snow" 0x31fd}
+	{Tags "snow" 0x31fe}
+	{Tags "snow" 0x3200}
+	{Tags "snow" 0x3201}
+	{Tags "snow" 0x3202}
+	{Tags "snow" 0x3203}
+	{Tags "bare" 0x3210}
+	{Tags "snow" 0x3211}
+	{Tags "snow" 0x3213}
+	{Tags "snow" 0x3215}
+	{Tags "snow" 0x3216}
+	{Tags "snow" 0x3217}
+	{Tags "snow" 0x3218}
+	{Tags "snow" 0x3219}
+	{Tags "snow" 0x321a}
+	{Tags "snow" 0x321c}
+	{Tags "snow" 0x321e}
+	{Tags "snow" 0x321f}
+	{Tags "snow" 0x3220}
+	{Tags "snow" 0x3221}
+	{Tags "snow" 0x3222}
+	{Tags "snow" 0x3223}
+	{Tags "snow" 0x3224}
+	{Tags "snow" 0x322a}
+	{Tags "snow" 0x322b}
+	{Tags "snow" 0x322c}
+	{Tags "snow" 0x322d}
+	{Tags "snow" 0x322e}
+	{Tags "snow" 0x322f}
+	{Tags "snow" 0x3230}
+	{Tags "snow" 0x3231}
+	{Tags "snow" 0x3232}
+	{Tags "snow" 0x3233}
+	{Tags "snow" 0x3234}
+	{Tags "snow" 0x3235}
+	{Tags "snow" 0x3236}
+	{Tags "snow" 0x3237}
+	{Tags "snow" 0x3239}
+	{Tags "snow" 0x323a}
+	{Tags "snow" 0x323b}
+	{Tags "snow" 0x323c}
+	{Tags "snow" 0x323d}
+	{Tags "snow" 0x323e}
+	{Tags "snow" 0x323f}
+	{Tags "snow" 0x3240}
+	{Tags "snow" 0x3241}
+	{Tags "snow" 0x3242}
+	{Tags "snow" 0x3243}
+	{Tags "snow" 0x3244}
+	{Tags "snow" 0x3245}
+	{Tags "snow" 0x3246}
+	{Tags "snow" 0x3247}
+	{Tags "snow" 0x324a}
+	{Tags "snow" 0x324b}
+	{Tags "snow" 0x324c}
+	{Tags "snow" 0x324d}
+	{Tags "snow" 0x324e}
+	{Tags "bare" 0x3254}
+	{Tags "bare" 0x3255}
+	{Tags "snow" 0x3258}
+	{Tags "snow" 0x3259}
+	{Tags "snow" 0x325a}
+	{Tags "snow" 0x325b}
+	{Tags "snow" 0x325c}
+	{Tags "snow" 0x325d}
+	{Tags "snow" 0x325e}
+	{Tags "snow" 0x3261}
+	{Tags "snow" 0x3262}
+	{Tags "snow" 0x3263}
+	{Tags "snow" 0x3264}
+	{Tags "snow" 0x3265}
+	{Tags "snow" 0x3266}
+	{Tags "snow" 0x3267}
+	{Tags "snow" 0x3268}
+	{Tags "snow" 0x3269}
+	{Tags "snow" 0x326a}
+	{Tags "snow" 0x326b}
+	{Tags "snow" 0x326c}
+	{Tags "snow" 0x326d}
+	{Tags "snow" 0x326e}
+	{Tags "snow" 0x326f}
+	{Tags "snow" 0x3270}
+	{Tags "snow" 0x3271}
+	{Tags "snow" 0x3272}
+	{Tags "snow" 0x3273}
+	{Tags "snow" 0x3274}
+	{Tags "snow" 0x3275}
+	{Tags "snow" 0x3276}
+	{Tags "snow" 0x3277}
+	{Tags "snow" 0x3278}
+	{Tags "snow" 0x3279}
+	{Tags "snow" 0x327a}
+	{Tags "snow" 0x327b}
+	{Tags "snow" 0x327c}
+	{Tags "snow" 0x327d}
+	{Tags "snow" 0x327e}
+	{Tags "snow" 0x327f}
+	{Tags "snow" 0x3280}
+	{Tags "snow" 0x3281}
+	{Tags "snow" 0x3283}
+	{Tags "snow" 0x3284}
+	{Tags "snow" 0x3285}
+	{Tags "snow" 0x3286}
+	{Tags "snow" 0x3287}
+	{Tags "snow" 0x3288}
+	{Tags "snow" 0x3289}
+	{Tags "snow" 0x328a}
+	{Tags "snow" 0x328b}
+	{Tags "snow" 0x3294}
+	{Tags "snow" 0x3295}
+	{Tags "snow" 0x3297}
+	{Tags "bare" 0x32aa}
+	{Tags "bare" 0x32ac}
+	{Tags "snow" 0x32ad}
+	{Tags "snow" 0x32ae}
+	{Tags "snow" 0x32af}
+	{Tags "snow" 0x32b0}
+	{Tags "snow" 0x32b2}
+	{Tags "snow" 0x32b3}
+	{Tags "snow" 0x32b4}
+	{Tags "snow" 0x32b5}
+	{Tags "snow" 0x32b6}
+	{Tags "snow" 0x32b8}
+	{Tags "snow" 0x32b9}
+	{Tags "snow" 0x32ba}
+	{Tags "snow" 0x32bb}
+	{Tags "snow" 0x32bd}
+	{Tags "snow" 0x32be}
+	{Tags "snow" 0x32c4}
+	{Tags "snow" 0x32c5}
+	{Tags "snow" 0x32c6}
+	{Tags "snow" 0x32c7}
+	{Tags "snow" 0x32c8}
+	{Tags "snow" 0x32c9}
+	{Tags "snow" 0x32ca}
+	{Tags "snow" 0x32cc}
+	{Tags "snow" 0x32cd}
+	{Tags "snow" 0x32ce}
+	{Tags "snow" 0x32cf}
+	{Tags "snow" 0x32d0}
+	{Tags "snow" 0x32d3}
+	{Tags "snow" 0x32d5}
+	{Tags "snow" 0x32d6}
+	{Tags "snow" 0x32d7}
+	{Tags "snow" 0x32d8}
+	{Tags "snow" 0x32d9}
+	{Tags "snow" 0x32da}
+	{Tags "snow" 0x32db}
+	{Tags "snow" 0x32dc}
+	{Tags "snow" 0x32dd}
+	{Tags "snow" 0x32de}
+	{Tags "snow" 0x32df}
+	{Tags "snow" 0x32e0}
+	{Tags "snow" 0x32e1}
+	{Tags "snow" 0x32e2}
+	{Tags "snow" 0x32e3}
+	{Tags "bare" 0x52be}
+	{Tags "bare" 0x52c4}
+	{Tags "bare" 0x52ca}
+	{Tags "snow" 0x52cb}
+	{Tags "snow" 0x1220}
+	{Tags "snow" 0x1221}
+	{Tags "snow" 0x1222}
+	{Tags "snow" 0x1223}
+	{Tags "snow" 0x1224}
+	{Tags "snow" 0x1225}
+	{Tags "snow" 0x1226}
+	{Tags "snow" 0x1227}
+	{Tags "snow" 0x1228}
+	{Tags "snow" 0x1229}
+	{Tags "snow" 0x122b}
+	{Tags "snow" 0x122c}
+	{Tags "snow" 0x122d}
+	{Tags "snow" 0x122e}
+	{Tags "snow" 0x122f}
+	{Tags "snow" 0x1230}
+	{Tags "snow" 0x1231}
+	{Tags "snow" 0x1232}
+	{Tags "snow" 0x1233}
+	{Tags "snow" 0x1234}
+	{Tags "bare" 0x6966}
+	{Tags "bare" 0x6967}
+	{Tags "snow" 0x696b}
+	{Tags "snow" 0x696c}
+	{Tags "snow" 0x696d}
+	{Tags "snow" 0x696e}
+	{Tags "snow" 0x6971}
+	{Tags "snow" 0x6973}
+	{Tags "snow" 0x6974}
+	{Tags "snow" 0x6975}
+	{Tags "snow" 0x6976}
+	{Tags "snow" 0x6977}
+	{Tags "snow" 0x6978}
+	{Tags "snow" 0x6979}
+	{Tags "snow" 0x697b}
+	{Tags "snow" 0x697e}
+	{Tags "snow" 0x697f}
+	{Tags "snow" 0x6980}
+	{Tags "snow" 0x6981}
+	{Tags "snow" 0x6983}
+	{Tags "snow" 0x6984}
+	{Tags "snow" 0x6985}
+	{Tags "snow" 0x6986}
+	{Tags "snow" 0x6987}
+	{Tags "snow" 0x6988}
+	{Tags "snow" 0x6989}
+	{Tags "snow" 0x698b}
+	{Tags "snow" 0x698c}
+	{Tags "snow" 0x698d}
+	{Tags "snow" 0x698f}
+	{Tags "snow" 0x6990}
+	{Tags "snow" 0x6991}
+	{Tags "snow" 0x6993}
+	{Tags "snow" 0x6994}
+	{Tags "snow" 0x6995}
+	{Tags "snow" 0x6996}
+	{Tags "snow" 0x6997}
+	{Tags "snow" 0x6998}
+	{Tags "snow" 0x6999}
+	{Tags "snow" 0x699b}
+	{Tags "snow" 0x699c}
+	{Tags "snow" 0x699d}
+	{Tags "snow" 0x699e}
+	{Tags "snow" 0x699f}
+	{Tags "snow" 0x69a0}
+	{Tags "snow" 0x69a1}
+	{Tags "snow" 0x69a3}
+	{Tags "snow" 0x69a4}
+	{Tags "snow" 0x69a5}
+	{Tags "snow" 0x69a6}
+	{Tags "snow" 0x69a7}
+	{Tags "snow" 0x69a9}
+	{Tags "snow" 0x69ab}
+	{Tags "snow" 0x69ac}
+	{Tags "snow" 0x69ad}
+	{Tags "snow" 0x69ae}
+	{Tags "snow" 0x69af}
+	{Tags "snow" 0x69b0}
+	{Tags "snow" 0x69b1}
+	{Tags "snow" 0x69b3}
+	{Tags "snow" 0x69b4}
+	{Tags "snow" 0x69b5}
+	{Tags "snow" 0x69b6}
+	{Tags "snow" 0x69b7}
+	{Tags "snow" 0x69b8}
+	{Tags "snow" 0x69b9}
+	{Tags "snow" 0x69bb}
+	{Tags "snow" 0x69bc}
+	{Tags "snow" 0x69bd}
+	{Tags "snow" 0x69be}
+	{Tags "snow" 0x69bf}
+	{Tags "snow" 0x69c0}
+	{Tags "snow" 0x69c1}
+	{Tags "snow" 0x69c3}
+	{Tags "snow" 0x69c4}
+	{Tags "snow" 0x69c5}
+	{Tags "snow" 0x69c6}
+	{Tags "snow" 0x69c7}
+	{Tags "snow" 0x69c8}
+	{Tags "snow" 0x69c9}
+	{Tags "snow" 0x69cb}
+	{Tags "snow" 0x69cc}
+	{Tags "snow" 0x69cd}
+	{Tags "snow" 0x69cf}
+	{Tags "snow" 0x69d0}
+	{Tags "snow" 0x69d1}
+	{Tags "snow" 0x69d2}
+	{Tags "snow" 0x69d3}
+	{Tags "snow" 0x69d4}
+	{Tags "snow" 0x69d5}
+	{Tags "snow" 0x69d7}
+	{Tags "snow" 0x69d8}
+	{Tags "snow" 0x69db}
+	{Tags "snow" 0x69dc}
+	{Tags "snow" 0x69dd}
+	{Tags "snow" 0x69df}
+	{Tags "snow" 0x69e0}
+	{Tags "snow" 0x69e3}
+	{Tags "snow" 0x69e4}
+	{Tags "snow" 0x69e5}
+	{Tags "snow" 0x69e7}
+	{Tags "snow" 0x69e8}
+	{Tags "snow" 0x69e9}
+	{Tags "snow" 0x69ea}
+	{Tags "snow" 0x69ec}
+	{Tags "snow" 0x69ed}
+	{Tags "snow" 0x69f0}
+	{Tags "snow" 0x69f1}
+	{Tags "snow" 0x69f3}
+	{Tags "snow" 0x69f4}
+	{Tags "snow" 0x69f5}
+	{Tags "snow" 0x69f6}
+	{Tags "snow" 0x69f8}
+	{Tags "snow" 0x69f9}
+	{Tags "snow" 0x69fb}
+	{Tags "snow" 0x69fc}
+	{Tags "snow" 0x69fd}
+	{Tags "snow" 0x69ff}
+	{Tags "snow" 0x6a03}
+	{Tags "snow" 0x6a05}
+	{Tags "snow" 0x6a06}
+	{Tags "snow" 0x6a07}
+	{Tags "snow" 0x6a08}
+	{Tags "snow" 0x6a09}
+	{Tags "snow" 0x6a0a}
+	{Tags "snow" 0x6a0c}
+	{Tags "snow" 0x6a0d}
+	{Tags "snow" 0x6a10}
+	{Tags "snow" 0x6a11}
+	{Tags "snow" 0x6a14}
+	{Tags "snow" 0x6a17}
+	{Tags "snow" 0x6a18}
+	{Tags "snow" 0x6a1a}
+	{Tags "snow" 0x6a1b}
+	{Tags "snow" 0x6a1c}
+	{Tags "snow" 0x6a22}
+	{Tags "snow" 0x6a23}
+	{Tags "snow" 0x6a25}
+	{Tags "snow" 0x6a28}
+	{Tags "snow" 0x6a29}
+	{Tags "snow" 0x6a2a}
+	{Tags "snow" 0x6a2c}
+	{Tags "snow" 0x6a2f}
+	{Tags "snow" 0x6a30}
+	{Tags "snow" 0x6a31}
+	{Tags "snow" 0x6a32}
+	{Tags "snow" 0x6a33}
+	{Tags "snow" 0x6a34}
+	{Tags "snow" 0x6a36}
+	{Tags "snow" 0x6a37}
+	{Tags "snow" 0x6a38}
+	{Tags "snow" 0x6a3a}
+	{Tags "snow" 0x6a3b}
+	{Tags "snow" 0x6a3e}
+	{Tags "snow" 0x6a3f}
+	{Tags "snow" 0x6a41}
+	{Tags "snow" 0x6a44}
+	{Tags "snow" 0x6a45}
+	{Tags "snow" 0x6a46}
+	{Tags "snow" 0x6a47}
+	{Tags "snow" 0x6a48}
+	{Tags "snow" 0x6a49}
+	{Tags "snow" 0x6a4b}
+	{Tags "snow" 0x6a4c}
+	{Tags "snow" 0x6a4d}
+	{Tags "snow" 0x6a4e}
+	{Tags "snow" 0x6a4f}
+	{Tags "snow" 0x6a50}
+	{Tags "snow" 0x6a52}
+	{Tags "snow" 0x6a53}
+	{Tags "snow" 0x6a54}
+	{Tags "snow" 0x6a55}
+	{Tags "snow" 0x6a56}
+	{Tags "snow" 0x6a59}
+	{Tags "snow" 0x6a5a}
+	{Tags "snow" 0x6a5b}
+	{Tags "snow" 0x6a5c}
+	{Tags "snow" 0x6a5d}
+	{Tags "snow" 0x6a5e}
+	{Tags "snow" 0x6a60}
+	{Tags "snow" 0x6a61}
+	{Tags "snow" 0x6a62}
+	{Tags "snow" 0x6a63}
+	{Tags "snow" 0x6a64}
+	{Tags "snow" 0x6a65}
+	{Tags "snow" 0x285f}
+	{Tags "snow" 0x2861}
+	{Tags "snow" 0x28e2}
+	{Tags "snow" 0x28e4}
+	{Tags "snow" 0x28e5}
+	{Tags "snow" 0x28e6}
+	{Tags "snow" 0x28e8}
+	{Tags "snow" 0x28ea}
+	{Tags "snow" 0x28eb}
+	{Tags "snow" 0x28ec}
+	{Tags "snow" 0x28ed}
+	{Tags "snow" 0x28ee}
+	{Tags "snow" 0x28ef}
+	{Tags "snow" 0x28f1}
+	{Tags "snow" 0x28f3}
+	{Tags "snow" 0x28f4}
+	{Tags "snow" 0x28f5}
+	{Tags "snow" 0x28f6}
+	{Tags "snow" 0x28f7}
+	{Tags "snow" 0x28f8}
+	{Tags "snow" 0x28f9}
+	{Tags "snow" 0x28fa}
+	{Tags "snow" 0x28fc}
+	{Tags "snow" 0x28fe}
+	{Tags "snow" 0x28ff}
+	{Tags "snow" 0x2900}
+	{Tags "snow" 0x2902}
+	{Tags "snow" 0x2904}
+	{Tags "snow" 0x2905}
+	{Tags "snow" 0x2907}
+	{Tags "snow" 0x2908}
+	{Tags "snow" 0x2909}
+	{Tags "snow" 0x290a}
+	{Tags "snow" 0x290f}
+	{Tags "snow" 0x2910}
+	{Tags "snow" 0x2911}
+	{Tags "snow" 0x2912}
+	{Tags "snow" 0x2913}
+	{Tags "snow" 0x2914}
+	{Tags "snow" 0x2918}
+	{Tags "snow" 0x291a}
+	{Tags "snow" 0x291c}
+	{Tags "snow" 0x291d}
+	{Tags "snow" 0x291e}
+	{Tags "snow" 0x2920}
+	{Tags "snow" 0x2921}
+	{Tags "snow" 0x2923}
+	{Tags "snow" 0x2925}
+	{Tags "snow" 0x2926}
+	{Tags "snow" 0x2927}
+	{Tags "snow" 0x2928}
+	{Tags "snow" 0x2929}
+	{Tags "snow" 0x292a}
+	{Tags "snow" 0x292c}
+	{Tags "snow" 0x292e}
+	{Tags "snow" 0x2931}
+	{Tags "snow" 0x2932}
+	{Tags "snow" 0x2933}
+	{Tags "snow" 0x2934}
+	{Tags "snow" 0x2935}
+	{Tags "snow" 0x2936}
+	{Tags "snow" 0x2937}
+	{Tags "snow" 0x2938}
+	{Tags "snow" 0x2939}
+	{Tags "snow" 0x293a}
+	{Tags "snow" 0x293b}
+	{Tags "snow" 0x293c}
+	{Tags "snow" 0x293d}
+	{Tags "snow" 0x293e}
+	{Tags "snow" 0x293f}
+	{Tags "snow" 0x2940}
+	{Tags "snow" 0x2941}
+	{Tags "snow" 0x2942}
+	{Tags "snow" 0x2944}
+	{Tags "snow" 0x2946}
+	{Tags "snow" 0x2947}
+	{Tags "snow" 0x2948}
+	{Tags "snow" 0x2949}
+	{Tags "snow" 0x294a}
+	{Tags "snow" 0x294b}
+	{Tags "snow" 0x294c}
+	{Tags "snow" 0x294d}
+	{Tags "snow" 0x294e}
+	{Tags "snow" 0x294f}
+	{Tags "snow" 0x2950}
+	{Tags "snow" 0x2953}
+	{Tags "snow" 0x2954}
+	{Tags "snow" 0x2958}
+	{Tags "snow" 0x6a66}
+	{Tags "snow" 0x6a67}
+	{Tags "snow" 0x6a68}
+	{Tags "snow" 0x6a69}
+	{Tags "bare" 0x6a6d}
+	{Tags "snow" 0x62d6}
+	{Tags "snow" 0xbd2}
+	{Tags "snow" 0xe7c}
+	{Tags "snow" 0xe7d}
+	{Tags "snow" 0xe7e}
+	{Tags "snow" 0xe7f}
+	{Tags "snow" 0xe80}
+	{Tags "snow" 0xe82}
+	{Tags "snow" 0xe87}
+	{Tags "snow" 0xe8a}
+	{Tags "snow" 0xe8b}
+	{Tags "snow" 0xe8d}
+	{Tags "snow" 0xe8e}
+	{Tags "snow" 0xe91}
+	{Tags "snow" 0x59c5}
+	{Tags "snow" 0x59c6}
+	{Tags "snow" 0x59c7}
+	{Tags "snow" 0x59c9}
+	{Tags "snow" 0x59cb}
+	{Tags "snow" 0x59cc}
+	{Tags "snow" 0x59cd}
+	{Tags "snow" 0x59ce}
+	{Tags "snow" 0x59cf}
+	{Tags "snow" 0x59d0}
+	{Tags "snow" 0x59d1}
+	{Tags "snow" 0x59d3}
+	{Tags "snow" 0x59d5}
+	{Tags "snow" 0x59d6}
+	{Tags "snow" 0x59d8}
+	{Tags "snow" 0x59d9}
+	{Tags "snow" 0x59da}
+	{Tags "snow" 0x59db}
+	{Tags "snow" 0x59dd}
+	{Tags "snow" 0x59df}
+	{Tags "snow" 0x59e0}
+	{Tags "snow" 0x59e1}
+	{Tags "snow" 0x59e2}
+	{Tags "bare" 0x59e3}
+	{Tags "bare" 0x59e4}
+	{Tags "bare" 0x59e5}
+	{Tags "snow" 0x59e6}
+	{Tags "snow" 0x59e7}
+	{Tags "snow" 0x59e8}
+	{Tags "snow" 0x59ea}
+	{Tags "snow" 0x59ee}
+	{Tags "snow" 0x59ef}
+	{Tags "snow" 0x59f0}
+	{Tags "snow" 0x59f1}
+	{Tags "snow" 0x59f2}
+	{Tags "snow" 0x59f4}
+	{Tags "snow" 0x59f6}
+	{Tags "snow" 0x59f7}
+	{Tags "snow" 0x59f8}
+	{Tags "snow" 0x59f9}
+	{Tags "snow" 0x59fa}
+	{Tags "snow" 0x59fb}
+	{Tags "snow" 0x59fc}
+	{Tags "snow" 0x59fe}
+	{Tags "snow" 0x5a0d}
+	{Tags "snow" 0x5a0e}
+	{Tags "snow" 0x5a10}
+	{Tags "snow" 0x5a11}
+	{Tags "snow" 0x5a12}
+	{Tags "snow" 0x5a13}
+	{Tags "snow" 0x5a14}
+	{Tags "snow" 0x5a16}
+	{Tags "snow" 0x5a18}
+	{Tags "snow" 0x5a19}
+	{Tags "snow" 0x5a1c}
+	{Tags "snow" 0x5a20}
+	{Tags "snow" 0x5a23}
+	{Tags "snow" 0x5a26}
+	{Tags "snow" 0x5a27}
+	{Tags "snow" 0x5a28}
+	{Tags "snow" 0x5a2a}
+	{Tags "snow" 0x5a2c}
+	{Tags "snow" 0x5a2e}
+	{Tags "snow" 0x5a2f}
+	{Tags "snow" 0x5a30}
+	{Tags "snow" 0x5a32}
+	{Tags "snow" 0x5a34}
+	{Tags "snow" 0x5a35}
+	{Tags "snow" 0x5a36}
+	{Tags "snow" 0x5a37}
+	{Tags "snow" 0x5a3c}
+	{Tags "bare" 0x5a4a}
+	{Tags "snow" 0x5a4b}
+	{Tags "snow" 0x5a4c}
+	{Tags "snow" 0x5a74}
+	{Tags "snow" 0x5a75}
+	{Tags "snow" 0x5a76}
+	{Tags "snow" 0x5a78}
+	{Tags "snow" 0x5a79}
+	{Tags "snow" 0x5a7a}
+	{Tags "snow" 0x5a7b}
+	{Tags "snow" 0x5a7c}
+	{Tags "snow" 0x5a7d}
+	{Tags "snow" 0x5a7e}
+	{Tags "snow" 0x5a7f}
+	{Tags "snow" 0x5a80}
+	{Tags "snow" 0x5a81}
+	{Tags "snow" 0x5a82}
+	{Tags "snow" 0x5a84}
+	{Tags "snow" 0x5a85}
+	{Tags "snow" 0x5a86}
+	{Tags "snow" 0x5a88}
+	{Tags "snow" 0x5a89}
+	{Tags "snow" 0x5a8a}
+	{Tags "snow" 0x5a8b}
+	{Tags "snow" 0x5a8c}
+	{Tags "snow" 0x5a8d}
+	{Tags "snow" 0x5a8e}
+	{Tags "snow" 0x5a90}
+	{Tags "snow" 0x5a91}
+	{Tags "snow" 0x5a94}
+	{Tags "snow" 0x5a95}
+	{Tags "snow" 0x5a96}
+	{Tags "snow" 0x5a98}
+	{Tags "snow" 0x5a99}
+	{Tags "snow" 0x5a9b}
+	{Tags "snow" 0x5a9f}
+	{Tags "snow" 0x5aa0}
+	{Tags "snow" 0x5aa1}
+	{Tags "snow" 0x5aa3}
+	{Tags "snow" 0x5aa4}
+	{Tags "snow" 0x5aa5}
+	{Tags "snow" 0x5aa6}
+	{Tags "snow" 0x5aa7}
+	{Tags "snow" 0x5aa8}
+	{Tags "snow" 0x5aa9}
+	{Tags "snow" 0x5aaa}
+	{Tags "snow" 0x5aac}
+	{Tags "snow" 0x5ab0}
+	{Tags "snow" 0x5ab2}
+	{Tags "snow" 0x5ab3}
+	{Tags "snow" 0x5ab4}
+	{Tags "snow" 0x5ab5}
+	{Tags "snow" 0x5ab6}
+	{Tags "snow" 0x5ab7}
+	{Tags "snow" 0x5ab8}
+	{Tags "snow" 0x5ab9}
+	{Tags "snow" 0x5aba}
+	{Tags "snow" 0x5abc}
+	{Tags "snow" 0x5abf}
+	{Tags "snow" 0x5ac0}
+	{Tags "snow" 0x5ac2}
+	{Tags "snow" 0x5ac4}
+	{Tags "snow" 0x5ac5}
+	{Tags "snow" 0x5ac6}
+	{Tags "snow" 0x5ac7}
+	{Tags "snow" 0x5ac8}
+	{Tags "snow" 0x5adb}
+	{Tags "snow" 0x5adc}
+	{Tags "snow" 0x5add}
+	{Tags "snow" 0x5adf}
+	{Tags "snow" 0x5ae0}
+	{Tags "snow" 0x5ae1}
+	{Tags "snow" 0x5ae2}
+	{Tags "snow" 0x5ae3}
+	{Tags "snow" 0x1a88}
+	{Tags "snow" 0x1a89}
+	{Tags "snow" 0x1a8a}
+	{Tags "snow" 0x1a8b}
+	{Tags "snow" 0x1a8c}
+	{Tags "snow" 0x1a8d}
+	{Tags "snow" 0x1a8e}
+	{Tags "snow" 0x1a8f}
+	{Tags "snow" 0x1a91}
+	{Tags "snow" 0x1a92}
+	{Tags "snow" 0x1a93}
+	{Tags "snow" 0x1a94}
+	{Tags "snow" 0x1a95}
+	{Tags "snow" 0x1a96}
+	{Tags "snow" 0x1a97}
+	{Tags "snow" 0x1a98}
+	{Tags "snow" 0x1a9a}
+	{Tags "snow" 0x1a9b}
+	{Tags "snow" 0x1a9c}
+	{Tags "snow" 0x1a9d}
+	{Tags "snow" 0x1a9e}
+	{Tags "snow" 0x1a9f}
+	{Tags "snow" 0x1aa0}
+	{Tags "snow" 0x1aa1}
+	{Tags "snow" 0x1aa3}
+	{Tags "snow" 0x1aa4}
+	{Tags "snow" 0x1aa5}
+	{Tags "snow" 0x1aa6}
+	{Tags "snow" 0x1aa7}
+	{Tags "snow" 0x1aa8}
+	{Tags "snow" 0x1aa9}
+	{Tags "snow" 0x1aaa}
+	{Tags "snow" 0x1aac}
+	{Tags "snow" 0x1aad}
+	{Tags "snow" 0x1aae}
+	{Tags "snow" 0x1aaf}
+	{Tags "snow" 0x1ab0}
+	{Tags "snow" 0x1ab1}
+	{Tags "snow" 0x1ab2}
+	{Tags "snow" 0x1ab3}
+	{Tags "snow" 0x1ab5}
+	{Tags "snow" 0x1ab7}
+	{Tags "snow" 0x1ab9}
+	{Tags "snow" 0x1aba}
+	{Tags "snow" 0x1abb}
+	{Tags "snow" 0x1ac7}
+	{Tags "snow" 0x1acb}
+	{Tags "snow" 0x1acc}
+	{Tags "snow" 0x1acd}
+	{Tags "snow" 0x1ace}
+	{Tags "snow" 0x1acf}
+	{Tags "snow" 0x1ad0}
+	{Tags "snow" 0x1ad1}
+	{Tags "snow" 0x1ad3}
+	{Tags "snow" 0x1ad4}
+	{Tags "snow" 0x1ad5}
+	{Tags "snow" 0x1ad6}
+	{Tags "snow" 0x1ad7}
+	{Tags "snow" 0x1ad8}
+	{Tags "snow" 0x1ad9}
+	{Tags "snow" 0x1ada}
+	{Tags "snow" 0x1adb}
+	{Tags "snow" 0x1adc}
+	{Tags "snow" 0x1add}
+	{Tags "snow" 0x1ade}
+	{Tags "snow" 0x1ae0}
+	{Tags "snow" 0x1ae1}
+	{Tags "snow" 0x1ae2}
+	{Tags "snow" 0x1ae3}
+	{Tags "snow" 0x1ae4}
+	{Tags "snow" 0x1ae5}
+	{Tags "snow" 0x1ae6}
+	{Tags "snow" 0x1ae8}
+	{Tags "snow" 0x1ae9}
+	{Tags "snow" 0x1aea}
+	{Tags "snow" 0x1aeb}
+	{Tags "snow" 0x1aec}
+	{Tags "snow" 0x1aed}
+	{Tags "snow" 0x1aee}
+	{Tags "snow" 0x1aef}
+	{Tags "snow" 0x1af0}
+	{Tags "snow" 0x1af1}
+	{Tags "snow" 0x1af2}
+	{Tags "snow" 0x1af3}
+	{Tags "snow" 0x1af5}
+	{Tags "snow" 0x1af6}
+	{Tags "snow" 0x1af7}
+	{Tags "snow" 0x1af8}
+	{Tags "snow" 0x1af9}
+	{Tags "snow" 0x1afa}
+	{Tags "snow" 0x1afb}
+	{Tags "snow" 0x1afd}
+	{Tags "snow" 0x1aff}
+	{Tags "snow" 0x1b00}
+	{Tags "snow" 0x1b01}
+	{Tags "snow" 0x1b02}
+	{Tags "snow" 0x1b03}
+	{Tags "snow" 0x1b04}
+	{Tags "snow" 0x1b05}
+	{Tags "snow" 0x1b06}
+	{Tags "snow" 0x1b07}
+	{Tags "snow" 0x1b0a}
+	{Tags "snow" 0x1b0b}
+	{Tags "snow" 0x1b0c}
+	{Tags "snow" 0x1b0d}
+	{Tags "snow" 0x1b0e}
+	{Tags "snow" 0x1b0f}
+	{Tags "snow" 0x1b10}
+	{Tags "snow" 0x1b12}
+	{Tags "snow" 0x1b13}
+	{Tags "snow" 0x1b14}
+	{Tags "snow" 0x1b15}
+	{Tags "snow" 0x1b16}
+	{Tags "snow" 0x1b17}
+	{Tags "snow" 0x1b18}
+	{Tags "snow" 0x1b19}
+	{Tags "snow" 0x1b1a}
+	{Tags "snow" 0x1b1c}
+	{Tags "snow" 0x1b1d}
+	{Tags "snow" 0x1b22}
+	{Tags "snow" 0x1b23}
+	{Tags "snow" 0x1b24}
+	{Tags "snow" 0x1b25}
+	{Tags "snow" 0x1b27}
+	{Tags "snow" 0x1b29}
+	{Tags "snow" 0x1b2a}
+	{Tags "snow" 0x1b2b}
+	{Tags "snow" 0x1b2c}
+	{Tags "snow" 0x1b2d}
+	{Tags "snow" 0x1b2e}
+	{Tags "snow" 0x1b2f}
+	{Tags "snow" 0x1b30}
+	{Tags "snow" 0x1b31}
+	{Tags "snow" 0x1b32}
+	{Tags "snow" 0x1b34}
+	{Tags "snow" 0x1b35}
+	{Tags "snow" 0x1b37}
+	{Tags "snow" 0x1b38}
+	{Tags "snow" 0x1b39}
+	{Tags "snow" 0x1b3a}
+	{Tags "snow" 0x1b3c}
+	{Tags "snow" 0x1b3d}
+	{Tags "snow" 0x1b3e}
+	{Tags "snow" 0x1b3f}
+	{Tags "snow" 0x1b40}
+	{Tags "snow" 0x1b41}
+	{Tags "snow" 0x1b42}
+	{Tags "snow" 0x1b43}
+	{Tags "snow" 0x1b44}
+	{Tags "snow" 0x1b45}
+	{Tags "snow" 0x1b46}
+	{Tags "snow" 0x1b47}
+	{Tags "snow" 0x1b49}
+	{Tags "snow" 0x1b4a}
+	{Tags "snow" 0x1b4b}
+	{Tags "snow" 0x1b4c}
+	{Tags "snow" 0x1b4d}
+	{Tags "snow" 0x1b4e}
+	{Tags "snow" 0x1b4f}
+	{Tags "snow" 0x1b51}
+	{Tags "snow" 0x1b52}
+	{Tags "snow" 0x1b53}
+	{Tags "snow" 0x1b54}
+	{Tags "snow" 0x1b56}
+	{Tags "snow" 0x1b57}
+	{Tags "snow" 0x1b58}
+	{Tags "snow" 0x1b59}
+	{Tags "snow" 0x1b5a}
+	{Tags "snow" 0x1b5b}
+	{Tags "snow" 0x1b5c}
+	{Tags "snow" 0x1b5e}
+	{Tags "snow" 0x1b5f}
+	{Tags "snow" 0x1b60}
+	{Tags "snow" 0x1b61}
+	{Tags "snow" 0x1b63}
+	{Tags "snow" 0x1b64}
+	{Tags "snow" 0x1b65}
+	{Tags "snow" 0x1b66}
+	{Tags "snow" 0x1b67}
+	{Tags "snow" 0x1b68}
+	{Tags "snow" 0x1b69}
+	{Tags "snow" 0x1b6b}
+	{Tags "snow" 0x1b6c}
+	{Tags "snow" 0x1b6e}
+	{Tags "snow" 0x1b6f}
+	{Tags "snow" 0x1b70}
+	{Tags "snow" 0x1b71}
+	{Tags "snow" 0x1b72}
+	{Tags "bare" 0x1b7a}
+	{Tags "snow" 0x7842}
+	{Tags "snow" 0x7843}
+	{Tags "snow" 0x794b}
+	{Tags "snow" 0x794c}
+	{Tags "snow" 0x794e}
+	{Tags "snow" 0x794f}
+	{Tags "snow" 0x7950}
+	{Tags "snow" 0x7951}
+	{Tags "snow" 0x7953}
+	{Tags "snow" 0x7954}
+	{Tags "snow" 0x7955}
+	{Tags "snow" 0x7956}
+	{Tags "snow" 0x7957}
+	{Tags "snow" 0x7958}
+	{Tags "snow" 0x7959}
+	{Tags "snow" 0x795b}
+	{Tags "snow" 0x795c}
+	{Tags "snow" 0x795d}
+	{Tags "snow" 0x795e}
+	{Tags "snow" 0x795f}
+	{Tags "snow" 0x7960}
+	{Tags "snow" 0x7961}
+	{Tags "snow" 0x7963}
+	{Tags "snow" 0x7964}
+	{Tags "snow" 0x7965}
+	{Tags "snow" 0x7966}
+	{Tags "snow" 0x7967}
+	{Tags "snow" 0x796b}
+	{Tags "snow" 0x796c}
+	{Tags "snow" 0x796d}
+	{Tags "snow" 0x796e}
+	{Tags "snow" 0x796f}
+	{Tags "snow" 0x7970}
+	{Tags "snow" 0x7971}
+	{Tags "snow" 0x7973}
+	{Tags "snow" 0x7974}
+	{Tags "snow" 0x7975}
+	{Tags "snow" 0x7976}
+	{Tags "snow" 0x7977}
+	{Tags "snow" 0x7979}
+	{Tags "snow" 0x797b}
+	{Tags "snow" 0x797c}
+	{Tags "snow" 0x797d}
+	{Tags "snow" 0x797f}
+	{Tags "snow" 0x7980}
+	{Tags "snow" 0x7981}
+	{Tags "snow" 0x7983}
+	{Tags "snow" 0x7984}
+	{Tags "snow" 0x7985}
+	{Tags "snow" 0x7986}
+	{Tags "snow" 0x7987}
+	{Tags "snow" 0x7988}
+	{Tags "snow" 0x798b}
+	{Tags "snow" 0x798c}
+	{Tags "snow" 0x798d}
+	{Tags "snow" 0x798e}
+	{Tags "snow" 0x798f}
+	{Tags "snow" 0x7990}
+	{Tags "snow" 0x7991}
+	{Tags "snow" 0x7994}
+	{Tags "snow" 0x7995}
+	{Tags "snow" 0x7996}
+	{Tags "snow" 0x7998}
+	{Tags "snow" 0x799b}
+	{Tags "snow" 0x799c}
+	{Tags "snow" 0x799e}
+	{Tags "snow" 0x799f}
+	{Tags "snow" 0x79a0}
+	{Tags "snow" 0x79a1}
+	{Tags "snow" 0x79a2}
+	{Tags "snow" 0x79a3}
+	{Tags "snow" 0x79a4}
+	{Tags "snow" 0x79a5}
+	{Tags "snow" 0x38cd}
+	{Tags "snow" 0x38ce}
+	{Tags "snow" 0x7993}
+	{Tags "snow" 0x38cf}
+	{Tags "snow" 0x38d0}
+	{Tags "snow" 0x38d1}
+	{Tags "snow" 0x7997}
+	{Tags "snow" 0x38d2}
+	{Tags "snow" 0x38d3}
+	{Tags "snow" 0x38d4}
+	{Tags "snow" 0x38d5}
+	{Tags "snow" 0x38d7}
+	{Tags "snow" 0x38d8}
+	{Tags "snow" 0x38db}
+	{Tags "snow" 0x38dc}
+	{Tags "snow" 0x38dd}
+	{Tags "snow" 0x38de}
+	{Tags "snow" 0x38e0}
+	{Tags "snow" 0x38e2}
+	{Tags "snow" 0x38e3}
+	{Tags "snow" 0x38e5}
+	{Tags "snow" 0x38e6}
+	{Tags "snow" 0x38e7}
+	{Tags "bare" 0x38ec}
+	{Tags "snow" 0x38ef}
+	{Tags "snow" 0x38f0}
+	{Tags "snow" 0x38f2}
+	{Tags "snow" 0x38f5}
+	{Tags "snow" 0x38fc}
+	{Tags "snow" 0x3902}
+	{Tags "snow" 0x3904}
+	{Tags "snow" 0x3939}
+	{Tags "snow" 0x393a}
+	{Tags "snow" 0x393b}
+	{Tags "snow" 0x3942}
+	{Tags "snow" 0x3985}
+	{Tags "snow" 0x3986}
+	{Tags "snow" 0x3987}
+	{Tags "snow" 0x3988}
+	{Tags "snow" 0x3989}
+	{Tags "snow" 0x398a}
+	{Tags "snow" 0x398b}
+	{Tags "snow" 0x398d}
+	{Tags "snow" 0x398e}
+	{Tags "snow" 0x398f}
+	{Tags "snow" 0x3990}
+	{Tags "snow" 0x3991}
+	{Tags "snow" 0x3992}
+	{Tags "snow" 0x3993}
+	{Tags "snow" 0x3994}
+	{Tags "snow" 0x3995}
+	{Tags "snow" 0x3996}
+	{Tags "snow" 0x3997}
+	{Tags "snow" 0x3998}
+	{Tags "snow" 0x3999}
+	{Tags "snow" 0x399a}
+	{Tags "snow" 0x399c}
+	{Tags "snow" 0x399d}
+	{Tags "snow" 0x399e}
+	{Tags "snow" 0x39a0}
+	{Tags "snow" 0x39a2}
+	{Tags "snow" 0x39a3}
+	{Tags "snow" 0x39a4}
+	{Tags "snow" 0x39a5}
+	{Tags "snow" 0x39a6}
+	{Tags "snow" 0x39a7}
+	{Tags "snow" 0x39a8}
+	{Tags "snow" 0x39a9}
+	{Tags "snow" 0x39ab}
+	{Tags "snow" 0x39ac}
+	{Tags "snow" 0x39b0}
+	{Tags "snow" 0x39b1}
+	{Tags "snow" 0x39b5}
+	{Tags "snow" 0x39b6}
+	{Tags "snow" 0x39b7}
+	{Tags "snow" 0x39b8}
+	{Tags "snow" 0x39ba}
+	{Tags "snow" 0x39bb}
+	{Tags "snow" 0x39bc}
+	{Tags "snow" 0x39bd}
+	{Tags "snow" 0x39bf}
+	{Tags "snow" 0x39c0}
+	{Tags "snow" 0x39c1}
+	{Tags "snow" 0x39c2}
+	{Tags "snow" 0x39c4}
+	{Tags "snow" 0x39c6}
+	{Tags "snow" 0x39c9}
+	{Tags "snow" 0x39cb}
+	{Tags "snow" 0x39cd}
+	{Tags "snow" 0x39cf}
+	{Tags "snow" 0x39db}
+	{Tags "snow" 0x39dd}
+	{Tags "snow" 0x39df}
+	{Tags "snow" 0x3a56}
+	{Tags "snow" 0x3a65}
+	{Tags "snow" 0x3a66}
+	{Tags "snow" 0x3a70}
+	{Tags "snow" 0x3a75}
+	{Tags "snow" 0x3a78}
+	{Tags "snow" 0x3a79}
+	{Tags "snow" 0x3a7a}
+	{Tags "snow" 0x3a7b}
+	{Tags "snow" 0x3a7c}
+	{Tags "snow" 0x3a7d}
+	{Tags "snow" 0x3a7e}
+	{Tags "snow" 0x3a7f}
+	{Tags "snow" 0x3a80}
+	{Tags "snow" 0x3a81}
+	{Tags "snow" 0x3a85}
+	{Tags "snow" 0x3a86}
+	{Tags "snow" 0x3a87}
+	{Tags "snow" 0x3a88}
+	{Tags "snow" 0x3a89}
+	{Tags "snow" 0x3a8a}
+	{Tags "snow" 0x3a8b}
+	{Tags "snow" 0x3a8c}
+	{Tags "snow" 0x3a8d}
+	{Tags "snow" 0x3a8e}
+	{Tags "snow" 0x3a8f}
+	{Tags "snow" 0x3a90}
+	{Tags "snow" 0x3a92}
+	{Tags "snow" 0x3a93}
+	{Tags "snow" 0x3a94}
+	{Tags "snow" 0x3a95}
+	{Tags "snow" 0x3a96}
+	{Tags "snow" 0x3a97}
+	{Tags "snow" 0x3a98}
+	{Tags "snow" 0x3a99}
+	{Tags "snow" 0x3a9a}
+	{Tags "snow" 0x3a9c}
+	{Tags "snow" 0x3a9d}
+	{Tags "snow" 0x3a9e}
+	{Tags "snow" 0x3a9f}
+	{Tags "snow" 0x3aa1}
+	{Tags "snow" 0x3aa2}
+	{Tags "snow" 0x3aa3}
+	{Tags "snow" 0x3aa4}
+	{Tags "snow" 0x3aa5}
+	{Tags "snow" 0x3aa6}
+	{Tags "snow" 0x3aa7}
+	{Tags "snow" 0x3aa8}
+	{Tags "snow" 0x3aa9}
+	{Tags "snow" 0x3aaa}
+	{Tags "snow" 0x3aab}
+	{Tags "snow" 0x3aac}
+	{Tags "snow" 0x3aae}
+	{Tags "snow" 0x3aaf}
+	{Tags "snow" 0x3ab0}
+	{Tags "snow" 0x3ab1}
+	{Tags "snow" 0x3ab2}
+	{Tags "snow" 0x3ab3}
+	{Tags "snow" 0x3ab4}
+	{Tags "snow" 0x3ab5}
+	{Tags "snow" 0x3ab6}
+	{Tags "snow" 0x3ab7}
+	{Tags "snow" 0x3ab9}
+	{Tags "snow" 0x3aba}
+	{Tags "snow" 0x3abb}
+	{Tags "snow" 0x3abc}
+	{Tags "snow" 0x3abd}
+	{Tags "snow" 0x3abe}
+	{Tags "snow" 0x3abf}
+	{Tags "snow" 0x3ac0}
+	{Tags "snow" 0x3ac1}
+	{Tags "snow" 0x3ac2}
+	{Tags "snow" 0x3ac4}
+	{Tags "snow" 0x3ac5}
+	{Tags "snow" 0x3ac6}
+	{Tags "snow" 0x3ac7}
+	{Tags "snow" 0x3ac8}
+	{Tags "snow" 0x3ac9}
+	{Tags "snow" 0x3aca}
+	{Tags "snow" 0x3acb}
+	{Tags "snow" 0x3acc}
+	{Tags "snow" 0x3ace}
+	{Tags "snow" 0x3ad0}
+	{Tags "snow" 0xd2e}
+	{Tags "snow" 0xd2f}
+	{Tags "snow" 0xd30}
+	{Tags "snow" 0x27f9}
+	{Tags "bare" 0xd34}
+	{Tags "snow" 0xd35}
+	{Tags "bare" 0xd3c}
+	{Tags "bare" 0x27ff}
+	{Tags "snow" 0x292b}
+	{Tags "snow" 0x2930}
+	{Tags "snow" 0x2955}
+	{Tags "snow" 0x295a}
+	{Tags "snow" 0x295b}
+	{Tags "snow" 0x2976}
+	{Tags "snow" 0x298e}
+	{Tags "snow" 0x64a1}
+	{Tags "snow" 0x74ce}
+	{Tags "snow" 0x74cf}
+	{Tags "snow" 0x74d0}
+	{Tags "snow" 0x653c}
+	{Tags "snow" 0x74e8}
+	{Tags "snow" 0x74e9}
+	{Tags "snow" 0xba3}
+	{Tags "snow" 0xba4}
+	{Tags "snow" 0xba5}
+	{Tags "snow" 0xba7}
+	{Tags "snow" 0xd47}
+	{Tags "snow" 0xd5c}
+	{Tags "snow" 0xd5d}
+	{Tags "snow" 0xd5e}
+	{Tags "snow" 0xd5f}
+	{Tags "snow" 0xd61}
+	{Tags "snow" 0xd62}
+	{Tags "snow" 0xd63}
+	{Tags "snow" 0xd64}
+	{Tags "snow" 0xd65}
+	{Tags "snow" 0xd66}
+	{Tags "snow" 0xd67}
+	{Tags "snow" 0xd69}
+	{Tags "snow" 0xd6a}
+	{Tags "snow" 0xd6b}
+	{Tags "snow" 0xd6c}
+	{Tags "snow" 0xd6d}
+	{Tags "snow" 0xd6e}
+	{Tags "snow" 0xd6f}
+	{Tags "snow" 0xd73}
+	{Tags "snow" 0xd74}
+	{Tags "snow" 0xd75}
+	{Tags "snow" 0xd77}
+	{Tags "snow" 0xd78}
+	{Tags "snow" 0xd79}
+	{Tags "snow" 0xd7a}
+	{Tags "snow" 0xd7b}
+	{Tags "snow" 0xd7c}
+	{Tags "snow" 0xd7d}
+	{Tags "snow" 0xd7e}
+	{Tags "snow" 0xd7f}
+	{Tags "snow" 0xd80}
+	{Tags "snow" 0xd81}
+	{Tags "snow" 0xd82}
+	{Tags "snow" 0xd83}
+	{Tags "snow" 0xd84}
+	{Tags "snow" 0xd85}
+	{Tags "snow" 0xd86}
+	{Tags "snow" 0xd87}
+	{Tags "snow" 0xd88}
+	{Tags "snow" 0xd89}
+	{Tags "snow" 0xd8a}
+	{Tags "snow" 0xd8b}
+	{Tags "snow" 0xd8c}
+	{Tags "snow" 0xd8d}
+	{Tags "snow" 0xd8e}
+	{Tags "snow" 0xd8f}
+	{Tags "snow" 0xd90}
+	{Tags "snow" 0xd91}
+	{Tags "snow" 0xd92}
+	{Tags "snow" 0xd93}
+	{Tags "snow" 0xd94}
+	{Tags "snow" 0xd97}
+	{Tags "snow" 0xd98}
+	{Tags "snow" 0xd99}
+	{Tags "snow" 0xd9a}
+	{Tags "snow" 0xd9b}
+	{Tags "snow" 0xd9c}
+	{Tags "snow" 0xd9d}
+	{Tags "snow" 0xd9e}
+	{Tags "snow" 0xd9f}
+	{Tags "snow" 0xda0}
+	{Tags "snow" 0xda1}
+	{Tags "snow" 0xda2}
+	{Tags "snow" 0xda3}
+	{Tags "snow" 0xda4}
+	{Tags "snow" 0xda5}
+	{Tags "snow" 0xda6}
+	{Tags "snow" 0xda7}
+	{Tags "snow" 0xda8}
+	{Tags "snow" 0xda9}
+	{Tags "snow" 0xdaa}
+	{Tags "snow" 0xdac}
+	{Tags "snow" 0xdad}
+	{Tags "snow" 0xdae}
+	{Tags "snow" 0xdaf}
+	{Tags "snow" 0xdb0}
+	{Tags "snow" 0xdb1}
+	{Tags "snow" 0xdb2}
+	{Tags "snow" 0xdb3}
+	{Tags "snow" 0xdb4}
+	{Tags "snow" 0xdb5}
+	{Tags "snow" 0xdb7}
+	{Tags "snow" 0xdb8}
+	{Tags "snow" 0xdb9}
+	{Tags "snow" 0xdbb}
+	{Tags "snow" 0xdbc}
+	{Tags "snow" 0xdbd}
+	{Tags "snow" 0xdbe}
+	{Tags "snow" 0xdbf}
+	{Tags "snow" 0xdc0}
+	{Tags "snow" 0xdc1}
+	{Tags "snow" 0xdc2}
+	{Tags "snow" 0xdc3}
+	{Tags "snow" 0xdc4}
+	{Tags "snow" 0xdc5}
+	{Tags "snow" 0xdc6}
+	{Tags "snow" 0xdc7}
+	{Tags "snow" 0xdc8}
+	{Tags "snow" 0xdc9}
+	{Tags "snow" 0xdca}
+	{Tags "snow" 0xdcb}
+	{Tags "snow" 0xdcc}
+	{Tags "snow" 0xdcd}
+	{Tags "snow" 0xdce}
+	{Tags "snow" 0xdcf}
+	{Tags "snow" 0xdd0}
+	{Tags "snow" 0xdd1}
+	{Tags "snow" 0xdd2}
+	{Tags "snow" 0xdd3}
+	{Tags "snow" 0xdd4}
+	{Tags "snow" 0xdd5}
+	{Tags "snow" 0xdd6}
+	{Tags "snow" 0xdd7}
+	{Tags "snow" 0xdd8}
+	{Tags "snow" 0xdd9}
+	{Tags "snow" 0xdda}
+	{Tags "snow" 0xddb}
+	{Tags "snow" 0xddc}
+	{Tags "snow" 0xddd}
+	{Tags "snow" 0xdde}
+	{Tags "snow" 0xde0}
+	{Tags "snow" 0xde1}
+	{Tags "snow" 0xde2}
+	{Tags "snow" 0xde3}
+	{Tags "snow" 0xde4}
+	{Tags "snow" 0xde5}
+	{Tags "snow" 0xde6}
+	{Tags "snow" 0xde7}
+	{Tags "snow" 0xde8}
+	{Tags "snow" 0xdea}
+	{Tags "snow" 0xdeb}
+	{Tags "snow" 0xdec}
+	{Tags "snow" 0xded}
+	{Tags "snow" 0xdef}
+	{Tags "snow" 0xdf1}
+	{Tags "snow" 0xdf2}
+	{Tags "snow" 0xdf3}
+	{Tags "snow" 0xdf4}
+	{Tags "snow" 0xdf5}
+	{Tags "snow" 0xdf6}
+	{Tags "snow" 0xdfa}
+	{Tags "snow" 0xdfb}
+	{Tags "snow" 0xdfc}
+	{Tags "snow" 0xdfd}
+	{Tags "snow" 0xdfe}
+	{Tags "snow" 0xdff}
+	{Tags "snow" 0xe90}
+	{Tags "snow" 0xe93}
+	{Tags "snow" 0xe96}
+	{Tags "snow" 0xe98}
+	{Tags "snow" 0xe99}
+	{Tags "snow" 0xe9a}
+	{Tags "snow" 0xe9b}
+	{Tags "snow" 0xe9c}
+	{Tags "snow" 0xe9d}
+	{Tags "snow" 0xe9e}
+	{Tags "snow" 0xe9f}
+	{Tags "snow" 0xea0}
+	{Tags "snow" 0xea2}
+	{Tags "snow" 0xea3}
+	{Tags "snow" 0xea4}
+	{Tags "snow" 0xea5}
+	{Tags "snow" 0xea6}
+	{Tags "snow" 0xea7}
+	{Tags "snow" 0xea8}
+	{Tags "snow" 0xeaa}
+	{Tags "snow" 0xeab}
+	{Tags "snow" 0xeac}
+	{Tags "snow" 0xead}
+	{Tags "snow" 0xeae}
+	{Tags "snow" 0xeaf}
+	{Tags "snow" 0xeb0}
+	{Tags "snow" 0xeb1}
+	{Tags "snow" 0xeb2}
+	{Tags "snow" 0xeb3}
+	{Tags "snow" 0xeb4}
+	{Tags "snow" 0xeb6}
+	{Tags "snow" 0xeb7}
+	{Tags "snow" 0xeb8}
+	{Tags "snow" 0xeb9}
+	{Tags "snow" 0xebb}
+	{Tags "snow" 0xebc}
+	{Tags "snow" 0xebd}
+	{Tags "snow" 0xebe}
+	{Tags "snow" 0xebf}
+	{Tags "snow" 0xec0}
+	{Tags "snow" 0xec1}
+	{Tags "snow" 0xec2}
+	{Tags "snow" 0xec3}
+	{Tags "snow" 0xec4}
+	{Tags "snow" 0xec5}
+	{Tags "snow" 0xec6}
+	{Tags "snow" 0xec7}
+	{Tags "snow" 0xec8}
+	{Tags "snow" 0xec9}
+	{Tags "snow" 0xeca}
+	{Tags "snow" 0xecb}
+	{Tags "snow" 0xecc}
+	{Tags "snow" 0xecd}
+	{Tags "snow" 0xece}
+	{Tags "snow" 0xecf}
+	{Tags "snow" 0xed2}
+	{Tags "snow" 0xed3}
+	{Tags "snow" 0xed4}
+	{Tags "snow" 0xed5}
+	{Tags "snow" 0xed7}
+	{Tags "snow" 0xed8}
+	{Tags "snow" 0xed9}
+	{Tags "snow" 0xeda}
+	{Tags "snow" 0xedb}
+	{Tags "snow" 0xedc}
+	{Tags "snow" 0xedd}
+	{Tags "snow" 0xede}
+	{Tags "snow" 0xee3}
+	{Tags "snow" 0xee5}
+	{Tags "snow" 0xee6}
+	{Tags "snow" 0xee7}
+	{Tags "snow" 0xee9}
+	{Tags "snow" 0xeea}
+	{Tags "snow" 0xeeb}
+	{Tags "snow" 0xeed}
+	{Tags "snow" 0xeee}
+	{Tags "snow" 0xeef}
+	{Tags "snow" 0xef0}
+	{Tags "snow" 0xef1}
+	{Tags "snow" 0xef2}
+	{Tags "snow" 0xef3}
+	{Tags "snow" 0xef5}
+	{Tags "snow" 0xef6}
+	{Tags "snow" 0xef7}
+	{Tags "snow" 0xef8}
+	{Tags "snow" 0xef9}
+	{Tags "snow" 0xefa}
+	{Tags "snow" 0xefb}
+	{Tags "snow" 0xefc}
+	{Tags "snow" 0xefd}
+	{Tags "snow" 0xeff}
+	{Tags "snow" 0xf01}
+	{Tags "snow" 0xf02}
+	{Tags "snow" 0xf03}
+	{Tags "snow" 0xf04}
+	{Tags "snow" 0xf05}
+	{Tags "snow" 0xf06}
+	{Tags "snow" 0xf07}
+	{Tags "snow" 0xf08}
+	{Tags "snow" 0xf09}
+	{Tags "snow" 0xf0a}
+	{Tags "snow" 0xf0b}
+	{Tags "snow" 0xf0c}
+	{Tags "snow" 0xf0d}
+	{Tags "snow" 0xf0e}
+	{Tags "snow" 0xf10}
+	{Tags "snow" 0xf12}
+	{Tags "snow" 0xf13}
+	{Tags "snow" 0xf14}
+	{Tags "snow" 0xf15}
+	{Tags "snow" 0xf16}
+	{Tags "snow" 0xf18}
+	{Tags "snow" 0xf19}
+	{Tags "snow" 0xf1b}
+	{Tags "snow" 0xf1c}
+	{Tags "snow" 0xf1d}
+	{Tags "snow" 0xf1f}
+	{Tags "snow" 0xf20}
+	{Tags "snow" 0xf21}
+	{Tags "snow" 0xf22}
+	{Tags "snow" 0xf23}
+	{Tags "snow" 0xf26}
+	{Tags "snow" 0xf29}
+	{Tags "snow" 0xf2a}
+	{Tags "snow" 0xf2b}
+	{Tags "snow" 0xf2c}
+	{Tags "snow" 0xf2d}
+	{Tags "snow" 0xf2e}
+	{Tags "snow" 0xf2f}
+	{Tags "snow" 0xf30}
+	{Tags "snow" 0xf31}
+	{Tags "snow" 0xf32}
+	{Tags "snow" 0xf33}
+	{Tags "snow" 0xf35}
+	{Tags "snow" 0xf36}
+	{Tags "snow" 0xf37}
+	{Tags "snow" 0xf39}
+	{Tags "snow" 0xf3a}
+	{Tags "snow" 0xf3b}
+	{Tags "snow" 0xf3c}
+	{Tags "snow" 0xf3d}
+	{Tags "snow" 0xf40}
+	{Tags "snow" 0xf41}
+	{Tags "snow" 0xf42}
+	{Tags "snow" 0xf43}
+	{Tags "snow" 0xf44}
+	{Tags "snow" 0xf46}
+	{Tags "snow" 0xf47}
+	{Tags "snow" 0xf48}
+	{Tags "snow" 0xf4c}
+	{Tags "snow" 0xf4e}
+	{Tags "snow" 0xf4f}
+	{Tags "snow" 0xf50}
+	{Tags "snow" 0xf51}
+	{Tags "snow" 0xf52}
+	{Tags "snow" 0xf54}
+	{Tags "snow" 0xf55}
+	{Tags "snow" 0xf59}
+	{Tags "snow" 0xf5a}
+	{Tags "snow" 0xf5c}
+	{Tags "snow" 0xf5e}
+	{Tags "snow" 0xf5f}
+	{Tags "snow" 0xf60}
+	{Tags "snow" 0xf61}
+	{Tags "snow" 0xf64}
+	{Tags "snow" 0xf65}
+	{Tags "snow" 0xf66}
+	{Tags "snow" 0xf6a}
+	{Tags "snow" 0xf6d}
+	{Tags "snow" 0xf6e}
+	{Tags "snow" 0xf6f}
+	{Tags "snow" 0xf70}
+	{Tags "snow" 0xf72}
+	{Tags "snow" 0xf74}
+	{Tags "snow" 0xf75}
+	{Tags "snow" 0xf76}
+	{Tags "snow" 0xf77}
+	{Tags "snow" 0xf78}
+	{Tags "snow" 0xf7a}
+	{Tags "snow" 0xf7b}
+	{Tags "snow" 0xf7c}
+	{Tags "snow" 0xf7d}
+	{Tags "snow" 0x1244}
+	{Tags "snow" 0x1248}
+	{Tags "snow" 0x124a}
+	{Tags "snow" 0x124b}
+	{Tags "snow" 0x124c}
+	{Tags "snow" 0x1252}
+	{Tags "snow" 0x1254}
+	{Tags "snow" 0x1256}
+	{Tags "snow" 0x1257}
+	{Tags "snow" 0x1259}
+	{Tags "snow" 0x125a}
+	{Tags "snow" 0x125b}
+	{Tags "snow" 0x125c}
+	{Tags "snow" 0x125d}
+	{Tags "snow" 0x125e}
+	{Tags "snow" 0x125f}
+	{Tags "snow" 0x1260}
+	{Tags "snow" 0x1261}
+	{Tags "snow" 0x1262}
+	{Tags "snow" 0x1263}
+	{Tags "snow" 0x1264}
+	{Tags "snow" 0x1265}
+	{Tags "snow" 0x1266}
+	{Tags "snow" 0x1267}
+	{Tags "snow" 0x1268}
+	{Tags "snow" 0x1269}
+	{Tags "snow" 0x126a}
+	{Tags "snow" 0x126b}
+	{Tags "snow" 0x126c}
+	{Tags "snow" 0x126e}
+	{Tags "snow" 0x126f}
+	{Tags "snow" 0x1271}
+	{Tags "snow" 0x1272}
+	{Tags "snow" 0x1273}
+	{Tags "snow" 0x1274}
+	{Tags "snow" 0x1275}
+	{Tags "snow" 0x1276}
+	{Tags "snow" 0x1277}
+	{Tags "snow" 0x1278}
+	{Tags "snow" 0x127a}
+	{Tags "snow" 0x127b}
+	{Tags "snow" 0x127c}
+	{Tags "snow" 0x127d}
+	{Tags "snow" 0x127e}
+	{Tags "snow" 0x127f}
+	{Tags "snow" 0x1280}
+	{Tags "snow" 0x1281}
+	{Tags "snow" 0x1282}
+	{Tags "snow" 0x1283}
+	{Tags "snow" 0x1284}
+	{Tags "snow" 0x1287}
+	{Tags "snow" 0x1288}
+	{Tags "snow" 0x1289}
+	{Tags "snow" 0x128e}
+	{Tags "snow" 0x1294}
+	{Tags "snow" 0x1295}
+	{Tags "snow" 0x1296}
+	{Tags "snow" 0x1297}
+	{Tags "snow" 0x1298}
+	{Tags "snow" 0x1299}
+	{Tags "snow" 0x129a}
+	{Tags "snow" 0x129b}
+	{Tags "snow" 0x129c}
+	{Tags "snow" 0x129d}
+	{Tags "snow" 0x129e}
+	{Tags "snow" 0x129f}
+	{Tags "snow" 0x12a0}
+	{Tags "snow" 0x12a1}
+	{Tags "snow" 0x12a2}
+	{Tags "snow" 0x12a3}
+	{Tags "snow" 0x12a4}
+	{Tags "snow" 0x12a5}
+	{Tags "snow" 0x12a6}
+	{Tags "snow" 0x12aa}
+	{Tags "snow" 0x12ab}
+	{Tags "snow" 0x12ac}
+	{Tags "snow" 0x12ad}
+	{Tags "snow" 0x12ae}
+	{Tags "snow" 0x12af}
+	{Tags "snow" 0x12b0}
+	{Tags "snow" 0x12b1}
+	{Tags "snow" 0x12b2}
+	{Tags "snow" 0x12b3}
+	{Tags "snow" 0x12b4}
+	{Tags "snow" 0x12b5}
+	{Tags "snow" 0x12b7}
+	{Tags "snow" 0x12b8}
+	{Tags "snow" 0x12b9}
+	{Tags "snow" 0x12ba}
+	{Tags "snow" 0x12bc}
+	{Tags "snow" 0x12bd}
+	{Tags "snow" 0x12bf}
+	{Tags "snow" 0x12c0}
+	{Tags "snow" 0x12c1}
+	{Tags "snow" 0x12c4}
+	{Tags "snow" 0x12c5}
+	{Tags "snow" 0x12c9}
+	{Tags "snow" 0x12ca}
+	{Tags "snow" 0x12cc}
+	{Tags "snow" 0x12cd}
+	{Tags "snow" 0x12cf}
+	{Tags "snow" 0x12d2}
+	{Tags "snow" 0x12d4}
+	{Tags "snow" 0x12d5}
+	{Tags "snow" 0x12d6}
+	{Tags "snow" 0x12d7}
+	{Tags "snow" 0x12dd}
+	{Tags "snow" 0x12de}
+	{Tags "snow" 0x12df}
+	{Tags "snow" 0x12e0}
+	{Tags "snow" 0x12e2}
+	{Tags "snow" 0x12e4}
+	{Tags "snow" 0x12e6}
+	{Tags "snow" 0x12e9}
+	{Tags "snow" 0x12ea}
+	{Tags "snow" 0x12eb}
+	{Tags "snow" 0x12ee}
+	{Tags "snow" 0x12fa}
+	{Tags "snow" 0x12fb}
+	{Tags "snow" 0x12fc}
+	{Tags "snow" 0x12fe}
+	{Tags "snow" 0x1300}
+	{Tags "snow" 0x1301}
+	{Tags "snow" 0x1302}
+	{Tags "snow" 0x1303}
+	{Tags "snow" 0x1305}
+	{Tags "snow" 0x1306}
+	{Tags "snow" 0x1307}
+	{Tags "snow" 0x1308}
+	{Tags "snow" 0x1309}
+	{Tags "snow" 0x130a}
+	{Tags "snow" 0x130c}
+	{Tags "snow" 0x130d}
+	{Tags "snow" 0x130e}
+	{Tags "snow" 0x1310}
+	{Tags "snow" 0x1311}
+	{Tags "snow" 0x1312}
+	{Tags "snow" 0x1313}
+	{Tags "snow" 0x1314}
+	{Tags "snow" 0x1315}
+	{Tags "snow" 0x1317}
+	{Tags "snow" 0x1318}
+	{Tags "snow" 0x1319}
+	{Tags "snow" 0x131b}
+	{Tags "snow" 0x131c}
+	{Tags "snow" 0x131d}
+	{Tags "snow" 0x131e}
+	{Tags "snow" 0x131f}
+	{Tags "snow" 0x1320}
+	{Tags "snow" 0x1321}
+	{Tags "snow" 0x1322}
+	{Tags "snow" 0x1323}
+	{Tags "snow" 0x1329}
+	{Tags "snow" 0x132a}
+	{Tags "snow" 0x132b}
+	{Tags "snow" 0x132d}
+	{Tags "snow" 0x1332}
+	{Tags "snow" 0x1335}
+	{Tags "snow" 0x1336}
+	{Tags "snow" 0x1338}
+	{Tags "snow" 0x1339}
+	{Tags "snow" 0x133a}
+	{Tags "snow" 0x133b}
+	{Tags "snow" 0x133c}
+	{Tags "snow" 0x133d}
+	{Tags "snow" 0x133e}
+	{Tags "snow" 0x133f}
+	{Tags "snow" 0x1341}
+	{Tags "snow" 0x1342}
+	{Tags "snow" 0x1343}
+	{Tags "snow" 0x1344}
+	{Tags "snow" 0x1345}
+	{Tags "snow" 0x1346}
+	{Tags "snow" 0x1347}
+	{Tags "snow" 0x1348}
+	{Tags "snow" 0x134a}
+	{Tags "snow" 0x134b}
+	{Tags "snow" 0x134c}
+	{Tags "snow" 0x134d}
+	{Tags "snow" 0x134e}
+	{Tags "snow" 0x134f}
+	{Tags "snow" 0x1350}
+	{Tags "snow" 0x1351}
+	{Tags "snow" 0x1352}
+	{Tags "snow" 0x1353}
+	{Tags "snow" 0x1354}
+	{Tags "snow" 0x1355}
+	{Tags "snow" 0x1356}
+	{Tags "snow" 0x1357}
+	{Tags "snow" 0x1358}
+	{Tags "snow" 0x135a}
+	{Tags "snow" 0x135b}
+	{Tags "snow" 0x135c}
+	{Tags "snow" 0x135d}
+	{Tags "snow" 0x135e}
+	{Tags "snow" 0x135f}
+	{Tags "snow" 0x1360}
+	{Tags "snow" 0x1361}
+	{Tags "snow" 0x1362}
+	{Tags "snow" 0x1363}
+	{Tags "snow" 0x1364}
+	{Tags "snow" 0x1365}
+	{Tags "snow" 0x1366}
+	{Tags "snow" 0x1367}
+	{Tags "snow" 0x1368}
+	{Tags "snow" 0x1369}
+	{Tags "snow" 0x136a}
+	{Tags "snow" 0x136b}
+	{Tags "snow" 0x136c}
+	{Tags "snow" 0x136d}
+	{Tags "snow" 0x136e}
+	{Tags "snow" 0x136f}
+	{Tags "snow" 0x1370}
+	{Tags "snow" 0x1372}
+	{Tags "snow" 0x1373}
+	{Tags "snow" 0x1374}
+	{Tags "snow" 0x1377}
+	{Tags "snow" 0x1378}
+	{Tags "snow" 0x1379}
+	{Tags "snow" 0x137a}
+	{Tags "snow" 0x137b}
+	{Tags "snow" 0x137c}
+	{Tags "snow" 0x137d}
+	{Tags "snow" 0x137e}
+	{Tags "snow" 0x137f}
+	{Tags "snow" 0x1380}
+	{Tags "snow" 0x1382}
+	{Tags "snow" 0x1383}
+	{Tags "snow" 0x1386}
+	{Tags "snow" 0x1390}
+	{Tags "snow" 0x1391}
+	{Tags "snow" 0x1392}
+	{Tags "snow" 0x1394}
+	{Tags "snow" 0x1395}
+	{Tags "snow" 0x1398}
+	{Tags "snow" 0x139b}
+	{Tags "snow" 0x139c}
+	{Tags "snow" 0x139d}
+	{Tags "snow" 0x139e}
+	{Tags "snow" 0x139f}
+	{Tags "snow" 0x13a0}
+	{Tags "snow" 0x13a2}
+	{Tags "snow" 0x13a3}
+	{Tags "snow" 0x13a4}
+	{Tags "snow" 0x13a5}
+	{Tags "snow" 0x13a6}
+	{Tags "snow" 0x13a7}
+	{Tags "snow" 0x13a8}
+	{Tags "snow" 0x13a9}
+	{Tags "snow" 0x13aa}
+	{Tags "snow" 0x13ac}
+	{Tags "snow" 0x13ad}
+	{Tags "snow" 0x13ae}
+	{Tags "snow" 0x13af}
+	{Tags "snow" 0x13b0}
+	{Tags "snow" 0x13b1}
+	{Tags "snow" 0x13b3}
+	{Tags "snow" 0x13b5}
+	{Tags "snow" 0x13b6}
+	{Tags "snow" 0x13b8}
+	{Tags "snow" 0x13bc}
+	{Tags "snow" 0x13bd}
+	{Tags "snow" 0x13be}
+	{Tags "snow" 0x13bf}
+	{Tags "snow" 0x13c0}
+	{Tags "snow" 0x13c2}
+	{Tags "snow" 0x13c3}
+	{Tags "snow" 0x13c4}
+	{Tags "snow" 0x13c5}
+	{Tags "snow" 0x13c6}
+	{Tags "snow" 0x13cb}
+	{Tags "snow" 0x13ce}
+	{Tags "snow" 0x13d2}
+	{Tags "snow" 0x13d3}
+	{Tags "snow" 0x13d4}
+	{Tags "snow" 0x13d5}
+	{Tags "snow" 0x13d6}
+	{Tags "snow" 0x13d7}
+	{Tags "snow" 0x13d8}
+	{Tags "snow" 0x13d9}
+	{Tags "snow" 0x13da}
+	{Tags "snow" 0x13db}
+	{Tags "snow" 0x13dc}
+	{Tags "snow" 0x13dd}
+	{Tags "snow" 0x13de}
+	{Tags "snow" 0x13df}
+	{Tags "snow" 0x13e0}
+	{Tags "snow" 0x13e1}
+	{Tags "snow" 0x13e2}
+	{Tags "snow" 0x13e3}
+	{Tags "snow" 0x13e4}
+	{Tags "snow" 0x13e5}
+	{Tags "snow" 0x13e6}
+	{Tags "snow" 0x13e8}
+	{Tags "snow" 0x13e9}
+	{Tags "snow" 0x13ea}
+	{Tags "snow" 0x13ec}
+	{Tags "snow" 0x13ed}
+	{Tags "snow" 0x13ee}
+	{Tags "snow" 0x13ef}
+	{Tags "snow" 0x13f0}
+	{Tags "snow" 0x13f1}
+	{Tags "snow" 0x13f2}
+	{Tags "snow" 0x13f3}
+	{Tags "snow" 0x13f4}
+	{Tags "snow" 0x13f5}
+	{Tags "snow" 0x13f6}
+	{Tags "snow" 0x13f7}
+	{Tags "snow" 0x13f8}
+	{Tags "snow" 0x13fa}
+	{Tags "snow" 0x13fb}
+	{Tags "snow" 0x13fc}
+	{Tags "snow" 0x13fd}
+	{Tags "snow" 0x13fe}
+	{Tags "snow" 0xb8e}
+	{Tags "snow" 0xb8f}
+	{Tags "snow" 0xb90}
+	{Tags "snow" 0xb91}
+	{Tags "snow" 0xb92}
+	{Tags "snow" 0xf79}
+	{Tags "snow" 0xf7e}
+	{Tags "snow" 0xf7f}
+	{Tags "snow" 0x314f}
+	{Tags "snow" 0x3152}
+	{Tags "snow" 0x32d1}
+	{Tags "snow" 0x32e7}
+	{Tags "snow" 0x32e8}
+	{Tags "snow" 0x32e9}
+	{Tags "snow" 0x32ea}
+	{Tags "snow" 0x32eb}
+	{Tags "snow" 0x32ec}
+	{Tags "snow" 0x32ed}
+	{Tags "snow" 0x32ee}
+	{Tags "snow" 0x32ef}
+	{Tags "snow" 0x32f2}
+	{Tags "snow" 0x32f4}
+	{Tags "snow" 0x32f5}
+	{Tags "snow" 0x32f7}
+	{Tags "bare" 0x4b05}
+	{Tags "bare" 0x4b06}
+	{Tags "snow" 0x4b08}
+	{Tags "bare" 0xf8f}
+	{Tags "bare" 0xf90}
+	{Tags "snow" 0xf96}
+	{Tags "snow" 0xf97}
+	{Tags "snow" 0xf98}
+	{Tags "bare" 0xfa6}
+	{Tags "snow" 0xfa8}
+	{Tags "snow" 0xfa9}
+	{Tags "snow" 0xfac}
+	{Tags "snow" 0xfad}
+	{Tags "snow" 0x4c9b}
+	{Tags "snow" 0x103f}
+	{Tags "snow" 0x1042}
+	{Tags "snow" 0x627c}
+	{Tags "snow" 0x3094}
+	{Tags "snow" 0x30a3}
+	{Tags "snow" 0x4b1c}
+	{Tags "bare" 0x4b21}
+	{Tags "bare" 0x4b25}
+	{Tags "snow" 0x205e}
+	{Tags "snow" 0x2063}
+	{Tags "snow" 0x23ab}
+	{Tags "snow" 0x23c0}
+	{Tags "snow" 0x30f8}
+	{Tags "snow" 0x6a78}
+	{Tags "snow" 0x4ca4}
+	{Tags "snow" 0x4cb0}
+	{Tags "snow" 0xcbd}
+	{Tags "snow" 0xf67}
+	{Tags "snow" 0xb1e}
+	{Tags "snow" 0x4b27}
+	{Tags "snow" 0x4b28}
+	{Tags "snow" 0x4b29}
+	{Tags "snow" 0x4b2e}
+	{Tags "snow" 0x4b2f}
+	{Tags "snow" 0x4b30}
+	{Tags "snow" 0x4b31}
+	{Tags "snow" 0x4b45}
+	{Tags "snow" 0x4b46}
+	{Tags "snow" 0x74d}
+	{Tags "snow" 0x757}
+	{Tags "snow" 0x4cb8}
+	{Tags "snow" 0x7892}
+	{Tags "snow" 0x4088}
+	{Tags "snow" 0x4540}
+	{Tags "snow" 0x3319}
+	{Tags "snow" 0x331b}
+	{Tags "snow" 0x331c}
+	{Tags "snow" 0x331d}
+	{Tags "snow" 0x5439}
+	{Tags "snow" 0x4ccd}
+	{Tags "snow" 0x4cce}
+	{Tags "snow" 0x4ccf}
+	{Tags "snow" 0x4cd0}
+	{Tags "snow" 0x4cd1}
+	{Tags "snow" 0x4cd2}
+	{Tags "snow" 0x4cd4}
+	{Tags "snow" 0x101c}
+	{Tags "snow" 0x1082}
+	{Tags "snow" 0x4402}
+	{Tags "snow" 0x7829}
+	{Tags "snow" 0x78d3}
+	{Tags "snow" 0x7926}
+	{Tags "snow" 0x2830}
+	{Tags "snow" 0x2c71}
+	{Tags "snow" 0x2c72}
+	{Tags "snow" 0x59a}
+	{Tags "snow" 0x2252}
+	{Tags "snow" 0x44f4}
+	{Tags "snow" 0x2263}
+	{Tags "snow" 0x1871}
+	{Tags "snow" 0x4e1}
+	{Tags "snow" 0x64f}
+	{Tags "add_exhaustview" "diesel" 0x31f}
+	{Tags "add_exhaustview" "diesel" 0x396}
+	{Tags "add_exhaustview" "diesel" 0x398}
+	{Tags "add_exhaustview" "diesel" 0x4fb}
+	{Tags "add_exhaustview" "diesel" 0xaa8}
+	{Tags "add_exhaustview" "diesel" 0xaa9}
+	{Tags "add_exhaustview" "diesel" 0xaaa}
+	{Tags "add_exhaustview" "diesel" 0xaad}
+	{Tags "add_exhaustview" "diesel" 0xab6}
+	{Tags "snow" 0xabc}
+	{Tags "snow" 0xabd}
+	{Tags "snow" 0xac2}
+	{Tags "snow" 0xad3}
+	{Tags "snow" 0xb76}
+	{Tags "snow" 0xb77}
+	{Tags "snow" 0xb7b}
+	{Tags "snow" 0xb7c}
+	{Tags "snow" 0xb80}
+	{Tags "snow" 0xb81}
+	{Tags "snow" 0xb82}
+	{Tags "snow" 0xb84}
+	{Tags "snow" 0xb85}
+	{Tags "snow" 0xb86}
+	{Tags "snow" 0xb88}
+	{Tags "snow" 0xb89}
+	{Tags "snow" 0xb8a}
+	{Tags "snow" 0xb9f}
+	{Tags "snow" 0xba6}
+	{Tags "snow" 0xbb1}
+	{Tags "snow" 0xbba}
+	{Tags "snow" 0xbc3}
+	{Tags "snow" 0xbca}
+	{Tags "snow" 0xbcd}
+	{Tags "snow" 0xbce}
+	{Tags "snow" 0xbd1}
+	{Tags "snow" 0xbd5}
+	{Tags "snow" 0xbe2}
+	{Tags "snow" 0xbe3}
+	{Tags "snow" 0xbe5}
+	{Tags "snow" 0xbe6}
+	{Tags "snow" 0xbe9}
+	{Tags "snow" 0xbec}
+	{Tags "snow" 0xbee}
+	{Tags "snow" 0xc17}
+	{Tags "snow" 0xc18}
+	{Tags "snow" 0xc21}
+	{Tags "snow" 0xc23}
+	{Tags "snow" 0x40f4}
+	{Tags "snow" 0x4100}
+	{Tags "snow" 0x4101}
+	{Tags "snow" 0x4102}
+	{Tags "snow" 0x4103}
+	{Tags "snow" 0x4104}
+	{Tags "snow" 0x410a}
+	{Tags "snow" 0x4111}
+	{Tags "snow" 0x4112}
+	{Tags "snow" 0x411e}
+	{Tags "snow" 0x411f}
+	{Tags "snow" 0x4126}
+	{Tags "snow" 0x4127}
+	{Tags "snow" 0x4128}
+	{Tags "snow" 0x4129}
+	{Tags "snow" 0x412a}
+	{Tags "snow" 0x412c}
+	{Tags "snow" 0x412d}
+	{Tags "snow" 0x412e}
+	{Tags "snow" 0x412f}
+	{Tags "snow" 0x413a}
+	{Tags "snow" 0x413c}
+	{Tags "snow" 0x413d}
+	{Tags "snow" 0x413e}
+	{Tags "snow" 0x413f}
+	{Tags "snow" 0x4140}
+	{Tags "snow" 0x4142}
+	{Tags "snow" 0x4143}
+	{Tags "snow" 0x4145}
+	{Tags "snow" 0x4146}
+	{Tags "snow" 0x4147}
+	{Tags "flag" 0x802f}
+	{Tags "flag" 0x8013}
+	{Tags "flag" 0x8003}
+	{Tags "flag" 0xc004}
+	{Tags "flag" 0xe000}
+	{Tags "flag" 0xd000}
+	{Tags "flag" 0xd003}
+	{Tags "flag" 0xa000}
+	{Tags "flag" 0x9000}
+	{Brain 0x31f
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x396
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x398
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x4fb
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0xaa8
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0xaa9
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0xaaa
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0xaad
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0xab6
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Environment "goh/multi/2v2_blizzard/var1"}
+	{Helpers
+		{event "action"}
+		{event "ambient"}
+		{event "disabled"}
+		{event "gamestart"}
+		{event "init"}
+		{zone "poly"
+			{position -1822.4 -2497.12 -7}
+			{Name "f1"}
+			{Point -520.009 -32.1715}
+			{Point -539.131 219.282}
+			{Point -409.641 470.34}
+			{Point 427.04 346.316}
+			{Point 574.02 233.639}
+			{Point 540.635 -33.7404}
+			{Point 399.347 -261.754}
+			{Point 145.04 -352.624}
+			{Point -220.902 -319.254}
+			{Point -396.398 -270.033}
+		}
+		{zone "poly"
+			{position -7770.62 -6398.75 107}
+			{Name "f2"}
+			{Point 66.2217 -540.256}
+			{Point -308.73 -570.175}
+			{Point -365.397 97.9054}
+			{Point -312.425 241.68}
+			{Point -195.66 379.765}
+			{Point 195.56 396.878}
+			{Point 463.253 133.878}
+			{Point 457.177 -139.674}
+		}
+		{zone "poly"
+			{position 3934.68 609.446 -29}
+			{Name "f3"}
+			{Point -693.403 291.355}
+			{Point 429.441 577.255}
+			{Point 705.809 -270.798}
+			{Point -441.846 -597.813}
+		}
+		{zone "poly"
+			{position -517.774 -143.452 36}
+			{Name "f4"}
+			{Point 306.939 -560.062}
+			{Point -613.249 -102.485}
+			{Point -614.696 297.996}
+			{Point -230.577 526.327}
+			{Point 562.891 125.015}
+			{Point 588.692 -286.791}
+		}
+		{zone "poly"
+			{position -2808 -4404.76 -29}
+			{Name "f5"}
+			{Point -276.678 -413.771}
+			{Point -653.211 -301.99}
+			{Point -719.886 72.5457}
+			{Point -428.504 312.549}
+			{Point 279.587 415.794}
+			{Point 684.349 229.411}
+			{Point 723.3 1.59309}
+			{Point 391.043 -316.133}
+		}
+		{zone "poly"
+			{position 881.854 2643.2 -9}
+			{Name "f6"}
+			{Point 451.789 -450.677}
+			{Point 26.9889 -565.202}
+			{Point -276.753 -249.024}
+			{Point -349.141 182.6}
+			{Point -133.536 530.008}
+			{Point 280.653 552.295}
+		}
+		{zone "poly"
+			{position -4438.45 -7544.38 3.02948}
+			{Name "f7"}
+			{Point -425.355 -260.405}
+			{Point -379.262 323.81}
+			{Point 416.691 253.181}
+			{Point 387.926 -316.587}
+		}
+		{zone "poly"
+			{position -160.584 -3841.01 17}
+			{Name "f8"}
+			{Point 882.13 429.693}
+			{Point 887.9 320.545}
+			{Point 542.853 -72.3475}
+			{Point -547.015 -476.777}
+			{Point -738.233 -443.87}
+			{Point -865.567 -309.644}
+			{Point -826.11 -213.65}
+			{Point -203.511 311.527}
+			{Point 867.553 454.523}
+		}
+		{zone "poly"
+			{position -3398.36 -1236.96 -29}
+			{Name "f9"}
+			{Point -109.889 -439.296}
+			{Point -176.041 -415.632}
+			{Point -376.609 254.574}
+			{Point -331.721 325.008}
+			{Point 133.553 452.868}
+			{Point 193.522 405.065}
+			{Point 350.449 -261.365}
+			{Point 316.736 -321.223}
+		}
+		{zone "poly"
+			{position -1982.38 -2565.87 -0.0334473}
+			{Name "global"}
+			{Point -10109.6 -6245.56}
+			{Point -10297 6353.42}
+			{Point 10272.5 6329.33}
+			{Point 10134.1 -6437.19}
+		}
+		{reinforcements
+			{scoreTotal 0}
+			{scoreCurrent 0}
+		}
+		{vars
+			(include "../bz_vars.inc")
+		}
+		{mission_options
+			(include "../weather_options.inc")
+		}
+		{triggers
+			(include "../bz_triggers.inc")
+			{"environment_any"
+				{condition
+					{terms
+						{"1.event"
+							{id "gamestart"}
+						}
+						{"2.mission_option"
+							{name "any_weather"}
+						}
+					}
+				}
+				{actions
+					{"switch"
+						{"case"
+							{condition
+								{type rand}
+								{value 0.15}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/var2"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.15}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/var3"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.15}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/var4"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.15}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/var5"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/varnight1"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/varnight2"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/varnight3"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"default"}
+					}
+				}
+			}
+			{"environment_day"
+				{condition
+					{terms
+						{"1.event"
+							{id "gamestart"}
+						}
+						{"2.mission_option"
+							{name "day_weather"}
+						}
+					}
+				}
+				{actions
+					{"switch"
+						{"case"
+							{condition
+								{type rand}
+								{value 0.3}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/var2"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.3}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/var3"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.3}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/var4"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.3}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/var5"}
+								{time 1}
+								{apply}
+							}
+						}
+						{"default"}
+					}
+				}
+			}
+			{"environment_night"
+				{condition
+					{terms
+						{"1.event"
+							{id "gamestart"}
+						}
+						{"2.mission_option"
+							{name "night_weather"}
+						}
+					}
+				}
+				{actions
+					{"switch"
+						{"case"
+							{condition
+								{type rand}
+								{value 0.4}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/varnight2"}
+								{time -1}
+								{apply}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.4}
+							}
+							{"environment"
+								{name "goh/multi/2v2_blizzard/varnight3"}
+								{time -1}
+								{apply}
+							}
+						}
+						{"default"
+							{"environment"
+								{name "goh/multi/2v2_blizzard/varnight1"}
+								{time -1}
+								{apply}
+							}
+						}
+					}
+				}
+			}
+		
+; UFB non-story AI additions.
+(include "/map/multi/ufb_infantry_profile.inc")
+(include "/map/multi/ufb_crew_skirmish.inc")
+}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{Fog 0}
+	{EntityManager {Enabled}
+		{CountScale "x0.5"}
+	}
+}

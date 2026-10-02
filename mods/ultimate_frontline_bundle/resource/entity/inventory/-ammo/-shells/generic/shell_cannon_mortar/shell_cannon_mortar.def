@@ -1,0 +1,19 @@
+{game_entity
+	;// Ultimate Frontline Bundle: casing stays on the ground but is not an item and not selectable (no pickup)
+	{obstacleID "stuff"}
+	{collider "ammo"}
+	{props "steel" "nocover" "dummy" "part"}
+	{simulation {able 1} {disableLinked 1}}
+	{constrain ground}
+	{fogable always}
+	{lodclass "stuff_small"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{Extension "shell_cannon_mortar.mdl"}
+	{Volume "body"
+		{able clear {bullet} {contact_ground} {contact} {blast}}
+		{tags "body"}
+		{thickness 5}
+		{density 2}
+	}
+}

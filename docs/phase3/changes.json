@@ -1,0 +1,1087 @@
+{
+  "cp": [
+    {
+      "path": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "cp_a",
+      "old": "0:175,900:200,1800:225",
+      "new": "0:350,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1800:175",
+      "new": "0:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "cp_a",
+      "old": "0:175,900:200,1800:225",
+      "new": "0:350,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1800:175",
+      "new": "0:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "cp_a",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_early.inc",
+      "key": "cp_b",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "cp_a",
+      "old": "0:175,900:200,1800:225",
+      "new": "0:350,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1800:175",
+      "new": "0:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "cp_a",
+      "old": "0:175,900:200,1800:225",
+      "new": "0:350,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1800:175",
+      "new": "0:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "cp_a",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_late.inc",
+      "key": "cp_b",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "cp_a",
+      "old": "0:175,900:200,1800:225",
+      "new": "0:350,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1800:175",
+      "new": "0:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "cp_a",
+      "old": "0:175,900:200,1800:225",
+      "new": "0:350,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1800:175",
+      "new": "0:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "cp_a",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "key": "cp_b",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1500:175",
+      "new": "0:250,900:300,1500:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:170,900:195,1500:220",
+      "new": "0:340,900:390,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:200,900:225,1500:250",
+      "new": "0:400,900:450,1500:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:250,900:275,1500:300",
+      "new": "0:500,900:550,1500:600"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:150,900:175,1500:200",
+      "new": "0:300,900:350,1500:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:200,900:225,1500:250",
+      "new": "0:400,900:450,1500:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:110,900:135,1500:160",
+      "new": "0:220,900:270,1500:320"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:150,900:175,1500:200",
+      "new": "0:300,900:350,1500:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:95,900:120,1500:145",
+      "new": "0:190,900:240,1500:290"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:130,900:155,1500:180",
+      "new": "0:260,900:310,1500:360"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:80,900:105,1500:130",
+      "new": "0:160,900:210,1500:260"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:110,900:135,1500:160",
+      "new": "0:220,900:270,1500:320"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:60,900:85,1500:110",
+      "new": "0:120,900:170,1500:220"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:90,900:115,1500:140",
+      "new": "0:180,900:230,1500:280"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:45,900:70,1500:95",
+      "new": "0:90,900:140,1500:190"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:70,900:95,1500:120",
+      "new": "0:140,900:190,1500:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_b",
+      "old": "0:1000,900:1000,1500:1000",
+      "new": "0:2000,900:2000,1500:2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_early.inc",
+      "key": "cp_a",
+      "old": "0:1000,900:1000,1500:1000",
+      "new": "0:2000,900:2000,1500:2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1500:175",
+      "new": "0:250,900:300,1500:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:170,900:195,1500:220",
+      "new": "0:340,900:390,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:200,900:225,1500:250",
+      "new": "0:400,900:450,1500:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:250,900:275,1500:300",
+      "new": "0:500,900:550,1500:600"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:150,900:175,1500:200",
+      "new": "0:300,900:350,1500:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:200,900:225,1500:250",
+      "new": "0:400,900:450,1500:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:110,900:135,1500:160",
+      "new": "0:220,900:270,1500:320"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:150,900:175,1500:200",
+      "new": "0:300,900:350,1500:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:95,900:120,1500:145",
+      "new": "0:190,900:240,1500:290"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:130,900:155,1500:180",
+      "new": "0:260,900:310,1500:360"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:80,900:105,1500:130",
+      "new": "0:160,900:210,1500:260"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:110,900:135,1500:160",
+      "new": "0:220,900:270,1500:320"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:60,900:85,1500:110",
+      "new": "0:120,900:170,1500:220"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:90,900:115,1500:140",
+      "new": "0:180,900:230,1500:280"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:45,900:70,1500:95",
+      "new": "0:90,900:140,1500:190"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:70,900:95,1500:120",
+      "new": "0:140,900:190,1500:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_b",
+      "old": "0:1000,900:1000,1500:1000",
+      "new": "0:2000,900:2000,1500:2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_late.inc",
+      "key": "cp_a",
+      "old": "0:1000,900:1000,1500:1000",
+      "new": "0:2000,900:2000,1500:2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:125,900:150,1500:175",
+      "new": "0:250,900:300,1500:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:170,900:195,1500:220",
+      "new": "0:340,900:390,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:200,900:225,1500:250",
+      "new": "0:400,900:450,1500:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:250,900:275,1500:300",
+      "new": "0:500,900:550,1500:600"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:150,900:175,1500:200",
+      "new": "0:300,900:350,1500:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:200,900:225,1500:250",
+      "new": "0:400,900:450,1500:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:110,900:135,1500:160",
+      "new": "0:220,900:270,1500:320"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:150,900:175,1500:200",
+      "new": "0:300,900:350,1500:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:95,900:120,1500:145",
+      "new": "0:190,900:240,1500:290"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:130,900:155,1500:180",
+      "new": "0:260,900:310,1500:360"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:80,900:105,1500:130",
+      "new": "0:160,900:210,1500:260"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:110,900:135,1500:160",
+      "new": "0:220,900:270,1500:320"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:60,900:85,1500:110",
+      "new": "0:120,900:170,1500:220"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:90,900:115,1500:140",
+      "new": "0:180,900:230,1500:280"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:45,900:70,1500:95",
+      "new": "0:90,900:140,1500:190"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:70,900:95,1500:120",
+      "new": "0:140,900:190,1500:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_b",
+      "old": "0:1000,900:1000,1500:1000",
+      "new": "0:2000,900:2000,1500:2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/frontline_mid.inc",
+      "key": "cp_a",
+      "old": "0:1000,900:1000,1500:1000",
+      "new": "0:2000,900:2000,1500:2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_a",
+      "old": "0:120,900:120,1500:120",
+      "new": "0:240,900:240,1500:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_b",
+      "old": "0:220,900:220,1500:220",
+      "new": "0:440,900:440,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_a",
+      "old": "0:60,900:60,1500:60",
+      "new": "0:120,900:120,1500:120"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_b",
+      "old": "0:220,900:220,1500:220",
+      "new": "0:440,900:440,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_a",
+      "old": "0:80,900:80,1500:80",
+      "new": "0:160,900:160,1500:160"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_b",
+      "old": "0:240,900:240,1500:240",
+      "new": "0:480,900:480,1500:480"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_a",
+      "old": "0:100,900:100,1500:100",
+      "new": "0:200,900:200,1500:200"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_b",
+      "old": "0:260,900:260,1500:260",
+      "new": "0:520,900:520,1500:520"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_a",
+      "old": "0:120,900:120,1500:120",
+      "new": "0:240,900:240,1500:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_b",
+      "old": "0:280,900:280,1500:280",
+      "new": "0:560,900:560,1500:560"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_a",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_early.inc",
+      "key": "cp_b",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_a",
+      "old": "0:80,900:80,1500:80",
+      "new": "0:160,900:160,1500:160"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_b",
+      "old": "0:220,900:220,1500:220",
+      "new": "0:440,900:440,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_a",
+      "old": "0:60,900:60,1500:60",
+      "new": "0:120,900:120,1500:120"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_b",
+      "old": "0:220,900:220,1500:220",
+      "new": "0:440,900:440,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_a",
+      "old": "0:80,900:80,1500:80",
+      "new": "0:160,900:160,1500:160"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_b",
+      "old": "0:240,900:240,1500:240",
+      "new": "0:480,900:480,1500:480"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_a",
+      "old": "0:100,900:100,1500:100",
+      "new": "0:200,900:200,1500:200"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_b",
+      "old": "0:260,900:260,1500:260",
+      "new": "0:520,900:520,1500:520"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_a",
+      "old": "0:120,900:120,1500:120",
+      "new": "0:240,900:240,1500:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_b",
+      "old": "0:280,900:280,1500:280",
+      "new": "0:560,900:560,1500:560"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_a",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_late.inc",
+      "key": "cp_b",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_a",
+      "old": "0:120,900:120,1500:120",
+      "new": "0:240,900:240,1500:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_b",
+      "old": "0:220,900:220,1500:220",
+      "new": "0:440,900:440,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_a",
+      "old": "0:60,900:60,1500:60",
+      "new": "0:120,900:120,1500:120"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_b",
+      "old": "0:220,900:220,1500:220",
+      "new": "0:440,900:440,1500:440"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_a",
+      "old": "0:80,900:80,1500:80",
+      "new": "0:160,900:160,1500:160"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_b",
+      "old": "0:240,900:240,1500:240",
+      "new": "0:480,900:480,1500:480"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_a",
+      "old": "0:100,900:100,1500:100",
+      "new": "0:200,900:200,1500:200"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_b",
+      "old": "0:260,900:260,1500:260",
+      "new": "0:520,900:520,1500:520"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_a",
+      "old": "0:120,900:120,1500:120",
+      "new": "0:240,900:240,1500:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_b",
+      "old": "0:180,900:280,1500:280",
+      "new": "0:360,900:560,1500:560"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_a",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/laststand_mid.inc",
+      "key": "cp_b",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:100,300:150,900:200,1800:225",
+      "new": "0:200,300:300,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:150,300:200,900:250,1800:300",
+      "new": "0:300,300:400,900:500,1800:600"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:125,300:175,900:225,1800:250",
+      "new": "0:250,300:350,900:450,1800:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:100,300:150,900:200,1800:225",
+      "new": "0:200,300:300,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:100,300:125,900:175,1800:200",
+      "new": "0:200,300:250,900:350,1800:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:100,300:125,900:150,1800:175",
+      "new": "0:200,300:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:75,300:100,900:125,1800:150",
+      "new": "0:150,300:200,900:250,1800:300"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:60,300:80,900:100,1800:120",
+      "new": "0:120,300:160,900:200,1800:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:50,300:70,900:90,1800:100",
+      "new": "0:100,300:140,900:180,1800:200"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_early.inc",
+      "key": "cp",
+      "old": "0:50,300:50,900:60,1800:60",
+      "new": "0:100,300:100,900:120,1800:120"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:100,300:150,900:200,1800:225",
+      "new": "0:200,300:300,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:150,300:200,900:250,1800:300",
+      "new": "0:300,300:400,900:500,1800:600"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:125,300:175,900:225,1800:250",
+      "new": "0:250,300:350,900:450,1800:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:100,300:150,900:200,1800:225",
+      "new": "0:200,300:300,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:100,300:125,900:175,1800:200",
+      "new": "0:200,300:250,900:350,1800:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:100,300:125,900:150,1800:175",
+      "new": "0:200,300:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:75,300:100,900:125,1800:150",
+      "new": "0:150,300:200,900:250,1800:300"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:60,300:80,900:100,1800:120",
+      "new": "0:120,300:160,900:200,1800:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:50,300:70,900:90,1800:100",
+      "new": "0:100,300:140,900:180,1800:200"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_late.inc",
+      "key": "cp",
+      "old": "0:50,300:50,900:60,1800:60",
+      "new": "0:100,300:100,900:120,1800:120"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:100,300:150,900:200,1800:225",
+      "new": "0:200,300:300,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:150,300:200,900:250,1800:300",
+      "new": "0:300,300:400,900:500,1800:600"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:125,300:175,900:225,1800:250",
+      "new": "0:250,300:350,900:450,1800:500"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:100,300:150,900:200,1800:225",
+      "new": "0:200,300:300,900:400,1800:450"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:100,300:125,900:175,1800:200",
+      "new": "0:200,300:250,900:350,1800:400"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:100,300:125,900:150,1800:175",
+      "new": "0:200,300:250,900:300,1800:350"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:75,300:100,900:125,1800:150",
+      "new": "0:150,300:200,900:250,1800:300"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:60,300:80,900:100,1800:120",
+      "new": "0:120,300:160,900:200,1800:240"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:50,300:70,900:90,1800:100",
+      "new": "0:100,300:140,900:180,1800:200"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_mid.inc",
+      "key": "cp",
+      "old": "0:50,300:50,900:60,1800:60",
+      "new": "0:100,300:100,900:120,1800:120"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_test_early.inc",
+      "key": "cp",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_test_late.inc",
+      "key": "cp",
+      "old": "1000",
+      "new": "2000"
+    },
+    {
+      "path": "set/multiplayer/games/presets/preset_test_mid.inc",
+      "key": "cp",
+      "old": "1000",
+      "new": "2000"
+    }
+  ],
+  "circles": [
+    {
+      "path": "entity/-vehicle/+finland/car/volvo_127d_ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/+germany/btr/sdkfz251c_8/supply_zone.ebm",
+      "old": "$/service/supply_zone_med.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/+germany/car/opel_maultier_eng/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/+germany/car/opel_maultier_transport/supply_zone.ebm",
+      "old": "$/service/supply_zone_res.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_oyc_fuel/supply_zone.ebm",
+      "old": "$/service/supply_zone_fuel.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_oyd_art_ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_oyd_engineer/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_qld_art_ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/eng/car/bedford_qld_engineer/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/eng/trailer/ammo_trailer_eng/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_3ton_ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_3ton_eng/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_3ton_fuel/supply_zone.ebm",
+      "old": "$/service/supply_zone_fuel.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_v3000_ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_v3000_eng/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/finland/car/ford_v3000_fuel/supply_zone.ebm",
+      "old": "$/service/supply_zone_fuel.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_eng/supply_zone.ebm",
+      "old": "$/service/supply_zone_ammo.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_fin/supply_zone.ebm",
+      "old": "$/service/supply_zone_ammo.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_ger/supply_zone.ebm",
+      "old": "$/service/supply_zone_ammo.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_rus/supply_zone.ebm",
+      "old": "$/service/supply_zone_ammo.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/generic/special/inf_crate_usa/supply_zone.ebm",
+      "old": "$/service/supply_zone_ammo.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/btr/sdkfz6_cargo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/car/blitz3_6_art_ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/car/blitz3_6_engineering/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/car/blitz3_6_fuel/supply_zone.ebm",
+      "old": "$/service/supply_zone_fuel.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/car/kettenkrad_eng/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/car/opel_maultier/supply_zone.ebm",
+      "old": "$/service/supply_zone_res.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/trailer/ammo_trailer/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/trailer/infantry_cart_if8/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/germany/trailer/sdah_57_1/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/usa/car/cckw_art_ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/usa/car/cckw_engineer/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/usa/car/cckw_fuel/supply_zone.ebm",
+      "old": "$/service/supply_zone_fuel.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/usa/car/cckw_redball/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/usa/trailer/ammo_trailer_usa/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/ussr/car/gaz_aaa_supply/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/ussr/car/gaz_fuel/supply_zone.ebm",
+      "old": "$/service/supply_zone_fuel.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/ussr/car/zis5eng/supply_zone.ebm",
+      "old": "$/service/supply_zone_eng.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/-vehicle/ussr/trailer/ap_2/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/service/-multiplayer/ammo_point/ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/service/-multiplayer/flag_point/flagpoint_ammo/supply_zone.ebm",
+      "old": "$/service/supply_zone2.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/service/pointer/automedic.ebm",
+      "old": "$/service/supply_zone_automedic.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/construction/_military/boxes/crates_set02_resupply/supply_zone.ebm",
+      "old": "$/service/supply_zone_ammo.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/construction/_military/medic_rally/supply_zone.ebm",
+      "old": "$/service/supply_zone_med.dds",
+      "new": "$/fx/explosion/black.bmp"
+    },
+    {
+      "path": "entity/service/pointer/medic_zone_vis.def",
+      "old": "selection_circle.ebm",
+      "new": "automedic.ebm"
+    }
+  ],
+  "ai": [
+    "hf inf ai/melee/melee",
+    "hf inf ai/grenade ap",
+    "hf inf ai/grenade at",
+    "hf inf ai/grenade smoke 120m",
+    "hf inf ai/grenade smoke 60m",
+    "hf inf ai/grenade smoke wirecutter",
+    "hf medic ai/heal",
+    "Lua order guard: grenade, melee and wirecutter work"
+  ]
+}

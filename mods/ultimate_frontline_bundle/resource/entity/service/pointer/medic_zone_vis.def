@@ -1,0 +1,14 @@
+{game_entity
+	{Extension "medic_zone.mdl"}
+	
+	{DecalView selection_circle
+		{Sprite "automedic.ebm"
+			{PreScaleX 0.75}
+			{PreScaleY 0.75}
+		}
+		{ground}
+		{Layer grounddynamic}
+	}
+	
+	{NoGetShadows}
+}

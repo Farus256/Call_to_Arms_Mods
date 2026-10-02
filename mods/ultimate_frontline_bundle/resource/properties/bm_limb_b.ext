@@ -1,0 +1,12 @@
+;SDL
+game_entity
+
+;// Ultimate Frontline Bundle: BM limbs stay as physics props, no pickup (was extender "stuff" + "collectable")
+{obstacleID "grenade"}
+{collider "grenade"}
+{props "physics_damping"}
+{simulation {able 1} {disableLinked 1}}
+{constrain ground}
+{lodclass "part_small"}
+{NoGroupMesh 1}
+{NoVisibilityPatch}
