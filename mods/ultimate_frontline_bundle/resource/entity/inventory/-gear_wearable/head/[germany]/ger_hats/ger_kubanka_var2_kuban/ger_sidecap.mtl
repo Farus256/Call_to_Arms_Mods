@@ -1,0 +1,7 @@
+{material bump
+	{diffuse 	"$/_hum/ger_headwear/Osttruppen/kuban_cap_sidecap_39"}
+	{bump 		"$/_hum/ger_headwear/Osttruppen/ost_cap_sidecap_bp"}
+	{specular 	"$/_hum/ger_headwear/ger_sp_null"}
+	{color "230 230 230 25"}
+	{blend none}
+}

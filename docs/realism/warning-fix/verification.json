@@ -1,0 +1,124 @@
+{
+  "files": 28,
+  "staticAssertions": 166,
+  "lua51Files": 55,
+  "materialTextureReferences": [
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_don_roa/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/don_roa_cap_sidecap_39",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/don_roa_cap_sidecap_39.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_don_roa/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/ost_cap_sidecap_bp",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/ost_cap_sidecap_bp.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_don_roa/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/ger_sp_null",
+      "resolved": "texture/common/_hum/ger_headwear/ger_sp_null.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var1_don_roa/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/don_roa_cap_sidecap_39",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/don_roa_cap_sidecap_39.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var1_don_roa/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/ost_cap_sidecap_bp",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/ost_cap_sidecap_bp.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var1_don_roa/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/ger_sp_null",
+      "resolved": "texture/common/_hum/ger_headwear/ger_sp_null.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/kuban_cap_sidecap_39",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/kuban_cap_sidecap_39.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/ost_cap_sidecap_bp",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/ost_cap_sidecap_bp.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/ger_sp_null",
+      "resolved": "texture/common/_hum/ger_headwear/ger_sp_null.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var2_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/kuban_cap_sidecap_39",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/kuban_cap_sidecap_39.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var2_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/ost_cap_sidecap_bp",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/ost_cap_sidecap_bp.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var2_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/ger_sp_null",
+      "resolved": "texture/common/_hum/ger_headwear/ger_sp_null.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_red/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/don_roa_cap_sidecap_39",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/don_roa_cap_sidecap_39.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_red/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/ost_cap_sidecap_bp",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/ost_cap_sidecap_bp.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_red/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/ger_sp_null",
+      "resolved": "texture/common/_hum/ger_headwear/ger_sp_null.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var6_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/kuban_cap_sidecap_39",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/kuban_cap_sidecap_39.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var6_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/ost_cap_sidecap_bp",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/ost_cap_sidecap_bp.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var6_kuban/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/ger_sp_null",
+      "resolved": "texture/common/_hum/ger_headwear/ger_sp_null.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_terek/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/terek_cap_sidecap_39",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/terek_cap_sidecap_39.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_terek/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/Osttruppen/ost_cap_sidecap_bp",
+      "resolved": "texture/common/_hum/ger_headwear/osttruppen/ost_cap_sidecap_bp.dds"
+    },
+    {
+      "material": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_terek/ger_sidecap.mtl",
+      "reference": "$/_hum/ger_headwear/ger_sp_null",
+      "resolved": "texture/common/_hum/ger_headwear/ger_sp_null.dds"
+    }
+  ],
+  "logWarningsBefore": {
+    "fatal": 0,
+    "missingHatMaterial": 17,
+    "enumerator": 27,
+    "part6": 5,
+    "statsActor": 226,
+    "callerNil": 260,
+    "aimerLocked": 38,
+    "noMips": 83
+  },
+  "gameLaunched": false,
+  "particlesAndDebrisUnchanged": true
+}

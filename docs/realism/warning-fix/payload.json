@@ -1,0 +1,287 @@
+{
+  "checkpoint": "9e2adba",
+  "changedFiles": 3,
+  "addedFiles": 25,
+  "records": [
+    {
+      "path": "script/multiplayer/modes/utility.lua",
+      "before": null,
+      "after": "f9541233eb867d40ddf032c75b8062041f65ed9a39080ae8fdd8e6ee37f1b8f1",
+      "bytes": 13073,
+      "reason": "Bound recurring timers; throttle unavailable purchases; linear weighted choice; map QueryScene by player ID",
+      "source": "script/multiplayer/modes/utility.lua",
+      "sourceHash": "dfef79caca33a7fcc33a7c0357c42f27809729be7282614f6628ed54f3c00e0f",
+      "sourceMod": "game"
+    },
+    {
+      "path": "script/multiplayer/modes/battlezones.lua",
+      "before": "b46194686f0130c80e1c25eedae624e6c145f304e9b62188704e2079e7c546fc",
+      "after": "0d063001133ebf52b5095e5e22c482a457faba123e8e3fd8f59f207bced2865e",
+      "bytes": 15236,
+      "reason": "Correct purchase weights/counts, safe scene rows, and order replacement",
+      "source": "script/multiplayer/modes/battlezones.lua",
+      "sourceHash": "b46194686f0130c80e1c25eedae624e6c145f304e9b62188704e2079e7c546fc",
+      "sourceMod": "ultimate_frontline_bundle"
+    },
+    {
+      "path": "script/multiplayer/modes/frontlines.lua",
+      "before": "46b8df9c6e7fb5e244b150c0b2ca2927161a99c110264128d43b86b27290e0b1",
+      "after": "8f86abac82c0c54b5764c16b8e6aca1cde74ad38bae6c8e35692431fd85c5d16",
+      "bytes": 18621,
+      "reason": "Correct purchase weights/counts, safe scene rows, and order replacement",
+      "source": "script/multiplayer/modes/frontlines.lua",
+      "sourceHash": "46b8df9c6e7fb5e244b150c0b2ca2927161a99c110264128d43b86b27290e0b1",
+      "sourceMod": "ultimate_frontline_bundle"
+    },
+    {
+      "path": "script/multiplayer/modes/laststand.lua",
+      "before": "e9b70ecd9c8e53320e3f5d6e7b6b69db461b9c2bd21dded5c860412856d6dfbf",
+      "after": "7835ff1c795f4578f358c6aad8f297d23593594fce4027076a12617b9b7c1841",
+      "bytes": 11094,
+      "reason": "Correct purchase weights/counts, safe scene rows, and order replacement",
+      "source": "script/multiplayer/modes/laststand.lua",
+      "sourceHash": "e9b70ecd9c8e53320e3f5d6e7b6b69db461b9c2bd21dded5c860412856d6dfbf",
+      "sourceMod": "ultimate_frontline_bundle"
+    },
+    {
+      "path": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_don_roa/ger_sidecap.mtl",
+      "before": null,
+      "after": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1",
+      "bytes": 239,
+      "reason": "Resolve ger_cockade_null.ply material using exact mesh donor",
+      "source": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/m39_sidecaps_var2_roa_don_jung/ger_sidecap.mtl",
+      "sourceHash": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var1_don_roa/ger_sidecap.mtl",
+      "before": null,
+      "after": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1",
+      "bytes": 239,
+      "reason": "Resolve ger_cockade_null.ply material using exact mesh donor",
+      "source": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/m39_sidecaps_var2_roa_don_jung/ger_sidecap.mtl",
+      "sourceHash": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_kuban/ger_sidecap.mtl",
+      "before": null,
+      "after": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c",
+      "bytes": 237,
+      "reason": "Resolve ger_cockade_null.ply material using exact mesh donor",
+      "source": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/m39_sidecaps_var2_kuban/ger_sidecap.mtl",
+      "sourceHash": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var2_kuban/ger_sidecap.mtl",
+      "before": null,
+      "after": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c",
+      "bytes": 237,
+      "reason": "Resolve ger_cockade_null.ply material using exact mesh donor",
+      "source": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/m39_sidecaps_var2_kuban/ger_sidecap.mtl",
+      "sourceHash": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_red/ger_sidecap.mtl",
+      "before": null,
+      "after": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1",
+      "bytes": 239,
+      "reason": "Resolve ger_cockade_null.ply material using exact mesh donor",
+      "source": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/m39_sidecaps_var2_roa_don_jung/ger_sidecap.mtl",
+      "sourceHash": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var6_kuban/ger_sidecap.mtl",
+      "before": null,
+      "after": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c",
+      "bytes": 237,
+      "reason": "Resolve ger_cockade_null.ply material using exact mesh donor",
+      "source": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/m39_sidecaps_var2_kuban/ger_sidecap.mtl",
+      "sourceHash": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_terek/ger_sidecap.mtl",
+      "before": null,
+      "after": "7cd4f0d136abea9ae84131890b4904ae1d7955013b2a0fab06b5011d113a8c6d",
+      "bytes": 237,
+      "reason": "Resolve ger_cockade_null.ply material using exact mesh donor",
+      "source": "entity/inventory/-gear_wearable/head/[germany]/ger_hats/m39_sidecaps_var2_terek/ger_sidecap.mtl",
+      "sourceHash": "7cd4f0d136abea9ae84131890b4904ae1d7955013b2a0fab06b5011d113a8c6d",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "properties/selection/vehicle_elongated_selected.dds",
+      "before": null,
+      "after": "40e9d10163b8750fd49c1fd3c769de27d2586d53d74dc97fab189296f363031d",
+      "bytes": 104008,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/vehicle_elongated_selected.dds",
+      "sourceHash": "6dd3ea424b6efe9355449e27219020f4bf22e4ae5cfa5d98df0af1b2bed5103a",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/vehicle_elongated_selectable.dds",
+      "before": null,
+      "after": "40e9d10163b8750fd49c1fd3c769de27d2586d53d74dc97fab189296f363031d",
+      "bytes": 104008,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/vehicle_elongated_selectable.dds",
+      "sourceHash": "6dd3ea424b6efe9355449e27219020f4bf22e4ae5cfa5d98df0af1b2bed5103a",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/vehicle_selected.dds",
+      "before": null,
+      "after": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f",
+      "bytes": 174904,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/vehicle_selected.dds",
+      "sourceHash": "8d02933dbe8c2ec64e9216ac48827b673b62547bcc9f533cc34c20d85584aba0",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/vehicle_selectable.dds",
+      "before": null,
+      "after": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f",
+      "bytes": 174904,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/vehicle_selectable.dds",
+      "sourceHash": "8d02933dbe8c2ec64e9216ac48827b673b62547bcc9f533cc34c20d85584aba0",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/vehicle_big_selected.dds",
+      "before": null,
+      "after": "84b709a0f723b5afbeb135c44bbaac1ce13aeaca7418e0be74ef3002d907c49b",
+      "bytes": 262288,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/vehicle_big_selected.dds",
+      "sourceHash": "4564939ffde06dbae491457b8709eebe26809a220025a3829d4c5b3be13974dd",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/vehicle_big_selectable.dds",
+      "before": null,
+      "after": "84b709a0f723b5afbeb135c44bbaac1ce13aeaca7418e0be74ef3002d907c49b",
+      "bytes": 262288,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/vehicle_big_selectable.dds",
+      "sourceHash": "4564939ffde06dbae491457b8709eebe26809a220025a3829d4c5b3be13974dd",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/vehicle_small_selected.dds",
+      "before": null,
+      "after": "f27fe581ce3b3b8f71106a2a8f546f4946dfee960634ace225efe1e8cccc8ced",
+      "bytes": 60664,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/vehicle_small_selected.dds",
+      "sourceHash": "71469bf541971da1f651665501a799f2476a8e7ca437aa7d4226bd6ef28be764",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/vehicle_small_selectable.dds",
+      "before": null,
+      "after": "f27fe581ce3b3b8f71106a2a8f546f4946dfee960634ace225efe1e8cccc8ced",
+      "bytes": 60664,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/vehicle_small_selectable.dds",
+      "sourceHash": "71469bf541971da1f651665501a799f2476a8e7ca437aa7d4226bd6ef28be764",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/selected.dds",
+      "before": null,
+      "after": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f",
+      "bytes": 174904,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/selected.dds",
+      "sourceHash": "8d02933dbe8c2ec64e9216ac48827b673b62547bcc9f533cc34c20d85584aba0",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/selectable.dds",
+      "before": null,
+      "after": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f",
+      "bytes": 174904,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/selectable.dds",
+      "sourceHash": "8d02933dbe8c2ec64e9216ac48827b673b62547bcc9f533cc34c20d85584aba0",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/active.dds",
+      "before": null,
+      "after": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f",
+      "bytes": 174904,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/active.dds",
+      "sourceHash": "8d02933dbe8c2ec64e9216ac48827b673b62547bcc9f533cc34c20d85584aba0",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "properties/selection/special.dds",
+      "before": null,
+      "after": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f",
+      "bytes": 174904,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "properties/selection/special.dds",
+      "sourceHash": "8d02933dbe8c2ec64e9216ac48827b673b62547bcc9f533cc34c20d85584aba0",
+      "sourceMod": "2562731625"
+    },
+    {
+      "path": "texture/common/service/selection_circle.dds",
+      "before": null,
+      "after": "fcc881b4b616e84630c520a0956561166f600aafd6c818a0a1bd6acb79514387",
+      "bytes": 1398228,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "texture/common/service/selection_circle.dds",
+      "sourceHash": "fc71e40c190470591125d6f970c0d7a7420013b79c906ad006b56e5c256b6de2",
+      "sourceMod": "game"
+    },
+    {
+      "path": "texture/common/_vehicle/stug3g_fin_x#winter.dds",
+      "before": null,
+      "after": "27e55749384758c93b9e68979d5243b76d498697fea779250c7fa4eba2660b68",
+      "bytes": 2796344,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "texture/common/_vehicle/stug3g_fin_x#winter.dds",
+      "sourceHash": "f59f1daf18cc396382b416771bc1f8ef97cebb2fda197f256d78e1ca26f733b5",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "texture/common/_vehicle/stug3g_fin_xx#winter.dds",
+      "before": null,
+      "after": "dbf66b1ca263b9a377912f6125d82f6230fb003dc6265e4cfed059dc706f3b91",
+      "bytes": 2796344,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "texture/common/_vehicle/stug3g_fin_xx#winter.dds",
+      "sourceHash": "ceef408f4de60416a84763dd545f0d48aadc3f89b8afe9c7bd73c8086ec320b8",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "texture/common/_vehicle/t28_38_fin/t28e_arm_fin#winter.dds",
+      "before": null,
+      "after": "382d128a74b390f26d14dab92ecb475a095aae21d16b1ef8cfc9a096c643314f",
+      "bytes": 1573016,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "texture/common/_vehicle/t28_38_fin/t28e_arm_fin#winter.dds",
+      "sourceHash": "51be4e2f14ac6446d267c2fdf53e62b722164cd5d17eb093d3f637f49d015029",
+      "sourceMod": "3359417100"
+    },
+    {
+      "path": "texture/common/_vehicle/t3485/174/fin/t-34-85_1944_174#winter.dds",
+      "before": null,
+      "after": "20631f86e672d1ef04e1910ed41aa71caae04728cab26a2a57a567602d4bde72",
+      "bytes": 5592560,
+      "reason": "Add full mip chain, preserve original base-level bytes and legacy DDS format",
+      "source": "texture/common/_vehicle/t3485/174/fin/t-34-85_1944_174#winter.dds",
+      "sourceHash": "1135c3fc9b2c6f53dffe77e41c6ffc276275ab7fee063ec9beebca6ee4d5a406",
+      "sourceMod": "3359417100"
+    }
+  ]
+}

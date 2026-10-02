@@ -1413,6 +1413,41 @@
       "sha256": "815df453035d4e5e3155dfcba06b3b5f9cdc7ef6c0a6e9edc92d3b9a687b5b65"
     },
     {
+      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var2_kuban/ger_sidecap.mtl",
+      "bytes": 237,
+      "sha256": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_kuban/ger_sidecap.mtl",
+      "bytes": 237,
+      "sha256": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var3_red/ger_sidecap.mtl",
+      "bytes": 239,
+      "sha256": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_kubanka_var6_kuban/ger_sidecap.mtl",
+      "bytes": 237,
+      "sha256": "c7430c6f4ba2862e74dbfebbb05ef5235d37e9c5799c063fd5f32481729b9d6c"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var1_don_roa/ger_sidecap.mtl",
+      "bytes": 239,
+      "sha256": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_don_roa/ger_sidecap.mtl",
+      "bytes": 239,
+      "sha256": "49b55f2d417b38675401c547d45c652c6cd308cbb3188e169b4394dca895e6d1"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-gear_wearable/head/[germany]/ger_hats/ger_papacha_var2_terek/ger_sidecap.mtl",
+      "bytes": 237,
+      "sha256": "7cd4f0d136abea9ae84131890b4904ae1d7955013b2a0fab06b5011d113a8c6d"
+    },
+    {
       "path": "mods/ultimate_frontline_bundle/resource/entity/particle/bm_arm1/bm_arm1.def",
       "bytes": 311,
       "sha256": "3551d5d4667b1818f91779dee3fbd41463baff5912d3aac3a74141878cb72048"
@@ -3173,6 +3208,66 @@
       "sha256": "e66ff4d1371927db6ba76107a636f9151b9f8c95614be604c3f415b6d4a41856"
     },
     {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/active.dds",
+      "bytes": 174904,
+      "sha256": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/selectable.dds",
+      "bytes": 174904,
+      "sha256": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/selected.dds",
+      "bytes": 174904,
+      "sha256": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/special.dds",
+      "bytes": 174904,
+      "sha256": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/vehicle_big_selectable.dds",
+      "bytes": 262288,
+      "sha256": "84b709a0f723b5afbeb135c44bbaac1ce13aeaca7418e0be74ef3002d907c49b"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/vehicle_big_selected.dds",
+      "bytes": 262288,
+      "sha256": "84b709a0f723b5afbeb135c44bbaac1ce13aeaca7418e0be74ef3002d907c49b"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/vehicle_elongated_selectable.dds",
+      "bytes": 104008,
+      "sha256": "40e9d10163b8750fd49c1fd3c769de27d2586d53d74dc97fab189296f363031d"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/vehicle_elongated_selected.dds",
+      "bytes": 104008,
+      "sha256": "40e9d10163b8750fd49c1fd3c769de27d2586d53d74dc97fab189296f363031d"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/vehicle_selectable.dds",
+      "bytes": 174904,
+      "sha256": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/vehicle_selected.dds",
+      "bytes": 174904,
+      "sha256": "cc6b7cbfc894a587ea948402d9db6947695871112defcfe1a2373e13eceb5b2f"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/vehicle_small_selectable.dds",
+      "bytes": 60664,
+      "sha256": "f27fe581ce3b3b8f71106a2a8f546f4946dfee960634ace225efe1e8cccc8ced"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/selection/vehicle_small_selected.dds",
+      "bytes": 60664,
+      "sha256": "f27fe581ce3b3b8f71106a2a8f546f4946dfee960634ace225efe1e8cccc8ced"
+    },
+    {
       "path": "mods/ultimate_frontline_bundle/resource/properties/small_part_harmless.inc",
       "bytes": 305,
       "sha256": "ad3f1dc77da4e3a7386dbe506e666ce956c5eadcad6bc31b7691c27d0dd6d849"
@@ -3184,8 +3279,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/modes/battlezones.lua",
-      "bytes": 14906,
-      "sha256": "b46194686f0130c80e1c25eedae624e6c145f304e9b62188704e2079e7c546fc"
+      "bytes": 15236,
+      "sha256": "0d063001133ebf52b5095e5e22c482a457faba123e8e3fd8f59f207bced2865e"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/modes/conquest/orders.lua",
@@ -3199,13 +3294,18 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/modes/frontlines.lua",
-      "bytes": 18698,
-      "sha256": "46b8df9c6e7fb5e244b150c0b2ca2927161a99c110264128d43b86b27290e0b1"
+      "bytes": 18621,
+      "sha256": "8f86abac82c0c54b5764c16b8e6aca1cde74ad38bae6c8e35692431fd85c5d16"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/modes/laststand.lua",
-      "bytes": 11098,
-      "sha256": "e9b70ecd9c8e53320e3f5d6e7b6b69db461b9c2bd21dded5c860412856d6dfbf"
+      "bytes": 11094,
+      "sha256": "7835ff1c795f4578f358c6aad8f297d23593594fce4027076a12617b9b7c1841"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/modes/utility.lua",
+      "bytes": 13073,
+      "sha256": "f9541233eb867d40ddf032c75b8062041f65ed9a39080ae8fdd8e6ee37f1b8f1"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/script/multiplayer/ufb_order_guard.lua",
@@ -4586,6 +4686,31 @@
       "path": "mods/ultimate_frontline_bundle/resource/set/vision/vision.set",
       "bytes": 582,
       "sha256": "50f617ff93fa3e09a2a7ee9faf104864c6b453cf48f0d1fa3e6d8899d2b4116d"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/texture/common/_vehicle/stug3g_fin_x#winter.dds",
+      "bytes": 2796344,
+      "sha256": "27e55749384758c93b9e68979d5243b76d498697fea779250c7fa4eba2660b68"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/texture/common/_vehicle/stug3g_fin_xx#winter.dds",
+      "bytes": 2796344,
+      "sha256": "dbf66b1ca263b9a377912f6125d82f6230fb003dc6265e4cfed059dc706f3b91"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/texture/common/_vehicle/t28_38_fin/t28e_arm_fin#winter.dds",
+      "bytes": 1573016,
+      "sha256": "382d128a74b390f26d14dab92ecb475a095aae21d16b1ef8cfc9a096c643314f"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/texture/common/_vehicle/t3485/174/fin/t-34-85_1944_174#winter.dds",
+      "bytes": 5592560,
+      "sha256": "20631f86e672d1ef04e1910ed41aa71caae04728cab26a2a57a567602d4bde72"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/texture/common/service/selection_circle.dds",
+      "bytes": 1398228,
+      "sha256": "fcc881b4b616e84630c520a0956561166f600aafd6c818a0a1bd6acb79514387"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/texture/common/ufb/invisible_radius.bmp",

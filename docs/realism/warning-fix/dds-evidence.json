@@ -1,0 +1,138 @@
+[
+  {
+    "path": "properties/selection/vehicle_elongated_selected.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "3d85b8c81c55b7df39ceeda17a71eb6e4d24cea45aa2dd778b2a66f205dab250",
+    "beforeBytes": 77952,
+    "afterBytes": 104008
+  },
+  {
+    "path": "properties/selection/vehicle_elongated_selectable.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "3d85b8c81c55b7df39ceeda17a71eb6e4d24cea45aa2dd778b2a66f205dab250",
+    "beforeBytes": 77952,
+    "afterBytes": 104008
+  },
+  {
+    "path": "properties/selection/vehicle_selected.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "ec840ccdec75573e789ebb6a057b34b39c3f231d953f90135047b986c59cdf4b",
+    "beforeBytes": 131200,
+    "afterBytes": 174904
+  },
+  {
+    "path": "properties/selection/vehicle_selectable.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "ec840ccdec75573e789ebb6a057b34b39c3f231d953f90135047b986c59cdf4b",
+    "beforeBytes": 131200,
+    "afterBytes": 174904
+  },
+  {
+    "path": "properties/selection/vehicle_big_selected.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "3480e6a7981f3ec49dac2a30f200a247f47c046568a02cc44ca7c728bf619bca",
+    "beforeBytes": 196736,
+    "afterBytes": 262288
+  },
+  {
+    "path": "properties/selection/vehicle_big_selectable.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "3480e6a7981f3ec49dac2a30f200a247f47c046568a02cc44ca7c728bf619bca",
+    "beforeBytes": 196736,
+    "afterBytes": 262288
+  },
+  {
+    "path": "properties/selection/vehicle_small_selected.dds",
+    "mips": 9,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "58398589bd19d6b09411a3d05ab3cc7a15587043745732b3bc3322721195cd3f",
+    "beforeBytes": 45128,
+    "afterBytes": 60664
+  },
+  {
+    "path": "properties/selection/vehicle_small_selectable.dds",
+    "mips": 9,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "58398589bd19d6b09411a3d05ab3cc7a15587043745732b3bc3322721195cd3f",
+    "beforeBytes": 45128,
+    "afterBytes": 60664
+  },
+  {
+    "path": "properties/selection/selected.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "ec840ccdec75573e789ebb6a057b34b39c3f231d953f90135047b986c59cdf4b",
+    "beforeBytes": 131200,
+    "afterBytes": 174904
+  },
+  {
+    "path": "properties/selection/selectable.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "ec840ccdec75573e789ebb6a057b34b39c3f231d953f90135047b986c59cdf4b",
+    "beforeBytes": 131200,
+    "afterBytes": 174904
+  },
+  {
+    "path": "properties/selection/active.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "ec840ccdec75573e789ebb6a057b34b39c3f231d953f90135047b986c59cdf4b",
+    "beforeBytes": 131200,
+    "afterBytes": 174904
+  },
+  {
+    "path": "properties/selection/special.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "ec840ccdec75573e789ebb6a057b34b39c3f231d953f90135047b986c59cdf4b",
+    "beforeBytes": 131200,
+    "afterBytes": 174904
+  },
+  {
+    "path": "texture/common/service/selection_circle.dds",
+    "mips": 10,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "5aadcaf74465aab80dd5ab76c9784eea623dbdf224b6163d26f6190ff1429968",
+    "beforeBytes": 1048704,
+    "afterBytes": 1398228
+  },
+  {
+    "path": "texture/common/_vehicle/stug3g_fin_x#winter.dds",
+    "mips": 12,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "4c4c80eac600b1c837d87a47d0f49521be2d6f38b3c11508f4e2693d6c8b8708",
+    "beforeBytes": 2097280,
+    "afterBytes": 2796344
+  },
+  {
+    "path": "texture/common/_vehicle/stug3g_fin_xx#winter.dds",
+    "mips": 12,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "836e346a904d2327911dc42cadbb5c9442a95d34f04d240f81d7da250d3ce0f0",
+    "beforeBytes": 2097280,
+    "afterBytes": 2796344
+  },
+  {
+    "path": "texture/common/_vehicle/t28_38_fin/t28e_arm_fin#winter.dds",
+    "mips": 11,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "4e51dd663cf59deeed0cf3b5df7746e6f742cbc3244fb8be132648e9b5a4eb4d",
+    "beforeBytes": 1179776,
+    "afterBytes": 1573016
+  },
+  {
+    "path": "texture/common/_vehicle/t3485/174/fin/t-34-85_1944_174#winter.dds",
+    "mips": 12,
+    "baseLevelUnchanged": true,
+    "baseLevelHash": "3caf3075dfe21471694517f7ea6f7854e0eb4fcba7f614a613f3bb193670c18a",
+    "beforeBytes": 4194432,
+    "afterBytes": 5592560
+  }
+]

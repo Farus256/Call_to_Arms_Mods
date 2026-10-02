@@ -1,0 +1,79 @@
+{
+  "mockedBotApi": true,
+  "gameLaunched": false,
+  "assertions": 67,
+  "scenarios": [
+    {
+      "name": "Reproduce old duplicate timers and stale ownership",
+      "assertions": 2
+    },
+    {
+      "name": "Timer replacement, cancelled callbacks, dead squads and stop",
+      "assertions": 7
+    },
+    {
+      "name": "Reproduce Frontlines preparation order storm",
+      "assertions": 2
+    },
+    {
+      "name": "Fix Frontlines preparation order storm",
+      "assertions": 2
+    },
+    {
+      "name": "Reproduce repeated empty purchases",
+      "assertions": 1
+    },
+    {
+      "name": "Fix repeated empty purchases",
+      "assertions": 3
+    },
+    {
+      "name": "Weighted selection, zero weights and diagnostics independence",
+      "assertions": 10
+    },
+    {
+      "name": "Reproduce battlezones purchase class weights",
+      "assertions": 5
+    },
+    {
+      "name": "Fix battlezones purchase class weights",
+      "assertions": 5
+    },
+    {
+      "name": "Reproduce frontlines purchase class weights",
+      "assertions": 5
+    },
+    {
+      "name": "Fix frontlines purchase class weights",
+      "assertions": 5
+    },
+    {
+      "name": "Reproduce laststand purchase class weights",
+      "assertions": 5
+    },
+    {
+      "name": "Fix laststand purchase class weights",
+      "assertions": 5
+    },
+    {
+      "name": "Reproduce rear flag roster starvation",
+      "assertions": 2
+    },
+    {
+      "name": "Fix rear flag roster starvation",
+      "assertions": 2
+    },
+    {
+      "name": "battlezones missing and reordered scene rows",
+      "assertions": 2
+    },
+    {
+      "name": "frontlines missing and reordered scene rows",
+      "assertions": 2
+    },
+    {
+      "name": "laststand missing and reordered scene rows",
+      "assertions": 2
+    }
+  ]
+}

@@ -261,11 +261,11 @@ function GetUnitToSpawn(units)
  	local currentUnitSpawnWaitTime = GetCurrentSpawnWaitTime()
 
 	--if printDebug then print("player#".. BotApi.Instance.playerId.. " Unit, TTS, Min TTS") end
+	local min_tts = GetUnitSelectionTTSLimit()
 	for i, unit in pairs(units) do
 		local min_team = unit.min_team  -- not used
 		local min_income = unit.min_income -- not used
 		local tts = BotApi.Commands:TimeToSpawnUnit(unit.unit)
-		local min_tts = GetUnitSelectionTTSLimit()
 		local available = BotApi.Commands:IsUnitAvailable(unit.unit)
 		
 		if not min_income then min_income = -1 end
@@ -311,10 +311,10 @@ function GetUnitToSpawn(units)
 		["soldier_bazooka"] = {"BotInfantry", "BotATInfantry"},
 	}
 	
-	local botUnits = sceneUnits[BotApi.Instance.playerId][2]
+	local botUnits = GetPlayerUnitCounts(sceneUnits, BotApi.Instance.playerId)
 	
 	for i, prop in ipairs(searchProps) do
-		local count = botUnits[i]
+		local count = botUnits[i] or 0
 		local variables = propertyToVariable[prop]
 		if variables then
 			for _, variable in ipairs(variables) do
@@ -361,7 +361,7 @@ function GetUnitToSpawn(units)
 			end
 		end
 
-		if unitCounts.BotInfantry + unitCounts.BotATInfantry >= 25 and unitCounts.BotATInfantry >= 2 then
+		if unitCounts.BotInfantry >= 25 and unitCounts.BotATInfantry >= 2 then
 			if UnitType("Infantry") then
 				priorityMultiplier = priorityMultiplier * 0.1
 			end
@@ -406,7 +406,7 @@ function GetUnitToSpawn(units)
 		end
 	
 		-- Global priorities for different class of all other vehicles and infantry teams
-		if not UnitType("Cannon") or not UnitType("Squad") then
+		if not UnitType("Cannon") and not UnitType("Squad") then
 			if UnitType("Class1") then
 				priorityMultiplier = priorityMultiplier * 1
 			elseif UnitType("Class2") then
@@ -508,12 +508,9 @@ end
 
 -- Called once when preptime ends. Forces Attacker bots to move to flags instead of waiting for OrderRotationPeriod
 function OnPrepTimeOver()
-    for squad, timer in pairs(Context.SquadTimers) do
-        if BotApi.Scene:IsSquadExists(squad) then
-            Context.SquadTimers[squad] = nil
-            CaptureFlag(squad)
-            SetSquadOrder(CaptureFlag, squad, OrderRotationPeriod)
-        end
+    for squad in pairs(Context.SquadTimers) do
+        -- SetSquadOrder cancels the previous timer and issues one assignment.
+        SetSquadOrder(CaptureFlag, squad, OrderRotationPeriod)
     end
 end
 

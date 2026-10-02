@@ -1,0 +1,11 @@
+{
+  "indexedAssets": 402281,
+  "staticReferencesChecked": 1935,
+  "missing": [],
+  "syntaxErrors": [],
+  "contextDependentCount": 159,
+  "limitations": [
+    "Relative references inside macros and parameterized paths are recorded separately because they depend on expansion context.",
+    "Only typed SDL file references are checked; this does not emulate all resource registration or runtime requests."
+  ]
+}
