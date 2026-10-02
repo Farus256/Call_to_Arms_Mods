@@ -1,0 +1,39 @@
+;_________________________________________
+; AT Russian medium field gun
+;=========================================
+
+
+{from "pattern gun"			; L/43 "107mm_m1940"
+	{filling "bullet_107x442"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm/"}
+	{reloadSound "utility/"}
+	("range_220")
+	{calibre 107}
+
+	("reload time" seconds(15))
+
+	("velocity m/s" ap(730) apcr(1) he(737) heat(1)) 
+	("armor health" damage(310))
+	("armor health custom" shell(apcbche) velocity(670) damage(310) filler(440))
+	;("armor health custom" shell(sr) velocity(670) damage(310) filler(440))
+	("105_slope_multipliers")
+
+	("penetration_long" shell(apcbche) range(220) a(137) b(130) c(121) d(113) e(106))  ; // RHA
+
+	; Shrapnel
+	;("penetration_medium" shell(sr) range(210) a(37) b(31) c(29) d(26) e(22)) ; Pen data for shrapnel shell 
+	{parameters "sr" 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 210 210})))))
+(mod "gametype:battle_zones" {range 315 315})
+(mod "gametype:ammunition" {range 315 315})
+(mod "gametype:evacuation" {range 315 315})
+(mod "gametype:frontlines" {range 315 315})
+(mod "gametype:campaign_capture_the_flag" {range 315 315})
+		("reload time" seconds(17))
+		{DisableRicochet}
+	}
+
+	("accuracy_direct" r1(0.45) range_ap(220) range_he(220) range_heat(220))
+}

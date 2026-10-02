@@ -1,0 +1,62 @@
+{from "pattern bullet" ;IZH-43?
+	{tag "weapon rifle shotgun shotgun_double bullet to_hand shoot_walking_manual -shoot_walking"}
+	{filling "ammo shotgun" 2}
+	{entity "shotgun"}
+	{reloadSound "shotgun"}
+	{fireSound "smallarms/s2/d1/Shared/Shotgun/"}
+	{fireSoundclose "smallarms/s2/3p/Shared/Shotgun/"}
+
+	{inventory
+		{size 6 2}
+		{link_bone "gun_back"}
+		{weight 100}
+	}
+
+	{cursor "ironsights/rifle"}
+	{cursorReloading "carbine_reload"}
+
+	{curve "shotgun"}
+	("accuracy_shotgun")
+
+	{special} ;{throw_off_always}
+
+	{mass 5}
+
+	{traceFreq 0}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 50 50})))))
+(mod "gametype:battle_zones" {range 75 75})
+(mod "gametype:ammunition" {range 75 75})
+(mod "gametype:evacuation" {range 75 75})
+(mod "gametype:frontlines" {range 75 75})
+(mod "gametype:campaign_capture_the_flag" {range 75 75})
+
+	{RelaxationTime 0.25}
+	{SpreadTolerance 0.5}
+	{aimingTolerance 0.8}
+
+	("fire rate" rpm(100))
+	("reload time" seconds(3.5))
+	("velocity" mps(300))
+
+	{AccuracyByMotionK 0.5}
+
+	{burst
+		{short 1 0.1}		; burst shots on long distance, rand (+-)shots
+		{long 1 0.75}		; burst shots on short distance, rand (+-)shots
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {rangeKoef 0.25})))))
+(mod "gametype:battle_zones" {rangeKoef 0.166667})
+(mod "gametype:ammunition" {rangeKoef 0.166667})
+(mod "gametype:evacuation" {rangeKoef 0.166667})
+(mod "gametype:frontlines" {rangeKoef 0.166667})
+(mod "gametype:campaign_capture_the_flag" {rangeKoef 0.166667})	; rangeKoef * aimRange = max long burst distance
+	}
+
+	("human health" damage(100))
+	("recoil_shotgun")
+	("sway_rifle")
+
+	{calibre 8}
+}

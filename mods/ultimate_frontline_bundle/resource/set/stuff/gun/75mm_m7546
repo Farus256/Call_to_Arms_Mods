@@ -1,0 +1,37 @@
+;_________________________________________
+; semi-Long barreled italian medium AT gun
+;=========================================
+
+
+{from "75mm_pak40"			; L/46 "stug852i"
+	{filling "bulletger_75_l43"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm/"}
+	{fireSoundclose "cannon/s3/3p/Shared/Cannon_75to76mm/"}
+	{reloadSound "tank/1p/medium/"}
+
+	("reload time" seconds(10))
+
+	("velocity m/s" ap(792) apcr(990) he(550) heat(450))
+	("armor health custom" shell(apcbche) velocity(792) damage(200) filler(29))
+
+	{parameters "he"
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 200 200})))))
+(mod "gametype:battle_zones" {range 300 300})
+(mod "gametype:ammunition" {range 300 300})
+(mod "gametype:evacuation" {range 300 300})
+(mod "gametype:frontlines" {range 300 300})
+(mod "gametype:campaign_capture_the_flag" {range 300 300})
+	}
+	{parameters "he2"
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 200 200})))))
+(mod "gametype:battle_zones" {range 300 300})
+(mod "gametype:ammunition" {range 300 300})
+(mod "gametype:evacuation" {range 300 300})
+(mod "gametype:frontlines" {range 300 300})
+(mod "gametype:campaign_capture_the_flag" {range 300 300})
+	}
+
+	("accuracy_direct" r1(0.69) range_ap(200) range_he(200) range_heat(180))
+}

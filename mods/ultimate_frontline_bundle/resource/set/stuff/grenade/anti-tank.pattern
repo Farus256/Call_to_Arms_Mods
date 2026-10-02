@@ -1,0 +1,26 @@
+{from "pattern throwable"
+	{tag "at antitank_grenade"}
+	{inventory {size 3 2}}
+
+	{damage blastwave
+		{energy 1.15}
+		{area 5 7}
+		{ground_interaction_radius 0.1} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+
+	{throw
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 18.4})))))
+(mod "gametype:battle_zones" {range 21.16})
+(mod "gametype:ammunition" {range 21.16})
+(mod "gametype:evacuation" {range 21.16})
+(mod "gametype:frontlines" {range 21.16})
+(mod "gametype:campaign_capture_the_flag" {range 21.16})
+		{startAngle 45}
+		{Spreading 0.05
+			{SpreadPower 2}
+		}
+		{constantSpeed 14}
+	}
+	{possibleDamageRadius 1}
+}

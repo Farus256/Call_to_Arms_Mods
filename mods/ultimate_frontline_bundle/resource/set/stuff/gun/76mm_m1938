@@ -1,0 +1,47 @@
+;_________________________________________
+; USSR long-barreled AA gun
+;=========================================
+
+{from "pattern gun"			; L/55 "m1938 AA"
+	{filling "bulletrus_76_l55"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm/"}
+	{fireSoundclose "cannon/s3/3p/Shared/Cannon_75to76mm/"}
+	{reloadSound "utility/"}
+	("range_200")
+	{calibre 76.2}
+
+	("reload time" seconds(6))
+
+	("velocity m/s" ap(813) apcr(1) he(813) heat(1))
+	("armor health" damage(200))
+	("armor health custom" shell(apbc) damage(200) velocity(813) filler(0))
+	("armor health custom" shell(apcbc) damage(200) velocity(813) filler(0))
+	("armor health custom" shell(aphebc) damage(200) velocity(813) filler(119))
+	("76_rus_slope_multipliers")
+
+	; BR-361
+	("penetration_medium" shell(aphebc) range(200) a(102) b(93) c(82) d(73) e(65))  ;RHA
+
+	; BR-361SP
+	("penetration_medium" shell(apbc) range(200) a(118) b(108) c(96) d(86) e(77))  ;RHA
+
+	; 76 psa Vj4
+	("penetration_medium" shell(apcbc) range(200) a(149) b(138) c(125) d(113) e(103))  ;RHA 837m/s issued sometime in '42
+
+	; Shrapnel
+	;("penetration_medium" shell(sr) range(190) a(27) b(21) c(19) d(16) e(12)) ; Pen data for shrapnel shell 
+	{parameters "sr" 
+		("velocity" mps(813))
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 190 190})))))
+(mod "gametype:battle_zones" {range 285 285})
+(mod "gametype:ammunition" {range 285 285})
+(mod "gametype:evacuation" {range 285 285})
+(mod "gametype:frontlines" {range 285 285})
+(mod "gametype:campaign_capture_the_flag" {range 285 285})
+		("reload time" seconds(8))
+		{DisableRicochet}
+	}
+
+	("accuracy_direct_arrowhead" r1(0.69) range_ap(200) range_he(200) range_heat(200))
+}

@@ -1,0 +1,55 @@
+;_________________________________________
+; short barreled USSR infantry support gun
+;=========================================
+
+
+{from "76mm_kt26"			; L/16.5 "M1927"
+	{fireSoundclose "cannon/s3/3p/Shared/Cannon_75to76mm_LV/"}
+	{reloadSound "utility/"}
+	("reload time" seconds(6))
+	("range_170_howitzer")
+	("canister_shot_18")
+	
+	("velocity m/s" ap(387) apcr(1) he(262) heat(311))
+	("armor health" damage(200))
+	("armor health custom" shell(aphebc) velocity(387) damage(200) filler(155))
+	;("armor health custom" shell(sr) velocity(387) damage(200) filler(600))
+	
+	; BR-350A
+	("penetration_medium" shell(aphebc) range(170) a(34) b(31) c(28) d(26) e(24))
+
+	; BR-350B
+	("penetration_medium" shell(aphebc2) range(170) a(39) b(35) c(32) d(28) e(25))
+
+	; BP-350M
+	("penetration_medium" shell(heat) range(160) a(75) b(75) c(75) d(75) e(75))	; issued sometime in '43
+
+	; Shrapnel
+	;("penetration_medium" shell(sr) range(170) a(27) b(21) c(19) d(16) e(12)) ; Pen data for shrapnel shell 
+	{parameters "sr" 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 160 160})))))
+(mod "gametype:battle_zones" {range 240 240})
+(mod "gametype:ammunition" {range 240 240})
+(mod "gametype:evacuation" {range 240 240})
+(mod "gametype:frontlines" {range 240 240})
+(mod "gametype:campaign_capture_the_flag" {range 240 240})
+		("reload time" seconds(8))
+		{DisableRicochet}
+	}
+
+	; 76 psa - Vj4 (Finnish)
+	("penetration_medium" shell(apcbc) range(170) a(42) b(38) c(34) d(30) e(26))	; issued sometime in '42
+	{parameters "apcbc" ("velocity" mps(332))}
+
+	; 76 hkr 42-18/24-38 (Finnish)
+	("penetration_medium" shell(heatb) range(160) a(87) b(87) c(87) d(87) e(87))	; issued sometime in '44
+	{parameters "heatc" ("velocity" mps(335))}
+
+	; 76 hrk Vj 42/C-18/24-38 (Finnish)
+	("penetration_medium" shell(heatc) range(160) a(115) b(115) c(115) d(115) e(115))	; issued sometime in '44
+	{parameters "heatc" ("velocity" mps(335))}
+
+	("accuracy_spg" r1(2.40) range_ap(170) range_he(170) range_heat(160))
+	{unlimitedRangeTPC 0}   ;// restrict range in TPC/FPC
+}

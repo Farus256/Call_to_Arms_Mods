@@ -1,0 +1,21 @@
+{visions
+	(define "radius"
+		(mod "mp" ; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radius (* 1.0 %r)})))))
+(mod "gametype:battle_zones" {radius (* 1.35 %r)})
+(mod "gametype:ammunition" {radius (* 1.35 %r)})
+(mod "gametype:evacuation" {radius (* 1.35 %r)})
+(mod "gametype:frontlines" {radius (* 1.35 %r)})
+(mod "gametype:campaign_capture_the_flag" {radius (* 1.35 %r)}))		; // This value changes the global vision ranges of the game.
+		(mod not "mp" ; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radius (* 1.0 %r)})))))
+(mod "gametype:battle_zones" {radius (* 1.35 %r)})
+(mod "gametype:ammunition" {radius (* 1.35 %r)})
+(mod "gametype:evacuation" {radius (* 1.35 %r)})
+(mod "gametype:frontlines" {radius (* 1.35 %r)})
+(mod "gametype:campaign_capture_the_flag" {radius (* 1.35 %r)}))  ; // This value changes the global vision ranges of the game.
+	)
+	(include "spotting.inc")
+	(include "hearing.inc")
+	(include "vision_fields.inc")
+}

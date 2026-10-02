@@ -1,0 +1,53 @@
+;_________________________________________
+; ARTY - Russian medium howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/22 "m30"
+	{filling "bulletrus_122_l22"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{reloadSound "utility/"}
+	("medium_artillery")
+	{calibre 122}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 365 365})))))
+(mod "gametype:battle_zones" {range 547.5 547.5})
+(mod "gametype:ammunition" {range 547.5 547.5})
+(mod "gametype:evacuation" {range 547.5 547.5})
+(mod "gametype:frontlines" {range 547.5 547.5})
+(mod "gametype:campaign_capture_the_flag" {range 547.5 547.5}) ; // 11.8km
+
+	("reload time" seconds(20))
+
+	("velocity m/s" ap(1) apcr(1) he(199) heat(335)) ; // Real HE 515m/s
+	("armor health" damage(320))
+	;("armor health custom" shell(sr) velocity(515) damage(320) filler(660))
+	("122_rus_slope_multipliers")
+
+	; BP-460A
+	("penetration_medium" shell(heat) range(180) a(120) b(120) c(120) d(120) e(120))
+
+	; SH-460
+	;("penetration_medium" shell(sr) range(365) a(37) b(31) c(29) d(26) e(22)) ; Pen data for shrapnel shell 
+	{parameters "sr" 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 325 325})))))
+(mod "gametype:battle_zones" {range 487.5 487.5})
+(mod "gametype:ammunition" {range 487.5 487.5})
+(mod "gametype:evacuation" {range 487.5 487.5})
+(mod "gametype:frontlines" {range 487.5 487.5})
+(mod "gametype:campaign_capture_the_flag" {range 487.5 487.5})
+		("reload time" seconds(25))
+		{DisableRicochet}
+	}
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.20) 				; // Accuracy radius for direct-fire munitions
+		r2(9) 					; // Accuracy radius for indirect fire
+		rmax(22) 				; // Accuracy radius for indirect fire at maximum range
+		range_ap(190) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(180) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(365)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

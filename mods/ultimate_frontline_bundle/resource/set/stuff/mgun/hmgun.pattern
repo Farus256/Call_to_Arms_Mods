@@ -1,0 +1,64 @@
+{from "pattern bullet"
+	{tag "weapon hmg_shell mgun bullet to_hand mountable -shoot_walking shoot_walking_manual auto_eject itemin2hands"}
+	{inventory
+		{size 7 2}
+		{link_bone "gun_back"}
+		{weight 100}
+	}
+
+	{traceFreq 5}
+
+	{Automatic}
+
+	{foresight "foresight14"}
+	{cursor "ironsights/aa"}
+	{cursorReloading "gun_ap"}
+	{parameters "api"
+		{cursorReloading "gun_api"}
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 140 140})))))
+(mod "gametype:battle_zones" {range 210 210})
+(mod "gametype:ammunition" {range 210 210})
+(mod "gametype:evacuation" {range 210 210})
+(mod "gametype:frontlines" {range 210 210})
+(mod "gametype:campaign_capture_the_flag" {range 210 210})
+
+	{curve "bullet_hmg"}
+
+	("burst_medium")
+	("spreading_medium")
+
+	{Spreading
+		{SpreadXYRatio 1.2}
+	}
+
+	("reload time" seconds(5))
+
+	;//{aimingTolerance 2}
+
+	("armor health" damage(13))
+	("human health" damage(180))
+
+	("accuracy_hmg")
+
+	("penetration" args 7 5 3 1 0)
+	{FiringTimeout 1.5 0.5}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+		{0.25 0.0}	;35m
+		{0.75 1.0}	;105m
+	})))))
+(mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+(mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+(mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+(mod "gametype:frontlines" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+(mod "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+	{SpreadTolerance 0.2}			;// AI needs to aim 20%
+	{thirdpersonparams inherit "human default"}
+
+	("recoil_hmg_medium")
+	("sway_mg")
+	("ap_12_slope_multiplier")
+}

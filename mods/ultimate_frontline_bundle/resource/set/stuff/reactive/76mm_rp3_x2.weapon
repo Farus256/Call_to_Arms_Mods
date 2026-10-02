@@ -1,0 +1,52 @@
+;_________________________________________
+; British Aerial Rocket Launcher
+;=========================================
+
+
+{from "pattern reactive"		; "sherman1c_tulip_hybrid"
+	{filling "ammo 76mm_rp3" 2}
+	{fillingVisible "rocket"}
+	{inventory {noView}}
+	{fireSound "reactive/d1/ENG/Land_Mattress/"}
+	{calibre 87} ;// AP shot caliber
+
+	{spreading
+		{SpreadXYRatio 3}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable
+			{0 0}
+			{179.999 2.75}
+			{180 50}
+		})))))
+(mod "gametype:battle_zones" {radiusTable {0 0} {179.999 2.75} {270 4.95} {270.01 50}})
+(mod "gametype:ammunition" {radiusTable {0 0} {179.999 2.75} {270 4.95} {270.01 50}})
+(mod "gametype:evacuation" {radiusTable {0 0} {179.999 2.75} {270 4.95} {270.01 50}})
+(mod "gametype:frontlines" {radiusTable {0 0} {179.999 2.75} {270 4.95} {270.01 50}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0} {179.999 2.75} {270 4.95} {270.01 50}})
+	}
+	{ZeroingAccuracy 0.75 0.60 0.50}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 180})))))
+(mod "gametype:battle_zones" {aimRange 270})
+(mod "gametype:ammunition" {aimRange 270})
+(mod "gametype:evacuation" {aimRange 270})
+(mod "gametype:frontlines" {aimRange 270})
+(mod "gametype:campaign_capture_the_flag" {aimRange 270})
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 180})))))
+(mod "gametype:battle_zones" {maxRange 270})
+(mod "gametype:ammunition" {maxRange 270})
+(mod "gametype:evacuation" {maxRange 270})
+(mod "gametype:frontlines" {maxRange 270})
+(mod "gametype:campaign_capture_the_flag" {maxRange 270})
+
+	("fire rate" rpm(60))
+	("reload time" seconds(60))
+	{speed (* 0.5 230)}
+
+	{unlimitedRangeTPC 0}	;// restrict range in TPC/FPC
+
+	{FalloffMeter 180}
+	{FalloffStrength 0.15}
+}

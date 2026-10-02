@@ -8,6 +8,7 @@ local protectedTags = {
     "bleeding", "_bleeding", "wounded_animation_playing",
     "bot_inf_flank_in_progress",
     "_ai_ap_grenade", "_ai_at_grenade", "_ai_smoke_grenade",
+    "_ufb_smoke_120m_actor", "_ufb_smoke_60m_actor", "_ufb_smoke_wirecutter_actor",
     "ai_close_inf", "_ai_wirecutter_in_action",
 }
 

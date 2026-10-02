@@ -1,0 +1,50 @@
+;_________________________________________
+; ARTY Russian medium howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/12.8 "122mm_m1910"
+	{filling "bullet_122x159"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{reloadSound "utility/"}
+	("medium_artillery")
+	{calibre 122}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 350 350})))))
+(mod "gametype:battle_zones" {range 525 525})
+(mod "gametype:ammunition" {range 525 525})
+(mod "gametype:evacuation" {range 525 525})
+(mod "gametype:frontlines" {range 525 525})
+(mod "gametype:campaign_capture_the_flag" {range 525 525}) ; // 8.9km
+
+	("reload time" seconds(20))
+	;("armor health custom" shell(sr) velocity(360) damage(320) filler(660))
+	("velocity m/s" ap(1) apcr(1) he(199) heat(1)) ; // Real HE 360m/s
+	("122_rus_slope_multipliers")
+
+	; Shrapnel
+	;("penetration_medium" shell(sr) range(350) a(37) b(31) c(29) d(26) e(22)) ; Pen data for shrapnel shell 
+	{parameters "sr" 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 315 315})))))
+(mod "gametype:battle_zones" {range 472.5 472.5})
+(mod "gametype:ammunition" {range 472.5 472.5})
+(mod "gametype:evacuation" {range 472.5 472.5})
+(mod "gametype:frontlines" {range 472.5 472.5})
+(mod "gametype:campaign_capture_the_flag" {range 472.5 472.5})
+		("reload time" seconds(25))
+		{DisableRicochet}
+	}
+
+
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.20) 				; // Accuracy radius for direct-fire munitions
+		r2(9) 					; // Accuracy radius for indirect fire
+		rmax(22) 				; // Accuracy radius for indirect fire at maximum range
+		range_ap(200) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(190) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(350)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

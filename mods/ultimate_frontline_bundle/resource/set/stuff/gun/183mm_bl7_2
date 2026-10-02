@@ -1,0 +1,33 @@
+;_________________________________________
+; ARTY - British heavy gun
+;=========================================
+
+
+{from "pattern gun"			; L/22.4 "183mm_bl7_2"
+	{filling "bulleteng_183"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 183}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 410 410})))))
+(mod "gametype:battle_zones" {range 615 615})
+(mod "gametype:ammunition" {range 615 615})
+(mod "gametype:evacuation" {range 615 615})
+(mod "gametype:frontlines" {range 615 615})
+(mod "gametype:campaign_capture_the_flag" {range 615 615}) ; // 15.5km
+
+	("reload time" seconds(60))
+
+	("velocity" mps(210)) ;// 517m/s
+
+	("accuracy_indirect"	; // Applies logic for accuracy of indirect weapons over 200m
+		r1(0.95)			; // Accuracy radius for direct-fire munitions
+		r2(9.47)			; // Accuracy radius for indirect fire
+		rmax(31.23)			; // Accuracy radius for indirect fire at maximum range
+		range_ap(210)		; // Range after which accuracy drops to prevent farshooting.
+		range_heat(210)		; // Range after which accuracy drops to prevent farshooting.
+		range_he(410)		; // Range after which accuracy drops to prevent farshooting.
+	)
+}

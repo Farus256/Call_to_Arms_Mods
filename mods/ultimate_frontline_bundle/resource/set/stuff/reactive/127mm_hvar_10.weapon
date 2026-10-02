@@ -1,0 +1,47 @@
+;_________________________________________
+; US Aerial Rocket Launcher
+;=========================================
+
+
+{from "pattern reactive"		; "P-47"
+	{tag "-gun"}
+	{filling "ammo 127mm_hvar" 10}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/rocket_burst/"}
+	{inventory {noView}}
+	{calibre 127}
+
+	{spreading
+		{SpreadRadius 4}
+		{SpreadXYRatio 5}
+		{SpreadYadjust 0.1}
+		{radiusFunction
+			1		0.1
+			300		1
+			400		2
+		}
+	}
+	
+	{Automatic}
+	{burst
+		{min 10}
+		{noaiming}
+	}
+
+	{parameters "aphe"
+		{projectileDamageTable {0 76} {300 76}}
+		{minimumDamageModifier 750}
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 1 300})))))
+(mod "gametype:battle_zones" {range 1.5 450})
+(mod "gametype:ammunition" {range 1.5 450})
+(mod "gametype:evacuation" {range 1.5 450})
+(mod "gametype:frontlines" {range 1.5 450})
+(mod "gametype:campaign_capture_the_flag" {range 1.5 450})
+	("fire rate" rpm(340))
+	("reload time" seconds(40))
+	("velocity" mps(420))
+	("aerial gravity")
+}

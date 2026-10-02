@@ -1,0 +1,29 @@
+{from "pattern rpg_weapon"
+	{tag "nokeep range_50"}
+	{inventory {size 7 1}}
+	{filling "ammo panzerfaust100" 1}
+	{fillingVisible "faustrocket"}
+	{entity "panzerfaust_100"}
+	{fireSound "reactive/d1/GER/Panzerfaust/"}
+	{fireSoundClose "reactive/3p/GER/Panzerfaust/"}
+	{calibre 100}
+	{mass 6.8}
+
+	{ammoLocked}
+
+	("velocity" mps(60))
+
+	{spreading 1.4}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 50 50})))))
+(mod "gametype:battle_zones" {range 75 75})
+(mod "gametype:ammunition" {range 75 75})
+(mod "gametype:evacuation" {range 75 75})
+(mod "gametype:frontlines" {range 75 75})
+(mod "gametype:campaign_capture_the_flag" {range 75 75})
+	{projectileDamageTable {51 200} {56 0}}
+	("armor health" damage(300))
+	("human health" damage(500))
+	("standard_slope")
+}

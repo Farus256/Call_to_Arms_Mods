@@ -1,0 +1,33 @@
+;_________________________________________
+; ARTY - US 8-inch(203mm) M1 howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/25 "203_m1"
+	{filling "bulletusa_203"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("super_heavy_artillery")
+	{calibre 203}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 425 425})))))
+(mod "gametype:battle_zones" {range 637.5 637.5})
+(mod "gametype:ammunition" {range 637.5 637.5})
+(mod "gametype:evacuation" {range 637.5 637.5})
+(mod "gametype:frontlines" {range 637.5 637.5})
+(mod "gametype:campaign_capture_the_flag" {range 637.5 637.5}) ; // 16.926km
+
+	("reload time" seconds(60))
+
+	("velocity" mps(214))
+	
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.20) 				; // Accuracy radius for direct-fire munitions
+		r2(12) 					; // Accuracy radius for indirect fire
+		rmax(36) 				; // Accuracy radius for indirect fire at maximum range
+		range_ap(200) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(200) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(425)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

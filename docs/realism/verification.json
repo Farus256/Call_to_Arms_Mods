@@ -1,0 +1,11 @@
+{
+  "checks": 5031,
+  "changedFiles": 259,
+  "weaponFilesAudited": 1085,
+  "scopedFiles": 255,
+  "limitations": [
+    "Native game loader and live battle not run at user request.",
+    "Gametype conditions evaluated structurally, not inside engine.",
+    "No measured FPS or animation playback results."
+  ]
+}

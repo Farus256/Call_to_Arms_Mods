@@ -1,0 +1,24 @@
+;_________________________________________
+; German Tank Flamethrower
+;=========================================
+
+{from "pattern flame_thrower"
+	{tag "gun"}
+	{entity "panzer2_flamm_L"}
+
+	("filling_tank" fuel(160))	;// Flamingo had 2 Fuel tanks and could hold 320 Liters
+	{mass 150}
+
+	{foresight "foresight1"}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 30 30})))))
+(mod "gametype:battle_zones" {range 36 36})
+(mod "gametype:ammunition" {range 36 36})
+(mod "gametype:evacuation" {range 36 36})
+(mod "gametype:frontlines" {range 36 36})
+(mod "gametype:campaign_capture_the_flag" {range 36 36})
+	{speed 40}
+
+	{rechargeTime 3.0}
+}

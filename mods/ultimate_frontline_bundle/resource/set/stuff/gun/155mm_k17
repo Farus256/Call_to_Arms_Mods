@@ -1,0 +1,34 @@
+;_________________________________________
+; ARTY - Finnish(french) heavy howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/32 "155mm_k17"
+	{filling "bullet_155_l32"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 155}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 400 400})))))
+(mod "gametype:battle_zones" {range 600 600})
+(mod "gametype:ammunition" {range 600 600})
+(mod "gametype:evacuation" {range 600 600})
+(mod "gametype:frontlines" {range 600 600})
+(mod "gametype:campaign_capture_the_flag" {range 600 600}) ; // 11.3km
+
+	("reload time" seconds(30))
+
+	("velocity m/s" ap(1) apcr(1) he(232) heat(1)) 	; // Real HE 655m/s
+	("armor health" damage(450))
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.0) 				; // Accuracy radius for direct-fire munitions
+		r2(7) 					; // Accuracy radius for indirect fire
+		rmax(32) 				; // Accuracy radius for indirect fire at maximum range
+		range_ap(200) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(200) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(400)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

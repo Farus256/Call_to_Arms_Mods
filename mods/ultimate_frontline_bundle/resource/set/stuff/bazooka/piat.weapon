@@ -1,0 +1,49 @@
+{from "pattern rpg_weapon"
+	{filling "ammo piat_bomb" 1}
+	{entity "piat"}
+	{tag "range_60"}
+	{fireSound "reactive/d1/ENG/PIAT/"}
+	{reloadsound "PIAT_reload"}
+	{calibre 83}
+	{mass 15}
+	{inventory {size 7 2}}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 60 60})))))
+(mod "gametype:battle_zones" {range 90 90})
+(mod "gametype:ammunition" {range 90 90})
+(mod "gametype:evacuation" {range 90 90})
+(mod "gametype:frontlines" {range 90 90})
+(mod "gametype:campaign_capture_the_flag" {range 90 90})
+
+	("velocity" mps(76))
+
+	("human health" damage(500))
+
+	{parameters "heat"			; Bomb Mk.IA
+		{cursorReloading "gun_heat"}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 60 60})))))
+(mod "gametype:battle_zones" {range 90 90})
+(mod "gametype:ammunition" {range 90 90})
+(mod "gametype:evacuation" {range 90 90})
+(mod "gametype:frontlines" {range 90 90})
+(mod "gametype:campaign_capture_the_flag" {range 90 90})
+		("penetration" args 80)
+		("armor health" damage(300))
+		("pointed_slope")
+	}
+	{parameters "heata"			; Bomb Mk.IV
+		{cursorReloading "gun_heat"}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 60 60})))))
+(mod "gametype:battle_zones" {range 90 90})
+(mod "gametype:ammunition" {range 90 90})
+(mod "gametype:evacuation" {range 90 90})
+(mod "gametype:frontlines" {range 90 90})
+(mod "gametype:campaign_capture_the_flag" {range 90 90})
+		("penetration" args 100)
+		("armor health" damage(300))
+		("standard_slope")
+	}
+}

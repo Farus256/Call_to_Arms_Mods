@@ -1,0 +1,34 @@
+;_________________________________________
+; ARTY Finnish(swedish) heavy field gun
+;=========================================
+
+
+{from "pattern gun"			; L/42 "105mm_k34"
+	{filling "bullet_105x764"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundClose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{reloadSound "utility/"}
+	("medium_artillery")
+	{calibre 105}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 420 420})))))
+(mod "gametype:battle_zones" {range 630 630})
+(mod "gametype:ammunition" {range 630 630})
+(mod "gametype:evacuation" {range 630 630})
+(mod "gametype:frontlines" {range 630 630})
+(mod "gametype:campaign_capture_the_flag" {range 630 630}) ; // 16,3km
+
+	("reload time" seconds(15))
+
+	("velocity m/s" ap(1) apcr(1) he(213) heat(1)) 		;// real HE 800m/s
+	("armor health" damage(310))
+
+	("accuracy_indirect"		; // Applies logic for accuracy of indirect weapons over 200m
+		r1(0.65) 				; // Accuracy radius for direct-fire munitions
+		r2(5.29) 				; // Accuracy radius for indirect fire
+		rmax(23.45) 			; // Accuracy radius for indirect fire at maximum range
+		range_ap(200) 			; // Range after which accuracy drops to prevent farshooting
+		range_heat(200) 		; // Range after which accuracy drops to prevent farshooting
+		range_he(420)			; // Range after which accuracy drops to prevent farshooting
+	)
+}

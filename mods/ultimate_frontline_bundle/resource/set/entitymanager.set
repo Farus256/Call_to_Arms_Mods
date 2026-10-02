@@ -5,8 +5,20 @@
 ;=============================================================================
 {entitymanager
 	{group "dead" actor dead
-		(mod "mp" 		{limit 9999})
-		(mod not "mp"	{limit 9999})
+		(mod "mp" 		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 4096})
+(mod "gametype:ammunition" {limit 4096})
+(mod "gametype:evacuation" {limit 4096})
+(mod "gametype:frontlines" {limit 4096})
+(mod "gametype:campaign_capture_the_flag" {limit 4096}))
+		(mod not "mp"	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 4096})
+(mod "gametype:ammunition" {limit 4096})
+(mod "gametype:evacuation" {limit 4096})
+(mod "gametype:frontlines" {limit 4096})
+(mod "gametype:campaign_capture_the_flag" {limit 4096}))
 		{remove dissolve}
 		{entity "human"}
 	}
@@ -22,8 +34,20 @@
 	}
 	; BM Mod limbs group - gore body parts
 	{group "limbs" gameentity
-		(mod "mp" 		{limit 9999})
-		(mod not "mp"	{limit 9999})
+		(mod "mp" 		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 1024})
+(mod "gametype:ammunition" {limit 1024})
+(mod "gametype:evacuation" {limit 1024})
+(mod "gametype:frontlines" {limit 1024})
+(mod "gametype:campaign_capture_the_flag" {limit 1024}))
+		(mod not "mp"	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 1024})
+(mod "gametype:ammunition" {limit 1024})
+(mod "gametype:evacuation" {limit 1024})
+(mod "gametype:frontlines" {limit 1024})
+(mod "gametype:campaign_capture_the_flag" {limit 1024}))
 		{remove dissolve}
 		{entity "human_part"}
 		{entity "flesh"}
@@ -38,15 +62,39 @@
 	}
 
 	{group "broken" gameentity
-		(mod "mp" 		{limit 9999})
-		(mod not "mp"	{limit 9999})
+		(mod "mp" 		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 4096})
+(mod "gametype:ammunition" {limit 4096})
+(mod "gametype:evacuation" {limit 4096})
+(mod "gametype:frontlines" {limit 4096})
+(mod "gametype:campaign_capture_the_flag" {limit 4096}))
+		(mod not "mp"	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 4096})
+(mod "gametype:ammunition" {limit 4096})
+(mod "gametype:evacuation" {limit 4096})
+(mod "gametype:frontlines" {limit 4096})
+(mod "gametype:campaign_capture_the_flag" {limit 4096}))
 		{remove dissolve}
 		{DeadVehicles}
 	}
 
 	{group "piece" gameentity
-		(mod "mp" 		{limit 9999})
-		(mod not "mp"	{limit 9999})
+		(mod "mp" 		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 4096})
+(mod "gametype:ammunition" {limit 4096})
+(mod "gametype:evacuation" {limit 4096})
+(mod "gametype:frontlines" {limit 4096})
+(mod "gametype:campaign_capture_the_flag" {limit 4096}))
+		(mod not "mp"	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 4096})
+(mod "gametype:ammunition" {limit 4096})
+(mod "gametype:evacuation" {limit 4096})
+(mod "gametype:frontlines" {limit 4096})
+(mod "gametype:campaign_capture_the_flag" {limit 4096}))
 		{remove dissolve}
 		{entity "piece_big_steel"}				;// cannon parts
 		{entity "piece_large_steel"}			;// tank turret, ship parts
@@ -55,8 +103,20 @@
 	}
 
 	{group "piece_large" gameentity
-		(mod "mp" 		{limit 9999})
-		(mod not "mp"	{limit 9999})
+		(mod "mp" 		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 2048})
+(mod "gametype:ammunition" {limit 2048})
+(mod "gametype:evacuation" {limit 2048})
+(mod "gametype:frontlines" {limit 2048})
+(mod "gametype:campaign_capture_the_flag" {limit 2048}))
+		(mod not "mp"	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 2048})
+(mod "gametype:ammunition" {limit 2048})
+(mod "gametype:evacuation" {limit 2048})
+(mod "gametype:frontlines" {limit 2048})
+(mod "gametype:campaign_capture_the_flag" {limit 2048}))
 		{remove dissolve}
 		{entity "building_part_concrete"}		;// parts
 		{entity "building_part_wood"}			;// parts
@@ -67,8 +127,20 @@
 	}
 
 	{group "piece_medium" gameentity
-		(mod "mp" 		{limit 9999})
-		(mod not "mp"	{limit 9999})
+		(mod "mp" 		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 1024})
+(mod "gametype:ammunition" {limit 1024})
+(mod "gametype:evacuation" {limit 1024})
+(mod "gametype:frontlines" {limit 1024})
+(mod "gametype:campaign_capture_the_flag" {limit 1024}))
+		(mod not "mp"	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 1024})
+(mod "gametype:ammunition" {limit 1024})
+(mod "gametype:evacuation" {limit 1024})
+(mod "gametype:frontlines" {limit 1024})
+(mod "gametype:campaign_capture_the_flag" {limit 1024}))
 		{remove dissolve}
 		{entity "piece_medium_concrete"}
 		{entity "piece_medium_ice"}
@@ -79,8 +151,20 @@
 	}
 
 	{group "piece_small" gameentity
-		(mod "mp" 		{limit 9999})
-		(mod not "mp"	{limit 9999})
+		(mod "mp" 		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 512})
+(mod "gametype:ammunition" {limit 512})
+(mod "gametype:evacuation" {limit 512})
+(mod "gametype:frontlines" {limit 512})
+(mod "gametype:campaign_capture_the_flag" {limit 512}))
+		(mod not "mp"	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {limit 9999})))))
+(mod "gametype:battle_zones" {limit 512})
+(mod "gametype:ammunition" {limit 512})
+(mod "gametype:evacuation" {limit 512})
+(mod "gametype:frontlines" {limit 512})
+(mod "gametype:campaign_capture_the_flag" {limit 512}))
 		{remove dissolve}
 		{entity "piece_small_concrete"}
 		{entity "piece_small_ice"}

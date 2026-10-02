@@ -1,0 +1,48 @@
+;_________________________________________
+; short barreled USSR tank gun
+;=========================================
+
+
+{from "pattern gun"			; L/16.5 "bt7a" "t28"
+	{filling "bulletrus_76"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm_LV/"}
+	{fireSoundclose "cannon/s2/1p/Shared/"}
+	{reloadSound "tank/1p/medium/"}
+	("range_170_howitzer")
+	{calibre 76.2}
+	("canister_shot_18")
+	("reload time" seconds(7))
+
+	("velocity m/s" ap(370) apcr(1) he(390) heat(290))
+	("armor health" damage(200))
+	("armor health custom" shell(aphebc) velocity(370) damage(250) filler(85))
+	;("armor health custom" shell(sr) velocity(280) damage(250) filler(85))
+	("76_rus_slope_multipliers")
+
+	; BR-350A
+	("penetration_medium" shell(aphebc) range(170) a(34) b(31) c(28) d(26) e(24))
+
+	; BR-350B
+	("penetration_medium" shell(aphebc2) range(170) a(39) b(35) c(32) d(28) e(25))
+
+	; SH-353
+	;("penetration_medium" shell(sr) range(170) a(27) b(21) c(19) d(16) e(12)) ; Pen data for shrapnel shell 
+	{parameters "sr" 
+		("velocity" mps(280))
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 160 160})))))
+(mod "gametype:battle_zones" {range 240 240})
+(mod "gametype:ammunition" {range 240 240})
+(mod "gametype:evacuation" {range 240 240})
+(mod "gametype:frontlines" {range 240 240})
+(mod "gametype:campaign_capture_the_flag" {range 240 240})
+		("reload time" seconds(9))
+		{DisableRicochet}
+	}
+	
+	; BP-350A
+	("penetration_medium" shell(heat) range(170) a(75) b(75) c(75) d(75) e(75))	; issued sometime in '43
+
+
+	("accuracy_direct" r1(1.10) range_ap(170) range_he(170) range_heat(170))
+}

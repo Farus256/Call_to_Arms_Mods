@@ -1,0 +1,58 @@
+(include "\set\blast.inc")
+
+(define "velocity"			;// muzzle velocity in meters per second
+	{speed (* 0.35 %mps)}
+)
+
+(define "fire rate"			;// rate of fire in rounds per minute 
+	{recoveryTime (/ 60 %rpm)}
+)
+
+(define "reload time"		;// reload time for magazine or shell
+	{rechargeTime %seconds}
+)
+
+(define "default gravity"	;// default gravity setting
+	{gravity 2}
+)
+
+(define "aerial gravity"	;// default gravity setting
+	{gravity 1}
+)
+
+(define "rocket_artillery"
+	{fillingVisible "rocket"}
+	{inventory {noView}}
+	{gravity 4}
+
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable
+			{0 0}
+			{100 10}
+			{200 20}
+			{299.99 50}
+			{300 100}
+			{320 200}
+		})))))
+(mod "gametype:battle_zones" {radiusTable {0 0} {100 10} {200 20} {299.99 50} {300 100} {320 200} {480 360}})
+(mod "gametype:ammunition" {radiusTable {0 0} {100 10} {200 20} {299.99 50} {300 100} {320 200} {480 360}})
+(mod "gametype:evacuation" {radiusTable {0 0} {100 10} {200 20} {299.99 50} {300 100} {320 200} {480 360}})
+(mod "gametype:frontlines" {radiusTable {0 0} {100 10} {200 20} {299.99 50} {300 100} {320 200} {480 360}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0} {100 10} {200 20} {299.99 50} {300 100} {320 200} {480 360}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 300 300})))))
+(mod "gametype:battle_zones" {range 450 450})
+(mod "gametype:ammunition" {range 450 450})
+(mod "gametype:evacuation" {range 450 450})
+(mod "gametype:frontlines" {range 450 450})
+(mod "gametype:campaign_capture_the_flag" {range 450 450})
+	("fire rate" rpm(60))
+	("reload time" seconds(120))
+)
+
+(define "armor health"
+	{minimumDamageModifier (* 1.0 %damage)}
+)

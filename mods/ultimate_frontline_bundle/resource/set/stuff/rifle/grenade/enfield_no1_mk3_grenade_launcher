@@ -1,0 +1,38 @@
+{from "pattern rifle_grenade"
+	{tag "at_rifle" "ap"}
+	{entity "lee_enfield_no1_mk3_grenade"}
+	{filling "ammo eng_grenade" 1}
+	{fillingVisible "grenade"}
+	{fireSound	"smallarms/s3/d1/eng/SMLE_No1_MkIII/Cup_Discharger/"}
+	{fireSoundclose "smallarms/s3/3p/eng/SMLE_No1_MkIII/Cup_Discharger/"}
+	{reloadSound "kar98"}
+	{calibre 64}
+	{mass 6.3}
+	{parameters "he" ; No.36
+		{cursor "ironsights/grenade"}
+		{cursorReloading "gun_he"}
+		{spreading 4.5
+			{SpreadXYRatio 0.75}
+		}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 80 80})))))
+(mod "gametype:battle_zones" {range 120 120})
+(mod "gametype:ammunition" {range 120 120})
+(mod "gametype:evacuation" {range 120 120})
+(mod "gametype:frontlines" {range 120 120})
+(mod "gametype:campaign_capture_the_flag" {range 120 120})	;//180m
+	}
+
+	{parameters "heat" ; No.68/AT
+		{cursorReloading "gun_heat"}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 60 60})))))
+(mod "gametype:battle_zones" {range 90 90})
+(mod "gametype:ammunition" {range 90 90})
+(mod "gametype:evacuation" {range 90 90})
+(mod "gametype:frontlines" {range 90 90})
+(mod "gametype:campaign_capture_the_flag" {range 90 90})
+		("penetration" args 52)
+		("armor health" damage(150))
+	}
+}

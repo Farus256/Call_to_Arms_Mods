@@ -1,0 +1,46 @@
+;_________________________________________
+;=========================================
+
+
+{from "pattern gun"			
+	{filling "bulletrus_152"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 152.4}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 340 340})))))
+(mod "gametype:battle_zones" {range 510 510})
+(mod "gametype:ammunition" {range 510 510})
+(mod "gametype:evacuation" {range 510 510})
+(mod "gametype:frontlines" {range 510 510})
+(mod "gametype:campaign_capture_the_flag" {range 510 510}) ; // 8.5km
+
+	("reload time" seconds(30))
+
+	("velocity m/s" ap(1) apcr(1) he(198) heat(1)) 	; // Real HE 398m/s
+	("armor health" damage(450))
+
+	{parameters "sr" 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 310 310})))))
+(mod "gametype:battle_zones" {range 465 465})
+(mod "gametype:ammunition" {range 465 465})
+(mod "gametype:evacuation" {range 465 465})
+(mod "gametype:frontlines" {range 465 465})
+(mod "gametype:campaign_capture_the_flag" {range 465 465})
+		("reload time" seconds(35))
+		{DisableRicochet}
+	}
+
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.1) 				; // Accuracy radius for direct-fire munitions
+		r2(6.5) 					; // Accuracy radius for indirect fire
+		rmax(21) 				; // Accuracy radius for indirect fire at maximum range
+		range_ap(190) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(190) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(340)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

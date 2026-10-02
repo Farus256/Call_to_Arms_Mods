@@ -1,0 +1,25 @@
+{from "pattern at_rifle"
+	{tag "auto_eject"}
+	{filling "ammo atrifle_rus" 5}
+	{entity "ptrs"}
+	{fireSound "smallarms/s4/d1/RUS/PTR/"}
+	{fireSoundclose "smallarms/s4/3p/RUS/PTR/"}
+	{reloadSound "ptrd"}
+	{calibre 14.5}
+	{mass 17.3}
+
+	("penetration" args 43 40 35)
+	("fire rate" rpm(50))
+	("velocity" mps(1013))
+	{FiringTimeout 2.75 0.5}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+		{0.3 0.6}	;36m, 1.65s
+		{0.8 1.0}	;96m, 2.75s
+	})))))
+(mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.2 0.6} {0.533333 1.0}})
+(mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.2 0.6} {0.533333 1.0}})
+(mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.2 0.6} {0.533333 1.0}})
+(mod "gametype:frontlines" {FiringTimeoutDistanceFactor {0.2 0.6} {0.533333 1.0}})
+(mod "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor {0.2 0.6} {0.533333 1.0}})
+}

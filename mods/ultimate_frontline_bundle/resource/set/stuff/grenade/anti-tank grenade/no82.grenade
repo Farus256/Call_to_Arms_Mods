@@ -1,0 +1,29 @@
+{from "pattern anti-tank"
+	{entity "no82"}
+	{tag "size2"}	; Explosive Filling 		= ~0.5 kg
+	{mass 0.9}
+	{inventory {size 1 1}}
+
+	{damage blastwave
+		{energy 3.1}
+		{area 0.25 0.35}
+		{ground_interaction_radius 0}
+	}
+
+	{damage add blastwave
+		{energy 1.0}
+		{area 4.5 6}
+		{ground_interaction_radius 0.05} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+
+	{throw
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 20.7})))))
+(mod "gametype:battle_zones" {range 23.805})
+(mod "gametype:ammunition" {range 23.805})
+(mod "gametype:evacuation" {range 23.805})
+(mod "gametype:frontlines" {range 23.805})
+(mod "gametype:campaign_capture_the_flag" {range 23.805}) ;in-game 22m
+		{constantSpeed 14.5}
+	}
+}

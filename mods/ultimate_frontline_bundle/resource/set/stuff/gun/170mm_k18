@@ -1,0 +1,33 @@
+;_________________________________________
+; ARTY - German heavy gun
+;=========================================
+
+
+{from "pattern gun"			; L/50 "170mm_k18"
+	{filling "bulletger_170"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 170}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 520 520})))))
+(mod "gametype:battle_zones" {range 780 780})
+(mod "gametype:ammunition" {range 780 780})
+(mod "gametype:evacuation" {range 780 780})
+(mod "gametype:frontlines" {range 780 780})
+(mod "gametype:campaign_capture_the_flag" {range 780 780}) ; // 29.6km (575m)
+
+	("reload time" seconds(45))
+
+	("velocity m/s" ap(830) apcr(1) he(238) heat(1))	; // historical velocity (830)(1)(925)(1)
+
+	("accuracy_indirect"	; // Applies logic for accuracy of indirect weapons over 200m
+		r1(0.9)				; // Accuracy radius for direct-fire munitions
+		r2(6)				; // Accuracy radius for indirect fire
+		rmax(32)			; // Accuracy radius for indirect fire at maximum range (adjusted for rmax(35) at 575m)
+		range_ap(210)		; // Range after which accuracy drops to prevent farshooting.
+		range_heat(210)		; // Range after which accuracy drops to prevent farshooting.
+		range_he(520)		; // Range after which accuracy drops to prevent farshooting.
+	)
+}

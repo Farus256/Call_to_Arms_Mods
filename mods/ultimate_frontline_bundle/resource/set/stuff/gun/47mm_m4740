@@ -1,0 +1,37 @@
+;_________________________________________
+; Italian light AT cannon
+;=========================================
+
+
+{from "pattern gun"			; L/40 "pz738i"
+
+	{filling "bulletita_47"}
+	{fireSound "cannon/s2/d1/Shared/Cannon_45to47mm/"}
+	{fireSoundclose "cannon/s2/3p/Shared/Cannon_45to47mm/"}
+	{reloadSound "utility/"}
+	("range_170")
+	{calibre 47}
+
+	("reload time" seconds(5))
+
+	("velocity m/s" ap(829) apcr(1) he(364) heat(1))
+	("armor health" damage(125))
+	("armor health custom" shell(aphe) damage(125) velocity(829) filler(30))
+	("57_slope_multipliers")
+
+	; Granata perforante mod.39
+	("penetration_medium" shell(aphe) range(170) a(61) b(57) c(46) d(39) e(33))
+
+
+	{parameters "he"
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 170 170})))))
+(mod "gametype:battle_zones" {range 255 255})
+(mod "gametype:ammunition" {range 255 255})
+(mod "gametype:evacuation" {range 255 255})
+(mod "gametype:frontlines" {range 255 255})
+(mod "gametype:campaign_capture_the_flag" {range 255 255})
+	}
+
+	("accuracy_direct" r1(1.0) range_ap(170) range_he(170) range_heat(160))
+}

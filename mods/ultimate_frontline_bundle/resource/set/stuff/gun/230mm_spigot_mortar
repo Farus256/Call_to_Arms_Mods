@@ -1,0 +1,43 @@
+;_________________________________________
+; British support gun
+;=========================================
+
+
+{from "pattern gun"			; , "churchill_avre"
+	{filling "bulleteng_230"}
+	{fireSound "reactive/d1/ENG/230mm_Petard/"}
+	{fireSoundclose "cannon/s1/1p/Shared/Cannon_37to40mm/"}
+	{fillingVisible "shell"}
+	{calibre 230}
+
+	("direct_settings")
+	("reload time" seconds(15))
+	("velocity" mps(70))
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 100 100})))))
+(mod "gametype:battle_zones" {range 150 150})
+(mod "gametype:ammunition" {range 150 150})
+(mod "gametype:evacuation" {range 150 150})
+(mod "gametype:frontlines" {range 150 150})
+(mod "gametype:campaign_capture_the_flag" {range 150 150})
+	{gravity 1}
+	{spreading		;// equal to ("accuracy_spg" r1(2.0)) || {50 (* 1.5 (* 2.0 0.5))} {100 (* 2.75 (* 2.0 0.5))}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable
+			{0 0}
+			{50 1.5}
+			{99.99 2.75}
+			{100 20}
+		})))))
+(mod "gametype:battle_zones" {radiusTable {0 0} {50 1.5} {99.99 2.75} {150 4.95} {150.01 20}})
+(mod "gametype:ammunition" {radiusTable {0 0} {50 1.5} {99.99 2.75} {150 4.95} {150.01 20}})
+(mod "gametype:evacuation" {radiusTable {0 0} {50 1.5} {99.99 2.75} {150 4.95} {150.01 20}})
+(mod "gametype:frontlines" {radiusTable {0 0} {50 1.5} {99.99 2.75} {150 4.95} {150.01 20}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0} {50 1.5} {99.99 2.75} {150 4.95} {150.01 20}})
+	}
+	{FalloffMeter 100}
+	{FalloffStrength 0.15}
+	{DisableRicochet}
+	{unlimitedRangeTPC 0}	;// restrict range in TPC/FPC
+}

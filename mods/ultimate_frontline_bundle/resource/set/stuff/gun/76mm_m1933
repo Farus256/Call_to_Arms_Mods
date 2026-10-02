@@ -1,0 +1,36 @@
+;_________________________________________
+; USSR long-barreled early medium Gun
+;=========================================
+
+{from "76mm_f22"			; L/50.3 "m1933"
+	("velocity m/s" ap(710) apcr(1020) he(706) heat(1))
+
+	("reload time" seconds(8.5))
+
+	; BR-350A
+	("penetration_medium" shell(aphebc) range(190) a(84) b(74) c(65) d(58) e(53))  ;RHA
+
+	; BR-350B
+	("penetration_medium" shell(aphebc2) range(190) a(93) b(84) c(73) d(65) e(59))  ;RHA
+
+	; BR-350P  ; only issued to ZiS-5 & F-34 guns; theoretical performance
+	("penetration_medium" shell(apcr) range(190) a(143) b(104) c(69) d(46) e(31))	; issued in Oct. '43. 8 rounds per vehicle where the Germans were expected to attack. Spring '44 all vehicles had at least 4 rounds.
+
+	; Shrapnel
+	;("penetration_medium" shell(sr) range(190) a(27) b(21) c(19) d(16) e(12)) ; Pen data for shrapnel shell 
+	{parameters "sr" 
+		("velocity" mps(645))
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 180 180})))))
+(mod "gametype:battle_zones" {range 270 270})
+(mod "gametype:ammunition" {range 270 270})
+(mod "gametype:evacuation" {range 270 270})
+(mod "gametype:frontlines" {range 270 270})
+(mod "gametype:campaign_capture_the_flag" {range 270 270})
+		("reload time" seconds(10.5))
+		{DisableRicochet}
+	}
+
+
+	("accuracy_direct_arrowhead" r1(1.25) range_ap(190) range_he(190) range_heat(170))
+}

@@ -1,0 +1,39 @@
+{from "pattern anti-tank"
+	{entity "rg14_bundle"}
+	{tag "size4"}		; Explosive Filling 		= 0.3 kg
+				; Explosive Filling Total, x5 	= 1.5kg of TNT
+	{mass 3.5}
+	{damage blastwave
+		{energy 7.0}
+		{area 0.25 0.35}
+		{ground_interaction_radius 0}
+	}
+
+	{damage add blastwave
+		{energy 1.25}
+		{area 1 2}
+		{ground_interaction_radius 0.25}
+	}
+
+	{damage add blastwave
+		{energy 1.0}
+		{area 4.5 6}
+		{ground_interaction_radius 0} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+
+	{throw
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 19.7})))))
+(mod "gametype:battle_zones" {range 22.655})
+(mod "gametype:ammunition" {range 22.655})
+(mod "gametype:evacuation" {range 22.655})
+(mod "gametype:frontlines" {range 22.655})
+(mod "gametype:campaign_capture_the_flag" {range 22.655})  ;in-game 21m
+	}
+	
+	{special
+		{PrepareTime 3.6}
+		{PrepareCursor "grenade"}
+		{mode detonate}
+	}
+}

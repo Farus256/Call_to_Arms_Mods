@@ -1,0 +1,35 @@
+;_________________________________________
+; ARTY - British heavy howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/13.3 "152mm_bl6_26cwt"
+	{filling "bulleteng_152"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 152}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 350 350})))))
+(mod "gametype:battle_zones" {range 525 525})
+(mod "gametype:ammunition" {range 525 525})
+(mod "gametype:evacuation" {range 525 525})
+(mod "gametype:frontlines" {range 525 525})
+(mod "gametype:campaign_capture_the_flag" {range 525 525}) ; // 10.4km
+
+	("reload time" seconds(30))
+
+	("velocity" mps(195)) ;// 430m/s
+
+	("armor health" damage(450))
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.0) 				; // Accuracy radius for direct-fire munitions
+		r2(6.71) 				; // Accuracy radius for indirect fire
+		rmax(22.43) 			; // Accuracy radius for indirect fire at maximum range
+		range_ap(200) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(200) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(350)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

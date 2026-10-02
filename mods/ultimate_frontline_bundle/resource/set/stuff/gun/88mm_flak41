@@ -1,0 +1,51 @@
+;_________________________________________
+; German Heavy long-barreled AA/AT Gun
+;=========================================
+
+
+{from "pattern gun"			; L/71 "88mm_flak41"
+	{filling "bulletger_88_l71_flak"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm_HV/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_85to100mm_HV/"}
+	{reloadSound "utility/"}
+	("range_220")
+	{calibre 88}
+	
+	("heavy_aa")
+
+	("reload time" seconds(6))
+
+	("velocity m/s" ap(980) apcr(1125) he(750) heat(600))
+	("armor health" damage(240))
+	("armor health custom" shell(apcbche) damage(240) velocity(980) filler(102))
+	("88_ger_slope_multipliers")
+
+	; Pzgr.39
+	("penetration_long" shell(apcbche) range(220) a(224) b(204) c(183) d(164) e(147))
+
+	; Pzgr.40
+	("penetration_long" shell(apcr) range(220) a(274) b(249) c(222) d(197) e(176))
+	{parameters "apcr" ; Pzgr.40
+		("large_apcr_slope_multiplier")
+	}
+
+	; Gr.39 Hl
+	("penetration_long" shell(heat) range(210) a(110) b(110) c(110) d(110) e(110))
+
+	{parameters "he"
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 210 210})))))
+(mod "gametype:battle_zones" {range 315 315})
+(mod "gametype:ammunition" {range 315 315})
+(mod "gametype:evacuation" {range 315 315})
+(mod "gametype:frontlines" {range 315 315})
+(mod "gametype:campaign_capture_the_flag" {range 315 315})
+	}
+
+	("accuracy_direct" r1(0.50) range_ap(220) range_he(210) range_heat(210))
+
+	{parameters "he"
+		(mod "mp" {unlimitedRangeTPC 1})	;// unrestricts range in TPC/FPC for shooting at aircraft
+		{FalloffStrength 0}
+	}
+}

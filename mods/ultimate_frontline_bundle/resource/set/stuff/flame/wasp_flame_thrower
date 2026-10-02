@@ -1,0 +1,21 @@
+;_________________________________________
+; British Tank Flamethrower
+;=========================================
+
+{from "pattern flame_thrower"	;// Universal Carrier (Wasp) Flamethrower
+	{tag "gun"}
+	{entity "croc_flame_thrower"}
+	("filling_tank" fuel(10))	;// Fuel tank 75 imp gallons (~340L)
+	{mass 150}
+
+	{foresight "foresight1"}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 70 70})))))
+(mod "gametype:battle_zones" {range 84 84})
+(mod "gametype:ammunition" {range 84 84})
+(mod "gametype:evacuation" {range 84 84})
+(mod "gametype:frontlines" {range 84 84})
+(mod "gametype:campaign_capture_the_flag" {range 84 84})	;// irl 80-100yds
+	{speed 40}
+}

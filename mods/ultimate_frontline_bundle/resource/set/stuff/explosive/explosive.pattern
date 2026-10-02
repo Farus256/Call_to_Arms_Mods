@@ -1,0 +1,34 @@
+{from "pattern throwable"
+	{tag "smallitemin1hand grenade dynamite at size4 distributable"}
+	{mass 3}
+
+	{damage blastwave
+		{energy 15}
+		{area 3 8}
+		{ground_interaction_radius 0.15}
+	}
+	{damage add blastwave
+		{energy 1.7}
+		{area 8 12}
+		{ground_interaction_radius 0} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+
+	{special
+		{PrepareTime 8}
+		{PrepareCursor "grenade"}
+		{mode detonate}
+	}
+
+	{throw
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 6.2})))))
+(mod "gametype:battle_zones" {range 7.13})
+(mod "gametype:ammunition" {range 7.13})
+(mod "gametype:evacuation" {range 7.13})
+(mod "gametype:frontlines" {range 7.13})
+(mod "gametype:campaign_capture_the_flag" {range 7.13}) ;in-game 7m
+		{startAngle 60}
+	}
+
+	{possibleDamageRadius 1}
+}

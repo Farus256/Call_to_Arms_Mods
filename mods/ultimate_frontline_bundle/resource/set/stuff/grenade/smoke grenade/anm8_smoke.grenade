@@ -1,0 +1,16 @@
+{from "pattern smoke"
+	{tag "smoke"}
+	{inventory {size 2 1}}
+	{entity "anm8_smoke"}
+	{mass 0.680}
+
+	{throw
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 21.7})))))
+(mod "gametype:battle_zones" {range 24.955})
+(mod "gametype:ammunition" {range 24.955})
+(mod "gametype:evacuation" {range 24.955})
+(mod "gametype:frontlines" {range 24.955})
+(mod "gametype:campaign_capture_the_flag" {range 24.955})  ;in-game 23m
+	}
+}

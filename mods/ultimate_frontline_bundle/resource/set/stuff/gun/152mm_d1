@@ -1,0 +1,57 @@
+;_________________________________________
+; ARTY - Russian heavy howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/24.6 "d1"
+	{filling "bulletrus_152_l24"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 152}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 390 390})))))
+(mod "gametype:battle_zones" {range 585 585})
+(mod "gametype:ammunition" {range 585 585})
+(mod "gametype:evacuation" {range 585 585})
+(mod "gametype:frontlines" {range 585 585})
+(mod "gametype:campaign_capture_the_flag" {range 585 585})
+
+	("reload time" seconds(30))
+
+	("velocity m/s" ap(600) apcr(1) he(201) heat(1))
+	("armor health" damage(450))
+	("armor health custom" shell(aphe) damage(450) velocity(600) filler(660))
+	("armor health custom" shell(aphebc) damage(450) velocity(600) filler(480))
+	("152_rus_slope_multipliers")
+
+	; BR-540
+	("penetration_medium" shell(aphe) range(200) a(165) b(152) c(137) d(124) e(111))  ;RHA
+
+	; BR-540B ;issued July. 1944 or possible earlier
+	("penetration_medium" shell(aphebc) range(200) a(140) b(134) c(127) d(120) e(113))  ;RHA
+
+	; Shrapnel
+	;("penetration_medium" shell(sr) range(430) a(37) b(31) c(29) d(26) e(22)) ; Pen data for shrapnel shell 
+	{parameters "sr" 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 350 350})))))
+(mod "gametype:battle_zones" {range 525 525})
+(mod "gametype:ammunition" {range 525 525})
+(mod "gametype:evacuation" {range 525 525})
+(mod "gametype:frontlines" {range 525 525})
+(mod "gametype:campaign_capture_the_flag" {range 525 525})
+		("reload time" seconds(35))
+		{DisableRicochet}
+	}
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(0.95) 				; // Accuracy radius for direct-fire munitions
+		r2(8.25) 					; // Accuracy radius for indirect fire
+		rmax(27) 				; // Accuracy radius for indirect fire at maximum range
+		range_ap(190) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(190) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(390)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

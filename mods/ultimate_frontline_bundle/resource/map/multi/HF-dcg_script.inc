@@ -5880,7 +5880,7 @@
 									}
 								}
 							}
-							{distance 320}
+							{distance 480}
 						}
 						{"2.entities"
 							{selector
@@ -6161,7 +6161,7 @@
 									}
 								}
 							}
-							{distance 260}
+							{distance 390}
 						}
 						{"2.entities"
 							{selector
@@ -6421,7 +6421,7 @@
 									}
 								}
 							}
-							{distance 405}
+							{distance 607.5}
 						}
 						{"2.entities"
 							{selector
@@ -6671,7 +6671,7 @@
 									}
 								}
 							}
-							{distance 310}
+							{distance 465}
 						}
 					}
 				}
@@ -7183,7 +7183,7 @@
 									}
 								}
 							}
-							{distance 250}
+							{distance 375}
 						}
 					}
 				}
@@ -7671,7 +7671,7 @@
 									}
 								}
 							}
-							{distance 400}
+							{distance 600}
 						}
 					}
 				}
@@ -8510,6 +8510,8 @@
 {tag {tag ecrew}}
 {tag {tag ecrew_a}}
 {tag {tag ecrew_b}}
+
+{tag {tag _ai_medic_work}}
 }
 								}
 								{sort
@@ -9414,6 +9416,10 @@
 {tag {tag _lua_ignore}}
 {tag {tag bot_arty}}
 {tag {tag bot_aa_guard}}
+
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
 }
 								}
 							}
@@ -9652,6 +9658,10 @@
 {tag {tag _lua_ignore}}
 {tag {tag bot_arty}}
 {tag {tag bot_aa_guard}}
+
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
 }
 								}
 							}
@@ -9890,7 +9900,7 @@
 									
 {tag {tag _ai_ap_grenade}}
 {tag {tag _ai_at_grenade}}
-{tag {tag _ai_smoke_grenade}}
+{tag {tag _ufb_smoke_120m_actor}}
 {tag {tag ai_close_inf}}
 {tag {tag _ai_wirecutter_in_action}}
 {tag {tag bot_inf_flank_in_progress}}
@@ -9905,6 +9915,10 @@
 {tag {tag ecrew_a}}
 {tag {tag ecrew_b}}
 {prop {prop crew}}
+
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
 }
 								}
 							}
@@ -9952,7 +9966,11 @@
 										{prop
 											{prop airborne}
 										}
-									}
+									
+{tag {tag _ufb_smoke_120m_target}}
+{tag {tag _ufb_smoke_60m_target}}
+{tag {tag _ufb_smoke_wirecutter_target}}
+}
 								}
 							}
 							{distance
@@ -9960,11 +9978,11 @@
 								{min 65}
 								{max 120}
 							}
-							{detection located}
+							{detection visible}
 							{tag
 								{"tag pair"}
-								{"for selector" _ai_smoke_grenade}
-								{"for enemy" _ai_smoke_target}
+								{"for selector" _ufb_smoke_120m_actor}
+								{"for enemy" _ufb_smoke_120m_target}
 							}
 						}
 					}
@@ -9979,7 +9997,7 @@
 							{group
 								{select
 									{tag
-										{tag _ai_smoke_grenade}
+										{tag _ufb_smoke_120m_actor}
 									}
 								}
 								{exclude
@@ -10006,7 +10024,7 @@
 						{selector
 							{amount 1
 							}
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_120m_actor}
 							{type human}
 							{state "not dead"}
 						}
@@ -10014,7 +10032,7 @@
 						{action rotate}
 						{target
 							{ignore_captured_by_user 0}
-							{tag _ai_smoke_target}
+							{tag _ufb_smoke_120m_target}
 						}
 					}
 					{"delay"
@@ -10024,7 +10042,7 @@
 						{selector
 							{amount 1
 							}
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_120m_actor}
 							{type human}
 							{state "not dead"}
 						}
@@ -10045,14 +10063,14 @@
 					}
 					{"action"
 						{selector
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_120m_actor}
 							{type human}
 							{state "not dead"}
 						}
 						{drop orders}
 						{action rotate}
 						{target
-							{tag _ai_smoke_target}
+							{tag _ufb_smoke_120m_target}
 						}
 					}
 					{"delay"
@@ -10060,32 +10078,34 @@
 					}
 					{"actor_to_cover"
 						{selector
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_120m_actor}
 						}
 						{drop orders}
 					}
 					{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
-						{selector
-							{tag _ai_smoke_target}
-						}
-						{tag_remove _ai_smoke_target}
-					}
+					; UFB: keep this threat reserved through the smoke retry interval.
+
 					{"delay"
 						{time 0.1}
 					}
 					{"entity_state"
 						{selector
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_120m_actor}
 						}
-						{tag_remove _ai_smoke_grenade}
+						{tag_remove _ufb_smoke_120m_actor}
 					}
 					{"delay"
 						{time 18}
 					}
-					{"trigger"
+					{"entity_state"
+						{selector
+							{tag _ufb_smoke_120m_target}
+						}
+						{tag_remove _ufb_smoke_120m_target}
+					}
+{"trigger"
 						{name "hf inf ai/grenade smoke 120m"}
 					}
 				}
@@ -10149,7 +10169,7 @@
 									
 {tag {tag _ai_ap_grenade}}
 {tag {tag _ai_at_grenade}}
-{tag {tag _ai_smoke_grenade}}
+{tag {tag _ufb_smoke_60m_actor}}
 {tag {tag ai_close_inf}}
 {tag {tag _ai_wirecutter_in_action}}
 {tag {tag bot_inf_flank_in_progress}}
@@ -10164,6 +10184,10 @@
 {tag {tag ecrew_a}}
 {tag {tag ecrew_b}}
 {prop {prop crew}}
+
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
 }
 								}
 							}
@@ -10211,7 +10235,11 @@
 										{prop
 											{prop airborne}
 										}
-									}
+									
+{tag {tag _ufb_smoke_120m_target}}
+{tag {tag _ufb_smoke_60m_target}}
+{tag {tag _ufb_smoke_wirecutter_target}}
+}
 								}
 							}
 							{distance
@@ -10222,8 +10250,8 @@
 							{detection visible}
 							{tag
 								{"tag pair"}
-								{"for selector" _ai_smoke_grenade}
-								{"for enemy" _ai_smoke_target}
+								{"for selector" _ufb_smoke_60m_actor}
+								{"for enemy" _ufb_smoke_60m_target}
 							}
 						}
 					}
@@ -10238,7 +10266,7 @@
 							{group
 								{select
 									{tag
-										{tag _ai_smoke_grenade}
+										{tag _ufb_smoke_60m_actor}
 									}
 								}
 								{exclude
@@ -10265,7 +10293,7 @@
 						{selector
 							{amount 1
 							}
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_60m_actor}
 							{type human}
 							{state "not dead"}
 						}
@@ -10273,7 +10301,7 @@
 						{action rotate}
 						{target
 							{ignore_captured_by_user 0}
-							{tag _ai_smoke_target}
+							{tag _ufb_smoke_60m_target}
 						}
 					}
 					{"delay"
@@ -10283,7 +10311,7 @@
 						{selector
 							{amount 1
 							}
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_60m_actor}
 							{type human}
 							{state "not dead"}
 						}
@@ -10304,14 +10332,14 @@
 					}
 					{"action"
 						{selector
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_60m_actor}
 							{type human}
 							{state "not dead"}
 						}
 						{drop orders}
 						{action rotate}
 						{target
-							{tag _ai_smoke_target}
+							{tag _ufb_smoke_60m_target}
 						}
 					}
 					{"delay"
@@ -10319,32 +10347,34 @@
 					}
 					{"actor_to_cover"
 						{selector
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_60m_actor}
 						}
 						{drop orders}
 					}
 					{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
-						{selector
-							{tag _ai_smoke_target}
-						}
-						{tag_remove _ai_smoke_target}
-					}
+					; UFB: keep this threat reserved through the smoke retry interval.
+
 					{"delay"
 						{time 0.1}
 					}
 					{"entity_state"
 						{selector
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_60m_actor}
 						}
-						{tag_remove _ai_smoke_grenade}
+						{tag_remove _ufb_smoke_60m_actor}
 					}
 					{"delay"
 						{time 18}
 					}
-					{"trigger"
+					{"entity_state"
+						{selector
+							{tag _ufb_smoke_60m_target}
+						}
+						{tag_remove _ufb_smoke_60m_target}
+					}
+{"trigger"
 						{name "hf inf ai/grenade smoke 60m"}
 					}
 				}
@@ -10413,7 +10443,11 @@
 										{tag
 											{tag _ai_at_grenade}
 										}
-									}
+									
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+}
 								}
 							}
 							{enemy
@@ -10642,6 +10676,10 @@
 {tag {tag _lua_ignore}}
 {tag {tag bot_arty}}
 {tag {tag bot_aa_guard}}
+
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
 }
 								}
 							}
@@ -12015,7 +12053,11 @@
 									{tag
 										{tag _ai_at_grenade}
 									}
-								}
+								
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+}
 							}
 						}
 						{drop orders}
@@ -12178,7 +12220,11 @@
 									{tag
 										{tag _ai_at_grenade}
 									}
-								}
+								
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+}
 							}
 						}
 						{drop orders}
@@ -12251,7 +12297,11 @@
 										{tag
 											{tag _ai_ap_grenade}
 										}
-									}
+									
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+}
 								}
 							}
 							{enemy
@@ -13253,7 +13303,7 @@
 									
 {tag {tag _ai_ap_grenade}}
 {tag {tag _ai_at_grenade}}
-{tag {tag _ai_smoke_grenade}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
 {tag {tag ai_close_inf}}
 {tag {tag _ai_wirecutter_in_action}}
 {tag {tag bot_inf_flank_in_progress}}
@@ -13268,6 +13318,10 @@
 {tag {tag ecrew_a}}
 {tag {tag ecrew_b}}
 {prop {prop crew}}
+
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
 }
 								}
 							}
@@ -13315,7 +13369,7 @@
 									
 {tag {tag _ai_ap_grenade}}
 {tag {tag _ai_at_grenade}}
-{tag {tag _ai_smoke_grenade}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
 {tag {tag ai_close_inf}}
 {tag {tag _ai_wirecutter_in_action}}
 {tag {tag bot_inf_flank_in_progress}}
@@ -13331,6 +13385,10 @@
 {tag {tag ecrew_a}}
 {tag {tag ecrew_b}}
 {prop {prop crew}}
+
+{tag {tag _ufb_smoke_120m_target}}
+{tag {tag _ufb_smoke_60m_target}}
+{tag {tag _ufb_smoke_wirecutter_target}}
 }
 								}
 							}
@@ -13342,8 +13400,8 @@
 							{detection visible}
 							{tag
 								{"tag pair"}
-								{"for selector" _ai_smoke_grenade}
-								{"for enemy" _ai_smoke_target}
+								{"for selector" _ufb_smoke_wirecutter_actor}
+								{"for enemy" _ufb_smoke_wirecutter_target}
 							}
 						}
 					}
@@ -13358,7 +13416,7 @@
 							{group
 								{select
 									{tag
-										{tag _ai_smoke_grenade}
+										{tag _ufb_smoke_wirecutter_actor}
 									}
 								}
 								{exclude
@@ -13385,7 +13443,7 @@
 						{selector
 							{amount 1
 							}
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_wirecutter_actor}
 							{type human}
 							{state "not dead"}
 						}
@@ -13393,7 +13451,7 @@
 						{action rotate}
 						{target
 							{ignore_captured_by_user 0}
-							{tag _ai_smoke_target}
+							{tag _ufb_smoke_wirecutter_target}
 						}
 					}
 					{"delay"
@@ -13403,7 +13461,7 @@
 						{selector
 							{amount 1
 							}
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_wirecutter_actor}
 							{type human}
 							{state "not dead"}
 						}
@@ -13411,7 +13469,7 @@
 						{action attack_ground}
 						{target
 							{ignore_captured_by_user 0}
-							{tag _ai_smoke_target}
+							{tag _ufb_smoke_wirecutter_target}
 						}
 					}
 					{"delay"
@@ -13424,38 +13482,40 @@
 					}
 					{"action"
 						{selector
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_wirecutter_actor}
 							{type human}
 							{state "not dead"}
 						}
 						{drop orders}
 						{action rotate}
 						{target
-							{tag _ai_smoke_target}
+							{tag _ufb_smoke_wirecutter_target}
 						}
 					}
 					{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
-						{selector
-							{tag _ai_smoke_target}
-						}
-						{tag_remove _ai_smoke_target}
-					}
+					; UFB: keep this threat reserved through the smoke retry interval.
+
 					{"delay"
 						{time 0.1}
 					}
 					{"entity_state"
 						{selector
-							{tag _ai_smoke_grenade}
+							{tag _ufb_smoke_wirecutter_actor}
 						}
-						{tag_remove _ai_smoke_grenade}
+						{tag_remove _ufb_smoke_wirecutter_actor}
 					}
 					{"delay"
 						{time 18}
 					}
-					{"trigger"
+					{"entity_state"
+						{selector
+							{tag _ufb_smoke_wirecutter_target}
+						}
+						{tag_remove _ufb_smoke_wirecutter_target}
+					}
+{"trigger"
 						{name "hf inf ai/grenade smoke wirecutter"}
 					}
 				}
@@ -16935,7 +16995,7 @@
 							}
 							{distance
 								{mode near_than}
-								{meters %r2}
+								{meters (* 1.5 %r2)}
 							}
 							{tag
 								{"tag pair"}
@@ -17006,7 +17066,7 @@
 							}
 							{distance
 								{mode near_than}
-								{meters %r2}
+								{meters (* 1.5 %r2)}
 							}
 							{tag
 								{"tag pair"}
@@ -17239,7 +17299,7 @@
 							}
 							{distance
 								{mode near_than}
-								{meters %r2}
+								{meters (* 1.5 %r2)}
 							}
 							{tag
 								{"tag pair"}

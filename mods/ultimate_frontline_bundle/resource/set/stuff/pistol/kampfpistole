@@ -1,0 +1,80 @@
+{from "pattern pistol"
+	{tag "weapon pistol bullet to_hand -shoot_walking -shoot_walking_ai shoot_walking_manual auto_eject grenadelauncher"}
+	{entity "kampfpistole"}
+	{filling "kampfpistole_grenade" 1}
+	{fireSound "pistol/flare"}
+	{fireSoundclose "pistol/flare/3p/"}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 65 70})))))
+(mod "gametype:battle_zones" {range 97.5 105})
+(mod "gametype:ammunition" {range 97.5 105})
+(mod "gametype:evacuation" {range 97.5 105})
+(mod "gametype:frontlines" {range 97.5 105})
+(mod "gametype:campaign_capture_the_flag" {range 97.5 105})
+	{calibre 23}
+	{mass 0.5}
+
+	{parameters "he"
+		{cursor "ironsights/grenade"}
+		{cursorReloading "gun_he"}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 70 70})))))
+(mod "gametype:battle_zones" {range 105 105})
+(mod "gametype:ammunition" {range 105 105})
+(mod "gametype:evacuation" {range 105 105})
+(mod "gametype:frontlines" {range 105 105})
+(mod "gametype:campaign_capture_the_flag" {range 105 105})
+	}
+	{parameters "sm"
+		{cursor "ironsights/grenade"}
+		{cursorReloading "gun_sm"}
+		("reload time" seconds(5))
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 70 70})))))
+(mod "gametype:battle_zones" {range 105 105})
+(mod "gametype:ammunition" {range 105 105})
+(mod "gametype:evacuation" {range 105 105})
+(mod "gametype:frontlines" {range 105 105})
+(mod "gametype:campaign_capture_the_flag" {range 105 105})
+	}
+
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.5} {20 0.5} {69.99 3} {70 10} {100 20}})))))
+(mod "gametype:battle_zones" {radiusTable {0 0.5} {20 0.5} {69.99 3} {105 5.4} {105.01 10} {135.01 20}})
+(mod "gametype:ammunition" {radiusTable {0 0.5} {20 0.5} {69.99 3} {105 5.4} {105.01 10} {135.01 20}})
+(mod "gametype:evacuation" {radiusTable {0 0.5} {20 0.5} {69.99 3} {105 5.4} {105.01 10} {135.01 20}})
+(mod "gametype:frontlines" {radiusTable {0 0.5} {20 0.5} {69.99 3} {105 5.4} {105.01 10} {135.01 20}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0.5} {20 0.5} {69.99 3} {105 5.4} {105.01 10} {135.01 20}})
+	}
+
+	{speed 55}
+	{gravity 2}
+	{reloadAnimBonus 4}
+	("reload time" seconds(10))
+	{curve "gun_std"}
+
+	("human health" damage(350))
+
+	{RelaxationTime 0.5}
+	{SpreadTolerance 0.25}	;// Zeroing up to 25% needed before fire
+	{aimingTolerance 3}
+	
+	{ZeroingAccuracy 0.8 0.7 0.6}
+	{AccuracyByMotionK 0.1}
+	{SyncedProjectiles 1} 			;// visually syncs decal/crater spawn in multiplayer
+
+	(mod "mp"
+		{unlimitedRangeTPC 0}	;// restrict range in TPC/FPC
+	)
+
+	{states
+		{reload		"reload"}
+		{unload		"unload"}
+		{fire		"fire-rgrenade"}
+		{aim 		"aim-rgrenade"}
+		{can_aim	"can-aim-rgrenade"}
+	}
+
+	{DisableRicochet}
+}

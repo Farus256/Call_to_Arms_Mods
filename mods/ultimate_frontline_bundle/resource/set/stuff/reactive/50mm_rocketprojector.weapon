@@ -1,0 +1,56 @@
+;_________________________________________
+; USA Grappling hook
+;=========================================
+
+
+{from "pattern reactive"
+	{tag "build_in" "gun"}
+	{filling "ammo 50mm_rocket_grapnel"}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/d1/Shared/Rocket_Projector/"}
+
+	{AimingTolerance 1.5}
+
+	{curve "gun_std"}
+	{aimtype curved}
+	{DisableRicochet}
+	{gravity 6}
+	{speed 174}
+
+	{cursor "ironsights/mortar"}
+
+	{calibre 50}
+	("reload time" seconds(5))
+	{ZeroingAccuracy 1}
+	{spreading 
+		{SpreadXYRatio 3}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable
+			{0 5}
+			{139.99 15}
+			{140 100}
+		})))))
+(mod "gametype:battle_zones" {radiusTable {0 5} {139.99 15} {210 27} {210.01 100}})
+(mod "gametype:ammunition" {radiusTable {0 5} {139.99 15} {210 27} {210.01 100}})
+(mod "gametype:evacuation" {radiusTable {0 5} {139.99 15} {210 27} {210.01 100}})
+(mod "gametype:frontlines" {radiusTable {0 5} {139.99 15} {210 27} {210.01 100}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 5} {139.99 15} {210 27} {210.01 100}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 140})))))
+(mod "gametype:battle_zones" {aimRange 210})
+(mod "gametype:ammunition" {aimRange 210})
+(mod "gametype:evacuation" {aimRange 210})
+(mod "gametype:frontlines" {aimRange 210})
+(mod "gametype:campaign_capture_the_flag" {aimRange 210})
+	{minRange 30}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 140})))))
+(mod "gametype:battle_zones" {maxRange 210})
+(mod "gametype:ammunition" {maxRange 210})
+(mod "gametype:evacuation" {maxRange 210})
+(mod "gametype:frontlines" {maxRange 210})
+(mod "gametype:campaign_capture_the_flag" {maxRange 210})
+
+}

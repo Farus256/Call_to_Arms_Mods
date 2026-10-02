@@ -1,0 +1,292 @@
+
+(include "\set\blast.inc")
+
+(define "reload time"			;//reload time for magazine or shell
+	{rechargeTime %seconds}
+)
+
+(define "fire rate"				;// rate of fire in rounds per minute 
+	{recoveryTime (/ 60 %rpm)}
+)
+
+;/*--------------------------------------RANGES AND ACCURACY--------------------------------------*/
+
+
+(define "light_mortar_range"
+	{spreading 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {140 70}})))))
+(mod "gametype:battle_zones" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+(mod "gametype:ammunition" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+(mod "gametype:evacuation" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+(mod "gametype:frontlines" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 140})))))
+(mod "gametype:battle_zones" {aimRange 210})
+(mod "gametype:ammunition" {aimRange 210})
+(mod "gametype:evacuation" {aimRange 210})
+(mod "gametype:frontlines" {aimRange 210})
+(mod "gametype:campaign_capture_the_flag" {aimRange 210})
+	{minRange 30}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 140})))))
+(mod "gametype:battle_zones" {maxRange 210})
+(mod "gametype:ammunition" {maxRange 210})
+(mod "gametype:evacuation" {maxRange 210})
+(mod "gametype:frontlines" {maxRange 210})
+(mod "gametype:campaign_capture_the_flag" {maxRange 210})
+	("reload time" seconds(4.5))
+
+	{parameters "he"
+		{projectileDamageTable {0 10}}
+	}
+	{parameters "he2"
+		{projectileDamageTable {0 10}}
+	}
+	{parameters "sm"
+		("reload time" seconds(3.0))
+	}
+	{parameters "wp"
+		("reload time" seconds(3.0))
+	}
+)
+
+(define "intermediate_mortar_range" ; small 80mm mortars
+	{spreading 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {140 70}})))))
+(mod "gametype:battle_zones" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+(mod "gametype:ammunition" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+(mod "gametype:evacuation" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+(mod "gametype:frontlines" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 16.2} {139.99 22.5} {210 40.5} {210.01 70}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 140})))))
+(mod "gametype:battle_zones" {aimRange 210})
+(mod "gametype:ammunition" {aimRange 210})
+(mod "gametype:evacuation" {aimRange 210})
+(mod "gametype:frontlines" {aimRange 210})
+(mod "gametype:campaign_capture_the_flag" {aimRange 210})
+	{minRange 30}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 140})))))
+(mod "gametype:battle_zones" {maxRange 210})
+(mod "gametype:ammunition" {maxRange 210})
+(mod "gametype:evacuation" {maxRange 210})
+(mod "gametype:frontlines" {maxRange 210})
+(mod "gametype:campaign_capture_the_flag" {maxRange 210})
+	("reload time" seconds(5))
+
+	{parameters "he"
+		{projectileDamageTable {0 15}}
+	}
+	{parameters "he2"
+		{projectileDamageTable {0 15}}
+	}
+	{parameters "sm"
+		("reload time" seconds(3.3))
+	}
+	{parameters "wp"
+		("reload time" seconds(3.3))
+	}
+)
+
+(define "medium_mortar_range"
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 16.2} {159.99 22.5} {160 70}})))))
+(mod "gametype:battle_zones" {radiusTable {0 4.5} {120 16.2} {159.99 22.5} {240 40.5} {240.01 70}})
+(mod "gametype:ammunition" {radiusTable {0 4.5} {120 16.2} {159.99 22.5} {240 40.5} {240.01 70}})
+(mod "gametype:evacuation" {radiusTable {0 4.5} {120 16.2} {159.99 22.5} {240 40.5} {240.01 70}})
+(mod "gametype:frontlines" {radiusTable {0 4.5} {120 16.2} {159.99 22.5} {240 40.5} {240.01 70}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 16.2} {159.99 22.5} {240 40.5} {240.01 70}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 160})))))
+(mod "gametype:battle_zones" {aimRange 240})
+(mod "gametype:ammunition" {aimRange 240})
+(mod "gametype:evacuation" {aimRange 240})
+(mod "gametype:frontlines" {aimRange 240})
+(mod "gametype:campaign_capture_the_flag" {aimRange 240})
+	{minRange 40}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 160})))))
+(mod "gametype:battle_zones" {maxRange 240})
+(mod "gametype:ammunition" {maxRange 240})
+(mod "gametype:evacuation" {maxRange 240})
+(mod "gametype:frontlines" {maxRange 240})
+(mod "gametype:campaign_capture_the_flag" {maxRange 240})
+	("reload time" seconds(5))
+
+	{parameters "he"
+		{projectileDamageTable {0 15}}
+	}
+	{parameters "he2"
+		{projectileDamageTable {0 15}}
+	}
+	{parameters "sm"
+		("reload time" seconds(3.3))
+	}
+	{parameters "wp"
+		("reload time" seconds(3.3))
+	}
+)
+
+(define "medium_heavy_mortar_range"
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 17.5} {179.99 25.0} {180 70}})))))
+(mod "gametype:battle_zones" {radiusTable {0 4.5} {120 17.5} {179.99 25.0} {270 45} {270.01 70}})
+(mod "gametype:ammunition" {radiusTable {0 4.5} {120 17.5} {179.99 25.0} {270 45} {270.01 70}})
+(mod "gametype:evacuation" {radiusTable {0 4.5} {120 17.5} {179.99 25.0} {270 45} {270.01 70}})
+(mod "gametype:frontlines" {radiusTable {0 4.5} {120 17.5} {179.99 25.0} {270 45} {270.01 70}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 17.5} {179.99 25.0} {270 45} {270.01 70}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 180})))))
+(mod "gametype:battle_zones" {aimRange 270})
+(mod "gametype:ammunition" {aimRange 270})
+(mod "gametype:evacuation" {aimRange 270})
+(mod "gametype:frontlines" {aimRange 270})
+(mod "gametype:campaign_capture_the_flag" {aimRange 270})
+	{minRange 45}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 180})))))
+(mod "gametype:battle_zones" {maxRange 270})
+(mod "gametype:ammunition" {maxRange 270})
+(mod "gametype:evacuation" {maxRange 270})
+(mod "gametype:frontlines" {maxRange 270})
+(mod "gametype:campaign_capture_the_flag" {maxRange 270})
+	("reload time" seconds(7))
+
+	{parameters "he"
+		{projectileDamageTable {0 20}}
+	}
+	{parameters "he2"
+		{projectileDamageTable {0 20}}
+	}
+	{parameters "sm"
+		("reload time" seconds(3.4))
+	}
+	{parameters "wp"
+		("reload time" seconds(3.4))
+	}
+)
+
+(define "heavy_mortar_range"
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 17.5} {170 31.5} {229.99 31.5} {230 70}})))))
+(mod "gametype:battle_zones" {radiusTable {0 4.5} {120 17.5} {170 31.5} {229.99 31.5} {345 56.7} {345.01 70}})
+(mod "gametype:ammunition" {radiusTable {0 4.5} {120 17.5} {170 31.5} {229.99 31.5} {345 56.7} {345.01 70}})
+(mod "gametype:evacuation" {radiusTable {0 4.5} {120 17.5} {170 31.5} {229.99 31.5} {345 56.7} {345.01 70}})
+(mod "gametype:frontlines" {radiusTable {0 4.5} {120 17.5} {170 31.5} {229.99 31.5} {345 56.7} {345.01 70}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 4.5} {120 17.5} {170 31.5} {229.99 31.5} {345 56.7} {345.01 70}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 230})))))
+(mod "gametype:battle_zones" {aimRange 345})
+(mod "gametype:ammunition" {aimRange 345})
+(mod "gametype:evacuation" {aimRange 345})
+(mod "gametype:frontlines" {aimRange 345})
+(mod "gametype:campaign_capture_the_flag" {aimRange 345})
+	{minRange 50}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 230})))))
+(mod "gametype:battle_zones" {maxRange 345})
+(mod "gametype:ammunition" {maxRange 345})
+(mod "gametype:evacuation" {maxRange 345})
+(mod "gametype:frontlines" {maxRange 345})
+(mod "gametype:campaign_capture_the_flag" {maxRange 345})
+	("reload time" seconds(10))
+
+	{parameters "he"
+		{projectileDamageTable {0 30}}
+	}
+	{parameters "he2"
+		{projectileDamageTable {0 30}}
+	}
+	{parameters "sm"
+		("reload time" seconds(3.5))
+	}
+	{parameters "wp"
+		("reload time" seconds(3.5))
+	}
+)
+
+(define "super_heavy_mortar_range"
+	{spreading 
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 5} {149.99 17.5} {150 70}})))))
+(mod "gametype:battle_zones" {radiusTable {0 5} {149.99 17.5} {225 31.5} {225.01 70}})
+(mod "gametype:ammunition" {radiusTable {0 5} {149.99 17.5} {225 31.5} {225.01 70}})
+(mod "gametype:evacuation" {radiusTable {0 5} {149.99 17.5} {225 31.5} {225.01 70}})
+(mod "gametype:frontlines" {radiusTable {0 5} {149.99 17.5} {225 31.5} {225.01 70}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 5} {149.99 17.5} {225 31.5} {225.01 70}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 150})))))
+(mod "gametype:battle_zones" {aimRange 225})
+(mod "gametype:ammunition" {aimRange 225})
+(mod "gametype:evacuation" {aimRange 225})
+(mod "gametype:frontlines" {aimRange 225})
+(mod "gametype:campaign_capture_the_flag" {aimRange 225})
+	{minRange 25}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 150})))))
+(mod "gametype:battle_zones" {maxRange 225})
+(mod "gametype:ammunition" {maxRange 225})
+(mod "gametype:evacuation" {maxRange 225})
+(mod "gametype:frontlines" {maxRange 225})
+(mod "gametype:campaign_capture_the_flag" {maxRange 225})
+	("reload time" seconds(10))
+
+	{parameters "he"
+		{projectileDamageTable {0 30}}
+	}
+	{parameters "he2"
+		{projectileDamageTable {0 30}}
+	}
+	{parameters "sm"
+		("reload time" seconds(3.5))
+	}
+	{parameters "wp"
+		("reload time" seconds(3.5))
+	}
+)
+
+
+;/*-------------------------------------- AMMUNITION SETTINGS-------------------------------------*/
+
+
+(define "minimum_range_short"
+	{possibleDamageRadius 20}
+)
+
+(define "minimum_range_medium"
+	{possibleDamageRadius 25}
+)
+
+(define "he_light"
+	{detonationThickness 0.5}
+	("minimum_range_short")
+)
+
+(define "he_medium"
+	{detonationThickness 0.5}
+	("minimum_range_medium")
+)
+
+(define "he_heavy"
+	{detonationThickness 0.5}
+	("minimum_range_medium")
+)

@@ -1,0 +1,24 @@
+;_________________________________________
+; Soviet Tank Flamethrower
+;=========================================
+
+{from "pattern flame_thrower"		; kht26
+	{tag "gun"}
+	{entity "ks_24_flame_thrower"}
+
+	("filling_tank" fuel(200))	;// Tank could hold 400 Liters. Other 200 liters is in vehicle inventory.
+	{mass 150}
+
+	{foresight "foresight1"}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 35 40})))))
+(mod "gametype:battle_zones" {range 42 48})
+(mod "gametype:ammunition" {range 42 48})
+(mod "gametype:evacuation" {range 42 48})
+(mod "gametype:frontlines" {range 42 48})
+(mod "gametype:campaign_capture_the_flag" {range 42 48})
+	{speed 40}
+
+	{rechargeTime 2}
+}

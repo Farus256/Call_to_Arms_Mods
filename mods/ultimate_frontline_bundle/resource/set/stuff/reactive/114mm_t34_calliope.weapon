@@ -1,0 +1,46 @@
+;_________________________________________
+; US calliope Rocket Artillery
+;=========================================
+
+
+{from "pattern reactive"		; "M4 calliope"
+	{filling "ammo 114mm_m8" 60}
+	{fireSound "reactive/katy_burst/"}
+	{calibre 114}
+	("rocket_artillery")
+
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable
+			{0 0}
+			{100 10}
+			{200 20}
+			{269.99 35} ;// max range, 3.7km
+			{270 100}
+			{290 200}
+		})))))
+(mod "gametype:battle_zones" {radiusTable {0 0} {100 10} {200 20} {269.99 35} {405 63} {405.01 100} {425.01 200}})
+(mod "gametype:ammunition" {radiusTable {0 0} {100 10} {200 20} {269.99 35} {405 63} {405.01 100} {425.01 200}})
+(mod "gametype:evacuation" {radiusTable {0 0} {100 10} {200 20} {269.99 35} {405 63} {405.01 100} {425.01 200}})
+(mod "gametype:frontlines" {radiusTable {0 0} {100 10} {200 20} {269.99 35} {405 63} {405.01 100} {425.01 200}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0} {100 10} {200 20} {269.99 35} {405 63} {405.01 100} {425.01 200}})
+	}
+
+	{burst
+		{min 30}
+		{noaiming}
+	}
+	{gravity 2.5}
+
+	{minRange 50}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 270 270})))))
+(mod "gametype:battle_zones" {range 405 405})
+(mod "gametype:ammunition" {range 405 405})
+(mod "gametype:evacuation" {range 405 405})
+(mod "gametype:frontlines" {range 405 405})
+(mod "gametype:campaign_capture_the_flag" {range 405 405}) ;//3.7km
+	("velocity" mps(270))
+	("reload time" seconds(300))
+	("fire rate" rpm(120)) ;// one rocket every 0.5s in "ripple fire". 30s to fire full salvo
+}

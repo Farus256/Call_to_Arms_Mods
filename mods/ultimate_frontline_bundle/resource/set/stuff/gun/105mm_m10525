@@ -1,0 +1,28 @@
+;_________________________________________
+; Italian medium howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/25 "stug_10525"
+	{filling "bulletita_105_l25"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+	("range_190_howitzer")
+	{calibre 105}
+
+	("reload time" seconds(20))
+
+	("velocity m/s" ap(500) apcr(1) he(470) heat(510))
+	("armor health" damage(310))
+	("armor health custom" shell(apche) velocity(500) damage(310) filler(275))
+	("105_slope_multipliers")
+
+	; Proietto perforante da 105
+	("penetration_medium" shell(apche) range(180) a(89) b(81) c(72) d(64) e(57))
+
+	; Effetto Pronto Speciale mod.43
+	("penetration_medium" shell(heat) range(190) a(120) b(120) c(120) d(120) e(120))
+
+	("accuracy_spg" r1(1.00) range_ap(190) range_he(190) range_heat(190))
+}

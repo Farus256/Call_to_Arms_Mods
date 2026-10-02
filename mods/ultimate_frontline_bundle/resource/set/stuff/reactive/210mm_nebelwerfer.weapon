@@ -1,0 +1,55 @@
+;_________________________________________
+; German Light Rocket Artillery
+;=========================================
+
+
+{from "pattern reactive"		; "210mm_nebelwerfer42"
+	{tag "gun"}
+	{filling "ammo 210mm_nebelwerfer" 5}
+	{fireSound "reactive/nebel_burst/"}
+	{calibre 210}
+
+	("rocket_artillery")
+
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable
+			{0 0}
+			{100 8}
+			{200 18}
+			{319.99 35} ;// max range
+			{320 100}
+			{365 200}
+		})))))
+(mod "gametype:battle_zones" {radiusTable {0 0} {100 8} {200 18} {319.99 35} {480 63} {480.01 100} {525.01 200}})
+(mod "gametype:ammunition" {radiusTable {0 0} {100 8} {200 18} {319.99 35} {480 63} {480.01 100} {525.01 200}})
+(mod "gametype:evacuation" {radiusTable {0 0} {100 8} {200 18} {319.99 35} {480 63} {480.01 100} {525.01 200}})
+(mod "gametype:frontlines" {radiusTable {0 0} {100 8} {200 18} {319.99 35} {480 63} {480.01 100} {525.01 200}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0} {100 8} {200 18} {319.99 35} {480 63} {480.01 100} {525.01 200}})
+	}
+
+	{burst
+		{min 5}
+		{noaiming}
+	}
+	{gravity 3.5}
+
+	{minRange 50}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 320})))))
+(mod "gametype:battle_zones" {aimRange 480})
+(mod "gametype:ammunition" {aimRange 480})
+(mod "gametype:evacuation" {aimRange 480})
+(mod "gametype:frontlines" {aimRange 480})
+(mod "gametype:campaign_capture_the_flag" {aimRange 480})
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 320})))))
+(mod "gametype:battle_zones" {maxRange 480})
+(mod "gametype:ammunition" {maxRange 480})
+(mod "gametype:evacuation" {maxRange 480})
+(mod "gametype:frontlines" {maxRange 480})
+(mod "gametype:campaign_capture_the_flag" {maxRange 480}) ;//7,85km
+	("velocity" mps(320))
+	("reload time" seconds(200))
+	("fire rate" rpm(37.5)) ;// 8s to fire full salvo
+}

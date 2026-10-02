@@ -1,0 +1,24 @@
+{from "pattern anti-personnel"
+	{tag "size2"}		; Explosive filling - 0.200kg of TNT
+	{entity "m32_stick"}
+
+	{damage add blastwave
+		{energy 0.95}
+		{area 4 6}
+		{ground_interaction_radius 0} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+
+	{throw
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 26.7})))))
+(mod "gametype:battle_zones" {range 30.705})
+(mod "gametype:ammunition" {range 30.705})
+(mod "gametype:evacuation" {range 30.705})
+(mod "gametype:frontlines" {range 30.705})
+(mod "gametype:campaign_capture_the_flag" {range 30.705})  ;in-game 28m
+	}
+	{special
+		{PrepareTime 5.5}
+	}
+}
+

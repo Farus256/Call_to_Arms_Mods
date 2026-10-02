@@ -1,0 +1,22 @@
+{from "pattern rifle_grenade"
+	{tag "at_rifle" "ap"}
+	{entity "k98_antitank"}
+	{filling "ammo k98_antitank" 1}
+	{fillingVisible "grenade"}
+	{fireSound "smallarms/s3/d1/GER/K98k/Schiessbecher/"}
+	{fireSoundclose "smallarms/s3/3p/GER/K98k/Schiessbecher/"}
+	{reloadSound "kar98"}
+	{calibre 60}
+	{mass 8.2}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 60 60})))))
+(mod "gametype:battle_zones" {range 90 90})
+(mod "gametype:ammunition" {range 90 90})
+(mod "gametype:evacuation" {range 90 90})
+(mod "gametype:frontlines" {range 90 90})
+(mod "gametype:campaign_capture_the_flag" {range 90 90})
+
+	("penetration" args 35)
+	("armor health" damage(150))
+}

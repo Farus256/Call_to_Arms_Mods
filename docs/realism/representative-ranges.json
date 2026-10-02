@@ -1,0 +1,461 @@
+[
+  {
+    "path": "set/stuff/rifle/k98",
+    "before": {
+      "default": {
+        "aim": 120,
+        "max": 120
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 180,
+        "max": 180
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/rifle/avs36",
+    "before": {
+      "default": {
+        "aim": 120,
+        "max": 120
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 180,
+        "max": 180
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/rifle/avt40",
+    "before": {
+      "default": {
+        "aim": 120,
+        "max": 120
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 180,
+        "max": 180
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/rifle/bar",
+    "before": {
+      "default": {
+        "aim": 120,
+        "max": 120
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 180,
+        "max": 180
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/rifle/stg44",
+    "before": {
+      "default": {
+        "aim": 100,
+        "max": 100
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 150,
+        "max": 150
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/smg/mp40_folded",
+    "before": {
+      "default": {
+        "aim": 80,
+        "max": 80
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 120,
+        "max": 120
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "*",
+      "/"
+    ]
+  },
+  {
+    "path": "set/stuff/smg/mp40_unfolded",
+    "before": {
+      "default": {
+        "aim": 80,
+        "max": 80
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 120,
+        "max": 120
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "*",
+      "/"
+    ]
+  },
+  {
+    "path": "set/stuff/mgun/mg42_belt",
+    "before": {
+      "default": {
+        "aim": 120,
+        "max": 120
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 180,
+        "max": 180
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "*",
+      "/"
+    ]
+  },
+  {
+    "path": "set/stuff/mgun/lafette_mg42_belt_long",
+    "before": {
+      "default": {
+        "aim": 120,
+        "max": 120
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 180,
+        "max": 180
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "*",
+      "/"
+    ]
+  },
+  {
+    "path": "set/stuff/pistol/tt33",
+    "before": {
+      "default": {
+        "aim": 70,
+        "max": 70
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 105,
+        "max": 105
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/gun/75mm_pak40",
+    "before": {
+      "default": {
+        "aim": 200,
+        "max": 200
+      },
+      "apcbche": {
+        "aim": 200,
+        "max": 200
+      },
+      "apcbche2": {
+        "aim": 200,
+        "max": 200
+      },
+      "apcr": {
+        "aim": 200,
+        "max": 200
+      },
+      "heat": {
+        "aim": 180,
+        "max": 180
+      },
+      "heata": {
+        "aim": 180,
+        "max": 180
+      },
+      "heatb": {
+        "aim": 180,
+        "max": 180
+      },
+      "heatc": {
+        "aim": 180,
+        "max": 180
+      },
+      "he": {
+        "aim": 190,
+        "max": 190
+      },
+      "he2": {
+        "aim": 190,
+        "max": 190
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 300,
+        "max": 300
+      },
+      "apcbche": {
+        "aim": 300,
+        "max": 300
+      },
+      "apcbche2": {
+        "aim": 300,
+        "max": 300
+      },
+      "apcr": {
+        "aim": 300,
+        "max": 300
+      },
+      "heat": {
+        "aim": 270,
+        "max": 270
+      },
+      "heata": {
+        "aim": 270,
+        "max": 270
+      },
+      "heatb": {
+        "aim": 270,
+        "max": 270
+      },
+      "heatc": {
+        "aim": 270,
+        "max": 270
+      },
+      "he": {
+        "aim": 285,
+        "max": 285
+      },
+      "he2": {
+        "aim": 285,
+        "max": 285
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "*",
+      "+",
+      "-"
+    ]
+  },
+  {
+    "path": "set/stuff/gun/105mm_m10525",
+    "before": {
+      "default": {
+        "aim": 190,
+        "max": 190
+      },
+      "apche": {
+        "aim": 180,
+        "max": 180
+      },
+      "heat": {
+        "aim": 190,
+        "max": 190
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 285,
+        "max": 285
+      },
+      "apche": {
+        "aim": 270,
+        "max": 270
+      },
+      "heat": {
+        "aim": 285,
+        "max": 285
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "*",
+      "+",
+      "-"
+    ]
+  },
+  {
+    "path": "set/stuff/gun/230mm_spigot_mortar",
+    "before": {
+      "default": {
+        "aim": 100,
+        "max": 100
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 150,
+        "max": 150
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/mortar/160mm_mt13.weapon",
+    "before": {
+      "default": {
+        "aim": 250,
+        "max": 250
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 375,
+        "max": 375
+      }
+    },
+    "unresolvedNonRangeMacros": []
+  },
+  {
+    "path": "set/stuff/reactive/132mm_bm13.weapon",
+    "before": {
+      "default": {
+        "aim": 325,
+        "max": 325
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 487.5,
+        "max": 487.5
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/reactive/380mm_rw61.weapon",
+    "before": {
+      "default": {
+        "aim": 200,
+        "max": 200
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 300,
+        "max": 300
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/bazooka/panzershreck_54.weapon",
+    "before": {
+      "default": {
+        "aim": 70,
+        "max": 70
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 105,
+        "max": 105
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/bazooka/bazooka_m9.weapon",
+    "before": {
+      "default": {
+        "aim": 70,
+        "max": 70
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 105,
+        "max": 105
+      }
+    },
+    "unresolvedNonRangeMacros": [
+      "/",
+      "*"
+    ]
+  },
+  {
+    "path": "set/stuff/flame/roks_3_flame_thrower",
+    "before": {
+      "default": {
+        "aim": 40,
+        "max": 41
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 48,
+        "max": 49.2
+      }
+    },
+    "unresolvedNonRangeMacros": []
+  },
+  {
+    "path": "set/stuff/special/binocular",
+    "before": {
+      "default": {
+        "aim": 220,
+        "max": 220
+      }
+    },
+    "after": {
+      "default": {
+        "aim": 297,
+        "max": 297
+      }
+    },
+    "unresolvedNonRangeMacros": []
+  }
+]

@@ -1,0 +1,48 @@
+;_________________________________________
+; German Heavy Rocket
+;=========================================
+
+
+{from "pattern reactive"		; "sturmtiger"
+	{filling "ammo 380mm_rw61" 1}
+	{fillingVisible "rocket"}
+	{fireSound "gun/38cm"}
+	{fireSoundclose "gun/gun_interior/size4"}
+	{calibre 380}
+
+	{spreading 13
+		{SpreadXYRatio 1.9}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusFunction
+			0		0.02
+			0.2		0.1
+			0.5		0.4
+			0.75	0.7
+			0.9995	1
+			1.00	50
+		})))))
+(mod "gametype:battle_zones" {radiusFunction 0 0.02 0.133333 0.1 0.333333 0.4 0.5 0.7 0.666333 1 1 1.8 1.00001 50})
+(mod "gametype:ammunition" {radiusFunction 0 0.02 0.133333 0.1 0.333333 0.4 0.5 0.7 0.666333 1 1 1.8 1.00001 50})
+(mod "gametype:evacuation" {radiusFunction 0 0.02 0.133333 0.1 0.333333 0.4 0.5 0.7 0.666333 1 1 1.8 1.00001 50})
+(mod "gametype:frontlines" {radiusFunction 0 0.02 0.133333 0.1 0.333333 0.4 0.5 0.7 0.666333 1 1 1.8 1.00001 50})
+(mod "gametype:campaign_capture_the_flag" {radiusFunction 0 0.02 0.133333 0.1 0.333333 0.4 0.5 0.7 0.666333 1 1 1.8 1.00001 50})
+	}
+
+	{gravity 3}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 200 200})))))
+(mod "gametype:battle_zones" {range 300 300})
+(mod "gametype:ammunition" {range 300 300})
+(mod "gametype:evacuation" {range 300 300})
+(mod "gametype:frontlines" {range 300 300})
+(mod "gametype:campaign_capture_the_flag" {range 300 300})
+	("reload time" seconds(90))
+
+	{ZeroingAccuracy 0.93 0.83 0.72}
+	{RelaxationTime 3.0}
+	("velocity" mps(250))
+
+	{FalloffMeter 200}
+	{FalloffStrength 0.15}
+}

@@ -1,0 +1,32 @@
+;_________________________________________
+; German Heavy Mortar - 20cm Ldg.W.40
+;=========================================
+
+
+{from "pattern mortar"
+	{filling "mortarger_200"}
+	{fillingVisible "rocket00"}
+	{fireSound "cannon/s3/d1/Shared/Mortar/"}
+	{fireSoundClose "cannon/s3/d1/Shared/Mortar/"}
+	{calibre 200}
+
+	("medium_mortar_range")
+	("reload time" seconds(12))
+
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 3.5} {120 10.5} {159.99 21} {160 70}})))))
+(mod "gametype:battle_zones" {radiusTable {0 3.5} {120 10.5} {159.99 21} {240 37.8} {240.01 70}})
+(mod "gametype:ammunition" {radiusTable {0 3.5} {120 10.5} {159.99 21} {240 37.8} {240.01 70}})
+(mod "gametype:evacuation" {radiusTable {0 3.5} {120 10.5} {159.99 21} {240 37.8} {240.01 70}})
+(mod "gametype:frontlines" {radiusTable {0 3.5} {120 10.5} {159.99 21} {240 37.8} {240.01 70}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 3.5} {120 10.5} {159.99 21} {240 37.8} {240.01 70}})
+	}
+	
+	{parameters "he"
+		{projectileDamageTable {0 30}}
+	}
+	{parameters "sm"
+		("reload time" seconds(8.0))
+	}
+}

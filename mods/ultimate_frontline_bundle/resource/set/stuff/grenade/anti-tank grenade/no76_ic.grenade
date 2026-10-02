@@ -1,0 +1,27 @@
+{from "pattern throwable"
+	{tag "ic ap fire at"}
+	{inventory {size 1 2}}
+	{entity "no76_ic"}
+	{mass 0.535}
+
+	{damage blastwave	;// no blast damage. Used to ensure ground detonation fx are played
+		{energy 0}
+		{area 0.01 0.25}
+		{ground_interaction_radius 1} ;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+	}
+
+	{throw
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 14})))))
+(mod "gametype:battle_zones" {range 16.1})
+(mod "gametype:ammunition" {range 16.1})
+(mod "gametype:evacuation" {range 16.1})
+(mod "gametype:frontlines" {range 16.1})
+(mod "gametype:campaign_capture_the_flag" {range 16.1})
+		{startAngle 80}
+		{Spreading 1
+			{SpreadPower 2}
+		}		
+		{constantSpeed 12}
+	}
+}

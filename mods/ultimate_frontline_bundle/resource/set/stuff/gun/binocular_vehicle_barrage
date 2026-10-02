@@ -1,0 +1,30 @@
+;_________________________________________
+; Mortar barrage calling binocs
+;=========================================
+
+
+{from "pattern gun"	
+	{filling "mortar_barrage"}
+	{fireSound "barrage/morse"}
+	{fireSoundclose "barrage/morse"}
+	{entity "binocular"}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 115 120})))))
+(mod "gametype:battle_zones" {range 172.5 180})
+(mod "gametype:ammunition" {range 172.5 180})
+(mod "gametype:evacuation" {range 172.5 180})
+(mod "gametype:frontlines" {range 172.5 180})
+(mod "gametype:campaign_capture_the_flag" {range 172.5 180})
+	{calibre 23}
+
+	("reload time" seconds(150))
+
+	("velocity m/s" ap(260) apcr(260) he(260) heat(260))
+	{gravity 20}
+	("armor health" damage(1))
+	("human health" damage(1))						;// Damage to human health
+
+	{DisableRicochet}
+
+	("accuracy_direct_arrowhead" r1(1.10) range_ap(120) range_he(120) range_heat(120))
+}

@@ -1,0 +1,42 @@
+;_________________________________________
+; Soviet heavy M1943 mortar - 160mm
+;=========================================
+
+
+{from "pattern mortar"
+	{filling "mortarrus_160"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundClose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{calibre 160}
+
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 6.7} {120 21} {170 32.5} {249.99 32.5} {250 70}})))))
+(mod "gametype:battle_zones" {radiusTable {0 6.7} {120 21} {170 32.5} {249.99 32.5} {375 58.5} {375.01 70}})
+(mod "gametype:ammunition" {radiusTable {0 6.7} {120 21} {170 32.5} {249.99 32.5} {375 58.5} {375.01 70}})
+(mod "gametype:evacuation" {radiusTable {0 6.7} {120 21} {170 32.5} {249.99 32.5} {375 58.5} {375.01 70}})
+(mod "gametype:frontlines" {radiusTable {0 6.7} {120 21} {170 32.5} {249.99 32.5} {375 58.5} {375.01 70}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 6.7} {120 21} {170 32.5} {249.99 32.5} {375 58.5} {375.01 70}})
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {aimRange 250})))))
+(mod "gametype:battle_zones" {aimRange 375})
+(mod "gametype:ammunition" {aimRange 375})
+(mod "gametype:evacuation" {aimRange 375})
+(mod "gametype:frontlines" {aimRange 375})
+(mod "gametype:campaign_capture_the_flag" {aimRange 375})
+	{minRange 50}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {maxRange 250})))))
+(mod "gametype:battle_zones" {maxRange 375})
+(mod "gametype:ammunition" {maxRange 375})
+(mod "gametype:evacuation" {maxRange 375})
+(mod "gametype:frontlines" {maxRange 375})
+(mod "gametype:campaign_capture_the_flag" {maxRange 375})
+	("reload time" seconds(20))
+
+	{parameters "he"
+		{projectileDamageTable {0 30}}
+	}
+}

@@ -1,0 +1,60 @@
+;_________________________________________
+; German early-war heavy infantry support gun
+;=========================================
+
+
+{from "pattern gun"			; L/11 "grille_k"
+	{filling "bulletger_150_l11"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 150}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 280 280})))))
+(mod "gametype:battle_zones" {range 420 420})
+(mod "gametype:ammunition" {range 420 420})
+(mod "gametype:evacuation" {range 420 420})
+(mod "gametype:frontlines" {range 420 420})
+(mod "gametype:campaign_capture_the_flag" {range 420 420}) ; // 4.7km
+
+	("reload time" seconds(25))
+
+	("velocity m/s" ap(1) apcr(1) he(178) heat(280))
+	("armor health" damage(450))
+	("85-155_slope_multipliers")
+
+	; Gr.39 Hl/A
+	("penetration_medium" shell(heat) range(170) a(184) b(184) c(184) d(184) e(184))
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.15) 				; // Accuracy radius for direct-fire munitions
+		r2(8.25) 				; // Accuracy radius for indirect fire
+		rmax(22) 				; // Accuracy radius for indirect fire at maximum range
+		range_ap(170) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(170) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(280)			; // Range after which accuracy drops to prevent farshooting.
+	)
+
+	{parameters "he2" ;// stielgranate 42
+		("reload time" seconds(30))
+		{speed 100}
+		{gravity 3}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 150 150})))))
+(mod "gametype:battle_zones" {range 225 225})
+(mod "gametype:ammunition" {range 225 225})
+(mod "gametype:evacuation" {range 225 225})
+(mod "gametype:frontlines" {range 225 225})
+(mod "gametype:campaign_capture_the_flag" {range 225 225})
+		{spreading
+			; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0} {50 5} {100 10} {150 15} {155 50}})))))
+(mod "gametype:battle_zones" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
+(mod "gametype:ammunition" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
+(mod "gametype:evacuation" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
+(mod "gametype:frontlines" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0} {50 5} {100 10} {150 15} {232.5 27} {232.51 50}})
+		}
+	}
+}

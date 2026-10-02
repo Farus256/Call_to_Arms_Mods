@@ -1,0 +1,18 @@
+{from "pattern flame_thrower"
+	{entity "roks_3_flame_thrower"}
+	{tag "range_40"}
+	("filling" fuel(70))	;// 6-8 seconds of fuel
+	{mass 22.7}
+
+	{inventory
+		{size 4 6}
+	}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 40 41})))))
+(mod "gametype:battle_zones" {range 48 49.2})
+(mod "gametype:ammunition" {range 48 49.2})
+(mod "gametype:evacuation" {range 48 49.2})
+(mod "gametype:frontlines" {range 48 49.2})
+(mod "gametype:campaign_capture_the_flag" {range 48 49.2})
+}

@@ -751,10 +751,53 @@
 		{if tagged "_ai_medic_target" 				{tags remove "_ai_medic_target"}}
 		{if tagged "_ai_medic_target_being_healed" 	{tags remove "_ai_medic_target_being_healed"}}
 		{if tagged "_ai_wirecutter" 				{tags remove "_ai_wirecutter"}}
-		{if tagged "_ai_wirecutter_do" 				{tags remove "_ai_wirecutter"}}
-		{if tagged "_ai_wirecutter_in_action" 		{tags remove "_ai_wirecutter"}}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {if tagged "_ai_wirecutter_do" 				{tags remove "_ai_wirecutter"}})))))
+(mod "gametype:battle_zones" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
+(mod "gametype:ammunition" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
+(mod "gametype:evacuation" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
+(mod "gametype:frontlines" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
+(mod "gametype:campaign_capture_the_flag" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {if tagged "_ai_wirecutter_in_action" 		{tags remove "_ai_wirecutter"}})))))
+(mod "gametype:battle_zones" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
+(mod "gametype:ammunition" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
+(mod "gametype:evacuation" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
+(mod "gametype:frontlines" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
+(mod "gametype:campaign_capture_the_flag" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
 		;//
-	}
+	
+(mod "gametype:battle_zones" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
+{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
+{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
+{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
+{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
+{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
+(mod "gametype:ammunition" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
+{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
+{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
+{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
+{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
+{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
+(mod "gametype:evacuation" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
+{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
+{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
+{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
+{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
+{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
+(mod "gametype:frontlines" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
+{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
+{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
+{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
+{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
+{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
+(mod "gametype:campaign_capture_the_flag" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
+{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
+{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
+{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
+{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
+{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
+}
 
 	{on "die"
 		{view stop "officer"}

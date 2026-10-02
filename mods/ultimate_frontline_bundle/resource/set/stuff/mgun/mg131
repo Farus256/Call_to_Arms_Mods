@@ -1,0 +1,53 @@
+{from "pattern mgun"
+	{filling "ammo hmgun_ger" 100}
+	{entity "mg131"}
+	{fireSound "smallarms/s4/d1/USA/M2HB/"}
+	{fireSoundclose "smallarms/s4/d1/USA/M2HB/"}
+	{reloadSound "mg42"}
+	{calibre 13}
+	{mass 13}
+
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 140 140})))))
+(mod "gametype:battle_zones" {range 210 210})
+(mod "gametype:ammunition" {range 210 210})
+(mod "gametype:evacuation" {range 210 210})
+(mod "gametype:frontlines" {range 210 210})
+(mod "gametype:campaign_capture_the_flag" {range 210 210})
+
+	{curve "bullet_hmg"}
+
+	("armor health" damage(13))
+	("human health" damage(180))
+
+	("accuracy_hmg")
+
+	("penetration" args 7 5 3 1 0)
+	{FiringTimeout 1.5 0.5}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+		{0.25 0.0}	;35m
+		{0.75 1.0}	;105m
+	})))))
+(mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+(mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+(mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+(mod "gametype:frontlines" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+(mod "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor {0.166667 0.0} {0.5 1.0}})
+	{SpreadTolerance 0.2}			;// AI needs to aim 20%
+	{thirdpersonparams inherit "human default"}
+
+	("recoil_hmg_medium")
+	("sway_mg")
+	("ap_12_slope_multiplier")
+
+	("fire rate" rpm(900))
+	("velocity" mps(750))
+
+	("reload_belt")
+
+	{projectileDamageTable {20 31} {100 19} {165 12} {215 8} {250 6}} ;// M2 AP
+
+	("burst_medium")
+	("spreading_low")
+}

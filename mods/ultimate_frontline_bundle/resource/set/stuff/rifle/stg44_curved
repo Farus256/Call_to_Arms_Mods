@@ -1,0 +1,24 @@
+{from "pattern rifle"
+	{tag "-rifle smg inter_shell assaultrifle"}
+	{filling "ammo stg44" 30}
+	{entity "stg44"}
+	{fireSound "smallarms/s2/d1/GER/StG44/"}
+	{fireSoundclose "smallarms/s2/3p/GER/StG44/"}
+	{reloadSound "stg"}
+	{calibre 7.92}
+	{mass 4.6}
+
+	("reload time" seconds(4.5))
+	("fire rate" rpm(500))
+	("velocity" mps(685))
+	("assault_rifle")
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 50 50})))))
+(mod "gametype:battle_zones" {range 75 75})
+(mod "gametype:ammunition" {range 75 75})
+(mod "gametype:evacuation" {range 75 75})
+(mod "gametype:frontlines" {range 75 75})
+(mod "gametype:campaign_capture_the_flag" {range 75 75})
+	("penetration" args 6 4 2 1 0)
+	("armor health" damage(3))
+}

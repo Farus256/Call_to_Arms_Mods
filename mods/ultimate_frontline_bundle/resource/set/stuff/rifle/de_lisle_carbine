@@ -1,0 +1,47 @@
+{from "pattern rifle"
+	{tag "bolt_action smg_shell silencedrifle"}
+	{filling "ammo de_lisle_carbine_mag" 7}
+	{inventory {size 5 2}}
+	{entity "de_lisle_carbine"}
+	{fireSound "smallarms/s1/d1/Shared/Surpressed_Pistol/"}
+	{fireSoundclose "smallarms/s1/3p/Shared/Surpressed_Pistol/"}
+	{reloadSound "g43"}
+	{calibre 11.43}
+	{mass 3.74}
+
+	("reload time" seconds(3))
+	("velocity" mps(250))
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 80 80})))))
+(mod "gametype:battle_zones" {range 120 120})
+(mod "gametype:ammunition" {range 120 120})
+(mod "gametype:evacuation" {range 120 120})
+(mod "gametype:frontlines" {range 120 120})
+(mod "gametype:campaign_capture_the_flag" {range 120 120})
+	{states
+		{reload		"reload"}
+		{unload		"unload"}
+		{fire		"fire"	}
+		{aim 		"aim"	}
+		{can_aim	"can-aim-bolt"}
+	}
+	{FiringTimeout 2.5 0.5}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor
+		{0.25 0.5}	;20m, 1.25s
+		{1.0 1.0}	;80m, 2.5s
+	})))))
+(mod "gametype:battle_zones" {FiringTimeoutDistanceFactor {0.166667 0.5} {0.666667 1.0}})
+(mod "gametype:ammunition" {FiringTimeoutDistanceFactor {0.166667 0.5} {0.666667 1.0}})
+(mod "gametype:evacuation" {FiringTimeoutDistanceFactor {0.166667 0.5} {0.666667 1.0}})
+(mod "gametype:frontlines" {FiringTimeoutDistanceFactor {0.166667 0.5} {0.666667 1.0}})
+(mod "gametype:campaign_capture_the_flag" {FiringTimeoutDistanceFactor {0.166667 0.5} {0.666667 1.0}})
+	("fire rate" rpm(50))
+	{AccuracyByMotionK 0.9}
+	("marksman")
+
+	{curve "bullet_pistol"}
+	("human health" damage(120))
+	("penetration" args 2 1 0.5 0 0)
+	("armor health" damage(2))
+}

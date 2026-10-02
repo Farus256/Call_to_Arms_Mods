@@ -1,0 +1,92 @@
+(include "\set\small_firearms_accuracy.inc")
+
+(define "penetration"
+	{projectileDamageTable 	{25 %0} {150 %1}}
+)
+
+(define "armor health"
+	{minimumDamageModifier (* 1.0 %damage)}
+)
+
+(define "flare_pistol"
+	{tag "flare_gun flaregun"}
+
+	{fireSound "pistol/flare"}
+	{fireSoundclose "pistol/flare/3p/"}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 65 70})))))
+(mod "gametype:battle_zones" {range 97.5 105})
+(mod "gametype:ammunition" {range 97.5 105})
+(mod "gametype:evacuation" {range 97.5 105})
+(mod "gametype:frontlines" {range 97.5 105})
+(mod "gametype:campaign_capture_the_flag" {range 97.5 105})
+	{gravity 0.3}
+	{calibre 1}
+	{AimingTolerance 3}
+	{mass 0.5}
+
+	{spreading
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.5} {20 0.5} {69.99 3.5} {70 10} {100 20}})))))
+(mod "gametype:battle_zones" {radiusTable {0 0.5} {20 0.5} {69.99 3.5} {105 6.3} {105.01 10} {135.01 20}})
+(mod "gametype:ammunition" {radiusTable {0 0.5} {20 0.5} {69.99 3.5} {105 6.3} {105.01 10} {135.01 20}})
+(mod "gametype:evacuation" {radiusTable {0 0.5} {20 0.5} {69.99 3.5} {105 6.3} {105.01 10} {135.01 20}})
+(mod "gametype:frontlines" {radiusTable {0 0.5} {20 0.5} {69.99 3.5} {105 6.3} {105.01 10} {135.01 20}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0.5} {20 0.5} {69.99 3.5} {105 6.3} {105.01 10} {135.01 20}})
+	}
+
+	{reloadAnimBonus 117}
+	{reloadSound "flare"}
+	("reload time" seconds(120))
+	
+	{parameters "sm"
+		{cursorReloading "gun_sm"}
+		("reload time" seconds(150))
+	}
+	{parameters "signal"
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 250 250})))))
+(mod "gametype:battle_zones" {range 375 375})
+(mod "gametype:ammunition" {range 375 375})
+(mod "gametype:evacuation" {range 375 375})
+(mod "gametype:frontlines" {range 375 375})
+(mod "gametype:campaign_capture_the_flag" {range 375 375})
+		{gravity 0.08}
+		{speed 10}
+		{spreading
+			; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {radiusTable {0 0.5} {20 0.5} {249.99 3.5} {250 10} {270 20}})))))
+(mod "gametype:battle_zones" {radiusTable {0 0.5} {20 0.5} {249.99 3.5} {375 6.3} {375.01 10} {395.01 20}})
+(mod "gametype:ammunition" {radiusTable {0 0.5} {20 0.5} {249.99 3.5} {375 6.3} {375.01 10} {395.01 20}})
+(mod "gametype:evacuation" {radiusTable {0 0.5} {20 0.5} {249.99 3.5} {375 6.3} {375.01 10} {395.01 20}})
+(mod "gametype:frontlines" {radiusTable {0 0.5} {20 0.5} {249.99 3.5} {375 6.3} {375.01 10} {395.01 20}})
+(mod "gametype:campaign_capture_the_flag" {radiusTable {0 0.5} {20 0.5} {249.99 3.5} {375 6.3} {375.01 10} {395.01 20}})
+		}
+	}
+	{parameters "illum"
+		{cursorReloading "gun_illum"}
+		; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 200 200})))))
+(mod "gametype:battle_zones" {range 300 300})
+(mod "gametype:ammunition" {range 300 300})
+(mod "gametype:evacuation" {range 300 300})
+(mod "gametype:frontlines" {range 300 300})
+(mod "gametype:campaign_capture_the_flag" {range 300 300})
+		{curve "gun_std"}
+		{aimtype curved}
+		{spreading 0.9}
+	
+		{unlimitedRangeTPC 0}
+		{gravity 0.16}
+		{speed 25}
+		("reload time" seconds(10))
+	}
+
+	("human health" damage(60))
+
+	("penetration" args 0.5 0.5)
+	("armor health" damage(5))
+
+	{DisableRicochet}
+	{speed 15}
+)

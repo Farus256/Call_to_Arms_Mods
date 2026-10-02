@@ -1,0 +1,33 @@
+;_________________________________________
+; ARTY - 220mm Mle 1917 heavy french gun
+;=========================================
+
+
+{from "pattern gun"			; L/10.6 "220mm_morser531f"
+	{filling "bullet_220_l10"}
+	{fireSound "cannon/s6/d1/Shared/Cannon_280mm+/"}
+	{fireSoundClose "cannon/s6/3p/Shared/Cannon_280mm+/"}
+	{reloadSound "utility/"}
+	("super_heavy_artillery")
+	{calibre 220}
+	; UFB realism: native non-story gametype conditions
+(mod not "gametype:battle_zones" (mod not "gametype:ammunition" (mod not "gametype:evacuation" (mod not "gametype:frontlines" (mod not "gametype:campaign_capture_the_flag" {range 360 360})))))
+(mod "gametype:battle_zones" {range 540 540})
+(mod "gametype:ammunition" {range 540 540})
+(mod "gametype:evacuation" {range 540 540})
+(mod "gametype:frontlines" {range 540 540})
+(mod "gametype:campaign_capture_the_flag" {range 540 540}) ; // 10.8km
+
+	("reload time" seconds(90))
+
+	("velocity" mps(198))
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.50) 		   ; // Accuracy radius for direct-fire munitions
+		r2(8) 			   ; // Accuracy radius for indirect fire
+		rmax(25) 		   ; // Accuracy radius for indirect fire at maximum range
+		range_ap(210) 	   ; // Range after which accuracy drops to prevent farshooting.
+		range_heat(210)    ; // Range after which accuracy drops to prevent farshooting.
+		range_he(360)	   ; // Range after which accuracy drops to prevent farshooting.
+	)
+}
