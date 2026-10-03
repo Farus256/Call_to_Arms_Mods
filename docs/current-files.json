@@ -4694,8 +4694,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/set/vision/vision_fields.inc",
-      "bytes": 10499,
-      "sha256": "cd44d03eac94fc16bbbdec87afeb9f3352c5808930a5f9bb267e12916f93f3fc"
+      "bytes": 10495,
+      "sha256": "b36f07e83f5880aa73adc50185abfcae2ba581caf24de90d92d875b76dc8e889"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/shader/dx10/pbr/light.hlsl",

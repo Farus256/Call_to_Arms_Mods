@@ -17,12 +17,12 @@
 	{v_fov 180}
 	("spotting" r(1.1))
 
-	; UFB: wider view and longer spotting radius, without nested macro conditions.
-	(mod "gametype:battle_zones" {h_fov 240} {radius 1.6875})
-	(mod "gametype:ammunition" {h_fov 240} {radius 1.6875})
-	(mod "gametype:evacuation" {h_fov 240} {radius 1.6875})
-	(mod "gametype:frontlines" {h_fov 240} {radius 1.6875})
-	(mod "gametype:campaign_capture_the_flag" {h_fov 240} {radius 1.6875})
+	; UFB: human-like forward/peripheral angles; retain prior long-range balance.
+	(mod "gametype:battle_zones" {h_fov 120} {radius 1.485})
+	(mod "gametype:ammunition" {h_fov 120} {radius 1.485})
+	(mod "gametype:evacuation" {h_fov 120} {radius 1.485})
+	(mod "gametype:frontlines" {h_fov 120} {radius 1.485})
+	(mod "gametype:campaign_capture_the_flag" {h_fov 120} {radius 1.485})
 }
 
 {"human_peripheral"						; // Additional all-round (weaker) situational awareness vision for humans
@@ -31,12 +31,12 @@
 	{v_fov 120}
 	("spotting" r(0.32))
 
-	; UFB: wider view and longer spotting radius, without nested macro conditions.
-	(mod "gametype:battle_zones" {h_fov 300} {radius 0.54})
-	(mod "gametype:ammunition" {h_fov 300} {radius 0.54})
-	(mod "gametype:evacuation" {h_fov 300} {radius 0.54})
-	(mod "gametype:frontlines" {h_fov 300} {radius 0.54})
-	(mod "gametype:campaign_capture_the_flag" {h_fov 300} {radius 0.54})
+	; UFB: human-like forward/peripheral angles; retain prior long-range balance.
+	(mod "gametype:battle_zones" {h_fov 200} {radius 0.432})
+	(mod "gametype:ammunition" {h_fov 200} {radius 0.432})
+	(mod "gametype:evacuation" {h_fov 200} {radius 0.432})
+	(mod "gametype:frontlines" {h_fov 200} {radius 0.432})
+	(mod "gametype:campaign_capture_the_flag" {h_fov 200} {radius 0.432})
 }
 
 {"human_elite"							; // Soldiers with better vision (elites, officers, snipers)
@@ -45,12 +45,12 @@
 	{v_fov 180}
 	("spotting" r(1.2))
 
-	; UFB: wider view and longer spotting radius, without nested macro conditions.
-	(mod "gametype:battle_zones" {h_fov 240} {radius 1.89})
-	(mod "gametype:ammunition" {h_fov 240} {radius 1.89})
-	(mod "gametype:evacuation" {h_fov 240} {radius 1.89})
-	(mod "gametype:frontlines" {h_fov 240} {radius 1.89})
-	(mod "gametype:campaign_capture_the_flag" {h_fov 240} {radius 1.89})
+	; UFB: human-like forward/peripheral angles; retain prior long-range balance.
+	(mod "gametype:battle_zones" {h_fov 120} {radius 1.62})
+	(mod "gametype:ammunition" {h_fov 120} {radius 1.62})
+	(mod "gametype:evacuation" {h_fov 120} {radius 1.62})
+	(mod "gametype:frontlines" {h_fov 120} {radius 1.62})
+	(mod "gametype:campaign_capture_the_flag" {h_fov 120} {radius 1.62})
 }
 
 {"human_recon"							; // Soldiers with dedicated best vision (recon soldiers)
@@ -59,12 +59,12 @@
 	{v_fov 180}
 	("spotting" r(1.35))
 
-	; UFB: wider view and longer spotting radius, without nested macro conditions.
-	(mod "gametype:battle_zones" {h_fov 240} {radius 2.0925})
-	(mod "gametype:ammunition" {h_fov 240} {radius 2.0925})
-	(mod "gametype:evacuation" {h_fov 240} {radius 2.0925})
-	(mod "gametype:frontlines" {h_fov 240} {radius 2.0925})
-	(mod "gametype:campaign_capture_the_flag" {h_fov 240} {radius 2.0925})
+	; UFB: human-like forward/peripheral angles; retain prior long-range balance.
+	(mod "gametype:battle_zones" {h_fov 120} {radius 1.8225})
+	(mod "gametype:ammunition" {h_fov 120} {radius 1.8225})
+	(mod "gametype:evacuation" {h_fov 120} {radius 1.8225})
+	(mod "gametype:frontlines" {h_fov 120} {radius 1.8225})
+	(mod "gametype:campaign_capture_the_flag" {h_fov 120} {radius 1.8225})
 }
 
 {"rifle_telescope"						; // Primary vision for sniper scopes
