@@ -1,4 +1,5 @@
 ; Mission-scoped tuning: campaign/story missions do not include this file.
+(include "/map/multi/ufb_survival.inc")
 (define "ufb_infantry_candidates"
     {source advanced}
     {ignore_captured_by_user 0}
