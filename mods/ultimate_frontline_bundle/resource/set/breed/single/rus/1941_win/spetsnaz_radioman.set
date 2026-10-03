@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_rkka_signaller_rfl"}
+	{portrait "rus_spetsnaz"}
+	{icon "smg"}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head soviet_ushanka}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_4")("tier4_standard") 
+		("stealth")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "ppsh41_drum" filled}
+		{item "revolver_clip ammo" 70}
+		{item "nagant_silencer" filled}
+		{item "bandage_rus"}
+		{item "german_radio"}
+		{item "molotov_cocktail grenade" 2}
+		{item "ppsh_drum ammo" 345}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_elite"}
+}

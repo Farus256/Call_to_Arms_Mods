@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_44_volksgebirgs_nco_stg_1"}
+	{portrait ger_gebirgs_pionier}
+	{field_icon "ger_gebirgsjaeger"}
+	{icon "stg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m43_gog_a_up}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_defense")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "stg44" filled}
+		{item "stg44 ammo" 180}
+
+		{item "m43_splinter grenade" 2.5 0.5}
+		{item "m24_smoke grenade" 2.5 0.5}
+		{item "m24_geballteladung grenade" 0.5 0.5}
+
+		{item "bandage_ger" 5.5 0.5}
+		{item "ger_fieldcap_m43_gj"}
+
+		{in_hands 0}
+	}
+}

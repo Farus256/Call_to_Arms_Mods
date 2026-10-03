@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_lw_HG_fielddiv_zelt_mg"}
+	{portrait "ger_luft_hg"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_lw_camo2_band_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_3")("tier3_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "mg42_belt" filling "mgun_ger belt ap ammo" 100}
+		{item "mgun_ger belt ap ammo" 300}
+
+		{item "m39_late grenade" 1.25 0.5}
+		{item "m24_smoke grenade" 0.25 0.5}
+
+		{item "bandage_ger" 3.5 0.5}
+		{item "ger_fieldcap_m43_luft_var3"}
+		{item "shovel_ger"}
+		
+		{in_hands 0}
+	}
+}

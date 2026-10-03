@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_43_sturm_g43"}
+	{portrait ger_waff_recon}
+	{field_icon "ger_pzaufklar"}
+	{icon "autorifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_fieldcap_m43_waff_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_recon")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g43" filling "rifle_ger gewehr ammo" 10}
+		{item "rifle_ger gewehr ammo" 20}
+		{item "rifle_ger clip ammo" 60 10}
+
+		{item "m43 grenade" 1.25 0.5}
+		{item "m24_smoke grenade" 0.5 0.5}
+		{item "m24_geballteladung grenade" 0.15 0.5}
+
+		{item "shovel_ger"}
+		{item "bandage_ger" 3.5 0.5}
+
+		{in_hands 0}
+	}
+}

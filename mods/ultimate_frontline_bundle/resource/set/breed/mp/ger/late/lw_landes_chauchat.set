@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_lw_landes_chauchat"}
+	{portrait "ger_luftwaffe"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_lw_band_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_1")("tier1_defense")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg156f" filled}
+		{item "chauchat ammo" 180}
+
+		{item "m39_late grenade" 1.25 0.5}
+		{item "m24_smoke grenade" 0.15 0.5}
+
+		{item "bandage_ger" 2.5 0.5}
+		{item "shovel_ger"}
+		{item "ger_overseascap_luft_var1"}
+
+		{in_hands 0}
+	}
+}

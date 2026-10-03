@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_mil_builder_1"}
+	{portrait rus_military_builder}
+	{field_icon "rus_conscript"}
+	{icon "pistol"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality rus}
+	{armors
+		{head sov_cap_pilotka_b_var2_sub}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_1")("tier1_defense")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mosin_carbine" filled}
+		{item "rifle_rus clip ammo" 45 5}
+
+		{item "f1 grenade" 0.75 0.5}
+		{item "molotov_cocktail grenade" 0.5 0.5}
+		{item "satchel_charge_rus" 1}
+
+		{item "bandage_rus" 2.5 0.5}
+		
+
+		{item "shovel_rus"}
+		{in_hands 0}
+	}
+}

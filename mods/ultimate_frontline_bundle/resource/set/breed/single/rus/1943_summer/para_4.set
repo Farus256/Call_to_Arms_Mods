@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_vvs_para_svt_1"}
+	{portrait "rus_paratrooper"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head soviet_budinovka}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard") 
+		 
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "avt40" filled}
+		{item "bandage_rus" 3}
+		{item "knife_rus"}
+		{item "f1 grenade" 2}
+		{item "rifle_rus svt ammo" 80}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_elite"}
+}

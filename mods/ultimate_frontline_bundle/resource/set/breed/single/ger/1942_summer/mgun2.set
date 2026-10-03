@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_mg_asst"}
+	{portrait "ger_regular"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m34_sidecap}
+	}
+	{perks
+		(include "ability.inc")
+		("loader_skill_rank_2")("tier2_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98" filled}
+		
+		{item "rifle_ger clip ammo" 30}
+		{item "mgun_ger belt ammo" 250}
+		{item "bandage_ger"}
+		{item "shovel_ger"}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

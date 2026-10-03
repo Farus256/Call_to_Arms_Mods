@@ -1,0 +1,84 @@
+{breed
+	{behaviour soldier}
+	{skin "us_m41_ranger_vest_gmbag_bag_pfc"}
+	{portrait usa_ranger}
+	{icon bazooka}
+	{icon_priority 6}
+	{tags "soldier_bazooka" "_ufb_profile_regular"}
+	{nationality usa}
+	{armors
+		{head us_m1_ranger_b}
+	}
+	{perks
+		{"rocketlauncher" lvl_5
+		}
+		{"rifle" lvl_5
+		}
+		{"pistol" lvl_5
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"mgun_light" lvl_4
+		}
+		{"melee" lvl_4
+		}
+		{"avoidance" lvl_4
+		}
+		{"barricade"
+			{fortifications "foxhole" "medic_rally"}
+			{factor 1}
+		}
+		{"resources" "10%"
+		}
+		{"mechanic"}
+		{"tank_gun" lvl_1
+		}
+		{"health" "375%"
+		}
+		{"health_regeneration" "10%"
+		}
+		{"stamina" "300%"
+		}
+		{"stamina_regeneration" "250%"
+		}
+		{"personage" 0}
+		{"vision" human
+		}
+		{"speed" 1
+		}
+	}
+	{veterancy
+		{"lvl_1" 4
+		}
+		{"lvl_2" 10
+		}
+		{"lvl_3" 20
+		}
+		{"lvl_4" 30
+		}
+		{"lvl_5" 40
+		}
+		{"lvl_6" 60
+		}
+		{"lvl_7" 80
+		}
+		{"lvl_8" 100
+		}
+	}
+	{inventory
+		{item "garand" filling "rifle_usa garand_clip ap ammo" 8}
+		{item "rifle_usa garand_clip ap ammo" 112}
+		{item "rifle_usa garand_clip trace ammo" 16}
+		{item "bazooka_m1a1" filling "bazooka ammo heatb" 1}
+		{item "bazooka ammo heatb" 3}
+		{item "bazooka ammo wp"}
+		{item "mk2 grenade" 3.25 0.5}
+		{item "m15_wp grenade" 1.25 0.5}
+		{item "anm8_smoke grenade" 0.75 0.5}
+		{item "bandage_usa" 5.5 0.5}
+		{item "shovel_usa"}
+		{in_hands 0}
+	}
+}

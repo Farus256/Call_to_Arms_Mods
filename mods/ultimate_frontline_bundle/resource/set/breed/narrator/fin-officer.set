@@ -1,0 +1,11 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "ger_heer_39_co_2_hauptmann"}
+	{portrait "narrator_fin_officer"}
+	{icon "officer"}
+	{icon_priority 4}
+	{nationality fin}
+
+	{tags "_ufb_profile_regular"}
+}

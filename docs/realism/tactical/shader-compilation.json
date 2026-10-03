@@ -1,0 +1,234 @@
+{
+  "compiler": "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/fxc.exe",
+  "target": "ps_4_0",
+  "entry": "PS",
+  "note": "Offline compile, not SMS Launcher or winter map validation",
+  "results": [
+    {
+      "name": "diffuse",
+      "version": "baseline",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1"
+      ],
+      "status": 0,
+      "bytes": 21448,
+      "warnings": [
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "diffuse",
+      "version": "current",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1"
+      ],
+      "status": 0,
+      "bytes": 21448,
+      "warnings": [
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "normal_specular",
+      "version": "baseline",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1",
+        "BUMP=1",
+        "SPEC=1"
+      ],
+      "status": 0,
+      "bytes": 25660,
+      "warnings": [
+        "X3206: 'phong2pbr': implicit truncation of vector type",
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "normal_specular",
+      "version": "current",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1",
+        "BUMP=1",
+        "SPEC=1"
+      ],
+      "status": 0,
+      "bytes": 25660,
+      "warnings": [
+        "X3206: 'phong2pbr': implicit truncation of vector type",
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "foliage",
+      "version": "baseline",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1",
+        "BUMP=1",
+        "SPEC=1",
+        "NEED_ALPHA=1",
+        "ALPHA_TEST=1",
+        "FAKE_TRANSLUCENCY=1"
+      ],
+      "status": 0,
+      "bytes": 25952,
+      "warnings": [
+        "X3206: 'phong2pbr': implicit truncation of vector type",
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "foliage",
+      "version": "current",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1",
+        "BUMP=1",
+        "SPEC=1",
+        "NEED_ALPHA=1",
+        "ALPHA_TEST=1",
+        "FAKE_TRANSLUCENCY=1"
+      ],
+      "status": 0,
+      "bytes": 25952,
+      "warnings": [
+        "X3206: 'phong2pbr': implicit truncation of vector type",
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "pbr",
+      "version": "baseline",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "BUMP=1",
+        "SPEC=1",
+        "PARALLAX=1",
+        "LIGHTMAP=1",
+        "TEXCOORDS=2"
+      ],
+      "status": 0,
+      "bytes": 24700,
+      "warnings": [
+        "X3206: implicit truncation of vector type",
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "pbr",
+      "version": "current",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "BUMP=1",
+        "SPEC=1",
+        "PARALLAX=1",
+        "LIGHTMAP=1",
+        "TEXCOORDS=2"
+      ],
+      "status": 0,
+      "bytes": 24700,
+      "warnings": [
+        "X3206: implicit truncation of vector type",
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "pbr_lite",
+      "version": "baseline",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1",
+        "BUMP=1",
+        "SPEC=1",
+        "PARALLAX=1",
+        "FULL_SPECULAR=1"
+      ],
+      "status": 0,
+      "bytes": 24776,
+      "warnings": [
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "pbr_lite",
+      "version": "current",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1",
+        "BUMP=1",
+        "SPEC=1",
+        "PARALLAX=1",
+        "FULL_SPECULAR=1"
+      ],
+      "status": 0,
+      "bytes": 24776,
+      "warnings": [
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "shadows",
+      "version": "baseline",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1",
+        "BUMP=1",
+        "SPEC=1",
+        "SHADOW=1",
+        "SM_SLICES=3"
+      ],
+      "status": 0,
+      "bytes": 27104,
+      "warnings": [
+        "X3206: 'phong2pbr': implicit truncation of vector type",
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    },
+    {
+      "name": "shadows",
+      "version": "current",
+      "defines": [
+        "LIGHT=1",
+        "PARALLEL_LIGHT=1",
+        "DIFFUSE=1",
+        "TEXCOORDS=1",
+        "BUMP=1",
+        "SPEC=1",
+        "SHADOW=1",
+        "SM_SLICES=3"
+      ],
+      "status": 0,
+      "bytes": 27104,
+      "warnings": [
+        "X3206: 'phong2pbr': implicit truncation of vector type",
+        "X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them"
+      ]
+    }
+  ]
+}

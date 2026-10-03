@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_42_rkka_smg_drum_2"}
+	{portrait "rus_conscript"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality rus}
+	{armors
+		{head sov_cap_pilotka_b_var1_sub}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_1")("tier1_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "ppd40" filled}
+		{item "ppd40_drum ammo" 213}
+
+		{item "rgd33 grenade" 0.5 0.5}
+		{item "molotov_cocktail grenade" 0.15 0.5}
+
+		{item "bandage_rus" 2.5 0.5}
+		{item "shovel_rus"}
+
+		{in_hands 0}
+	}
+}

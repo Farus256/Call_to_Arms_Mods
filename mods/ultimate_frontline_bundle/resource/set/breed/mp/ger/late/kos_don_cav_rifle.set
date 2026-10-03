@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "kos_don_44_rfl_1"}
+	{portrait "ger_kos_don_late"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality rus}
+	{armors
+		{head ger_papacha_var1_don_roa_w_eagle}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98" filled}
+		{item "rifle_ger clip ammo" 60 5}
+
+		{item "m43 grenade" 2.25 0.5}
+		{item "m24_smoke grenade" 1.25 0.5}
+		{item "m24_geballteladung grenade" 0.5 0.5}
+		{item "panzerfaust_60 weapon" 0.5 0.5 filled}
+
+		{item "bandage_ger" 4.5 0.5}
+		{item "ger_stalhelm_m43_var1"}
+
+		{in_hands 0}
+	}
+}

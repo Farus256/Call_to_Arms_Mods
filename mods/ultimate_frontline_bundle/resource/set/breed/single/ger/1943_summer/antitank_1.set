@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_at_rfl"}
+	{portrait "ger_regular"}
+	{icon "at"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m40_helmet_green_net}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard") 
+		("at_rank_3")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "pzb_39" filled}
+		{item "m24 grenade" 1}
+		{item "bandage_ger" 3}
+		{item "m24_geballteladung grenade" 1}
+		{item "atrifle_ger ammo" 30}
+		{item "p38" filled}
+		{item "pistol ammo" 70}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

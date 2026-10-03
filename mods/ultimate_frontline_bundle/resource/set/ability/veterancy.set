@@ -1,5 +1,5 @@
 {"lvl_0" from veterancy
-	{"health" 					0}	;+%
+	{"health" 0}	;+%
 	{"health_regeneration" 		0}	;+%
 	{"stamina" 					0}	;+%
 	{"stamina_regeneration"		0}	;+%
@@ -14,7 +14,7 @@
 }
 
 {"lvl_1" from veterancy
-	{"health" 					0.0}
+	{"health" 0}
 	{"health_regeneration" 		0.0}
 	{"stamina" 					0.10}
 	{"stamina_regeneration"		0.10}
@@ -27,7 +27,7 @@
 }
 
 {"lvl_2" from veterancy
-	{"health" 					0.0}
+	{"health" 0}
 	{"health_regeneration" 		0.0}
 	{"stamina" 					0.15}
 	{"stamina_regeneration" 	0.15}
@@ -40,7 +40,7 @@
 }
 
 {"lvl_3" from veterancy
-	{"health" 					0.0}
+	{"health" 0}
 	{"health_regeneration" 		0.0}
 	{"stamina" 					0.20}
 	{"stamina_regeneration" 	0.20}
@@ -54,12 +54,12 @@
 
 {"lvl_4" from veterancy
 	; UFB realism: native non-story gametype conditions
-{"health" 					0.10}
-(mod "gametype:battle_zones" {"health" 0.03})
-(mod "gametype:ammunition" {"health" 0.03})
-(mod "gametype:evacuation" {"health" 0.03})
-(mod "gametype:frontlines" {"health" 0.03})
-(mod "gametype:campaign_capture_the_flag" {"health" 0.03})
+{"health" 0}
+(mod "gametype:battle_zones" {"health" 0})
+(mod "gametype:ammunition" {"health" 0})
+(mod "gametype:evacuation" {"health" 0})
+(mod "gametype:frontlines" {"health" 0})
+(mod "gametype:campaign_capture_the_flag" {"health" 0})
 	; UFB realism: native non-story gametype conditions
 {"health_regeneration" 		0.25}
 (mod "gametype:battle_zones" {"health_regeneration" 0.041667})
@@ -79,12 +79,12 @@
 
 {"lvl_5" from veterancy
 	; UFB realism: native non-story gametype conditions
-{"health" 					0.15}
-(mod "gametype:battle_zones" {"health" 0.045})
-(mod "gametype:ammunition" {"health" 0.045})
-(mod "gametype:evacuation" {"health" 0.045})
-(mod "gametype:frontlines" {"health" 0.045})
-(mod "gametype:campaign_capture_the_flag" {"health" 0.045})
+{"health" 0}
+(mod "gametype:battle_zones" {"health" 0})
+(mod "gametype:ammunition" {"health" 0})
+(mod "gametype:evacuation" {"health" 0})
+(mod "gametype:frontlines" {"health" 0})
+(mod "gametype:campaign_capture_the_flag" {"health" 0})
 	; UFB realism: native non-story gametype conditions
 {"health_regeneration" 		0.50}
 (mod "gametype:battle_zones" {"health_regeneration" 0.083333})
@@ -104,12 +104,12 @@
 
 {"lvl_6" from veterancy
 	; UFB realism: native non-story gametype conditions
-{"health" 					0.20}
-(mod "gametype:battle_zones" {"health" 0.06})
-(mod "gametype:ammunition" {"health" 0.06})
-(mod "gametype:evacuation" {"health" 0.06})
-(mod "gametype:frontlines" {"health" 0.06})
-(mod "gametype:campaign_capture_the_flag" {"health" 0.06})
+{"health" 0}
+(mod "gametype:battle_zones" {"health" 0})
+(mod "gametype:ammunition" {"health" 0})
+(mod "gametype:evacuation" {"health" 0})
+(mod "gametype:frontlines" {"health" 0})
+(mod "gametype:campaign_capture_the_flag" {"health" 0})
 	; UFB realism: native non-story gametype conditions
 {"health_regeneration" 		1.00}
 (mod "gametype:battle_zones" {"health_regeneration" 0.166667})
@@ -129,12 +129,12 @@
 
 {"lvl_7" from veterancy
 	; UFB realism: native non-story gametype conditions
-{"health" 					0.25}
-(mod "gametype:battle_zones" {"health" 0.075})
-(mod "gametype:ammunition" {"health" 0.075})
-(mod "gametype:evacuation" {"health" 0.075})
-(mod "gametype:frontlines" {"health" 0.075})
-(mod "gametype:campaign_capture_the_flag" {"health" 0.075})
+{"health" 0}
+(mod "gametype:battle_zones" {"health" 0})
+(mod "gametype:ammunition" {"health" 0})
+(mod "gametype:evacuation" {"health" 0})
+(mod "gametype:frontlines" {"health" 0})
+(mod "gametype:campaign_capture_the_flag" {"health" 0})
 	; UFB realism: native non-story gametype conditions
 {"health_regeneration"		2.00}
 (mod "gametype:battle_zones" {"health_regeneration" 0.333333})
@@ -154,12 +154,12 @@
 
 {"lvl_8" from veterancy
 	; UFB realism: native non-story gametype conditions
-{"health" 					0.334}
-(mod "gametype:battle_zones" {"health" 0.1002})
-(mod "gametype:ammunition" {"health" 0.1002})
-(mod "gametype:evacuation" {"health" 0.1002})
-(mod "gametype:frontlines" {"health" 0.1002})
-(mod "gametype:campaign_capture_the_flag" {"health" 0.1002})
+{"health" 0}
+(mod "gametype:battle_zones" {"health" 0})
+(mod "gametype:ammunition" {"health" 0})
+(mod "gametype:evacuation" {"health" 0})
+(mod "gametype:frontlines" {"health" 0})
+(mod "gametype:campaign_capture_the_flag" {"health" 0})
 	; UFB realism: native non-story gametype conditions
 {"health_regeneration"		3.00}
 (mod "gametype:battle_zones" {"health_regeneration" 0.5})

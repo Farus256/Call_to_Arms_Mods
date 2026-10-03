@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_lw_39_luftlande_demo"}
+	{portrait "ger_lw_luftlande"}
+	{icon "rifle"}
+	{icon_priority 1}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_fj_41_luftlande}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_3")
+	}
+	{inventory
+		{item "k98" filled}
+		{item "rifle_ger clip ammo" 60 5}
+
+		{item "m24 grenade" 2.25 0.5}
+		{item "m24_smoke grenade" 1.25 0.5}
+		{item "m24_geballteladung grenade" 1.25 0.5}
+		{item "geballteladung_3kg" 1}
+
+		{item "wirecutters"}
+		{item "bandage_ger" 5.5 0.5}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_42_rkka_guards_rifle"}
+	{portrait "rus_regular"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head soviet_pilotka}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard") 
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mosin" filled}
+		{item "rifle_rus clip ammo" 80}
+		{item "bandage_rus"}
+		
+		{item "f1 grenade" 1}
+		{item "knife_rus"}
+		{item "shovel_rus"}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_veteran"}
+}

@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_volkssturm_s1_stg_2"}
+	{portrait ger_volkssturm_stab1}
+	{field_icon "ger_volkssturm"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality ger}
+	{armors
+		{head ger_furcap}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_1")("tier1_defense")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "vg_gustloff" filled}
+		{item "stg44 ammo" 180}
+
+		{item "m43 grenade" 1.25 0.5}
+
+		{item "bandage_ger" 2.5 0.5}
+
+		{in_hands 0}
+	}
+}

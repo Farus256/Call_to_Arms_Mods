@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_43_pzgren_mg_1"}
+	{portrait ger_waff_pzgren}
+	{field_icon "ger_pzgrenadier"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_wf_helm_cover_sum}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_2")("tier2_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg42_drum" filling "mgun_ger drum ammo" 50}
+		{item "mgun_ger drum ammo" 300}
+
+		;{item "p38" filled}
+		;{item "pistol ammo" 16}
+
+		{item "m39_late grenade" 1.25 0.5}
+		{item "m24_smoke grenade" 0.25 0.5}
+
+		{item "bandage_ger" 3.5 0.5}
+		{item "shovel_ger"}
+		{item "ger_fieldcap_m43_waff_var1"}
+
+		{in_hands 0}
+	}
+}

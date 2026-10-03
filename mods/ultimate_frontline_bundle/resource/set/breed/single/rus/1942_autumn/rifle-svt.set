@@ -1,0 +1,27 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_42_rkka_sa_3"}
+	{portrait "rus_regular"}
+	{icon "autorifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality rus}
+	{armors
+		{head soviet_pilotka}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard") 
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "avt40" filled}
+		{item "bandage_rus"}
+		
+		{item "rifle_rus svt ammo" 200}
+		{in_hands 0}
+	}
+}

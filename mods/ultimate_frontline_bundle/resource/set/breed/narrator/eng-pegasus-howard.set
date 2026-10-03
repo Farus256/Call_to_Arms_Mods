@@ -1,0 +1,72 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "uk_glider_pistol_maj"}
+	{portrait narrator_eng_para_commander}
+	{icon smg}
+	{icon_priority 10}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality eng_officer}
+	{armors
+		{head uk_beret_para}
+	}
+	{perks
+		{"rocketlauncher" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"pistol" lvl_5
+		}
+		{"smg" lvl_5
+		}
+		{"mgun" lvl_4
+		}
+		{"mgun_light" lvl_4
+		}
+		{"melee" lvl_4
+		}
+		{"avoidance" lvl_4
+		}
+		{"barricade"
+			{fortifications "foxhole" "medic_rally" "auto_medic_place_flag"}
+			{factor 1}
+		}
+		{"resources" "10%"
+		}
+		{"mechanic"}
+		{"tank_gun" lvl_1
+		}
+		{"health" "375%"
+		}
+		{"health_regeneration" "10%"
+		}
+		{"stamina" "300%"
+		}
+		{"stamina_regeneration" "250%"
+		}
+		{"personage" 0}
+		{"vision" human_elite
+		}
+		{"speed" 1
+		}
+		{"field_glass"}
+	}
+	{veterancy
+		{"lvl_1" 4
+		}
+		{"lvl_2" 10
+		}
+		{"lvl_3" 20
+		}
+		{"lvl_4" 30
+		}
+		{"lvl_5" 40
+		}
+		{"lvl_6" 60
+		}
+		{"lvl_7" 80
+		}
+		{"lvl_8" 100
+		}
+	}
+}

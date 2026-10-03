@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_40_nkvd_omsdon_nco_1"}
+	{portrait rus_nkvd_omsdon_nco}
+	{field_icon "rus_nkvd_omsdon"}
+	{icon "smg"}
+	{icon_priority 3}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality rus}
+	{armors
+		{head sov_cap_peaked_nkvd_gog}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_3")("tier3_defense")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "ppd34" filled}
+		{item "ppd34_stick ammo" 150}
+
+		{item "rg14_30 grenade" 2.75 0.5}
+		{item "rg14_bundle grenade" 0.75 0.5}
+
+		{item "bandage_rus" 4.5 0.5}
+		{item "shovel_rus"}
+		
+
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_42_nkvd_mg_asst_1"}
+	{portrait "rus_nkvd"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality rus}
+	{armors
+		{head sov_cap_pilotka_nkvd_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_2")("tier2_defense")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "tt33" filled}
+		{item "tt33 ammo" 16}
+
+		{item "rg42 grenade" 0.25 0.5}
+		{item "rdg1_smoke grenade" 0.25 0.5}
+
+		{item "bandage_rus" 3.5 0.5}
+		{item "shovel_rus"}
+
+		{in_hands 0}
+	}
+}

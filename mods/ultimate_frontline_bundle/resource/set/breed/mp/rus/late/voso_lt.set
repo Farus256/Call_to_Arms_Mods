@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_43_voso_of_lt_1"}
+	{portrait "rus_officer_voso"}
+	{icon "smg"}
+	{icon_priority 5}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality rus}
+	{armors
+		{head sov_cap_peaked_voso}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_3")("tier3_standard")
+		("binocular_vision")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "binocular"}
+		
+		{item "pps43" filled}
+		{item "pps_stick ammo" 210}
+
+		{item "tt33" filled}
+		{item "tt33 ammo" 24 8}
+		{item "rdg1_smoke_supplies grenade" 5}
+		
+		{item "bandage_rus" 3.5 0.5}
+
+		{in_hands 0}
+	}
+}

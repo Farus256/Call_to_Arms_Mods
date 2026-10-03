@@ -1,7 +1,7 @@
 // PBR Shader for Gate of Hell, Copyright (c) 2025 Federation Studio.
 // ONCL-C v0.1; full English and Chinese license: mod root LICENSE-PBR.txt.
 // Original: https://steamcommunity.com/sharedfiles/filedetails/?id=3548575715
-// UFB modification: compress excessive sunlight specular peaks.
+// UFB: original sunlight response restored; camera-darkening diagnosis pending in game.
 // light struct
 struct Light
 {
@@ -62,19 +62,7 @@ inline float3 directSpecular(float3 F, float NDF, float G)
     return F * NDF * G;
 }
 
-// UFB: soften only excessive SUN specular radiance before the game's HDR pass.
-// One common RGB scale preserves highlight hue; diffuse, GI and local lights
-// retain their original response. This is a display-oriented soft shoulder.
-inline float3 UFBSoftenSunSpecular(float3 radiance)
-{
-    float peak = max(radiance.r, max(radiance.g, radiance.b));
-    float excess = max(peak - (float)0.5, (float)0.0);
-    float limitedPeak = (float)0.5 + excess * rcp((float)1.0 + excess / (float)0.75);
-    float scale = min((float)1.0, limitedPeak * rcp(max(peak, (float)0.0001)));
-    return radiance * scale;
-}
-
-inline float3 directLight(Light light, float3 normal, float3 H,float NdV, float3 F, float3 kD, float3 baseColor, float roughness, float metallic, bool softenSun)
+inline float3 directLight(Light light, float3 normal, float3 H,float NdV, float3 F, float3 kD, float3 baseColor, float roughness, float metallic)
 {
     float3 lightDir = light.direction;
     float attenuation = light.distanceAttenuation * light.shadowAttenuation;
@@ -86,11 +74,7 @@ inline float3 directLight(Light light, float3 normal, float3 H,float NdV, float3
     float NDF = distributionGGX(NdH, roughness);
     float G = geometrySmith(NdV, NdL, roughness);
 
-    float3 irradiance = PI * light.color * attenuation * NdL;
-    float3 diffuseRadiance = directDiffuse(LdH, NdL, NdV, baseColor, roughness, kD) * irradiance;
-    float3 specularRadiance = directSpecular(F, NDF, G) * irradiance;
-    if (softenSun) specularRadiance = UFBSoftenSunSpecular(specularRadiance);
-    return diffuseRadiance + specularRadiance;
+    return (directDiffuse(LdH, NdL, NdV, baseColor, roughness, kD) + directSpecular(F, NDF, G)) * PI * light.color * attenuation * NdL;
 }
 
 // indirect light
@@ -135,7 +119,7 @@ void PBRLighting(
 
     color = (float)0.0;
     // =====main light=====
-    float3 direct = directLight(mainLight, normal, H, NdV, F, kD, baseColor, roughness, metallic, true);
+    float3 direct = directLight(mainLight, normal, H, NdV, F, kD, baseColor, roughness, metallic);
     // indirect light only for main light
     float3 indirect =
         (indirectDiffuse(baseColor, gi, kD) +
@@ -193,7 +177,7 @@ float3 ApplyLocalLight(int id, float3 pos_world, float3 normal, float3 viewDir, 
     float3 F = fresnelSchlick(HdV, (float)0.04);
     float3 kD = ((float)1.0 - F) * ((float)1.0 - metallic);
 
-    return directLight(addLight, normal, H, NdV, F, kD, baseColor, roughness, metallic, false);
+    return directLight(addLight, normal, H, NdV, F, kD, baseColor, roughness, metallic);
 }
 
 inline float3 EnvironmentColor(float3 ambient,float3 lightColor){

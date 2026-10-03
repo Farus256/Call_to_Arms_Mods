@@ -4,15 +4,9 @@
 
 {extender "vitality"
 	{Health
-		{max		100}	;// max health
-		{current	100}	;// current health
-		; UFB realism: native non-story gametype conditions
-{inc		1.0}
-(mod "gametype:battle_zones" {inc 0.25})
-(mod "gametype:ammunition" {inc 0.25})
-(mod "gametype:evacuation" {inc 0.25})
-(mod "gametype:frontlines" {inc 0.25})
-(mod "gametype:campaign_capture_the_flag" {inc 0.25})	;// health regeneration per second
+		{max 70}
+		{current 70}
+		{inc 0.1} ; regeneration per second, before breed modifiers
 	}
 	{Stamina
 		{max		100}	;// max stamina
@@ -172,16 +166,16 @@
 	;// speed S (km/h) animation A (km/h) rotation R (degree/s)
 
 	{Crawl		;// S	A	R  // Slowing A down will speed up the animation
-		{Slow		3.5	6	420 }
-		{Normal		4.5	7	420 }
-		{Fast		6	9	420 }
+		{Slow 3.5 6 120}
+		{Normal 4.5 7 180}
+		{Fast 6 9 210}
 
-; UFB: limit heading changes outside story; movement and animation speeds stay intact.
-(mod "gametype:battle_zones" {Slow 3.5 6 180} {Normal 4.5 7 180} {Fast 6 9 180})
-(mod "gametype:ammunition" {Slow 3.5 6 180} {Normal 4.5 7 180} {Fast 6 9 180})
-(mod "gametype:evacuation" {Slow 3.5 6 180} {Normal 4.5 7 180} {Fast 6 9 180})
-(mod "gametype:frontlines" {Slow 3.5 6 180} {Normal 4.5 7 180} {Fast 6 9 180})
-(mod "gametype:campaign_capture_the_flag" {Slow 3.5 6 180} {Normal 4.5 7 180} {Fast 6 9 180})
+; UFB: turn rate follows movement mode; translation and animation speeds are unchanged.
+
+
+
+
+
 	}
 	{Swim
 		{Slow		2	5	180 }
@@ -189,21 +183,21 @@
 		{Fast		5	5	180 }
 	}
 	{Run
-		{Sneak		5	2	360 }	;// mission script movement mode	
-		{Spot		6	2	420 }	;// Manual TPC Zoom
-		{Walk		4	1.8 600 }	;// single flick, walk mode
-		{Slow		8	3.2	360 }	;// double flick, walk mode	
-		{Normal		13	6.2	600 }	;// single flick, running mode	
-		{Fast		18	5.8 600 }	;// double click, running mode
-		{Bow		16	5.0	600 }	;// mission script movement mode
+		{Sneak 5 2 240}	;// mission script movement mode
+		{Spot 6 2 420}	;// Manual TPC Zoom
+		{Walk 4 1.8 240}	;// single flick, walk mode
+		{Slow 8 3.2 300}	;// double flick, walk mode
+		{Normal 13 6.2 360}	;// single flick, running mode
+		{Fast 18 5.8 420}	;// double click, running mode
+		{Bow 16 5.0 360}	;// mission script movement mode
 		;// When soldiers run out of stamina, they will keep the animation, just play it slower.
 
-; UFB: limit heading changes outside story; movement and animation speeds stay intact.
-(mod "gametype:battle_zones" {Sneak 5 2 240} {Spot 6 2 360} {Walk 4 1.8 360} {Slow 8 3.2 300} {Normal 13 6.2 300} {Fast 18 5.8 270} {Bow 16 5.0 300})
-(mod "gametype:ammunition" {Sneak 5 2 240} {Spot 6 2 360} {Walk 4 1.8 360} {Slow 8 3.2 300} {Normal 13 6.2 300} {Fast 18 5.8 270} {Bow 16 5.0 300})
-(mod "gametype:evacuation" {Sneak 5 2 240} {Spot 6 2 360} {Walk 4 1.8 360} {Slow 8 3.2 300} {Normal 13 6.2 300} {Fast 18 5.8 270} {Bow 16 5.0 300})
-(mod "gametype:frontlines" {Sneak 5 2 240} {Spot 6 2 360} {Walk 4 1.8 360} {Slow 8 3.2 300} {Normal 13 6.2 300} {Fast 18 5.8 270} {Bow 16 5.0 300})
-(mod "gametype:campaign_capture_the_flag" {Sneak 5 2 240} {Spot 6 2 360} {Walk 4 1.8 360} {Slow 8 3.2 300} {Normal 13 6.2 300} {Fast 18 5.8 270} {Bow 16 5.0 300})
+; UFB: turn rate follows movement mode; translation and animation speeds are unchanged.
+
+
+
+
+
 	}
 	{Strafe
 		;//			m  m+v  km/h  speed	animation up 					animation down					; m+v = mask + value for strafe counter
@@ -301,7 +295,7 @@
 
 
 	{Properties
-		{advance_ratio 1.0}
+		{advance_ratio 0.5}
 		{retreat_ratio 3.5}
 	}
 }

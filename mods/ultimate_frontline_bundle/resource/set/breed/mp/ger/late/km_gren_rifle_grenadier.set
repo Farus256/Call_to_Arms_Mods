@@ -1,0 +1,34 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_km_44_volksg_rfl_gren_1"}
+	{portrait "ger_kriegsmarine"}
+	{icon "rifle"}
+	{icon_priority 1}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m43_strap}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_grenade_launcher" filling "k98_grenade he ammo" 1}
+		{item "k98_grenade he ammo" 15}
+		{item "k98_grenade heata ammo" 5}
+
+		{item "m39_late grenade" 1.25 0.5}
+		{item "m24_smoke grenade" 1.25 0.5}
+		{item "m24_geballteladung grenade" 0.25 0.5}
+
+		{item "bandage_ger" 3.5 0.5}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

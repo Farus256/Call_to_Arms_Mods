@@ -9,6 +9,7 @@ local SQUAD_TAG_ALERT = "_lua_alert"
 local SQUAD_TAG_IGNORE = "_lua_ignore"
 -- Horten's Frontline mission-script AI (artillery, AA guard, medics) owns these squads.
 local HF_SCRIPT_TAGS = { "bot_arty", "bot_aa_guard", "_ai_medic" }
+local UFBObjectiveBalance = require([[/script/multiplayer/ufb_objective_balance]])
 
 -- Returns true when normal Lua movement orders must stop for battle result or bot retreat.
 function ShouldStopNormalSquadOrders()
@@ -132,7 +133,13 @@ function CaptureFlag(squad)
 	end
 
 	if printDebug then print("Print: [notags] ctf by squad", squad, "Player#", BotApi.Instance.playerId, "Flag name: ", flag.name) end
-	return BotApi.Commands:CaptureFlag(squad, flag.name)
+	-- Counterattacks retain their explicit objective; ordinary attack waves split.
+	if not ConquestState.botDefender then
+		flag = UFBObjectiveBalance.Choose(squad, flags, flag, team)
+	end
+	local result = BotApi.Commands:CaptureFlag(squad, flag.name)
+	if result ~= false then UFBObjectiveBalance.Commit(squad, flag) end
+	return result
 end
 
 -- UFB: guard before target selection, fallback attacks, and waypoint orders.

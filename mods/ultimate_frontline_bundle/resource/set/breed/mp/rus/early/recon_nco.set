@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_rkka_rec_smg_drum_1_nco"}
+	{portrait "rus_scout"}
+	{icon "smg"}
+	{icon_priority 3}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality rus}
+	{armors
+		{head soviet_pilotka}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_2")("tier2_recon")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "ppd40" filled}
+		{item "ppd40_drum ammo" 213}
+
+		{item "rgd33 grenade" 1.5 0.5}
+		{item "rgd33_bundle grenade" 0.5 0.5}
+
+		{item "bandage_rus" 3.5 0.5}
+
+		{in_hands 0}
+	}
+}

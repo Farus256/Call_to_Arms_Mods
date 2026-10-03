@@ -1,0 +1,83 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "uk_para_ms_smgb_maj"}
+	{portrait narrator_eng_digby}
+	{icon smg}
+	{icon_priority 10}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality eng_officer}
+	{armors
+		{head civilian_fedora_orange}
+	}
+	{perks
+		{"rocketlauncher" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"pistol" lvl_5
+		}
+		{"smg" lvl_5
+		}
+		{"mgun" lvl_4
+		}
+		{"mgun_light" lvl_4
+		}
+		{"melee" lvl_4
+		}
+		{"avoidance" lvl_4
+		}
+		{"barricade"
+			{fortifications "foxhole" "medic_rally" "auto_medic_place_flag"}
+			{factor 1}
+		}
+		{"resources" "10%"
+		}
+		{"mechanic"}
+		{"tank_gun" lvl_1
+		}
+		{"health" "375%"
+		}
+		{"health_regeneration" "10%"
+		}
+		{"stamina" "300%"
+		}
+		{"stamina_regeneration" "250%"
+		}
+		{"personage" 0}
+		{"vision" human_elite
+		}
+		{"speed" 1
+		}
+		{"field_glass"}
+	}
+	{veterancy
+		{"lvl_1" -1
+		}
+		{"lvl_2" -1
+		}
+		{"lvl_3" 0
+		}
+		{"lvl_4" 10
+		}
+		{"lvl_5" 20
+		}
+		{"lvl_6" 40
+		}
+		{"lvl_7" 60
+		}
+		{"lvl_8" 80
+		}
+	}
+	{inventory
+		{item "sten_mk5" filling "sten_mag eng_smg ammo" 32}
+		{item "sten_mag eng_smg ammo" 128}
+		{item "m1911" filled}
+		{item "m1911_mag ammo" 28}
+		{item "no77_wp grenade" 2.25 0.5}
+		{item "bandage_eng" 5.5 0.5}
+		{item "binocular"}
+		{item "uk_helm_para_net"}
+		{in_hands 0}
+	}
+}

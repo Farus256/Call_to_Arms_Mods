@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_mt_svt_1"}
+	{portrait "rus_mountain_recon"}
+	{icon "battlerifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality rus}
+	{armors
+		{head soviet_budinovka}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_recon")
+		
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "svt38" filling "rifle_rus svt ammo" 10}
+		{item "rifle_rus svt ammo" 20}
+		{item "rifle_rus clip ammo" 60 10}
+
+		{item "rg14_30 grenade" 2.25 0.5}
+		{item "rg14_bundle grenade" 0.75 0.5}
+		{item "s1_smoke grenade" 2}
+
+		{item "bandage_rus" 4.5 0.5}
+
+		{in_hands 0}
+	}
+}

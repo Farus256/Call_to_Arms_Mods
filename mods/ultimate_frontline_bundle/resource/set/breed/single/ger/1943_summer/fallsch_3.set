@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_43_fj_mg"}
+	{portrait "ger_fallschirmjaeger"}
+	{icon "mg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head ger_m38_helmet}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_4")("tier4_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg34_doubledrum" filling "mgun_ger doubledrum ammo" 75}
+		{item "bandage_ger" 3}
+		{item "m24_geballteladung grenade" 1}
+		{item "mgun_ger doubledrum ammo" 500}
+		{item "p38" filled}
+		{item "pistol ammo" 80}
+		{item "m24 grenade" 2}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_elite"}
+}

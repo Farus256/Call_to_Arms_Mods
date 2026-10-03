@@ -1,0 +1,11 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "civ_partisan_rus_01"}
+	{portrait "battle_assistant"}
+	{icon "officer"}
+	{icon_priority 4}
+	{nationality ger}
+
+	{tags "_ufb_profile_regular"}
+}

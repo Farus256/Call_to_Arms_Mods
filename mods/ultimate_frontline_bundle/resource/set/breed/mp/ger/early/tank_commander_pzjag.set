@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_pzwaffe_pzjag_1_co"}
+	{portrait "ger_tankman"}
+	{icon "tech"}
+	{icon_priority 0}
+	{tags "crew" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_panzer_beret}
+	}
+	{perks
+		(include "ability.inc")
+		("tank_commander")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp28" filled}
+		{item "mp40 ammo" 64}
+
+		{item "p38" filled}
+		{item "pistol ammo" 24 8}
+
+		{item "bandage_ger" 2.5 0.5}
+
+		{in_hands 0}
+	}
+}

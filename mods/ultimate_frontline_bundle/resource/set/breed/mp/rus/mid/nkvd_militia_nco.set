@@ -1,0 +1,34 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_nkvd_militia_nco"}
+	{portrait rus_nkvd_militia_nco}
+	{field_icon "rus_nkvd"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality rus}
+	{armors
+		{head sov_cap_peaked_militia_var_white}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_1")("tier1_defense")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "avs36" filling "rifle_rus avs ammo" 15}
+		{item "rifle_rus avs ammo" 30}
+		{item "rifle_rus clip ammo" 60 15}
+
+		{item "rg14_30 grenade" 1.0 0.5}
+		{item "molotov_cocktail grenade" 0.15 0.5}
+
+		{item "bandage_rus" 3.5 0.5}
+
+		{in_hands 0}
+	}
+}

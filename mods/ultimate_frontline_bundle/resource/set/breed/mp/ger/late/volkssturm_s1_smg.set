@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_volkssturm_s1_smg_2"}
+	{portrait ger_volkssturm_stab1}
+	{field_icon "ger_volkssturm"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality ger}
+	{armors
+		{head ger_ita_helm_m33_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_1")("tier1_defense")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp3008" filled}
+		{item "mp40 ammo" 192}
+
+		{item "m39_late grenade" 1.25 0.5}
+
+		{item "bandage_ger" 2.5 0.5}
+
+		{in_hands 0}
+	}
+}

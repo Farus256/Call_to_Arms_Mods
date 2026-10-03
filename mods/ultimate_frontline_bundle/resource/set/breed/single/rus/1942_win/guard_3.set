@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_42_rkka_guards_smg_drum"}
+	{portrait "rus_guards"}
+	{icon "smg"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head soviet_ushanka_untied}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_3")("tier3_standard") 
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "ppsh41_drum" filled}
+		{item "bandage_rus"}
+		
+		{item "f1 grenade" 1}
+		{item "knife_rus"}
+		{item "shovel_rus"}
+		{item "ppsh_drum ammo" 626}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_veteran"}
+}

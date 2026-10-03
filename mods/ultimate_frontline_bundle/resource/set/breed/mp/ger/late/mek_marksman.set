@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_kriegs_mek_2"}
+	{portrait ger_sniper}
+	{field_icon "ger_mek"}	
+	{icon "sniper"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality ger_sniper}
+	{armors
+		{head ger_stalhelm_m43_cover_ital_face}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		("sniper_vision")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_3")
+	}
+	{inventory
+		{item "g43_scope" filling "rifle_ger gewehr ammo" 10}
+		{item "rifle_ger gewehr ammo" 20}
+		{item "rifle_ger clip ammo" 80 10}
+
+		{item "m43 grenade" 2.25 0.5}
+		{item "m24_smoke grenade" 2.25 0.5}
+		{item "pwm_l grenade" 1.25 0.5}
+		
+		{item "bandage_ger" 5.5 0.5}
+		{item "shovel_ger"}
+		{item "knife_ger"}
+
+		{in_hands 0}
+	}
+}

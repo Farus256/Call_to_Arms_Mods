@@ -1,0 +1,41 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_43_l_mountain_nco_stick"}
+	{portrait rus_skibrig_var1}
+	{field_icon "rus_mountain_recon"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality rus}
+	{armors
+		{head rus_cossack_hat}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_recon")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_3")
+	}
+	{inventory
+		{item "stg44" filled}
+		{item "stg44 ammo" 180}
+
+		{item "nagant_silencer" filled}
+		{item "revolver_clip ammo" 14 7}
+
+		{item "rgd33 grenade" 1.25 0.5}
+		{item "rdg1_smoke grenade" 1.25 0.5}
+		{item "molotov_cocktail grenade" 1.25 0.5}
+
+		{item "bandage_rus" 5.5 0.5}
+		{item "knife_rus" 1}
+
+		{item "satchel_charge_rus" 0.5 0.5}
+		{item "rpg43 grenade" 1.75 0.5}
+
+		{in_hands 0}
+	}
+}

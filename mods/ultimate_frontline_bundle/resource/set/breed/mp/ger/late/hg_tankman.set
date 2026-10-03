@@ -1,0 +1,29 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_44_hg_pzwaffe_1"}
+	{portrait ger_luft_hg_tankman}
+	{field_icon "ger_luft_hg"}
+	{icon "tech"}
+	{icon_priority 0}
+	{tags "crew" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_fieldcap_m43_luft}
+	}
+	{perks
+		(include "ability.inc")
+		("tankman")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "p38" filled}
+		{item "pistol ammo" 24 8}
+
+		{item "bandage_ger" 2.5 0.5}
+
+		{in_hands 0}
+	}
+}

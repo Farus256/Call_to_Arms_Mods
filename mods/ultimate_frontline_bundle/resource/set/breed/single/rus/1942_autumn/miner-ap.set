@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_42_rkka_pio_1"}
+	{portrait "rus_regular"}
+	{icon "tech"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head soviet_ssh40_helmet}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard") 
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mosin" filled}
+		{item "rifle_rus clip ammo" 55}
+		{item "f1 grenade" 1}
+		{item "pmd mine" 10}
+		{item "bandage_rus"}
+		
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

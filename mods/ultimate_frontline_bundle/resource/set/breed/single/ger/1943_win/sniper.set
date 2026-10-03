@@ -1,0 +1,34 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_rfl_sniper"}
+	{portrait "ger_sniper"}
+	{icon "sniper"}
+	{icon_priority 1}
+	{nationality ger_sniper}
+	{armors
+		{head ger_m42_helmet_winter_cover}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard")
+		("sniper_vision")
+		{"stealth"}
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g43_scope" filled}
+		{item "bandage_ger" 3}
+		{item "pistol ammo" 40}
+		{item "luger" filled}
+		{item "rifle_ger gewehr ammo" 20}
+		{item "rifle_ger clip ammo" 80 10}
+		;{item "plant" 2}
+		{item "knife_ger"}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_veteran"}
+}

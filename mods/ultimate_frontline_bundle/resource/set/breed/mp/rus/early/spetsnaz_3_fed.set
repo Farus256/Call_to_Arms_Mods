@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_rkka_rec_fed_2"}
+	{portrait rus_fedorov}
+	{field_icon "rus_spetsnaz"}
+	{icon "fedorov"}
+	{icon_priority 2}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality rus}
+	{armors
+		{head soviet_ushanka}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		("stealth")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "fedorov_avtomat" filling "fedorov mag ammo" 25}
+		{item "fedorov mag ammo" 75}
+		{item "fedorov clip ammo" 50 10}
+
+		{item "rgd33 grenade" 1.25 0.5}
+
+		{item "bandage_rus" 3.5 0.5}
+		{item "knife_rus" 1}
+
+		{item "rgd33_bundle grenade" 1.15 0.5}
+
+		{in_hands 0}
+	}
+}

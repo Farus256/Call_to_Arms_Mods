@@ -1,0 +1,11 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "civ_01_var1"}
+	{portrait narrator_ger_airborne_civilian}
+	{icon officer}
+	{icon_priority 4}
+	{nationality ger}
+
+	{tags "_ufb_profile_regular"}
+}

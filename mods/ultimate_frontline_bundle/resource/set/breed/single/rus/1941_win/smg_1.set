@@ -1,0 +1,29 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_rkka_smg_drum_3"}
+	{portrait "rus_regular"}
+	{icon "smg"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head soviet_ushanka}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_2")("tier2_standard") 
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "ppsh41_drum" filled}
+		{item "bandage_rus"}
+		
+		{item "f1 grenade" 1}
+		{item "ppsh_drum ammo" 426}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

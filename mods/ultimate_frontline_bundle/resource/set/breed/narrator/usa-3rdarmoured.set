@@ -1,0 +1,15 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "us_m41_arm3_jacket_crb_pistol_1lt"}
+	{portrait "narrator_usa_3rdarmoured2"}
+	{icon "officer"}
+	{icon_priority 4}
+	{nationality usa}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard") 
+	}
+
+	{tags "_ufb_profile_regular"}
+}

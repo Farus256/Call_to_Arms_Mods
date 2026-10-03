@@ -1,7 +1,9 @@
 -- Preserve native/Horten decision making, but never overwrite a specialist's job.
 local Guard = {}
 local waypointRetries = {}
+local stopped = false
 local protectedTags = {
+    "_ufb_cover_active",
     "_lua_mi", "repairing", "tcrew", "ecrew", "ecrew_a", "ecrew_b",
     "bot_arty", "bot_aa_guard", "_ai_medic", "bot_medic",
     "_ufb_crew_safe", "_lua_ignore",
@@ -29,8 +31,9 @@ end
 function Guard.Wrap(order, needsWaypoint)
     local wrapped
     wrapped = function(squad)
+        if stopped then return end
         if needsWaypoint and waypointRetries[squad] then
-            BotApi.Events:KillQuantTimer(waypointRetries[squad])
+            BotApi.Events:KillQuantTimer(waypointRetries[squad].timer)
             waypointRetries[squad] = nil
         end
         if ShouldStopNormalSquadOrders and ShouldStopNormalSquadOrders() then
@@ -41,7 +44,12 @@ function Guard.Wrap(order, needsWaypoint)
             -- a temporary job ends, otherwise the route would never resume.
             if needsWaypoint and BotApi.Scene:IsSquadExists(squad)
                 and #BotApi.Scene.Waypoints > 0 then
-                waypointRetries[squad] = BotApi.Events:SetQuantTimer(function()
+                -- Token identity also rejects a cancelled callback already queued
+                -- by the engine, even if native timer IDs are later reused.
+                local retry = {}
+                waypointRetries[squad] = retry
+                retry.timer = BotApi.Events:SetQuantTimer(function()
+                    if stopped or waypointRetries[squad] ~= retry then return end
                     waypointRetries[squad] = nil
                     wrapped(squad)
                 end, 5000)
@@ -56,11 +64,20 @@ function Guard.Wrap(order, needsWaypoint)
     return wrapped
 end
 
-BotApi.Events:Subscribe(BotApi.Events.GameEnd, function()
-    for squad, timer in pairs(waypointRetries) do
-        BotApi.Events:KillQuantTimer(timer)
+local function ClearRetries()
+    for squad, retry in pairs(waypointRetries) do
+        BotApi.Events:KillQuantTimer(retry.timer)
         waypointRetries[squad] = nil
     end
+end
+
+BotApi.Events:Subscribe(BotApi.Events.GameEnd, function()
+    stopped = true
+    ClearRetries()
+end)
+BotApi.Events:Subscribe(BotApi.Events.GameStart, function()
+    ClearRetries()
+    stopped = false
 end)
 
 return Guard

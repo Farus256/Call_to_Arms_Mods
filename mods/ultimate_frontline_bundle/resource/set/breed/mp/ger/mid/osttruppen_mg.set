@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_ost_v1_mg"}
+	{portrait "ger_ost"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality rus}
+	{armors
+		{head ger_stalhelm_m43_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_1")("tier1_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg120r_bipod" filling "mgun_rus dp ammo" 47}
+		{item "mgun_rus dp ammo" 282}
+
+		{item "handgranate_310r grenade" 1.25 0.5}
+
+		{item "bandage_ger" 2.5 0.5}
+
+		{in_hands 0}
+	}
+}

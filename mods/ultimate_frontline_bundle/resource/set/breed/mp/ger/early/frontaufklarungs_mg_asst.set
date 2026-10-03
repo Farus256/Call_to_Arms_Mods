@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_frontaufk_mg_asst"}
+	{portrait "ger_frontaufklarungs"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality ger}
+	{armors
+		{head fin_helm_m38_foliage_camo3}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_recon")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_3")
+	}
+	{inventory
+		{item "k98" filled}
+		{item "rifle_ger clip ammo" 60 5}
+
+		{item "m39_early grenade" 1.25 0.5}
+		{item "m24_smoke grenade" 1.25 0.5}
+		{item "dynamite_ger_x3" 0.25 0.5}
+		{item "m24_geballteladung grenade" 1.15 0.5}
+
+		{item "mgun_ger belt ammo" 300}
+		{item "bandage_ger" 5.5 0.5}
+		{item "shovel_ger"}
+		{item "knife_ger"}
+
+		{in_hands 0}
+	}
+}

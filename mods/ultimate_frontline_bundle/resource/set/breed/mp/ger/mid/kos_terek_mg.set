@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "terek_cossack_42_mg"}
+	{portrait "ger_kos_terek"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality rus}
+	{armors
+		{head ger_kubanka_var3_blue_czarist}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_3")("tier3_standard")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "mg120r_bipod" filling "mgun_rus dp ammo" 47}
+		{item "mgun_rus dp ammo" 282}
+
+		{item "handgranate_310r grenade" 1.25 0.5}
+		{item "m24_smoke grenade" 1.0 0.5}
+
+		{item "bandage_ger" 5.5 0.5}
+
+		{in_hands 0}
+	}
+}

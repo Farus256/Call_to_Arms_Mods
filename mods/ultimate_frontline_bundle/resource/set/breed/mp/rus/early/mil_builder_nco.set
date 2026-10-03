@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_conscript_2"}
+	{portrait rus_military_builder}
+	{field_icon "rus_conscript"}
+	{icon "pistol"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality rus}
+	{armors
+		{head soviet_budinovka}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_1")("tier1_defense")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "nagant_revolver" filled}
+		{item "revolver_clip ammo" 18 6}
+
+		{item "f1 grenade" 0.4 0.5}
+		{item "rg14_30 grenade" 0.25 0.5}
+		{item "molotov_cocktail grenade" 0.25 0.5}
+
+		{item "shovel_rus"}
+		{item "bandage_rus" 1.5 0.5}
+
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_40_navy_osnaz_mg"}
+	{portrait "rus_bf_rosnaz"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality rus}
+	{armors
+		{head sov_helm_ssh39_var2_b}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_4")("tier4_recon")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_3")
+	}
+	{inventory
+		{item "dp_bipod" filling "mgun_rus dp ammo" 47}
+		{item "mgun_rus dp ammo" 282}
+		
+		{item "rgd33 grenade" 3.25 0.5}
+		{item "rgd33_bundle grenade" 1.15 0.5}
+
+		{item "knife_rus" 1}
+		{item "bandage_rus" 5.5 0.5}
+		{item "shovel_rus"}
+
+		{in_hands 0}
+	}
+}

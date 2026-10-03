@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_rkka_rfl_4"}
+	{portrait "rus_nkvd"}
+	{icon "riflegrenade"}
+	{icon_priority 2}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality rus}
+	{armors
+		{head soviet_pilotka_nkvd}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_defense")
+		("at_rank_3")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mosin_grenade_launcher" filled}
+		{item "dyakonov ammo" 10 2}
+
+		{item "bandage_rus" 3.5 0.5}
+		{item "shovel_rus"}
+
+		{in_hands 0}
+	}
+}

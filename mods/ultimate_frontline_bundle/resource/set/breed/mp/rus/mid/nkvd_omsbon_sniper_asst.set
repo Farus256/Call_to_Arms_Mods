@@ -1,0 +1,39 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_omsbon_halfsmock"}
+	{portrait rus_nkvd_omsbon}
+	{field_icon "rus_nkvd_omsbon"}
+	{icon "rifle"}
+	{icon_priority 2}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality spa}
+	{armors
+		{head soviet_ssh40_helmet}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_recon")
+		("sniper_vision")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_3")
+	}
+	{inventory
+		{item "mosin" filled}
+		{item "rifle_rus clip ammo" 60 5}
+
+		{item "nagant_silencer" filled}
+		{item "revolver_clip ammo" 14 7}
+
+		{item "rgd33 grenade" 1.25 0.5}
+		{item "rdg1_smoke grenade" 1.25 0.5}
+
+		{item "bandage_rus" 2.5 0.5}
+		{item "knife_rus" 1}
+		
+		{item "rpg40 grenade" 1.15 0.5}
+
+		{in_hands 0}
+	}
+}

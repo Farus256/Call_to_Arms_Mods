@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_43_inf_rfl_1"}
+	{portrait "rus_regular"}
+	{icon "at"}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head soviet_pilotka}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard") 
+		("at_rank_3")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mosin" filled}
+		{item "rifle_rus clip ammo" 50}
+		{item "mosin_antitank" filled}
+		{item "bandage_rus" 2}
+		{item "vpgs41 ammo" 20}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

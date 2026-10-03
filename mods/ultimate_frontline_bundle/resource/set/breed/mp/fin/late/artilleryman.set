@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "fin_m36s_arty_wc_rfl_basic"}
+	{portrait "fin_basic"}
+	{icon "tech"}
+	{icon_priority 0}
+	{tags "crew" "_ufb_profile_regular"}
+	{nationality fin}
+	{armors
+		{head fin_helm_m38}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier2_standard")
+		("skilled_repair")
+		("expert_gun")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "carcano_m38_fin" filled}
+		{item "rifle_ita clip ammo" 36 6}
+
+		{item "bandage_fin" 1.5 0.5}
+
+		{in_hands 0}
+	}
+}

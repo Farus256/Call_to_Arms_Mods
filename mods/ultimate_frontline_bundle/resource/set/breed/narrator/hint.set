@@ -1,0 +1,11 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "sov_41_rkka_off_lt_1"}
+	{portrait "hint"}
+	{icon "officer"}
+	{icon_priority 4}
+	{nationality ger}
+
+	{tags "_ufb_profile_regular"}
+}

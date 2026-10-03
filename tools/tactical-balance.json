@@ -1,0 +1,23 @@
+{
+  "enabled": {"health": true, "supply": true, "botCP": true, "rotation": true, "cautiousAdvance": true, "softVehicleFire": true},
+  "baseHealth": 70,
+  "maximumBreedHealthMultiplier": 1.15,
+  "healthTierCompression": 0.05,
+  "regenerationPerSecond": 0.1,
+  "advanceRatio": 0.5,
+  "rotationDegreesPerSecond": {
+    "Crawl": {"Slow": 120, "Normal": 180, "Fast": 210},
+    "Run": {"Sneak": 240, "Spot": 420, "Walk": 240, "Slow": 300, "Normal": 360, "Fast": 420, "Bow": 360}
+  },
+  "supplyRadius": {
+    "supply_ammo_fixed": 10,
+    "supply_ammo": 22,
+    "crate_ammo_heavy": 25,
+    "truck_ammo": 30,
+    "truck_ammo_heavy": 35,
+    "truck_ammo_heavy_2x": 40,
+    "supply_fuel": 30,
+    "supply_engineer_light": 22,
+    "supply_engineer": 30
+  }
+}

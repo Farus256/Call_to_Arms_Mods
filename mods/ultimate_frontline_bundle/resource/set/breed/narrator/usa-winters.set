@@ -1,0 +1,51 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "us_m41_ranger_hs2_crb_cpt"}
+	{portrait narrator_usa_winters}
+	{icon officer}
+	{icon_priority 4}
+	{nationality usa}
+	{perks
+		{"rocketlauncher" lvl_2
+		}
+		{"rifle" lvl_3
+		}
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_2
+		}
+		{"mgun_light" lvl_2
+		}
+		{"melee" lvl_2
+		}
+		{"avoidance" lvl_2
+		}
+		{"barricade"
+			{fortifications "foxhole" "medic_rally"}
+			{factor 1}
+		}
+		{"resources" "10%"
+		}
+		{"mechanic"}
+		{"tank_gun" lvl_1
+		}
+		{"health" "200%"
+		}
+		{"health_regeneration" "10%"
+		}
+		{"stamina" "125%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"personage" 0}
+		{"vision" human
+		}
+		{"speed" 1
+		}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

@@ -1,0 +1,81 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "ger_heer_43_co_1_leutnant"}
+	{portrait ger_officer}
+	{icon smg}
+	{icon_priority 5}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ger_officer}
+	{armors
+		{head ger_sidecap_m39_var2_inf_off}
+	}
+	{perks
+		{"rocketlauncher" lvl_3
+		}
+		{"rifle" lvl_4
+		}
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"mgun_light" lvl_3
+		}
+		{"melee" lvl_3
+		}
+		{"avoidance" lvl_3
+		}
+		{"barricade"
+			{fortifications "foxhole" "medic_rally" "auto_medic_place_flag"}
+			{factor 1}
+		}
+		{"resources" "10%"
+		}
+		{"mechanic"}
+		{"tank_gun" lvl_1
+		}
+		{"health" "300%"
+		}
+		{"health_regeneration" "10%"
+		}
+		{"stamina" "200%"
+		}
+		{"stamina_regeneration" "150%"
+		}
+		{"personage" 0}
+		{"vision" human_elite
+		}
+		{"speed" 1
+		}
+		{"field_glass"}
+	}
+	{veterancy
+		{"lvl_1" 4
+		}
+		{"lvl_2" 10
+		}
+		{"lvl_3" 20
+		}
+		{"lvl_4" 30
+		}
+		{"lvl_5" 40
+		}
+		{"lvl_6" 60
+		}
+		{"lvl_7" 80
+		}
+		{"lvl_8" 100
+		}
+	}
+	{inventory
+		{item "mp40_folded" filled}
+		{item "mp40 ammo" 224}
+		{item "luger" filled}
+		{item "pistol ammo" 32 8}
+		{item "bandage_ger" 3.5 0.5}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,29 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_artillery_crew_1"}
+	{portrait "ger_artilleryman"}
+	{icon "tech"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m40_helmet_winter}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+		("skilled_repair")
+		("expert_gun")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98" filled}
+		{item "rifle_ger clip ammo" 40}
+		{item "bandage_ger" 2}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

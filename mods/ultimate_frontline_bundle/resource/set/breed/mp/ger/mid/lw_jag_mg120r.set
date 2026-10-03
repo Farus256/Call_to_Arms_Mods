@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_39_fielddiv_mg"}
+	{portrait "ger_luftwaffe"}
+	{icon "mg"}
+	{icon_priority 1}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_lw_var3}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_2")("tier2_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg120r_bipod" filling "mgun_rus dp ammo" 47}
+		{item "mgun_rus dp ammo" 282}
+
+		{item "m39_mid grenade" 1.25 0.5}
+		{item "m24_smoke grenade" 1.0 0.5}
+
+		{item "bandage_ger" 3.5 0.5}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

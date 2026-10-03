@@ -1,0 +1,83 @@
+{breed
+	{behaviour soldier}
+	{skin "us_m41_ranger_vest_gmbag_pfc_1sgt"}
+	{portrait usa_ranger}
+	{icon smg}
+	{icon_priority 8}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality usa}
+	{armors
+		{head us_m1_ranger_nco_u}
+	}
+	{perks
+		{"rocketlauncher" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"pistol" lvl_5
+		}
+		{"smg" lvl_5
+		}
+		{"mgun" lvl_4
+		}
+		{"mgun_light" lvl_4
+		}
+		{"melee" lvl_4
+		}
+		{"avoidance" lvl_4
+		}
+		{"barricade"
+			{fortifications "foxhole" "medic_rally"}
+			{factor 1}
+		}
+		{"resources" "10%"
+		}
+		{"mechanic"}
+		{"tank_gun" lvl_1
+		}
+		{"health" "375%"
+		}
+		{"health_regeneration" "10%"
+		}
+		{"stamina" "300%"
+		}
+		{"stamina_regeneration" "250%"
+		}
+		{"personage" 0}
+		{"vision" human
+		}
+		{"speed" 1
+		}
+	}
+	{veterancy
+		{"lvl_1" 4
+		}
+		{"lvl_2" 10
+		}
+		{"lvl_3" 20
+		}
+		{"lvl_4" 30
+		}
+		{"lvl_5" 40
+		}
+		{"lvl_6" 60
+		}
+		{"lvl_7" 80
+		}
+		{"lvl_8" 100
+		}
+	}
+	{inventory
+		{item "thompson_m1a1_30" filling "thompson_mag stick 30 ammo" 30}
+		{item "thompson_mag stick 30 ammo" 150}
+		{item "m1911" filled}
+		{item "m1911_mag ammo" 21}
+		{item "mk2 grenade" 3.25 0.5}
+		{item "m15_wp grenade" 1.25 0.5}
+		{item "anm8_smoke grenade" 1.25 0.5}
+		{item "m7 grenade" 1.25 0.5}
+		{item "bandage_usa" 5.5 0.5}
+		{item "shovel_usa"}
+		{in_hands 0}
+	}
+}

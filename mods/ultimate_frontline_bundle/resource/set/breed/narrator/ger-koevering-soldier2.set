@@ -1,0 +1,11 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "ger_luft_43_fj_smg_2a"}
+	{portrait narrator_ger_soldier}
+	{icon "officer"}
+	{icon_priority 4}
+	{nationality ger}
+
+	{tags "_ufb_profile_regular"}
+}

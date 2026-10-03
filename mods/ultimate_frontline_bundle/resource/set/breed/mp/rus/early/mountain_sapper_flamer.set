@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_mt_sap_flamer"}
+	{portrait rus_mountain_sapper}
+	{field_icon "rus_mountain"}
+	{icon "flamer"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality rus}
+	{armors
+		{head soviet_budinovka}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_defense")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "roks_2_flame_thrower" filled}
+		{item "ammo flame_thrower" 70}
+
+		{item "rgd33 grenade" 1.25 0.5}
+
+		{item "bandage_rus" 4.5 0.5}
+		{item "shovel_rus"}
+
+		{in_hands 0}
+	}
+}

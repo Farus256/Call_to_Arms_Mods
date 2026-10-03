@@ -1,0 +1,34 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_43_pzgren_nco_stg"}
+	{portrait ger_waff_pzgren}
+	{field_icon "ger_pzgrenadier"}
+	{icon "stg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_fieldcap_m43_waff_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "stg44" filled}
+		{item "stg44 ammo" 180}
+
+		{item "m43 grenade" 2.25 0.5}
+		{item "m24_smoke grenade" 2.25 0.5}
+		{item "m24_geballteladung grenade" 0.5 0.5}
+
+		{item "shovel_ger"}
+		{item "bandage_ger" 3.5 0.5}
+
+		{in_hands 0}
+	}
+}

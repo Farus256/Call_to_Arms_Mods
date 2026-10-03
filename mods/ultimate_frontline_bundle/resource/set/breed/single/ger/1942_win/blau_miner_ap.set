@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_blau_rfl_1"}
+	{portrait "ger_blau"}
+	{icon "tech"}
+	{icon_priority 1}
+	{nationality spa}
+	{armors
+		{head ger_m40_helmet_blau}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_defense")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98" filled}
+		{item "rifle_ger clip ammo" 60 5}
+
+		{item "m24 grenade" 2.25 0.5}
+		{item "nbk39 grenade" 0.5 0.5}
+		{item "s mine" 16 0.5}
+		
+		{item "bandage_ger" 4.5 0.5}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_veteran"}
+}

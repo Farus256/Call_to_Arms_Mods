@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_mg_asst_3_ammo"}
+	{portrait ger_regular}
+	{field_icon "ger_static"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_conscript"}
+	{nationality ger}
+	{armors
+		{head ger_fieldcap_m43_var3}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_1")("tier1_defense")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g304f" filling "rifle_fra clip ammo" 5}
+		{item "rifle_fra clip ammo" 60 5}
+
+		{item "m39_late grenade" 1.25 0.5}
+		
+		{item "mgun_ger belt ammo" 600}
+		{item "bandage_ger" 3.5 0.5}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

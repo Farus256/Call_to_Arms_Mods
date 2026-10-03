@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_ita_44_nco_1"}
+	{portrait ger_waff_29th}
+	{field_icon "ger_waff_29th_fus"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ita}
+	{armors
+		{head ger_ita_helm_m33_foliage}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_2")("tier2_recon")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "m38a" filling "m38_42_mag 20 ammo" 20}
+		{item "m38_42_mag 20 ammo" 200}
+
+		{item "m43 grenade" 2.25 0.5}
+		{item "m24_smoke grenade" 2.25 0.5}
+		{item "m24_geballteladung grenade" 0.5 0.5}
+
+		{item "bandage_ger" 3.5 0.5}
+
+		{in_hands 0}
+	}
+}

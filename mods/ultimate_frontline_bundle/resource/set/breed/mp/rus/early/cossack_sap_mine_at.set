@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_rkka_cav_sap_rfl_3"}
+	{portrait rus_cossack}
+	{field_icon "rus_cossack_miner_at"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality rus}
+	{armors
+		{head rus_cossack_hat}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_defense")
+		{"melee" lvl_6}
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mosin_carbine" filled}
+		{item "rifle_rus clip ammo" 60 5}
+
+		{item "f1 grenade" 2.25 0.5}
+		{item "tm_35 mine" 4.5 0.5}
+
+		{item "bandage_rus" 3.5 0.5}
+		{item "shovel_rus"}
+
+		{in_hands 0}
+	}
+}

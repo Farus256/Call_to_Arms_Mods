@@ -1,0 +1,25 @@
+{
+  "source": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\system-effective",
+  "enabled": {
+    "health": true,
+    "supply": true,
+    "botCP": true,
+    "rotation": true,
+    "cautiousAdvance": true,
+    "softVehicleFire": true
+  },
+  "baseHealth": 70,
+  "healthLevels": 202,
+  "cpFactors": 28,
+  "files": [
+    "properties/human.ext",
+    "set/ability/health.set",
+    "set/ability/veterancy.set",
+    "properties/resupply.inc",
+    "set/target/ammo.set",
+    "set/multiplayer/games/presets/global_parameters/bots_generic.inc",
+    "set/multiplayer/games/presets/global_parameters/frontline/bots_frontline.inc",
+    "set/multiplayer/games/presets/global_parameters/frontlines/bots_frontlines.inc",
+    "set/multiplayer/games/presets/global_parameters/last_stand/bots_laststand.inc"
+  ]
+}

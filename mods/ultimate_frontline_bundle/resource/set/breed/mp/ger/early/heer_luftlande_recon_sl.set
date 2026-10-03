@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_luftlande_nco_smg"}
+	{portrait ger_heer_luftlande}
+	{field_icon "ger_heer_luftlande_recon"}
+	{icon "smg"}
+	{icon_priority 1}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m39_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_3")("tier3_recon")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp38_unfolded" filled}
+		{item "mp40 ammo" 192}
+
+		{item "m24 grenade" 1.0 0.5}
+		{item "m24_smoke grenade" 1.5 0.5}
+		{item "m24_geballteladung grenade" 0.5 0.5}
+
+		{item "bandage_ger" 5.5 0.5}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

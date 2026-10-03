@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "civ_partisan_rus_03"}
+	{portrait "narrator_yug_partisan1"}
+	{icon "officer"}
+	{icon_priority 4}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality rus}
+	{armors
+		{head civilian_beanie}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_4")("tier4_standard")
+		("binocular_vision")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "pps43" filled}
+		{item "pps_stick ammo" 350}
+
+		{item "f1 grenade" 2.25 0.5}
+		{item "molotov_cocktail grenade" 0.5 0.5}
+		{item "rdg1_smoke grenade" 2.25 0.5}
+		{item "rpg43 grenade" 1.15 0.5}
+		{item "satchel_charge_rus" 2}
+
+		{item "bandage_rus" 4.5 0.5}
+
+		{in_hands 0}
+	}
+}

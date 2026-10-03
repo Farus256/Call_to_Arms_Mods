@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_42_nco_g41_unterfeld_2"}
+	{portrait ger_waff_mid}
+	{field_icon "ger_regular"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_wf_helm_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g41" filled}
+		{item "rifle_ger clip ammo" 80 5}
+
+		{item "m24 grenade" 2.25 0.5}
+		{item "m24_smoke grenade" 1.25 0.5}
+		{item "m24_geballteladung grenade" 1}
+
+		{item "bandage_ger" 3.5 0.5}
+		{item "shovel_ger"}
+		{item "ger_sidecap_m41_var2"}
+
+		{in_hands 0}
+	}
+}

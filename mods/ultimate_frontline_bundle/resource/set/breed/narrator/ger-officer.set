@@ -1,0 +1,11 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "ger_heer_43_co_1_leutnant"}
+	{portrait "narrator_ger_officer"}
+	{icon "officer"}
+	{icon_priority 4}
+	{nationality ger_officer}
+
+	{tags "_ufb_profile_regular"}
+}

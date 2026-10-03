@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_ita_44_mg_asst_3"}
+	{portrait ger_waff_29th_def}
+	{field_icon "ger_waff_29th_def"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ita}
+	{armors
+		{head ger_ita_helm_m33_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("loader_skill_rank_2")("tier2_defense")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g209i" filled}
+		{item "rifle_ita2 clip ammo" 60 6}
+
+		{item "m39_late grenade" 2.25 0.5}
+		{item "nbk39 grenade" 1.25 0.5}
+		{item "mgun_ita ammo" 300}
+
+		{item "bandage_ger" 3.5 0.5}
+		{item "shovel_ger"}
+		{item "ger_fieldcap_m43_var1"}
+
+		{in_hands 0}
+	}
+}

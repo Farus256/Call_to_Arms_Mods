@@ -1,5 +1,6 @@
 {"human"
 	(include "human_idle.inc")
+	(include "ufb_stress.inc")
 	{inflammation_time 1.0}
 	{on spawn
 		{add_view	"cigarettesmoke"		"smoke"		"head"}
@@ -253,9 +254,8 @@
 							}
 						else
 							("human_health" c(%d))
-							%x
 						}
-						("human_health" c(%d))
+						; UFB: one impact applies damage and knockdown once.
 						%x
 					}
 				)
@@ -279,16 +279,7 @@
 	{on bullet_hit
 		{kill_flags reset}
 		{signal hit 5}
-		; Rare composure window: the soldier keeps working briefly instead of
-		; receiving an automatic cover order. It changes no damage or accuracy.
-		{if rand 0.08
-			{tags add "_ufb_heroic"}
-			{delay 6 {tags remove "_ufb_heroic"}}
-		else
-			{if not tagged "_ufb_stress_hit"
-				{tags add "_ufb_stress_hit"}
-			}
-		}
+		{call_synced "ufb_stress"}
 		{if stuff "shell fg"
 			{bullet_detonate}
 			{call "process_bullet_hit"}
@@ -427,14 +418,7 @@
 	}
 
 	{on blast_hit overload sync
-		{if rand 0.03
-			{tags add "_ufb_heroic"}
-			{delay 8 {tags remove "_ufb_heroic"}}
-		else
-			{if not tagged "_ufb_stress_blast"
-				{tags add "_ufb_stress_blast"}
-			}
-		}
+		{call_synced "ufb_stress"}
 		{if not dead
 			{if min_energy 2
 				{call "unhealable"}

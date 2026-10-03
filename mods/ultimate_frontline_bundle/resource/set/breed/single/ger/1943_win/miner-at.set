@@ -1,0 +1,28 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_pio_pack_smg"}
+	{portrait "ger_engineer"}
+	{icon "tech"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head ger_m43_cap}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_2")("tier2_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp40_folded" filled}
+		{item "mp40 ammo" 192}
+		{item "bandage_ger" 3}
+		{item "tmi_35 mine" 5}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

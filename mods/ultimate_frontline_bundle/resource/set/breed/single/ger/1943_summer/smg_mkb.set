@@ -1,0 +1,29 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_mkb"}
+	{portrait "ger_regular"}
+	{icon "smg"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m40_helmet}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mkb42h" filled}
+		{item "m24 grenade" 2}
+		{item "stg44 ammo" 300}
+		{item "geballteladung_3kg"}
+		{item "bandage_ger" 3}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_regular"}
+}

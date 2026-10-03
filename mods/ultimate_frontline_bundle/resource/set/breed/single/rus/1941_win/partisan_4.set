@@ -1,0 +1,29 @@
+{breed
+	{behaviour soldier}
+	{skin "civ_partisan_rus_03"}
+	{portrait "rus_partisan"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head soviet_adrian}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_1")("tier1_standard") 
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "shotgun" filled}
+		{item "bandage_rus"}
+		{item "knife_rus"}
+		{item "molotov_cocktail grenade" 1}
+		{item "shotgun ammo" 30}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_conscript"}
+}

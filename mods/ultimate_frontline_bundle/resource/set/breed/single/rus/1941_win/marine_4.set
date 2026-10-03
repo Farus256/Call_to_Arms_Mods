@@ -1,0 +1,29 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_41_navy_svt_2"}
+	{portrait "rus_marine"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head soviet_ushanka_naval}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard") 
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "svt40_carbine" filled}
+		{item "bandage_rus" 2}
+		{item "rgd33 grenade" 3}
+		{item "rifle_rus svt ammo" 200}
+		{item "shovel_rus"}
+		{in_hands 0}
+	}
+
+	{tags "_ufb_profile_elite"}
+}

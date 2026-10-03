@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_42_sturm_rfl_2"}
+	{portrait ger_waff_pionier_mid}
+	{field_icon "ger_pionier"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality ger}
+	{armors
+		{head ger_wf_helm_gog_a_up}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_defense")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "k98" filled}
+		{item "rifle_ger clip ammo" 60 5}
+		
+		{item "m24_splinter grenade" 4.25 0.5}
+		{item "nbk39 grenade" 1.25 0.5}
+		{item "m24_geballteladung grenade" 2.15 0.5}
+
+		{item "bandage_ger" 3.5 0.5}
+		{item "shovel_ger"}
+		{item "ger_sidecap_m39_var2_pio"}
+
+		{in_hands 0}
+	}
+}

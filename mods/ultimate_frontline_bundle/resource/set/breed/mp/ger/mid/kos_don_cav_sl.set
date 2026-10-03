@@ -1,0 +1,34 @@
+{breed
+	{behaviour soldier}
+	{skin "kos_don_uryadnik_vakhmistr_smg"}
+	{portrait "ger_kos_don"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_veteran"}
+	{nationality rus}
+	{armors
+		{head ger_papacha_var2_don_roa_off}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_3")("tier3_standard")
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp717r_drum" filled}
+		{item "ppsh_drum ammo" 213}
+
+		{item "m24 grenade" 2.25 0.5}
+		{item "m24_smoke grenade" 1.25 0.5}
+		{item "m24_geballteladung grenade" 1}
+		
+		{item "cav_sword_m1927" filled}
+		{item "bandage_ger" 4.5 0.5}
+
+		{in_hands 0}
+	}
+}

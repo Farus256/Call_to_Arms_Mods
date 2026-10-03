@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_kust_rifle_2"}
+	{portrait "ger_kustenjager"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_elite"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m39_band_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+
+		("skilled_repair")
+		("expert_gun")	
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98" filled}
+		{item "rifle_ger clip ammo" 60 5}
+
+		{item "m39_early grenade" 1.75 0.5}
+
+		{item "bandage_ger" 4.5 0.5}
+
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-03",
+  "baselineCommit": "dcfed91",
+  "installed": false,
+  "gameBattleTested": false,
+  "checks": {
+    "tacticalResourceAssertions": 10566,
+    "breedIntegrityChecksIncludedInThatCount": 10088,
+    "luaExecution": "Actual objective, guard and Conquest order modules with mocked BotApi; passed",
+    "eventExecution": "Subset interpreter of generated SDL; four profiles and lifecycle; passed",
+    "existingAiLogicAssertions": 45,
+    "existingAiLogicScenarios": 11,
+    "missionFilesParsed": 444,
+    "missionRegressionCases": 13,
+    "missionIssues": 0,
+    "shaderCompiles": 12,
+    "shaderVariantPairs": 6,
+    "newShaderWarnings": 0,
+    "installerFixture": "Dry run, apply, repeat, rollback, user-change refusal and traversal refusal; passed"
+  },
+  "limitations": [
+    "SDL parsing and a subset interpreter do not validate all native engine semantics",
+    "Mock BotApi does not validate pathfinding, battle behavior or multiplayer synchronization",
+    "FXC compilation does not reproduce SMS Launcher winter darkening",
+    "No new battle or editor scene was run with these resources"
+  ]
+}

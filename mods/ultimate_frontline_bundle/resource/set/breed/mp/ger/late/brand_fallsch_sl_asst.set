@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_43_fj_nco_stg"}
+	{portrait "ger_brand_44_fallsch"}
+	{icon "stg"}
+	{icon_priority 1}
+	{tags "soldier_pzfaust" "_ufb_profile_elite"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_fj_43_cover}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		("stealth")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_3")
+	}
+	{inventory
+		{item "stg44" filled}
+		{item "stg44 ammo" 180}
+
+		{item "m43 grenade" 2.25 0.5}
+		{item "m24_smoke grenade" 1.25 0.5}
+		{item "pwm_l grenade" 1.25 0.5}
+		{item "panzerfaust_100 weapon" 1 filled}
+
+		{item "knife_ger"}
+		{item "bandage_ger" 5.5 0.5}
+		{item "shovel_ger"}
+		
+		{in_hands 0}
+	}
+}

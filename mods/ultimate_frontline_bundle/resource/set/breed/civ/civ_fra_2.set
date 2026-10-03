@@ -1,0 +1,20 @@
+{breed
+	{behaviour soldier}
+	{skin "civ_01_var2"}
+	{portrait "civilian1"}
+	{nationality fra_civilian}
+	{armors
+		{head civilian_fedora_orange}
+	}
+	{perks
+		(include "ability.inc")
+		("skill_rank_0")
+		("civilian")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+
+	{tags "_ufb_profile_regular"}
+}

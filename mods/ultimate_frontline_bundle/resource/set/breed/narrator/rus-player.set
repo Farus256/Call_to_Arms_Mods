@@ -1,0 +1,18 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "sov_41_rkka_rfl_2"}
+	{portrait "narrator_rus_player"}
+	{icon "officer"}
+	{icon_priority 4}
+	{nationality rus}
+	{armors
+		{head soviet_commisar_cap}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard") 
+	}
+
+	{tags "_ufb_profile_regular"}
+}

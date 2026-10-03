@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_43_inf_s_rfl_bag_efr_1"}
+	{portrait "rus_regular_late"}
+	{icon "riflegrenade"}
+	{icon_priority 2}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality rus}
+	{armors
+		{head sov_cap_pilotka_b_var1_sub}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+		("at_rank_3")
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mosin_grenade_launcher" filling "dyakonov heat ammo" 1}
+		{item "dyakonov heat ammo" 10 2}
+
+		{item "bandage_rus" 3.5 0.5}
+		{item "shovel_rus"}
+
+		{in_hands 0}
+	}
+}

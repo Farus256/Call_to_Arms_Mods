@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "sov_43_grd_cossack_smgd_bag"}
+	{portrait "rus_cossack"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier" "_ufb_profile_regular"}
+	{nationality rus}
+	{armors
+		{head rus_cossack_hat}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_2")("tier2_defense")
+		{"melee" lvl_6}
+		
+	}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "ppsh41_drum" filled}
+		{item "ppsh_drum ammo" 213}
+
+		{item "rgd33 grenade" 2.25 0.5}
+		{item "rdg1_smoke grenade" 1.25 0.5}
+		{item "rpg40 grenade" 0.25 0.5}
+
+		{item "bandage_rus" 4.5 0.5}
+		{item "shovel_rus"}
+		{item "cav_sword_m1927" filled}
+
+		{in_hands 0}
+	}
+}
