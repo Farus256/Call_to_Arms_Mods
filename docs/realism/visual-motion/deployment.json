@@ -1,0 +1,44 @@
+{
+  "checkpoint": "c408373",
+  "previousFilesVerified": 943,
+  "unrelatedExistingFilesPreserved": 941,
+  "changedOrAdded": [
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/properties/human.ext",
+      "before": "106447085a34fd5750464422230e6f4f32ed0721e635e59e241643c04e0dfde7",
+      "after": "a7752d2b7b121872c5226f587800ed2de02adc5fdfbb5282e936be0f97544dfb"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/set/vision/vision_fields.inc",
+      "before": null,
+      "after": "cd44d03eac94fc16bbbdec87afeb9f3352c5808930a5f9bb267e12916f93f3fc"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/shader/dx10/pbr/light.hlsl",
+      "before": null,
+      "after": "aedf782bc52c7ec4cc2e2e1d897ede493d8152970b0ffe559ec68388eedb12cb"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/LICENSE-PBR.txt",
+      "before": null,
+      "after": "a7472e0f92b88617f85d923351b448946fdf3948d8a011ef1465a140d7c2a330"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/mod.info",
+      "before": "6aa3a2d4862857286c384be2949a42151a460a221f7992b87db4c57ccbdf0243",
+      "after": "469db1e44316fb17454f2b2a13b03c281ea415c8e74566399dac2cf68fc0cd5c"
+    }
+  ],
+  "loadOrder": [
+    "PBR Shader (3548575715)",
+    "ultimate_frontline_bundle"
+  ],
+  "optionsBackup": "Local private backup only; excluded from repository",
+  "gameLaunched": false,
+  "launcherPathFix": {
+    "from": "F:\\SteamLibrary\\steamapps\\common\\Call to Arms - Gates of Hell\\binaries\\x64",
+    "to": "D:\\Programs\\Steam\\steamapps\\common\\Call to Arms - Gates of Hell\\binaries\\x64",
+    "settingsOtherwisePreserved": true,
+    "launcherStarted": false
+  }
+}

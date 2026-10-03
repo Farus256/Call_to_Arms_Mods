@@ -1,0 +1,20 @@
+{
+  "staticAssertions": 72,
+  "numericCases": 20001,
+  "originalFieldsPreserved": true,
+  "storyPreserved": true,
+  "modeBranches": [
+    "battle_zones",
+    "ammunition",
+    "evacuation",
+    "frontlines",
+    "campaign_capture_the_flag"
+  ],
+  "macroAudit": {
+    "files": 13109,
+    "syntaxErrors": 0,
+    "nestedMods": 0,
+    "unresolvedConditionalCalls": 0
+  },
+  "runtimeTested": false
+}

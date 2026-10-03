@@ -1,7 +1,7 @@
 {mod
 	{name "ultimate_frontline_bundle"}
 	{tags "Bundle, Compatibility, Patch"}
-	{desc "Ultimate Frontline Bundle (No PBR) for game 1.067. Horten's Frontline is the core. Merges BM Mod gore (human/dummy/generic interaction) into HF's entity logic and combines it with Persistent Everything limits; keeps HF canister shot group. Load LAST, after: Immersive UI, Colditz Germany/Finland, Wobble's Sounds, Tank Projectile Sound Overhaul, BM Mod, Persistent Everything, 01 WAVE, Horten's Frontline, 02 WAVE-HF Patch, Conquest Roll of Honour."}
+	{desc "Ultimate Frontline Bundle with optional PBR sun-highlight patch for game 1.067. Horten's Frontline is the core. Merges BM Mod gore (human/dummy/generic interaction) into HF's entity logic and combines it with Persistent Everything limits; keeps HF canister shot group. Load LAST, after: Immersive UI, Colditz Germany/Finland, Wobble's Sounds, Tank Projectile Sound Overhaul, BM Mod, Persistent Everything, 01 WAVE, Horten's Frontline, 02 WAVE-HF Patch, Conquest Roll of Honour, PBR Shader (if enabled)."}
 	{minGameVersion "1.066"}
 	{maxGameVersion "1.068"}
 

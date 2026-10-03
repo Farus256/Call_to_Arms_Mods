@@ -1,0 +1,31 @@
+{
+  "checkpoint": "c408373",
+  "changedFiles": 1,
+  "addedFiles": 2,
+  "records": [
+    {
+      "path": "properties/human.ext",
+      "before": "106447085a34fd5750464422230e6f4f32ed0721e635e59e241643c04e0dfde7",
+      "source": "106447085a34fd5750464422230e6f4f32ed0721e635e59e241643c04e0dfde7",
+      "after": "a7752d2b7b121872c5226f587800ed2de02adc5fdfbb5282e936be0f97544dfb",
+      "bytes": 8808,
+      "reason": "Reduce foot-chassis angular speed only, outside story"
+    },
+    {
+      "path": "set/vision/vision_fields.inc",
+      "before": null,
+      "source": "777360c0b9d69567a71469cdb2578bb851b318b0214430ce0648016c6a219711",
+      "after": "cd44d03eac94fc16bbbdec87afeb9f3352c5808930a5f9bb267e12916f93f3fc",
+      "bytes": 10499,
+      "reason": "Increase human main and peripheral angle/radius only, outside story"
+    },
+    {
+      "path": "shader/dx10/pbr/light.hlsl",
+      "before": null,
+      "source": "3f78dd3995d493e40868fd551d6331a2001eabf22c29f341dd4757e28b8cabf1",
+      "after": "aedf782bc52c7ec4cc2e2e1d897ede493d8152970b0ffe559ec68388eedb12cb",
+      "bytes": 7394,
+      "reason": "Soft shoulder on extreme directional sunlight specular; diffuse and local lights preserved"
+    }
+  ]
+}

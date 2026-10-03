@@ -1,0 +1,270 @@
+Scope: resource/shader/dx10/pbr/light.hlsl only. Other bundled resources retain their respective authors and terms.
+Copyright (c) 2025 Federation Studio. Original project: https://steamcommunity.com/sharedfiles/filedetails/?id=3548575715
+UFB modification: soften excessive sunlight specular highlights.
+The complete original English translation and authoritative Chinese text follow.
+
+This is a translated copy. If there are any translation errors. Please refer to Chinese version.
+
+
+
+Open Non-Commercial — Contact for Commercial License (ONCL-C)
+Version: v0.1
+Release Date: 14/8/2025
+Author: Federation Studio
+Work Name: PBR Shader for Gate of Hell
+Contact: devgaofnso@outlook.com
+
+0. Definitions
+
+“Work”: refers to the source code, binaries, documentation, and accompanying materials covered by this License.
+    Excludes the sample files in the folder PBRShaderForGOH\resource\entity\misc\materials\pbr.
+
+“You/Licensee”: any individual or entity that obtains this License.
+
+“Non-Commercial Use”: use, reproduction, modification, and redistribution not intended to obtain direct or indirect economic benefits.
+
+“Commercial Use”: any use other than Non-Commercial Use, including but not limited to the excluded cases mentioned above, as well as evaluation, demonstration, pilot projects, and proof-of-concept activities for commercial purposes.
+
+“Modification”: alteration, adaptation, derivation, or combination of the Work or any part thereof.
+
+“Redistribution”: providing the original Work or modified versions to third parties in any form (source code, binary, container image, package distribution, etc.).
+
+1. License Grant (Non-Commercial)
+
+Subject to full compliance with this License, the Author grants you a free, non-exclusive, non-transferable license for the following Non-Commercial rights:
+
+Use, reproduce, and modify the Work;
+
+Redistribute the original Work or modified versions;
+
+Integrate and release the Work as part of your Non-Commercial project.
+
+All such rights are conditioned upon attribution and inclusion of this License (see Section 2 and Section 3).
+
+2. Attribution and Notice
+
+Any public use or redistribution (including modified versions) must prominently retain the following information:
+
+Author’s name and copyright notice: © (year) (author/organization);
+
+License name and version: Open Non-Commercial — Contact for Commercial License (ONCL-C) v0.1;
+
+Original project link (if any) and the full text of this License;
+
+For modified versions: you do not need to specify the changes you made, but you must attach this License.
+
+It is recommended to use a unified attribution template (e.g., in README, About page, terminal banner, or application “About” section):
+
+This project is used and distributed under the Open Non-Commercial — Contact for Commercial License (ONCL-C) v0.1.
+© (year) (author/organization). Original project: (link).
+
+3. Inclusion and Consistency
+
+When redistributing the original Work or modified versions, you must include the full text of this License and must not remove or weaken any of its provisions.
+
+For redistribution of modified versions under Non-Commercial Use, this License or its subsequent versions (see Section 8) must continue to apply; you may not replace it with terms that loosen commercial restrictions.
+
+If distributed in source code form, a LICENSE file with this License must be kept in the root directory.
+
+4. Prohibition of Commercial Use
+
+Unless prior written authorization or a separate agreement is obtained from the Author, no Commercial Use is granted. This includes but is not limited to:
+
+Embedding the Work in paid products or services;
+
+Use in enterprise/institutional production environments, customer delivery, pre-sales demonstrations, commercial evaluation, or pilot projects.
+
+For Commercial Use, please contact the Author. The Author may, depending on the scenario, separately determine fees, support, responsibilities, updates, and compliance requirements.
+
+5. Additional Usage Restrictions
+
+To mitigate unforeseen risks, unless expressly approved in writing by the Author, you may not use the Work for:
+
+Scenarios that violate applicable laws and regulations, infringe on privacy, or breach data protection obligations;
+
+Safety-critical or high-risk domains (such as medical diagnosis, autonomous driving, aerospace, energy control, financial trading systems, military applications, etc.);
+
+Generating or distributing malicious code, bypassing security controls, unauthorized access, or surveillance;
+
+Any use that may cause significant adverse effects on the legal rights of others.
+
+If you require such use, you must first obtain written exemption or a commercial agreement from the Author.
+
+6. Contributions and Grant-Back
+
+If you submit contributions (e.g., pull requests/patches) to the Author’s project, you agree to grant the Author and all Non-Commercial licensees a free Non-Commercial license equivalent to Section 1 for such contributions, and you agree that the Author may use your contributions in commercial licenses (the Author may authorize customers to use versions containing your contributions under commercial agreements). You retain your original copyright and attribution rights.
+
+7. Disclaimer and Limitation of Liability
+
+The Work is provided “as is”, without any express or implied warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+To the maximum extent permitted by applicable law, the Author and contributors shall not be liable for any damages arising from the use or inability to use the Work (including but not limited to loss of profits, business interruption, data loss, or indirect, incidental, special, punitive damages).
+
+You are solely responsible for assessing and bearing the compliance and technical risks of using the Work.
+
+8. License Updates and Author’s Interpretation Rights
+
+The Author retains the final right of interpretation of this License and may release revised or new versions;
+
+Upon the release of a new version, the Author may designate subsequent versions of the Work to adopt the new License, but such changes shall not retroactively alter licenses already lawfully obtained for prior copies/versions;
+
+You may choose to continue using the version of the License accompanying your copy, or migrate to the new version published by the Author.
+
+The Author reserves the right, when necessary, to revoke or modify existing licenses, but such revocation or modification shall only apply to future use and shall not retroactively affect lawful actions completed by the Licensee prior to such modification.
+
+9. Termination and Reinstatement
+
+If you violate any provision of this License, the license automatically terminates. You must cease all use and redistribution, and within seven (7) days of becoming aware or being notified, correct the violation and obtain written confirmation from the Author, after which the license may be reinstated once;
+
+For malicious or repeated violations, the Author may refuse reinstatement and reserves the right to pursue remedies;
+
+Termination does not affect other rights or remedies of the Author or third parties.
+
+10. Trademarks and Logos
+
+This License does not grant you the right to use the Author’s trade name, trademarks, service marks, or visual identity, unless prior written permission is obtained.
+
+11. Severability and Entire Agreement
+
+If any provision is held invalid under applicable law, the remaining provisions shall remain in full force and effect. This License constitutes the entire agreement between the parties regarding Non-Commercial use and redistribution of the Work; Commercial Use requires a separate agreement.
+
+TL;DR (Non-Legal Text)
+
+Non-Commercial: free to use, modify, and distribute, but must include attribution and this License.
+
+Commercial: must contact the Author and obtain written authorization.
+
+High-risk/illegal/malicious uses: prohibited, require written exemption.
+
+Violations result in termination; the Author retains final interpretation rights and the right to release new versions.
+
+===== Chinese original =====
+
+开放非商用—需联络商业许可 ONCL-C
+版本： v0.1
+发布日期：14/8/2025
+作者：Federation Studio
+作品名称：适用于地狱之门的PBR着色器
+联系方式：devgaofnso@outlook.com
+
+0. 定义
+
+“作品”：指本许可证所覆盖的源代码、二进制、文档及其附带材料。
+不包括PBRShaderForGOH\resource\entity\misc\materials\pbr文件夹中的示例文件。
+
+“你/被许可人”：获得本许可证的任何个人或实体。
+
+“非商业使用”：不以获取直接或间接经济利益为目的的使用、复制、修改与再分发。
+
+“商业使用”：非商业使用之外的任何使用，包括但不限于上述排除情形及以商业场景为目的的评估、演示、试点与概念验证。
+
+“修改”：对作品或其任何部分进行的改动、适配、衍生或组合。
+
+“再分发”：以任何形式（源代码、二进制、容器镜像、包管理分发等）将原作或修改版提供给第三方。
+
+1. 授权（非商业）
+
+在遵守本许可证全部条款的前提下，作者免费、非排他、不可转授权地授予你以下非商业权利：
+
+使用、复制、修改作品；
+
+再分发原作或修改版；
+
+将作品作为你非商业项目的一部分进行集成与发布。
+以上权利均以署名与许可证随附为条件（见第2条与第3条）。
+
+2. 署名与标注
+
+任何公开使用或再分发（含修改版）必须显著保留以下信息：
+
+作者名称与版权声明：© （年份） （作者/组织）；
+
+许可证名称与版本：开放非商用—需联络商业许可（ONCL-C）v0.1；
+
+原始项目链接（如有）与本许可证全文；
+
+对修改版：无需指出你更改的内容，但是必须附带许可证。
+建议统一署名模板（可放在README/关于页/终端横幅/应用“关于”界面）：
+
+
+本项目基于《开放非商用—需联络商业许可（ONCL-C）v0.1》使用与分发。
+© （年份） （作者/组织）。原始项目：（链接）。
+
+3. 许可证随附与一致性
+
+你在再分发原作或修改版时，必须随附本许可证全文，不得移除或弱化本许可证条款。
+
+对修改版的非商业再分发，必须继续适用本许可证或其后续版本（见第8条），不得更换为放宽商业限制的条款。
+
+若以源代码形式发布，需在根目录保留 LICENSE 文件与本条款。
+
+4. 禁止商业使用
+
+除非事先与作者书面达成商业授权或签署单独协议，任何商业使用均不被授予。这包括但不限于：
+
+将作品嵌入收费产品或服务；
+
+企业/机构内部生产环境、面向客户交付、售前演示、商用评估或试点；
+
+如需商业使用，请联系作者。作者可基于场景另行约定费用、支持、责任、更新与合规要求。
+
+5. 额外使用限制
+
+为降低预期外风险，除非作者书面同意，你不得将作品用于：
+
+违反适用法律法规、侵犯隐私或数据保护义务的场景；
+
+安全关键或高风险领域（如医疗诊断、自动驾驶、航空航天、能源控制、金融交易撮合、军事用途等）；
+
+生成、传播恶意代码、绕过安全控制、进行未授权访问或监控；
+
+任何可能对他人合法权益造成重大不利影响的用途。
+若你确需上述用途，必须先行取得作者的书面豁免或商业协议。
+
+6. 贡献与回授
+
+若你以合并请求/补丁等方式向作者项目提交贡献（“贡献”），则你同意就该贡献向作者与所有非商业被许可人授予与第1条等同的免费非商业许可，并同意作者在商业授权中使用你的贡献（作者可在商业协议中向客户授权使用包含该贡献的版本）。你保留你的原始著作权与署名权。
+
+7. 免责声明与责任限制
+
+本作品按“现状”提供，不附带任何明示或默示担保，包括但不限于对适销性、特定用途适用性、无侵权的担保。
+
+在适用法律允许的最大范围内，作者及贡献者对因使用或无法使用本作品所致的任何损失（包括但不限于利润损失、业务中断、数据丢失或间接、附带、特殊、惩罚性损害）不承担任何责任。
+
+你应自行评估并承担使用本作品的合规与技术风险。
+
+8. 许可证更新与作者解释权
+
+作者保有对本许可证的最终解释权，并可发布修订或新版本；
+
+新版本发布后，作者可指定后续发布的作品版本改采新许可证，但不会追溯改变你已依法取得的既有副本/版本的许可；
+
+你可选择继续依据你获得副本随附的许可证版本使用，或迁移到作者发布的后续版本。
+
+作者保留在必要情况下撤销或修改既有许可证的权利，但该撤销或修改仅适用于未来使用，且不追溯影响被许可人在修改前已完成的合法行为。
+
+9. 终止与复权
+
+如你违反本许可证任一条款，许可自动终止，你必须停止使用与再分发，并在获知或被通知后七（7）日内纠正并取得作者书面确认，方可一次性恢复许可；
+
+对于恶意或重复违约，作者可拒绝复权并保留追索权；
+
+终止不影响作者或第三方的其他权利救济。
+
+10. 商标与标识
+
+本许可证不授予你使用作者的商号、商标、服务标识或形象标识的权利，除非事先获得书面许可。
+
+11. 可分割性与完整协议
+
+若某条款在适用法律下无效，其余条款仍保持效力。本许可证构成双方就作品非商业使用与再分发的完整协议；商业使用需另行签署协议为准。
+
+TL;DR（非法律文本）
+
+非商业：免费使用、修改、传播，但是必须署名和附带许可证。
+
+商业：一律先联系作者拿到书面授权。
+
+高风险/违法/恶意用途：禁止，需书面豁免。
+
+违约会终止；作者保留最终解释权与发布新版本的权利。

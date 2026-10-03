@@ -1,5 +1,5 @@
 {
-  "snapshotDate": "2026-10-02",
+  "snapshotDate": "2026-10-03",
   "algorithm": "SHA256",
   "files": [
     {
@@ -998,9 +998,14 @@
       "sha256": "5012f284398e2cfb0ffb9e856e4e22f74c1492611903acd982ce33e866c96e43"
     },
     {
+      "path": "mods/ultimate_frontline_bundle/LICENSE-PBR.txt",
+      "bytes": 14354,
+      "sha256": "a7472e0f92b88617f85d923351b448946fdf3948d8a011ef1465a140d7c2a330"
+    },
+    {
       "path": "mods/ultimate_frontline_bundle/mod.info",
-      "bytes": 1179,
-      "sha256": "6aa3a2d4862857286c384be2949a42151a460a221f7992b87db4c57ccbdf0243"
+      "bytes": 1233,
+      "sha256": "469db1e44316fb17454f2b2a13b03c281ea415c8e74566399dac2cf68fc0cd5c"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/___high_res_textures/entity/particle/bm_arm1/bm_arm1.def",
@@ -1383,14 +1388,14 @@
       "sha256": "1e77b30fa52d09d1c5754931b01ddc5a40caf4007f92a44207bb1e9dcdddb8e1"
     },
     {
-      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-ammo/-shells/generic/shell_cannon_auto/shell_cannon_auto.def",
-      "bytes": 530,
-      "sha256": "ae39d1e56e1dd309bdc925bd9b1b225209d29923733ba373daac9833bb8b7390"
-    },
-    {
       "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-ammo/-shells/generic/shell_cannon_auto2/shell_cannon_auto2.def",
       "bytes": 531,
       "sha256": "7805b39d23dbcdceca95cf35b466df146cafc8180c30c1345f52f749110437eb"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-ammo/-shells/generic/shell_cannon_auto/shell_cannon_auto.def",
+      "bytes": 530,
+      "sha256": "ae39d1e56e1dd309bdc925bd9b1b225209d29923733ba373daac9833bb8b7390"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/entity/inventory/-ammo/-shells/generic/shell_cannon_mortar/shell_cannon_mortar.def",
@@ -3199,8 +3204,8 @@
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/properties/human.ext",
-      "bytes": 7463,
-      "sha256": "106447085a34fd5750464422230e6f4f32ed0721e635e59e241643c04e0dfde7"
+      "bytes": 8808,
+      "sha256": "a7752d2b7b121872c5226f587800ed2de02adc5fdfbb5282e936be0f97544dfb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/properties/resupply.inc",
@@ -4686,6 +4691,16 @@
       "path": "mods/ultimate_frontline_bundle/resource/set/vision/vision.set",
       "bytes": 582,
       "sha256": "50f617ff93fa3e09a2a7ee9faf104864c6b453cf48f0d1fa3e6d8899d2b4116d"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/set/vision/vision_fields.inc",
+      "bytes": 10499,
+      "sha256": "cd44d03eac94fc16bbbdec87afeb9f3352c5808930a5f9bb267e12916f93f3fc"
+    },
+    {
+      "path": "mods/ultimate_frontline_bundle/resource/shader/dx10/pbr/light.hlsl",
+      "bytes": 7394,
+      "sha256": "aedf782bc52c7ec4cc2e2e1d897ede493d8152970b0ffe559ec68388eedb12cb"
     },
     {
       "path": "mods/ultimate_frontline_bundle/resource/texture/common/_vehicle/stug3g_fin_x#winter.dds",

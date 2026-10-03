@@ -1,0 +1,125 @@
+{
+  "movement": [
+    {
+      "group": "Run",
+      "mode": "Sneak",
+      "speed": 5,
+      "animation": 2,
+      "before": 360,
+      "after": 240
+    },
+    {
+      "group": "Run",
+      "mode": "Spot",
+      "speed": 6,
+      "animation": 2,
+      "before": 420,
+      "after": 360
+    },
+    {
+      "group": "Run",
+      "mode": "Walk",
+      "speed": 4,
+      "animation": 1.8,
+      "before": 600,
+      "after": 360
+    },
+    {
+      "group": "Run",
+      "mode": "Slow",
+      "speed": 8,
+      "animation": 3.2,
+      "before": 360,
+      "after": 300
+    },
+    {
+      "group": "Run",
+      "mode": "Normal",
+      "speed": 13,
+      "animation": 6.2,
+      "before": 600,
+      "after": 300
+    },
+    {
+      "group": "Run",
+      "mode": "Fast",
+      "speed": 18,
+      "animation": 5.8,
+      "before": 600,
+      "after": 270
+    },
+    {
+      "group": "Run",
+      "mode": "Bow",
+      "speed": 16,
+      "animation": 5,
+      "before": 600,
+      "after": 300
+    },
+    {
+      "group": "Crawl",
+      "mode": "Slow",
+      "speed": 3.5,
+      "animation": 6,
+      "before": 420,
+      "after": 180
+    },
+    {
+      "group": "Crawl",
+      "mode": "Normal",
+      "speed": 4.5,
+      "animation": 7,
+      "before": 420,
+      "after": 180
+    },
+    {
+      "group": "Crawl",
+      "mode": "Fast",
+      "speed": 6,
+      "animation": 9,
+      "before": 420,
+      "after": 180
+    }
+  ],
+  "vision": [
+    {
+      "profile": "human",
+      "beforeFov": 210,
+      "afterFov": 240,
+      "beforeRadius": 1.4850000000000003,
+      "afterRadius": 1.6875,
+      "rangeIncreasePercent": 13.636363636363601
+    },
+    {
+      "profile": "human_elite",
+      "beforeFov": 210,
+      "afterFov": 240,
+      "beforeRadius": 1.62,
+      "afterRadius": 1.89,
+      "rangeIncreasePercent": 16.66666666666665
+    },
+    {
+      "profile": "human_recon",
+      "beforeFov": 210,
+      "afterFov": 240,
+      "beforeRadius": 1.8225000000000002,
+      "afterRadius": 2.0925,
+      "rangeIncreasePercent": 14.814814814814792
+    },
+    {
+      "profile": "human_peripheral",
+      "beforeFov": 240,
+      "afterFov": 300,
+      "beforeRadius": 0.43200000000000005,
+      "afterRadius": 0.54,
+      "rangeIncreasePercent": 25
+    }
+  ],
+  "shader": {
+    "knee": 0.5,
+    "shoulder": 0.75,
+    "asymptoticPeak": 1.25,
+    "scope": "main-light specular only"
+  },
+  "cancelled": "grenade timer (user request)"
+}
