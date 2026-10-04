@@ -7,17 +7,25 @@ const build=require('../docs/realism/tactical/build.json'),breeds=require('../do
 const files=[...new Set([...build.files,...breeds.entries.map(e=>e.file),
  'map/multi/ufb_survival.inc','script/multiplayer/modes/conquest/orders.lua',
  'script/multiplayer/ufb_order_guard.lua','script/multiplayer/ufb_objective_balance.lua',
- 'set/interaction_entity/human.inc','set/interaction_entity/ufb_stress.inc','shader/dx10/pbr/light.hlsl'])].sort();
+ 'set/interaction_entity/human.inc','set/interaction_entity/ufb_stress.inc',
+ 'set/squads.set','map/multi/HF-dcg_script.inc','set/stuff/rifle/grenade/dyakonov.he.ammo'])].sort();
+// A stale package from an older run must not silently retain a shader override.
+assert(!fs.existsSync(path.join(output,'resource/shader')),'Move the old package shader folder to backup before rebuilding');
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const oldManifestPath=path.join(output,'manifest.json');
+const oldManifest=fs.existsSync(oldManifestPath)?JSON.parse(fs.readFileSync(oldManifestPath,'utf8')):null;
+const priorEntries=new Map(oldManifest&&path.resolve(oldManifest.target)===path.resolve(target)?oldManifest.files.map(e=>[e.file,e.afterSHA256]):[]);
 const entries=[];
 for(const file of files){
  const source=path.join(repo,prefix,file),dest=path.join(target,file),data=fs.readFileSync(source);
  let before=null;
  if(fs.existsSync(dest)){
   before=fs.readFileSync(dest);
-  const git=cp.spawnSync('git',['-c','safe.directory='+repo.replaceAll('\\','/'),'show','dcfed91:'+prefix+file],{cwd:repo,maxBuffer:5000000});
-  const old=git.status===0?git.stdout:fs.existsSync(path.join(build.source,file))?fs.readFileSync(path.join(build.source,file)):null;
-  assert(old&&old.equals(before),'Installed resource differs from preserved baseline: '+file);
+  if(!before.equals(data)&&sha(before)!==priorEntries.get(file)){
+   const git=cp.spawnSync('git',['-c','safe.directory='+repo.replaceAll('\\','/'),'show','dcfed91:'+prefix+file],{cwd:repo,maxBuffer:5000000});
+   const old=git.status===0?git.stdout:fs.existsSync(path.join(build.source,file))?fs.readFileSync(path.join(build.source,file)):null;
+   assert(old&&old.equals(before),'Installed resource differs from preserved baseline: '+file);
+  }
  }
  entries.push({file,beforeSHA256:before?sha(before):null,afterSHA256:sha(data)});
 }

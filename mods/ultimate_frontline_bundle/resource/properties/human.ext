@@ -166,9 +166,9 @@
 	;// speed S (km/h) animation A (km/h) rotation R (degree/s)
 
 	{Crawl		;// S	A	R  // Slowing A down will speed up the animation
-		{Slow 3.5 6 120}
+		{Slow 3.5 6 180}
 		{Normal 4.5 7 180}
-		{Fast 6 9 210}
+		{Fast 6 9 180}
 
 ; UFB: turn rate follows movement mode; translation and animation speeds are unchanged.
 
@@ -183,13 +183,13 @@
 		{Fast		5	5	180 }
 	}
 	{Run
-		{Sneak 5 2 240}	;// mission script movement mode
+		{Sneak 5 2 360}	;// mission script movement mode
 		{Spot 6 2 420}	;// Manual TPC Zoom
-		{Walk 4 1.8 240}	;// single flick, walk mode
-		{Slow 8 3.2 300}	;// double flick, walk mode
-		{Normal 13 6.2 360}	;// single flick, running mode
-		{Fast 18 5.8 420}	;// double click, running mode
-		{Bow 16 5.0 360}	;// mission script movement mode
+		{Walk 4 1.8 600}	;// single flick, walk mode
+		{Slow 8 3.2 360}	;// double flick, walk mode
+		{Normal 13 6.2 600}	;// single flick, running mode
+		{Fast 18 5.8 600}	;// double click, running mode
+		{Bow 16 5.0 600}	;// mission script movement mode
 		;// When soldiers run out of stamina, they will keep the animation, just play it slower.
 
 ; UFB: turn rate follows movement mode; translation and animation speeds are unchanged.
@@ -210,11 +210,11 @@
 	}
 	; UFB realism: native non-story gametype conditions
 {Injured 0.85}
-(mod "gametype:battle_zones" {Injured 0.70})
-(mod "gametype:ammunition" {Injured 0.70})
-(mod "gametype:evacuation" {Injured 0.70})
-(mod "gametype:frontlines" {Injured 0.70})
-(mod "gametype:campaign_capture_the_flag" {Injured 0.70})		;// speed multiplier when health is below 30% of maximum
+
+
+
+
+		;// speed multiplier when health is below 30% of maximum
 }
 
 {volume "body"	;//stomach and chest
@@ -291,7 +291,7 @@
 	{const "bomb/detect_grenades"	5}		;// detect grenades inside 5 meter radius
 	{const "bomb/danger_zone"		5}		;// do nothing if danger is more than "x" meters away, otherwise slowly walk away
 	{const "fight/distance"			2.0} 	;// was at 1.5
-	{const "weapon/change_time"		0.5}	;// disable ai weapon switch for 0.5 seconds
+	{const "weapon/change_time" 5}	;// disable ai weapon switch for 0.5 seconds
 
 
 	{Properties

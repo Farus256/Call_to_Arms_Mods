@@ -23,7 +23,7 @@
 		{item "mosin" filled}
 		{item "rifle_rus clip ammo" 60 5}
 
-		{item "dyakonov ammo" 10}
+		{item "dyakonov he ammo" 10}
 
 		{item "rgd33 grenade" 1.75 0.5}
 		{item "rgd33_bundle grenade" 0.75 0.5}

@@ -1,5 +1,5 @@
 {
-  "source": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\system-effective",
+  "source": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\audit-20261004\\upstream",
   "enabled": true,
   "counts": {
     "regular": 4256,
@@ -40797,16 +40797,16 @@
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "2f8611632de53c065a3817ca8418aaeb9bf297c3355ce112834bae24e0b69762",
-      "generatedSHA256": "75fea8642b0bf627850cc7dbe1baee32feba265df83cbb843b34c04a9df3dc6d"
+      "sourceSHA256": "f5fdc692c5a978ed4d49bd8d68c2830f9085b2667f38274a0141f5bd8119f548",
+      "generatedSHA256": "9a62f1c3753902ab2be3868be6e5d77a6d4e583ed15fa72b1de04e4279c9a06a"
     },
     {
       "file": "set/breed/mp/rus/early/1st_motor_rfl_gren_asst.set",
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "5830004e2de221312f2a709fbaca6308b7b0545f261b02f156400e9255842c05",
-      "generatedSHA256": "15864997db4b880cb78405470d041dd7f75c0b21408f4cd9f25a8cc2ab587772"
+      "sourceSHA256": "021671a8668655655888731a782605826a1ca0e76868b5032e0140cc6ee906d4",
+      "generatedSHA256": "53eb582f11e67c79779157b84d7b98945072b2b63ba688c17f78a9d8cb41771c"
     },
     {
       "file": "set/breed/mp/rus/early/1st_motor_rifle.set",
@@ -40909,8 +40909,8 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "9ceb86036808730c5ea364a952544a1444b55561e8b14feaa7cb58a4cf1fdc4c",
-      "generatedSHA256": "d7c7773ab060152ec6fa24cbee56c9b7534fd530198b275bdcd815bac84b3359"
+      "sourceSHA256": "467bddb72057240d6b219eb3557ada419828112543cb7d33aea495f194ae1533",
+      "generatedSHA256": "a0b1f4dadef535ee5c248abebd0bc68c4c78e22aeaaaf4edb74c353d7711a472"
     },
     {
       "file": "set/breed/mp/rus/early/antitank_4.set",
@@ -40933,8 +40933,8 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "941aafd988304b003ff07cb610b04162c5ff67df353eefd89dbdeb05a8d5840a",
-      "generatedSHA256": "b54ca2ce47ad8d316a59b71e4965e82424a84bcef240718f8cdb7bb2830771b8"
+      "sourceSHA256": "2a6d1d76ac502c92e20dc857d0ad6810f05187a27b0b8c1d2d6ec2d6a51ec332",
+      "generatedSHA256": "74e5c9d1cadf0851f2e0959c9af22bf49e29d1824daaa7d1d8ef9b66021dd825"
     },
     {
       "file": "set/breed/mp/rus/early/artilleryman.set",
@@ -41013,8 +41013,8 @@
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "384b284934fa365e5a7921f59de2ee6e8b1a3a680b57269af9454632f1b2038a",
-      "generatedSHA256": "db022fc56f6a9c316111248c9fd963224ebda2a6555f1a0a43e8d57bd2f882cf"
+      "sourceSHA256": "caa3d350805462bc087cbdc44d55b141404a83a4c75dc303176d1cba7ba1cdbd",
+      "generatedSHA256": "49a89c641aff43275f52bf260f73e59e00f55c0179ae9c723d296f6c1100509e"
     },
     {
       "file": "set/breed/mp/rus/early/cav_rifle.set",
@@ -42005,8 +42005,8 @@
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "2e9d6daf6279c892f0da8e77356cb64a3e1e8ed2b380c975e89679f340e57062",
-      "generatedSHA256": "2540f4a1f0c893eb18b01df407c32f0fc682801f7c57008f48af7bee4bd085dd"
+      "sourceSHA256": "c666c3541aa71914acad01a8a35a2352bee655b8be3bf927079cdcb3d4261f49",
+      "generatedSHA256": "586c4efb08991633d3ecad5d8d5cf6202bf8aec4975811f52354020799ab7904"
     },
     {
       "file": "set/breed/mp/rus/early/mountain_sapper_builder.set",
@@ -42309,16 +42309,16 @@
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "0b18b50b3c85b29f126682b605c2fe59bda6f053789732d26c5f295fb73c48fb",
-      "generatedSHA256": "b7cb6809d71e6352f796b36438da51baff49ac35ef23306e9ad1ce044d36a3ab"
+      "sourceSHA256": "c22de6009ec0aa607e2531f426e732fe1cac4ae47c73fcb0c06457c5cc6b3a1d",
+      "generatedSHA256": "a069c14c3437085388936edd625d14363aa38c28e15f354ff4599e6bde6d668d"
     },
     {
       "file": "set/breed/mp/rus/early/nkvd_omsdon_rfl_gren_asst.set",
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "b397052f51bc4dd9354efd7baebfcb33b9cced3931e90c24d8ecb407b45c8887",
-      "generatedSHA256": "177f00f8c296ea0c4608196d7f0e93c0553e91668eb347ffa48e113c2863c231"
+      "sourceSHA256": "45aa822eccff9d9a61b74186d554ed46ab81b298d13476152fbb51bc93cfb3e3",
+      "generatedSHA256": "696d617d7db3ef268ede9765b899cda26ff012daa6aae74b462fffda87364310"
     },
     {
       "file": "set/breed/mp/rus/early/nkvd_omsdon_rifle.set",
@@ -42437,16 +42437,16 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "b08c815d66c7276d1c7325359e91b028ad0d50310803da012d4cc24bcaca9dc9",
-      "generatedSHA256": "dc92f1711d0f8d3039a109f80e7b5d097755e13128a4e2500c2bbd8f33809b14"
+      "sourceSHA256": "207a37e59017453a4e0c275b2c1e96ccecea8327ecb0e8c24ba2d31364ebb2ae",
+      "generatedSHA256": "6e09b19e0e82ad9a30f6f6441274e9cea475340232df1e26890baf70573c6587"
     },
     {
       "file": "set/breed/mp/rus/early/nkvd_rfl_gren_asst.set",
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "5fa9db7ff57035df20e8bc94bd64b06106b6c5e72dc91e1d58fafae6f1e192fc",
-      "generatedSHA256": "6379562c99f454134272c5dedb958c045ec6419a909ceafe6274b2a823e3e832"
+      "sourceSHA256": "81d0c55413a8362af3851676ef2916eaaea4dee4bff999614112d6fb11ce1c58",
+      "generatedSHA256": "94a72c893b437e09e0b89df8bd5a3aac68939668b2fba4bf166543cd204ed131"
     },
     {
       "file": "set/breed/mp/rus/early/nkvd_rifle.set",
@@ -43077,16 +43077,16 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "9ceb86036808730c5ea364a952544a1444b55561e8b14feaa7cb58a4cf1fdc4c",
-      "generatedSHA256": "d7c7773ab060152ec6fa24cbee56c9b7534fd530198b275bdcd815bac84b3359"
+      "sourceSHA256": "467bddb72057240d6b219eb3557ada419828112543cb7d33aea495f194ae1533",
+      "generatedSHA256": "a0b1f4dadef535ee5c248abebd0bc68c4c78e22aeaaaf4edb74c353d7711a472"
     },
     {
       "file": "set/breed/mp/rus/early/rifleman_dyakonov_asst.set",
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "0b1e9fc4f0f2981420bfea0935953f528dea6fd4c22f7de14b32ef80547a3594",
-      "generatedSHA256": "0bc10fd134660a589ee13a19c292ae53dd345dfea6fa2c2fae2b2fd99d5e4f0a"
+      "sourceSHA256": "9b5baf5a56b57a1c412e5ccb8d967f98264db1534b78fc4477b973c7cf4dbbf9",
+      "generatedSHA256": "c2a13c7456e22e8837cbc020f1a9b8dcd58209920657eac8e7f8f894915a2d80"
     },
     {
       "file": "set/breed/mp/rus/early/rifleman_sniper.set",
@@ -43621,8 +43621,8 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "887a7277598b710ea25ca1da695c3ef09a1e18fe9043d2a8fad02b7e4aff6126",
-      "generatedSHA256": "e06026c3d929df7bfbd9e23751cbcbb1d2da930ec3845194c103aa52c36dd2d3"
+      "sourceSHA256": "80faf17b45385c4266a533535ab648579bda60c4a64b8de7e6f0df6054fdcd61",
+      "generatedSHA256": "625b2d6ed6d1ac74c6b552a6f8c2c77518a0a3b674813bbd76d47c173872a492"
     },
     {
       "file": "set/breed/mp/rus/earlyf/antitank_4.set",
@@ -43645,8 +43645,8 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "88cbbb72b876ba6f3ecc63d529dce2be7be60bbad1518005a170b325e3982296",
-      "generatedSHA256": "b44bad587fea019f52d6c9e93909f01fedbd32e7a72f5c33cf675868a7056404"
+      "sourceSHA256": "e68e5a660c8d6813d8c0204c5057dcf5c8671e200778cfbf3e65c22c56ea76dc",
+      "generatedSHA256": "cc8a6b8cb722e7514e5fe8d6f9245e6198a1b064f8cf9e7238680c8448d3d8d7"
     },
     {
       "file": "set/breed/mp/rus/earlyf/artilleryman.set",
@@ -49341,8 +49341,8 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "d7179f61771307df368327c65b9cba0a2df727d3cd2f8e38e6468013461ca6c5",
-      "generatedSHA256": "3e4c3fcb8dad9a889236cf3b07fa27a67c5058579b44c03c511ff56d250fd965"
+      "sourceSHA256": "ac11095f0e19f03c63b7bb9244088e57a5931907bf7dd124be05da023e25661c",
+      "generatedSHA256": "053de46281847ed67aa7de28b48bbdbb23beb7778eae522164db8b2769cf4c66"
     },
     {
       "file": "set/breed/mp/rus/mid/antitank_4.set",
@@ -52045,16 +52045,16 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "a9cf02b112f700c9f3376a62d58ed24822a899ea612191c187d0e4e32d81a2cf",
-      "generatedSHA256": "f0335e27b371cdfdf243ec9c86e743a3c58135dd748fb5140d4a9cdf0827c5c7"
+      "sourceSHA256": "56673cfc6ed5dafb3b2860d25d5d9b022aa7e91c71465a2bc4e9ffffeb79b97d",
+      "generatedSHA256": "b9b7a89e8f7e44a9d9e4d5bda468c3f855da9a6f5ed7cca96d2d0490c12fe542"
     },
     {
       "file": "set/breed/mp/rus/mid/rifleman_dyakonov_asst.set",
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "316f23931065295f9f0fe204c0e19120c5caf802cd8f46d58e602546b90d53ed",
-      "generatedSHA256": "9c370f7bca4b4c4b92819665e43840d40b7a6cb13e85f6781bd1913e0bb48232"
+      "sourceSHA256": "0aca7828d7a2dc6ab84cda11f645fc1218148ce18214fcea5ad05ccdfefcb65e",
+      "generatedSHA256": "06b53d66ce1f89e88846d6672d9f1abdc23f590e6b14d34d0f0a5b349f5d6fa5"
     },
     {
       "file": "set/breed/mp/rus/mid/rifleman_solo.set",
@@ -52461,8 +52461,8 @@
       "profile": "regular",
       "tier": "2",
       "reason": "tier",
-      "sourceSHA256": "58b02df98e93dea9d64906a0b8a822f719c68a4131534c33a2546017183217fa",
-      "generatedSHA256": "29f8fff17f14163144a232d37858ba5c88bd5ae604f7d68458da778a46f18f07"
+      "sourceSHA256": "881cbe6ca8496173b217f61ad6b71702f44079dadf39ba84d127f2b6134c7665",
+      "generatedSHA256": "5b74df3115e4323ca3dd234d920b72c0e5404c1d16bdb1ec375634b5331ad6a8"
     },
     {
       "file": "set/breed/mp/rus/midf/antitank_4.set",

@@ -20,9 +20,16 @@ assert(Number.isFinite(cfg.baseHealth)&&cfg.baseHealth>0&&Number.isFinite(cfg.ma
 assert(Number.isFinite(cfg.healthTierCompression)&&cfg.healthTierCompression>=0&&cfg.healthTierCompression<=1);
 assert(Number.isFinite(cfg.regenerationPerSecond)&&cfg.regenerationPerSecond>=0);
 assert(Number.isFinite(cfg.advanceRatio)&&cfg.advanceRatio>=0);
+assert(Number.isFinite(cfg.weaponSwitchCooldownSeconds)&&cfg.weaponSwitchCooldownSeconds>0);
+assert(Number.isFinite(cfg.injuredMovementMultiplier)&&cfg.injuredMovementMultiplier>0&&cfg.injuredMovementMultiplier<=1);
 for(const value of Object.values(cfg.supplyRadius))assert(Number.isFinite(value)&&value>0);
 for(const row of Object.values(cfg.rotationDegreesPerSecond))for(const value of Object.values(row))assert(Number.isFinite(value)&&value>0);
 let human=read('properties/human.ext'),ast=sdl.parse(human);
+// Native cooldown: HF's 0.5s causes rapid weapon swapping at the range boundary.
+const switchTime=sdl.all(ast,n=>sdl.name(n)==='const'&&n.tokens[1]?.value==='weapon/change_time');
+assert.equal(switchTime.length,1);
+human=edit(human,switchTime,()=>`{const "weapon/change_time" ${cfg.weaponSwitchCooldownSeconds}}`);
+ast=sdl.parse(human);
 const health=sdl.child(ast.children.find(n=>sdl.name(n)==='extender'&&n.tokens[1]?.value==='vitality'),'Health');
 assert(health.children.every(n=>['max','current','inc','mod'].includes(sdl.name(n))),'Unexpected Health property; review before replacing');
 assert(health.children.filter(n=>sdl.name(n)==='mod').every(n=>n.children.every(c=>sdl.name(c)==='inc')),'Unexpected Health override; review before replacing');
@@ -36,6 +43,12 @@ if(cfg.enabled.cautiousAdvance){
 if(cfg.enabled.rotation){
  const chassis=sdl.parse(human).children.find(n=>sdl.name(n)==='Chassis'&&n.tokens[1]?.value==='foot');
  const changes=[];
+ const injured=sdl.child(chassis,'Injured');assert(injured);
+ changes.push({...injured,replacement:`{Injured ${cfg.injuredMovementMultiplier}}`});
+ for(const n of chassis.children.filter(n=>sdl.name(n)==='mod'&&n.tokens[1]?.value.startsWith('gametype:'))){
+  assert(n.children.every(c=>sdl.name(c)==='Injured'),'Unknown chassis modifier');
+  changes.push({...n,replacement:''});
+ }
  for(const [posture,modes] of Object.entries(cfg.rotationDegreesPerSecond)){
   const block=sdl.child(chassis,posture);assert(block);
   for(const n of block.children){
@@ -67,7 +80,13 @@ const defs=sdl.parse(supply).children.filter(n=>sdl.name(n)==='define'&&cfg.supp
 assert.equal(defs.length,Object.keys(cfg.supplyRadius).length);
 const replacements=[];
 for(const def of defs){const radius=sdl.child(sdl.child(def,'extender'),'radius');assert(radius);replacements.push({...radius,value:cfg.supplyRadius[def.tokens[1].value]});}
-if(cfg.enabled.supply)supply=edit(supply,replacements,n=>`{radius ${n.value}}`);save('properties/resupply.inc',supply);
+if(cfg.enabled.supply)supply=edit(supply,replacements,n=>`{radius ${n.value}}`);
+// Confirmed in game.log: this optional selector fails in the runtime item registry.
+// Do not substitute HE for HEAT or claim static tag matching proves runtime support.
+const brokenAmmo=sdl.all(sdl.parse(supply),n=>sdl.name(n)==='item'&&n.tokens[1]?.value==='ufb_dyakonov_heat');
+assert.equal(brokenAmmo.length,1,'Review changed supply definitions');
+supply=edit(supply,brokenAmmo,()=>'; UFB: unsupported Dyakonov HEAT supply entry removed (runtime No Stuff error).');
+save('properties/resupply.inc',supply);
 // Soft vehicles: try an available machine gun before spending grenades/rockets.
 // Armored target classes retain their existing AP/volume-specific rules.
 let ammo=read('set/target/ammo.set');

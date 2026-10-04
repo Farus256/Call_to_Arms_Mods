@@ -19,8 +19,8 @@
 		("veterancy_lvl_0")
 	}
 	{inventory
-		{item "mosin_grenade_launcher" filled}
-		{item "dyakonov ammo" 18 2}
+		{item "mosin_grenade_launcher" filling "dyakonov he ammo" 1}
+		{item "dyakonov he ammo" 18 2}
 
 		{item "bandage_rus" 3.5 0.5}
 		{item "shovel_rus"}

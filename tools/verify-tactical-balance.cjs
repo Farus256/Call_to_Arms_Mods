@@ -41,7 +41,9 @@ for(const [posture,modes] of Object.entries(cfg.rotationDegreesPerSecond))for(co
  check(current.tokens[1].value===original.tokens[1].value&&current.tokens[2].value===original.tokens[2].value,'translation/animation preserved '+mode);
 }
 const maskRadius=text=>text.replace(/\{radius\s+[\d.]+\}/g,'{radius VALUE}');
-check(maskRadius(read('properties/resupply.inc'))===maskRadius(source('properties/resupply.inc')),'supply inventories and all non-radius fields preserved');
+const supplyWithoutBrokenEntry=source('properties/resupply.inc').replace(/\{item "ufb_dyakonov_heat"\s+"ammo" 1\s+\{value 5\}\}/,'; UFB: unsupported Dyakonov HEAT supply entry removed (runtime No Stuff error).');
+check(maskRadius(read('properties/resupply.inc'))===maskRadius(supplyWithoutBrokenEntry),'supply preserved except radii and confirmed invalid HEAT entry');
+check(!read('properties/resupply.inc').includes('{item "ufb_dyakonov_heat"'),'runtime missing-item request removed');
 const ammo=s.parse(read('set/target/ammo.set')),oldAmmo=s.parse(source('set/target/ammo.set'));
 const car=s.all(ammo,n=>s.name(n)==='car')[0];
 check(car.children.findIndex(n=>s.name(n)==='mgun')<car.children.findIndex(n=>s.name(n)==='ammo rocketlauncher'),'MG before consumable AT against soft vehicles');

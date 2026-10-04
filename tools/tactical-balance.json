@@ -5,9 +5,11 @@
   "healthTierCompression": 0.05,
   "regenerationPerSecond": 0.1,
   "advanceRatio": 0.5,
+  "weaponSwitchCooldownSeconds": 5,
+  "injuredMovementMultiplier": 0.85,
   "rotationDegreesPerSecond": {
-    "Crawl": {"Slow": 120, "Normal": 180, "Fast": 210},
-    "Run": {"Sneak": 240, "Spot": 420, "Walk": 240, "Slow": 300, "Normal": 360, "Fast": 420, "Bow": 360}
+    "Crawl": {"Slow": 180, "Normal": 180, "Fast": 180},
+    "Run": {"Sneak": 360, "Spot": 420, "Walk": 600, "Slow": 360, "Normal": 600, "Fast": 600, "Bow": 600}
   },
   "supplyRadius": {
     "supply_ammo_fixed": 10,

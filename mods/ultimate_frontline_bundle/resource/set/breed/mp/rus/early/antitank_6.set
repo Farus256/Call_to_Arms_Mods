@@ -22,7 +22,7 @@
 		{item "mosin" filled}
 		{item "rifle_rus clip ammo" 60 5}
 		
-		{item "dyakonov ammo" 10}
+		{item "dyakonov he ammo" 10}
 
 		{item "bandage_rus" 3.5 0.5}
 		{item "shovel_rus"}

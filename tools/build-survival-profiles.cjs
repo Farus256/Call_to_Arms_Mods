@@ -1,10 +1,12 @@
 // Build-time breed classification. At runtime only tags and bounded entity timers.
 const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const s=require('./lib/sdl.cjs'),cfg=require('./survival-profiles.json');
-const repo=path.resolve(__dirname,'..'),sources=path.resolve(process.argv[2]||path.join(repo,'../_survival_work/system-effective'));
+const repo=path.resolve(__dirname,'..');
 const output=path.join(repo,'mods/ultimate_frontline_bundle/resource'),backup=path.join(repo,'../_survival_work/tactical-before');
 const manifestPath=path.join(repo,'docs/realism/tactical/breed-profiles.json');
 const previous=fs.existsSync(manifestPath)?JSON.parse(fs.readFileSync(manifestPath,'utf8')):{entries:[]};
+// Rebuild from the last reviewed source tree, not a stale pre-update snapshot.
+const sources=path.resolve(process.argv[2]||previous.source||path.join(repo,'../_survival_work/system-effective'));
 const previousEntries=new Map(previous.entries.map(e=>[e.file,e]));
 const sha=data=>crypto.createHash('sha256').update(data).digest('hex');
 assert(sources!==output,'Preserved sources required');
