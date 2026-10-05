@@ -1,0 +1,24 @@
+{
+  "method": "FXC dumpbin instruction slots; not a GPU timing or FPS measurement",
+  "installed": false,
+  "results": [
+    {
+      "variant": "normal_specular",
+      "baseline": 757,
+      "prototype": 758,
+      "extraSlots": 1
+    },
+    {
+      "variant": "foliage",
+      "baseline": 766,
+      "prototype": 767,
+      "extraSlots": 1
+    },
+    {
+      "variant": "shadows",
+      "baseline": 778,
+      "prototype": 779,
+      "extraSlots": 1
+    }
+  ]
+}

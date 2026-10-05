@@ -1,0 +1,522 @@
+{
+  "gameBattleTested": false,
+  "syntax": {
+    "sdl": 10952,
+    "lua51": 16,
+    "issues": []
+  },
+  "installed": {
+    "checked": 11043,
+    "missing": [],
+    "different": [],
+    "extra": [
+      "ultimate_frontline_bundle/resource/map/multi/HF-dcg_script.inc.before-realism-followup.bak",
+      "ultimate_frontline_bundle/resource/map/multi/HF-dcg_script.inc.before-restore-90-18.bak"
+    ]
+  },
+  "breeds": {
+    "checked": 10088,
+    "changedUpstream": [],
+    "missingUpstream": [],
+    "newUpstream": [],
+    "directHealth": [
+      {
+        "file": "set/breed/mp/ned/late/resistance_medic.set",
+        "values": [
+          [
+            "health",
+            "150%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/mp/ned/late/resistance_mg42.set",
+        "values": [
+          [
+            "health",
+            "150%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/mp/usa/late/ranger_assault_1st_sgt.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/mp/usa/late/ranger_assault_m1a1.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-arnhem-digby.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-arnhem-frost.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-dunkirk-greenwood.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-dunkirk-ingram.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-dunkirk-shaw.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-dyle-carter.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-dyle-crosby.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-dyle-williams.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-goodwood-officer.set",
+        "values": [
+          [
+            "health",
+            "150%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-goodwood-soldier.set",
+        "values": [
+          [
+            "health",
+            "150%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-oosterbek-urquhart.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-pegasus-howard.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-pegasus-lovat.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-pegasus-wood.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-tank_commander.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-varsity-para-officer.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-varsity-para-soldier.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-varsity-tank-officer.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/eng-varsity-tank-soldier.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/ger-hellmann.set",
+        "values": [
+          [
+            "health",
+            "300%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/pol-oosterbek-officer.set",
+        "values": [
+          [
+            "health",
+            "375%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/rus-aydinov.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne-artilleryman_winter.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne_officer.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne_officer101.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne_officer101_winter.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne_officer_winter.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne_soldier.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne_soldier101.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne_soldier101_winter.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-airborne_soldier_winter.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-compton.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-desobry.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-guarnere.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-liebgott.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-lipton.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-malarkey.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-mcauliffe.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-spiers.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-toye.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      },
+      {
+        "file": "set/breed/narrator/usa-winters.set",
+        "values": [
+          [
+            "health",
+            "200%"
+          ]
+        ]
+      }
+    ]
+  },
+  "missions": {
+    "total": 319,
+    "withCoverInclude": 319,
+    "byMode": {
+      "ammunition": {
+        "total": 132,
+        "withCoverInclude": 132
+      },
+      "battle_zones": {
+        "total": 138,
+        "withCoverInclude": 138
+      },
+      "frontlines": {
+        "total": 20,
+        "withCoverInclude": 20
+      },
+      "evacuation": {
+        "total": 29,
+        "withCoverInclude": 29
+      }
+    }
+  },
+  "difficulty": {
+    "difficulty_generic.inc": [
+      [
+        "1"
+      ]
+    ],
+    "easy.dl": [
+      [
+        "0.5"
+      ],
+      [
+        "0.5"
+      ],
+      [
+        "1.0"
+      ],
+      [
+        "1.0"
+      ]
+    ],
+    "hard.dl": [
+      [
+        "1.00"
+      ],
+      [
+        "1.00"
+      ],
+      [
+        "1.00"
+      ],
+      [
+        "1.00"
+      ]
+    ],
+    "heroic.dl": [
+      [
+        "1.10"
+      ],
+      [
+        "1.0"
+      ],
+      [
+        "1.00"
+      ],
+      [
+        "1.00"
+      ]
+    ],
+    "multiplayer.dl": [
+      [
+        "1.0"
+      ]
+    ],
+    "normal.dl": [
+      [
+        "1.00"
+      ],
+      [
+        "1.00"
+      ],
+      [
+        "1.00"
+      ],
+      [
+        "1.00"
+      ]
+    ],
+    "training.dl": []
+  },
+  "shaderOverrides": []
+}

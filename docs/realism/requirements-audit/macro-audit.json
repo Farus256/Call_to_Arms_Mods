@@ -1,0 +1,12 @@
+{
+  "filesParsed": 13826,
+  "macroDefinitions": 1070,
+  "conditionalRootCalls": 1,
+  "syntaxErrors": [],
+  "risks": [],
+  "unresolvedCallNames": [],
+  "limitations": [
+    "Implicit family presets and explicit include namespaces are modeled; unrecognized engine commands are not expanded.",
+    "All branches are checked conservatively, without executing game loader conditions."
+  ]
+}

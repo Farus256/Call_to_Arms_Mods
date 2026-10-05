@@ -1,0 +1,243 @@
+{
+  "checks": 20284,
+  "resource": "D:\\Programs\\Steam\\steamapps\\common\\Call to Arms - Gates of Hell\\mods\\ultimate_frontline_bundle\\resource",
+  "nativeComparison": "fresh installed game archive",
+  "gameBattleTested": false,
+  "grenades": {
+    "count": 46,
+    "min": 15.18,
+    "max": 30.705,
+    "entries": [
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/f1.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/handgranate_310r.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/handgranate_337r.grenade",
+        "base": 24.7,
+        "nonStory": 28.405
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m24.grenade",
+        "base": 26.7,
+        "nonStory": 30.705
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m24_splinter.grenade",
+        "base": 25.7,
+        "nonStory": 29.555
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m32.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m32_stick.grenade",
+        "base": 26.7,
+        "nonStory": 30.705
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m36.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m39_early.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m39_late.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m39_mid.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m43.grenade",
+        "base": 26.7,
+        "nonStory": 30.705
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m43_splinter.grenade",
+        "base": 25.7,
+        "nonStory": 29.555
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/m45.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/mk2.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/no36m.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/no36m_early.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/no69.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/rg14.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/rg14_30.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/rg42.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel grenade/rgd33.grenade",
+        "base": 24.7,
+        "nonStory": 28.405
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel.pattern",
+        "base": 24.7,
+        "nonStory": 28.405
+      },
+      {
+        "file": "set/stuff/grenade/anti-personnel_contact.pattern",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/anti-tank grenade/molotov_bundle_fin.grenade",
+        "base": 13.2,
+        "nonStory": 15.18
+      },
+      {
+        "file": "set/stuff/grenade/anti-tank grenade/molotov_cocktail.grenade",
+        "base": 13.2,
+        "nonStory": 15.18
+      },
+      {
+        "file": "set/stuff/grenade/anti-tank grenade/molotov_cocktail_fin.grenade",
+        "base": 13.2,
+        "nonStory": 15.18
+      },
+      {
+        "file": "set/stuff/grenade/anti-tank grenade/no76_ic.grenade",
+        "base": 14,
+        "nonStory": 16.1
+      },
+      {
+        "file": "set/stuff/grenade/anti-tank grenade/no82.grenade",
+        "base": 20.7,
+        "nonStory": 23.805
+      },
+      {
+        "file": "set/stuff/grenade/anti-tank grenade/rg14_bundle.grenade",
+        "base": 19.7,
+        "nonStory": 22.655
+      },
+      {
+        "file": "set/stuff/grenade/anti-tank.pattern",
+        "base": 18.4,
+        "nonStory": 21.16
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/anm8_smoke.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/m15_wp.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/m24_smoke.grenade",
+        "base": 26.7,
+        "nonStory": 30.705
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/m24_smoke_supplies.grenade",
+        "base": 26.7,
+        "nonStory": 30.705
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/m42_wp.grenade",
+        "base": 24.7,
+        "nonStory": 28.405
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/m43_smoke.grenade",
+        "base": 24.7,
+        "nonStory": 28.405
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/nbk39.grenade",
+        "base": 14.7,
+        "nonStory": 16.905
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/nbks.grenade",
+        "base": 14.7,
+        "nonStory": 16.905
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/no77_wp.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/no8_smoke.grenade",
+        "base": 14.7,
+        "nonStory": 16.905
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/rdg1_smoke.grenade",
+        "base": 24.7,
+        "nonStory": 28.405
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/rdg1_smoke_supplies.grenade",
+        "base": 24.7,
+        "nonStory": 28.405
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/s1_smoke.grenade",
+        "base": 15,
+        "nonStory": 17.25
+      },
+      {
+        "file": "set/stuff/grenade/smoke grenade/svkkr_pm.grenade",
+        "base": 21.7,
+        "nonStory": 24.955
+      },
+      {
+        "file": "set/stuff/grenade/smoke.pattern",
+        "base": 26.4,
+        "nonStory": 30.36
+      }
+    ]
+  }
+}
