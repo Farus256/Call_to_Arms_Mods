@@ -64,13 +64,8 @@
     },
     {
       "file": "set/entitymanager.set",
-      "sha256": "2a38c753d315e02e739811b6e583f6fac05e4ef6f3ffa613b2f9b147fff1a56e",
+      "sha256": "1d41d20b7cf0728dc22be35285df0cf3ac0e2ed780bd07e81ce95850d504d514",
       "baselineSHA256": "265750b7616036900fc9936575cadaeaecbfcac50f467a208b3c09d9f35f01cc"
-    },
-    {
-      "file": "set/fxmanager.set",
-      "sha256": "941ae60015049a5ff7eaa985fc9042698019ac20d03c4edc465268b7d06e725f",
-      "baselineSHA256": "b79448a9893bdca2e05d3fd7771eb07ae6a8adc6161e43ed5f85467af8c4721b"
     }
   ]
 }

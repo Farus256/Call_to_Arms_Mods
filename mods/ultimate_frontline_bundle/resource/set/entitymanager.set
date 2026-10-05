@@ -103,8 +103,8 @@
 		{entity "piece_medium_concrete"}
 		{entity "piece_medium_ice"}
 		{entity "piece_medium_sand"}
-
-
+		; UFB: moved to bounded metal-fragment group
+		; UFB: moved to bounded metal-fragment group
 		{entity "piece_medium_wood"}
 	}
 
@@ -119,7 +119,9 @@
 		{remove dissolve}
 		{entity "piece_small_concrete"}
 		{entity "piece_small_ice"}
+		; UFB: moved to bounded metal-fragment group
 		{entity "piece_small_wood"}
+		; UFB: moved to bounded metal-fragment group
 	}
 
 	{group "mine" stuff

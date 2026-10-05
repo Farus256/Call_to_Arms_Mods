@@ -30,13 +30,6 @@ for(const name of ['piece_small_steel','piece_tiny_steel']){
  assert.equal(read(root,rel).replace('/properties/ufb_metal_part_harmless.inc','/properties/small_part_harmless.inc'),read(base,rel));
 }
 const manager=s.parse(read(root,'set/entitymanager.set'));
-const fxManager=s.parse(read(root,'set/fxmanager.set'));
-for(const [names,count,time] of [[cfg.vehicleEffects,cfg.vehicleEffectLimit,cfg.metalParticleSeconds],[cfg.sandbagEffects,cfg.sandbagEffectLimit,cfg.sandbagParticleSeconds]])for(const name of names){
- const groups=s.all(fxManager,n=>s.name(n)==='group'&&n.children.some(c=>s.name(c)==='fx'&&c.tokens[1]?.value===name));
- assert.equal(groups.length,1,'one bounded FX group per persistent effect');
- assert.equal(Number(s.child(groups[0],'countLimit').tokens[1].value),count);
- assert.equal(Number(s.child(groups[0],'timeLimit').tokens[1].value),time);
-}
 const groups=s.all(manager,n=>s.name(n)==='group');
 for(const [name,count,entities] of [['ufb_small_metal',cfg.smallMetalLimit,['piece_small_steel','piece_tiny_steel','piece_small_steel_construction']],['ufb_medium_metal',cfg.mediumMetalLimit,['piece_medium_steel','piece_medium_steel_construction']]]){
  const group=groups.find(n=>n.tokens[1].value===name);assert(group);

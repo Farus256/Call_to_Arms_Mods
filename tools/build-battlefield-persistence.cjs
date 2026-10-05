@@ -7,7 +7,7 @@ const reportPath=path.join(repo,'docs/realism/battlefield-persistence.json');
 const previous=fs.existsSync(reportPath)?JSON.parse(fs.readFileSync(reportPath)).files:[];
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const outputs=[];
-for(const key of ['metalParticleSeconds','sandbagParticleSeconds','smallMetalLimit','mediumMetalLimit','vehicleEffectLimit','sandbagEffectLimit'])assert(Number.isFinite(cfg[key])&&cfg[key]>0,key);
+for(const key of ['metalParticleSeconds','sandbagParticleSeconds','smallMetalLimit','mediumMetalLimit'])assert(Number.isFinite(cfg[key])&&cfg[key]>0,key);
 function read(rel){return fs.readFileSync(path.join(base,rel),'utf8');}
 function queue(rel,text,source=null){s.parse(text);outputs.push({rel,text,source});}
 function replaceSpans(text,changes){for(const [n,value] of changes.sort((a,b)=>b[0].start-a[0].start))text=text.slice(0,n.start)+value+text.slice(n.end);return text;}
@@ -38,14 +38,11 @@ for(const name of ['piece_small_steel','piece_tiny_steel']){
 }
 const rel='set/entitymanager.set',original=read(rel),ast=s.parse(original),changes=[];
 const classes={ufb_small_metal:['piece_small_steel','piece_tiny_steel','piece_small_steel_construction'],ufb_medium_metal:['piece_medium_steel','piece_medium_steel_construction']};
-for(const n of s.all(ast,n=>s.name(n)==='entity'))if(Object.values(classes).flat().includes(n.tokens[1]?.value))changes.push([n,'']);
+for(const n of s.all(ast,n=>s.name(n)==='entity'))if(Object.values(classes).flat().includes(n.tokens[1]?.value))changes.push([n,'; UFB: moved to bounded metal-fragment group']);
 const manager=s.child(ast,'entitymanager');assert(manager);
 const groups=Object.entries(classes).map(([name,entities])=>`\n {group "${name}" gameentity\n  {limit ${name==='ufb_small_metal'?cfg.smallMetalLimit:cfg.mediumMetalLimit}}\n  {remove dissolve}\n${entities.map(e=>`  {entity "${e}"}`).join('\n')}\n }\n`).join('');
 changes.push([{start:manager.end-1,end:manager.end-1},groups]);
 queue(rel,cfg.enabled?replaceSpans(original,changes):original,original);
-const fxRel='set/fxmanager.set',fxOriginal=read(fxRel),fxRoot=s.child(s.parse(fxOriginal),'fxmanager');assert(fxRoot);
-const fxGroups=[[cfg.vehicleEffects,cfg.vehicleEffectLimit,cfg.metalParticleSeconds],[cfg.sandbagEffects,cfg.sandbagEffectLimit,cfg.sandbagParticleSeconds]].map(([names,count,time])=>`\n {group\n${names.map(n=>`  {fx "${n}"}`).join('\n')}\n  {countLimit ${count}}\n  {timeLimit ${time}}\n }\n`).join('');
-queue(fxRel,cfg.enabled?replaceSpans(fxOriginal,[[{start:fxRoot.end-1,end:fxRoot.end-1},fxGroups]]):fxOriginal,fxOriginal);
 // Refuse to overwrite a user's subsequent edits, even on a rebuild.
 for(const o of outputs){const dest=path.join(root,o.rel);if(fs.existsSync(dest)){
  const current=hash(fs.readFileSync(dest)),prior=previous.find(e=>e.file===o.rel);

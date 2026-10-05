@@ -8,7 +8,7 @@ const files=[...new Set([...build.files,...breeds.entries.map(e=>e.file),
  'map/multi/ufb_survival.inc','script/multiplayer/modes/conquest/orders.lua',
  'script/multiplayer/ufb_order_guard.lua','script/multiplayer/ufb_objective_balance.lua',
  'set/interaction_entity/human.inc','set/interaction_entity/ufb_stress.inc',
- 'set/squads.set','map/multi/HF-dcg_script.inc','set/stuff/rifle/grenade/dyakonov.he.ammo'])].sort();
+ 'set/squads.set','set/fxmanager.set','map/multi/HF-dcg_script.inc','set/stuff/rifle/grenade/dyakonov.he.ammo'])].sort();
 files.push(...JSON.parse(fs.readFileSync(path.join(repo,'docs/realism/battlefield-persistence.json'))).files.map(e=>e.file));
 files.splice(0,files.length,...new Set(files).values());
 // A stale package from an older run must not silently retain a shader override.
