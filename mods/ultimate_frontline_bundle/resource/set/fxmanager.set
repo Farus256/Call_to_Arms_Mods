@@ -57,4 +57,23 @@
 		{fx "flashsmoke"}
 		{timeLimit 0.05}
 	}
+
+ {group
+  {fx "tank_die"}
+  {fx "tank_die_light"}
+  {fx "tank_die_medium"}
+  {fx "tank_die_heavy"}
+  {fx "tank_die_enormous"}
+  {fx "tank_die_particle"}
+  {fx "car_die_particle"}
+  {countLimit 128}
+  {timeLimit 3600}
+ }
+
+ {group
+  {fx "sandbag_crush"}
+  {fx "sandbag_crush_win"}
+  {countLimit 512}
+  {timeLimit 99999}
+ }
 }

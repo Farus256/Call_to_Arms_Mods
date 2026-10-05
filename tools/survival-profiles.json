@@ -1,7 +1,13 @@
 {
   "enabled": true,
   "defaultProfile": "regular",
-  "tierProfiles": {"1": "conscript", "2": "regular", "3": "veteran", "4": "elite", "5": "elite"},
+  "tierProfiles": {
+    "1": "conscript",
+    "2": "regular",
+    "3": "veteran",
+    "4": "elite",
+    "5": "elite"
+  },
   "overrides": {},
   "refractorySeconds": 0.5,
   "pendingSeconds": 2,
@@ -10,9 +16,34 @@
   "coverCooldownSeconds": 8,
   "overwhelmedCooldownSeconds": 12,
   "profiles": {
-    "conscript": {"shakenSeconds": 40, "overwhelmedSeconds": 18, "coverProtectionSeconds": 4, "composureChance": 0.003},
-    "regular": {"shakenSeconds": 25, "overwhelmedSeconds": 12, "coverProtectionSeconds": 3, "composureChance": 0.01},
-    "veteran": {"shakenSeconds": 18, "overwhelmedSeconds": 10, "coverProtectionSeconds": 2.5, "composureChance": 0.015},
-    "elite": {"shakenSeconds": 14, "overwhelmedSeconds": 8, "coverProtectionSeconds": 2, "composureChance": 0.02}
-  }
+    "conscript": {
+      "shakenSeconds": 40,
+      "overwhelmedSeconds": 18,
+      "coverProtectionSeconds": 4,
+      "composureChance": 0.003,
+      "overwhelmedCoverSeconds": 6
+    },
+    "regular": {
+      "shakenSeconds": 25,
+      "overwhelmedSeconds": 12,
+      "coverProtectionSeconds": 3,
+      "composureChance": 0.01,
+      "overwhelmedCoverSeconds": 5
+    },
+    "veteran": {
+      "shakenSeconds": 18,
+      "overwhelmedSeconds": 10,
+      "coverProtectionSeconds": 2.5,
+      "composureChance": 0.015,
+      "overwhelmedCoverSeconds": 4
+    },
+    "elite": {
+      "shakenSeconds": 14,
+      "overwhelmedSeconds": 8,
+      "coverProtectionSeconds": 2,
+      "composureChance": 0.02,
+      "overwhelmedCoverSeconds": 3
+    }
+  },
+  "intenseFireWindowSeconds": 3
 }

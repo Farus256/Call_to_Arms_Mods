@@ -15,12 +15,15 @@ assert(validProfile(cfg.defaultProfile));
 for(const p of Object.values(cfg.tierProfiles))assert(validProfile(p));
 for(const [rel,p] of Object.entries(cfg.overrides)){assert(validProfile(p));assert(rel.startsWith('set/breed/')&&rel.endsWith('.set')&&!rel.includes('..'));}
 for(const p of Object.values(cfg.profiles)){
- for(const key of ['shakenSeconds','overwhelmedSeconds','coverProtectionSeconds'])assert(Number.isFinite(p[key])&&p[key]>0);
+ for(const key of ['shakenSeconds','overwhelmedSeconds','coverProtectionSeconds','overwhelmedCoverSeconds'])assert(Number.isFinite(p[key])&&p[key]>0);
  assert(p.composureChance>=0&&p.composureChance<=1&&Number.isFinite(p.composureChance));
  assert(p.coverProtectionSeconds<cfg.coverCooldownSeconds);
+ assert(p.overwhelmedCoverSeconds>=p.coverProtectionSeconds&&p.overwhelmedCoverSeconds<cfg.overwhelmedCooldownSeconds);
 }
 for(const key of ['refractorySeconds','pendingSeconds','composureRetrySeconds','composureDurationSeconds','coverCooldownSeconds','overwhelmedCooldownSeconds'])assert(Number.isFinite(cfg[key])&&cfg[key]>0);
 assert(cfg.composureDurationSeconds<cfg.composureRetrySeconds);
+assert(Number.isFinite(cfg.intenseFireWindowSeconds)&&cfg.intenseFireWindowSeconds>cfg.refractorySeconds);
+assert(Object.values(cfg.profiles).every(p=>cfg.intenseFireWindowSeconds<p.shakenSeconds));
 const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)]);
 function save(rel,text,encoding='utf8'){
  s.parse(text);const dest=path.join(output,rel),bak=path.join(backup,rel);
@@ -73,11 +76,14 @@ if(cfg.enabled)events+=`{on "ufb_stress" sync
   ${delay(cfg.refractorySeconds,'ufb_stress_refractory_expiry','_ufb_stress_refractory')}
   {if not dead
    {if not user_control
-    {if tagged "_ufb_shaken"
+    {if tagged "_ufb_recent_fire"
      {tags add "_ufb_overwhelmed"}
      {kill_delay "ufb_overwhelmed_expiry"}
      ${profileCommand(p=>delay(p.overwhelmedSeconds,'ufb_overwhelmed_expiry','_ufb_overwhelmed'))}
     }
+    {tags add "_ufb_recent_fire"}
+    {kill_delay "ufb_recent_fire_expiry"}
+    ${delay(cfg.intenseFireWindowSeconds,'ufb_recent_fire_expiry','_ufb_recent_fire')}
     {tags add "_ufb_shaken"}
     {kill_delay "ufb_shaken_expiry"}
     ${profileCommand(p=>delay(p.shakenSeconds,'ufb_shaken_expiry','_ufb_shaken'))}
@@ -103,7 +109,11 @@ if(cfg.enabled)events+=`{on "ufb_stress" sync
   {kill_delay "ufb_pending_expiry"}
   {tags add "_ufb_cover_cooldown"}
   {tags add "_ufb_cover_active"}
-  ${profileCommand(p=>delay(p.coverProtectionSeconds,'ufb_cover_active_expiry','_ufb_cover_active'))}
+  {if tagged "_ufb_overwhelmed"
+   ${profileCommand(p=>delay(p.overwhelmedCoverSeconds,'ufb_cover_active_expiry','_ufb_cover_active'))}
+  else
+   ${profileCommand(p=>delay(p.coverProtectionSeconds,'ufb_cover_active_expiry','_ufb_cover_active'))}
+  }
   {if tagged "_ufb_overwhelmed"
    ${delay(cfg.overwhelmedCooldownSeconds,'ufb_cover_cooldown_expiry','_ufb_cover_cooldown')}
   else

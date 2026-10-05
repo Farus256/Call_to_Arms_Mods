@@ -88,7 +88,7 @@ a.advance(0.6);a.event('ufb_stress');check(a.tags.has('_ufb_overwhelmed'),'repea
 a.event('ufb_cover_committed');
 check(a.tags.has('_ufb_cover_active')&&!a.tags.has('_ufb_stress_pending'),'cover consumes its mark');
 a.advance(1);a.event('ufb_cover_committed');
-a.advance(2.1);check(!a.tags.has('_ufb_cover_active'),'duplicate delivery cannot extend cover protection');
+a.advance(4.1);check(!a.tags.has('_ufb_cover_active'),'duplicate delivery cannot extend cover protection');
 check(!a.tags.has('_ufb_cover_active')&&a.tags.has('_ufb_cover_cooldown'),'short order protection then normal orders');
 a.advance(9);check(!a.tags.has('_ufb_cover_cooldown'),'overwhelmed cooldown expires');
 a.advance(90);check(a.tags.size===0&&a.timers.size===0,'complete quiet recovery');
@@ -104,10 +104,15 @@ for(const [name,p] of Object.entries(profiles.profiles)){
  check(a.timers.get('ufb_shaken_expiry').at===p.shakenSeconds,'profile recovery '+name);
  a.advance(0.6);a.event('ufb_stress');check(a.tags.has('_ufb_overwhelmed'),'every profile has a stress limit '+name);
  check(a.timers.get('ufb_overwhelmed_expiry').at===a.time+p.overwhelmedSeconds,'overwhelm recovery '+name);
- a.event('ufb_cover_committed');check(a.timers.get('ufb_cover_active_expiry').at===a.time+p.coverProtectionSeconds,'profile cover protection '+name);
+ a.event('ufb_cover_committed');check(a.timers.get('ufb_cover_active_expiry').at===a.time+p.overwhelmedCoverSeconds,'profile intense-fire cover protection '+name);
  a.advance(100);check(a.tags.size===1&&a.tags.has('_ufb_profile_'+name),'quiet recovery retains only permanent profile '+name);
  a=new Actor(p.composureChance/2);a.tags.add('_ufb_profile_'+name);a.event('ufb_stress');check(a.tags.has('_ufb_heroic'),'profile composure roll '+name);
  a=new Actor(Math.min(1,p.composureChance*2));a.tags.add('_ufb_profile_'+name);a.event('ufb_stress');check(!a.tags.has('_ufb_heroic'),'profile composure bounded '+name);
+ a=new Actor();a.tags.add('_ufb_profile_'+name);a.event('ufb_stress');a.advance(profiles.intenseFireWindowSeconds+0.1);
+ check(a.tags.has('_ufb_shaken')&&!a.tags.has('_ufb_recent_fire'),'long stress outlasts immediate fire '+name);
+ a.event('ufb_stress');check(!a.tags.has('_ufb_overwhelmed'),'separated impacts are not intense fire '+name);
+ a.event('ufb_cover_committed');check(a.timers.get('ufb_cover_active_expiry').at===a.time+p.coverProtectionSeconds,'ordinary cover duration '+name);
+ a.advance(100);check(a.tags.size===1&&a.timers.size===0,'new fire timer fully recovers '+name);
 }
 const breedReport=JSON.parse(fs.readFileSync(path.join(__dirname,'../docs/realism/tactical/breed-profiles.json')));
 const crypto=require('crypto');

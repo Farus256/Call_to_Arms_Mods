@@ -103,8 +103,8 @@
 		{entity "piece_medium_concrete"}
 		{entity "piece_medium_ice"}
 		{entity "piece_medium_sand"}
-		{entity "piece_medium_steel"}
-		{entity "piece_medium_steel_construction"}
+
+
 		{entity "piece_medium_wood"}
 	}
 
@@ -119,9 +119,7 @@
 		{remove dissolve}
 		{entity "piece_small_concrete"}
 		{entity "piece_small_ice"}
-		{entity "piece_small_steel"}
 		{entity "piece_small_wood"}
-		{entity "piece_tiny_steel"}
 	}
 
 	{group "mine" stuff
@@ -170,4 +168,19 @@
 		{remove dissolve}
 		{tag "shell_cannon"}
 	}
+
+ {group "ufb_small_metal" gameentity
+  {limit 1024}
+  {remove dissolve}
+  {entity "piece_small_steel"}
+  {entity "piece_tiny_steel"}
+  {entity "piece_small_steel_construction"}
+ }
+
+ {group "ufb_medium_metal" gameentity
+  {limit 1536}
+  {remove dissolve}
+  {entity "piece_medium_steel"}
+  {entity "piece_medium_steel_construction"}
+ }
 }

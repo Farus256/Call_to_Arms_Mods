@@ -1,0 +1,76 @@
+{
+  "enabled": true,
+  "gameBattleTested": false,
+  "files": [
+    {
+      "file": "entity/fx/detonation/tank_die.def",
+      "sha256": "69a35f4967ed5124aa6d6d89ffc074e7047b40758f5726edb1123549b26ecb39",
+      "baselineSHA256": "410d0404f1361273c0884b20638afc6f2a46e40eeafb0bd9074b1ac0558375f8"
+    },
+    {
+      "file": "entity/fx/detonation/tank_die_light.def",
+      "sha256": "373b0a171bf8910ad630e736cc24be11387b413fa5b6093577e6a9bf958f97f4",
+      "baselineSHA256": "bfcbae5bc61b5ee90715a96214b94a38107a1492be051908366a6062771429c8"
+    },
+    {
+      "file": "entity/fx/detonation/tank_die_medium.def",
+      "sha256": "de3e3ab93360ecf6d8d38092266a7c421e729bac2eea324c980540e2e84d85b9",
+      "baselineSHA256": "3dcf51cdf3034efe4b643d12427d368408c9baffddc1f937c7d43576f4cd5957"
+    },
+    {
+      "file": "entity/fx/detonation/tank_die_heavy.def",
+      "sha256": "2960df51c214312711824f1572aa796f5b36897bd8a3a4b312f54bb0ef411ca7",
+      "baselineSHA256": "86350d87078b761c29fdbb87f403395cf4300aca91591fe0a325ec510bd8cba4"
+    },
+    {
+      "file": "entity/fx/detonation/tank_die_enormous.def",
+      "sha256": "cd45b5c5649882b1887c5129ac98c62963bdba0421a084ee16e9f4f06765d5f6",
+      "baselineSHA256": "e39de653853a8e00b73a3c043153708dda494665c1af499fc3519adec5116a48"
+    },
+    {
+      "file": "entity/fx/detonation/tank_die_particle.def",
+      "sha256": "6d6259b2de51a4b91569168c82b89038251ab5d6f3a5bcae9c6cbee9c885d1a0",
+      "baselineSHA256": "4d98da521cf5ec8e8794973503418cb2ff928ce0c2c0821d8f5eb0ff174d75c3"
+    },
+    {
+      "file": "entity/fx/detonation/car_die_particle.def",
+      "sha256": "e5e1dedad6ded8721ec0741b3bc70c2fa487f8d5a8bc8e861bcbb2c429cadf38",
+      "baselineSHA256": "0a9fd27ca7a013f6833e4d824fc387cb2efe2aec8949f0f5994748fcfaa66fbf"
+    },
+    {
+      "file": "entity/fx/hit/sandbag_crush.def",
+      "sha256": "59209b52a7a520c38dda5e5e53c65e104f761183b1cab13c7a4468ea29ed2880",
+      "baselineSHA256": "6e6cb387e5a1ff63648010112756405fb91f24cdb2493ee8bc44cf31cc01c059"
+    },
+    {
+      "file": "entity/fx/hit/sandbag_crush_win.def",
+      "sha256": "6d315adc49e02f1265bd3d16b7d2a5706b640674f6578a493dad69f6e471ba64",
+      "baselineSHA256": "34342e8e7aa2331e104ab59a374895ae1b2e57b875af177f56dbb3a50775a94a"
+    },
+    {
+      "file": "properties/ufb_metal_part_harmless.inc",
+      "sha256": "2c8a443ecd7feb93be4192e660757dbe973c742dde16b1b16cfad09f8adb1f30",
+      "baselineSHA256": null
+    },
+    {
+      "file": "entity/service/slicer/piece_small_steel.def",
+      "sha256": "91b312de0ced620be0231628584516a5cc06c6d58d1dc4b19031e1f01d8ffb74",
+      "baselineSHA256": "e546481d499d92ff89ec310f0b2b52420be3e304e4a2a0ccada79f98d0043686"
+    },
+    {
+      "file": "entity/service/slicer/piece_tiny_steel.def",
+      "sha256": "45c584d2a2ee5fe3b481d0b13a664028d2a32d535bd46b8a7a05cf710205b97b",
+      "baselineSHA256": "1d508627f21ac8fe33f9afd8501b96a6d0703954e23e7328cfde4d2076c59fcf"
+    },
+    {
+      "file": "set/entitymanager.set",
+      "sha256": "2a38c753d315e02e739811b6e583f6fac05e4ef6f3ffa613b2f9b147fff1a56e",
+      "baselineSHA256": "265750b7616036900fc9936575cadaeaecbfcac50f467a208b3c09d9f35f01cc"
+    },
+    {
+      "file": "set/fxmanager.set",
+      "sha256": "941ae60015049a5ff7eaa985fc9042698019ac20d03c4edc465268b7d06e725f",
+      "baselineSHA256": "b79448a9893bdca2e05d3fd7771eb07ae6a8adc6161e43ed5f85467af8c4721b"
+    }
+  ]
+}

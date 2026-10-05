@@ -5,7 +5,7 @@
   {delay 0.5 "ufb_stress_refractory_expiry" {tags remove "_ufb_stress_refractory"}}
   {if not dead
    {if not user_control
-    {if tagged "_ufb_shaken"
+    {if tagged "_ufb_recent_fire"
      {tags add "_ufb_overwhelmed"}
      {kill_delay "ufb_overwhelmed_expiry"}
      {if tagged "_ufb_profile_conscript"
@@ -22,6 +22,9 @@ else
 }
 }
     }
+    {tags add "_ufb_recent_fire"}
+    {kill_delay "ufb_recent_fire_expiry"}
+    {delay 3 "ufb_recent_fire_expiry" {tags remove "_ufb_recent_fire"}}
     {tags add "_ufb_shaken"}
     {kill_delay "ufb_shaken_expiry"}
     {if tagged "_ufb_profile_conscript"
@@ -83,7 +86,22 @@ else
   {kill_delay "ufb_pending_expiry"}
   {tags add "_ufb_cover_cooldown"}
   {tags add "_ufb_cover_active"}
-  {if tagged "_ufb_profile_conscript"
+  {if tagged "_ufb_overwhelmed"
+   {if tagged "_ufb_profile_conscript"
+{delay 6 "ufb_cover_active_expiry" {tags remove "_ufb_cover_active"}}
+else
+{if tagged "_ufb_profile_veteran"
+{delay 4 "ufb_cover_active_expiry" {tags remove "_ufb_cover_active"}}
+else
+{if tagged "_ufb_profile_elite"
+{delay 3 "ufb_cover_active_expiry" {tags remove "_ufb_cover_active"}}
+else
+{delay 5 "ufb_cover_active_expiry" {tags remove "_ufb_cover_active"}}
+}
+}
+}
+  else
+   {if tagged "_ufb_profile_conscript"
 {delay 4 "ufb_cover_active_expiry" {tags remove "_ufb_cover_active"}}
 else
 {if tagged "_ufb_profile_veteran"
@@ -96,6 +114,7 @@ else
 }
 }
 }
+  }
   {if tagged "_ufb_overwhelmed"
    {delay 12 "ufb_cover_cooldown_expiry" {tags remove "_ufb_cover_cooldown"}}
   else
