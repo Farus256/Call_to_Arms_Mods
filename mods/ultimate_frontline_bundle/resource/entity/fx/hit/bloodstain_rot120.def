@@ -3,7 +3,7 @@
  {particleview "growing pool"
   {generator
    {emissionarea {radius 0}}
-   {particleinit {speed 0} {lifetime 80}}
+   {particleinit {speed 0} {lifetime 240}}
    {totalparticles 1} {particlesinblock 1} {timetolive 0.01}
   }
   {mover {nodependonwind}}

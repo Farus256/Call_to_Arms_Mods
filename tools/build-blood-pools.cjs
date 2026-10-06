@@ -8,7 +8,9 @@ const sha=text=>crypto.createHash('sha256').update(text).digest('hex');
 const [low,high]=cfg.startDelaySeconds;
 assert(low>=1&&high>=low&&cfg.initialScale>0&&cfg.finalScale>cfg.initialScale);
 assert(cfg.growthSeconds.length&&cfg.growthSeconds.every(t=>Number.isFinite(t)&&t>0));
-const name=t=>t===80?'bloodstain':`bloodstain_${t}s`;
+assert(cfg.spawnChance>=0&&cfg.spawnChance<=1);
+const defaultGrowth=cfg.growthSeconds[Math.floor(cfg.growthSeconds.length/2)];
+const name=t=>t===defaultGrowth?'bloodstain':`bloodstain_${t}s`;
 function effect(seconds){return `{fx
  ; Animated scale belongs to a living ground particle, never a decalview.
  {particleview "growing pool"
@@ -45,12 +47,15 @@ const helper=`; Included inside human.inc. A corpse schedules one pool only.
 (define "ufb_schedule_pool"
  {if not "ufb_pool_scheduled"
   {set "ufb_pool_scheduled" 1}
-  {delay %wait ${spread}
+  ; Roll once, including corpses which do not produce a pool.
+  {if rand ${cfg.spawnChance}
+   {delay %wait ${spread}
    {if dead
     {if not burned
      {if not under_water {call_synced "ufb_spawn_corpse_pool"}}
     }
    }
+  }
   }
  }
 )
@@ -69,7 +74,7 @@ const helper=`; Included inside human.inc. A corpse schedules one pool only.
 }
 `;
 const outputs=cfg.growthSeconds.map(t=>({file:`entity/fx/hit/${name(t)}.def`,text:effect(t)}));
-for(const file of ['bloodstain_rot120','bloodstain_rot240'])outputs.push({file:`entity/fx/hit/${file}.def`,text:effect(80)});
+for(const file of ['bloodstain_rot120','bloodstain_rot240'])outputs.push({file:`entity/fx/hit/${file}.def`,text:effect(defaultGrowth)});
 outputs.push({file:'entity/fx/hit/ufb_corpse_pool_settled.def',text:`{fx
  {decalview "settled pool"
   {sprite "$/particle/bloodstain"

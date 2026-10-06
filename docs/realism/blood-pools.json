@@ -6,16 +6,17 @@
       40
     ],
     "growthSeconds": [
-      40,
-      50,
-      60,
-      70,
-      80,
-      90,
-      100,
-      110,
-      120
+      120,
+      150,
+      180,
+      210,
+      240,
+      270,
+      300,
+      330,
+      360
     ],
+    "spawnChance": 0.4,
     "initialScale": 0.0575,
     "finalScale": 0.23,
     "persistenceSeconds": 9999,
@@ -28,48 +29,48 @@
   },
   "files": [
     {
-      "file": "entity/fx/hit/bloodstain_40s.def",
-      "sha256": "c46a57776ba3ea311a44924b0104334afa074332ba3298dc62b6c004178bf1e4"
-    },
-    {
-      "file": "entity/fx/hit/bloodstain_50s.def",
-      "sha256": "6787712c8e13e7ca59108f83024316cc167502ef129d2010f8f0723dad0348eb"
-    },
-    {
-      "file": "entity/fx/hit/bloodstain_60s.def",
-      "sha256": "1ed6fcf398152df56f852e0bb4d2c0e0870861fae6c1607c2b946c3abd9b506d"
-    },
-    {
-      "file": "entity/fx/hit/bloodstain_70s.def",
-      "sha256": "396c6f4cbdde87d2cae3ff6b3f900cc9d538e2c33d733cee1995944299102d95"
-    },
-    {
-      "file": "entity/fx/hit/bloodstain.def",
-      "sha256": "5a35e243c766df5a5fd120eaab6a04549976ca0e15dba832990573cde3487d69"
-    },
-    {
-      "file": "entity/fx/hit/bloodstain_90s.def",
-      "sha256": "f069ad679fd13e8679070bd4f1014edc88e13db36512d04e6b161643eaa38d43"
-    },
-    {
-      "file": "entity/fx/hit/bloodstain_100s.def",
-      "sha256": "841691bcbfe1ad78ca88b1e9f62fc23c272ced58d6998bc3ec67c20cbd2a105a"
-    },
-    {
-      "file": "entity/fx/hit/bloodstain_110s.def",
-      "sha256": "e81adfd9b44cd9b535892c13e22174c88a29835d1b2ecc468d635ca9e3c8a04c"
-    },
-    {
       "file": "entity/fx/hit/bloodstain_120s.def",
       "sha256": "537333c2571c27dc7a81d9385b8c2e380c907364792bf656ac16ff0b51b32ee3"
     },
     {
+      "file": "entity/fx/hit/bloodstain_150s.def",
+      "sha256": "17c4ea1e123e866c29f5a2dd9c8c75285c8b08434833d9344160f46444f0cc7c"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_180s.def",
+      "sha256": "9114eebee75c0ef9435976a3b4f2c9d4d87084bfc6c6adb8b77e0f5e06cd891f"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_210s.def",
+      "sha256": "43e321837ca8f3671d1e8faaf24bb3855ce13de6dbcb6448f414f54f87c38435"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain.def",
+      "sha256": "a511c246a81223a0ebe0c6fd3d7a818e6a9f6593b614046c4336d64769b3ed32"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_270s.def",
+      "sha256": "4c387bf2e6d9c86ea99e484836daebdb575aa103d496cdb32a90a1d9a3ac720b"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_300s.def",
+      "sha256": "e4cdde617f1248add5e2f6b1d4afb893a27eb42f40958c0ece5f443327a681ea"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_330s.def",
+      "sha256": "4a1bb8bab081b5c71e0a7127d6fd96b446014913f85fcd55cf5569a5b56dd4b9"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_360s.def",
+      "sha256": "b089f562bb8713025f20d37940647d308e5d7ae81d5b80427d9d546ee5fb6fbb"
+    },
+    {
       "file": "entity/fx/hit/bloodstain_rot120.def",
-      "sha256": "5a35e243c766df5a5fd120eaab6a04549976ca0e15dba832990573cde3487d69"
+      "sha256": "a511c246a81223a0ebe0c6fd3d7a818e6a9f6593b614046c4336d64769b3ed32"
     },
     {
       "file": "entity/fx/hit/bloodstain_rot240.def",
-      "sha256": "5a35e243c766df5a5fd120eaab6a04549976ca0e15dba832990573cde3487d69"
+      "sha256": "a511c246a81223a0ebe0c6fd3d7a818e6a9f6593b614046c4336d64769b3ed32"
     },
     {
       "file": "entity/fx/hit/ufb_corpse_pool_settled.def",
@@ -77,7 +78,7 @@
     },
     {
       "file": "set/interaction_entity/ufb_corpse_pool.inc",
-      "sha256": "d73e60905e6e1a64a6cc5962579bc1fd09ad536d46c4d431a228942306f46850"
+      "sha256": "60810f286a2c676c5f4249fcb822d5e067af863e8d88d3e4d6e669e1251ca99e"
     },
     {
       "file": "entity/fx/hit/blood_tiny.def",

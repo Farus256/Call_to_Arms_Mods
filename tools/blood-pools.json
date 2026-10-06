@@ -1,6 +1,7 @@
 {
   "startDelaySeconds": [10, 40],
-  "growthSeconds": [40, 50, 60, 70, 80, 90, 100, 110, 120],
+  "growthSeconds": [120, 150, 180, 210, 240, 270, 300, 330, 360],
+  "spawnChance": 0.4,
   "initialScale": 0.0575,
   "finalScale": 0.23,
   "persistenceSeconds": 9999,

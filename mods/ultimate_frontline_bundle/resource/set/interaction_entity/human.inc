@@ -2,6 +2,7 @@
 	(include "human_idle.inc")
 	(include "ufb_stress.inc")
 	(include "ufb_corpse_pool.inc")
+	(include "ufb_wounds.inc")
 	{inflammation_time 1.0}
 	{on spawn
 		{add_view	"cigarettesmoke"		"smoke"		"head"}
@@ -839,7 +840,7 @@
 		;{if not senseless
 			{if not able "personage"
 				{if not burned
-					{spawn "blood"}							;// blood splatter ground texture
+					{spawn "ground_blood_small"}							;// blood splatter ground texture
 					{call "ufb_schedule_corpse_pool"}
 				}
 				{tags add "_bleedout_"}
@@ -1768,39 +1769,14 @@
 		{view pause "marker_personage_acute"}
 		{view start ally neutral "marker_personage"}
 		{tags add "start_personage"}
-		{if not terrain_fx "water"
-			{delay 3
-				{if rand 0.33
-					{ani_play "lie_wounded" loop}
-					{if not tagged "wounded_animation_playing"
-						{tags add "wounded_animation_playing"}
-					}
-				else rand 0.33
-					{ani_play "lie_wounded_1" loop}
-					{if not tagged "wounded_animation_playing"
-						{tags add "wounded_animation_playing"}
-					}
-				else
-					{ani_play "lie_wounded_2" loop}
-					{if not tagged "wounded_animation_playing"
-						{tags add "wounded_animation_playing"}
-					}
-				}
-			}		
-		}
+		{call_synced "ufb_wound_start"}
 	}
 
 	{on "stop_personage"
 		{set "die_sound" 0}
 		{view pause "marker_personage"}
 		{view pause "marker_personage_acute"}
-		{if not terrain_fx "water"
-			{ani_play "lie_die"}
-			{ani_stop "lie_wounded"}
-			{ani_stop "lie_wounded_1"}
-			{ani_stop "lie_wounded_2"}
-			{tags add "wounded_dead"}
-		}
+		{call_synced "ufb_wound_stop"}
 		{if tagged "start_personage"
 			{delay 1
 				{if dead
@@ -1874,6 +1850,8 @@
 		{ani_stop "lie_wounded"}
 		{ani_stop "lie_wounded_1"}
 		{ani_stop "lie_wounded_2"}
+		{kill_delay "ufb_wound_animation"}
+		{tags remove "wounded_animation_playing"}
 	}
 
 	{on "knock_out_short" 						;// used in mission scripts

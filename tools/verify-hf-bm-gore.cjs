@@ -19,6 +19,9 @@ const dieB=hB.children[0].children.find(n=>s.name(n)==='on'&&n.tokens[1]?.value=
 const oldPool=s.all(dieB,n=>s.name(n)==='delay'&&s.all(n,c=>s.name(c)==='spawn'&&c.tokens[1]?.value==='bloodstain').length)[0];
 const newPool=s.all(dieU,n=>s.name(n)==='call'&&n.tokens[1]?.value==='ufb_schedule_corpse_pool')[0];
 ok(!!oldPool&&!!newPool,'pool scheduling replaces the original corpse pool');
+const deathSplash=s.all(dieU,n=>s.name(n)==='spawn'&&n.tokens[1]?.value==='ground_blood_small')[0];
+ok(!!deathSplash,'death leaves a small splatter, never the independent large blood splash');
+deathSplash.tokens[1].value='blood';
 const parent=s.all(dieU,n=>n.children.includes(newPool))[0];
 parent.children=parent.children.map(n=>n===newPool?oldPool:n);
 for (const name of ['explosion', 'crush', 'bm_explosion', 'hit-light', 'hit-heavy', 'die_with_blood', 'ground_hit'])
@@ -47,7 +50,7 @@ for (const f of ['blood_medium.def', 'blood_small.def', 'blood_tiny.def']){
   ok(strip(fx)===strip(parse(bmp,'entity/fx/hit/'+f)), 'stock airborne blood retained, with a small ground trace: ' + f);
 }
 const pool = text(ufb, 'entity/fx/hit/bloodstain.def');
-ok(/\{min 0\.0575\}/.test(pool) && /\{max 0\.23\}/.test(pool) && /\{lifetime 80\}/.test(pool), 'pool: stock size +15%, finite particle growth');
+ok(/\{min 0\.0575\}/.test(pool) && /\{max 0\.23\}/.test(pool) && /\{lifetime 240\}/.test(pool), 'pool: stock size +15%, finite particle growth');
 ok(/\{particleview/.test(pool) && /\{flags ground\}/.test(pool) && !/\{spriteview/.test(pool), 'pool uses native ground particles');
 
 const all = fs.readdirSync(path.join(ufb, 'set/interaction_entity')).filter(f => f.endsWith('.inc')).map(f => text(ufb, 'set/interaction_entity/' + f)).join('\n');
