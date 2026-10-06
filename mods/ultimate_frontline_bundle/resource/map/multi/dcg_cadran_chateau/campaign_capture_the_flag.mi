@@ -19808,8 +19808,8 @@
 			{scoreCurrent 0}
 		}
 		{vars (include "../dcg_vars.inc")	(include "../HF-dcg_vars.inc")}	
-		{functions (include "../HF-dcg_functions.inc")	(include "../dcg_functions.inc")}  
-		{triggers	(include "../HF-dcg_dynamic_weather.inc")	(include "../dcg_script.inc")}
+		{functions (include "../HF-dcg_functions.inc")	(include "../ufb_garrison_functions.inc")}  
+		{triggers	(include "../HF-dcg_dynamic_weather.inc")	(include "../ufb_garrison_script.inc")}
 		{waypoints (include "../HF-dcg_waypoints.inc")
 			{"0"
 				{position -125.737 -8608.92 112.121}
@@ -22090,7 +22090,9 @@
 					}
 				}
 			}
-		}
+		
+(include "ufb_garrison_layout.inc")
+}
 		{waypoints "a_def_spawns"
 			{"15"
 				{position 327.801 -1304.52 0}

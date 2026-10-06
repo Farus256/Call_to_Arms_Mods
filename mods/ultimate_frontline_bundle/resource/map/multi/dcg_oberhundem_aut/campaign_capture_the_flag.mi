@@ -19540,8 +19540,8 @@
 			{"tier2"}
 		}
 		{vars (include "../dcg_vars.inc")	(include "../HF-dcg_vars.inc")}	
-		{functions (include "../HF-dcg_functions.inc")	(include "../dcg_functions.inc")}  
-		{triggers	(include "../HF-dcg_dynamic_weather.inc")	(include "../dcg_script.inc")}
+		{functions (include "../HF-dcg_functions.inc")	(include "../ufb_garrison_functions.inc")}  
+		{triggers	(include "../HF-dcg_dynamic_weather.inc")	(include "../ufb_garrison_script.inc")}
 		{waypoints (include "../HF-dcg_waypoints.inc")
 			{"0"
 				{position -7411.15 -7341.91 432}
@@ -21822,7 +21822,9 @@
 					}
 				}
 			}
-		}
+		
+(include "ufb_garrison_layout.inc")
+}
 		{waypoints "a_def_spawns"
 			{"15"
 				{position -1182.64 2002.82 180}

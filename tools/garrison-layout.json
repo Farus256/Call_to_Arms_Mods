@@ -1,0 +1,13 @@
+{
+  "unitsPerMetre": 20,
+  "weaponEnvelopeMetres": {"infantry": 210, "vehicle": 550},
+  "botRangeScale": 1.02,
+  "startZoneMetres": 25,
+  "marginMetres": 10,
+  "randomScatterMetres": 15,
+  "coverMatchMetres": 5,
+  "coverPreferenceMetres": 15,
+  "fallbackSpreadMetres": 30,
+  "spacingCellMetres": 10,
+  "reusePenaltyMetres": 35
+}
