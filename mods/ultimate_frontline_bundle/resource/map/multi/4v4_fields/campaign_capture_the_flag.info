@@ -1,0 +1,2 @@
+;SDL
+{game {maxPlayers 8}{mapSelection 1}{landscape desert}{texMod camo}}

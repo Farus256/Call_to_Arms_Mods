@@ -1,0 +1,451 @@
+{
+  "maps": [
+    {
+      "name": "4v4_fields",
+      "title": "Fields",
+      "landscape": "desert",
+      "tex": "camo",
+      "sourceMissionSHA256": "e7846bae856acb191fa5cbb344dab988e58e3c1a5e926c886a2f1407c35ed2f4",
+      "templateSHA256": "9f486f6e5417c461ab9e195f68162b6ba86e1e494e42641a471c6a37bafd6db3",
+      "sourceNavigationSHA256": "b9d1aa78d618183f718fa0b3fe6ef65c2ce90b89c57dcdf4e166457a97291bc4",
+      "objectives": [
+        {
+          "name": "f1",
+          "zone": "f1",
+          "point": [
+            -599.34,
+            -114.4
+          ]
+        },
+        {
+          "name": "f4",
+          "zone": "f4",
+          "point": [
+            5344.28,
+            3862.93
+          ]
+        },
+        {
+          "name": "f5",
+          "zone": "f5",
+          "point": [
+            -4881.86,
+            -4053.71
+          ]
+        },
+        {
+          "name": "f3",
+          "zone": "f3",
+          "point": [
+            3722.93,
+            -745.11
+          ]
+        },
+        {
+          "name": "f9",
+          "zone": "f9",
+          "point": [
+            1412.34,
+            4325.93
+          ]
+        }
+      ],
+      "entries": {
+        "a1": [
+          -6847.41,
+          6813.76
+        ],
+        "a2": [
+          -6143.93,
+          6951.1
+        ],
+        "a3": [
+          -7080.59,
+          5790.21
+        ],
+        "a4": [
+          -5691.83,
+          6944.84
+        ],
+        "b1": [
+          7048.53,
+          -6825.61
+        ],
+        "b2": [
+          7302.88,
+          -6066.52
+        ],
+        "b4": [
+          7293.73,
+          -5652.78
+        ],
+        "b3": [
+          6157.37,
+          -7014.54
+        ]
+      },
+      "actorCount": 1021,
+      "snappedActors": 35,
+      "localHFWaypoints": 28,
+      "staticDefenseSlotsRelocated": 24,
+      "removedCoverLinks": 147,
+      "rotationDegrees": -47.25740646160698,
+      "garrison": {
+        "variants": [
+          {
+            "entry": "a1",
+            "relocated": 95,
+            "unsupported": [],
+            "minClearanceMetres": 0.6758793348237759
+          },
+          {
+            "entry": "a2",
+            "relocated": 107,
+            "unsupported": [],
+            "minClearanceMetres": 1.3332687265709637
+          },
+          {
+            "entry": "a3",
+            "relocated": 103,
+            "unsupported": [],
+            "minClearanceMetres": 1.6904946410816137
+          },
+          {
+            "entry": "a4",
+            "relocated": 126,
+            "unsupported": [],
+            "minClearanceMetres": 3.747273775596227
+          },
+          {
+            "entry": "b1",
+            "relocated": 131,
+            "unsupported": [],
+            "minClearanceMetres": 0.5130854122805886
+          },
+          {
+            "entry": "b2",
+            "relocated": 140,
+            "unsupported": [],
+            "minClearanceMetres": 2.7288925837364104
+          },
+          {
+            "entry": "b3",
+            "relocated": 137,
+            "unsupported": [],
+            "minClearanceMetres": 0.34932172578214704
+          },
+          {
+            "entry": "b4",
+            "relocated": 145,
+            "unsupported": [],
+            "minClearanceMetres": 1.7283953432565795
+          }
+        ],
+        "changed": 984,
+        "unresolved": 0
+      }
+    },
+    {
+      "name": "4v4_Rikila",
+      "title": "Rikila",
+      "landscape": "wood",
+      "tex": "camo",
+      "sourceMissionSHA256": "978cce125140ac909a124db1c172ba6416ebc683d8efee12c6266fe8bfec2a7c",
+      "templateSHA256": "9f486f6e5417c461ab9e195f68162b6ba86e1e494e42641a471c6a37bafd6db3",
+      "sourceNavigationSHA256": "09e4efc6afe65404af20212b1eb264b8048f03ac19b0c0c6040b28d87a5aaba2",
+      "objectives": [
+        {
+          "name": "f1",
+          "zone": "f1",
+          "point": [
+            44.27,
+            -140.59
+          ]
+        },
+        {
+          "name": "f4",
+          "zone": "f4",
+          "point": [
+            -5572.02,
+            5281.63
+          ]
+        },
+        {
+          "name": "f5",
+          "zone": "f5",
+          "point": [
+            5614.6,
+            -4927.67
+          ]
+        },
+        {
+          "name": "f2",
+          "zone": "f2",
+          "point": [
+            -5722.91,
+            -231.36
+          ]
+        },
+        {
+          "name": "f3",
+          "zone": "f3",
+          "point": [
+            5058.98,
+            919.54
+          ]
+        }
+      ],
+      "entries": {
+        "b1": [
+          6512.52,
+          6453.44
+        ],
+        "b2": [
+          5906.49,
+          6796.41
+        ],
+        "b4": [
+          5539.98,
+          6838.91
+        ],
+        "b3": [
+          6515.2,
+          5766.42
+        ],
+        "a2": [
+          -7310.88,
+          -6265.87
+        ],
+        "a4": [
+          -7324.1,
+          -5835.05
+        ],
+        "a1": [
+          -6946.53,
+          -6944.41
+        ],
+        "a3": [
+          -6124.3,
+          -7034.45,
+          62.01
+        ]
+      },
+      "actorCount": 1021,
+      "snappedActors": 261,
+      "localHFWaypoints": 28,
+      "staticDefenseSlotsRelocated": 69,
+      "removedCoverLinks": 165,
+      "rotationDegrees": 41.7903893298212,
+      "garrison": {
+        "variants": [
+          {
+            "entry": "a1",
+            "relocated": 83,
+            "unsupported": [],
+            "minClearanceMetres": 2.4712986261279184
+          },
+          {
+            "entry": "a2",
+            "relocated": 94,
+            "unsupported": [],
+            "minClearanceMetres": 0.3247538705752504
+          },
+          {
+            "entry": "a3",
+            "relocated": 95,
+            "unsupported": [],
+            "minClearanceMetres": 1.1037019065589675
+          },
+          {
+            "entry": "a4",
+            "relocated": 105,
+            "unsupported": [],
+            "minClearanceMetres": 0.39470677298197643
+          },
+          {
+            "entry": "b1",
+            "relocated": 114,
+            "unsupported": [],
+            "minClearanceMetres": 2.815422203766275
+          },
+          {
+            "entry": "b2",
+            "relocated": 118,
+            "unsupported": [],
+            "minClearanceMetres": 2.417901541445417
+          },
+          {
+            "entry": "b3",
+            "relocated": 129,
+            "unsupported": [],
+            "minClearanceMetres": 0.27954793873288963
+          },
+          {
+            "entry": "b4",
+            "relocated": 123,
+            "unsupported": [],
+            "minClearanceMetres": 0.3931262082711555
+          }
+        ],
+        "changed": 861,
+        "unresolved": 0
+      }
+    },
+    {
+      "name": "4v4_Sikovitsy",
+      "title": "Sikovitsy",
+      "landscape": "winter",
+      "tex": "winter",
+      "sourceMissionSHA256": "9c2ddaad308cfb0d5d7fd9b7b72366002675c9487fdb7c26f7109cad9101cdd2",
+      "templateSHA256": "9f486f6e5417c461ab9e195f68162b6ba86e1e494e42641a471c6a37bafd6db3",
+      "sourceNavigationSHA256": "811d5f3a151808795c4f3db40ac10daed8879554bd34a6fb66858f3941b94145",
+      "objectives": [
+        {
+          "name": "f1",
+          "zone": "f1",
+          "point": [
+            -1044,
+            -1162.87
+          ]
+        },
+        {
+          "name": "f5",
+          "zone": "f5",
+          "point": [
+            -6924.9,
+            -6617.68
+          ]
+        },
+        {
+          "name": "f4",
+          "zone": "f4",
+          "point": [
+            4339.61,
+            4238.13
+          ]
+        },
+        {
+          "name": "f3",
+          "zone": "f3",
+          "point": [
+            -1036.43,
+            -6711.86
+          ]
+        },
+        {
+          "name": "f9",
+          "zone": "f9",
+          "point": [
+            -3925.96,
+            1774.5
+          ]
+        }
+      ],
+      "entries": {
+        "a2": [
+          -7948.28,
+          5887.61
+        ],
+        "a4": [
+          -7374.36,
+          5997.1
+        ],
+        "a1": [
+          -8535.98,
+          5442.76
+        ],
+        "a3": [
+          -8741.43,
+          4366.27
+        ],
+        "b1": [
+          5771.39,
+          -8631.35
+        ],
+        "b2": [
+          6254.18,
+          -7838.11
+        ],
+        "b4": [
+          6299.74,
+          -7321.6
+        ],
+        "b3": [
+          5110.26,
+          -8773.45
+        ]
+      },
+      "actorCount": 1021,
+      "snappedActors": 121,
+      "localHFWaypoints": 28,
+      "staticDefenseSlotsRelocated": 52,
+      "removedCoverLinks": 154,
+      "rotationDegrees": -47.151528896529065,
+      "garrison": {
+        "variants": [
+          {
+            "entry": "a1",
+            "relocated": 100,
+            "unsupported": [],
+            "minClearanceMetres": 1.8723203476877188
+          },
+          {
+            "entry": "a2",
+            "relocated": 104,
+            "unsupported": [],
+            "minClearanceMetres": 0.1527541350408228
+          },
+          {
+            "entry": "a3",
+            "relocated": 109,
+            "unsupported": [],
+            "minClearanceMetres": 2.079524658129543
+          },
+          {
+            "entry": "a4",
+            "relocated": 110,
+            "unsupported": [],
+            "minClearanceMetres": 0.0848391746778816
+          },
+          {
+            "entry": "b1",
+            "relocated": 82,
+            "unsupported": [],
+            "minClearanceMetres": 0.8740491198384177
+          },
+          {
+            "entry": "b2",
+            "relocated": 83,
+            "unsupported": [],
+            "minClearanceMetres": 0.3733036564882468
+          },
+          {
+            "entry": "b3",
+            "relocated": 96,
+            "unsupported": [],
+            "minClearanceMetres": 0.6237190372282839
+          },
+          {
+            "entry": "b4",
+            "relocated": 89,
+            "unsupported": [],
+            "minClearanceMetres": 0.01971023951477946
+          }
+        ],
+        "changed": 773,
+        "unresolved": 0
+      }
+    }
+  ],
+  "files": [
+    "map/multi/4v4_fields/campaign_capture_the_flag.mi",
+    "map/multi/4v4_fields/campaign_capture_the_flag.info",
+    "map/multi/4v4_fields/ufb_garrison_layout.inc",
+    "map/multi/4v4_Rikila/campaign_capture_the_flag.mi",
+    "map/multi/4v4_Rikila/campaign_capture_the_flag.info",
+    "map/multi/4v4_Rikila/ufb_garrison_layout.inc",
+    "map/multi/4v4_Sikovitsy/campaign_capture_the_flag.mi",
+    "map/multi/4v4_Sikovitsy/campaign_capture_the_flag.info",
+    "map/multi/4v4_Sikovitsy/ufb_garrison_layout.inc"
+  ]
+}
