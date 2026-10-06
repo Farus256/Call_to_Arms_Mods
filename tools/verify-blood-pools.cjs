@@ -40,16 +40,35 @@ check(s.all(roll,n=>s.name(n)==='spawn').map(n=>n.tokens[1].value).join(',')===c
 for(const seconds of cfg.growthSeconds){
  const a=s.parse(read('entity/fx/hit/'+name(seconds)+'.def'));
  const views=a.children[0].children;
- check(views.length===2,'growth + persistent final pool');
- const first=s.child(views[0],'sprite'),second=s.child(views[1],'sprite');
- check(Number(s.child(s.child(first,'timer'),'duration').tokens[1].value)===seconds,'exact growth duration '+seconds);
+ check(views.length===1&&s.name(views[0])==='particleview','growth uses a live particle, not a frozen scale-1 decal');
+ const generator=s.child(views[0],'generator');
+ check(s.child(generator,'totalparticles').tokens[1].value==='1','one ground particle per corpse');
+ check(Number(s.child(s.child(generator,'particleinit'),'lifetime').tokens[1].value)===seconds,'exact growth duration '+seconds);
+ const stage=s.child(s.child(views[0],'visualizer'),'stage'),first=s.child(stage,'sprite');
+ check(s.child(stage,'flags').tokens.slice(1).map(t=>t.value).join(' ')==='ground','ground alignment, no killparticle freezes growth');
+ check(s.child(s.child(first,'timer'),'duration').tokens[1].value==='-1','animation follows particle age');
  const linear=s.child(s.child(first,'scale'),'linear');
  check(Number(s.child(linear,'min').tokens[1].value)===cfg.initialScale&&Number(s.child(linear,'max').tokens[1].value)===cfg.finalScale,'bounded linear growth');
- check(Number(s.child(views[1],'delay').tokens[1].value)===seconds,'final view starts when growth ends');
- check(Number(s.child(second,'scale').tokens[1].value)===cfg.finalScale,'no size jump at handoff');
- check(Number(s.child(s.child(second,'timer'),'duration').tokens[1].value)===cfg.persistenceSeconds,'pool survives the growth timer');
- for(const v of views)check(!!s.child(v,'ground')&&!!s.child(v,'dynamic')&&!!s.child(v,'notifyowner'),'terrain projection and FX ownership');
+ const handoff=s.all(roll,n=>s.name(n)==='delay'&&n.tokens[1]?.value===String(seconds));
+ check(handoff.length===1&&s.child(handoff[0],'call').tokens[1].value==='ufb_settle_corpse_pool','settled decal is delayed by entity event, never by a decalview');
+ check(!s.all(a,n=>s.name(n)==='decalview'||s.name(n)==='delay').length,'no immediate final decal in a growth FX');
 }
+const settled=s.parse(read('entity/fx/hit/ufb_corpse_pool_settled.def'));
+const final=s.child(settled.children[0],'decalview'),sprite=s.child(final,'sprite');
+check(Number(s.child(sprite,'scale').tokens[1].value)===cfg.finalScale&&!s.child(sprite,'scale').children.length,'final decal has a bounded scalar scale');
+check(Number(s.child(s.child(sprite,'timer'),'duration').tokens[1].value)===cfg.persistenceSeconds,'finished pool persists');
+check(!!s.child(final,'ground')&&!!s.child(final,'dynamic'),'finished pool projects onto terrain');
+const settleEvent=event('ufb_settle_corpse_pool');
+for(const key of ['dead','not burned','not under_water'])check(s.all(settleEvent,n=>s.name(n)==='if'&&n.tokens.slice(1).map(t=>t.value).join(' ')===key).length===1,'handoff eligibility: '+key);
+for(const kind of ['tiny','small','medium','big']){
+ const fx=s.parse(read('entity/fx/hit/blood_'+kind+'.def')).children[0];
+ const trace=fx.children.find(n=>s.name(n)==='decalview'&&n.tokens[1]?.value==='ufb_hit_ground');
+ check(!!trace,'a ground trace remains after '+kind+' blood particles expire');
+ check(Number(s.child(s.child(trace,'sprite'),'scale').tokens[1].value)<=0.1,'impact trace is not a large pool');
+ check(!!s.child(trace,'ground')&&!!s.child(trace,'dynamic'),'hit trace is projected on ground');
+}
+const dummy=s.parse(read('set/interaction_entity/dummy.inc'));
+check(!s.all(dummy,n=>s.name(n)==='spawn'&&n.tokens[1]?.value==='bloodstain').length,'body parts cannot bypass corpse timing by spawning a pool on landing');
 for(const f of JSON.parse(fs.readFileSync(path.resolve(__dirname,'../docs/realism/blood-pools.json'))).files)
  check(crypto.createHash('sha256').update(read(f.file)).digest('hex')===f.sha256,'generated file hash');
 console.log(`Blood pools: ${checks} checks passed; onset 10-40s, nine uniform growth durations 40-120s, one pool per corpse. Native rendering/handoff requires a new battle.`);

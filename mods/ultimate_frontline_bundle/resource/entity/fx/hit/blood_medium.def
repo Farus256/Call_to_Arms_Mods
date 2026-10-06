@@ -115,7 +115,7 @@
 		}
 		{notifyowner}
 	}
-	{##+ particleview splash_smoke
+	{particleview splash_smoke
 		{generator
 			{totalparticles 5}
 			{particlesinblock 5}
@@ -170,7 +170,7 @@
 		}
 		{notifyowner}
 	}
-	{##+ particleview blood_streaks
+	{#+ particleview blood_streaks
 		{generator
 			{emissionarea
 				{radius 1 1}
@@ -179,7 +179,7 @@
 			}
 			{particleinit
 				{speed 0.5 0.5}
-				{lifetime 0.4 0.2}
+				{lifetime 0.3 0.1}
 			}
 			{timetolive 0.01}
 			{totalparticles 15}
@@ -210,7 +210,7 @@
 							{max 0.07 0.03}
 						}
 					}
-					{scaley 0.095 0.055
+					{scaley 0.07 0.03
 						{linear
 							{min 0.095 0.055}
 							{max 0.015 0.015}
@@ -250,10 +250,10 @@
 			}
 		}
 	}
-	{#+ particleview splash_smoke
+	{particleview splash_smoke
 		{generator
-			{totalparticles 3}
-			{particlesinblock 3}
+			{totalparticles 8}
+			{particlesinblock 8}
 			{emissionarea
 				{radius 0}
 				{alpha0 0}
@@ -261,7 +261,7 @@
 			}
 			{particleinit
 				{speed 1.75 1.25}
-				{lifetime 0.45 0.15}
+				{lifetime 0.7 0.2}
 			}
 			{timetolive 0.1}
 			{## axisz}
@@ -279,7 +279,7 @@
 		}
 		{visualizer
 			{stage 
-				{## sprite "$/smoke/smoke_anim_white"
+				{##+ sprite "$/smoke/smoke_anim_white"
 					{scale 1
 						{power
 							{min 0.25 0.05}
@@ -300,7 +300,7 @@
 					{preturn -90 -30}
 					{highlight 0xffa09178}
 				}
-				{sprite "$/smoke/smokesmal4"
+				{sprite "$/smoke/smoke_anim2"
 					{scale 1
 						{power
 							{min 0.25 0.05}
@@ -310,7 +310,7 @@
 					}
 					{visibility 1
 						{linear
-							{min 0.6}
+							{min 0.4 0.1}
 							{max 0}
 						}
 					}
@@ -318,9 +318,10 @@
 						{mode play }
 						{duration -1}
 					}
-					{preturn 0 180}
-					{highlight 0xffffffe7}
+					{preturn -90 -45}
+					{highlight 0xffffdbc0}
 				}
+				{flags trace }
 			}
 		}
 		{notifyowner}
@@ -466,4 +467,11 @@
 		}
 		{notifyowner}
 	}
+ {decalview "ufb_hit_ground"
+  {sprite "$/particle/blood_splatter"
+   {timer {duration 9999}} {scale 0.055}
+   {visibility 0.7} {preturn 180 180}
+  }
+  {dynamic} {ground} {layer grounddynamic} {notifyowner}
+ }
 }

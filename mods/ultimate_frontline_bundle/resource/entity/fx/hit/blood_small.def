@@ -85,11 +85,11 @@
 		{visualizer
 			{stage 
 				{## flags trace }
-				{#+ sprite "$/particle/blood_splatter"
+				{sprite "$/particle/blood_splatter"
 					{scale 1
 						{power
 							{min 0.02}
-							{max 0.04 0.01}
+							{max 0.055 0.025}
 							{pow 0.9}
 						}
 					}
@@ -101,7 +101,7 @@
 						{npower
 							{min 1}
 							{max 0}
-							{pow 3}
+							{pow 2}
 						}
 					}
 					{timer
@@ -115,7 +115,7 @@
 		}
 		{notifyowner}
 	}
-	{##+ particleview splash_smoke
+	{#+ particleview splash_smoke
 		{generator
 			{totalparticles 5}
 			{particlesinblock 5}
@@ -170,7 +170,7 @@
 		}
 		{notifyowner}
 	}
-	{##+ particleview blood_streaks
+	{#+ particleview blood_streaks
 		{generator
 			{emissionarea
 				{radius 1 1}
@@ -179,11 +179,11 @@
 			}
 			{particleinit
 				{speed 0.5 0.5}
-				{lifetime 0.4 0.2}
+				{lifetime 0.3 0.1}
 			}
 			{timetolive 0.01}
-			{totalparticles 15}
-			{particlesinblock 15}
+			{totalparticles 10}
+			{particlesinblock 10}
 		}
 		{mover
 			{damping 1}
@@ -207,7 +207,7 @@
 					{scalex 1
 						{linear
 							{min 0.02}
-							{max 0.07 0.03}
+							{max 0.05 0.01}
 						}
 					}
 					{scaley 0.095 0.055
@@ -250,7 +250,7 @@
 			}
 		}
 	}
-	{##+ particleview splash_smoke
+	{particleview splash_smoke
 		{generator
 			{totalparticles 10}
 			{particlesinblock 10}
@@ -301,17 +301,17 @@
 					{highlight 0xffd2cabf}
 				}
 				{## flags trace }
-				{sprite "$/smoke/smoke_anim"
+				{sprite "$/smoke/smoke_anim2"
 					{scale 1
 						{power
 							{min 0.1}
-							{max 0.225 0.025}
+							{max 0.325 0.125}
 							{pow 0.8}
 						}
 					}
 					{visibility 1
 						{linear
-							{min 0.6}
+							{min 0.4 0.1}
 							{max 0}
 						}
 					}
@@ -319,9 +319,10 @@
 						{mode play }
 						{duration -1}
 					}
-					{preturn -90 -30}
-					{highlight 0xfffffdf2}
+					{preturn -90 -45}
+					{highlight 0xfffee5cf}
 				}
+				{flags trace}
 			}
 		}
 		{notifyowner}
@@ -353,7 +354,7 @@
 			}
 			{nodependonwind}
 		}
-		{visualizer
+		{#+ visualizer
 			{stage 
 				{##+ sprite "$/smoke/smokesmal4"
 					{scale 1
@@ -387,7 +388,7 @@
 					}
 					{visibility 1
 						{linear
-							{min 0.2 0.1}
+							{min 0.3 0.1}
 							{max 0}
 						}
 					}
@@ -467,4 +468,11 @@
 		}
 		{notifyowner}
 	}
+ {decalview "ufb_hit_ground"
+  {sprite "$/particle/blood_splatter"
+   {timer {duration 9999}} {scale 0.035}
+   {visibility 0.7} {preturn 180 180}
+  }
+  {dynamic} {ground} {layer grounddynamic} {notifyowner}
+ }
 }

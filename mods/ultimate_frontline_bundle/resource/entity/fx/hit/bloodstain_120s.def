@@ -1,23 +1,24 @@
 {fx
- ; Stock GoH blood, +15% size. Linear growth ends exactly at 120s.
- {decalview "growing pool"
-  {sprite "$/particle/bloodstain"
-   {timer {mode play} {duration 120}}
-   {scale 1 {linear {min 0.0575} {max 0.23}}}
-   {visibility 1}
-   {preturn 180 180}
+ ; Animated scale belongs to a living ground particle, never a decalview.
+ {particleview "growing pool"
+  {generator
+   {emissionarea {radius 0}}
+   {particleinit {speed 0} {lifetime 120}}
+   {totalparticles 1} {particlesinblock 1} {timetolive 0.01}
   }
-  {dynamic} {ground} {layer grounddynamic} {notifyowner}
- }
- ; The delayed view keeps the FX alive and retains the completed pool.
- {decalview "settled pool"
-  {delay 120}
-  {sprite "$/particle/bloodstain"
-   {timer {duration 9999}}
-   {scale 0.23}
-   {visibility 1 {linear {min 1} {max 0.7}}}
-   {preturn 180 180}
+  {mover {nodependonwind}}
+  {visualizer
+   {stage
+    {sprite "$/particle/bloodstain"
+     {highlight 0xff0000}
+     {timer {mode play} {duration -1}}
+     {scale 1 {linear {min 0.0575} {max 0.23}}}
+     {visibility 1} {preturn 0}
+    }
+    ; Do not killparticle: freezing a decal would stop the growth curve.
+    {flags ground}
+   }
   }
-  {dynamic} {ground} {layer grounddynamic} {notifyowner}
+  {notifyowner}
  }
 }

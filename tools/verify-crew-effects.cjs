@@ -32,7 +32,7 @@ for(const name of ['piece_small_steel','piece_tiny_steel','piece_small_steel_con
  check(read('entity/service/slicer/'+name+'.def').includes('"ufb_persistent_debris"'),'sliced fragment gets persistence: '+name);
 for(const kind of ['shallow','standard'])check(read(`entity/construction/_military/fortifications/sandbag_old/sandbag_cannon_${kind}/sandbag_cannon_${kind}_ai.def`).includes('{DynCmpPersistent}'),'AI sandbag persists: '+kind);
 check(read('properties/small_part_harmless.inc').includes('"delete_after_spawn"'),'casings and other tiny debris retain cleanup');
-for(const file of ['bloodstain','bloodstain_rot120','bloodstain_rot240','ground_blood_big','ground_blood_small','ground_blood01','ground_blood02','ground_blood03']){
+for(const file of ['ufb_corpse_pool_settled','ground_blood_big','ground_blood_small','ground_blood01','ground_blood02','ground_blood03']){
  const tree=s.parse(read('entity/fx/hit/'+file+'.def'));
  const views=s.all(tree,n=>n.tokens.some(t=>t.value==='decalview'));
  check(views.length>0,'projected terrain blood: '+file);
@@ -44,5 +44,10 @@ for(const file of ['bloodstain','bloodstain_rot120','bloodstain_rot240','ground_
   const maximum=growth?Number(s.child(growth,'max').tokens[1].value):Number(scale.tokens[1].value)+Number(scale.tokens[2]?.value||0);
   check(maximum<=0.23,'bounded blood size: '+file);
  }
+}
+for(const file of ['bloodstain','bloodstain_rot120','bloodstain_rot240']){
+ const tree=s.parse(read('entity/fx/hit/'+file+'.def'));
+ check(s.all(tree,n=>s.name(n)==='particleview').length===1,'one growing ground particle: '+file);
+ check(!s.all(tree,n=>s.name(n)==='decalview'||s.name(n)==='spriteview').length,'no frozen or flat scale-1 pool: '+file);
 }
 console.log(`Crew/effects: ${checks} static regression checks passed. Repairer role selection remains unimplemented; engine/battle validation required.`);

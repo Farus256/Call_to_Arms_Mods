@@ -300,4 +300,11 @@
 		}
 		{notifyowner}
 	}
+ {decalview "ufb_hit_ground"
+  {sprite "$/particle/blood_splatter"
+   {timer {duration 9999}} {scale 0.022}
+   {visibility 0.7} {preturn 180 180}
+  }
+  {dynamic} {ground} {layer grounddynamic} {notifyowner}
+ }
 }

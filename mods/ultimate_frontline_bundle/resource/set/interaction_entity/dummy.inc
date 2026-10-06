@@ -409,8 +409,8 @@
 		{if rand 0.3 {spawn "bm_guts8" {impulse up 3.5 0.01 dir 4.5 0.01}}}
 	}
 
-	{on "blood_stain"					;// stock GoH blood decal
-		{spawn "bloodstain" "basis" x}
+	{on "blood_stain"					;// Small landing trace; corpse pools use their own timer.
+		{spawn "ground_blood_small" "basis" x}
 	}
 	
 	{on "blood"						;// stock GoH ground blood
