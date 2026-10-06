@@ -1,0 +1,73 @@
+{
+  "gameBattleTested": false,
+  "config": {
+    "startDelaySeconds": [
+      10,
+      40
+    ],
+    "growthSeconds": [
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120
+    ],
+    "initialScale": 0.0575,
+    "finalScale": 0.23,
+    "persistenceSeconds": 9999
+  },
+  "files": [
+    {
+      "file": "entity/fx/hit/bloodstain_40s.def",
+      "sha256": "861f1653b9e3bb8a87b8f0bc208b8ff7a04e106da9b05855b4109824a5764919"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_50s.def",
+      "sha256": "58fff3511d3b36f867e5a6499f552df0b9214311f10afdd80b4b033489648602"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_60s.def",
+      "sha256": "971cfc6b7a83d8cf4a52868044810a9f98e842f84205e6fbe6ed23bf6a89b3a9"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_70s.def",
+      "sha256": "1200d2b15153471af137d38153c5ac0caeefaf99799d4fe1ff079575c5bea16c"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain.def",
+      "sha256": "e8a06c7bef32a23e4e82843bb825cc80ff7f9e64873661b551add8a0b1798fb0"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_90s.def",
+      "sha256": "8a3c01b65a16c65c84f176ed4e82ef5339da7852b31db8c290e28e8026b0d265"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_100s.def",
+      "sha256": "a917b4a95df82eb0db895fcd56040126e034afcd45281cc16503cafcd7313994"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_110s.def",
+      "sha256": "4e4987a1fc8ee644378aaf31ac3fd421d536fa0d23455f62c18e6f0ffd61d562"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_120s.def",
+      "sha256": "9a85311d29eb5a65a806ab371cbc2374f2110ae3e92e44653dd2ced03e22f7ff"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_rot120.def",
+      "sha256": "e8a06c7bef32a23e4e82843bb825cc80ff7f9e64873661b551add8a0b1798fb0"
+    },
+    {
+      "file": "entity/fx/hit/bloodstain_rot240.def",
+      "sha256": "e8a06c7bef32a23e4e82843bb825cc80ff7f9e64873661b551add8a0b1798fb0"
+    },
+    {
+      "file": "set/interaction_entity/ufb_corpse_pool.inc",
+      "sha256": "06874b521c4b4d8380e818d86d7de87eefa6f22359c41b5adbf587209bfde3f2"
+    }
+  ]
+}

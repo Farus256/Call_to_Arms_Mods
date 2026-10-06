@@ -1,0 +1,23 @@
+{fx
+ ; Stock GoH blood, +15% size. Linear growth ends exactly at 40s.
+ {decalview "growing pool"
+  {sprite "$/particle/bloodstain"
+   {timer {mode play} {duration 40}}
+   {scale 1 {linear {min 0.0575} {max 0.23}}}
+   {visibility 1}
+   {preturn 180 180}
+  }
+  {dynamic} {ground} {layer grounddynamic} {notifyowner}
+ }
+ ; The delayed view keeps the FX alive and retains the completed pool.
+ {decalview "settled pool"
+  {delay 40}
+  {sprite "$/particle/bloodstain"
+   {timer {duration 9999}}
+   {scale 0.23}
+   {visibility 1 {linear {min 1} {max 0.7}}}
+   {preturn 180 180}
+  }
+  {dynamic} {ground} {layer grounddynamic} {notifyowner}
+ }
+}

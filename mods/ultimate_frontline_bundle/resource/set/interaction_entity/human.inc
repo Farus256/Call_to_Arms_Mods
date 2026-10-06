@@ -1,6 +1,7 @@
 {"human"
 	(include "human_idle.inc")
 	(include "ufb_stress.inc")
+	(include "ufb_corpse_pool.inc")
 	{inflammation_time 1.0}
 	{on spawn
 		{add_view	"cigarettesmoke"		"smoke"		"head"}
@@ -839,9 +840,7 @@
 			{if not able "personage"
 				{if not burned
 					{spawn "blood"}							;// blood splatter ground texture
-					{delay 2
-						{spawn "bloodstain" "basis" x}		;// spawns a pool of blood that spreads
-					}
+					{call "ufb_schedule_corpse_pool"}
 				}
 				{tags add "_bleedout_"}
 			}
@@ -1805,7 +1804,7 @@
 		{if tagged "start_personage"
 			{delay 1
 				{if dead
-					{spawn "bloodstain" "basis" x}		;// spawns a pool of blood that spreads
+					{call "ufb_schedule_bleedout_pool"}
 					{tags add "_bleedout_"}
 					{call "hf_clear_tags"}
 				}

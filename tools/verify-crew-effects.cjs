@@ -40,7 +40,7 @@ for(const file of ['bloodstain','bloodstain_rot120','bloodstain_rot240','ground_
  for(const view of views){
   check(!!s.child(view,'dynamic')&&!!s.child(view,'ground'),'projection flags: '+file);
   const sprite=s.child(view,'sprite');check(['$/particle/bloodstain','$/particle/blood_splash'].includes(sprite.tokens[1]?.value),'stock GoH texture: '+file);
-  const scale=s.child(sprite,'scale'),growth=s.child(scale,'npower');
+  const scale=s.child(sprite,'scale'),growth=s.child(scale,'npower')||s.child(scale,'linear');
   const maximum=growth?Number(s.child(growth,'max').tokens[1].value):Number(scale.tokens[1].value)+Number(scale.tokens[2]?.value||0);
   check(maximum<=0.23,'bounded blood size: '+file);
  }
