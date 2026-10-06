@@ -31,7 +31,9 @@
 				{spinz 2.5 2.5}
 			}
 		}
-	}
+	
+  {mover {collisions {terrain} {restitution 0.15}} {nodependonwind}}
+ }
 	{#+ particleview dirt
 		{generator
 			{totalparticles 12}

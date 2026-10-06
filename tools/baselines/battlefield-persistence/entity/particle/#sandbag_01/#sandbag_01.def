@@ -1,0 +1,6 @@
+{Game_entity
+	(include "/properties/small_part.inc")
+	{props "sand" "ps_dummy"}
+	{extension "#sandbag_01.mdl"}
+	{Volume "body"}
+}

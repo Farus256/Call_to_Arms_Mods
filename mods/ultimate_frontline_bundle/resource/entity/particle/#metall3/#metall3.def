@@ -1,0 +1,5 @@
+{Game_entity
+	(include "/properties/small_part.inc")
+	{props "ufb_persistent_debris" "steel" "ps_dummy"}
+	{Extension "#metall3.mdl"}
+}

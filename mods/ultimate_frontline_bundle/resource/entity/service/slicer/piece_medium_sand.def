@@ -1,0 +1,9 @@
+{game_entity
+	{extension "/properties/piece.ext"}
+	{simulation {able 1}}
+	{constrain none}
+	{props "ufb_persistent_debris" "dummy" "sand" "medium" "part"}
+	{collider "particle"}
+	{obstacleid "nothing"}
+	{mass 40}
+}

@@ -17,8 +17,243 @@
 	{on "delete"{hide 3}}
 }
 
-{"timer_delete"
-	{on spawn		
+{"physics_damping"
+;	{friction 1000}
+;	{restitution 0.001}
+}
+
+
+(define "throwing_weapon"
+	{on contact
+		{if effector "human"
+			{delay 0
+				{constrain_velocity 1}
+			}
+		}
+	}
+	{on "drop_item"							;// when item is not in hand and is dropped from inventory.
+		{volumes "body" disable contact}	;// stops soldiers from killing themselves when removing knife from inventory
+		{delay 1
+			{volumes "body" enable contact}
+		}
+	}
+)
+
+{"knife" ("throwing_weapon")}
+{"axe" ("throwing_weapon")}
+
+{"stone"
+	{on bullet_hit
+		{bullet_detonate}
+	}
+}
+
+{"wp_piece"		;// fx - white phosphorus 
+	{on spawn
+		{add_view "wp_flare" "wp" "root"}
+		{view start "wp"}
+		{delay 0.05
+			{volumes "body" enable contact}
+			{fire radius 0.5 time 0.5 heating 2 follow}
+			{fire radius 0.3 time 12 heating 0.1 follow}
+		}
+		{delay 25 10
+			{delete}
+		}
+	}
+}
+
+(define "killzone_dummy"
+	{"killzone_dummy_%cal"
+		{on spawn
+			{delay %delay
+				{spawn "killzone_%cal"}
+				{delete}
+			}
+		}
+	}
+)
+("killzone_dummy" cal(75) delay(0.15))
+("killzone_dummy" cal(88) delay(0.15))
+("killzone_dummy" cal(105) delay(0.2))
+("killzone_dummy" cal(122) delay(0.2))
+("killzone_dummy" cal(150) delay(0.25))
+("killzone_dummy" cal(200) delay(0.3))
+("killzone_dummy" cal(600) delay(0.9))
+
+{"killzone"
+	{on spawn
+		{delay 0.1
+			{delete}
+		}
+	}
+	{on contact
+		{delay 0.01
+			{delete}
+		}
+	}
+}
+
+(define "fx_service_entity"
+	{"fx_%fx"
+		{on spawn
+			{spawn "%fx"}
+			{delete}
+		}
+	}
+)
+("fx_service_entity" fx(aero_die))
+("fx_service_entity" fx(ex_air_big))
+("fx_service_entity" fx(ex_air_big2))
+("fx_service_entity" fx(ex_air_he_size3))
+("fx_service_entity" fx(ex_air_he_size5))
+("fx_service_entity" fx(ex_air_sm))
+("fx_service_entity" fx(ex_air_small))
+("fx_service_entity" fx(ex_bul_sm))
+("fx_service_entity" fx(ex_bul_sm_w))
+("fx_service_entity" fx(ex_he_size2))
+("fx_service_entity" fx(ex_he_size2_mud))
+("fx_service_entity" fx(ex_he_size3))
+("fx_service_entity" fx(ex_he_size3_mud))
+("fx_service_entity" fx(ex_he_size4))
+("fx_service_entity" fx(ex_he_size5))
+("fx_service_entity" fx(ex_size1_water))
+("fx_service_entity" fx(ex_size2_water))
+("fx_service_entity" fx(ex_size3_water))
+("fx_service_entity" fx(ex_size4_water))
+("fx_service_entity" fx(vehicle_die))
+
+{"part"
+	{on "check_delete_part"				;// called only inside tear, so with_effector swaps entity & effector for flag check
+		{with_effector
+			{if "delete_parts"
+				{with_effector
+					{delay 20
+						{hide 3}
+						{delay 4 {delete}}
+					}
+				}
+			}
+		}
+	}
+}
+
+{"flesh part"
+	{on spawn
+		{delay 0.01 {volumes disable bullet contact blast touch}}
+		{delay 1 {volumes enable bullet contact blast touch}}
+	}
+	{on blast
+		{delay 0.01 {volumes disable bullet contact blast touch}}
+		{delay 3 {volumes enable bullet contact blast touch}}
+		;// FIX: no ground decals here - the blast throws the chunk into the air
+		;// and the decal would inherit its tumbling rotation. {on ground_hit}
+		;// paints the same set once the chunk actually lands.
+	}
+	{on bullet_hit
+		{if rand 0.3 {spawn "bloodspark_small01"}}
+		{if rand 0.3 {spawn "bloodspark_small02"}}
+		{if rand 0.3 {spawn "bloodsparks01"}}
+		{if rand 0.3 {spawn "bloodsparks02"}}
+		;// FIX: sparks stay - they are meant to be airborne billboards.
+		;// Ground decals removed, see {on blast}.
+	}
+	{on contact
+		{if stuff "fg"
+			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
+			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
+			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
+			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
+			{if rand 0.5 
+				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
+			else rand 0.5 
+				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
+				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
+			}
+		}
+		{if stuff "ap"
+			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
+			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
+			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
+			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
+			{if rand 0.5 
+				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
+			else rand 0.5 
+				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
+				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
+			}
+		}
+		{if stuff "apds"
+			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
+			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
+			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
+			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
+			{if rand 0.5 
+				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
+			else rand 0.5 
+				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
+				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
+			}
+		}
+		{if stuff "apcb"
+			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
+			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
+			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
+			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
+			{if rand 0.5 
+				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
+			else rand 0.5 
+				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
+				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
+			}
+		}
+		{if stuff "heat_shell"
+			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
+			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
+			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
+			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
+			{if rand 0.5 
+				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
+			else rand 0.5 
+				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
+				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
+			}
+		}
+		{if stuff "sm"
+			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
+			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
+			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
+			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
+			{if rand 0.5 
+				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
+			else rand 0.5 
+				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
+				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
+			}
+		}
+		{delay 0.01 {volumes disable bullet contact blast touch}}
+		{delay 15 {volumes enable bullet contact touch}}
+		;// FIX: contact can be a wall or a vehicle in mid-air, see {on blast}.
+	}
+	{on ground_hit
+		{if min_speed 0.1
+			{if rand 0.2 {spawn "ground_blood_big"}}
+			{if rand 0.3 {spawn "ground_blood_small"}}
+			{if rand 0.25 {spawn "ground_blood01"}}
+			{if rand 0.2 {spawn "ground_blood02"}}
+			{if rand 0.15 {spawn "ground_blood03"}}
+		}
+	}
+}
+
+;=============================================================================
+;   BM Mod gore entities, merged on top of Horten's Frontline dummy.inc.
+;   Body parts and burst particles come from BM Mod, every blood decal is the
+;   stock Gates of Hell one.
+;=============================================================================
+
+{"timer_delete"	;// UFB persistence: body parts are never removed by timer
+	{on spawn
 	}
 }
 
@@ -27,8 +262,13 @@
 		{gravity 1}
 		{delay 0.01 {volumes disable bullet blast contact touch}}
 		{delay 10 {volumes enable bullet blast contact touch float}}
-		{delay 1 {call "blood_stain"}}
-		{delay 1 {call "blood"}}		
+	}
+	{on ground_hit							;// FIX: paint on landing, not on a timer
+		{if not "bm_painted"
+			{set "bm_painted" 1}
+			{call "blood_stain"}
+			{call "blood"}
+		}
 	}	
 	{on blast_hit
 		{delay 0.01 {volumes disable bullet contact blast touch}}
@@ -127,7 +367,6 @@
 	{on "big_exp"
 		{delay 0.01 {volumes disable bullet contact blast touch}}
 		{delete}
-		{if rand 0.01 {call "blood"}}
 		{spawn "bm_chunk1" {impulse up 3.1 0.01 dir 4.9 0.01}}
 		{spawn "bm_chunk2" {impulse up 4.2 0.01 dir 2.7 0.01}}
 		{spawn "bm_chunk3" {impulse up 5.3 0.01 dir 5.5 0.01}}		
@@ -143,7 +382,6 @@
 	{on "medium_exp"
 		{delay 0.01 {volumes disable bullet contact blast touch}}
 		{delete}
-		{if rand 0.01 {call "blood"}}
 		{if rand 0.75 {spawn "bm_chunk1" {impulse up 4.1 0.01 dir 2.9 0.01}}}
 		{if rand 0.75 {spawn "bm_chunk2" {impulse up 5.2 0.01 dir 3.7 0.01}}}
 		{if rand 0.75 {spawn "bm_chunk3" {impulse up 6.3 0.01 dir 4.5 0.01}}}		
@@ -159,7 +397,6 @@
 	{on "small_exp"
 		{delay 0.01 {volumes disable bullet contact blast touch}}
 		{delete}
-		{if rand 0.01 {call "blood"}}
 		{if rand 0.5 {spawn "bm_chunk1" {impulse up 3.1 0.01 dir 2.9 0.01}}}
 		{if rand 0.5 {spawn "bm_chunk2" {impulse up 4.2 0.01 dir 3.7 0.01}}}
 		{if rand 0.5 {spawn "bm_chunk3" {impulse up 6.3 0.01 dir 5.5 0.01}}}		
@@ -172,10 +409,14 @@
 		{if rand 0.3 {spawn "bm_guts8" {impulse up 3.5 0.01 dir 4.5 0.01}}}
 	}
 
-	{on "blood_stain"	;// UFB: pool spawns removed (clipped into terrain on gibs)
+	{on "blood_stain"					;// stock GoH blood decal
+		{spawn "bloodstain" "basis" x}
 	}
 	
-	{on "blood"	;// UFB: pool spawns removed (clipped into terrain on gibs)
+	{on "blood"						;// stock GoH ground blood
+		{if rand 0.35 {spawn "ground_blood01"}}
+		{if rand 0.30 {spawn "ground_blood02"}}
+		{if rand 0.25 {spawn "ground_blood03"}}
 	}
 }
 
@@ -318,229 +559,6 @@
 	{on "small_exp"
 		{volumes disable bullet contact blast touch}
 		{delete}
-	}
-}
-
-{"physics_damping"
-;	{friction 1000}
-;	{restitution 0.001}
-}
-
-
-(define "throwing_weapon"
-	{on contact
-		{if effector "human"
-			{delay 0
-				{constrain_velocity 1}
-			}
-		}
-	}
-	{on "drop_item"							;// when item is not in hand and is dropped from inventory.
-		{volumes "body" disable contact}	;// stops soldiers from killing themselves when removing knife from inventory
-		{delay 1
-			{volumes "body" enable contact}
-		}
-	}
-)
-
-{"knife" ("throwing_weapon")}
-{"axe" ("throwing_weapon")}
-
-{"stone"
-	{on bullet_hit
-		{bullet_detonate}
-	}
-}
-
-{"wp_piece"		;// fx - white phosphorus 
-	{on spawn
-		{add_view "wp_flare" "wp" "root"}
-		{view start "wp"}
-		{delay 0.05
-			{volumes "body" enable contact}
-			{fire radius 0.5 time 0.5 heating 2 follow}
-			{fire radius 0.3 time 12 heating 0.1 follow}
-		}
-		{delay 25 10
-			{delete}
-		}
-	}
-}
-
-(define "killzone_dummy"
-	{"killzone_dummy_%cal"
-		{on spawn
-			{delay %delay
-				{spawn "killzone_%cal"}
-				{delete}
-			}
-		}
-	}
-)
-("killzone_dummy" cal(75) delay(0.15))
-("killzone_dummy" cal(88) delay(0.15))
-("killzone_dummy" cal(105) delay(0.2))
-("killzone_dummy" cal(122) delay(0.2))
-("killzone_dummy" cal(150) delay(0.25))
-("killzone_dummy" cal(200) delay(0.3))
-("killzone_dummy" cal(600) delay(0.9))
-
-{"killzone"
-	{on spawn
-		{delay 0.1
-			{delete}
-		}
-	}
-	{on contact
-		{delay 0.01
-			{delete}
-		}
-	}
-}
-
-(define "fx_service_entity"
-	{"fx_%fx"
-		{on spawn
-			{spawn "%fx"}
-			{delete}
-		}
-	}
-)
-("fx_service_entity" fx(aero_die))
-("fx_service_entity" fx(ex_air_big))
-("fx_service_entity" fx(ex_air_big2))
-("fx_service_entity" fx(ex_air_he_size3))
-("fx_service_entity" fx(ex_air_he_size5))
-("fx_service_entity" fx(ex_air_sm))
-("fx_service_entity" fx(ex_air_small))
-("fx_service_entity" fx(ex_bul_sm))
-("fx_service_entity" fx(ex_bul_sm_w))
-("fx_service_entity" fx(ex_he_size2))
-("fx_service_entity" fx(ex_he_size2_mud))
-("fx_service_entity" fx(ex_he_size3))
-("fx_service_entity" fx(ex_he_size3_mud))
-("fx_service_entity" fx(ex_he_size4))
-("fx_service_entity" fx(ex_he_size5))
-("fx_service_entity" fx(ex_size1_water))
-("fx_service_entity" fx(ex_size2_water))
-("fx_service_entity" fx(ex_size3_water))
-("fx_service_entity" fx(ex_size4_water))
-("fx_service_entity" fx(vehicle_die))
-
-{"part"
-	{on "check_delete_part"				;// called only inside tear, so with_effector swaps entity & effector for flag check
-		{with_effector
-			{if "delete_parts"
-				{with_effector
-					{delay 20
-						{hide 3}
-						{delay 4 {delete}}
-					}
-				}
-			}
-		}
-	}
-}
-
-{"flesh part"
-	{on spawn
-		{delay 0.01 {volumes disable bullet contact blast touch}}
-		{delay 1 {volumes enable bullet contact blast touch}}
-	}
-	{on blast
-		{delay 0.01 {volumes disable bullet contact blast touch}}
-		{delay 3 {volumes enable bullet contact blast touch}}
-	}
-	{on bullet_hit
-		{if rand 0.3 {spawn "bloodspark_small01"}}
-		{if rand 0.3 {spawn "bloodspark_small02"}}
-		{if rand 0.3 {spawn "bloodsparks01"}}
-		{if rand 0.3 {spawn "bloodsparks02"}}
-		{if rand 0.2 {spawn "blood_tiny"}}
-		{if rand 0.1 {spawn "blood_tiny"}}
-		{if rand 0.15 {spawn "blood_tiny"}}
-		{if rand 0.1 {spawn "blood_tiny"}}
-		{if rand 0.2 {spawn "blood_tiny"}}
-	}
-	{on contact
-		{if stuff "fg"
-			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
-			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
-			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
-			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
-			{if rand 0.5 
-				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
-			else rand 0.5 
-				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
-				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
-			}
-		}
-		{if stuff "ap"
-			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
-			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
-			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
-			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
-			{if rand 0.5 
-				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
-			else rand 0.5 
-				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
-				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
-			}
-		}
-		{if stuff "apds"
-			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
-			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
-			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
-			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
-			{if rand 0.5 
-				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
-			else rand 0.5 
-				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
-				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
-			}
-		}
-		{if stuff "apcb"
-			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
-			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
-			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
-			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
-			{if rand 0.5 
-				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
-			else rand 0.5 
-				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
-				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
-			}
-		}
-		{if stuff "heat_shell"
-			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
-			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
-			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
-			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
-			{if rand 0.5 
-				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
-			else rand 0.5 
-				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
-				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
-			}
-		}
-		{if stuff "sm"
-			{spawn "#_torse02" {impulse up 1 2 dir 1 3}}
-			{spawn "#_guts02a" {impulse up 2 1 dir 2 1}}
-			{spawn "#_hand05" {impulse up 2 1 dir 2 1}}
-			{spawn "#_head02" {impulse up 2 2 dir 3 2}}
-			{if rand 0.5 
-				{spawn "#_lowtor03" {impulse up 2 2 dir 3 2}}
-			else rand 0.5 
-				{spawn "#_halflimb02" {impulse up 2 2 dir 3 2}}
-				{spawn "#_leg04" {impulse up 2 2 dir 3 2}}
-			}
-		}
-		{delay 0.01 {volumes disable bullet contact blast touch}}
-		{delay 15 {volumes enable bullet contact touch}}
-	}
-	{on ground_hit
-		{if min_speed 0.1
-		}
 	}
 }
 
@@ -2487,4 +2505,7 @@
 {"vision_lev03"}
 {"vision_lev04"}
 {"vision_lev05"}
-{"vision_lev06"}
+{"vision_lev06"}
+
+; Bounded persistence for explicitly marked metal and sandbag fragments.
+(include "ufb_persistent_debris.inc")

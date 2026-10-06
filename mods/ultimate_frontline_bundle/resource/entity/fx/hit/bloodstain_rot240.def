@@ -1,0 +1,29 @@
+{fx
+	;// Stock GoH texture; projected decal, 15% larger than the stock pool.
+	;// Preserve gradual spreading (~60 s) and persistence, without a flat quad.
+	{decalview
+		{sprite "$/particle/bloodstain"
+			{timer
+				{duration 9999}
+			}
+			{scale 1
+				{npower
+					{min 0.0575}
+					{max 0.23}
+					{pow 497}
+				}
+			}
+			{visibility 1
+				{linear
+					{min 1}
+					{max 0.7}
+				}
+			}
+			{preturn 180 180}
+		}
+		{dynamic}
+		{ground}
+		{layer grounddynamic}
+		{notifyowner}
+	}
+}

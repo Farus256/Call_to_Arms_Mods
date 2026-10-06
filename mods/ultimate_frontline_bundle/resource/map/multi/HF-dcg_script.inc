@@ -8570,8 +8570,8 @@
 							}
 							{distance
 								{mode in_range}
-								{min 20}
-								{max 90}
+								{min 0}
+								{max 45}
 							}
 							{detection located}
 							{tag
@@ -8614,7 +8614,8 @@
 							}
 						}
 						{drop "orders sensor senseless"}
-						{action move}
+						;// Native medic order walks to the casualty and revives him.
+						{action medic}
 						{target
 							{source advanced}
 							{group

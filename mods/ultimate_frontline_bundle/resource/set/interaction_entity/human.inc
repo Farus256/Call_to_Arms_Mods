@@ -198,16 +198,16 @@
 						("knock_out" t(10) r(2))	;// time unconscious. 10 ±2 seconds
 					}
 				else effector "marine"
-					{spawn "blood_medium"}{spawn "ufb_blood_spot_medium" random_orientation}
+					{spawn "blood_medium"}
 					{health_damage_count 80 {effects "" "hit" "damage" "die" "die"}}
 				else effector "cannon"
 					{if effector_velocity 1
-						{spawn "blood_medium"}{spawn "ufb_blood_spot_medium" random_orientation}
+						{spawn "blood_medium"}
 						{health_damage_count 5 {effects "" "hit" "damage" "die" "die"}}
 					}
 				else effector "bicycle"
 					{if effector_velocity 1
-						;{spawn "blood_medium"}{spawn "ufb_blood_spot_medium" random_orientation}
+						{spawn "blood_medium"}
 						{health_damage_count 5 {effects "" "hit" "damage" "die" "die"}}
 					}
 				else effector "moto"
@@ -286,11 +286,8 @@
 			{call "unhealable"}
 		else stuff "rocketlauncher"
 			{bullet_detonate}
-			{if rand 0.75 {call "bm_explosion"}		;// BM Mod gore
-			else
-				{call "process_bullet_hit"}
-				{call "unhealable"}
-			}
+			{call "process_bullet_hit"}
+			{call "unhealable"}
 		else stuff "rifle_grenade_at"
 			{bullet_detonate}
 			{call "process_bullet_hit"}
@@ -313,11 +310,8 @@
 				}
 			}
 		else stuff "shell"
-			{if rand 0.3 {call "bm_explosion"}			;// BM Mod gore
-			else
-				{call "process_bullet_hit"}
-				{call "unhealable"}
-			}
+			{call "process_bullet_hit"}
+			{call "unhealable"}
 		else stuff "flare"
 			{tags add "_flare_hit"}
 			{call "_burn"}
@@ -332,7 +326,7 @@
 	}
 	{on "blow_opponent_effect"
 		{if name "head"
-			{spawn "blood_small" "head"}{spawn "ufb_blood_spot_small" random_orientation}
+			{spawn "blood_small" "head"}
 		}
 	}
 	{on blow opponent sync
@@ -441,14 +435,6 @@
 				{ani_play "flinch/flinch_leg_l_01" norestart}
 			else volume_any "foot1r foot2r"
 				{ani_play "flinch/flinch_leg_r_01" norestart}
-			}			
-			else
-			{if min_energy 1.6
-				{call "explosion"}
-				else
-				{if min_energy 0.5
-					{if rand 0.2 {call "blood_big"}}
-				}				
 			}
 		}
 		{if stuff "grenade"
@@ -514,7 +500,7 @@
 	{on "die_throw_high"
 		{set "die_after_throw" 1}
 		{call "personage_check"}
-		{spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}
+		{spawn "blood_small"}
 		{call "die_scream"}
 		{call "throw_high"}
 	}
@@ -531,12 +517,12 @@
 
 	{on "hit-light"
 		{if not dead
-			{spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}
+			{spawn "blood_small"}
 		}
 	}
 
 	{on "hit-heavy"
-		{if dead {spawn "blood_medium_air"} else {spawn "blood_medium"}{spawn "ufb_blood_spot_medium" random_orientation}}
+		{spawn "blood_medium"}
 	}
 
 	{on "hit-explosion"
@@ -545,10 +531,7 @@
 			{call "die"}
 		else
 			{if not dead {call "die_scream"}}
-			{if rand 0.1 {call "explosion"}
-				else
-				{if rand 0.3 {call "blood_small"}}
-			}
+			{call "explosion"}
 		}
 	}
 
@@ -689,18 +672,8 @@
 
 	{on "personage_check"
 		{if not tagged "hero_unit"				;// exception for unit to be revive-able in missions
-			(mod "gametype:ammunition"
-				{if not user_control{able "personage" 0}}
-			)
-			(mod "gametype:battle_zones"
-				{if not user_control{able "personage" 0}}
-			)
-			(mod "gametype:evacuation"
-				{if not user_control{able "personage" 0}}
-			)
-			(mod "gametype:frontlines"
-				{if not user_control{able "personage" 0}}
-			)
+			;// UFB: autonomous soldiers can be wounded in ordinary MP too.
+			;// Burns, crushing, dismemberment and subsequent fatal hits remain lethal.
 			{if swimming
 				{able "personage" 0}
 			else burned
@@ -711,7 +684,8 @@
 				{able "personage" 0}
 				{tags remove "no_revive"}
 			else 
-				{if rand 0.35
+				;// Eligible MP wounds: 70% survive for treatment (previously 65%).
+				{if rand 0.30
 					{call_synced "mp_personage_0"}
 				}
 			}
@@ -819,7 +793,7 @@
 			{call "stop_vehicle_ani"}
 		}
 		{if not dead
-			{spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}
+			{spawn "blood_small"}
 			{if linked
 				{if linked "shipflak"
 					{call "throw_off_from_ship"}
@@ -864,9 +838,9 @@
 		;{if not senseless
 			{if not able "personage"
 				{if not burned
-					{spawn "blood" random_orientation}							;// blood splatter ground texture
+					{spawn "blood"}							;// blood splatter ground texture
 					{delay 2
-						{if rand 0.333 {spawn "ufb_bloodstain_90" "basis" x} else rand 0.5 {spawn "bloodstain" "basis" x} else {spawn "ufb_bloodstain_150" "basis" x}}		;// spawns a pool of blood that spreads
+						{spawn "bloodstain" "basis" x}		;// spawns a pool of blood that spreads
 					}
 				}
 				{tags add "_bleedout_"}
@@ -917,10 +891,8 @@
 			{call "disable_physics"}
 		else
 			{if min_speed 10
-				{call "blood_small"}						;// blood splatter ground texture
-				{if rand 0.3
-					{spawn "blood_big"}
-				}
+				{spawn "blood_medium" "basis" x}	;// Fall and hit the ground.
+				{spawn "blood"}						;// blood splatter ground texture
 			}
 		}
 	}
@@ -934,57 +906,14 @@
 			}
 		}
 	}
-
-
-	(define "piece_explosion"
-		{spawn %0 %1
-			{impulse
-						up 1 0.5
-						dir 8 4
-						rnd_dir 2
-			}
-		}
-	)
-
-	(define "spawn_pieces"
-		;//left hand
-		{if rand 0.2
-			(%0 args "#hand00" "hand1l")
-		else rand 0.2
-			(%0 args "#hand01" "hand1l")
-		else rand 0.2
-			(%0 args "#hand02" "hand1l")
-		}
-		;//right hand
-		{if rand 0.2
-			(%0 args "#hand00" "hand1r")
-		else rand 0.2
-			(%0 args "#hand01" "hand1r")
-		else rand 0.2
-			(%0 args "#hand02" "hand1r")
-		}
-
-		;//left foot
-		{if rand 0.3
-			(%0 args "#leg00" "foot1l")
-		}
-		;//right foot
-		{if rand 0.3
-			(%0 args "#leg00" "foot1r")
-		}
-
-		;//head
-		{if rand 0.3
-			(%0 args "#head00" "head")
-		else rand 0.3
-			(%0 args "#head01" "head")
-		}
-	)
-	
 	{on "explosion"
-		{if rand 0.3 {call "bm_explosion"}		;// BM Mod gore: dismemberment
+		{if rand 0.3
+			{call "bm_explosion"}			;// BM Mod dismemberment
 		else
-			{spawn "blood_medium"}{spawn "ufb_blood_spot_medium" random_orientation}
+			{spawn "blood_medium"}			;// stock GoH blood
+			{if rand 0.75 {spawn "bm_blood_ex_a"}}
+			{if rand 0.75 {spawn "bm_blood_ex_c"}}
+			{spawn "bm_blood_splash_b"}
 			{if rand 0.3
 				{take_off "head"
 					{impulse up 2.5 0.5 dir 3 1 com}
@@ -993,713 +922,15 @@
 			{call "die"}
 		}
 	}
-	
-	{on "bm_explosion"
-		{volumes disable bullet contact blast touch}		
-		{call "delete"}	
-		{take_off "head"
-			{impulse up 2.5 0.5 dir 3 1 com}
-		}
-		{spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}	
-		{spawn "blood_big"}
-		{spawn "blood_explode_torso"}
-		{spawn "blood_medium"}{spawn "ufb_blood_spot_medium" random_orientation}
-		{if rand 0.5 {spawn "blood_explosion"}}
-		{if rand 0.5 {spawn "blood_explosion"}}
-		{if rand 0.5 {spawn "blood_explosion"}}
-		{if rand 0.5 {spawn "blood_tiny"}}
-
-		{if rand 0.7 {spawn "bm_guts1" {impulse up 9 dir 5.85 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-		{if rand 0.71 {spawn "bm_guts2" {impulse up 9.3 dir 5.55 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-		{if rand 0.72 {spawn "bm_guts3" {impulse up 9.45 dir 5.25 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-		{if rand 0.73 {spawn "bm_guts4" {impulse up 9.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-		{if rand 0.41 {spawn "bm_guts5" {impulse up 9.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-		{if rand 0.42 {spawn "bm_guts6" {impulse up 9.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-		{if rand 0.43 {spawn "bm_guts7" {impulse up 9.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-		{if rand 0.44 {spawn "bm_guts8" {impulse up 9.9 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-		{if rand 0.51 {spawn "bm_chunk1" {impulse up 7.14 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-		{if rand 0.52 {spawn "bm_chunk2" {impulse up 7.42 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-		{if rand 0.53 {spawn "bm_chunk3" {impulse up 7.7 dir 3.22 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-		{if rand 0.54 {spawn "bm_chunk4" {impulse up 8.12 dir 2.94 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-		
-		{if rand 0.1	;start of set1
-			{if rand 0.5
-				{spawn "bm_torso8" {impulse up 2 dir 2 com}}
-					else
-					{spawn "bm_torso8b" {impulse up 2 dir 2 com}}
-			}
-			{if rand 0.52 {spawn "bm_guts6" {impulse up 6.6 dir 3.45 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.53 {spawn "bm_guts7" {impulse up 8.25 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.54 {spawn "bm_guts8" {impulse up 5.4 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.61 {spawn "bm_chunk1" {impulse up 5.74 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-			{if rand 0.62 {spawn "bm_chunk2" {impulse up 8.82 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-			{if rand 0.63 {spawn "bm_chunk3" {impulse up 6.3 dir 3.78 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-			{if rand 0.64 {spawn "bm_chunk4" {impulse up 5.32 dir 4.34 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}		
-			
-			{if rand 0.33				
-				{if rand 0.167
-				{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-				{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-					else
-					{spawn "bm_chunk4" {impulse up 6.44 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-				}		
-					else
-					{if rand 0.2
-						{if rand 0.5
-							{spawn "bm_arm1" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-								else
-								{spawn "bm_arm1b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-						}
-						else
-						{if rand 0.25
-							{if rand 0.5
-								{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-									else
-									{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-							}
-							else
-							{if rand 0.33
-							{if rand 0.5
-								{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									else
-									{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							}
-							{spawn "bm_hand2" {impulse up 6.3 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
-								else
-								{if rand 0.5
-									{if rand 0.5
-										{spawn "bm_arm4" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-											else
-											{spawn "bm_arm4b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-									}
-									else
-									{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-										else
-										{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									}
-								}	
-							}
-						}
-					}
-				}				
-				
-				{if rand 0.5
-					{if rand 0.5
-						{spawn "bm_arm5" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
-							else
-							{spawn "bm_arm5b" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
-					}
-					{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-						else
-						{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					}				
-						else
-						{if rand 0.5
-							{spawn "bm_arm6" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
-								else
-								{spawn "bm_arm6b" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
-						}
-				}
-			}
-
-			{if rand 0.33 {spawn "bm_foot2" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-				else
-				{if rand 0.5 {spawn "bm_foot1" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					else
-					{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-				}
-			}		
-			{if rand 0.42 {spawn "bm_guts6" {impulse up 5.1 dir 1.95 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.43 {spawn "bm_guts7" {impulse up 3.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.44 {spawn "bm_guts8" {impulse up 2.4 dir 3 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}			
-			
-				else	;start of set2
-				{if rand 0.2
-					{if rand 0.5
-						{spawn "bm_torso3" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
-							else
-							{spawn "bm_torso3b" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
-					}
-					{spawn "bm_foot3" {impulse up 3.38 dir 2.99 rnd_dir 0.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					{spawn "bm_foot3" {impulse up 2.86 dir 3.51 rnd_dir 0.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					{if rand 0.52 {spawn "bm_guts6" {impulse up 5.1 dir 1.95 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-					{if rand 0.53 {spawn "bm_guts7" {impulse up 3.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-					{if rand 0.54 {spawn "bm_guts8" {impulse up 2.4 dir 3 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-					{if rand 0.61 {spawn "bm_chunk1" {impulse up 5.74 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-					{if rand 0.62 {spawn "bm_chunk2" {impulse up 8.82 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-					{if rand 0.63 {spawn "bm_chunk3" {impulse up 6.3 dir 3.78 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-					{if rand 0.64 {spawn "bm_chunk4" {impulse up 5.32 dir 4.34 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}					
-
-			{if rand 0.33				
-				{if rand 0.167
-				{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-				{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-					else
-					{spawn "bm_chunk4" {impulse up 6.44 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-				}		
-					else
-					{if rand 0.2
-						{if rand 0.5
-							{spawn "bm_arm1" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-								else
-								{spawn "bm_arm1b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-						}
-						else
-						{if rand 0.25
-							{if rand 0.5
-								{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-									else
-									{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-							}
-							else
-							{if rand 0.33
-							{if rand 0.5
-								{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									else
-									{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							}
-							{spawn "bm_hand2" {impulse up 6.3 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
-								else
-								{if rand 0.5
-									{if rand 0.5
-										{spawn "bm_arm4" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-											else
-											{spawn "bm_arm4b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-									}
-									else
-									{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-										else
-										{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									}
-								}	
-							}
-						}
-					}
-				}				
-				
-				{if rand 0.5
-					{if rand 0.5
-						{spawn "bm_arm5" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
-							else
-							{spawn "bm_arm5b" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
-					}
-					{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-						else
-						{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					}				
-						else
-						{if rand 0.5
-							{spawn "bm_arm6" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
-								else
-								{spawn "bm_arm6b" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
-						}
-				}
-			}
-
-					{if rand 0.25
-					{spawn "bm_guts6" {impulse up 6 dir 7.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-					{spawn "bm_guts7" {impulse up 9.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-						else	
-						{if rand 0.33 {spawn "bm_head3" {impulse up 4.8 dir 6 rnd_dir 1 com}}
-							else
-							{if rand 0.5 {spawn "bm_head2" {impulse up 6 dir 4.8 rnd_dir 1 com}}
-								else
-								{spawn "bm_head1" {impulse up 6 dir 6 rnd_dir 1 com}}
-							}
-						}
-					}
-					
-					else	;start of set3
-
-
-		{if rand 0.25	;start of 1st part upper parts
-			{if rand 0.5
-				{spawn "bm_torso5" {impulse up 2 dir 2 com}}
-					else
-					{spawn "bm_torso5b" {impulse up 2 dir 2 com}}
-			}			
-			{if rand 0.52 {spawn "bm_guts6" {impulse up 8.1 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.53 {spawn "bm_guts7" {impulse up 9.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.54 {spawn "bm_guts8" {impulse up 6.9 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.61 {spawn "bm_chunk1" {impulse up 7.14 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-			{if rand 0.62 {spawn "bm_chunk2" {impulse up 7.42 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-			{if rand 0.63 {spawn "bm_chunk3" {impulse up 7.7 dir 3.22 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-			{if rand 0.64 {spawn "bm_chunk4" {impulse up 6.72 dir 2.94 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}		
-			
-			{if rand 0.33				
-				{if rand 0.167
-				{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-				{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-					else
-					{spawn "bm_chunk4" {impulse up 6.44 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-				}		
-					else
-					{if rand 0.2
-						{if rand 0.5
-							{spawn "bm_arm1" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-								else
-								{spawn "bm_arm1b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-						}
-						else
-						{if rand 0.25
-							{if rand 0.5
-								{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-									else
-									{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-							}
-							else
-							{if rand 0.33
-							{if rand 0.5
-								{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									else
-									{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							}
-							{spawn "bm_hand2" {impulse up 6.3 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
-								else
-								{if rand 0.5
-									{if rand 0.5
-										{spawn "bm_arm4" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-											else
-											{spawn "bm_arm4b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-									}
-									else
-									{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-										else
-										{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									}
-								}	
-							}
-						}
-					}
-				}				
-				
-				{if rand 0.5
-					{if rand 0.5
-						{spawn "bm_arm5" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
-							else
-							{spawn "bm_arm5b" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
-					}
-					{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-						else
-						{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					}				
-						else
-						{if rand 0.5
-							{spawn "bm_arm6" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
-								else
-								{spawn "bm_arm6b" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
-						}
-				}
-			}	
-					
-			else					
-			{if rand 0.33	;start of 2nd part upper parts
-				{if rand 0.5
-					{spawn "bm_torso6" {impulse up 2 dir 2 com}}
-						else
-						{spawn "bm_torso6b" {impulse up 2 dir 2 com}}
-				}
-				{if rand 0.52 {spawn "bm_guts6" {impulse up 6.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-				{if rand 0.53 {spawn "bm_guts7" {impulse up 5.25 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-				{if rand 0.54 {spawn "bm_guts8" {impulse up 9.9 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-				{if rand 0.61 {spawn "bm_chunk1" {impulse up 7.14 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-				{if rand 0.62 {spawn "bm_chunk2" {impulse up 6.02 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-				{if rand 0.63 {spawn "bm_chunk3" {impulse up 9.1 dir 3.22 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-				{if rand 0.64 {spawn "bm_chunk4" {impulse up 8.12 dir 2.94 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}	
-				
-			{if rand 0.33				
-				{if rand 0.167
-				{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-				{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-					else
-					{spawn "bm_chunk4" {impulse up 6.44 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-				}		
-					else
-					{if rand 0.2
-						{if rand 0.5
-							{spawn "bm_arm1" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-								else
-								{spawn "bm_arm1b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-						}
-						else
-						{if rand 0.25
-							{if rand 0.5
-								{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-									else
-									{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-							}
-							else
-							{if rand 0.33
-							{if rand 0.5
-								{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									else
-									{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							}
-							{spawn "bm_hand2" {impulse up 6.3 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
-								else
-								{if rand 0.5
-									{if rand 0.5
-										{spawn "bm_arm4" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-											else
-											{spawn "bm_arm4b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-									}
-									else
-									{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-										else
-										{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									}
-								}	
-							}
-						}
-					}
-				}				
-				
-				{if rand 0.5
-					{if rand 0.5
-						{spawn "bm_arm5" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
-							else
-							{spawn "bm_arm5b" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
-					}
-					{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-						else
-						{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					}				
-						else
-						{if rand 0.5
-							{spawn "bm_arm6" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
-								else
-								{spawn "bm_arm6b" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
-						}
-				}
-			}	
-					
-						else
-						{if rand 0.5	;start of 3rd part upper parts
-						{if rand 0.5
-							{spawn "bm_torso7" {impulse up 2 dir 2 com}}
-								else
-								{spawn "bm_torso7b" {impulse up 2 dir 2 com}}
-						}
-						{if rand 0.52 {spawn "bm_guts6" {impulse up 9.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-						{if rand 0.53 {spawn "bm_guts7" {impulse up 5.25 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-						{if rand 0.54 {spawn "bm_guts8" {impulse up 8.4 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-						{if rand 0.61 {spawn "bm_chunk1" {impulse up 7.14 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-						{if rand 0.62 {spawn "bm_chunk2" {impulse up 3.22 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-						{if rand 0.63 {spawn "bm_chunk3" {impulse up 6.3 dir 3.22 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
-						{if rand 0.64 {spawn "bm_chunk4" {impulse up 8.12 dir 2.94 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}			
-						
-						{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-								else
-								{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							}
-							else	;start of 4th part upper parts
-							
-		{if rand 0.5
-			{spawn "bm_torso1" {impulse up 2 dir 2 com}}
-				else
-				{spawn "bm_torso1b" {impulse up 2 dir 2 com}}
-		}		
-		{if rand 0.25
-		{spawn "bm_guts6" {impulse up 6 dir 7.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-		{spawn "bm_guts7" {impulse up 9.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-			else	
-			{if rand 0.33 {spawn "bm_head2" {impulse up 4.8 dir 6 rnd_dir 1 com}}
-				else
-				{if rand 0.5 {spawn "bm_head1" {impulse up 6 dir 4.8 rnd_dir 1 com}}
-					else
-					{spawn "bm_head3" {impulse up 6 dir 6 rnd_dir 1 com}}
-				}
-			}
-		}
-		
-		{if rand 0.167
-		{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-		{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-			else
-			{spawn "bm_chunk4" {impulse up 7.84 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-		}		
-			else
-			{if rand 0.2
-				{if rand 0.5
-					{spawn "bm_arm4" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-						else
-						{spawn "bm_arm4b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-				}
-				else
-				{if rand 0.25
-					{if rand 0.5
-						{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-							else
-							{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-					}
-					else
-					{if rand 0.33 
-					{if rand 0.5
-						{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							else
-							{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					}
-					{spawn "bm_hand2" {impulse up 7.8 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
-						else
-						{if rand 0.5
-							{if rand 0.5
-								{spawn "bm_arm1" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-									else
-									{spawn "bm_arm1b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-							}
-							else
-							{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-								else
-								{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							}
-						}	
-					}
-				}
-			}
-		}
-
-		{if rand 0.167
-		{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-		{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-			else
-			{spawn "bm_chunk4" {impulse up 7.84 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
-		}		
-			else
-			{if rand 0.2
-				{if rand 0.5
-					{spawn "bm_arm4" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-						else
-						{spawn "bm_arm4b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
-				}
-				else
-				{if rand 0.25
-					{if rand 0.5
-						{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-							else
-							{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
-					}
-					else
-					{if rand 0.33 
-					{if rand 0.5
-						{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							else
-							{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					}
-					{spawn "bm_hand2" {impulse up 7.8 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
-						else
-						{if rand 0.5
-							{if rand 0.5
-								{spawn "bm_arm1" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-									else
-									{spawn "bm_arm1b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
-							}
-							else
-							{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
-								else
-								{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							}
-						}	
-					}
-				}
-			}
-		}							
-					
-					;end of 4th part upper parts
-			
-				}	;end of 3rd part upper parts
-			}	;end of 2nd part upper parts
-		}	;end of 1st part upper parts
-		
-
-			{if rand 0.25	;start of 1st part lower parts
-			{if rand 0.5			
-				{spawn "bm_torso4" {impulse up 2.2 dir 4.8 rnd_dir 1 com}}
-					else
-					{spawn "bm_torso4b" {impulse up 2.2 dir 4.8 rnd_dir 1 com}}
-			}
-			{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-				else
-				{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					else
-					{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-				}
-			}		
-			{if rand 0.42 {spawn "bm_guts6" {impulse up 5.1 dir 1.95 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.43 {spawn "bm_guts7" {impulse up 3.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-			{if rand 0.44 {spawn "bm_guts8" {impulse up 2.4 dir 3 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-
-			else	;start of 2nd part lower parts
-			{if rand 0.33
-				{if rand 0.5			
-					{spawn "bm_torso2" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
-						else
-						{spawn "bm_torso2b" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
-				}				
-				{if rand 0.5
-				{spawn "bm_leg5" {impulse up 2.31 dir 6.16 rnd_dir 1.5 com}}
-				{spawn "bm_foot3" {impulse up 2.86 dir 6.63 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					else							
-					{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}					
-						else
-						{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							else
-							{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-						}
-					}
-					{if rand 0.33 {spawn "bm_stump1" {impulse up 3 dir 6.24 rnd_dir 1.5 com}}
-						else
-						{if rand 0.5 {spawn "bm_stump2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 com}}
-							else
-							{spawn "bm_stump3" {impulse up 3.51 dir 7.28 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-						}
-					}						
-				}
-
-				{if rand 0.5
-				{spawn "bm_leg5" {impulse up 2.31 dir 6.16 rnd_dir 1.5 com}}
-				{spawn "bm_foot3" {impulse up 2.86 dir 6.63 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-					else							
-					{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-						else
-						{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-						{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-							else
-							{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-						}
-					}
-					{if rand 0.33 {spawn "bm_stump1" {impulse up 3 dir 6.24 rnd_dir 1.5 com}}
-						else
-						{if rand 0.5 {spawn "bm_stump2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 com}}
-							else
-							{spawn "bm_stump3" {impulse up 3.51 dir 7.28 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-						}
-					}						
-				}			
-				
-
-				else
-				{if rand 0.5		;2nd part of lower parts
-
-					{if rand 0.167 {spawn "bm_leg1" {impulse up 2.2 dir 5.5 rnd_dir 1 com}}
-						else
-						{if rand 0.2 {spawn "bm_leg2" {impulse up 2.2 dir 5.5 rnd_dir 1 com}}
-							else
-							{if rand 0.25 
-							{spawn "bm_leg3" {impulse up 2.53 dir 5.72 rnd_dir 1.5 com}}
-							{spawn "bm_foot3" {impulse up 3.25 dir 7.15 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}	
-								else
-								{if rand 0.33 
-								{spawn "bm_leg4" {impulse up 2.97 dir 5.94 rnd_dir 1.5 com}}
-								{spawn "bm_foot3" {impulse up 3.12 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									else
-									{if rand 0.5
-									{spawn "bm_leg5" {impulse up 2.31 dir 6.16 rnd_dir 1.5 com}}
-									{spawn "bm_foot3" {impulse up 2.86 dir 6.63 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-										else							
-										{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-											else
-											{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-												else
-												{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-												{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-											}
-										}
-										{if rand 0.33 {spawn "bm_stump1" {impulse up 3 dir 6.24 rnd_dir 1.5 com}}
-											else
-											{if rand 0.5 {spawn "bm_stump2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 com}}
-												else
-												{spawn "bm_stump3" {impulse up 3.51 dir 7.28 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-											}
-										}						
-									}
-								}	
-							}
-						}
-					}
-					
-					{if rand 0.167 {spawn "bm_leg1" {impulse up 2.2 dir 5.5 rnd_dir 1 com}}
-						else
-						{if rand 0.2 {spawn "bm_leg2" {impulse up 2.2 dir 5.5 rnd_dir 1 com}}
-							else
-							{if rand 0.25 
-							{spawn "bm_leg3" {impulse up 2.53 dir 5.72 rnd_dir 1.5 com}}
-							{spawn "bm_foot3" {impulse up 3.25 dir 7.15 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}	
-								else
-								{if rand 0.33 
-								{spawn "bm_leg4" {impulse up 2.97 dir 5.94 rnd_dir 1.5 com}}
-								{spawn "bm_foot3" {impulse up 3.12 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-									else
-									{if rand 0.5
-									{spawn "bm_leg5" {impulse up 2.31 dir 6.16 rnd_dir 1.5 com}}
-									{spawn "bm_foot3" {impulse up 2.86 dir 6.63 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-										else							
-										{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-											else
-											{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-												else
-												{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-												{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-											}
-										}
-										{if rand 0.33 {spawn "bm_stump1" {impulse up 3 dir 6.24 rnd_dir 1.5 com}}
-											else
-											{if rand 0.5 {spawn "bm_stump2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 com}}
-												else
-												{spawn "bm_stump3" {impulse up 3.51 dir 7.28 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-											}
-										}						
-									}
-								}	
-							}
-						}
-					}
-					
-					else	;4th part of lower parts			
-						{if rand 0.5
-							{spawn "bm_torso3" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
-								else
-								{spawn "bm_torso3b" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
-						}
-						{spawn "bm_foot3" {impulse up 3.38 dir 2.99 rnd_dir 0.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-						{spawn "bm_foot3" {impulse up 2.86 dir 3.51 rnd_dir 0.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
-						{if rand 0.42 {spawn "bm_guts6" {impulse up 5.1 dir 1.95 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-						{if rand 0.43 {spawn "bm_guts7" {impulse up 3.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-						{if rand 0.44 {spawn "bm_guts8" {impulse up 2.4 dir 3 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
-						
-							;end of lower parts 4th part
-				
-				}	;end of lower parts 3rd part
-			
-			
-			}	;end of lower parts 2nd part
-
-			
-		}	;end of 1st part lower parts
-
-					
-				}	;end of set2	
-		}	;end of set3			
-
-	}
 
 	{on "crush"
-		{spawn "blood_medium"}{spawn "ufb_blood_spot_medium" random_orientation}
 		{play_sound "crush"}
-		{if rand 0.75 {call "bm_explosion"}
-			else
-			{call "blood_big"}
+		{if rand 0.75
+			{call "bm_explosion"}			;// BM Mod dismemberment
+		else
+			{spawn "blood_medium"}			;// stock GoH blood
 			{call "unhealable"}
-		}	
+		}
 	}
 
 	{on "delete"
@@ -2574,7 +1805,7 @@
 		{if tagged "start_personage"
 			{delay 1
 				{if dead
-					{if rand 0.333 {spawn "ufb_bloodstain_90" "basis" x} else rand 0.5 {spawn "bloodstain" "basis" x} else {spawn "ufb_bloodstain_150" "basis" x}}		;// spawns a pool of blood that spreads
+					{spawn "bloodstain" "basis" x}		;// spawns a pool of blood that spreads
 					{tags add "_bleedout_"}
 					{call "hf_clear_tags"}
 				}
@@ -2742,13 +1973,710 @@
 			{ani_play "cinematics\cin_idle_sit_crate_01" loop}
 		}
 	}
-	
-	{on "blood_small"	;// UFB: pool spawns removed (clipped into terrain on gibs)
+
+;=============================================================================
+;   BM Mod dismemberment handler, merged into Horten's Frontline human.inc.
+;   Spawns BM Mod body parts and burst particles only - all ground blood and
+;   blood decals stay stock Gates of Hell.
+;=============================================================================
+
+	{on "bm_explosion"
+		{volumes disable bullet contact blast touch}		
+		{call "delete"}	
+		{take_off "head"
+			{impulse up 2.5 0.5 dir 3 1 com}
+		}
+		{spawn "bm_blood_small_b"}	
+		{spawn "blood_big"}
+		{spawn "bm_bodyblast_a"}
+		{spawn "bm_blood_splash_b"}
+		{if rand 0.5 {spawn "bm_blood_ex_a"}}
+		{if rand 0.5 {spawn "bm_blood_ex_b"}}
+		{if rand 0.5 {spawn "bm_blood_ex_c"}}
+		{if rand 0.5 {spawn "bm_bloodspark_d"}}
+
+		{if rand 0.7 {spawn "bm_guts1" {impulse up 9 dir 5.85 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+		{if rand 0.71 {spawn "bm_guts2" {impulse up 9.3 dir 5.55 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+		{if rand 0.72 {spawn "bm_guts3" {impulse up 9.45 dir 5.25 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+		{if rand 0.73 {spawn "bm_guts4" {impulse up 9.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+		{if rand 0.41 {spawn "bm_guts5" {impulse up 9.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+		{if rand 0.42 {spawn "bm_guts6" {impulse up 9.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+		{if rand 0.43 {spawn "bm_guts7" {impulse up 9.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+		{if rand 0.44 {spawn "bm_guts8" {impulse up 9.9 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+		{if rand 0.51 {spawn "bm_chunk1" {impulse up 7.14 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+		{if rand 0.52 {spawn "bm_chunk2" {impulse up 7.42 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+		{if rand 0.53 {spawn "bm_chunk3" {impulse up 7.7 dir 3.22 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+		{if rand 0.54 {spawn "bm_chunk4" {impulse up 8.12 dir 2.94 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+		
+		{if rand 0.1	;start of set1
+			{if rand 0.5
+				{spawn "bm_torso8" {impulse up 2 dir 2 com}}
+					else
+					{spawn "bm_torso8b" {impulse up 2 dir 2 com}}
+			}
+			{if rand 0.52 {spawn "bm_guts6" {impulse up 6.6 dir 3.45 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.53 {spawn "bm_guts7" {impulse up 8.25 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.54 {spawn "bm_guts8" {impulse up 5.4 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.61 {spawn "bm_chunk1" {impulse up 5.74 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+			{if rand 0.62 {spawn "bm_chunk2" {impulse up 8.82 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+			{if rand 0.63 {spawn "bm_chunk3" {impulse up 6.3 dir 3.78 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+			{if rand 0.64 {spawn "bm_chunk4" {impulse up 5.32 dir 4.34 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}		
+			
+			{if rand 0.33				
+				{if rand 0.167
+				{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+				{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+					else
+					{spawn "bm_chunk4" {impulse up 6.44 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+				}		
+					else
+					{if rand 0.2
+						{if rand 0.5
+							{spawn "bm_arm1" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+								else
+								{spawn "bm_arm1b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+						}
+						else
+						{if rand 0.25
+							{if rand 0.5
+								{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+									else
+									{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+							}
+							else
+							{if rand 0.33
+							{if rand 0.5
+								{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									else
+									{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							}
+							{spawn "bm_hand2" {impulse up 6.3 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
+								else
+								{if rand 0.5
+									{if rand 0.5
+										{spawn "bm_arm4" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+											else
+											{spawn "bm_arm4b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+									}
+									else
+									{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+										else
+										{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									}
+								}	
+							}
+						}
+					}
+				}				
+				
+				{if rand 0.5
+					{if rand 0.5
+						{spawn "bm_arm5" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
+							else
+							{spawn "bm_arm5b" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
+					}
+					{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+						else
+						{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					}				
+						else
+						{if rand 0.5
+							{spawn "bm_arm6" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
+								else
+								{spawn "bm_arm6b" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
+						}
+				}
+			}
+
+			{if rand 0.33 {spawn "bm_foot2" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+				else
+				{if rand 0.5 {spawn "bm_foot1" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					else
+					{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+				}
+			}		
+			{if rand 0.42 {spawn "bm_guts6" {impulse up 5.1 dir 1.95 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.43 {spawn "bm_guts7" {impulse up 3.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.44 {spawn "bm_guts8" {impulse up 2.4 dir 3 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}			
+			
+				else	;start of set2
+				{if rand 0.2
+					{if rand 0.5
+						{spawn "bm_torso3" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
+							else
+							{spawn "bm_torso3b" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
+					}
+					{spawn "bm_foot3" {impulse up 3.38 dir 2.99 rnd_dir 0.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					{spawn "bm_foot3" {impulse up 2.86 dir 3.51 rnd_dir 0.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					{if rand 0.52 {spawn "bm_guts6" {impulse up 5.1 dir 1.95 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+					{if rand 0.53 {spawn "bm_guts7" {impulse up 3.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+					{if rand 0.54 {spawn "bm_guts8" {impulse up 2.4 dir 3 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+					{if rand 0.61 {spawn "bm_chunk1" {impulse up 5.74 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+					{if rand 0.62 {spawn "bm_chunk2" {impulse up 8.82 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+					{if rand 0.63 {spawn "bm_chunk3" {impulse up 6.3 dir 3.78 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+					{if rand 0.64 {spawn "bm_chunk4" {impulse up 5.32 dir 4.34 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}					
+
+			{if rand 0.33				
+				{if rand 0.167
+				{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+				{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+					else
+					{spawn "bm_chunk4" {impulse up 6.44 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+				}		
+					else
+					{if rand 0.2
+						{if rand 0.5
+							{spawn "bm_arm1" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+								else
+								{spawn "bm_arm1b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+						}
+						else
+						{if rand 0.25
+							{if rand 0.5
+								{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+									else
+									{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+							}
+							else
+							{if rand 0.33
+							{if rand 0.5
+								{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									else
+									{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							}
+							{spawn "bm_hand2" {impulse up 6.3 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
+								else
+								{if rand 0.5
+									{if rand 0.5
+										{spawn "bm_arm4" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+											else
+											{spawn "bm_arm4b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+									}
+									else
+									{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+										else
+										{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									}
+								}	
+							}
+						}
+					}
+				}				
+				
+				{if rand 0.5
+					{if rand 0.5
+						{spawn "bm_arm5" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
+							else
+							{spawn "bm_arm5b" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
+					}
+					{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+						else
+						{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					}				
+						else
+						{if rand 0.5
+							{spawn "bm_arm6" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
+								else
+								{spawn "bm_arm6b" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
+						}
+				}
+			}
+
+					{if rand 0.25
+					{spawn "bm_guts6" {impulse up 6 dir 7.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+					{spawn "bm_guts7" {impulse up 9.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+						else	
+						{if rand 0.33 {spawn "bm_head3" {impulse up 4.8 dir 6 rnd_dir 1 com}}
+							else
+							{if rand 0.5 {spawn "bm_head2" {impulse up 6 dir 4.8 rnd_dir 1 com}}
+								else
+								{spawn "bm_head1" {impulse up 6 dir 6 rnd_dir 1 com}}
+							}
+						}
+					}
+					
+					else	;start of set3
+
+
+		{if rand 0.25	;start of 1st part upper parts
+			{if rand 0.5
+				{spawn "bm_torso5" {impulse up 2 dir 2 com}}
+					else
+					{spawn "bm_torso5b" {impulse up 2 dir 2 com}}
+			}			
+			{if rand 0.52 {spawn "bm_guts6" {impulse up 8.1 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.53 {spawn "bm_guts7" {impulse up 9.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.54 {spawn "bm_guts8" {impulse up 6.9 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.61 {spawn "bm_chunk1" {impulse up 7.14 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+			{if rand 0.62 {spawn "bm_chunk2" {impulse up 7.42 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+			{if rand 0.63 {spawn "bm_chunk3" {impulse up 7.7 dir 3.22 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+			{if rand 0.64 {spawn "bm_chunk4" {impulse up 6.72 dir 2.94 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}		
+			
+			{if rand 0.33				
+				{if rand 0.167
+				{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+				{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+					else
+					{spawn "bm_chunk4" {impulse up 6.44 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+				}		
+					else
+					{if rand 0.2
+						{if rand 0.5
+							{spawn "bm_arm1" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+								else
+								{spawn "bm_arm1b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+						}
+						else
+						{if rand 0.25
+							{if rand 0.5
+								{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+									else
+									{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+							}
+							else
+							{if rand 0.33
+							{if rand 0.5
+								{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									else
+									{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							}
+							{spawn "bm_hand2" {impulse up 6.3 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
+								else
+								{if rand 0.5
+									{if rand 0.5
+										{spawn "bm_arm4" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+											else
+											{spawn "bm_arm4b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+									}
+									else
+									{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+										else
+										{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									}
+								}	
+							}
+						}
+					}
+				}				
+				
+				{if rand 0.5
+					{if rand 0.5
+						{spawn "bm_arm5" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
+							else
+							{spawn "bm_arm5b" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
+					}
+					{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+						else
+						{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					}				
+						else
+						{if rand 0.5
+							{spawn "bm_arm6" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
+								else
+								{spawn "bm_arm6b" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
+						}
+				}
+			}	
+					
+			else					
+			{if rand 0.33	;start of 2nd part upper parts
+				{if rand 0.5
+					{spawn "bm_torso6" {impulse up 2 dir 2 com}}
+						else
+						{spawn "bm_torso6b" {impulse up 2 dir 2 com}}
+				}
+				{if rand 0.52 {spawn "bm_guts6" {impulse up 6.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+				{if rand 0.53 {spawn "bm_guts7" {impulse up 5.25 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+				{if rand 0.54 {spawn "bm_guts8" {impulse up 9.9 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+				{if rand 0.61 {spawn "bm_chunk1" {impulse up 7.14 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+				{if rand 0.62 {spawn "bm_chunk2" {impulse up 6.02 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+				{if rand 0.63 {spawn "bm_chunk3" {impulse up 9.1 dir 3.22 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+				{if rand 0.64 {spawn "bm_chunk4" {impulse up 8.12 dir 2.94 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}	
+				
+			{if rand 0.33				
+				{if rand 0.167
+				{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+				{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+					else
+					{spawn "bm_chunk4" {impulse up 6.44 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+				}		
+					else
+					{if rand 0.2
+						{if rand 0.5
+							{spawn "bm_arm1" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+								else
+								{spawn "bm_arm1b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+						}
+						else
+						{if rand 0.25
+							{if rand 0.5
+								{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+									else
+									{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+							}
+							else
+							{if rand 0.33
+							{if rand 0.5
+								{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									else
+									{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							}
+							{spawn "bm_hand2" {impulse up 6.3 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
+								else
+								{if rand 0.5
+									{if rand 0.5
+										{spawn "bm_arm4" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+											else
+											{spawn "bm_arm4b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+									}
+									else
+									{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+										else
+										{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									}
+								}	
+							}
+						}
+					}
+				}				
+				
+				{if rand 0.5
+					{if rand 0.5
+						{spawn "bm_arm5" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
+							else
+							{spawn "bm_arm5b" {impulse up 4.935 dir 3.885 rnd_dir 1 com}}
+					}
+					{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+						else
+						{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					}				
+						else
+						{if rand 0.5
+							{spawn "bm_arm6" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
+								else
+								{spawn "bm_arm6b" {impulse up 3.78 dir 3.36 rnd_dir 1 com}}
+						}
+				}
+			}	
+					
+						else
+						{if rand 0.5	;start of 3rd part upper parts
+						{if rand 0.5
+							{spawn "bm_torso7" {impulse up 2 dir 2 com}}
+								else
+								{spawn "bm_torso7b" {impulse up 2 dir 2 com}}
+						}
+						{if rand 0.52 {spawn "bm_guts6" {impulse up 9.6 dir 4.95 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+						{if rand 0.53 {spawn "bm_guts7" {impulse up 5.25 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+						{if rand 0.54 {spawn "bm_guts8" {impulse up 8.4 dir 4.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+						{if rand 0.61 {spawn "bm_chunk1" {impulse up 7.14 dir 3.92 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+						{if rand 0.62 {spawn "bm_chunk2" {impulse up 3.22 dir 3.5 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+						{if rand 0.63 {spawn "bm_chunk3" {impulse up 6.3 dir 3.22 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}
+						{if rand 0.64 {spawn "bm_chunk4" {impulse up 8.12 dir 2.94 rnd_dir 0.5 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}}			
+						
+						{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+								else
+								{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							}
+							else	;start of 4th part upper parts
+							
+		{if rand 0.5
+			{spawn "bm_torso1" {impulse up 2 dir 2 com}}
+				else
+				{spawn "bm_torso1b" {impulse up 2 dir 2 com}}
+		}		
+		{if rand 0.25
+		{spawn "bm_guts6" {impulse up 6 dir 7.5 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+		{spawn "bm_guts7" {impulse up 9.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+			else	
+			{if rand 0.33 {spawn "bm_head2" {impulse up 4.8 dir 6 rnd_dir 1 com}}
+				else
+				{if rand 0.5 {spawn "bm_head1" {impulse up 6 dir 4.8 rnd_dir 1 com}}
+					else
+					{spawn "bm_head3" {impulse up 6 dir 6 rnd_dir 1 com}}
+				}
+			}
+		}
+		
+		{if rand 0.167
+		{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+		{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+			else
+			{spawn "bm_chunk4" {impulse up 7.84 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+		}		
+			else
+			{if rand 0.2
+				{if rand 0.5
+					{spawn "bm_arm4" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+						else
+						{spawn "bm_arm4b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+				}
+				else
+				{if rand 0.25
+					{if rand 0.5
+						{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+							else
+							{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+					}
+					else
+					{if rand 0.33 
+					{if rand 0.5
+						{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							else
+							{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					}
+					{spawn "bm_hand2" {impulse up 7.8 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
+						else
+						{if rand 0.5
+							{if rand 0.5
+								{spawn "bm_arm1" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+									else
+									{spawn "bm_arm1b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+							}
+							else
+							{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+								else
+								{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							}
+						}	
+					}
+				}
+			}
+		}
+
+		{if rand 0.167
+		{spawn "bm_hand1" {impulse up 7.15 dir 5.2 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+		{if rand 0.5 {spawn "bm_chunk1" {impulse up 7.98 dir 6.58 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+			else
+			{spawn "bm_chunk4" {impulse up 7.84 dir 5.88 rnd_dir 1 cx 0 0.07 cy 0 0.07 cz 0 0.05 com}}
+		}		
+			else
+			{if rand 0.2
+				{if rand 0.5
+					{spawn "bm_arm4" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+						else
+						{spawn "bm_arm4b" {impulse up 6.48 dir 5.64 rnd_dir 1 com}}
+				}
+				else
+				{if rand 0.25
+					{if rand 0.5
+						{spawn "bm_arm2" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+							else
+							{spawn "bm_arm2b" {impulse up 6.36 dir 5.16 rnd_dir 1 com}}
+					}
+					else
+					{if rand 0.33 
+					{if rand 0.5
+						{spawn "bm_arm3" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							else
+							{spawn "bm_arm3b" {impulse up 6.12 dir 4.92 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					}
+					{spawn "bm_hand2" {impulse up 7.8 dir 6.3 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}	
+						else
+						{if rand 0.5
+							{if rand 0.5
+								{spawn "bm_arm1" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+									else
+									{spawn "bm_arm1b" {impulse up 6.6 dir 5.28 rnd_dir 1 com}}
+							}
+							else
+							{spawn "bm_stump4" {impulse up 7.15 dir 5.85 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							{if rand 0.5 {spawn "bm_hand2" {impulse up 8.55 dir 7.05 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}
+								else
+								{spawn "bm_hand1" {impulse up 7.28 dir 5.46 rnd_dir 1 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							}
+						}	
+					}
+				}
+			}
+		}							
+					
+					;end of 4th part upper parts
+			
+				}	;end of 3rd part upper parts
+			}	;end of 2nd part upper parts
+		}	;end of 1st part upper parts
+		
+
+			{if rand 0.25	;start of 1st part lower parts
+			{if rand 0.5			
+				{spawn "bm_torso4" {impulse up 2.2 dir 4.8 rnd_dir 1 com}}
+					else
+					{spawn "bm_torso4b" {impulse up 2.2 dir 4.8 rnd_dir 1 com}}
+			}
+			{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+				else
+				{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					else
+					{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+				}
+			}		
+			{if rand 0.42 {spawn "bm_guts6" {impulse up 5.1 dir 1.95 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.43 {spawn "bm_guts7" {impulse up 3.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+			{if rand 0.44 {spawn "bm_guts8" {impulse up 2.4 dir 3 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+
+			else	;start of 2nd part lower parts
+			{if rand 0.33
+				{if rand 0.5			
+					{spawn "bm_torso2" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
+						else
+						{spawn "bm_torso2b" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
+				}				
+				{if rand 0.5
+				{spawn "bm_leg5" {impulse up 2.31 dir 6.16 rnd_dir 1.5 com}}
+				{spawn "bm_foot3" {impulse up 2.86 dir 6.63 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					else							
+					{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}					
+						else
+						{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							else
+							{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+						}
+					}
+					{if rand 0.33 {spawn "bm_stump1" {impulse up 3 dir 6.24 rnd_dir 1.5 com}}
+						else
+						{if rand 0.5 {spawn "bm_stump2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 com}}
+							else
+							{spawn "bm_stump3" {impulse up 3.51 dir 7.28 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+						}
+					}						
+				}
+
+				{if rand 0.5
+				{spawn "bm_leg5" {impulse up 2.31 dir 6.16 rnd_dir 1.5 com}}
+				{spawn "bm_foot3" {impulse up 2.86 dir 6.63 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+					else							
+					{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+						else
+						{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+						{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+							else
+							{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+						}
+					}
+					{if rand 0.33 {spawn "bm_stump1" {impulse up 3 dir 6.24 rnd_dir 1.5 com}}
+						else
+						{if rand 0.5 {spawn "bm_stump2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 com}}
+							else
+							{spawn "bm_stump3" {impulse up 3.51 dir 7.28 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+						}
+					}						
+				}			
+				
+
+				else
+				{if rand 0.5		;2nd part of lower parts
+
+					{if rand 0.167 {spawn "bm_leg1" {impulse up 2.2 dir 5.5 rnd_dir 1 com}}
+						else
+						{if rand 0.2 {spawn "bm_leg2" {impulse up 2.2 dir 5.5 rnd_dir 1 com}}
+							else
+							{if rand 0.25 
+							{spawn "bm_leg3" {impulse up 2.53 dir 5.72 rnd_dir 1.5 com}}
+							{spawn "bm_foot3" {impulse up 3.25 dir 7.15 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}	
+								else
+								{if rand 0.33 
+								{spawn "bm_leg4" {impulse up 2.97 dir 5.94 rnd_dir 1.5 com}}
+								{spawn "bm_foot3" {impulse up 3.12 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									else
+									{if rand 0.5
+									{spawn "bm_leg5" {impulse up 2.31 dir 6.16 rnd_dir 1.5 com}}
+									{spawn "bm_foot3" {impulse up 2.86 dir 6.63 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+										else							
+										{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+											else
+											{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+												else
+												{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+												{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+											}
+										}
+										{if rand 0.33 {spawn "bm_stump1" {impulse up 3 dir 6.24 rnd_dir 1.5 com}}
+											else
+											{if rand 0.5 {spawn "bm_stump2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 com}}
+												else
+												{spawn "bm_stump3" {impulse up 3.51 dir 7.28 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+											}
+										}						
+									}
+								}	
+							}
+						}
+					}
+					
+					{if rand 0.167 {spawn "bm_leg1" {impulse up 2.2 dir 5.5 rnd_dir 1 com}}
+						else
+						{if rand 0.2 {spawn "bm_leg2" {impulse up 2.2 dir 5.5 rnd_dir 1 com}}
+							else
+							{if rand 0.25 
+							{spawn "bm_leg3" {impulse up 2.53 dir 5.72 rnd_dir 1.5 com}}
+							{spawn "bm_foot3" {impulse up 3.25 dir 7.15 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}	
+								else
+								{if rand 0.33 
+								{spawn "bm_leg4" {impulse up 2.97 dir 5.94 rnd_dir 1.5 com}}
+								{spawn "bm_foot3" {impulse up 3.12 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+									else
+									{if rand 0.5
+									{spawn "bm_leg5" {impulse up 2.31 dir 6.16 rnd_dir 1.5 com}}
+									{spawn "bm_foot3" {impulse up 2.86 dir 6.63 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+										else							
+										{if rand 0.33 {spawn "bm_foot1" {impulse up 3 dir 6.24 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+											else
+											{if rand 0.5 {spawn "bm_foot2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+												else
+												{spawn "bm_foot3" {impulse up 2.86 dir 6.76 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+												{spawn "bm_stump4" {impulse up 2.73 dir 6.89 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+											}
+										}
+										{if rand 0.33 {spawn "bm_stump1" {impulse up 3 dir 6.24 rnd_dir 1.5 com}}
+											else
+											{if rand 0.5 {spawn "bm_stump2" {impulse up 3.12 dir 6.48 rnd_dir 1.5 com}}
+												else
+												{spawn "bm_stump3" {impulse up 3.51 dir 7.28 rnd_dir 1.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+											}
+										}						
+									}
+								}	
+							}
+						}
+					}
+					
+					else	;4th part of lower parts			
+						{if rand 0.5
+							{spawn "bm_torso3" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
+								else
+								{spawn "bm_torso3b" {impulse up 2.3 dir 5.2 rnd_dir 1.5 com}}
+						}
+						{spawn "bm_foot3" {impulse up 3.38 dir 2.99 rnd_dir 0.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+						{spawn "bm_foot3" {impulse up 2.86 dir 3.51 rnd_dir 0.5 cx 0 0.05 cy 0 0.05 cz 0 0.04 com}}
+						{if rand 0.42 {spawn "bm_guts6" {impulse up 5.1 dir 1.95 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+						{if rand 0.43 {spawn "bm_guts7" {impulse up 3.75 dir 4.65 rnd_dir 1 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+						{if rand 0.44 {spawn "bm_guts8" {impulse up 2.4 dir 3 rnd_dir 0.5 cx 0 0.08 cy 0 0.08 cz 0 0.06 com}}}
+						
+							;end of lower parts 4th part
+				
+				}	;end of lower parts 3rd part
+			
+			
+			}	;end of lower parts 2nd part
+
+			
+		}	;end of 1st part lower parts
+
+					
+				}	;end of set2	
+		}	;end of set3			
+
 	}
-	
-	{on "blood_big"	;// UFB: pool spawns removed (clipped into terrain on gibs)
-	}
-	
 }
 
-;{change_obstacle "nothing"} ;// command that might be useful in future. Changes to a specific obstacle defined in .mdl
+;{change_obstacle "nothing"}  ;// command that might be useful in future. Changes to a specific obstacle defined in .mdl

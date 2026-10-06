@@ -1,5 +1,5 @@
 {fx
-	{#+ spriteview
+	{#+ decalview
 		{sprite "$/particle/blood_splash"
 			{visibility 1
 				{linear
@@ -10,14 +10,15 @@
 			{timer
 				{duration 9999}
 			}
-			{scale 0.125 0.025}
-			{preturn 90 90}
+			{scale 0.14375 0.02875}
+			{preturn 180 180}
 		}
+		{dynamic}
 		{ground}
 		{layer grounddynamic}
 		{notifyowner}
 	}
-	{spriteview
+	{decalview
 		{sprite "$/particle/blood_splash"
 			{visibility 1
 				{linear
@@ -28,9 +29,10 @@
 			{timer
 				{duration 9999}
 			}
-			{scale 0.325 0.025}
-			{preturn 90 90}
+			{scale 0.1725 0.0275}
+			{preturn 180 180}
 		}
+		{dynamic}
 		{ground}
 		{layer grounddynamic}
 		{notifyowner}

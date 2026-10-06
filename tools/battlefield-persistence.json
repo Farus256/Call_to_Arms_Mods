@@ -4,6 +4,7 @@
   "sandbagParticleSeconds": 99999,
   "smallMetalLimit": 1024,
   "mediumMetalLimit": 1536,
+  "sandbagDebrisLimit": 1024,
   "vehicleEffects": ["tank_die", "tank_die_light", "tank_die_medium", "tank_die_heavy", "tank_die_enormous", "tank_die_particle", "car_die_particle"],
   "sandbagEffects": ["sandbag_crush", "sandbag_crush_win"]
 }

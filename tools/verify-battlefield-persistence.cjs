@@ -20,6 +20,16 @@ for(const [folder,names,seconds] of [['detonation',cfg.vehicleEffects,cfg.metalP
   ae.forEach((n,j)=>be[j].children=n.children);
   generators++;
  }
+ // The only motion change is terrain collision for metal views that had no mover.
+ const oldViews=s.all(old,n=>!!s.child(n,'entitygenerator'));
+ const newViews=s.all(now,n=>!!s.child(n,'entitygenerator'));
+ oldViews.forEach((view,i)=>{
+  if(!s.child(view,'mover')){
+   const mover=s.child(newViews[i],'mover');assert(mover,'persistent metal cannot fall through terrain');
+   assert(s.child(s.child(mover,'collisions'),'terrain'));
+   newViews[i].children=newViews[i].children.filter(n=>n!==mover);
+  }
+ });
  assert.deepEqual(shape(now),shape(old),'all dust, sparks, lights, sounds and debris motion preserved: '+rel);effects++;
 }
 const oldProp=read(base,'properties/small_part_harmless.inc'),prop=read(root,'properties/ufb_metal_part_harmless.inc');
@@ -27,11 +37,11 @@ assert.equal(prop,oldProp.replace(' "delete_after_spawn"',''),'only deletion pro
 assert(read(root,'properties/small_part_harmless.inc').includes('"delete_after_spawn"'),'global debris cleanup remains');
 for(const name of ['piece_small_steel','piece_tiny_steel']){
  const rel=`entity/service/slicer/${name}.def`;
- assert.equal(read(root,rel).replace('/properties/ufb_metal_part_harmless.inc','/properties/small_part_harmless.inc'),read(base,rel));
+ assert.equal(read(root,rel).replace('/properties/ufb_metal_part_harmless.inc','/properties/small_part_harmless.inc').replace('"ufb_persistent_debris" ',''),read(base,rel));
 }
 const manager=s.parse(read(root,'set/entitymanager.set'));
 const groups=s.all(manager,n=>s.name(n)==='group');
-for(const [name,count,entities] of [['ufb_small_metal',cfg.smallMetalLimit,['piece_small_steel','piece_tiny_steel','piece_small_steel_construction']],['ufb_medium_metal',cfg.mediumMetalLimit,['piece_medium_steel','piece_medium_steel_construction']]]){
+for(const [name,count,entities] of [['ufb_small_metal',cfg.smallMetalLimit,['piece_small_steel','piece_tiny_steel','piece_small_steel_construction']],['ufb_medium_metal',cfg.mediumMetalLimit,['piece_medium_steel','piece_medium_steel_construction']],['ufb_sandbag_debris',cfg.sandbagDebrisLimit,['piece_medium_sand']]]){
  const group=groups.find(n=>n.tokens[1].value===name);assert(group);
  assert.equal(Number(s.child(group,'limit').tokens[1].value),count);
  assert.equal(s.all(group,n=>s.name(n)==='mod').length,0,'same limit in every mode');

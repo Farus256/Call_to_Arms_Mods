@@ -4,37 +4,37 @@
   "files": [
     {
       "file": "entity/fx/detonation/tank_die.def",
-      "sha256": "69a35f4967ed5124aa6d6d89ffc074e7047b40758f5726edb1123549b26ecb39",
+      "sha256": "9ebba9c6065c4907adf2f8265746576e485c6abcb842f0f463630c6b15282e06",
       "baselineSHA256": "410d0404f1361273c0884b20638afc6f2a46e40eeafb0bd9074b1ac0558375f8"
     },
     {
       "file": "entity/fx/detonation/tank_die_light.def",
-      "sha256": "373b0a171bf8910ad630e736cc24be11387b413fa5b6093577e6a9bf958f97f4",
+      "sha256": "96b4a2ea34bf326c7920bcb2d0fa3b68c37bf102845b24244e9880ca6f58a925",
       "baselineSHA256": "bfcbae5bc61b5ee90715a96214b94a38107a1492be051908366a6062771429c8"
     },
     {
       "file": "entity/fx/detonation/tank_die_medium.def",
-      "sha256": "de3e3ab93360ecf6d8d38092266a7c421e729bac2eea324c980540e2e84d85b9",
+      "sha256": "19dd5edaac1a08bc890c1295df8b9e91c1a30385909dbd60481dbf897b80a13a",
       "baselineSHA256": "3dcf51cdf3034efe4b643d12427d368408c9baffddc1f937c7d43576f4cd5957"
     },
     {
       "file": "entity/fx/detonation/tank_die_heavy.def",
-      "sha256": "2960df51c214312711824f1572aa796f5b36897bd8a3a4b312f54bb0ef411ca7",
+      "sha256": "4a9a294c40d4ead67befa4358558ae4b140a6f8299f2036de09afed8ca84f2f8",
       "baselineSHA256": "86350d87078b761c29fdbb87f403395cf4300aca91591fe0a325ec510bd8cba4"
     },
     {
       "file": "entity/fx/detonation/tank_die_enormous.def",
-      "sha256": "cd45b5c5649882b1887c5129ac98c62963bdba0421a084ee16e9f4f06765d5f6",
+      "sha256": "ec4656332e57d27fd29964d048af7eea62cb49a336f20e04a752849835d6a164",
       "baselineSHA256": "e39de653853a8e00b73a3c043153708dda494665c1af499fc3519adec5116a48"
     },
     {
       "file": "entity/fx/detonation/tank_die_particle.def",
-      "sha256": "6d6259b2de51a4b91569168c82b89038251ab5d6f3a5bcae9c6cbee9c885d1a0",
+      "sha256": "0b8d7fa52ae56a90b8ed8585b4f0bc64c4b3dccccf1f192f083b065c043372e2",
       "baselineSHA256": "4d98da521cf5ec8e8794973503418cb2ff928ce0c2c0821d8f5eb0ff174d75c3"
     },
     {
       "file": "entity/fx/detonation/car_die_particle.def",
-      "sha256": "e5e1dedad6ded8721ec0741b3bc70c2fa487f8d5a8bc8e861bcbb2c429cadf38",
+      "sha256": "6d18d9390d96ab37b081740121b5397f90074b76b223431577ce33e28290efa1",
       "baselineSHA256": "0a9fd27ca7a013f6833e4d824fc387cb2efe2aec8949f0f5994748fcfaa66fbf"
     },
     {
@@ -54,17 +54,97 @@
     },
     {
       "file": "entity/service/slicer/piece_small_steel.def",
-      "sha256": "91b312de0ced620be0231628584516a5cc06c6d58d1dc4b19031e1f01d8ffb74",
+      "sha256": "03034f36cd041fa6a66d469046cfd5b9b034a14f2a865b6d55817526427b844b",
       "baselineSHA256": "e546481d499d92ff89ec310f0b2b52420be3e304e4a2a0ccada79f98d0043686"
     },
     {
       "file": "entity/service/slicer/piece_tiny_steel.def",
-      "sha256": "45c584d2a2ee5fe3b481d0b13a664028d2a32d535bd46b8a7a05cf710205b97b",
+      "sha256": "534a1deb43ece6044d923a2d87f6a26fb94213508b898d6ebea6c0b319e58785",
       "baselineSHA256": "1d508627f21ac8fe33f9afd8501b96a6d0703954e23e7328cfde4d2076c59fcf"
     },
     {
+      "file": "entity/service/slicer/piece_small_steel_construction.def",
+      "sha256": "b5057ed2cb614cc92f728730ed7ac75e2f6038acc568984bca1af3704b131837",
+      "baselineSHA256": "cf55d162302e8ffd643e607e5225d15486a33daf030b6f2a1969b2bb2076a388"
+    },
+    {
+      "file": "entity/service/slicer/piece_medium_steel.def",
+      "sha256": "8d5a96165289a4a1aa1e4853f4a06e4fa6131d462b46f82d0a8202e623c58d66",
+      "baselineSHA256": "b42bf1b6035c23ef6918477e1c1a95c9735890fd07e285b403152c1bb4e4737e"
+    },
+    {
+      "file": "entity/service/slicer/piece_medium_steel_construction.def",
+      "sha256": "2b7c52447685b978b83f2c47b9d96e7522e122108bdfdf4d33c026dd2e7b58a1",
+      "baselineSHA256": "34d917076eb710d4237bf22548eb47ac7bffa3e34ec369cdd11e891898a8a97b"
+    },
+    {
+      "file": "entity/service/slicer/piece_medium_sand.def",
+      "sha256": "8370e43eaa9099d1f7173c8682fc2b3b9b171d023832f6e21d675ccc08023c55",
+      "baselineSHA256": "28bf4f75b5a0a94f541fcda86110d64f952a5fbfdbf3c32f9d0b2983dde7f879"
+    },
+    {
+      "file": "entity/service/slicer/piece_big_steel.def",
+      "sha256": "2538f743f6941d5f8b93aa2a2b2f2a0020b92a2d6bc93f0d3a06db26ead78a67",
+      "baselineSHA256": "f35028170999f956adba77a0d755f65e3f3e0a1c4730ea1220000c4c93db5ba0"
+    },
+    {
+      "file": "entity/service/slicer/piece_large_steel.def",
+      "sha256": "df828ffe6bdb51bb638e80e1ff006a2d03989df7ce61d0521a8c35881f8e98c2",
+      "baselineSHA256": "d3cbcc5b72e4c91d2cb8d8e10949afdce190120450f7836ec09fbb410fa28a0a"
+    },
+    {
+      "file": "entity/particle/#metall1/#metall1.def",
+      "sha256": "d65d462543999544c980fbfa06f5a750630a6c8d693398c196bad6f2e5f4a303",
+      "baselineSHA256": "0d7bfcd65f1c54fe9aec44b3203d0af41bc7d039780a8e789c7192dca242d375"
+    },
+    {
+      "file": "entity/particle/#metall2/#metall2.def",
+      "sha256": "53079b2527c69719b7fe3833827c3ce8467ecdd181823c29cb56cbc153186e0f",
+      "baselineSHA256": "91a6aafe341e2d8f4ad2c64d022187bed878b21475eb9ef33f4a98fa872e671b"
+    },
+    {
+      "file": "entity/particle/#metall3/#metall3.def",
+      "sha256": "c69a35c9ce7260e13f55e2b850467a07ed6b77d2d0e972c4d1f3726e0a478195",
+      "baselineSHA256": "4ed4e35cdd0218c5cd5ac3b39db8c6ffc6b660c901a00ad2d941834032184f0b"
+    },
+    {
+      "file": "entity/particle/#sandbag_01/#sandbag_01.def",
+      "sha256": "b46c9ce4e3a3aea66aad390c7b64362b44fa65b757fdeb6dcbdd4e3ffaf447ba",
+      "baselineSHA256": "5d407206bab6b50b8180f7a6ccf50f04639dc71b82912e3cf566329490762a3b"
+    },
+    {
+      "file": "entity/particle/#sandbag_02/#sandbag_02.def",
+      "sha256": "3038729aecf456a3e888027f9ccade24ebc01404f0a4338cebb9180e3d74d6cd",
+      "baselineSHA256": "afb693a4ccce3f7b8b9017feca0cb18bfee0a2867942c7cff7787c2cf14ac6b3"
+    },
+    {
+      "file": "entity/particle/#sandbag_01_win/#sandbag_01_win.def",
+      "sha256": "b46c9ce4e3a3aea66aad390c7b64362b44fa65b757fdeb6dcbdd4e3ffaf447ba",
+      "baselineSHA256": "5d407206bab6b50b8180f7a6ccf50f04639dc71b82912e3cf566329490762a3b"
+    },
+    {
+      "file": "entity/particle/#sandbag_02_win/#sandbag_02_win.def",
+      "sha256": "3038729aecf456a3e888027f9ccade24ebc01404f0a4338cebb9180e3d74d6cd",
+      "baselineSHA256": "afb693a4ccce3f7b8b9017feca0cb18bfee0a2867942c7cff7787c2cf14ac6b3"
+    },
+    {
+      "file": "set/interaction_entity/ufb_persistent_debris.inc",
+      "sha256": "d020303218dcffa0e4ccd222be947110550e7d62833cd2f797a0098866b4c2f1",
+      "baselineSHA256": null
+    },
+    {
+      "file": "entity/construction/_military/fortifications/sandbag_old/sandbag_cannon_shallow/sandbag_cannon_shallow_ai.def",
+      "sha256": "bc276a7fe09035b7ee801388ec8074570bf973e3155dbcc090d6f3263bf3316c",
+      "baselineSHA256": "d232b9ed02f4dc2148b3f176017498e1c531131e2ac78d934e0a35c91b904ec3"
+    },
+    {
+      "file": "entity/construction/_military/fortifications/sandbag_old/sandbag_cannon_standard/sandbag_cannon_standard_ai.def",
+      "sha256": "ea8ad4ae84cff0085a226e7aac6981fa7eeb8a20046bf62e3a0717ad9299ebd3",
+      "baselineSHA256": "7e11d6236378e87b5868ecd1a93e4a3a6230dddd91f84b4f2e8f07909c06d6af"
+    },
+    {
       "file": "set/entitymanager.set",
-      "sha256": "1d41d20b7cf0728dc22be35285df0cf3ac0e2ed780bd07e81ce95850d504d514",
+      "sha256": "3496dee1418e0d9134698e1ea2a6373d842b9a6d1d878a596c9737ccabcbc9ed",
       "baselineSHA256": "265750b7616036900fc9936575cadaeaecbfcac50f467a208b3c09d9f35f01cc"
     }
   ]

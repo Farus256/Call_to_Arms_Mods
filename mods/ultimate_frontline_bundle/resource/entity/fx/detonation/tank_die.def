@@ -116,7 +116,9 @@
 			}
 		}
 		{#+ notifyowner}
-	}
+	
+  {mover {collisions {terrain} {restitution 0.15}} {nodependonwind}}
+ }
 	{##+ particleview sparkles
 		{generator
 			{particlesinblock 130}

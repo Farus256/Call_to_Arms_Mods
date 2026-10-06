@@ -1,7 +1,7 @@
 {game_entity
 	(include "/properties/ufb_metal_part_harmless.inc")
 	{extension "/properties/piece.ext"}
-	{props "dummy" "tiny" "steel" "small" "nocover" "ps_dummy"}
+	{props "ufb_persistent_debris" "dummy" "tiny" "steel" "small" "nocover" "ps_dummy"}
 	{collider "particle.small"}
 	{mass 2}
 }

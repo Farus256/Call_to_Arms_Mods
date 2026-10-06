@@ -102,7 +102,7 @@
 		{remove dissolve}
 		{entity "piece_medium_concrete"}
 		{entity "piece_medium_ice"}
-		{entity "piece_medium_sand"}
+		; UFB: moved to bounded metal-fragment group
 		; UFB: moved to bounded metal-fragment group
 		; UFB: moved to bounded metal-fragment group
 		{entity "piece_medium_wood"}
@@ -184,5 +184,11 @@
   {remove dissolve}
   {entity "piece_medium_steel"}
   {entity "piece_medium_steel_construction"}
+ }
+
+ {group "ufb_sandbag_debris" gameentity
+  {limit 1024}
+  {remove dissolve}
+  {entity "piece_medium_sand"}
  }
 }

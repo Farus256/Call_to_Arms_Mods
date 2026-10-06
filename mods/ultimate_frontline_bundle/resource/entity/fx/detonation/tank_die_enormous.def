@@ -608,7 +608,9 @@
 			}
 		}
 		{#+ notifyowner}
-	}
+	
+  {mover {collisions {terrain} {restitution 0.15}} {nodependonwind}}
+ }
 	{#+ particleview "pieces fx"
 		{## delay 0.07}
 		{entitygenerator
@@ -637,7 +639,9 @@
 			}
 		}
 		{#+ notifyowner}
-	}
+	
+  {mover {collisions {terrain} {restitution 0.15}} {nodependonwind}}
+ }
 	{#+ spriteview "halo main"
 		{sprite "$/flash/halo03"
 			{timer
