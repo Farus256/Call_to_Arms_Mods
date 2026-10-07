@@ -15,6 +15,7 @@ for(const [from,to] of [['start_personage','ufb_wound_start'],['stop_personage',
 }
 const cancel=event(human.children,'lie_wounded_animation_stop');
 check(s.all(cancel,n=>s.name(n)==='kill_delay'&&n.tokens[1]?.value==='ufb_wound_animation').length===1,'mission stop cancels pending animation');
+check(s.all(cancel,n=>s.name(n)==='kill_delay'&&n.tokens[1]?.value==='ufb_wound_death_pose').length===1,'mission stop also cancels delayed death pose');
 check(!s.all({children:events},n=>['clear_inventory','spawn','delete'].includes(s.name(n))).length,'no inventory deletion or replacement items');
 const drop=s.all({children:events},n=>s.name(n)==='holder_drop');
 check(drop.length===1&&drop[0].tokens[1].value==='hand_right','drop only the existing right-hand item');
@@ -27,7 +28,7 @@ check(rolls[1].tokens.slice(-4).map(t=>t.value).join(' ')==='else rand 0.5 else'
 class Actor{
  constructor(rolls=[0.1,0.1]){
   this.rolls=[...rolls];this.tags=new Set(['start_personage']);this.personage=true;this.water=false;this.dead=false;
-  this.time=0;this.timers=new Map();this.animations=new Set();this.hand={id:17,kind:'rifle'};this.dropped=[];this.rollCount=0;
+  this.time=0;this.timers=new Map();this.animations=new Set();this.animationCalls=[];this.burned=false;this.blast=false;this.hand={id:17,kind:'rifle'};this.dropped=[];this.rollCount=0;
  }
  event(name){this.run(event(events,name).children);}
  condition(tokens){let t=[...tokens],invert=t[0]==='not';if(invert)t.shift();let value;
@@ -36,6 +37,8 @@ class Actor{
   else if(t[0]==='terrain_fx')value=this.water;
   else if(t[0]==='personage')value=this.personage;
   else if(t[0]==='dead')value=this.dead;
+  else if(t[0]==='burned')value=this.burned;
+  else if(t[0]==='kill_flags')value=this.blast;
   else throw Error('Unsupported condition '+t);
   return invert?!value:value;
  }
@@ -54,7 +57,7 @@ class Actor{
   else if(op==='holder_drop'){if(this.hand){this.dropped.push(this.hand);this.hand=null;}}
   else if(op==='delay'){const id=t[2]||Symbol();check(!this.timers.has(id),'duplicate timer');this.timers.set(id,{at:this.time+Number(t[1]),nodes:n.children});}
   else if(op==='kill_delay')this.timers.delete(t[1]);
-  else if(op==='ani_play')this.animations.add(t[1]);
+  else if(op==='ani_play'){this.animations.add(t[1]);this.animationCalls.push(t[1]);}
   else if(op==='ani_stop')this.animations.delete(t[1]);
   else throw Error('Unsupported action '+op);
  }}
@@ -75,11 +78,42 @@ a=new Actor();a.event('ufb_wound_start');a.advance(1);a.personage=false;a.tags.d
 check(!a.animations.size&&!a.timers.size,'early revival cancels delayed animation');
 a=new Actor();a.event('ufb_wound_start');a.tags.add('wounded_dead');a.dead=true;a.personage=false;a.advance(3);
 check(!a.animations.size,'finishing off prevents a delayed live-wound loop');a.event('ufb_wound_stop');a.advance(1);
-check(a.animations.has('lie_die'),'death pose limited to dead actor');
+check(!a.animationCalls.includes('lie_die'),'an already finished-off actor does not restart its death pose');
 a=new Actor();a.water=true;a.event('ufb_wound_start');a.advance(3);
 check(a.rollCount===0&&!a.dropped.length&&!a.animations.size,'water does not get land-wound animation');
 a=new Actor();a.hand=null;a.event('ufb_wound_start');a.advance(3);
 check(!a.dropped.length&&a.animations.has('lie_wounded'),'empty hand remains safe, no duplicated item');
 a=new Actor([0.9,0.1,0.1]);a.event('ufb_wound_start');a.event('ufb_wound_stop');a.advance(1);a.tags.add('start_personage');a.event('ufb_wound_start');a.advance(3);
 check(a.rollCount===3&&a.dropped.length===1,'new wound episode gets a new independent choice');
+
+// Regression: still/early-finished wounds keep the engine-selected death pose.
+a=new Actor([0.9]);a.event('ufb_wound_start');a.dead=true;a.personage=false;a.event('ufb_wound_stop');a.advance(1);
+check(!a.animationCalls.includes('lie_die'),'still wounded is not switched to an animated death pose');
+a=new Actor();a.event('ufb_wound_start');a.dead=true;a.personage=false;a.advance(3);
+check(!a.animations.size,'death without wounded_dead tag still blocks the delayed living loop');
+// An actual running wound loop gets one ordinary bleedout transition.
+a=new Actor();a.event('ufb_wound_start');a.advance(3);a.dead=true;a.personage=false;a.event('ufb_wound_stop');a.advance(1);
+check(a.animationCalls.filter(n=>n==='lie_die').length===1,'animated bleedout transitions exactly once');
+a.event('ufb_wound_stop');a.advance(1);
+check(a.animationCalls.filter(n=>n==='lie_die').length===1,'duplicate stop cannot restart death');
+for(const mode of ['burned','burn_animation','blast','water']){
+ a=new Actor();a.event('ufb_wound_start');a.advance(3);a.dead=true;a.personage=false;
+ if(mode==='burn_animation')a.tags.add(mode);else a[mode]=true;
+ a.event('ufb_wound_stop');a.advance(1);
+ check(!a.animations.has('lie_die')&&!a.tags.has('wounded_animation_playing'),'special death is preserved: '+mode);
+}
+// A revived man wounded again before the old one-second timer must be untouched.
+a=new Actor([0.1,0.1,0.9]);a.event('ufb_wound_start');a.advance(3);a.personage=false;a.event('ufb_wound_stop');a.advance(0.2);
+a.personage=true;a.tags.add('start_personage');a.event('ufb_wound_start');a.dead=true;a.personage=false;a.advance(1);
+check(!a.animations.has('lie_die'),'new wound episode cancels old death-pose callback');
+a=new Actor();a.event('ufb_wound_start');a.advance(3);a.dead=true;a.personage=false;a.event('ufb_wound_stop');a.event('ufb_wound_stop');a.advance(1);
+check(a.animationCalls.filter(n=>n==='lie_die').length===1,'duplicate stop before the timer keeps the one pending transition');
+a=new Actor();a.event('ufb_wound_start');a.run(cancel.children);a.advance(4);
+check(!a.animations.size&&!a.timers.size,'mission stop cancels a not-yet-started wound loop');
+a=new Actor();a.event('ufb_wound_start');a.advance(3);a.dead=true;a.personage=false;a.event('ufb_wound_stop');a.run(cancel.children);a.advance(1);
+check(!a.animations.size&&!a.timers.size,'mission stop cancels the pending death transition');
+for(const mode of ['burned','burn_animation']){
+ a=new Actor();a.event('ufb_wound_start');if(mode==='burn_animation')a.tags.add(mode);else a[mode]=true;a.advance(3);
+ check(!a.animations.size,'burning cannot start a late wound loop: '+mode);
+}
 console.log(`Wounds: ${checks} checks passed. Native holder placement and rendered animations require battle verification.`);

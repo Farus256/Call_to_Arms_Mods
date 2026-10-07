@@ -14,7 +14,7 @@ check(s.all(macro,n=>s.name(n)==='set'&&n.tokens[1].value==='ufb_pool_scheduled'
 const scheduleGuard=macro.children[0];
 const once=s.child(scheduleGuard,'set'),chance=s.child(scheduleGuard,'if');
 check(scheduleGuard.children.indexOf(once)<scheduleGuard.children.indexOf(chance),'no pool: chance is not rerolled on duplicate death callbacks');
-check(chance.tokens[1].value==='rand'&&Number(chance.tokens[2].value)===0.4,'40% corpse pool chance');
+check(cfg.spawnChance===0.04&&chance.tokens[1].value==='rand'&&Number(chance.tokens[2].value)===cfg.spawnChance,'4% corpse pool chance');
 check(s.all(chance,n=>s.name(n)==='delay').length===1,'one timer only after the successful chance roll');
 check(cfg.growthSeconds.join(',')==='120,150,180,210,240,270,300,330,360','growth slowed three times for every variant');
 for(const key of ['dead','not burned','not under_water'])check(s.all(macro,n=>s.name(n)==='if'&&n.tokens.slice(1).map(t=>t.value).join(' ')===key).length===1,'spawn eligibility: '+key);
@@ -84,4 +84,4 @@ const dummy=s.parse(read('set/interaction_entity/dummy.inc'));
 check(!s.all(dummy,n=>s.name(n)==='spawn'&&n.tokens[1]?.value==='bloodstain').length,'body parts cannot bypass corpse timing by spawning a pool on landing');
 for(const f of JSON.parse(fs.readFileSync(path.resolve(__dirname,'../docs/realism/blood-pools.json'))).files)
  check(crypto.createHash('sha256').update(read(f.file)).digest('hex')===f.sha256,'generated file hash');
-console.log(`Blood pools: ${checks} checks passed; onset 10-40s, nine uniform growth durations 120-360s, chance 40%, at most one pool per corpse. Native rendering/handoff requires a new battle.`);
+console.log(`Blood pools: ${checks} checks passed; onset 10-40s, nine uniform growth durations 120-360s, chance ${cfg.spawnChance*100}%, at most one pool per corpse. Native rendering/handoff requires a new battle.`);

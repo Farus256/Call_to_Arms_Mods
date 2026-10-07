@@ -1851,6 +1851,7 @@
 		{ani_stop "lie_wounded_1"}
 		{ani_stop "lie_wounded_2"}
 		{kill_delay "ufb_wound_animation"}
+		{kill_delay "ufb_wound_death_pose"}
 		{tags remove "wounded_animation_playing"}
 	}
 
