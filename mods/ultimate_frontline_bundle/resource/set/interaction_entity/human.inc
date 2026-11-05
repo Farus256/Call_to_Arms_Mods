@@ -500,6 +500,7 @@
 
 	{on blast_hit overload sync
 		{if not dead
+			{if min_energy 0.45 {call "ufb_near_blast"}}
 			{if min_energy 2
 				{call "unhealable"}
 			else min_energy 1.25

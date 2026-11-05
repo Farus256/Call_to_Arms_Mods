@@ -3,7 +3,7 @@
 
 {talk "ally die"			;// on signal "mandie", friendly unit dies in close proximity to speaker
 	("human_phrases" args ally_die)
-	{freq 0.8}
+	{freq 1}
 }
 
 {talk "explosion"			;// on signal "explosion" ?
@@ -169,7 +169,11 @@
 
 {talk "bleeding_out"		;// (interaction script) - called when unit is in personage (revive-able state)
 	("human_phrases" args cries_for_medic)
-	{freq 0.5}
+	{freq 1}
 }
 
 ;/*================ Triggered by Interaction Scripts or Conditions End ================*/
+{talk "ufb_alert_mgun"	;// UFB: scripted, real machine guns only
+	("human_phrases" args alert_mgun)
+	{freq 1}
+}

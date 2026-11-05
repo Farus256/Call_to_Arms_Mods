@@ -9,7 +9,7 @@ const I=(x,type='existance')=>`{with_item {type ${type}} {item "${x}"}}`;
 const players=Array.from({length:17},(_,i)=>i);
 const tagged=x=>`{ignore_captured_by_user 0} {tag ${x}}`;
 // Tunables, in meters unless stated. Real battles may want these adjusted.
-const tune={abandon:80,crewReach:7,fortifyChance:0.6,fortifyMinEnemy:40,deploy:{mg:[40,130],mortar:[60,240]},tankFear:30};
+const tune={abandon:80,crewReach:7,returnClear:110,fortifyChance:0.6,fortifyMinEnemy:40,deploy:{mg:[40,130],mortar:[60,240],at:[60,220]},tankFear:30,bailEnemy:200,surrenderEnemy:15,surrenderFriend:25,calmRetreat:2.2,shakenRetreat:1.4};
 const hmgProps=['muzzle_hmg','muzzle_hmg_dshk','muzzle_hmg_m2hb','c_mg_heavy'];
 // A bunker or ring mount is the cover; 20 mm and the ampulomet can hurt light armor.
 const notAGunPit=[P('bunker'),P('hatch'),P('muzzle_20mm_25mm_auto'),S('dead'),S('inactive'),S('linked')];
@@ -43,6 +43,7 @@ function abandon(kind,gun,enemy){
  {actions
   {"effect" {selector ${tagged('_ufb_gun_flee_%player')}} {effect emit_crew}}
   {"entity_state" {selector ${tagged('_ufb_gun_flee_%player')}} {tag_add _ufb_gun_left_%player}}
+  {"entity_state" {selector {source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_gun_flee_%player')}} {exclude ${S('user_control')}}}} {tag_add _ufb_gun_return_%player}}
   {"con" {text "[UFB gun] crew abandons ${kind} gun: player %player"}}
   {"delay" {time 6}}
   ${clear('_ufb_gun_flee_%player','_ufb_gun_flee_%player')}
@@ -95,7 +96,7 @@ function fortify(size,event){
  const gun=`{source advanced} {ignore_captured_by_user 0} {group
  {select ${T('_ufb_gun_deploy_%player')}}
  {include ${P('cannon_sandbag_'+size)}}
- {exclude ${P('no_sandbags')} ${T('_ufb_gun_fort_checked')}}}`;
+ {exclude ${P('no_sandbags')} ${T('_ufb_gun_fort_checked')} ${T('"+mobilegun"')}}}`;
  return `{"switch"
   {"case" {condition {type see_actors} ${see(gun,anyEnemy,tune.fortifyMinEnemy)}}}
   {"default"
@@ -170,15 +171,170 @@ function fear(){
  }
 }`;
 }
+function gunReturn(){
+ const gun=`{source advanced} {ignore_captured_by_user 0} {group
+ {select ${T('_ufb_gun_return_%player')}}
+ {exclude ${S('inhabited')} ${S('dead')} ${S('inactive')} ${T('destroyed')} ${T('_no-recrew')}}}`;
+ const men=`{source advanced} {ignore_captured_by_user 1} {group
+ {select ${T('_ufb_gun_back_%player')}}
+ {include ${S('operatable')}}
+ {exclude ${S('user_control')} ${S('dead')} ${S('inactive')} ${S('linked')} ${T('repairing')}}}`;
+ const danger=see(men,armor,tune.returnClear);
+ return `{"ufb/gun/return %player"
+ {condition {expression "1 & 2 & !3"} {terms {"1.entities" {selector ${gun}}} {"2.entities" {selector ${men}}} {"3.see_actors" ${danger}}}}
+ {actions
+  {"delay" {time 15}}
+  {"switch"
+   {"case" {condition {type see_actors} ${danger}}}
+   {"default"
+    {"board" {selector ${men}} {vehicle ${gun} {amount 1}}}
+    {"con" {text "[UFB gun] bot crew returns to its gun: player %player"}}
+    ${clear('_ufb_gun_back_%player','_ufb_gun_back_%player')}
+    ${clear('_ufb_gun_return_%player','_ufb_gun_return_%player')}
+   }
+  }
+  ${loop('ufb/gun/return %player',5)}
+ }
+}`;
+}
+function tankBail(){
+ const tank=(extra,exclude)=>`{source advanced} {ignore_captured_by_user 1} {group
+ {select ${P('tank')}}
+ {include {player {player "%player"}} ${S('inhabited')} ${extra}}
+ {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${T('_ufb_tank_bailed')} ${exclude}}}`;
+ const burning=tank(T('burned'),''),helpless=tank(T('gun_broken'),S('chassis_work'));
+ const out=x=>`{"entity_state" {selector ${x}} {tag_add _ufb_tank_bail_%player}}`;
+ return `{"ufb/tank/bail %player"
+ {condition {expression "1 | 2"} {terms {"1.entities" {selector ${burning}}} {"2.see_actors" ${see(helpless,anyEnemy,tune.bailEnemy)}}}}
+ {actions
+  ${out(burning)}
+  {"if" {condition {type see_actors} ${see(helpless,anyEnemy,tune.bailEnemy)}} ${out(helpless)}}
+  {"effect" {selector ${tagged('_ufb_tank_bail_%player')}} {effect emit_crew}}
+  {"entity_state" {selector ${tagged('_ufb_tank_bail_%player')}} {tag_add _ufb_tank_bailed}}
+  ${clear('_ufb_tank_bail_%player','_ufb_tank_bail_%player')}
+  {"con" {text "[UFB tank] crew bails out: player %player"}}
+  ${loop('ufb/tank/bail %player',3)}
+ }
+}`;
+}
+function blastCover(){
+ const men=`{source advanced} {ignore_captured_by_user 1} {group
+ {select ${T('_ufb_blast_new')}}
+ {include {player {player "%player"}} ${S('operatable')}}
+ {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${S('user_control')} ${P('crew')} ${P('repairing')} ${P('throwing')}
+ ${[...protectedHumanTags.filter(x=>x!=='_ufb_autonomy_moving'),'_ufb_combat_busy','_ufb_job_reserved'].map(T).join(' ')}}}`;
+ return `{"ufb/fear/blast %player"
+ {condition {terms {"1.entities" {selector ${men}}}}}
+ {actions
+  {"actor_to_cover" {selector ${men}} {drop orders}}
+  {"entity_state" {selector ${men}} {tag_remove _ufb_blast_new}}
+  ${loop('ufb/fear/blast %player',0.5)}
+ }
+}`;
+}
+function mgShout(){
+ const pair='_ufb_mg_shout_%player',men=`{source advanced} {ignore_captured_by_user 0} {group
+ {select ${P('human')}}
+ {include {player {player "%player"}} ${S('operatable')}}
+ {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}`;
+ const foe=(select,include)=>`{source advanced} {ignore_captured_by_user 0} {group
+ {select ${select}}
+ {include {relation {relation enemy} {player "%player"}} ${S('operatable')} ${include}}
+ {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}`;
+ return `{"ufb/shout/mg %player"
+ {condition {expression "1 | 2"} {terms
+  {"1.see_actors" ${see(men,foe(P('mg_stan'),S('inhabited')),130,pair)}}
+  {"2.see_actors" ${see(men,foe(P('human'),I('mgun','using')+' '+P('shooting')),130,pair)}}
+ }}
+ {actions
+  {"effect" {selector {amount 1} ${tagged(pair)}} {effect ufb_mg_shout}}
+  ${clear(pair,pair)}
+  ${loop('ufb/shout/mg %player',45)}
+ }
+}`;
+}
+// %player is the human capturing a lone wounded bot; HF's fixed player 0 may not be the user outside Conquest.
+function surrender(){
+ const pair='_ufb_surrender_%player',helped='_ufb_surrender_helped_%player';
+ const victim=`{source advanced} {ignore_captured_by_user 0} {group
+ {select ${T('_ufb_was_hit')}}
+ {include ${P('human')} ${S('operatable')} {relation {relation enemy} {player "%player"}}}
+ {exclude ${S('user_control')} ${S('dead')} ${S('inactive')} ${S('linked')} ${T('start_personage')} ${T('_bleedout_')} ${T('wounded_animation_playing')} ${T('_lua_mi')} ${T('_ufb_surrendered')} ${T('medic')}}}`;
+ const captor=`{source advanced} {ignore_captured_by_user 0} {group
+ {select ${P('human')}}
+ {include {player {player "%player"}} ${S('user_control')} ${S('operatable')}}
+ {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}`;
+ const friend=`{source advanced} {ignore_captured_by_user 0} {group
+ {select ${P('human')} ${P('vehicle')}}
+ {include {relation {relation enemy} {player "%player"}} ${S('operatable')}}
+ {exclude ${S('dead')} ${S('inactive')} ${T('_ufb_was_hit')}}}`;
+ const prisoner=tagged(pair),still=`{"actor_state" {selector ${prisoner}} {drop orders} {fire_mode hold} {move_mode hold} {ai_move {mode disable}} {movement {speed slow} {type normal}}}`;
+ return `{"ufb/surrender/mark %player"
+ {condition {terms {"1.see_actors" ${see(victim,captor,tune.surrenderEnemy,pair)}}}}
+ {actions
+  {"delay" {time 2}}
+  ${still}
+  {"entity_state" {selector ${prisoner}} {tag_add _ufb_surrendered}}
+  {"entity_state" {selector ${prisoner}} {tag_add _ufb_native_pickup_initialized}}
+  {"delay" {time 0.25}}
+  {"player" {selector ${prisoner}} {operation set} {player "%player"}}
+  {"delay" {time 0.25}}
+  {"inventory" {selector ${prisoner}} {action drop}}
+  {"delay" {time 2}}
+  ${still}
+  {"delay" {time 0.5}}
+  {"animation" {selector ${prisoner}} {drop "orders sensor"} {collage stand_giveup_1} {cicledelay 9000} {delay 9000} {flags loop}}
+  {"if" {condition {type entities} {selector ${prisoner}}}
+   {"con" {text "[UFB surrender] wounded soldier gives up to player %player"}}
+  }
+  ${clear(pair,pair)}
+  ${loop('ufb/surrender/mark %player',4)}
+ }
+}
+{"ufb/surrender/helped %player"
+ {condition {terms {"1.see_actors" {selector {source advanced} {ignore_captured_by_user 0} {group {select ${T(pair)}}}} {enemy ${friend}} {distance {mode in_range} {min 0} {max ${tune.surrenderFriend}}} {tag {"tag pair"} {"for selector" ${helped}}}}}}
+ {actions
+  ${clear(helped,pair)}
+  ${clear(helped,helped)}
+  ${loop('ufb/surrender/helped %player',0.3)}
+ }
+}`;
+}
+// The engine already weighs nearby strength and shouts "retreat"; these only make bots break sooner.
+function morale(){
+ const bots=(select,exclude)=>`{source advanced} {ignore_captured_by_user 0} {group
+ {select ${select}}
+ {include ${P('human')} ${S('operatable')}}
+ {exclude ${S('user_control')} ${S('dead')} ${S('inactive')} ${S('linked')} ${P('crew')} ${exclude}}}`;
+ const fresh=bots(P('human'),T('_ufb_morale')),hurt=bots(T('_ufb_recent_hit'),T('_ufb_shaken')),calm=bots(T('_ufb_steady'),'');
+ const step=(name,who,ratio,actions)=>`{"${name}"
+ {condition {terms {"1.entities" {selector ${who}}}}}
+ {actions
+  {"actor_state" {selector ${who}} {ai {retreat_ratio "${ratio}"}}}
+  ${actions}
+  ${loop(name,3)}
+ }
+}`;
+ return [step('ufb/morale/profile',fresh,tune.calmRetreat,`{"entity_state" {selector ${fresh}} {tag_add _ufb_morale}}`),
+  step('ufb/morale/shaken',hurt,tune.shakenRetreat,`{"effect" {selector ${hurt}} {effect ufb_shaken}}`),
+  step('ufb/morale/steady',calm,tune.calmRetreat,`${clear('_ufb_steady','_ufb_shaken')}\n  ${clear('_ufb_steady','_ufb_steady')}`)].join('\n');
+}
 function mission(){
- const mg=['mg_stan'],mortar=['mortar'];
+ const mg=['mg_stan'],mortar=['mortar'],at=['sq_at_gun','sq_at_light'];
  let text=`; UFB stationary weapons. See tools/static-weapons.cjs.
+${morale()}
 (define "ufb_static_weapons"
 ${abandon('light',lightGun,armor)}
 ${abandon('heavy',heavyGun,heavyArmor)}
 ${crew()}
 ${deploy('mg',mg,[P('mortar')])}
 ${deploy('mortar',mortar,[])}
+${deploy('at',at,[P('mg_stan'),P('mortar')])}
+${gunReturn()}
+${tankBail()}
+${blastCover()}
+${mgShout()}
+${surrender()}
 ${release()}
 ${fear()}
 )
@@ -193,9 +349,23 @@ function events(){
  {delay 25 {tags remove "_ufb_tank_fear"}}
 }
 {on "ufb_tank_fear_shout" {talk "alert_tank"}}
+{on "ufb_mg_shout" {talk "ufb_alert_mgun"}}
+{on "ufb_near_blast"
+ {if not tagged "_ufb_blast_cover"
+  {tags add "_ufb_blast_cover"}
+  {tags add "_ufb_blast_new"}
+  {delay 1 {tags remove "_ufb_blast_new"}}
+  {delay 20 {tags remove "_ufb_blast_cover"}}
+ }
+}
+{on "ufb_shaken"
+ {tags add "_ufb_shaken"}
+ {delay 40 {tags add "_ufb_steady"}}
+}
 (define "ufb_gun_events"
  {on "ufb_gun_flee_%player"
   {tags add "_ufb_gun_crew_%player"}
+  {tags add "_ufb_gun_back_%player"}
   {tags add "_lua_mi"}
   {talk "retreat"}
   {call "ufb_gun_flee_point_%player"}
@@ -204,6 +374,7 @@ function events(){
    {tags remove "_lua_mi"}
   }
   {delay 30 {tags remove "_ufb_gun_crew_%player"}}
+  {delay 120 {tags remove "_ufb_gun_back_%player"}}
  }
  {on "ufb_gun_flee_point_%player" sync
   {spawn "ufb_smoke_screen_point" local_offset -700 0 0 constrain_after_dir
@@ -217,18 +388,19 @@ function events(){
  return text;
 }
 // Louder soldiers from the game's own voice sets; only trigger rates change.
-const voiceRates={alert_tank:1,alert_airborne:0.5,in_battle:0.35};
+const voiceRates={alert_tank:1,alert_airborne:0.5,in_battle:0.35,'ally die':1,bleeding_out:1};
+const mgLine='\r\n{talk "ufb_alert_mgun"\t;// UFB: scripted, real machine guns only\r\n\t("human_phrases" args alert_mgun)\r\n\t{freq 1}\r\n}\r\n';
 function voices(base){
  for(const [talk,freq]of Object.entries(voiceRates)){
   const next=base.replace(new RegExp(`(\\{talk "${talk}"[^\\n]*\\r?\\n[^\\n]*\\r?\\n\\s*\\{freq )[0-9.]+`),`$1${freq}`);
   if(next===base)throw Error('Voice rate not found: '+talk);
   base=next;
  }
- return base;
+ return base+mgLine;
 }
 function expected(ref){return [
  {file:'map/multi/ufb_static_weapons.inc',text:mission()},
  {file:'set/interaction_entity/ufb_static_weapon_events.inc',text:events()},
  {file:'set/talk/voicelines_human.inc',text:voices(fs.readFileSync(p.join(ref,'set/talk/voicelines_human.inc'),'latin1'))}
 ];}
-module.exports={mission,events,voices,expected,tune,voiceRates};
+module.exports={mission,events,voices,expected,tune,voiceRates,mgLine};

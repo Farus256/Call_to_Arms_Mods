@@ -17,6 +17,9 @@ const hooks=new Set(['ufb_schedule_corpse_pool','ufb_schedule_bleedout_pool','uf
 let removedHooks=0;
 function withoutPools(node){node.children=node.children.filter(n=>{const remove=['call','include'].includes(s.name(n))&&hooks.has(n.tokens[1]?.value);if(remove)removedHooks++;return !remove;});node.children.forEach(withoutPools);}
 withoutPools(oldHuman);
+// Reviewed later addition: blast reaction hook, unrelated to pools.
+function withoutBlastHook(node){node.children=node.children.filter(n=>!(s.name(n)==='if'&&n.tokens[1]?.value==='min_energy'&&n.tokens[2]?.value==='0.45'&&s.child(n,'call')?.tokens[1]?.value==='ufb_near_blast'));node.children.forEach(withoutBlastHook);}
+withoutBlastHook(human);
 check(removedHooks===3,'baseline contains both death hooks and the include');
 assert.deepEqual(shape(human),shape(oldHuman),'human actions changed beyond the three pool hooks');checks++;
 check(!fs.existsSync(p.join(root,'set/interaction_entity/ufb_corpse_pool.inc')),'pool scheduler file removed');

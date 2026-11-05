@@ -17,7 +17,9 @@
 {on "ufb_combat_hit"
  {if not dead {if not linked {if not tagged "_ufb_recent_hit"
   {tags add "_ufb_recent_hit"}
+  {tags add "_ufb_was_hit"}
   {delay 8 {tags remove "_ufb_recent_hit"}}
+  {delay 90 {tags remove "_ufb_was_hit"}}
  }}}
 }
 
