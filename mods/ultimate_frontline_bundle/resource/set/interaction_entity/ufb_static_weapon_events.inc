@@ -1,9 +1,9 @@
 ; Crew and infantry events for stationary weapon reactions.
 {on "ufb_tank_fear"
  {tags add "_ufb_tank_fear"}
- {talk "alert_tank"}
  {delay 25 {tags remove "_ufb_tank_fear"}}
 }
+{on "ufb_tank_fear_shout" {talk "alert_tank"}}
 (define "ufb_gun_events"
  {on "ufb_gun_flee_%player"
   {tags add "_ufb_gun_crew_%player"}

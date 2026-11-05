@@ -68,7 +68,7 @@ function enemy({kind,paired=false,vehicle=false,mgun=false,cover=false,threat=fa
  const include=[`{relation {relation enemy} {player "%player"}}`,S('operatable'),...(mgun?[I('mgun','using')]:[]),...(cover?[T(`_ufb_combat_cover_%player`)]:[])].join('\n');
  return `{source advanced}\n{ignore_captured_by_user 0}\n{group {select ${select}} {include ${include}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('airborne')} ${T('bleeding')} ${T('_bleedout_')} ${T('wounded_animation_playing')}}}`;
 }
-function see(a,e,min,max,pair){return `{selector ${a}}\n{enemy ${e}}\n{distance {mode in_range} {min ${min}} {max ${max}}}\n{detection visible}${pair?`\n{tag {"tag pair"} {"for selector" ${tag(pair,'actor')}} {"for enemy" ${tag(pair,'target')}}}`:''}`;}
+function see(a,e,min,max,pair){return `{selector ${a}}\n{enemy ${e}}\n{distance {mode in_range} {min ${min}} {max ${max}}}\n{detection visible}${pair?`\n{tag {"tag pair"} {"for selector" ${tag(pair,'pick')}} {"for enemy" ${tag(pair,'target')}}}`:''}`;}
 function friendlyNear(kind){return `{units {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}}\n{near_to {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include {relation {relation ally} {player "%player"}} ${S('operatable')}} {exclude ${S('dead')}}}}\n{distance 12}`;}
 function clear(kind,role){return `{"entity_state" {selector {ignore_captured_by_user 0} {tag ${tag(kind,role)}}} {tag_remove ${tag(kind,role)}}}`;}
 function action(kind,options,name,target){return `{"action" {selector ${actor(kind,{...options,command:true,single:true})}} {action ${name}} {target ${target||`{ignore_captured_by_user 0} {tag ${tag(kind,'target')}}`}}}`;}
@@ -85,6 +85,8 @@ function pairRoutine(kind,options){
  {"ufb/combat/${kind}/acquire %player"
   {condition {terms {"1.see_actors" ${see(acquireActor,enemy({vehicle,mgun,threat}),min,max,kind)}}}}
   {actions
+   {"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag ${tag(kind,'pick')}}} {tag_add ${tag(kind,'actor')}}}
+   ${clear(kind,'pick')}
    {"effect" {selector {ignore_captured_by_user 0} {tag ${tag(kind,'actor')}}} {effect ufb_reserve_job}}
    ${cover?`{"effect" {selector {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}} {effect ufb_combat_probe_cover_%player}}`:''}
    {"delay" {time 6}}
@@ -111,17 +113,17 @@ function pairRoutine(kind,options){
 }
 // Launcher in hand with no armor around: every owner goes back to a firearm. Native
 // weapon choice cannot do it: human_ap.inc gives a launcher holder no infantry targets.
-const launcherTiers={near:{classes:[30,40,50],reach:70},far:{reach:110}};
-const nearLaunchers=launcherTiers.near.classes.map(m=>I('range_'+m,'using'));
-function holder({select=P('human'),include=[],exclude=[]}={}){
+const launcherTiers={near:{classes:[30,40,50],reach:70},far:{classes:[60,70,80,90],reach:110}};
+const launcherClass=tier=>launcherTiers[tier].classes.map(m=>I('range_'+m,'using'));
+function holder({include=[],exclude=[]}={}){
  const busy=blocked.filter(x=>x!=='_ufb_autonomy_moving').map(T);
- return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {select ${select}}\n {include {player {player "%player"}} ${S('operatable')} ${I('rocketlauncher','using')} ${I('weapon bullet')} ${include.join(' ')}}\n {exclude ${[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),P('shooting'),T('_ufb_job_reserved'),T('_ufb_combat_busy'),...busy,...exclude].join(' ')}}\n}`;
+ return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {select ${P('human')}}\n {include {player {player "%player"}} ${S('operatable')} ${I('rocketlauncher','using')} ${I('weapon bullet')} ${include.join(' ')}}\n {exclude ${[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),P('shooting'),T('_ufb_job_reserved'),T('_ufb_combat_busy'),...busy,...exclude].join(' ')}}\n}`;
 }
 function launcherRelease(){
  const keep=T('_ufb_launcher_keep');
  const armed=tier=>{
   const pair=`_ufb_launcher_keep_${tier}_%player`,name=`ufb/launcher/keep ${tier} %player`;
-  const who=tier==='near'?holder({select:nearLaunchers.join(' '),exclude:[keep]}):holder({exclude:[keep,...nearLaunchers]});
+  const who=holder({exclude:[keep,...launcherClass(tier==='near'?'far':'near')]});
   return `{"${name}"
   {condition {terms {"1.see_actors" {selector ${who}} {enemy ${enemy({vehicle:true})}} {distance {mode in_range} {min 0} {max ${launcherTiers[tier].reach}}} {detection visible} {tag {"tag pair"} {"for selector" ${pair}}}}}}
   {actions
@@ -141,7 +143,11 @@ function launcherRelease(){
   {actions
    {"effect" {selector ${holder({exclude:[keep,T('_ufb_launcher_seen')]})}} {effect ufb_launcher_grace}}
    {"if" {condition {type entities} {selector ${ready}}}
+    {"entity_state" {selector ${ready}} {tag_add _ufb_launcher_stow_%player}}
     {"inventory" {selector ${ready}} {action take} {item "weapon bullet"}}
+    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%player}} {tag_remove _ufb_launcher_ready}}
+    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%player}} {tag_remove _ufb_launcher_seen}}
+    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%player}} {tag_remove _ufb_launcher_stow_%player}}
     {"con" {text "[UFB combat] launcher stowed: player %player"}}
    }
    {"delay" {time 2}}
@@ -179,7 +185,7 @@ function events(){
 }
 {on "ufb_launcher_grace"
  {tags add "_ufb_launcher_seen"}
- {delay 12 {tags add "_ufb_launcher_ready"}}
+ {delay 12 {if tagged "_ufb_launcher_seen" {tags add "_ufb_launcher_ready"}}}
  {delay 24 {tags remove "_ufb_launcher_seen"} {tags remove "_ufb_launcher_ready"}}
 }
 {on "ufb_autonomy_move_on" {tags add "_ufb_autonomy_moving"}}

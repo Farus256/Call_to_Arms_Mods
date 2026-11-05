@@ -10,7 +10,7 @@ const players=Array.from({length:17},(_,i)=>i);
 const tagged=x=>`{ignore_captured_by_user 0} {tag ${x}}`;
 // Tunables, in meters unless stated. Real battles may want these adjusted.
 const tune={abandon:80,crewReach:7,fortifyChance:0.6,fortifyMinEnemy:40,deploy:{mg:[40,130],mortar:[60,240]},tankFear:30};
-const hmgProps=['muzzle_hmg','muzzle_hmg_dshk','muzzle_hmg_m2hb'];
+const hmgProps=['muzzle_hmg','muzzle_hmg_dshk','muzzle_hmg_m2hb','c_mg_heavy'];
 // A bunker or ring mount is the cover; 20 mm and the ampulomet can hurt light armor.
 const notAGunPit=[P('bunker'),P('hatch'),P('muzzle_20mm_25mm_auto'),S('dead'),S('inactive'),S('linked')];
 const gunFor=exclude=>`{source advanced} {ignore_captured_by_user 1} {group
@@ -56,7 +56,7 @@ function crew(){
  {include {player {player "%player"}} ${S('operatable')}}
  {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${T('_ufb_gun_crew_%player')}}}`;
  return `{"ufb/gun/crew %player"
- {condition {terms {"1.see_actors" {selector ${fresh}} {enemy ${tagged('_ufb_gun_flee_%player')}}
+ {condition {terms {"1.see_actors" {selector ${fresh}} {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_gun_flee_%player')}}}}
   {distance {mode near_than} {meters ${tune.crewReach}}}
   {tag {"tag pair"} {"for selector" _ufb_gun_crew_new_%player}}
  }}}
@@ -163,6 +163,7 @@ function fear(){
  {condition {terms {"1.see_actors" ${see(soldier,armor,tune.tankFear,'_ufb_tank_fear_new_%player')}}}}
  {actions
   {"effect" {selector ${tagged('_ufb_tank_fear_new_%player')}} {effect ufb_tank_fear}}
+  {"effect" {selector {amount 1} ${tagged('_ufb_tank_fear_new_%player')}} {effect ufb_tank_fear_shout}}
   {"actor_to_cover" {selector ${tagged('_ufb_tank_fear_new_%player')}} {drop orders}}
   ${clear('_ufb_tank_fear_new_%player','_ufb_tank_fear_new_%player')}
   ${loop('ufb/fear/tank %player',3)}
@@ -189,9 +190,9 @@ function events(){
  let text=`; Crew and infantry events for stationary weapon reactions.
 {on "ufb_tank_fear"
  {tags add "_ufb_tank_fear"}
- {talk "alert_tank"}
  {delay 25 {tags remove "_ufb_tank_fear"}}
 }
+{on "ufb_tank_fear_shout" {talk "alert_tank"}}
 (define "ufb_gun_events"
  {on "ufb_gun_flee_%player"
   {tags add "_ufb_gun_crew_%player"}

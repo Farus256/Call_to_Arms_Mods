@@ -4,7 +4,7 @@
  {condition {terms {"1.see_actors" {selector {source advanced} {ignore_captured_by_user 1} {group
  {select {prop {prop mg_stan}} {prop {prop mortar}}}
  {include {player {player "%player"}} {prop {prop cannon}} {state {state operatable}} {state {state inhabited}}}
- {exclude {prop {prop bunker}} {prop {prop hatch}} {prop {prop muzzle_20mm_25mm_auto}} {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_gun_left_%player}} {prop {prop muzzle_hmg}} {prop {prop muzzle_hmg_dshk}} {prop {prop muzzle_hmg_m2hb}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group
+ {exclude {prop {prop bunker}} {prop {prop hatch}} {prop {prop muzzle_20mm_25mm_auto}} {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_gun_left_%player}} {prop {prop muzzle_hmg}} {prop {prop muzzle_hmg_dshk}} {prop {prop muzzle_hmg_m2hb}} {prop {prop c_mg_heavy}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group
  {select {prop {prop tank}} {prop {prop armored_car}}}
  {include {relation {relation enemy} {player "%player"}} {state {state operatable}} }
  {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}}}}} {distance {mode in_range} {min 0} {max 80}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_gun_flee_%player}}}}}
@@ -20,7 +20,7 @@
 }
 {"ufb/gun/abandon heavy %player"
  {condition {terms {"1.see_actors" {selector {source advanced} {ignore_captured_by_user 1} {group
- {select {prop {prop muzzle_hmg}} {prop {prop muzzle_hmg_dshk}} {prop {prop muzzle_hmg_m2hb}}}
+ {select {prop {prop muzzle_hmg}} {prop {prop muzzle_hmg_dshk}} {prop {prop muzzle_hmg_m2hb}} {prop {prop c_mg_heavy}}}
  {include {player {player "%player"}} {prop {prop cannon}} {state {state operatable}} {state {state inhabited}}}
  {exclude {prop {prop bunker}} {prop {prop hatch}} {prop {prop muzzle_20mm_25mm_auto}} {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_gun_left_%player}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group
  {select {prop {prop medium}} {prop {prop heavy}}}
@@ -40,7 +40,7 @@
  {condition {terms {"1.see_actors" {selector {source advanced} {ignore_captured_by_user 1} {group
  {select {prop {prop human}}}
  {include {player {player "%player"}} {state {state operatable}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_gun_crew_%player}}}}} {enemy {ignore_captured_by_user 0} {tag _ufb_gun_flee_%player}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_gun_crew_%player}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag _ufb_gun_flee_%player}}}}}
   {distance {mode near_than} {meters 7}}
   {tag {"tag pair"} {"for selector" _ufb_gun_crew_new_%player}}
  }}}
@@ -264,6 +264,7 @@
  {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}}}}} {distance {mode in_range} {min 0} {max 30}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_tank_fear_new_%player}}}}}
  {actions
   {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_tank_fear_new_%player}} {effect ufb_tank_fear}}
+  {"effect" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_tank_fear_new_%player}} {effect ufb_tank_fear_shout}}
   {"actor_to_cover" {selector {ignore_captured_by_user 0} {tag _ufb_tank_fear_new_%player}} {drop orders}}
   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_tank_fear_new_%player}} {tag_remove _ufb_tank_fear_new_%player}}
   {"delay" {time 3}}

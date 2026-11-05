@@ -60,10 +60,12 @@ class Scene{
   if(type==='near'){return this.select(s.child(n,'units')).some(a=>this.select(s.child(n,'near_to')).some(b=>Math.abs(a.x-b.x)<=Number(value(n,'distance'))));}
   if(type==='see_actors'){
    const distance=s.child(n,'distance'),lo=Number(value(distance,'min')||0),hi=Number(value(distance,'max')||value(distance,'meters'));
+   // HF follows tag pair with {amount 1} actions, so assume every visible pair is tagged.
+   let seen=false;const tag=s.child(n,'tag');
    for(const a of this.select(s.child(n,'selector')))for(const b of this.select(s.child(n,'enemy')))if(a!==b&&b.visible&&Math.abs(a.x-b.x)>=lo&&Math.abs(a.x-b.x)<=hi){
-    const tag=s.child(n,'tag');if(tag){a.tags.add(s.child(tag,'for selector').tokens[1].value);const other=s.child(tag,'for enemy')?.tokens[1].value;if(other)b.tags.add(other);}return true;
+    seen=true;if(!tag)return true;a.tags.add(s.child(tag,'for selector').tokens[1].value);const other=s.child(tag,'for enemy')?.tokens[1].value;if(other)b.tags.add(other);
    }
-   return false;
+   return seen;
   }
   throw Error('Unsupported term '+type);
  }
@@ -382,6 +384,28 @@ test('voice rates change only the three chosen lines',()=>{
  const native=fs.readFileSync(p.join(combat.reference,'set/talk/voicelines_human.inc'),'latin1'),now=text('set/talk/voicelines_human.inc'),rate=(t,n)=>value(s.parse(t).children.find(c=>c.tokens[1]?.value===n),'freq');
  for(const [line,freq]of Object.entries(require('./static-weapons.cjs').voiceRates)){assert.equal(Number(rate(now,line)),freq);checks++;}
  assert.equal(now.replace(/\{freq [0-9.]+\}/g,''),native.replace(/\{freq [0-9.]+\}/g,''));checks++;
+});
+test('several soldiers in range: one owner for the job, the rest stay free',()=>{
+ const a=unit('a',0,0,{shooting:true}),c=unit('c',0,1,{shooting:true}),b=unit('b',1,20,{team:1});b.held=new Set(['mgun']);const w=new Scene([a,c,b]);
+ check(w.run('ap'));check([a,c].filter(e=>e.tags.has('_ufb_job_reserved')).length===1,'reservation spread over the squad');
+ check(w.run('ap','apply'));check(w.commands.filter(x=>x.name==='throw_ap_grenade').length===1);check([a,c].filter(e=>e.tags.has('_ufb_combat_busy')).length===1,'busy spread over the squad');
+});
+test('a launcher drawn again right after stowing gets the full wait',()=>{
+ const z=launcher('range_30');tick(z);check(z.a.held.has('rifle'));check(!z.a.tags.has('_ufb_launcher_ready'));z.a.held=new Set(['weapon','rocketlauncher','range_30']);tick(z,6);check(z.a.held.has('rocketlauncher'),'redrawn launcher vanished at once');tick(z,20);check(z.a.held.has('rifle'));
+});
+test('13 mm MG 131 counts as a heavy MG',()=>{
+ const stand=gunScene(['mg_stan','c_mg_heavy'],armorUnit(60,['tank','light']));check(!stand.w.named('ufb/gun/abandon light 0'));check(!stand.w.named('ufb/gun/abandon heavy 0'));
+ const go=gunScene(['mg_stan','c_mg_heavy'],armorUnit(60,['tank','heavy']));check(go.w.named('ufb/gun/abandon heavy 0'));
+});
+test('only one soldier shouts when a squad scatters from armor',()=>{
+ const strip=a=>{a.items=a.items.filter(i=>!i.tags.has('rocketlauncher')&&!i.tags.has('at'));return a;};
+ const a=strip(unit('a',0,0,{bot:true})),c=strip(unit('c',0,1,{bot:true})),w=new Scene([a,c,armorUnit(25,['tank'])]);check(w.named('ufb/fear/tank 0'));check(w.commands.filter(x=>x.name==='cover').length===2);check(w.commands.filter(x=>x.line==='alert_tank').length===1);
+});
+test('generated selectors use only forms proven by HF',()=>{
+ for(const [name,n]of triggers){
+  for(const g of s.all(n,x=>s.name(x)==='select'))check(!s.child(g,'with_item')||/ufb\/combat\/smoke/.test(name),'with_item in select: '+name);
+  for(const term of s.all(s.child(n,'condition'),x=>/\.see_actors$/.test(s.name(x)||'')))if(/^ufb\/(gun|launcher|fear)/.test(name))check(s.child(s.child(term,'enemy'),'source'),'simple enemy selector: '+name);
+ }
 });
 test('no condition limits candidates before the distance test',()=>{
  for(const [name,n]of triggers)for(const term of s.all(s.child(n,'condition'),x=>/\.see_actors$/.test(s.name(x)||'')))for(const side of ['selector','enemy'])check(!s.child(s.child(term,side),'amount'),name);

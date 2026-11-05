@@ -9,7 +9,7 @@
 }
 {on "ufb_launcher_grace"
  {tags add "_ufb_launcher_seen"}
- {delay 12 {tags add "_ufb_launcher_ready"}}
+ {delay 12 {if tagged "_ufb_launcher_seen" {tags add "_ufb_launcher_ready"}}}
  {delay 24 {tags remove "_ufb_launcher_seen"} {tags remove "_ufb_launcher_ready"}}
 }
 {on "ufb_autonomy_move_on" {tags add "_ufb_autonomy_moving"}}
