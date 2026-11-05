@@ -11,8 +11,8 @@ function selector({kind,acquire=false,item,player=true,extra=[],exclude=[],using
  {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('crew')} ${P('repairing')} ${P('throwing')}
  ${[...protectedHumanTags,'_ufb_combat_busy'].map(T).join(' ')}
  ${exclude.join(' ')}
- ${acquire?[T('_ufb_job_reserved'),T(actorTag('suppress')),...['mgun','assaultrifle','battlerifle','autorifle','semirifle'].map(k=>T(actorTag('loot_'+k))),...['launcher','at','critical','ap','smoke','idle'].map(k=>T(`_ufb_combat_${k}_actor_%player`))].join(' '):''}
- }}${acquire?' {amount 1}':''}`;
+ ${acquire?[T('_ufb_job_reserved'),T(actorTag('suppress')),...['mgun','assaultrifle','battlerifle','autorifle','semirifle'].map(k=>T(actorTag('loot_'+k))),...['launcher','at','critical','ap','smoke'].map(k=>T(`_ufb_combat_${k}_actor_%player`))].join(' '):''}
+ }}`;
 }
 function support(){
  const init=(medic=false)=>`{source advanced} {ignore_captured_by_user 0} {group
@@ -42,7 +42,7 @@ function support(){
  // inventory creation, replacing a prepared launcher, or stealing from wounded men.
  const common={kind:'loot_%weapon',item:'rifle',extra:[S('user_control')],using:'rifle',exclude:[I('sniper'),I('rocketlauncher','using'),I('loot_riflegrenade'),I('loot_atrifle'),...kinds.map(k=>I('loot_'+k)),T('_ufb_loot_cooldown')]};
  const actor=selector({...common,acquire:true});
- const body=`{source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('hidden')} ${T('_ai_wounded_target_linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}} {amount 1}`;
+ const body=`{source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('hidden')} ${T('_ai_wounded_target_linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}`;
  text+=`
 (define "ufb_player_body_loot"
  {"ufb/support/loot %weapon/acquire %player"
@@ -112,12 +112,12 @@ function suppression(){
  {"ufb/suppress/acquire %player"
   {condition {terms {"1.see_actors"
    {selector ${selector({...base,acquire:true})}}
-   {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('operatable')} {relation {relation enemy} {player "%player"}}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}} {amount 1}}
+   {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('operatable')} {relation {relation enemy} {player "%player"}}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}}
    {distance {mode in_range} {min 20} {max 120}} {detection visible}
    {tag {"tag pair"} {"for selector" ${actorTag('suppress')}} {"for enemy" _ufb_suppress_enemy_%player}}
   }}}
   {actions
-   {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_suppress_enemy_%player}} {effect ufb_suppress_point_%player}}
+   {"effect" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_suppress_enemy_%player}} {effect ufb_suppress_point_%player}}
    {"switch"
     {"case" {condition {type entities} {selector ${point}}}
      {"effect" {selector {ignore_captured_by_user 0} {tag ${actorTag('suppress')}}} {effect ufb_reserve_job}}

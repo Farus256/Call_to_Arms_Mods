@@ -3,6 +3,15 @@
  {tags add "_ufb_job_reserved"}
  {delay 6 {tags remove "_ufb_job_reserved"}}
 }
+{on "ufb_launcher_keep"
+ {tags add "_ufb_launcher_keep"}
+ {delay 10 {tags remove "_ufb_launcher_keep"}}
+}
+{on "ufb_launcher_grace"
+ {tags add "_ufb_launcher_seen"}
+ {delay 12 {tags add "_ufb_launcher_ready"}}
+ {delay 24 {tags remove "_ufb_launcher_seen"} {tags remove "_ufb_launcher_ready"}}
+}
 {on "ufb_autonomy_move_on" {tags add "_ufb_autonomy_moving"}}
 {on "ufb_autonomy_move_off" {tags remove "_ufb_autonomy_moving"}}
 {on "ufb_combat_hit"
@@ -80,3 +89,4 @@
 ("ufb_combat_target_events" player(16))
 
 (include "ufb_infantry_support_events.inc")
+(include "ufb_static_weapon_events.inc")

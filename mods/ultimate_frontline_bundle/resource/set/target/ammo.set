@@ -750,6 +750,7 @@
 		{"zenite apcr"}										; autocannon AP/APCR ammo
 		
 		{"hmgun" {volume "mover"}}							; heavy machine gun (.50 cal, etc)
+		{"hmgun" {volume "body"}}		; UFB: keep firing once the tracks are gone
 		{"flame" {volume "engine"}}							; ammo for flamethrowers
 		{"flame"}											; ammo for flamethrowers
 		{"glass ic" {volume "engine"}}										; flame shell (Ampulomet glass ball)
@@ -774,6 +775,8 @@
 		{"ammo rifle_grenade_at" {volume "body"}}			; rifle grenade HEAT ammo
 		
 		{"ptr" {volume "mover"}}							; anti-tank rifle ammo
+		{"hmgun" {volume "mover"}}		; UFB: heavy MG at running gear
+		{"hmgun" {volume "body"}}		; UFB: keep firing once the tracks are gone
 
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"grenade at" {volume "engine"}}					; anti-tank grenade
@@ -864,6 +867,8 @@
 		{"dynamite"}										; explosive charges
 		{"ptr" {volume "mover"}}							; anti-tank rifle ammo
 		{"ptr" {volume "body"}}								; anti-tank rifle ammo
+		{"hmgun" {volume "mover"}}		; UFB: heavy MG at running gear
+		{"hmgun" {volume "body"}}		; UFB: keep firing once the tracks are gone
 		{"light"}											; ammo for binoculars and other vision devices
 		{"big mortar all_he"}								; 120mm HE mortar ammo
 		{"mortar all_he" {volume "engine"}}					; HE mortar ammo
@@ -985,6 +990,8 @@
 
 		{"shell hv_ap"}										; cannon high velocity AP ammo types (APCR, HVAP, APDS) (ONLY IF ALREADY LOADED)
 		{"ptr" {volume "mover"}}							; anti-tank rifle ammo
+		{"hmgun" {volume "mover"}}		; UFB: heavy MG at running gear
+		{"hmgun" {volume "body"}}		; UFB: keep firing once the tracks are gone
 		{"glass ic"	  {volume "engine"}}					; flame shell (Ampulomet glass ball)
 		{"grenade fg" {volume "grenade_fg_target"}}			; standard anti-personel grenades
 		{"all_he auto" {disable}}							; auto cannon HE ammo
@@ -1064,6 +1071,8 @@
 
 		{"shell hv_ap"}										; cannon high velocity AP ammo types (APCR, HVAP, APDS) (ONLY IF ALREADY LOADED)
 		{"ptr" {volume "mover"}}							; anti-tank rifle ammo
+		{"hmgun" {volume "mover"}}		; UFB: heavy MG at running gear
+		{"hmgun" {volume "body"}}		; UFB: keep firing once the tracks are gone
 		{"glass ic"	  {volume "engine"}}										; flame shell (Ampulomet glass ball)
 		{"grenade fg" {volume "grenade_fg_target"}}			; standard anti-personel grenades
 		{"all_he auto" {disable}}							; auto cannon HE ammo
