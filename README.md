@@ -54,10 +54,10 @@
 | 9 | Colditz Finland Uncensored | [3139610501](https://steamcommunity.com/sharedfiles/filedetails/?id=3139610501) |
 | 10 | Immersive UI | [2562731625](https://steamcommunity.com/sharedfiles/filedetails/?id=2562731625) |
 | 11 | Conquest — Roll of Honour | [3791314577](https://steamcommunity.com/sharedfiles/filedetails/?id=3791314577) |
-| 12 | PBR Shader — опционально, в текущем профиле не выбран | [3548575715](https://steamcommunity.com/sharedfiles/filedetails/?id=3548575715) |
+| 12 | PBR Shader — опционально, в текущем профиле включён | [3548575715](https://steamcommunity.com/sharedfiles/filedetails/?id=3548575715) |
 | 13 | **ultimate_frontline_bundle** | Локальный мод из этого репозитория |
 
-`ultimate_frontline_bundle` должен загружаться последним. Workshop-мод HF_BM_Patch (3785320541) отдельно не включается: его логика крови уже входит в UFB. PBR не выбран в текущем профиле; два анти-пересветных файла UFB предназначены для совместной работы с исходным PBR. При включении PBR он должен стоять перед UFB. В профиле сохранён набор без опциональной строки PBR — 12 модов. Фактическую активацию после сохранения порядка нужно подтвердить свежим журналом.
+`ultimate_frontline_bundle` должен загружаться последним. Workshop-мод HF_BM_Patch (3785320541) отдельно не включается: его логика крови уже входит в UFB. PBR включён в текущем профиле и стоит перед UFB: два анти-пересветных файла UFB рассчитаны на работу поверх исходного PBR. В профиле 13 модов; фактическую активацию нужно подтвердить свежим журналом.
 
 ## Текущие изменения
 
