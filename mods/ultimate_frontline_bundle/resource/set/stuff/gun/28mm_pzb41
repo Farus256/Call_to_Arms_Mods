@@ -1,0 +1,32 @@
+;_________________________________________
+; early light AT german cannon
+;=========================================
+
+
+{from "pattern gun"			; L/? "28mm_pzb41"
+	{filling "bulletger_28"}
+	{fireSound "cannon/s1/d1/Shared/Autocannon_37to40mm/"}
+	{fireSoundclose "cannon/s1/3p/Shared/Autocannon_37to40mm/"}
+	{reloadSound "utility/"}
+	("range_150")
+	{calibre 28}
+
+	("reload time" seconds(2.75))
+
+	("velocity m/s" ap(1) apcr(1400) he(1400) heat(1))
+	("armor health" damage(75))
+	("20_slope_multipliers")
+
+	; Pzgr. 41
+	{parameters "apcr"
+		{projectileDamageTable {10 101.66363636} {30 94} {100 66} {150 44.18181818} {165 0}}
+		{range 150 150}
+	}
+	{parameters "apcr"
+		{cursorReloading "gun_apcnr"}
+	}
+
+	; Sprgr. 41
+
+	("accuracy_direct" r1(0.88) range_ap(150) range_he(150) range_heat(150))
+}

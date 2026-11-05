@@ -3,7 +3,7 @@
  {if not "ufb_pool_scheduled"
   {set "ufb_pool_scheduled" 1}
   ; Roll once, including corpses which do not produce a pool.
-  {if rand 0.04
+  {if rand 0.05
    {delay %wait 15
    {if dead
     {if not burned

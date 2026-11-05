@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position -204.06 -732.25}
 		{Placer
@@ -218,7 +218,7 @@
 		{MID 7}
 	}
 	{Entity "map_point_conquest" 0x800d
-		{Position 7387.93 570.07}
+		{Position 7383.53 5492.08}
 		{xform zl 180}
 		{Extender "map_point"
 			{name b4}
@@ -285,7 +285,6 @@
 	{Human "" 0x8014
 		{Position -184.79 -1019.09}
 		{xform zl -88.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -304,7 +303,6 @@
 	{Human "" 0x8015
 		{Position 195.93 -680.18}
 		{xform zl 19.61}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -323,7 +321,6 @@
 	{Human "" 0x8016
 		{Position 185.59 -754.56}
 		{xform zl -3.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -342,7 +339,6 @@
 	{Human "" 0x8017
 		{Position 198.11 -642.48}
 		{xform zl 0.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -361,7 +357,6 @@
 	{Human "" 0x8018
 		{Position 177.9 -794.77}
 		{xform zl -50.9}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -380,7 +375,6 @@
 	{Human "" 0x8019
 		{Position 204.91 -720.12}
 		{xform zl -27.4}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -399,7 +393,6 @@
 	{Human "" 0x801a
 		{Position -311.86 -822.71}
 		{xform zl -176.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -418,7 +411,6 @@
 	{Human "" 0x801b
 		{Position -301.16 -793.87}
 		{xform zl 138.78}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -437,7 +429,6 @@
 	{Human "" 0x801c
 		{Position -299.29 -561.17}
 		{xform zl 117.96}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -456,7 +447,6 @@
 	{Human "" 0x801d
 		{Position -309.17 -866.58}
 		{xform zl -176.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -475,7 +465,6 @@
 	{Human "" 0x801e
 		{Position -313.31 -594.31}
 		{xform zl 164.98}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -494,7 +483,6 @@
 	{Human "" 0x801f
 		{Position -172.02 -730.86}
 		{xform zl 180}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -513,7 +501,6 @@
 	{Human "" 0x8020
 		{Position -314.34 -637.99}
 		{xform zl -178.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -532,7 +519,6 @@
 	{Human "" 0x8021
 		{Position -300.18 -903.46}
 		{xform zl -163.37}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -551,7 +537,6 @@
 	{Human "" 0x8022
 		{Position -215.45 -1019.77}
 		{xform zl -88.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -570,7 +555,6 @@
 	{Human "" 0x8023
 		{Position -498.52 -881.32}
 		{xform zl -140.55}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -589,7 +573,6 @@
 	{Human "" 0x8024
 		{Position -694.31 -795.22}
 		{xform zl -169.89}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -608,7 +591,6 @@
 	{Human "" 0x8025
 		{Position -618.49 -647.8}
 		{xform zl -171.1}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -627,7 +609,6 @@
 	{Human "" 0x8026
 		{Position -696.57 -754.34}
 		{xform zl 143.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -646,7 +627,6 @@
 	{Human "" 0x8027
 		{Position -690.71 -834.13}
 		{xform zl -152.55}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -665,7 +645,6 @@
 	{Human "" 0x802b
 		{Position -825.1 -182.56}
 		{xform zl 149.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -684,7 +663,6 @@
 	{Human "" 0x802c
 		{Position -797.3 -1295.28}
 		{xform zl -158}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -703,7 +681,6 @@
 	{Human "" 0x8031
 		{Position -38.47 -753.72}
 		{xform zl -3.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -722,7 +699,6 @@
 	{Human "" 0x8032
 		{Position -63.45 -845.23}
 		{xform zl -66.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -741,7 +717,6 @@
 	{Human "" 0x8033
 		{Position -46.78 -813.35}
 		{xform zl -19.7}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -760,7 +735,6 @@
 	{Human "" 0x8034
 		{Position -40.04 -782.78}
 		{xform zl -3.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -779,7 +753,6 @@
 	{Human "" 0x8035
 		{Position -37.92 -717.08}
 		{xform zl 2.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -798,7 +771,6 @@
 	{Human "" 0x8036
 		{Position -39.5 -684.26}
 		{xform zl 2.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -817,7 +789,6 @@
 	{Human "" 0x8037
 		{Position -42.16 -645.36}
 		{xform zl 11.92}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -836,7 +807,6 @@
 	{Human "" 0x8038
 		{Position -56.55 -609.31}
 		{xform zl 58.94}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -855,7 +825,6 @@
 	{Human "" 0x8039
 		{Position -259.23 -200.6}
 		{xform zl 89.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -874,7 +843,6 @@
 	{Human "" 0x803a
 		{Position -207.05 -161.01}
 		{xform zl 64.69}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -893,7 +861,6 @@
 	{Human "" 0x803b
 		{Position -184.18 -171.83}
 		{xform zl 64.69}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -912,7 +879,6 @@
 	{Human "" 0x803c
 		{Position 374.93 -191.14}
 		{xform zl -1.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -931,7 +897,6 @@
 	{Human "" 0x803d
 		{Position 329.24 -1307.32}
 		{xform zl -57.69}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -950,7 +915,6 @@
 	{Human "" 0x803e
 		{Position -205.51 -1317.48}
 		{xform zl -89.11}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -969,7 +933,6 @@
 	{Human "" 0x803f
 		{Position -170.9 -1309.59}
 		{xform zl -65.13}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -988,7 +951,6 @@
 	{Human "" 0x8040
 		{Position -258.34 -1317.89}
 		{xform zl -23.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1007,7 +969,6 @@
 	{Human "" 0x8041
 		{Position -205.48 -426.75}
 		{xform zl 91.27}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1026,7 +987,6 @@
 	{Human "" 0x8042
 		{Position -235.83 -427.43}
 		{xform zl 91.27}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1097,7 +1057,6 @@
 	{Human "" 0x8044
 		{Position -2547.67 120.34}
 		{xform zl 73.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1116,7 +1075,6 @@
 	{Human "" 0xc002
 		{Position -2143.19 357.13}
 		{xform zl 0.79}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1135,7 +1093,6 @@
 	{Human "" 0xc004
 		{Position -2150.43 286.29}
 		{xform zl -44.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1154,7 +1111,6 @@
 	{Human "" 0xc005
 		{Position -2162.35 381.17}
 		{xform zl 47.82}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1173,7 +1129,6 @@
 	{Human "" 0xc006
 		{Position -2205.15 232.92}
 		{xform zl -83.83}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1192,7 +1147,6 @@
 	{Human "" 0x8048
 		{Position -2146.17 300.19}
 		{xform zl 2.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1211,7 +1165,6 @@
 	{Human "" 0xc008
 		{Position -2639.82 387.97}
 		{xform zl 157.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1230,7 +1183,6 @@
 	{Human "" 0xc009
 		{Position -2598.12 561.51}
 		{xform zl 167.66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1249,7 +1201,6 @@
 	{Human "" 0xc00a
 		{Position -2571.59 615.72}
 		{xform zl 107.23}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1268,7 +1219,6 @@
 	{Human "" 0xc00b
 		{Position -2605.01 530.01}
 		{xform zl 167.66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1287,7 +1237,6 @@
 	{Human "" 0xc00d
 		{Position -2591.52 585.77}
 		{xform zl 154.26}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1306,7 +1255,6 @@
 	{Human "" 0xc00f
 		{Position -2634.06 343.59}
 		{xform zl -134.25}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1325,7 +1273,6 @@
 	{Human "" 0xc010
 		{Position -2640.4 356.68}
 		{xform zl 178.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1344,7 +1291,6 @@
 	{Human "" 0xc012
 		{Position -2619.95 435.13}
 		{xform zl 157.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1363,7 +1309,6 @@
 	{Human "" 0xc013
 		{Position -2492.12 103.33}
 		{xform zl -19.03}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1382,7 +1327,6 @@
 	{Human "" 0xc015
 		{Position -2876.03 575.82}
 		{xform zl 128.32}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1401,7 +1345,6 @@
 	{Human "" 0xc016
 		{Position -2905.53 505.87}
 		{xform zl 142.33}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1420,7 +1363,6 @@
 	{Human "" 0xc017
 		{Position -2901.83 426.04}
 		{xform zl -154.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1439,7 +1381,6 @@
 	{Human "" 0xc018
 		{Position -2903.81 464.97}
 		{xform zl -170.66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1458,7 +1399,6 @@
 	{Human "" 0xc019
 		{Position -2883.86 536.23}
 		{xform zl 158.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1477,7 +1417,6 @@
 	{Human "" 0xc01a
 		{Position -3049.24 705.92}
 		{xform zl 169.27}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1496,7 +1435,6 @@
 	{Human "" 0xc01b
 		{Position -3089.24 5.85}
 		{xform zl -161.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1515,7 +1453,6 @@
 	{Human "" 0xc01c
 		{Position -2313.83 617.92}
 		{xform zl 15.9}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1534,7 +1471,6 @@
 	{Human "" 0xc01d
 		{Position -2490.96 433.95}
 		{xform zl -21.25}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1553,7 +1489,6 @@
 	{Human "" 0xc01e
 		{Position -2471.82 485.5}
 		{xform zl -18.19}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1572,7 +1507,6 @@
 	{Human "" 0xc01f
 		{Position -2315.35 553.34}
 		{xform zl -2.94}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1591,7 +1525,6 @@
 	{Human "" 0xc020
 		{Position -2313.37 585.05}
 		{xform zl -5.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1610,7 +1543,6 @@
 	{Human "" 0xc021
 		{Position -2534.03 350.93}
 		{xform zl -73.94}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1629,7 +1561,6 @@
 	{Human "" 0xc022
 		{Position -2523.42 360.88}
 		{xform zl -26.91}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1648,7 +1579,6 @@
 	{Human "" 0xc023
 		{Position -2506.78 393.27}
 		{xform zl -21.25}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1667,7 +1597,6 @@
 	{Human "" 0xc024
 		{Position -2503.26 1271.27}
 		{xform zl 144.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1686,7 +1615,6 @@
 	{Human "" 0xc025
 		{Position -2071.51 1106.84}
 		{xform zl 40.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1705,7 +1633,6 @@
 	{Human "" 0xc026
 		{Position -2243.12 1109.86}
 		{xform zl -8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1724,7 +1651,6 @@
 	{Human "" 0xc027
 		{Position -1687.24 513.44}
 		{xform zl -22.59}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1743,7 +1669,6 @@
 	{Human "" 0xc028
 		{Position -1919.61 31.34}
 		{xform zl -50.6}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1762,7 +1687,6 @@
 	{Human "" 0xc029
 		{Position -2434.87 -265.43}
 		{xform zl -93.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1781,7 +1705,6 @@
 	{Human "" 0xc02a
 		{Position -2396.33 -260.92}
 		{xform zl -46.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1800,7 +1723,6 @@
 	{Human "" 0xc02b
 		{Position -2597.69 -144.42}
 		{xform zl -107.66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1819,7 +1741,6 @@
 	{Human "" 0xc02c
 		{Position -2404.62 936.92}
 		{xform zl 83.33}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1838,7 +1759,6 @@
 	{Human "" 0xc02d
 		{Position -2373.54 933.28}
 		{xform zl 83.33}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1945,7 +1865,6 @@
 	{Human "" 0xc044
 		{Position 3038.2 -1365.98}
 		{xform zl -88.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1964,7 +1883,6 @@
 	{Human "" 0xc045
 		{Position 3457 -1009.53}
 		{xform zl 19.62}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1983,7 +1901,6 @@
 	{Human "" 0xc046
 		{Position 3446.58 -1085.17}
 		{xform zl -3.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2002,7 +1919,6 @@
 	{Human "" 0xc047
 		{Position 3459.17 -971.84}
 		{xform zl 0.79}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2021,7 +1937,6 @@
 	{Human "" 0xc048
 		{Position 3442.6 -1116.86}
 		{xform zl -29.92}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2040,7 +1955,6 @@
 	{Human "" 0xc049
 		{Position 3465.98 -1049.47}
 		{xform zl -27.4}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2059,7 +1973,6 @@
 	{Human "" 0xc04a
 		{Position 2889.2 -1081.03}
 		{xform zl -176.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2078,7 +1991,6 @@
 	{Human "" 0xc04b
 		{Position 2887.55 -1009.72}
 		{xform zl -178.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2097,7 +2009,6 @@
 	{Human "" 0xc04c
 		{Position 2904.12 -949.73}
 		{xform zl 119.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2116,7 +2027,6 @@
 	{Human "" 0xc04d
 		{Position 2888.36 -1053.84}
 		{xform zl -178.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2135,7 +2045,6 @@
 	{Human "" 0xc04e
 		{Position 2891.79 -980.53}
 		{xform zl 166.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2154,7 +2063,6 @@
 	{Human "" 0xc04f
 		{Position 2913.26 -1175.21}
 		{xform zl -133.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2173,7 +2081,6 @@
 	{Human "" 0xc050
 		{Position 2899.1 -1153}
 		{xform zl -154.81}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2192,7 +2099,6 @@
 	{Human "" 0xc051
 		{Position 2890.96 -1109.75}
 		{xform zl -176.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2211,7 +2117,6 @@
 	{Human "" 0xc052
 		{Position 3009.42 -1366.62}
 		{xform zl -88.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2230,7 +2135,6 @@
 	{Human "" 0xc053
 		{Position 2571.52 -968.32}
 		{xform zl 162.48}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2249,7 +2153,6 @@
 	{Human "" 0xc054
 		{Position 2706.99 -1121.67}
 		{xform zl 135.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2268,7 +2171,6 @@
 	{Human "" 0xc055
 		{Position 2709.97 -1193.34}
 		{xform zl -152.33}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2287,7 +2189,6 @@
 	{Human "" 0xc056
 		{Position 2704.15 -1162.51}
 		{xform zl -177.02}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2306,7 +2207,6 @@
 	{Human "" 0xc057
 		{Position 2573.27 -992.3}
 		{xform zl -171.48}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2325,7 +2225,6 @@
 	{Human "" 0xc058
 		{Position 2577.68 -500.8}
 		{xform zl 138.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2344,7 +2243,6 @@
 	{Human "" 0xc059
 		{Position 2532.46 -1601.58}
 		{xform zl -158.01}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2363,7 +2261,6 @@
 	{Human "" 0xc05a
 		{Position 3222.28 -1032.47}
 		{xform zl 2.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2382,7 +2279,6 @@
 	{Human "" 0xc05b
 		{Position 3202.69 -1164.69}
 		{xform zl -45.73}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2401,7 +2297,6 @@
 	{Human "" 0xc05c
 		{Position 3219.66 -1126.57}
 		{xform zl -3.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2420,7 +2315,6 @@
 	{Human "" 0xc05d
 		{Position 3221.33 -1095.63}
 		{xform zl -3.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2439,7 +2333,6 @@
 	{Human "" 0xc05e
 		{Position 3223 -1064.68}
 		{xform zl -3.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2458,7 +2351,6 @@
 	{Human "" 0xc05f
 		{Position 3220.95 -1004.7}
 		{xform zl 2.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2477,7 +2369,6 @@
 	{Human "" 0xc060
 		{Position 3218.52 -970.85}
 		{xform zl 11.93}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2496,7 +2387,6 @@
 	{Human "" 0xc061
 		{Position 3208.48 -939.55}
 		{xform zl 32.91}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2515,7 +2405,6 @@
 	{Human "" 0xc062
 		{Position 2992.08 -468.82}
 		{xform zl 113.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2534,7 +2423,6 @@
 	{Human "" 0xc063
 		{Position 3016.71 -457.85}
 		{xform zl 113.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2553,7 +2441,6 @@
 	{Human "" 0xc064
 		{Position 3054.5 -466.71}
 		{xform zl 66.97}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2572,7 +2459,6 @@
 	{Human "" 0xc065
 		{Position 3531.28 -681.12}
 		{xform zl -1.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2591,7 +2477,6 @@
 	{Human "" 0xc066
 		{Position 3573.03 -1487.69}
 		{xform zl -43.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2610,7 +2495,6 @@
 	{Human "" 0xc067
 		{Position 3173.69 -1618.74}
 		{xform zl -112.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2629,7 +2513,6 @@
 	{Human "" 0xc068
 		{Position 3204.42 -1610.32}
 		{xform zl -65.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2648,7 +2531,6 @@
 	{Human "" 0xc069
 		{Position 3150.36 -1608.95}
 		{xform zl -112.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2667,7 +2549,6 @@
 	{Human "" 0xc06a
 		{Position 3068.95 -794.14}
 		{xform zl 91.27}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2686,7 +2567,6 @@
 	{Human "" 0xc06b
 		{Position 3015.8 -795.32}
 		{xform zl 91.27}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2793,7 +2673,6 @@
 	{Human "" 0xc082
 		{Position 2709.38 -6014.05}
 		{xform zl 107.2}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2813,7 +2692,6 @@
 		{Position 2871.62 -5363.54 129.95}
 		{xform zl 74.2}
 		{Constrain none}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2833,7 +2711,6 @@
 		{Position 2920.23 -5416.11 129}
 		{xform zl 24.7}
 		{Constrain none}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2853,7 +2730,6 @@
 		{Position 2815.53 -5370.1 131}
 		{xform zl 121.21}
 		{Constrain none}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2873,7 +2749,6 @@
 		{Position 2932.42 -5446.98 129.29}
 		{xform zl -1.32}
 		{Constrain none}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2893,7 +2768,6 @@
 		{Position 2899.46 -5376.01 129}
 		{xform zl 67.05}
 		{Constrain none}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2912,7 +2786,6 @@
 	{Human "" 0xc088
 		{Position 2448.86 -5737.11}
 		{xform zl 165.93}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2931,7 +2804,6 @@
 	{Human "" 0xc089
 		{Position 2467.95 -5682.79}
 		{xform zl 154.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2950,7 +2822,6 @@
 	{Human "" 0xc08a
 		{Position 2517.78 -5626.7}
 		{xform zl 84.01}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2969,7 +2840,6 @@
 	{Human "" 0xc08b
 		{Position 2456.13 -5707.96}
 		{xform zl 154.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2986,28 +2856,19 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xc08c
-		{Position 2483.88 -5649.65}
-		{xform zl 131.04}
-		{SpawnedInFog}
+		{Position 2483.87 -5649.65}
+		{xform zl 131.03}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 144}
-		{Cover
-			{sector 2483.89 -5649.65 {type "squat_lie"}
-				{wall 2475.52 -5647.65 2504.34 -5622.56}
-				{row 0}
-				{link 0xc0b2}
-			}
-		}
 		{FsmState "squat"}
 	}
 	{Human "" 0xc08d
 		{Position 2448.02 -5828.24}
 		{xform zl -127.64}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3026,7 +2887,6 @@
 	{Human "" 0xc08e
 		{Position 2437.86 -5790.78}
 		{xform zl -174.66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3045,7 +2905,6 @@
 	{Human "" 0xc08f
 		{Position 2440.57 -5770.21}
 		{xform zl 165.93}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3064,7 +2923,6 @@
 	{Human "" 0xc090
 		{Position 2665.88 -6027.52}
 		{xform zl 107.2}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3083,7 +2941,6 @@
 	{Human "" 0xc091
 		{Position 2243.87 -5640.58}
 		{xform zl 123.26}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3102,7 +2959,6 @@
 	{Human "" 0xc092
 		{Position 2218 -5691.61}
 		{xform zl 157.42}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3121,7 +2977,6 @@
 	{Human "" 0xc093
 		{Position 2242.48 -5764.31}
 		{xform zl -137.35}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3140,7 +2995,6 @@
 	{Human "" 0xc094
 		{Position 2230.32 -5730.65}
 		{xform zl -155.54}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3159,7 +3013,6 @@
 	{Human "" 0xc095
 		{Position 2227.71 -5668.25}
 		{xform zl 157.42}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3178,7 +3031,6 @@
 	{Human "" 0xc096
 		{Position 2332.26 -5391.44}
 		{xform zl 150.65}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3197,7 +3049,6 @@
 	{Human "" 0xc097
 		{Position 2121.15 -5848.18}
 		{xform zl 164.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3216,7 +3067,6 @@
 	{Human "" 0xc098
 		{Position 2754.02 -5685.94}
 		{xform zl 31.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3235,7 +3085,6 @@
 	{Human "" 0xc099
 		{Position 2768.4 -5709.73}
 		{xform zl 31.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3254,7 +3103,6 @@
 	{Human "" 0xc09a
 		{Position 2768.88 -5760.45}
 		{xform zl -55.57}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3273,7 +3121,6 @@
 	{Human "" 0xc09b
 		{Position 2775.81 -5747.67}
 		{xform zl -8.56}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3292,7 +3139,6 @@
 	{Human "" 0xc09c
 		{Position 2740.09 -5665.84}
 		{xform zl 33.31}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3311,7 +3157,6 @@
 	{Human "" 0xc09d
 		{Position 2721.35 -5637.32}
 		{xform zl 33.31}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3330,26 +3175,17 @@
 	{Human "" 0xc09e
 		{Position 2702.61 -5608.81}
 		{xform zl 33.31}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 162}
-		{Cover
-			{sector 2702.61 -5608.81 {type "snipe_cover"}
-				{wall 2705.71 -5600.79 2752.12 -5671.4}
-				{row 0}
-				{link 0xc0ac}
-			}
-		}
 		{FsmState "snipe"}
 	}
 	{Human "" 0xc09f
 		{Position 2676.59 -5590.78}
 		{xform zl 54.82}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3368,7 +3204,6 @@
 	{Human "" 0xc0a0
 		{Position 2461.42 -5356.45}
 		{xform zl 135.62}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3387,7 +3222,6 @@
 	{Human "" 0xc0a1
 		{Position 2572.89 -5328.09}
 		{xform zl 71.57}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3406,7 +3240,6 @@
 	{Human "" 0xc0a2
 		{Position 2509.81 -5316.58}
 		{xform zl 104.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3425,7 +3258,6 @@
 	{Human "" 0xc0a3
 		{Position 3134.11 -5407.14}
 		{xform zl 47.37}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3444,7 +3276,6 @@
 	{Human "" 0xc0a4
 		{Position 3120.79 -5970.61}
 		{xform zl 80.94}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3463,7 +3294,6 @@
 	{Human "" 0xc0a5
 		{Position 2720.5 -6237.29}
 		{xform zl 121.33}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3482,7 +3312,6 @@
 	{Human "" 0xc0a6
 		{Position 2759.11 -6241.25}
 		{xform zl 74.31}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3501,7 +3330,6 @@
 	{Human "" 0xc0a7
 		{Position 2859.09 -6318.09}
 		{xform zl 134.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3513,7 +3341,6 @@
 	{Human "" 0xc0a8
 		{Position 2567.78 -5479.97}
 		{xform zl 105.23}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3532,7 +3359,6 @@
 	{Human "" 0xc0a9
 		{Position 2523.85 -5491.94}
 		{xform zl 105.23}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3639,7 +3465,6 @@
 	{Human "" 0xc0c0
 		{Position -2534.34 5300.33}
 		{xform zl -91.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3658,7 +3483,6 @@
 	{Human "" 0xc0c1
 		{Position -2536.21 5787.02}
 		{xform zl -39.2}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3677,7 +3501,6 @@
 	{Human "" 0xc0c2
 		{Position -2308.05 5192.24}
 		{xform zl -36.07}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3696,7 +3519,6 @@
 	{Human "" 0xc0c3
 		{Position -2873.03 6027.82}
 		{xform zl -49.56}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3715,7 +3537,6 @@
 	{Human "" 0xc0c4
 		{Position -2335.98 5162.31}
 		{xform zl -83.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3734,7 +3555,6 @@
 	{Human "" 0xc0c5
 		{Position -2304.12 5228.75}
 		{xform zl 31.59}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3753,7 +3573,6 @@
 	{Human "" 0xc0c6
 		{Position -2706.41 5502.52}
 		{xform zl -132.78}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3772,7 +3591,6 @@
 	{Human "" 0xc0c7
 		{Position -2743.6 5548.44}
 		{xform zl -146.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3791,7 +3609,6 @@
 	{Human "" 0xc0c8
 		{Position -2758.78 5571.72}
 		{xform zl -146.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3810,7 +3627,6 @@
 	{Human "" 0xc0c9
 		{Position -2728.41 5525.15}
 		{xform zl -146.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3829,7 +3645,6 @@
 	{Human "" 0xc0ca
 		{Position -2769.4 5603.59}
 		{xform zl -166.34}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3848,7 +3663,6 @@
 	{Human "" 0xc0cb
 		{Position -2615.68 5471.67}
 		{xform zl -63.91}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3867,7 +3681,6 @@
 	{Human "" 0xc0cc
 		{Position -2648.5 5461.12}
 		{xform zl -110.94}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3886,7 +3699,6 @@
 	{Human "" 0xc0cd
 		{Position -2683.68 5481.48}
 		{xform zl -132.78}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3905,7 +3717,6 @@
 	{Human "" 0xc0ce
 		{Position -2564.22 5301.06}
 		{xform zl -91.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3924,7 +3735,6 @@
 	{Human "" 0xc0cf
 		{Position -2871.83 5351.99}
 		{xform zl -138.92}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3943,7 +3753,6 @@
 	{Human "" 0xc0d0
 		{Position -2811.55 5284.34}
 		{xform zl -112.7}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3962,7 +3771,6 @@
 	{Human "" 0xc0d1
 		{Position -2743.12 5282.73}
 		{xform zl -59.38}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3981,7 +3789,6 @@
 	{Human "" 0xc0d2
 		{Position -2777.93 5267.9}
 		{xform zl -106.43}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4000,7 +3807,6 @@
 	{Human "" 0xc0d3
 		{Position -2844.25 5303.39}
 		{xform zl -159.73}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4019,7 +3825,6 @@
 	{Human "" 0xc0d4
 		{Position -3109.55 5167.09}
 		{xform zl -158.07}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4038,7 +3843,6 @@
 	{Human "" 0xc0d5
 		{Position -3081.4 5128.31}
 		{xform zl -123.38}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4057,7 +3861,6 @@
 	{Human "" 0xc0d6
 		{Position -2489.5 5542.09}
 		{xform zl -16.3}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4076,7 +3879,6 @@
 	{Human "" 0xc0d7
 		{Position -2539.44 5464.94}
 		{xform zl -88.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4095,7 +3897,6 @@
 	{Human "" 0xc0d8
 		{Position -2507.8 5488.61}
 		{xform zl -41.23}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4114,7 +3915,6 @@
 	{Human "" 0xc0d9
 		{Position -2498.12 5512.66}
 		{xform zl -16.3}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4133,7 +3933,6 @@
 	{Human "" 0xc0da
 		{Position -2487.84 5571}
 		{xform zl 8.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4152,7 +3951,6 @@
 	{Human "" 0xc0db
 		{Position -2492.48 5600.98}
 		{xform zl 8.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4171,7 +3969,6 @@
 	{Human "" 0xc0dc
 		{Position -2502.8 5633.89}
 		{xform zl 24.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4190,7 +3987,6 @@
 	{Human "" 0xc0dd
 		{Position -2523.33 5662.31}
 		{xform zl 71.96}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4209,7 +4005,6 @@
 	{Human "" 0xc0de
 		{Position -2248.14 6001.42}
 		{xform zl -162.55}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4228,7 +4023,6 @@
 	{Human "" 0xc0df
 		{Position -2194.12 5977.55}
 		{xform zl -90.92}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4247,7 +4041,6 @@
 	{Human "" 0xc0e0
 		{Position -2163.79 6025.09}
 		{xform zl 3.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4266,7 +4059,6 @@
 	{Human "" 0xc0e1
 		{Position -2062.85 5724.1}
 		{xform zl -2.17}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4285,7 +4077,6 @@
 	{Human "" 0xc0e2
 		{Position -2209.57 5035.5}
 		{xform zl -29.75}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4304,7 +4095,6 @@
 	{Human "" 0xc0e3
 		{Position -2562.64 5103.75}
 		{xform zl -116.73}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4323,7 +4113,6 @@
 	{Human "" 0xc0e4
 		{Position -2516.69 5125.65}
 		{xform zl -33.04}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4342,7 +4131,6 @@
 	{Human "" 0xc0e5
 		{Position -2584.92 5133.13}
 		{xform zl -163.36}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4361,7 +4149,6 @@
 	{Human "" 0xc0e6
 		{Position -3017.91 5833.9}
 		{xform zl -114.06}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4380,7 +4167,6 @@
 	{Human "" 0xc0e7
 		{Position -2536.32 5824.24}
 		{xform zl 7.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4675,7 +4461,6 @@
 	}
 	{Human "" 0x800c
 		{Position -3661.22 -276.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4686,7 +4471,6 @@
 	}
 	{Human "" 0x800f
 		{Position -3341.54 1849.61}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4697,7 +4481,6 @@
 	}
 	{Human "" 0x8010
 		{Position -3578.24 -358.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4708,7 +4491,6 @@
 	}
 	{Human "" 0x802d
 		{Position -4875.31 2020.17}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4719,7 +4501,6 @@
 	}
 	{Human "" 0x8066
 		{Position -4481.06 412.37}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4730,7 +4511,6 @@
 	}
 	{Human "" 0x8067
 		{Position -3220.13 2601.5}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4742,7 +4522,6 @@
 	{Human "" 0x8069
 		{Position -3606.25 -1086.77}
 		{xform zl 21.25}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4753,7 +4532,6 @@
 	}
 	{Human "" 0x806a
 		{Position -1623.29 2447.62}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4764,7 +4542,6 @@
 	}
 	{Human "" 0x806c
 		{Position -301.78 1290.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4775,7 +4552,6 @@
 	}
 	{Human "" 0x806d
 		{Position -2378.92 -936.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4786,7 +4562,6 @@
 	}
 	{Human "" 0x806f
 		{Position -5052.02 -2281.45}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4797,7 +4572,6 @@
 	}
 	{Human "" 0x8070
 		{Position -3561.84 -1622.94}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4808,7 +4582,6 @@
 	}
 	{Human "" 0x8072
 		{Position 629.09 2061.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4819,7 +4592,6 @@
 	}
 	{Human "" 0x8073
 		{Position -3003.08 4206.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4830,7 +4602,6 @@
 	}
 	{Human "" 0x8075
 		{Position -4145.81 3964.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4841,7 +4612,6 @@
 	}
 	{Human "" 0x8076
 		{Position -1361.86 -2681.33}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4853,7 +4623,6 @@
 	{Human "" 0x802e
 		{Position -1009.73 -2327.27}
 		{xform zl -0.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4864,7 +4633,6 @@
 	}
 	{Human "" 0x8030
 		{Position -1125.71 117.52}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4875,7 +4643,6 @@
 	}
 	{Human "" 0x8043
 		{Position -2559.62 -1116.01}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4886,7 +4653,6 @@
 	}
 	{Human "" 0x8049
 		{Position -1776.2 -448.97}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4897,7 +4663,6 @@
 	}
 	{Human "" 0xa007
 		{Position -1755.5 107.98}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4908,7 +4673,6 @@
 	}
 	{Human "" 0xa008
 		{Position -2552.61 -490.45}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4919,7 +4683,6 @@
 	}
 	{Human "" 0xa009
 		{Position -581.95 719.91}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4930,7 +4693,6 @@
 	}
 	{Human "" 0xa00a
 		{Position 877.09 -2333.53}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4941,7 +4703,6 @@
 	}
 	{Human "" 0xa00b
 		{Position 1096.56 -1775.56}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4952,7 +4713,6 @@
 	}
 	{Human "" 0xa00c
 		{Position 863.48 -930.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4963,7 +4723,6 @@
 	}
 	{Human "" 0xa00d
 		{Position 3276.15 612.31}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4974,7 +4733,6 @@
 	}
 	{Human "" 0xa00e
 		{Position -2044.15 -3295.68}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4985,7 +4743,6 @@
 	}
 	{Human "" 0xa00f
 		{Position 944.86 -3108.82}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4996,7 +4753,6 @@
 	}
 	{Human "" 0xa010
 		{Position -234.47 1946.61}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5007,7 +4763,6 @@
 	}
 	{Human "" 0xa011
 		{Position -649.34 -2601.62}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5018,7 +4773,6 @@
 	}
 	{Human "" 0xa012
 		{Position 3250.86 2637.09}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5029,7 +4783,6 @@
 	}
 	{Human "" 0xa017
 		{Position 2825.13 -3094.11}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5041,7 +4794,6 @@
 	{Human "" 0xa018
 		{Position 2877.05 -1892.08}
 		{xform zl -7}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5052,7 +4804,6 @@
 	}
 	{Human "" 0xa019
 		{Position 3807.17 -2921}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5063,7 +4814,6 @@
 	}
 	{Human "" 0xa01a
 		{Position 1522.47 -2346.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5074,7 +4824,6 @@
 	}
 	{Human "" 0xa01b
 		{Position 3742.62 35.43}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5085,7 +4834,6 @@
 	}
 	{Human "" 0xa01c
 		{Position 4496.71 476.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5096,7 +4844,6 @@
 	}
 	{Human "" 0xa01d
 		{Position 3398.49 -3097.59}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5107,7 +4854,6 @@
 	}
 	{Human "" 0xa01e
 		{Position 1092.96 -3052.28}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5118,7 +4864,6 @@
 	}
 	{Human "" 0xa01f
 		{Position 4972.96 -2956.07}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5129,7 +4874,6 @@
 	}
 	{Human "" 0xa020
 		{Position 2351.12 -1221.04}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5140,7 +4884,6 @@
 	}
 	{Human "" 0xa021
 		{Position 418.31 -2211.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5151,7 +4894,6 @@
 	}
 	{Human "" 0xa022
 		{Position 310.9 1579.02}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5162,7 +4904,6 @@
 	}
 	{Human "" 0xa023
 		{Position -470.19 836.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5173,7 +4914,6 @@
 	}
 	{Human "" 0xa024
 		{Position 3964.05 -1457.31}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5184,7 +4924,6 @@
 	}
 	{Human "" 0xa025
 		{Position 4842.97 -748.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5195,7 +4934,6 @@
 	}
 	{Human "" 0xa026
 		{Position 3279.47 2647.94}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5206,7 +4944,6 @@
 	}
 	{Human "" 0xa02b
 		{Position 2675.78 -6543.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5217,7 +4954,6 @@
 	}
 	{Human "" 0xa02c
 		{Position 2438.97 -6395.27}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5228,7 +4964,6 @@
 	}
 	{Human "" 0xa02d
 		{Position 3823.13 -5591.09}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5239,7 +4974,6 @@
 	}
 	{Human "" 0xa02e
 		{Position 3453.38 -5875.23}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5250,7 +4984,6 @@
 	}
 	{Human "" 0xa02f
 		{Position 3688.52 -5702.94}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5261,7 +4994,6 @@
 	}
 	{Human "" 0xa030
 		{Position 2892.92 -3216.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5272,7 +5004,6 @@
 	}
 	{Human "" 0xa031
 		{Position 672.63 -4382.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5283,7 +5014,6 @@
 	}
 	{Human "" 0xa032
 		{Position 3439.7 -3108.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5295,7 +5025,6 @@
 	{Human "" 0xa033
 		{Position 1420.48 -6361.61}
 		{xform zl -18}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5307,7 +5036,6 @@
 	{Human "" 0xa034
 		{Position 1729.45 -4972.27}
 		{xform zl -25.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5319,7 +5047,6 @@
 	{Human "" 0xa035
 		{Position 3986.45 -4918.33}
 		{xform zl 13.5}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5330,7 +5057,6 @@
 	}
 	{Human "" 0xa036
 		{Position 1343.66 -5385.78}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5341,7 +5067,6 @@
 	}
 	{Human "" 0xa037
 		{Position 1843.34 -7021.82}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5352,7 +5077,6 @@
 	}
 	{Human "" 0xa038
 		{Position 2828.42 -2855.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5363,7 +5087,6 @@
 	}
 	{Human "" 0xa039
 		{Position 4821.25 -4303.02}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5374,7 +5097,6 @@
 	}
 	{Human "" 0xa03a
 		{Position 217.36 -5159.45}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5385,7 +5107,6 @@
 	}
 	{Human "" 0xa03f
 		{Position -2658.09 7285.93}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5396,7 +5117,6 @@
 	}
 	{Human "" 0xa040
 		{Position -3005.34 4388.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5407,7 +5127,6 @@
 	}
 	{Human "" 0xa041
 		{Position -1235.98 5022.79}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5418,7 +5137,6 @@
 	}
 	{Human "" 0xa042
 		{Position -4426.27 4115.2}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5429,7 +5147,6 @@
 	}
 	{Human "" 0xa043
 		{Position -561.7 5508.64}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5440,7 +5157,6 @@
 	}
 	{Human "" 0xa044
 		{Position -2531.87 6339.97}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5452,7 +5168,6 @@
 	{Human "" 0xa045
 		{Position -2761.62 3699.46}
 		{xform zl 25.75}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5463,7 +5178,6 @@
 	}
 	{Human "" 0xa046
 		{Position -4796.5 5767.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5474,7 +5188,6 @@
 	}
 	{Human "" 0xa047
 		{Position -2680.42 2643.1}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5485,7 +5198,6 @@
 	}
 	{Human "" 0xa048
 		{Position -4964.54 5957.34}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5496,7 +5208,6 @@
 	}
 	{Human "" 0xa049
 		{Position -900.46 3600.77}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5507,7 +5218,6 @@
 	}
 	{Human "" 0xa04a
 		{Position -1365.53 1669.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5518,7 +5228,6 @@
 	}
 	{Human "" 0xa04b
 		{Position -3709.61 5955.13}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5529,7 +5238,6 @@
 	}
 	{Human "" 0xa04c
 		{Position -3430.45 715.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5540,7 +5248,6 @@
 	}
 	{Human "" 0xa04d
 		{Position -141.78 4492.98}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5551,7 +5258,6 @@
 	}
 	{Human "" 0xa04e
 		{Position -4313.15 4030.22}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -14357,9 +14063,6 @@
 		{Volume "1blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
-		{Volume "spin1"
-			{able {contact 1}{contact_ground 1}{touch 1}}
-		}
 		{Volume "2blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -14368,6 +14071,9 @@
 		}
 		{Volume "2blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "spin1"
+			{able {contact 1}{contact_ground 1}{touch 1}}
 		}
 		{Volume "spin2"
 			{able {contact 1}{contact_ground 1}{touch 1}}
@@ -14521,8 +14227,8 @@
 		{xform zl 114.53}
 	}
 	{Entity "arrow_enemy" 0x82e7
-		{Position 6735.4 514.25}
-		{xform zl 105.82}
+		{Position 6731 5436.26}
+		{xform zl 123.55}
 	}
 	{Entity "arrow_enemy" 0x82e8
 		{Position 6459.95 6882.66}
@@ -14541,11 +14247,11 @@
 		{xform zl -70.83}
 	}
 	{Entity "arrow_enemy" 0x82ec
-		{Position -7005.32 -2107.88}
+		{Position -7005.32 -2107.87}
 		{xform zl -66.81}
 	}
 	{Human "mp/fin/late/tank_commander" 0x82ee
-		{Position 8533.74 7379.92}
+		{Position 8533.75 7379.92}
 		{xform zl 178.65}
 		{Volume "body"
 			{able {blast 0}}
@@ -14681,19 +14387,3226 @@
 	{Link 0x8077 {0x8079 "driver"}}
 	{Link 0x82ee {0x82ed "driver"}}
 	{Link 0x82ef {0x82ed "gunner"}}
-	{Tags "fpc1" 0x802f}
-	{Tags "fpc3" 0x8011}
-	{Tags "fpc5" 0x8003}
-	{Tags "fpc4" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
-	{Tags "fpc2" 0x8013}
+	{Tags "aut" 0x600b}
+	{Tags "aut" 0x600c}
+	{Tags "aut" 0x600e}
+	{Tags "aut" 0x2001}
+	{Tags "aut" 0x2003}
+	{Tags "aut" 0x2004}
+	{Tags "aut" 0x2005}
+	{Tags "aut" 0x2007}
+	{Tags "aut" 0x2008}
+	{Tags "aut" 0x2009}
+	{Tags "aut" 0x200a}
+	{Tags "aut" 0x200b}
+	{Tags "aut" 0x200c}
+	{Tags "aut" 0x200d}
+	{Tags "aut" 0x200e}
+	{Tags "aut" 0x200f}
+	{Tags "aut" 0x4030}
+	{Tags "aut" 0x4031}
+	{Tags "aut" 0x4032}
+	{Tags "aut" 0x4033}
+	{Tags "aut" 0x4034}
+	{Tags "aut" 0x4035}
+	{Tags "aut" 0x4036}
+	{Tags "aut" 0x4037}
+	{Tags "aut" 0x4038}
+	{Tags "aut" 0x4039}
+	{Tags "aut" 0x403a}
+	{Tags "aut" 0x403b}
+	{Tags "aut" 0x403c}
+	{Tags "aut" 0x403d}
+	{Tags "aut" 0x403e}
+	{Tags "aut" 0x403f}
+	{Tags "aut" 0x4040}
+	{Tags "aut" 0x4041}
+	{Tags "aut" 0x4042}
+	{Tags "aut" 0x4043}
+	{Tags "aut" 0x4044}
+	{Tags "aut" 0x4045}
+	{Tags "aut" 0x4046}
+	{Tags "aut" 0x4047}
+	{Tags "aut" 0x1000}
+	{Tags "aut" 0x1001}
+	{Tags "aut" 0x1002}
+	{Tags "aut" 0x1003}
+	{Tags "aut" 0x1004}
+	{Tags "aut" 0x1007}
+	{Tags "aut" 0x1009}
+	{Tags "aut" 0x100a}
+	{Tags "aut" 0x100b}
+	{Tags "aut" 0x100c}
+	{Tags "aut" 0x100d}
+	{Tags "aut" 0x100e}
+	{Tags "aut" 0x100f}
+	{Tags "aut" 0x1010}
+	{Tags "aut" 0x1011}
+	{Tags "aut" 0x1012}
+	{Tags "aut" 0x1013}
+	{Tags "aut" 0x1014}
+	{Tags "aut" 0x1015}
+	{Tags "aut" 0x1016}
+	{Tags "aut" 0x1017}
+	{Tags "aut" 0x4048}
+	{Tags "aut" 0x4049}
+	{Tags "aut" 0x157}
+	{Tags "aut" 0x158}
+	{Tags "aut" 0x159}
+	{Tags "aut" 0x15a}
+	{Tags "aut" 0x15b}
+	{Tags "aut" 0x15c}
+	{Tags "aut" 0x15d}
+	{Tags "aut" 0x15e}
+	{Tags "aut" 0x15f}
+	{Tags "aut" 0x160}
+	{Tags "aut" 0x161}
+	{Tags "aut" 0x162}
+	{Tags "aut" 0x163}
+	{Tags "aut" 0x164}
+	{Tags "aut" 0x165}
+	{Tags "aut" 0x166}
+	{Tags "aut" 0x167}
+	{Tags "aut" 0x168}
+	{Tags "aut" 0x169}
+	{Tags "aut" 0x16a}
+	{Tags "aut" 0x16b}
+	{Tags "aut" 0x16c}
+	{Tags "aut" 0x16d}
+	{Tags "aut" 0x16e}
+	{Tags "aut" 0x16f}
+	{Tags "aut" 0x170}
+	{Tags "aut" 0x171}
+	{Tags "aut" 0x172}
+	{Tags "aut" 0x173}
+	{Tags "aut" 0x174}
+	{Tags "aut" 0x175}
+	{Tags "aut" 0x176}
+	{Tags "aut" 0x177}
+	{Tags "aut" 0x178}
+	{Tags "aut" 0x179}
+	{Tags "aut" 0x17a}
+	{Tags "aut" 0x17b}
+	{Tags "aut" 0x17c}
+	{Tags "aut" 0x17d}
+	{Tags "aut" 0x17e}
+	{Tags "aut" 0x17f}
+	{Tags "aut" 0x180}
+	{Tags "aut" 0x181}
+	{Tags "aut" 0x182}
+	{Tags "aut" 0x183}
+	{Tags "aut" 0x184}
+	{Tags "aut" 0x185}
+	{Tags "aut" 0x186}
+	{Tags "aut" 0x187}
+	{Tags "aut" 0x188}
+	{Tags "aut" 0x40ec}
+	{Tags "aut" 0x40ed}
+	{Tags "aut" 0x40ee}
+	{Tags "aut" 0x40ef}
+	{Tags "aut" 0x40f0}
+	{Tags "aut" 0x40f1}
+	{Tags "aut" 0x40f2}
+	{Tags "aut" 0x40f3}
+	{Tags "aut" 0x40f4}
+	{Tags "aut" 0x40f5}
+	{Tags "aut" 0x40f7}
+	{Tags "aut" 0x40f8}
+	{Tags "aut" 0x40f9}
+	{Tags "aut" 0x40fa}
+	{Tags "aut" 0x40fd}
+	{Tags "aut" 0x40fe}
+	{Tags "aut" 0x4103}
+	{Tags "aut" 0x4104}
+	{Tags "aut" 0x4105}
+	{Tags "aut" 0x4106}
+	{Tags "aut" 0x4107}
+	{Tags "aut" 0x4108}
+	{Tags "aut" 0x4109}
+	{Tags "aut" 0x410a}
+	{Tags "aut" 0x410b}
+	{Tags "aut" 0x410c}
+	{Tags "aut" 0x410d}
+	{Tags "aut" 0x410e}
+	{Tags "aut" 0x410f}
+	{Tags "aut" 0x4110}
+	{Tags "aut" 0x4111}
+	{Tags "aut" 0x4112}
+	{Tags "aut" 0x4113}
+	{Tags "aut" 0x4114}
+	{Tags "aut" 0x4115}
+	{Tags "aut" 0x4116}
+	{Tags "aut" 0x4117}
+	{Tags "aut" 0x4124}
+	{Tags "aut" 0x4125}
+	{Tags "aut" 0x4126}
+	{Tags "aut" 0x4127}
+	{Tags "aut" 0x4128}
+	{Tags "aut" 0x4129}
+	{Tags "aut" 0x412a}
+	{Tags "aut" 0x412b}
+	{Tags "aut" 0x412c}
+	{Tags "aut" 0x412d}
+	{Tags "aut" 0x412e}
+	{Tags "aut" 0x412f}
+	{Tags "aut" 0x4130}
+	{Tags "aut" 0x4131}
+	{Tags "aut" 0x4137}
+	{Tags "aut" 0x4138}
+	{Tags "aut" 0x4139}
+	{Tags "aut" 0x413a}
+	{Tags "aut" 0x413b}
+	{Tags "aut" 0x413c}
+	{Tags "aut" 0x413d}
+	{Tags "aut" 0x413e}
+	{Tags "aut" 0x413f}
+	{Tags "aut" 0x4140}
+	{Tags "aut" 0x4141}
+	{Tags "aut" 0x4142}
+	{Tags "aut" 0x4143}
+	{Tags "aut" 0x6006}
+	{Tags "aut" 0x6007}
+	{Tags "aut" 0x6008}
+	{Tags "aut" 0x600d}
+	{Tags "aut" 0x6035}
+	{Tags "aut" 0x6036}
+	{Tags "aut" 0x6037}
+	{Tags "aut" 0x6038}
+	{Tags "aut" 0x18e}
+	{Tags "aut" 0x18f}
+	{Tags "aut" 0x195}
+	{Tags "aut" 0x196}
+	{Tags "aut" 0x197}
+	{Tags "aut" 0x199}
+	{Tags "aut" 0x19b}
+	{Tags "aut" 0x4164}
+	{Tags "aut" 0x4165}
+	{Tags "aut" 0x4166}
+	{Tags "aut" 0x4167}
+	{Tags "aut" 0x4168}
+	{Tags "aut" 0x4169}
+	{Tags "aut" 0x416a}
+	{Tags "aut" 0x416b}
+	{Tags "aut" 0x416c}
+	{Tags "aut" 0x416d}
+	{Tags "aut" 0x416e}
+	{Tags "aut" 0x4172}
+	{Tags "aut" 0x4173}
+	{Tags "aut" 0x4174}
+	{Tags "aut" 0x4175}
+	{Tags "aut" 0x4177}
+	{Tags "aut" 0x4178}
+	{Tags "aut" 0x4179}
+	{Tags "aut" 0x417a}
+	{Tags "aut" 0x417b}
+	{Tags "aut" 0x417c}
+	{Tags "aut" 0x417d}
+	{Tags "aut" 0x417e}
+	{Tags "aut" 0x417f}
+	{Tags "aut" 0x4180}
+	{Tags "aut" 0x4181}
+	{Tags "aut" 0x4182}
+	{Tags "aut" 0x4183}
+	{Tags "aut" 0x4185}
+	{Tags "aut" 0x4186}
+	{Tags "aut" 0x4187}
+	{Tags "aut" 0x4188}
+	{Tags "aut" 0x4189}
+	{Tags "aut" 0x2006}
+	{Tags "aut" 0x2011}
+	{Tags "aut" 0x201a}
+	{Tags "aut" 0x192}
+	{Tags "aut" 0x198}
+	{Tags "aut" 0x19a}
+	{Tags "aut" 0x19c}
+	{Tags "aut" 0x19d}
+	{Tags "aut" 0x2020}
+	{Tags "aut" 0x2021}
+	{Tags "aut" 0x2022}
+	{Tags "aut" 0x2023}
+	{Tags "aut" 0x2030}
+	{Tags "aut" 0x2037}
+	{Tags "aut" 0x2038}
+	{Tags "aut" 0x2039}
+	{Tags "aut" 0x203b}
+	{Tags "aut" 0x203c}
+	{Tags "aut" 0x2042}
+	{Tags "aut" 0x2043}
+	{Tags "aut" 0x2044}
+	{Tags "aut" 0x2045}
+	{Tags "aut" 0x2046}
+	{Tags "aut" 0x2047}
+	{Tags "aut" 0x2048}
+	{Tags "aut" 0x2049}
+	{Tags "aut" 0x204a}
+	{Tags "aut" 0x204b}
+	{Tags "aut" 0x204c}
+	{Tags "aut" 0x204d}
+	{Tags "aut" 0x204e}
+	{Tags "aut" 0x204f}
+	{Tags "aut" 0x2050}
+	{Tags "aut" 0x2051}
+	{Tags "aut" 0x2052}
+	{Tags "aut" 0x2053}
+	{Tags "aut" 0x2054}
+	{Tags "aut" 0x2055}
+	{Tags "aut" 0x2056}
+	{Tags "aut" 0x2057}
+	{Tags "aut" 0x205c}
+	{Tags "aut" 0x205d}
+	{Tags "aut" 0x205e}
+	{Tags "aut" 0x205f}
+	{Tags "aut" 0x2060}
+	{Tags "aut" 0x2061}
+	{Tags "aut" 0x2062}
+	{Tags "aut" 0x2063}
+	{Tags "aut" 0x2064}
+	{Tags "aut" 0x2065}
+	{Tags "aut" 0x2066}
+	{Tags "aut" 0x2067}
+	{Tags "aut" 0x2068}
+	{Tags "aut" 0x2069}
+	{Tags "aut" 0x206a}
+	{Tags "aut" 0x206b}
+	{Tags "aut" 0x206c}
+	{Tags "aut" 0x206d}
+	{Tags "aut" 0x206e}
+	{Tags "aut" 0x206f}
+	{Tags "aut" 0x2070}
+	{Tags "aut" 0x2071}
+	{Tags "aut" 0x2072}
+	{Tags "aut" 0x2073}
+	{Tags "aut" 0x2074}
+	{Tags "aut" 0x2075}
+	{Tags "aut" 0x2076}
+	{Tags "aut" 0x2077}
+	{Tags "aut" 0x2078}
+	{Tags "aut" 0x207d}
+	{Tags "aut" 0x207e}
+	{Tags "aut" 0x2080}
+	{Tags "aut" 0x2081}
+	{Tags "aut" 0x2082}
+	{Tags "aut" 0x2083}
+	{Tags "aut" 0x2084}
+	{Tags "aut" 0x2085}
+	{Tags "aut" 0x2086}
+	{Tags "aut" 0x2087}
+	{Tags "aut" 0x2088}
+	{Tags "aut" 0x208a}
+	{Tags "aut" 0x208b}
+	{Tags "aut" 0x208c}
+	{Tags "aut" 0x208d}
+	{Tags "aut" 0x208e}
+	{Tags "aut" 0x208f}
+	{Tags "aut" 0x2090}
+	{Tags "aut" 0x2092}
+	{Tags "aut" 0x2093}
+	{Tags "aut" 0x2094}
+	{Tags "aut" 0x2095}
+	{Tags "aut" 0x2096}
+	{Tags "aut" 0x2097}
+	{Tags "aut" 0x209b}
+	{Tags "aut" 0x209c}
+	{Tags "aut" 0x209d}
+	{Tags "aut" 0x209f}
+	{Tags "aut" 0x20a0}
+	{Tags "aut" 0x20a1}
+	{Tags "aut" 0x20a2}
+	{Tags "aut" 0x20a3}
+	{Tags "aut" 0x20a4}
+	{Tags "aut" 0x20a5}
+	{Tags "aut" 0x20a6}
+	{Tags "aut" 0x20ab}
+	{Tags "aut" 0x20ac}
+	{Tags "aut" 0x20ad}
+	{Tags "aut" 0x20ae}
+	{Tags "aut" 0x20af}
+	{Tags "aut" 0x20b0}
+	{Tags "aut" 0x20b1}
+	{Tags "aut" 0x20b2}
+	{Tags "aut" 0x20ba}
+	{Tags "aut" 0x20bb}
+	{Tags "aut" 0x20bc}
+	{Tags "aut" 0x20bf}
+	{Tags "aut" 0x20c0}
+	{Tags "aut" 0x20c1}
+	{Tags "aut" 0x20ce}
+	{Tags "aut" 0x20cf}
+	{Tags "aut" 0x20d0}
+	{Tags "aut" 0x20d1}
+	{Tags "aut" 0x20d2}
+	{Tags "aut" 0x20d3}
+	{Tags "aut" 0x20d4}
+	{Tags "aut" 0x20d5}
+	{Tags "aut" 0x20d6}
+	{Tags "aut" 0x20d7}
+	{Tags "aut" 0x20d8}
+	{Tags "aut" 0x20d9}
+	{Tags "aut" 0x20da}
+	{Tags "aut" 0x20db}
+	{Tags "aut" 0x20dc}
+	{Tags "aut" 0x20dd}
+	{Tags "aut" 0x20de}
+	{Tags "aut" 0x20df}
+	{Tags "aut" 0x20e0}
+	{Tags "aut" 0x20e1}
+	{Tags "aut" 0x20e2}
+	{Tags "aut" 0x20e3}
+	{Tags "aut" 0x20e5}
+	{Tags "aut" 0x20e6}
+	{Tags "aut" 0x20e7}
+	{Tags "aut" 0x20e8}
+	{Tags "aut" 0x20e9}
+	{Tags "aut" 0x20ea}
+	{Tags "aut" 0x20eb}
+	{Tags "aut" 0x20ec}
+	{Tags "aut" 0x20ed}
+	{Tags "aut" 0x20ee}
+	{Tags "aut" 0x20f2}
+	{Tags "aut" 0x20f5}
+	{Tags "aut" 0x20f6}
+	{Tags "aut" 0x20f7}
+	{Tags "aut" 0x20f8}
+	{Tags "aut" 0x20f9}
+	{Tags "aut" 0x20fa}
+	{Tags "aut" 0x1ba}
+	{Tags "aut" 0x1cf}
+	{Tags "aut" 0x1d0}
+	{Tags "aut" 0x1d1}
+	{Tags "aut" 0x1d3}
+	{Tags "aut" 0x1d4}
+	{Tags "aut" 0x1d5}
+	{Tags "aut" 0x1d7}
+	{Tags "aut" 0x1da}
+	{Tags "aut" 0x1df}
+	{Tags "aut" 0x1e0}
+	{Tags "aut" 0x1e1}
+	{Tags "aut" 0x1e2}
+	{Tags "aut" 0x1e5}
+	{Tags "aut" 0x1ea}
+	{Tags "aut" 0x1eb}
+	{Tags "aut" 0x1ec}
+	{Tags "aut" 0x1ed}
+	{Tags "aut" 0x1f0}
+	{Tags "aut" 0x1f5}
+	{Tags "aut" 0x1f6}
+	{Tags "aut" 0x1f7}
+	{Tags "aut" 0x1f8}
+	{Tags "aut" 0x1fb}
+	{Tags "aut" 0x1ff}
+	{Tags "aut" 0x202}
+	{Tags "aut" 0x40e0}
+	{Tags "aut" 0x40e3}
+	{Tags "aut" 0x40e6}
+	{Tags "aut" 0x40e7}
+	{Tags "aut" 0x40e9}
+	{Tags "aut" 0x411b}
+	{Tags "aut" 0x4149}
+	{Tags "aut" 0x414a}
+	{Tags "aut" 0x414c}
+	{Tags "aut" 0x4191}
+	{Tags "aut" 0x4192}
+	{Tags "aut" 0x4193}
+	{Tags "aut" 0x4194}
+	{Tags "aut" 0x4195}
+	{Tags "aut" 0x4196}
+	{Tags "aut" 0x4197}
+	{Tags "aut" 0x4198}
+	{Tags "aut" 0x4199}
+	{Tags "aut" 0x419a}
+	{Tags "aut" 0x419b}
+	{Tags "aut" 0x419c}
+	{Tags "aut" 0x419d}
+	{Tags "aut" 0x419e}
+	{Tags "aut" 0x419f}
+	{Tags "aut" 0x41a0}
+	{Tags "aut" 0x41a1}
+	{Tags "aut" 0x41a2}
+	{Tags "aut" 0x41a3}
+	{Tags "aut" 0x41a4}
+	{Tags "aut" 0x41a5}
+	{Tags "aut" 0x41a6}
+	{Tags "aut" 0x41a7}
+	{Tags "aut" 0x41a8}
+	{Tags "aut" 0x41a9}
+	{Tags "aut" 0x41aa}
+	{Tags "aut" 0x41ab}
+	{Tags "aut" 0x41ac}
+	{Tags "aut" 0x41ad}
+	{Tags "aut" 0x41ae}
+	{Tags "aut" 0x41af}
+	{Tags "aut" 0x41b0}
+	{Tags "aut" 0x41b1}
+	{Tags "aut" 0x41b2}
+	{Tags "aut" 0x41b3}
+	{Tags "aut" 0x41b4}
+	{Tags "aut" 0x41b5}
+	{Tags "aut" 0x41b6}
+	{Tags "aut" 0x41b7}
+	{Tags "aut" 0x41b8}
+	{Tags "aut" 0x41b9}
+	{Tags "aut" 0x41ba}
+	{Tags "aut" 0x41bb}
+	{Tags "aut" 0x41bc}
+	{Tags "aut" 0x41bd}
+	{Tags "aut" 0x41be}
+	{Tags "aut" 0x41bf}
+	{Tags "aut" 0x41c0}
+	{Tags "aut" 0x41c1}
+	{Tags "aut" 0x41c2}
+	{Tags "aut" 0x41c3}
+	{Tags "aut" 0x41c4}
+	{Tags "aut" 0x41c5}
+	{Tags "aut" 0x41c6}
+	{Tags "aut" 0x41c7}
+	{Tags "aut" 0x41c8}
+	{Tags "aut" 0x41c9}
+	{Tags "aut" 0x41ca}
+	{Tags "aut" 0x41cb}
+	{Tags "aut" 0x41cc}
+	{Tags "aut" 0x41cd}
+	{Tags "aut" 0x41ce}
+	{Tags "aut" 0x41cf}
+	{Tags "aut" 0x41d0}
+	{Tags "aut" 0x41d1}
+	{Tags "aut" 0x41d2}
+	{Tags "aut" 0x41d3}
+	{Tags "aut" 0x41d4}
+	{Tags "aut" 0x41d5}
+	{Tags "aut" 0x41d6}
+	{Tags "aut" 0x41d7}
+	{Tags "aut" 0x41d8}
+	{Tags "aut" 0x41d9}
+	{Tags "aut" 0x41da}
+	{Tags "aut" 0x41db}
+	{Tags "aut" 0x41dc}
+	{Tags "aut" 0x41dd}
+	{Tags "aut" 0x41de}
+	{Tags "aut" 0x41df}
+	{Tags "aut" 0x41e0}
+	{Tags "aut" 0x41e1}
+	{Tags "aut" 0x41e2}
+	{Tags "aut" 0x41e3}
+	{Tags "aut" 0x41e4}
+	{Tags "aut" 0x41e5}
+	{Tags "aut" 0x41e9}
+	{Tags "aut" 0x41ea}
+	{Tags "aut" 0x41eb}
+	{Tags "aut" 0x41ec}
+	{Tags "aut" 0x41ef}
+	{Tags "aut" 0x41f0}
+	{Tags "aut" 0x41f1}
+	{Tags "aut" 0x41f2}
+	{Tags "aut" 0x41f3}
+	{Tags "aut" 0x41f4}
+	{Tags "aut" 0x41f5}
+	{Tags "aut" 0x41f6}
+	{Tags "aut" 0x41f7}
+	{Tags "aut" 0x41f8}
+	{Tags "aut" 0x41fb}
+	{Tags "aut" 0x41fc}
+	{Tags "aut" 0x41fe}
+	{Tags "aut" 0x41ff}
+	{Tags "aut" 0x4200}
+	{Tags "aut" 0x4201}
+	{Tags "aut" 0x4202}
+	{Tags "aut" 0x4203}
+	{Tags "aut" 0x4205}
+	{Tags "aut" 0x4206}
+	{Tags "aut" 0x4207}
+	{Tags "aut" 0x4208}
+	{Tags "aut" 0x420b}
+	{Tags "aut" 0x420e}
+	{Tags "aut" 0x420f}
+	{Tags "aut" 0x4212}
+	{Tags "aut" 0x4213}
+	{Tags "aut" 0x4219}
+	{Tags "aut" 0x421a}
+	{Tags "aut" 0x421b}
+	{Tags "aut" 0x421c}
+	{Tags "aut" 0x421d}
+	{Tags "aut" 0x421e}
+	{Tags "aut" 0x421f}
+	{Tags "aut" 0x4220}
+	{Tags "aut" 0x4221}
+	{Tags "aut" 0x4222}
+	{Tags "aut" 0x4223}
+	{Tags "aut" 0x4224}
+	{Tags "aut" 0x4225}
+	{Tags "aut" 0x4226}
+	{Tags "aut" 0x4227}
+	{Tags "aut" 0x4228}
+	{Tags "aut" 0x4229}
+	{Tags "aut" 0x422a}
+	{Tags "aut" 0x422b}
+	{Tags "aut" 0x422c}
+	{Tags "aut" 0x422d}
+	{Tags "aut" 0x4230}
+	{Tags "aut" 0x4231}
+	{Tags "aut" 0x4235}
+	{Tags "aut" 0x4238}
+	{Tags "aut" 0x4239}
+	{Tags "aut" 0x423d}
+	{Tags "aut" 0x4241}
+	{Tags "aut" 0x4242}
+	{Tags "aut" 0x4243}
+	{Tags "aut" 0x4244}
+	{Tags "aut" 0x4245}
+	{Tags "aut" 0x4246}
+	{Tags "aut" 0x4247}
+	{Tags "aut" 0x4248}
+	{Tags "aut" 0x4249}
+	{Tags "aut" 0x424a}
+	{Tags "aut" 0x424b}
+	{Tags "aut" 0x424c}
+	{Tags "aut" 0x424d}
+	{Tags "aut" 0x424e}
+	{Tags "aut" 0x424f}
+	{Tags "aut" 0x4250}
+	{Tags "aut" 0x4251}
+	{Tags "aut" 0x4252}
+	{Tags "aut" 0x4253}
+	{Tags "aut" 0x4254}
+	{Tags "aut" 0x4255}
+	{Tags "aut" 0x4256}
+	{Tags "aut" 0x4257}
+	{Tags "aut" 0x4258}
+	{Tags "aut" 0x4259}
+	{Tags "aut" 0x425a}
+	{Tags "aut" 0x425b}
+	{Tags "aut" 0x425c}
+	{Tags "aut" 0x425d}
+	{Tags "aut" 0x425e}
+	{Tags "aut" 0x425f}
+	{Tags "aut" 0x4260}
+	{Tags "aut" 0x4265}
+	{Tags "aut" 0x4266}
+	{Tags "aut" 0x4267}
+	{Tags "aut" 0x4268}
+	{Tags "aut" 0x4269}
+	{Tags "aut" 0x426a}
+	{Tags "aut" 0x426b}
+	{Tags "aut" 0x426c}
+	{Tags "aut" 0x426d}
+	{Tags "aut" 0x426e}
+	{Tags "aut" 0x426f}
+	{Tags "aut" 0x4270}
+	{Tags "aut" 0x4271}
+	{Tags "aut" 0x4272}
+	{Tags "aut" 0x4273}
+	{Tags "aut" 0x4274}
+	{Tags "aut" 0x603a}
+	{Tags "aut" 0x603d}
+	{Tags "aut" 0x603f}
+	{Tags "aut" 0x6040}
+	{Tags "aut" 0x6041}
+	{Tags "aut" 0x6042}
+	{Tags "aut" 0x6046}
+	{Tags "aut" 0x6048}
+	{Tags "aut" 0x6049}
+	{Tags "aut" 0x604a}
+	{Tags "aut" 0x604b}
+	{Tags "aut" 0x604c}
+	{Tags "aut" 0x604d}
+	{Tags "aut" 0x604e}
+	{Tags "aut" 0x6050}
+	{Tags "aut" 0x6053}
+	{Tags "aut" 0x6054}
+	{Tags "aut" 0x6055}
+	{Tags "aut" 0x6057}
+	{Tags "aut" 0x6058}
+	{Tags "aut" 0x6059}
+	{Tags "aut" 0x605d}
+	{Tags "aut" 0x605f}
+	{Tags "aut" 0x6060}
+	{Tags "aut" 0x6061}
+	{Tags "aut" 0x6062}
+	{Tags "aut" 0x6066}
+	{Tags "aut" 0x21e}
+	{Tags "aut" 0x21f}
+	{Tags "aut" 0x220}
+	{Tags "aut" 0x222}
+	{Tags "aut" 0x223}
+	{Tags "aut" 0x224}
+	{Tags "aut" 0x225}
+	{Tags "aut" 0x226}
+	{Tags "aut" 0x227}
+	{Tags "aut" 0x228}
+	{Tags "aut" 0x229}
+	{Tags "aut" 0x22b}
+	{Tags "aut" 0x22c}
+	{Tags "aut" 0x22d}
+	{Tags "aut" 0x22e}
+	{Tags "aut" 0x22f}
+	{Tags "aut" 0x231}
+	{Tags "aut" 0x232}
+	{Tags "aut" 0x233}
+	{Tags "aut" 0x235}
+	{Tags "aut" 0x237}
+	{Tags "aut" 0x238}
+	{Tags "aut" 0x239}
+	{Tags "aut" 0x23c}
+	{Tags "aut" 0x23d}
+	{Tags "aut" 0x23e}
+	{Tags "aut" 0x23f}
+	{Tags "aut" 0x240}
+	{Tags "aut" 0x241}
+	{Tags "aut" 0x242}
+	{Tags "aut" 0x243}
+	{Tags "aut" 0x244}
+	{Tags "aut" 0x245}
+	{Tags "aut" 0x246}
+	{Tags "aut" 0x247}
+	{Tags "aut" 0x248}
+	{Tags "aut" 0x249}
+	{Tags "aut" 0x24a}
+	{Tags "aut" 0x24b}
+	{Tags "aut" 0x24d}
+	{Tags "aut" 0x24f}
+	{Tags "aut" 0x250}
+	{Tags "aut" 0x253}
+	{Tags "aut" 0x256}
+	{Tags "aut" 0x257}
+	{Tags "aut" 0x258}
+	{Tags "aut" 0x259}
+	{Tags "aut" 0x25a}
+	{Tags "aut" 0x25b}
+	{Tags "aut" 0x25c}
+	{Tags "aut" 0x25d}
+	{Tags "aut" 0x25e}
+	{Tags "aut" 0x25f}
+	{Tags "aut" 0x260}
+	{Tags "aut" 0x262}
+	{Tags "aut" 0x264}
+	{Tags "aut" 0x265}
+	{Tags "aut" 0x266}
+	{Tags "aut" 0x267}
+	{Tags "aut" 0x268}
+	{Tags "aut" 0x269}
+	{Tags "aut" 0x26a}
+	{Tags "aut" 0x26b}
+	{Tags "aut" 0x26c}
+	{Tags "aut" 0x26e}
+	{Tags "aut" 0x4278}
+	{Tags "aut" 0x4279}
+	{Tags "aut" 0x427a}
+	{Tags "aut" 0x427b}
+	{Tags "aut" 0x427c}
+	{Tags "aut" 0x427d}
+	{Tags "aut" 0x427e}
+	{Tags "aut" 0x427f}
+	{Tags "aut" 0x4280}
+	{Tags "aut" 0x4281}
+	{Tags "aut" 0x4282}
+	{Tags "aut" 0x4283}
+	{Tags "aut" 0x4284}
+	{Tags "aut" 0x4285}
+	{Tags "aut" 0x4286}
+	{Tags "aut" 0x4287}
+	{Tags "aut" 0x2026}
+	{Tags "aut" 0x2027}
+	{Tags "aut" 0x2028}
+	{Tags "aut" 0x2029}
+	{Tags "aut" 0x202a}
+	{Tags "aut" 0x202b}
+	{Tags "aut" 0x202d}
+	{Tags "aut" 0x202e}
+	{Tags "aut" 0x2031}
+	{Tags "aut" 0x2034}
+	{Tags "aut" 0x2079}
+	{Tags "aut" 0x291}
+	{Tags "aut" 0x292}
+	{Tags "aut" 0x293}
+	{Tags "aut" 0x294}
+	{Tags "aut" 0x295}
+	{Tags "aut" 0x296}
+	{Tags "aut" 0x297}
+	{Tags "aut" 0x298}
+	{Tags "aut" 0x299}
+	{Tags "aut" 0x29a}
+	{Tags "aut" 0x29b}
+	{Tags "aut" 0x29c}
+	{Tags "aut" 0x29d}
+	{Tags "aut" 0x29e}
+	{Tags "aut" 0x29f}
+	{Tags "aut" 0x2a0}
+	{Tags "aut" 0x2a1}
+	{Tags "aut" 0x2a2}
+	{Tags "aut" 0x2a3}
+	{Tags "aut" 0x2a4}
+	{Tags "aut" 0x2a5}
+	{Tags "aut" 0x2a6}
+	{Tags "aut" 0x2a7}
+	{Tags "aut" 0x2a8}
+	{Tags "aut" 0x2a9}
+	{Tags "aut" 0x2aa}
+	{Tags "aut" 0x2af}
+	{Tags "aut" 0x2b0}
+	{Tags "aut" 0x2b1}
+	{Tags "aut" 0x2b2}
+	{Tags "aut" 0x2b3}
+	{Tags "aut" 0x2b4}
+	{Tags "aut" 0x2b5}
+	{Tags "aut" 0x2b6}
+	{Tags "aut" 0x2b7}
+	{Tags "aut" 0x2b8}
+	{Tags "aut" 0x2b9}
+	{Tags "aut" 0x2ba}
+	{Tags "aut" 0x2bb}
+	{Tags "aut" 0x2bc}
+	{Tags "aut" 0x2bd}
+	{Tags "aut" 0x2be}
+	{Tags "aut" 0x2bf}
+	{Tags "aut" 0x2c0}
+	{Tags "aut" 0x2c1}
+	{Tags "aut" 0x2c2}
+	{Tags "aut" 0x2c3}
+	{Tags "aut" 0x2c4}
+	{Tags "aut" 0x2c5}
+	{Tags "aut" 0x2c6}
+	{Tags "aut" 0x2c7}
+	{Tags "aut" 0x2c8}
+	{Tags "aut" 0x2cd}
+	{Tags "aut" 0x2d0}
+	{Tags "aut" 0x2d1}
+	{Tags "aut" 0x2d2}
+	{Tags "aut" 0x2d5}
+	{Tags "aut" 0x2d6}
+	{Tags "aut" 0x2d7}
+	{Tags "aut" 0x2d8}
+	{Tags "aut" 0x2d9}
+	{Tags "aut" 0x42b4}
+	{Tags "aut" 0x42b8}
+	{Tags "aut" 0x42b9}
+	{Tags "aut" 0x42ba}
+	{Tags "aut" 0x42bb}
+	{Tags "aut" 0x42bc}
+	{Tags "aut" 0x42bd}
+	{Tags "aut" 0x42cd}
+	{Tags "aut" 0x42ce}
+	{Tags "aut" 0x42cf}
+	{Tags "aut" 0x42d0}
+	{Tags "aut" 0x42d3}
+	{Tags "aut" 0x42d4}
+	{Tags "aut" 0x42d9}
+	{Tags "aut" 0x42da}
+	{Tags "aut" 0x42db}
+	{Tags "aut" 0x42dd}
+	{Tags "aut" 0x42df}
+	{Tags "aut" 0x42e0}
+	{Tags "aut" 0x42e1}
+	{Tags "aut" 0x42e3}
+	{Tags "aut" 0x42e8}
+	{Tags "aut" 0x42e9}
+	{Tags "aut" 0x42ea}
+	{Tags "aut" 0x42eb}
+	{Tags "aut" 0x42ed}
+	{Tags "aut" 0x42f2}
+	{Tags "aut" 0x42f3}
+	{Tags "aut" 0x42f4}
+	{Tags "aut" 0x42f5}
+	{Tags "aut" 0x42f7}
+	{Tags "aut" 0x42fc}
+	{Tags "aut" 0x42fd}
+	{Tags "aut" 0x42fe}
+	{Tags "aut" 0x42ff}
+	{Tags "aut" 0x4300}
+	{Tags "aut" 0x4303}
+	{Tags "aut" 0x4304}
+	{Tags "aut" 0x4305}
+	{Tags "aut" 0x4306}
+	{Tags "aut" 0x4307}
+	{Tags "aut" 0x4308}
+	{Tags "aut" 0x4309}
+	{Tags "aut" 0x430a}
+	{Tags "aut" 0x430b}
+	{Tags "aut" 0x430e}
+	{Tags "aut" 0x430f}
+	{Tags "aut" 0x4310}
+	{Tags "aut" 0x4311}
+	{Tags "aut" 0x6075}
+	{Tags "aut" 0x101d}
+	{Tags "aut" 0x1040}
+	{Tags "aut" 0x1041}
+	{Tags "aut" 0x1045}
+	{Tags "aut" 0x3007}
+	{Tags "aut" 0x3008}
+	{Tags "aut" 0x2e0}
+	{Tags "aut" 0x2e1}
+	{Tags "aut" 0x2e2}
+	{Tags "aut" 0x2e3}
+	{Tags "aut" 0x2e4}
+	{Tags "aut" 0x2e5}
+	{Tags "aut" 0x2e9}
+	{Tags "aut" 0x2ea}
+	{Tags "aut" 0x2eb}
+	{Tags "aut" 0x2ec}
+	{Tags "aut" 0x2ed}
+	{Tags "aut" 0x2ee}
+	{Tags "aut" 0x2ef}
+	{Tags "aut" 0x2f0}
+	{Tags "aut" 0x2f1}
+	{Tags "aut" 0x2f2}
+	{Tags "aut" 0x2f3}
+	{Tags "aut" 0x2f4}
+	{Tags "aut" 0x2f5}
+	{Tags "aut" 0x2f9}
+	{Tags "aut" 0x2fa}
+	{Tags "aut" 0x2fe}
+	{Tags "aut" 0x2ff}
+	{Tags "aut" 0x300}
+	{Tags "aut" 0x302}
+	{Tags "aut" 0x303}
+	{Tags "aut" 0x304}
+	{Tags "aut" 0x308}
+	{Tags "aut" 0x309}
+	{Tags "aut" 0x30a}
+	{Tags "aut" 0x30b}
+	{Tags "aut" 0x30c}
+	{Tags "aut" 0x30d}
+	{Tags "aut" 0x30e}
+	{Tags "aut" 0x30f}
+	{Tags "aut" 0x310}
+	{Tags "aut" 0x311}
+	{Tags "aut" 0x312}
+	{Tags "aut" 0x42be}
+	{Tags "aut" 0x42bf}
+	{Tags "aut" 0x42c0}
+	{Tags "aut" 0x42c1}
+	{Tags "aut" 0x42c3}
+	{Tags "aut" 0x42c6}
+	{Tags "aut" 0x4314}
+	{Tags "aut" 0x4318}
+	{Tags "aut" 0x431a}
+	{Tags "aut" 0x431b}
+	{Tags "aut" 0x431c}
+	{Tags "aut" 0x431d}
+	{Tags "aut" 0x4323}
+	{Tags "aut" 0x4324}
+	{Tags "aut" 0x4325}
+	{Tags "aut" 0x4326}
+	{Tags "aut" 0x4329}
+	{Tags "aut" 0x432c}
+	{Tags "aut" 0x432d}
+	{Tags "aut" 0x432e}
+	{Tags "aut" 0x432f}
+	{Tags "aut" 0x4330}
+	{Tags "aut" 0x4331}
+	{Tags "aut" 0x4332}
+	{Tags "aut" 0x4333}
+	{Tags "aut" 0x4334}
+	{Tags "aut" 0x4335}
+	{Tags "aut" 0x4338}
+	{Tags "aut" 0x433b}
+	{Tags "aut" 0x433d}
+	{Tags "aut" 0x433e}
+	{Tags "aut" 0x4341}
+	{Tags "aut" 0x4343}
+	{Tags "aut" 0x4344}
+	{Tags "aut" 0x4346}
+	{Tags "aut" 0x4348}
+	{Tags "aut" 0x4349}
+	{Tags "aut" 0x434a}
+	{Tags "aut" 0x434b}
+	{Tags "aut" 0x434c}
+	{Tags "aut" 0x434f}
+	{Tags "aut" 0x4353}
+	{Tags "aut" 0x4354}
+	{Tags "aut" 0x4356}
+	{Tags "aut" 0x4357}
+	{Tags "aut" 0x4358}
+	{Tags "aut" 0x435a}
+	{Tags "aut" 0x435b}
+	{Tags "aut" 0x435c}
+	{Tags "aut" 0x435d}
+	{Tags "aut" 0x4360}
+	{Tags "aut" 0x4361}
+	{Tags "aut" 0x4362}
+	{Tags "aut" 0x4364}
+	{Tags "aut" 0x4365}
+	{Tags "aut" 0x4366}
+	{Tags "aut" 0x4367}
+	{Tags "aut" 0x436f}
+	{Tags "aut" 0x4370}
+	{Tags "aut" 0x4371}
+	{Tags "aut" 0x4372}
+	{Tags "aut" 0x4373}
+	{Tags "aut" 0x4374}
+	{Tags "aut" 0x4375}
+	{Tags "aut" 0x4377}
+	{Tags "aut" 0x4378}
+	{Tags "aut" 0x437a}
+	{Tags "aut" 0x437b}
+	{Tags "aut" 0x437c}
+	{Tags "aut" 0x437d}
+	{Tags "aut" 0x437e}
+	{Tags "aut" 0x437f}
+	{Tags "aut" 0x4380}
+	{Tags "aut" 0x4381}
+	{Tags "aut" 0x4382}
+	{Tags "aut" 0x4383}
+	{Tags "aut" 0x4384}
+	{Tags "aut" 0x4385}
+	{Tags "aut" 0x438c}
+	{Tags "aut" 0x438d}
+	{Tags "aut" 0x438e}
+	{Tags "aut" 0x438f}
+	{Tags "aut" 0x4390}
+	{Tags "aut" 0x4391}
+	{Tags "aut" 0x4392}
+	{Tags "aut" 0x4393}
+	{Tags "aut" 0x4394}
+	{Tags "aut" 0x4395}
+	{Tags "aut" 0x4396}
+	{Tags "aut" 0x4397}
+	{Tags "aut" 0x439d}
+	{Tags "aut" 0x439e}
+	{Tags "aut" 0x439f}
+	{Tags "aut" 0x43a0}
+	{Tags "aut" 0x43a1}
+	{Tags "aut" 0x43a2}
+	{Tags "aut" 0x43a3}
+	{Tags "aut" 0x43a4}
+	{Tags "aut" 0x43a5}
+	{Tags "aut" 0x43a7}
+	{Tags "aut" 0x43a8}
+	{Tags "aut" 0x43aa}
+	{Tags "aut" 0x43ae}
+	{Tags "aut" 0x43af}
+	{Tags "aut" 0x43b0}
+	{Tags "aut" 0x43b1}
+	{Tags "aut" 0x43b2}
+	{Tags "aut" 0x43b3}
+	{Tags "aut" 0x43b4}
+	{Tags "aut" 0x43b5}
+	{Tags "aut" 0x43b6}
+	{Tags "aut" 0x43b7}
+	{Tags "aut" 0x43b8}
+	{Tags "aut" 0x43b9}
+	{Tags "aut" 0x43bb}
+	{Tags "aut" 0x43bc}
+	{Tags "aut" 0x43bd}
+	{Tags "aut" 0x43be}
+	{Tags "aut" 0x43bf}
+	{Tags "aut" 0x43c0}
+	{Tags "aut" 0x43c1}
+	{Tags "aut" 0x43c2}
+	{Tags "aut" 0x43c3}
+	{Tags "aut" 0x43c4}
+	{Tags "aut" 0x43c5}
+	{Tags "aut" 0x43c6}
+	{Tags "aut" 0x43c7}
+	{Tags "aut" 0x43c8}
+	{Tags "aut" 0x43c9}
+	{Tags "aut" 0x43ca}
+	{Tags "aut" 0x43cb}
+	{Tags "aut" 0x43cc}
+	{Tags "aut" 0x43cd}
+	{Tags "aut" 0x43ce}
+	{Tags "aut" 0x43cf}
+	{Tags "aut" 0x43d0}
+	{Tags "aut" 0x43d1}
+	{Tags "aut" 0x43d2}
+	{Tags "aut" 0x43d3}
+	{Tags "aut" 0x43d4}
+	{Tags "aut" 0x43d5}
+	{Tags "aut" 0x43d6}
+	{Tags "aut" 0x43d7}
+	{Tags "aut" 0x43d8}
+	{Tags "aut" 0x43d9}
+	{Tags "aut" 0x43da}
+	{Tags "aut" 0x43db}
+	{Tags "aut" 0x43dc}
+	{Tags "aut" 0x43dd}
+	{Tags "aut" 0x43de}
+	{Tags "aut" 0x43df}
+	{Tags "aut" 0x43e0}
+	{Tags "aut" 0x43e1}
+	{Tags "aut" 0x43e2}
+	{Tags "aut" 0x43e3}
+	{Tags "aut" 0x43e4}
+	{Tags "aut" 0x43e5}
+	{Tags "aut" 0x43e6}
+	{Tags "aut" 0x43e7}
+	{Tags "aut" 0x43ec}
+	{Tags "aut" 0x43ed}
+	{Tags "aut" 0x43ee}
+	{Tags "aut" 0x43ef}
+	{Tags "aut" 0x43f0}
+	{Tags "aut" 0x43f1}
+	{Tags "aut" 0x43f2}
+	{Tags "aut" 0x43f3}
+	{Tags "aut" 0x43f4}
+	{Tags "aut" 0x43f5}
+	{Tags "aut" 0x43f6}
+	{Tags "aut" 0x43f7}
+	{Tags "aut" 0x43f8}
+	{Tags "aut" 0x43f9}
+	{Tags "aut" 0x43fa}
+	{Tags "aut" 0x43fb}
+	{Tags "aut" 0x43fc}
+	{Tags "aut" 0x43fd}
+	{Tags "aut" 0x43fe}
+	{Tags "aut" 0x4403}
+	{Tags "aut" 0x4404}
+	{Tags "aut" 0x4405}
+	{Tags "aut" 0x4406}
+	{Tags "aut" 0x4407}
+	{Tags "aut" 0x4408}
+	{Tags "aut" 0x4409}
+	{Tags "aut" 0x440a}
+	{Tags "aut" 0x440b}
+	{Tags "aut" 0x440c}
+	{Tags "aut" 0x440d}
+	{Tags "aut" 0x440e}
+	{Tags "aut" 0x440f}
+	{Tags "aut" 0x4410}
+	{Tags "aut" 0x4411}
+	{Tags "aut" 0x4412}
+	{Tags "aut" 0x4413}
+	{Tags "aut" 0x4414}
+	{Tags "aut" 0x4415}
+	{Tags "aut" 0x4429}
+	{Tags "aut" 0x442a}
+	{Tags "aut" 0x442c}
+	{Tags "aut" 0x442d}
+	{Tags "aut" 0x442f}
+	{Tags "aut" 0x4431}
+	{Tags "aut" 0x4432}
+	{Tags "aut" 0x4434}
+	{Tags "aut" 0x4435}
+	{Tags "aut" 0x4436}
+	{Tags "aut" 0x4437}
+	{Tags "aut" 0x2133}
+	{Tags "aut" 0x313}
+	{Tags "aut" 0x314}
+	{Tags "aut" 0x315}
+	{Tags "aut" 0x316}
+	{Tags "aut" 0x317}
+	{Tags "aut" 0x318}
+	{Tags "aut" 0x319}
+	{Tags "aut" 0x31a}
+	{Tags "aut" 0x31b}
+	{Tags "aut" 0x31c}
+	{Tags "aut" 0x31d}
+	{Tags "aut" 0x31e}
+	{Tags "aut" 0x31f}
+	{Tags "aut" 0x320}
+	{Tags "aut" 0x321}
+	{Tags "aut" 0x322}
+	{Tags "aut" 0x323}
+	{Tags "aut" 0x324}
+	{Tags "aut" 0x325}
+	{Tags "aut" 0x326}
+	{Tags "aut" 0x327}
+	{Tags "aut" 0x328}
+	{Tags "aut" 0x329}
+	{Tags "aut" 0x32a}
+	{Tags "aut" 0x32b}
+	{Tags "aut" 0x32c}
+	{Tags "aut" 0x32d}
+	{Tags "aut" 0x32e}
+	{Tags "aut" 0x32f}
+	{Tags "aut" 0x330}
+	{Tags "aut" 0x331}
+	{Tags "aut" 0x332}
+	{Tags "aut" 0x333}
+	{Tags "aut" 0x334}
+	{Tags "aut" 0x335}
+	{Tags "aut" 0x336}
+	{Tags "aut" 0x337}
+	{Tags "aut" 0x338}
+	{Tags "aut" 0x339}
+	{Tags "aut" 0x33a}
+	{Tags "aut" 0x33b}
+	{Tags "aut" 0x33c}
+	{Tags "aut" 0x33d}
+	{Tags "aut" 0x33e}
+	{Tags "aut" 0x33f}
+	{Tags "aut" 0x340}
+	{Tags "aut" 0x341}
+	{Tags "aut" 0x342}
+	{Tags "aut" 0x343}
+	{Tags "aut" 0x344}
+	{Tags "aut" 0x345}
+	{Tags "aut" 0x346}
+	{Tags "aut" 0x347}
+	{Tags "aut" 0x348}
+	{Tags "aut" 0x349}
+	{Tags "aut" 0x34a}
+	{Tags "aut" 0x34b}
+	{Tags "aut" 0x34c}
+	{Tags "aut" 0x34d}
+	{Tags "aut" 0x34e}
+	{Tags "aut" 0x34f}
+	{Tags "aut" 0x350}
+	{Tags "aut" 0x4454}
+	{Tags "aut" 0x4455}
+	{Tags "aut" 0x4456}
+	{Tags "aut" 0x4457}
+	{Tags "aut" 0x4458}
+	{Tags "aut" 0x4459}
+	{Tags "aut" 0x445a}
+	{Tags "aut" 0x445b}
+	{Tags "aut" 0x445c}
+	{Tags "aut" 0x445d}
+	{Tags "aut" 0x445f}
+	{Tags "aut" 0x4460}
+	{Tags "aut" 0x4461}
+	{Tags "aut" 0x4463}
+	{Tags "aut" 0x4464}
+	{Tags "aut" 0x4465}
+	{Tags "aut" 0x4466}
+	{Tags "aut" 0x4468}
+	{Tags "aut" 0x446d}
+	{Tags "aut" 0x446e}
+	{Tags "aut" 0x446f}
+	{Tags "aut" 0x4470}
+	{Tags "aut" 0x4471}
+	{Tags "aut" 0x4472}
+	{Tags "aut" 0x4473}
+	{Tags "aut" 0x4474}
+	{Tags "aut" 0x4475}
+	{Tags "aut" 0x4476}
+	{Tags "aut" 0x4477}
+	{Tags "aut" 0x35d}
+	{Tags "aut" 0x360}
+	{Tags "aut" 0x361}
+	{Tags "aut" 0x362}
+	{Tags "aut" 0x7025}
+	{Tags "aut" 0x7027}
+	{Tags "aut" 0x7028}
+	{Tags "aut" 0x7029}
+	{Tags "aut" 0x702a}
+	{Tags "aut" 0x702b}
+	{Tags "aut" 0x702c}
+	{Tags "aut" 0x702d}
+	{Tags "aut" 0x363}
+	{Tags "aut" 0x364}
+	{Tags "aut" 0x365}
+	{Tags "aut" 0x366}
+	{Tags "aut" 0x367}
+	{Tags "aut" 0x368}
+	{Tags "aut" 0x369}
+	{Tags "aut" 0x36a}
+	{Tags "aut" 0x36b}
+	{Tags "aut" 0x36c}
+	{Tags "aut" 0x36d}
+	{Tags "aut" 0x36e}
+	{Tags "aut" 0x36f}
+	{Tags "aut" 0x370}
+	{Tags "aut" 0x371}
+	{Tags "aut" 0x372}
+	{Tags "aut" 0x373}
+	{Tags "aut" 0x374}
+	{Tags "aut" 0x375}
+	{Tags "aut" 0x376}
+	{Tags "aut" 0x37b}
+	{Tags "aut" 0x37e}
+	{Tags "aut" 0x37f}
+	{Tags "aut" 0x380}
+	{Tags "aut" 0x382}
+	{Tags "aut" 0x383}
+	{Tags "aut" 0x384}
+	{Tags "aut" 0x385}
+	{Tags "aut" 0x386}
+	{Tags "aut" 0x388}
+	{Tags "aut" 0x38c}
+	{Tags "aut" 0x38d}
+	{Tags "aut" 0x38e}
+	{Tags "aut" 0x38f}
+	{Tags "aut" 0x390}
+	{Tags "aut" 0x391}
+	{Tags "aut" 0x394}
+	{Tags "aut" 0x395}
+	{Tags "aut" 0x396}
+	{Tags "aut" 0x398}
+	{Tags "aut" 0x399}
+	{Tags "aut" 0x39a}
+	{Tags "aut" 0x39c}
+	{Tags "aut" 0x39f}
+	{Tags "aut" 0x3a0}
+	{Tags "aut" 0x3a1}
+	{Tags "aut" 0x3a2}
+	{Tags "aut" 0x3a3}
+	{Tags "aut" 0x3a4}
+	{Tags "aut" 0x3a5}
+	{Tags "aut" 0x3b7}
+	{Tags "aut" 0x3b8}
+	{Tags "aut" 0x3bb}
+	{Tags "aut" 0x3c2}
+	{Tags "aut" 0x3c3}
+	{Tags "aut" 0x3c4}
+	{Tags "aut" 0x3c5}
+	{Tags "aut" 0x3c6}
+	{Tags "aut" 0x3c7}
+	{Tags "aut" 0x3c8}
+	{Tags "aut" 0x3c9}
+	{Tags "aut" 0x3ca}
+	{Tags "aut" 0x3cb}
+	{Tags "aut" 0x3cc}
+	{Tags "aut" 0x3cd}
+	{Tags "aut" 0x3ce}
+	{Tags "aut" 0x3cf}
+	{Tags "aut" 0x3d0}
+	{Tags "aut" 0x3d1}
+	{Tags "aut" 0x3d2}
+	{Tags "aut" 0x3d3}
+	{Tags "aut" 0x3d4}
+	{Tags "aut" 0x3d5}
+	{Tags "aut" 0x3d6}
+	{Tags "aut" 0x3d7}
+	{Tags "aut" 0x3d8}
+	{Tags "aut" 0x3d9}
+	{Tags "aut" 0x3dc}
+	{Tags "aut" 0x3dd}
+	{Tags "aut" 0x3de}
+	{Tags "aut" 0x3df}
+	{Tags "aut" 0x3e0}
+	{Tags "aut" 0x3e1}
+	{Tags "aut" 0x3e2}
+	{Tags "aut" 0x3e3}
+	{Tags "aut" 0x3e4}
+	{Tags "aut" 0x3e5}
+	{Tags "aut" 0x3e6}
+	{Tags "aut" 0x3e7}
+	{Tags "aut" 0x3e8}
+	{Tags "aut" 0x3e9}
+	{Tags "aut" 0x3ea}
+	{Tags "aut" 0x3eb}
+	{Tags "aut" 0x3ec}
+	{Tags "aut" 0x3ed}
+	{Tags "aut" 0x3ee}
+	{Tags "aut" 0x3ef}
+	{Tags "aut" 0x3f4}
+	{Tags "aut" 0x3f7}
+	{Tags "aut" 0x3f8}
+	{Tags "aut" 0x3f9}
+	{Tags "aut" 0x3fb}
+	{Tags "aut" 0x3fc}
+	{Tags "aut" 0x3fd}
+	{Tags "aut" 0x3fe}
+	{Tags "aut" 0x3ff}
+	{Tags "aut" 0x401}
+	{Tags "aut" 0x405}
+	{Tags "aut" 0x406}
+	{Tags "aut" 0x407}
+	{Tags "aut" 0x408}
+	{Tags "aut" 0x409}
+	{Tags "aut" 0x40a}
+	{Tags "aut" 0x40d}
+	{Tags "aut" 0x40e}
+	{Tags "aut" 0x40f}
+	{Tags "aut" 0x411}
+	{Tags "aut" 0x412}
+	{Tags "aut" 0x413}
+	{Tags "aut" 0x415}
+	{Tags "aut" 0x418}
+	{Tags "aut" 0x419}
+	{Tags "aut" 0x41a}
+	{Tags "aut" 0x41b}
+	{Tags "aut" 0x41c}
+	{Tags "aut" 0x41d}
+	{Tags "aut" 0x41e}
+	{Tags "aut" 0x430}
+	{Tags "aut" 0x431}
+	{Tags "aut" 0x434}
+	{Tags "aut" 0x43b}
+	{Tags "aut" 0x43c}
+	{Tags "aut" 0x43d}
+	{Tags "aut" 0x43e}
+	{Tags "aut" 0x43f}
+	{Tags "aut" 0x440}
+	{Tags "aut" 0x441}
+	{Tags "aut" 0x442}
+	{Tags "aut" 0x443}
+	{Tags "aut" 0x444}
+	{Tags "aut" 0x445}
+	{Tags "aut" 0x446}
+	{Tags "aut" 0x447}
+	{Tags "aut" 0x448}
+	{Tags "aut" 0x449}
+	{Tags "aut" 0x44a}
+	{Tags "aut" 0x44b}
+	{Tags "aut" 0x44c}
+	{Tags "aut" 0x44d}
+	{Tags "aut" 0x44e}
+	{Tags "aut" 0x44f}
+	{Tags "aut" 0x450}
+	{Tags "aut" 0x451}
+	{Tags "aut" 0x452}
+	{Tags "aut" 0x455}
+	{Tags "aut" 0x456}
+	{Tags "aut" 0x457}
+	{Tags "aut" 0x458}
+	{Tags "aut" 0x459}
+	{Tags "aut" 0x45a}
+	{Tags "aut" 0x45b}
+	{Tags "aut" 0x45c}
+	{Tags "aut" 0x45d}
+	{Tags "aut" 0x45e}
+	{Tags "aut" 0x45f}
+	{Tags "aut" 0x460}
+	{Tags "aut" 0x461}
+	{Tags "aut" 0x462}
+	{Tags "aut" 0x463}
+	{Tags "aut" 0x464}
+	{Tags "aut" 0x465}
+	{Tags "aut" 0x466}
+	{Tags "aut" 0x467}
+	{Tags "aut" 0x469}
+	{Tags "aut" 0x46b}
+	{Tags "aut" 0x46c}
+	{Tags "aut" 0x46f}
+	{Tags "aut" 0x470}
+	{Tags "aut" 0x471}
+	{Tags "aut" 0x472}
+	{Tags "aut" 0x473}
+	{Tags "aut" 0x474}
+	{Tags "aut" 0x475}
+	{Tags "aut" 0x476}
+	{Tags "aut" 0x477}
+	{Tags "aut" 0x478}
+	{Tags "aut" 0x47a}
+	{Tags "aut" 0x47c}
+	{Tags "aut" 0x47d}
+	{Tags "aut" 0x47e}
+	{Tags "aut" 0x47f}
+	{Tags "aut" 0x481}
+	{Tags "aut" 0x482}
+	{Tags "aut" 0x486}
+	{Tags "aut" 0x487}
+	{Tags "aut" 0x488}
+	{Tags "aut" 0x489}
+	{Tags "aut" 0x48a}
+	{Tags "aut" 0x48b}
+	{Tags "aut" 0x48f}
+	{Tags "aut" 0x490}
+	{Tags "aut" 0x493}
+	{Tags "aut" 0x494}
+	{Tags "aut" 0x495}
+	{Tags "aut" 0x497}
+	{Tags "aut" 0x499}
+	{Tags "aut" 0x49c}
+	{Tags "aut" 0x4a7}
+	{Tags "aut" 0x4a8}
+	{Tags "aut" 0x4a9}
+	{Tags "aut" 0x4aa}
+	{Tags "aut" 0x4ab}
+	{Tags "aut" 0x4ac}
+	{Tags "aut" 0x4ad}
+	{Tags "aut" 0x4ae}
+	{Tags "aut" 0x4af}
+	{Tags "aut" 0x4b0}
+	{Tags "aut" 0x4b1}
+	{Tags "aut" 0x4b2}
+	{Tags "aut" 0x4b3}
+	{Tags "aut" 0x4b6}
+	{Tags "aut" 0x4b7}
+	{Tags "aut" 0x4b9}
+	{Tags "aut" 0x4ba}
+	{Tags "aut" 0x4bb}
+	{Tags "aut" 0x4bc}
+	{Tags "aut" 0x4c0}
+	{Tags "aut" 0x4c1}
+	{Tags "aut" 0x4c2}
+	{Tags "aut" 0x4c4}
+	{Tags "aut" 0x4c5}
+	{Tags "aut" 0x4c6}
+	{Tags "aut" 0x4c7}
+	{Tags "aut" 0x4c8}
+	{Tags "aut" 0x4c9}
+	{Tags "aut" 0x4ca}
+	{Tags "aut" 0x4cb}
+	{Tags "aut" 0x4cc}
+	{Tags "aut" 0x4cf}
+	{Tags "aut" 0x4d0}
+	{Tags "aut" 0x4d1}
+	{Tags "aut" 0x4d2}
+	{Tags "aut" 0x4d3}
+	{Tags "aut" 0x4d4}
+	{Tags "aut" 0x4d8}
+	{Tags "aut" 0x4d9}
+	{Tags "aut" 0x4da}
+	{Tags "aut" 0x4db}
+	{Tags "aut" 0x4de}
+	{Tags "aut" 0x4df}
+	{Tags "aut" 0x4e2}
+	{Tags "aut" 0x4e3}
+	{Tags "aut" 0x4e4}
+	{Tags "aut" 0x4e6}
+	{Tags "aut" 0x4e7}
+	{Tags "aut" 0x4ea}
+	{Tags "aut" 0x4ef}
+	{Tags "aut" 0x4f0}
+	{Tags "aut" 0x4f1}
+	{Tags "aut" 0x4f2}
+	{Tags "aut" 0x4f3}
+	{Tags "aut" 0x4f6}
+	{Tags "aut" 0x4f7}
+	{Tags "aut" 0x4f8}
+	{Tags "aut" 0x50a}
+	{Tags "aut" 0x50b}
+	{Tags "aut" 0x50c}
+	{Tags "aut" 0x50d}
+	{Tags "aut" 0x50e}
+	{Tags "aut" 0x50f}
+	{Tags "aut" 0x510}
+	{Tags "aut" 0x511}
+	{Tags "aut" 0x512}
+	{Tags "aut" 0x513}
+	{Tags "aut" 0x514}
+	{Tags "aut" 0x515}
+	{Tags "aut" 0x516}
+	{Tags "aut" 0x517}
+	{Tags "aut" 0x519}
+	{Tags "aut" 0x51b}
+	{Tags "aut" 0x51d}
+	{Tags "aut" 0x51e}
+	{Tags "aut" 0x51f}
+	{Tags "aut" 0x520}
+	{Tags "aut" 0x521}
+	{Tags "aut" 0x522}
+	{Tags "aut" 0x523}
+	{Tags "aut" 0x525}
+	{Tags "aut" 0x527}
+	{Tags "aut" 0x528}
+	{Tags "aut" 0x529}
+	{Tags "aut" 0x52a}
+	{Tags "aut" 0x52b}
+	{Tags "aut" 0x531}
+	{Tags "aut" 0x532}
+	{Tags "aut" 0x533}
+	{Tags "aut" 0x534}
+	{Tags "aut" 0x535}
+	{Tags "aut" 0x536}
+	{Tags "aut" 0x539}
+	{Tags "aut" 0x53a}
+	{Tags "aut" 0x53b}
+	{Tags "aut" 0x53c}
+	{Tags "aut" 0x53d}
+	{Tags "aut" 0x53e}
+	{Tags "aut" 0x53f}
+	{Tags "aut" 0x540}
+	{Tags "aut" 0x541}
+	{Tags "aut" 0x542}
+	{Tags "aut" 0x543}
+	{Tags "aut" 0x544}
+	{Tags "aut" 0x547}
+	{Tags "aut" 0x548}
+	{Tags "aut" 0x549}
+	{Tags "aut" 0x54a}
+	{Tags "aut" 0x54b}
+	{Tags "aut" 0x550}
+	{Tags "aut" 0x551}
+	{Tags "aut" 0x552}
+	{Tags "aut" 0x553}
+	{Tags "aut" 0x557}
+	{Tags "aut" 0x55b}
+	{Tags "aut" 0x55c}
+	{Tags "aut" 0x55e}
+	{Tags "aut" 0x55f}
+	{Tags "aut" 0x561}
+	{Tags "aut" 0x562}
+	{Tags "aut" 0x564}
+	{Tags "aut" 0x565}
+	{Tags "aut" 0x566}
+	{Tags "aut" 0x567}
+	{Tags "aut" 0x480}
+	{Tags "aut" 0x568}
+	{Tags "aut" 0x569}
+	{Tags "aut" 0x56a}
+	{Tags "aut" 0x56b}
+	{Tags "aut" 0x56c}
+	{Tags "aut" 0x56d}
+	{Tags "aut" 0x56e}
+	{Tags "aut" 0x56f}
+	{Tags "aut" 0x570}
+	{Tags "aut" 0x571}
+	{Tags "aut" 0x572}
+	{Tags "aut" 0x573}
+	{Tags "aut" 0x574}
+	{Tags "aut" 0x575}
+	{Tags "aut" 0x576}
+	{Tags "aut" 0x577}
+	{Tags "aut" 0x578}
+	{Tags "aut" 0x579}
+	{Tags "aut" 0x57a}
+	{Tags "aut" 0x57b}
+	{Tags "aut" 0x57c}
+	{Tags "aut" 0x57d}
+	{Tags "aut" 0x57e}
+	{Tags "aut" 0x57f}
+	{Tags "aut" 0x580}
+	{Tags "aut" 0x581}
+	{Tags "aut" 0x582}
+	{Tags "aut" 0x586}
+	{Tags "aut" 0x587}
+	{Tags "aut" 0x588}
+	{Tags "aut" 0x589}
+	{Tags "aut" 0x58a}
+	{Tags "aut" 0x58b}
+	{Tags "aut" 0x58c}
+	{Tags "aut" 0x58d}
+	{Tags "aut" 0x58e}
+	{Tags "aut" 0x58f}
+	{Tags "aut" 0x590}
+	{Tags "aut" 0x591}
+	{Tags "aut" 0x592}
+	{Tags "aut" 0x593}
+	{Tags "aut" 0x594}
+	{Tags "aut" 0x595}
+	{Tags "aut" 0x596}
+	{Tags "aut" 0x597}
+	{Tags "aut" 0x598}
+	{Tags "aut" 0x599}
+	{Tags "aut" 0x59a}
+	{Tags "aut" 0x59b}
+	{Tags "aut" 0x59c}
+	{Tags "aut" 0x59d}
+	{Tags "aut" 0x59e}
+	{Tags "aut" 0x59f}
+	{Tags "aut" 0x5a0}
+	{Tags "aut" 0x5a1}
+	{Tags "aut" 0x5a5}
+	{Tags "aut" 0x5a6}
+	{Tags "aut" 0x5a7}
+	{Tags "aut" 0x5aa}
+	{Tags "aut" 0x5ab}
+	{Tags "aut" 0x5ac}
+	{Tags "aut" 0x5ad}
+	{Tags "aut" 0x5ae}
+	{Tags "aut" 0x5af}
+	{Tags "aut" 0x5b0}
+	{Tags "aut" 0x5b1}
+	{Tags "aut" 0x5b2}
+	{Tags "aut" 0x5b3}
+	{Tags "aut" 0x5b4}
+	{Tags "aut" 0x5b5}
+	{Tags "aut" 0x5b9}
+	{Tags "aut" 0x5ba}
+	{Tags "aut" 0x5be}
+	{Tags "aut" 0x5bf}
+	{Tags "aut" 0x5c0}
+	{Tags "aut" 0x5c2}
+	{Tags "aut" 0x5c4}
+	{Tags "aut" 0x5c7}
+	{Tags "aut" 0x216f}
+	{Tags "aut" 0x2170}
+	{Tags "aut" 0x2171}
+	{Tags "aut" 0x2172}
+	{Tags "aut" 0x2173}
+	{Tags "aut" 0x2174}
+	{Tags "aut" 0x2175}
+	{Tags "aut" 0x2176}
+	{Tags "aut" 0x2177}
+	{Tags "aut" 0x2178}
+	{Tags "aut" 0x2179}
+	{Tags "aut" 0x217a}
+	{Tags "aut" 0x217b}
+	{Tags "aut" 0x217c}
+	{Tags "aut" 0x217d}
+	{Tags "aut" 0x217f}
+	{Tags "aut" 0x2180}
+	{Tags "aut" 0x2181}
+	{Tags "aut" 0x2184}
+	{Tags "aut" 0x2189}
+	{Tags "aut" 0x218a}
+	{Tags "aut" 0x218b}
+	{Tags "aut" 0x218c}
+	{Tags "aut" 0x2190}
+	{Tags "aut" 0x2191}
+	{Tags "aut" 0x2192}
+	{Tags "aut" 0x2197}
+	{Tags "aut" 0x2199}
+	{Tags "aut" 0x219a}
+	{Tags "aut" 0x219b}
+	{Tags "aut" 0x219c}
+	{Tags "aut" 0x219d}
+	{Tags "aut" 0x219e}
+	{Tags "aut" 0x219f}
+	{Tags "aut" 0x21a0}
+	{Tags "aut" 0x21a1}
+	{Tags "aut" 0x21a2}
+	{Tags "aut" 0x21a3}
+	{Tags "aut" 0x21a4}
+	{Tags "aut" 0x21a5}
+	{Tags "aut" 0x21a6}
+	{Tags "aut" 0x21a7}
+	{Tags "aut" 0x21a8}
+	{Tags "aut" 0x21a9}
+	{Tags "aut" 0x21aa}
+	{Tags "aut" 0x21ab}
+	{Tags "aut" 0x21ac}
+	{Tags "aut" 0x21b4}
+	{Tags "aut" 0x21b5}
+	{Tags "aut" 0x21b6}
+	{Tags "aut" 0x21b9}
+	{Tags "aut" 0x21be}
+	{Tags "aut" 0x21bf}
+	{Tags "aut" 0x21c0}
+	{Tags "aut" 0x21c1}
+	{Tags "aut" 0x21c5}
+	{Tags "aut" 0x21c6}
+	{Tags "aut" 0x21c7}
+	{Tags "aut" 0x21cc}
+	{Tags "aut" 0x21ce}
+	{Tags "aut" 0x21cf}
+	{Tags "aut" 0x21d0}
+	{Tags "aut" 0x21d1}
+	{Tags "aut" 0x21d2}
+	{Tags "aut" 0x21d3}
+	{Tags "aut" 0x21d4}
+	{Tags "aut" 0x21d5}
+	{Tags "aut" 0x21d6}
+	{Tags "aut" 0x21d7}
+	{Tags "aut" 0x21d8}
+	{Tags "aut" 0x21d9}
+	{Tags "aut" 0x21da}
+	{Tags "aut" 0x21db}
+	{Tags "aut" 0x21dc}
+	{Tags "aut" 0x21dd}
+	{Tags "aut" 0x21de}
+	{Tags "aut" 0x21df}
+	{Tags "aut" 0x21e0}
+	{Tags "aut" 0x21e1}
+	{Tags "aut" 0x21eb}
+	{Tags "aut" 0x21ec}
+	{Tags "aut" 0x21ed}
+	{Tags "aut" 0x21f1}
+	{Tags "aut" 0x21f3}
+	{Tags "aut" 0x21f4}
+	{Tags "aut" 0x21f5}
+	{Tags "aut" 0x21f6}
+	{Tags "aut" 0x21f7}
+	{Tags "aut" 0x21f8}
+	{Tags "aut" 0x21f9}
+	{Tags "aut" 0x21fd}
+	{Tags "aut" 0x21fe}
+	{Tags "aut" 0x2200}
+	{Tags "aut" 0x2201}
+	{Tags "aut" 0x2202}
+	{Tags "aut" 0x2203}
+	{Tags "aut" 0x2205}
+	{Tags "aut" 0x2206}
+	{Tags "aut" 0x2208}
+	{Tags "aut" 0x2209}
+	{Tags "aut" 0x220e}
+	{Tags "aut" 0x220f}
+	{Tags "aut" 0x2210}
+	{Tags "aut" 0x2211}
+	{Tags "aut" 0x2216}
+	{Tags "aut" 0x2217}
+	{Tags "aut" 0x2218}
+	{Tags "aut" 0x2219}
+	{Tags "aut" 0x221b}
+	{Tags "aut" 0x2220}
+	{Tags "aut" 0x2221}
+	{Tags "aut" 0x2222}
+	{Tags "aut" 0x2223}
+	{Tags "aut" 0x2227}
+	{Tags "aut" 0x2228}
+	{Tags "aut" 0x2229}
+	{Tags "aut" 0x222a}
+	{Tags "aut" 0x222b}
+	{Tags "aut" 0x222c}
+	{Tags "aut" 0x222d}
+	{Tags "aut" 0x222e}
+	{Tags "aut" 0x222f}
+	{Tags "aut" 0x2230}
+	{Tags "aut" 0x60c9}
+	{Tags "aut" 0x60ca}
+	{Tags "aut" 0x60cb}
+	{Tags "aut" 0x60cc}
+	{Tags "aut" 0x60cf}
+	{Tags "aut" 0x60d0}
+	{Tags "aut" 0x60d1}
+	{Tags "aut" 0x60d2}
+	{Tags "aut" 0x60d3}
+	{Tags "aut" 0x60d4}
+	{Tags "aut" 0x60d7}
+	{Tags "aut" 0x60d8}
+	{Tags "aut" 0x60d9}
+	{Tags "aut" 0x60da}
+	{Tags "aut" 0x60de}
+	{Tags "aut" 0x60e0}
+	{Tags "aut" 0x60e1}
+	{Tags "aut" 0x60e2}
+	{Tags "aut" 0x60e3}
+	{Tags "aut" 0x60e9}
+	{Tags "aut" 0x60ea}
+	{Tags "aut" 0x60eb}
+	{Tags "aut" 0x60ee}
+	{Tags "aut" 0x60ef}
+	{Tags "aut" 0x60f3}
+	{Tags "aut" 0x60f5}
+	{Tags "aut" 0x60f6}
+	{Tags "aut" 0x60f7}
+	{Tags "aut" 0x60f8}
+	{Tags "aut" 0x60f9}
+	{Tags "aut" 0x60fc}
+	{Tags "aut" 0x60fd}
+	{Tags "aut" 0x60fe}
+	{Tags "aut" 0x60ff}
+	{Tags "aut" 0x6100}
+	{Tags "aut" 0x6101}
+	{Tags "aut" 0x6102}
+	{Tags "aut" 0x6103}
+	{Tags "aut" 0x6105}
+	{Tags "aut" 0x6106}
+	{Tags "aut" 0x6108}
+	{Tags "aut" 0x6109}
+	{Tags "aut" 0x610a}
+	{Tags "aut" 0x610c}
+	{Tags "aut" 0x610d}
+	{Tags "aut" 0x6111}
+	{Tags "aut" 0x6112}
+	{Tags "aut" 0x6115}
+	{Tags "aut" 0x6116}
+	{Tags "aut" 0x6117}
+	{Tags "aut" 0x6118}
+	{Tags "aut" 0x611b}
+	{Tags "aut" 0x611c}
+	{Tags "aut" 0x611d}
+	{Tags "aut" 0x6121}
+	{Tags "aut" 0x6123}
+	{Tags "aut" 0x6124}
+	{Tags "aut" 0x6125}
+	{Tags "aut" 0x6126}
+	{Tags "aut" 0x6129}
+	{Tags "aut" 0x612a}
+	{Tags "aut" 0x612c}
+	{Tags "aut" 0x612d}
+	{Tags "aut" 0x612e}
+	{Tags "aut" 0x6130}
+	{Tags "aut" 0x6131}
+	{Tags "aut" 0x6133}
+	{Tags "aut" 0x6134}
+	{Tags "aut" 0x6135}
+	{Tags "aut" 0x60c}
+	{Tags "aut" 0x60d}
+	{Tags "aut" 0x60e}
+	{Tags "aut" 0x611}
+	{Tags "aut" 0x614}
+	{Tags "aut" 0x616}
+	{Tags "aut" 0x617}
+	{Tags "aut" 0x61b}
+	{Tags "aut" 0x61d}
+	{Tags "aut" 0x61e}
+	{Tags "aut" 0x61f}
+	{Tags "aut" 0x620}
+	{Tags "aut" 0x621}
+	{Tags "aut" 0x622}
+	{Tags "aut" 0x623}
+	{Tags "aut" 0x624}
+	{Tags "aut" 0x625}
+	{Tags "aut" 0x627}
+	{Tags "aut" 0x62f}
+	{Tags "aut" 0x630}
+	{Tags "aut" 0x631}
+	{Tags "aut" 0x632}
+	{Tags "aut" 0x636}
+	{Tags "aut" 0x63a}
+	{Tags "aut" 0x63b}
+	{Tags "aut" 0x63c}
+	{Tags "aut" 0x63d}
+	{Tags "aut" 0x63e}
+	{Tags "aut" 0x63f}
+	{Tags "aut" 0x640}
+	{Tags "aut" 0x641}
+	{Tags "aut" 0x642}
+	{Tags "aut" 0x643}
+	{Tags "aut" 0x644}
+	{Tags "aut" 0x645}
+	{Tags "aut" 0x64d}
+	{Tags "aut" 0x64e}
+	{Tags "aut" 0x652}
+	{Tags "aut" 0x653}
+	{Tags "aut" 0x654}
+	{Tags "aut" 0x655}
+	{Tags "aut" 0x656}
+	{Tags "aut" 0x657}
+	{Tags "aut" 0x658}
+	{Tags "aut" 0x65b}
+	{Tags "aut" 0x65c}
+	{Tags "aut" 0x65d}
+	{Tags "aut" 0x65e}
+	{Tags "aut" 0x44a6}
+	{Tags "aut" 0x44a7}
+	{Tags "aut" 0x44aa}
+	{Tags "aut" 0x44b0}
+	{Tags "aut" 0x44b1}
+	{Tags "aut" 0x44b2}
+	{Tags "aut" 0x44b3}
+	{Tags "aut" 0x44b4}
+	{Tags "aut" 0x44b5}
+	{Tags "aut" 0x44b6}
+	{Tags "aut" 0x44b7}
+	{Tags "aut" 0x44ba}
+	{Tags "aut" 0x44bd}
+	{Tags "aut" 0x44be}
+	{Tags "aut" 0x44bf}
+	{Tags "aut" 0x44c0}
+	{Tags "aut" 0x44c1}
+	{Tags "aut" 0x44c2}
+	{Tags "aut" 0x44c3}
+	{Tags "aut" 0x44c4}
+	{Tags "aut" 0x44c5}
+	{Tags "aut" 0x44cd}
+	{Tags "aut" 0x44ce}
+	{Tags "aut" 0x2232}
+	{Tags "aut" 0x2233}
+	{Tags "aut" 0x2234}
+	{Tags "aut" 0x2235}
+	{Tags "aut" 0x2236}
+	{Tags "aut" 0x2237}
+	{Tags "aut" 0x2238}
+	{Tags "aut" 0x2239}
+	{Tags "aut" 0x223d}
+	{Tags "aut" 0x223e}
+	{Tags "aut" 0x223f}
+	{Tags "aut" 0x2240}
+	{Tags "aut" 0x2241}
+	{Tags "aut" 0x2242}
+	{Tags "aut" 0x2243}
+	{Tags "aut" 0x2244}
+	{Tags "aut" 0x2245}
+	{Tags "aut" 0x2246}
+	{Tags "aut" 0x2247}
+	{Tags "aut" 0x2248}
+	{Tags "aut" 0x2249}
+	{Tags "aut" 0x224a}
+	{Tags "aut" 0x224b}
+	{Tags "aut" 0x224c}
+	{Tags "aut" 0x224d}
+	{Tags "aut" 0x224e}
+	{Tags "aut" 0x224f}
+	{Tags "aut" 0x2250}
+	{Tags "aut" 0x2251}
+	{Tags "aut" 0x2252}
+	{Tags "aut" 0x2253}
+	{Tags "aut" 0x2254}
+	{Tags "aut" 0x2255}
+	{Tags "aut" 0x2256}
+	{Tags "aut" 0x2257}
+	{Tags "aut" 0x2258}
+	{Tags "aut" 0x225b}
+	{Tags "aut" 0x225c}
+	{Tags "aut" 0x225d}
+	{Tags "aut" 0x225e}
+	{Tags "aut" 0x225f}
+	{Tags "aut" 0x2260}
+	{Tags "aut" 0x2261}
+	{Tags "aut" 0x2262}
+	{Tags "aut" 0x2263}
+	{Tags "aut" 0x2264}
+	{Tags "aut" 0x2265}
+	{Tags "aut" 0x2266}
+	{Tags "aut" 0x2267}
+	{Tags "aut" 0x226a}
+	{Tags "aut" 0x226c}
+	{Tags "aut" 0x226e}
+	{Tags "aut" 0x226f}
+	{Tags "aut" 0x2270}
+	{Tags "aut" 0x2271}
+	{Tags "aut" 0x2272}
+	{Tags "aut" 0x2273}
+	{Tags "aut" 0x2278}
+	{Tags "aut" 0x227a}
+	{Tags "aut" 0x227b}
+	{Tags "aut" 0x227c}
+	{Tags "aut" 0x227d}
+	{Tags "aut" 0x227e}
+	{Tags "aut" 0x227f}
+	{Tags "aut" 0x2280}
+	{Tags "aut" 0x2281}
+	{Tags "aut" 0x2283}
+	{Tags "aut" 0x2284}
+	{Tags "aut" 0x2285}
+	{Tags "aut" 0x2287}
+	{Tags "aut" 0x2288}
+	{Tags "aut" 0x2289}
+	{Tags "aut" 0x228a}
+	{Tags "aut" 0x228b}
+	{Tags "aut" 0x228c}
+	{Tags "aut" 0x228d}
+	{Tags "aut" 0x228e}
+	{Tags "aut" 0x228f}
+	{Tags "aut" 0x2290}
+	{Tags "aut" 0x2291}
+	{Tags "aut" 0x2292}
+	{Tags "aut" 0x2293}
+	{Tags "aut" 0x2296}
+	{Tags "aut" 0x2298}
+	{Tags "aut" 0x229a}
+	{Tags "aut" 0x229b}
+	{Tags "aut" 0x229c}
+	{Tags "aut" 0x229d}
+	{Tags "aut" 0x229e}
+	{Tags "aut" 0x229f}
+	{Tags "aut" 0x22a4}
+	{Tags "aut" 0x22a6}
+	{Tags "aut" 0x22a7}
+	{Tags "aut" 0x22a8}
+	{Tags "aut" 0x22a9}
+	{Tags "aut" 0x22aa}
+	{Tags "aut" 0x22ab}
+	{Tags "aut" 0x22ac}
+	{Tags "aut" 0x22ad}
+	{Tags "aut" 0x22af}
+	{Tags "aut" 0x22b0}
+	{Tags "aut" 0x22b1}
+	{Tags "aut" 0x22b4}
+	{Tags "aut" 0x22b6}
+	{Tags "aut" 0x22b8}
+	{Tags "aut" 0x22b9}
+	{Tags "aut" 0x22bb}
+	{Tags "aut" 0x22bc}
+	{Tags "aut" 0x22bd}
+	{Tags "aut" 0x22be}
+	{Tags "aut" 0x22bf}
+	{Tags "aut" 0x22c6}
+	{Tags "aut" 0x22c7}
+	{Tags "aut" 0x22c8}
+	{Tags "aut" 0x22c9}
+	{Tags "aut" 0x22ca}
+	{Tags "aut" 0x22cc}
+	{Tags "aut" 0x22ce}
+	{Tags "aut" 0x22d0}
+	{Tags "aut" 0x22d1}
+	{Tags "aut" 0x22d2}
+	{Tags "aut" 0x22d3}
+	{Tags "aut" 0x22d4}
+	{Tags "aut" 0x22d5}
+	{Tags "aut" 0x22d6}
+	{Tags "aut" 0x22d7}
+	{Tags "aut" 0x22d8}
+	{Tags "aut" 0x22d9}
+	{Tags "aut" 0x22da}
+	{Tags "aut" 0x22dc}
+	{Tags "aut" 0x675}
+	{Tags "aut" 0x676}
+	{Tags "aut" 0x678}
+	{Tags "aut" 0x679}
+	{Tags "aut" 0x67a}
+	{Tags "aut" 0x67b}
+	{Tags "aut" 0x67c}
+	{Tags "aut" 0x67d}
+	{Tags "aut" 0x67e}
+	{Tags "aut" 0x67f}
+	{Tags "aut" 0x680}
+	{Tags "aut" 0x681}
+	{Tags "aut" 0x682}
+	{Tags "aut" 0x683}
+	{Tags "aut" 0x684}
+	{Tags "aut" 0x685}
+	{Tags "aut" 0x686}
+	{Tags "aut" 0x687}
+	{Tags "aut" 0x617e}
+	{Tags "aut" 0x617f}
+	{Tags "aut" 0x6180}
+	{Tags "aut" 0x6182}
+	{Tags "aut" 0x6185}
+	{Tags "aut" 0x6187}
+	{Tags "aut" 0x6188}
+	{Tags "aut" 0x6189}
+	{Tags "aut" 0x618a}
+	{Tags "aut" 0x618b}
+	{Tags "aut" 0x618c}
+	{Tags "aut" 0x6190}
+	{Tags "aut" 0x6192}
+	{Tags "aut" 0x6195}
+	{Tags "aut" 0x6196}
+	{Tags "aut" 0x6197}
+	{Tags "aut" 0x619b}
+	{Tags "aut" 0x619d}
+	{Tags "aut" 0x61a1}
+	{Tags "aut" 0x61a2}
+	{Tags "aut" 0x61a3}
+	{Tags "aut" 0x61a5}
+	{Tags "aut" 0x61a6}
+	{Tags "aut" 0x61a7}
+	{Tags "aut" 0x61a9}
+	{Tags "aut" 0x61aa}
+	{Tags "aut" 0x61ab}
+	{Tags "aut" 0x61ac}
+	{Tags "aut" 0x44d0}
+	{Tags "aut" 0x44d2}
+	{Tags "aut" 0x44d3}
+	{Tags "aut" 0x44d5}
+	{Tags "aut" 0x44d6}
+	{Tags "aut" 0x44d8}
+	{Tags "aut" 0x44d9}
+	{Tags "aut" 0x44da}
+	{Tags "aut" 0x44db}
+	{Tags "aut" 0x44dc}
+	{Tags "aut" 0x44dd}
+	{Tags "aut" 0x44de}
+	{Tags "aut" 0x44df}
+	{Tags "aut" 0x44e0}
+	{Tags "aut" 0x44e6}
+	{Tags "aut" 0x44e7}
+	{Tags "aut" 0x44e8}
+	{Tags "aut" 0x44e9}
+	{Tags "aut" 0x44eb}
+	{Tags "aut" 0x44ec}
+	{Tags "aut" 0x44ed}
+	{Tags "aut" 0x44ee}
+	{Tags "aut" 0x44ef}
+	{Tags "aut" 0x44f0}
+	{Tags "aut" 0x44f1}
+	{Tags "aut" 0x44f2}
+	{Tags "aut" 0x44f3}
+	{Tags "aut" 0x44f4}
+	{Tags "aut" 0x44f5}
+	{Tags "aut" 0x44f6}
+	{Tags "aut" 0x44f7}
+	{Tags "aut" 0x44f8}
+	{Tags "aut" 0x44f9}
+	{Tags "aut" 0x44fa}
+	{Tags "aut" 0x44fd}
+	{Tags "aut" 0x44fe}
+	{Tags "aut" 0x44ff}
+	{Tags "aut" 0x4502}
+	{Tags "aut" 0x4503}
+	{Tags "aut" 0x4504}
+	{Tags "aut" 0x4505}
+	{Tags "aut" 0x4506}
+	{Tags "aut" 0x4507}
+	{Tags "aut" 0x4508}
+	{Tags "aut" 0x4509}
+	{Tags "aut" 0x450a}
+	{Tags "aut" 0x450b}
+	{Tags "aut" 0x450c}
+	{Tags "aut" 0x450f}
+	{Tags "aut" 0x4510}
+	{Tags "aut" 0x4511}
+	{Tags "aut" 0x4514}
+	{Tags "aut" 0x4515}
+	{Tags "aut" 0x4516}
+	{Tags "aut" 0x4517}
+	{Tags "aut" 0x4518}
+	{Tags "aut" 0x4519}
+	{Tags "aut" 0x451a}
+	{Tags "aut" 0x451b}
+	{Tags "aut" 0x451c}
+	{Tags "aut" 0x451d}
+	{Tags "aut" 0x4520}
+	{Tags "aut" 0x4521}
+	{Tags "aut" 0x4522}
+	{Tags "aut" 0x4523}
+	{Tags "aut" 0x4524}
+	{Tags "aut" 0x4525}
+	{Tags "aut" 0x4526}
+	{Tags "aut" 0x4527}
+	{Tags "aut" 0x4528}
+	{Tags "aut" 0x4529}
+	{Tags "aut" 0x452a}
+	{Tags "aut" 0x452b}
+	{Tags "aut" 0x452d}
+	{Tags "aut" 0x4530}
+	{Tags "aut" 0x4531}
+	{Tags "aut" 0x4532}
+	{Tags "aut" 0x4533}
+	{Tags "aut" 0x4534}
+	{Tags "aut" 0x4535}
+	{Tags "aut" 0x4536}
+	{Tags "aut" 0x4537}
+	{Tags "aut" 0x4538}
+	{Tags "aut" 0x4539}
+	{Tags "aut" 0x453a}
+	{Tags "aut" 0x453b}
+	{Tags "aut" 0x453c}
+	{Tags "aut" 0x453d}
+	{Tags "aut" 0x453e}
+	{Tags "aut" 0x453f}
+	{Tags "aut" 0x4540}
+	{Tags "aut" 0x4541}
+	{Tags "aut" 0x4542}
+	{Tags "aut" 0x4543}
+	{Tags "aut" 0x4544}
+	{Tags "aut" 0x4545}
+	{Tags "aut" 0x4546}
+	{Tags "aut" 0x4547}
+	{Tags "aut" 0x4548}
+	{Tags "aut" 0x4549}
+	{Tags "aut" 0x454a}
+	{Tags "aut" 0x454b}
+	{Tags "aut" 0x454c}
+	{Tags "aut" 0x454d}
+	{Tags "aut" 0x454e}
+	{Tags "aut" 0x454f}
+	{Tags "aut" 0x4550}
+	{Tags "aut" 0x4551}
+	{Tags "aut" 0x4552}
+	{Tags "aut" 0x4553}
+	{Tags "aut" 0x4554}
+	{Tags "aut" 0x4555}
+	{Tags "aut" 0x4556}
+	{Tags "aut" 0x4557}
+	{Tags "aut" 0x4558}
+	{Tags "aut" 0x4559}
+	{Tags "aut" 0x455a}
+	{Tags "aut" 0x455b}
+	{Tags "aut" 0x455c}
+	{Tags "aut" 0x455d}
+	{Tags "aut" 0x455e}
+	{Tags "aut" 0x455f}
+	{Tags "aut" 0x4560}
+	{Tags "aut" 0x4561}
+	{Tags "aut" 0x4562}
+	{Tags "aut" 0x4563}
+	{Tags "aut" 0x4564}
+	{Tags "aut" 0x4565}
+	{Tags "aut" 0x4566}
+	{Tags "aut" 0x4567}
+	{Tags "aut" 0x4568}
+	{Tags "aut" 0x4569}
+	{Tags "aut" 0x456b}
+	{Tags "aut" 0x456c}
+	{Tags "aut" 0x688}
+	{Tags "aut" 0x689}
+	{Tags "aut" 0x68a}
+	{Tags "aut" 0x68b}
+	{Tags "aut" 0x68c}
+	{Tags "aut" 0x68d}
+	{Tags "aut" 0x68e}
+	{Tags "aut" 0x68f}
+	{Tags "aut" 0x690}
+	{Tags "aut" 0x691}
+	{Tags "aut" 0x692}
+	{Tags "aut" 0x693}
+	{Tags "aut" 0x694}
+	{Tags "aut" 0x695}
+	{Tags "aut" 0x696}
+	{Tags "aut" 0x699}
+	{Tags "aut" 0x69a}
+	{Tags "aut" 0x69b}
+	{Tags "aut" 0x69c}
+	{Tags "aut" 0x69d}
+	{Tags "aut" 0x69e}
+	{Tags "aut" 0x69f}
+	{Tags "aut" 0x6a0}
+	{Tags "aut" 0x6a1}
+	{Tags "aut" 0x6a2}
+	{Tags "aut" 0x6a4}
+	{Tags "aut" 0x6a5}
+	{Tags "aut" 0x6a6}
+	{Tags "aut" 0x6a7}
+	{Tags "aut" 0x6a8}
+	{Tags "aut" 0x6a9}
+	{Tags "aut" 0x6aa}
+	{Tags "aut" 0x6ab}
+	{Tags "aut" 0x6ac}
+	{Tags "aut" 0x6ad}
+	{Tags "aut" 0x6ae}
+	{Tags "aut" 0x6af}
+	{Tags "aut" 0x6b0}
+	{Tags "aut" 0x6b1}
+	{Tags "aut" 0x6b2}
+	{Tags "aut" 0x6b3}
+	{Tags "aut" 0x6b4}
+	{Tags "aut" 0x6b5}
+	{Tags "aut" 0x6b6}
+	{Tags "aut" 0x6b7}
+	{Tags "aut" 0x6b8}
+	{Tags "aut" 0x6b9}
+	{Tags "aut" 0x6ba}
+	{Tags "aut" 0x6bb}
+	{Tags "aut" 0x6bc}
+	{Tags "aut" 0x6bd}
+	{Tags "aut" 0x6be}
+	{Tags "aut" 0x6bf}
+	{Tags "aut" 0x6c0}
+	{Tags "aut" 0x6c1}
+	{Tags "aut" 0x6c2}
+	{Tags "aut" 0x6c7}
+	{Tags "aut" 0x6ca}
+	{Tags "aut" 0x6cb}
+	{Tags "aut" 0x6cc}
+	{Tags "aut" 0x6ce}
+	{Tags "aut" 0x6cf}
+	{Tags "aut" 0x6d0}
+	{Tags "aut" 0x6d1}
+	{Tags "aut" 0x6d2}
+	{Tags "aut" 0x6d4}
+	{Tags "aut" 0x6d8}
+	{Tags "aut" 0x6d9}
+	{Tags "aut" 0x6da}
+	{Tags "aut" 0x6db}
+	{Tags "aut" 0x6dc}
+	{Tags "aut" 0x6dd}
+	{Tags "aut" 0x6de}
+	{Tags "aut" 0x6e0}
+	{Tags "aut" 0x6e1}
+	{Tags "aut" 0x6e2}
+	{Tags "aut" 0x6e5}
+	{Tags "aut" 0x6e6}
+	{Tags "aut" 0x6e7}
+	{Tags "aut" 0x6e8}
+	{Tags "aut" 0x6e9}
+	{Tags "aut" 0x6fb}
+	{Tags "aut" 0x6fc}
+	{Tags "aut" 0x6fd}
+	{Tags "aut" 0x703}
+	{Tags "aut" 0x704}
+	{Tags "aut" 0x705}
+	{Tags "aut" 0x706}
+	{Tags "aut" 0x707}
+	{Tags "aut" 0x708}
+	{Tags "aut" 0x709}
+	{Tags "aut" 0x70a}
+	{Tags "aut" 0x70b}
+	{Tags "aut" 0x70c}
+	{Tags "aut" 0x70d}
+	{Tags "aut" 0x70e}
+	{Tags "aut" 0x70f}
+	{Tags "aut" 0x710}
+	{Tags "aut" 0x711}
+	{Tags "aut" 0x61ad}
+	{Tags "aut" 0x61ae}
+	{Tags "aut" 0x61af}
+	{Tags "aut" 0x61b0}
+	{Tags "aut" 0x61b1}
+	{Tags "aut" 0x61b2}
+	{Tags "aut" 0x61b3}
+	{Tags "aut" 0x61b4}
+	{Tags "aut" 0x61b5}
+	{Tags "aut" 0x61b6}
+	{Tags "aut" 0x61b7}
+	{Tags "aut" 0x61b8}
+	{Tags "aut" 0x61b9}
+	{Tags "aut" 0x61ba}
+	{Tags "aut" 0x61bb}
+	{Tags "aut" 0x61bc}
+	{Tags "aut" 0x61bd}
+	{Tags "aut" 0x61be}
+	{Tags "aut" 0x61bf}
+	{Tags "aut" 0x61c0}
+	{Tags "aut" 0x61c1}
+	{Tags "aut" 0x61c2}
+	{Tags "aut" 0x61c7}
+	{Tags "aut" 0x61ca}
+	{Tags "aut" 0x61cb}
+	{Tags "aut" 0x61ce}
+	{Tags "aut" 0x61cf}
+	{Tags "aut" 0x61d0}
+	{Tags "aut" 0x61d2}
+	{Tags "aut" 0x61d4}
+	{Tags "aut" 0x61d8}
+	{Tags "aut" 0x61d9}
+	{Tags "aut" 0x61da}
+	{Tags "aut" 0x61db}
+	{Tags "aut" 0x61dc}
+	{Tags "aut" 0x61dd}
+	{Tags "aut" 0x61de}
+	{Tags "aut" 0x61e0}
+	{Tags "aut" 0x61e1}
+	{Tags "aut" 0x61e2}
+	{Tags "aut" 0x61e5}
+	{Tags "aut" 0x61e6}
+	{Tags "aut" 0x61e7}
+	{Tags "aut" 0x61e8}
+	{Tags "aut" 0x61e9}
+	{Tags "aut" 0x61fb}
+	{Tags "aut" 0x61fc}
+	{Tags "aut" 0x61fd}
+	{Tags "aut" 0x6203}
+	{Tags "aut" 0x6204}
+	{Tags "aut" 0x6205}
+	{Tags "aut" 0x6206}
+	{Tags "aut" 0x6207}
+	{Tags "aut" 0x6208}
+	{Tags "aut" 0x6209}
+	{Tags "aut" 0x620a}
+	{Tags "aut" 0x620b}
+	{Tags "aut" 0x620c}
+	{Tags "aut" 0x620d}
+	{Tags "aut" 0x620e}
+	{Tags "aut" 0x620f}
+	{Tags "aut" 0x6210}
+	{Tags "aut" 0x6211}
+	{Tags "aut" 0x22eb}
+	{Tags "aut" 0x22ec}
+	{Tags "aut" 0x22ed}
+	{Tags "aut" 0x22ee}
+	{Tags "aut" 0x22ef}
+	{Tags "aut" 0x22f0}
+	{Tags "aut" 0x22f2}
+	{Tags "aut" 0x22f3}
+	{Tags "aut" 0x22f4}
+	{Tags "aut" 0x22f5}
+	{Tags "aut" 0x22f6}
+	{Tags "aut" 0x22f7}
+	{Tags "aut" 0x22f8}
+	{Tags "aut" 0x22fc}
+	{Tags "aut" 0x22fd}
+	{Tags "aut" 0x22fe}
+	{Tags "aut" 0x22ff}
+	{Tags "aut" 0x2300}
+	{Tags "aut" 0x2301}
+	{Tags "aut" 0x2302}
+	{Tags "aut" 0x2303}
+	{Tags "aut" 0x230c}
+	{Tags "aut" 0x230d}
+	{Tags "aut" 0x2314}
+	{Tags "aut" 0x2315}
+	{Tags "aut" 0x2316}
+	{Tags "aut" 0x2317}
+	{Tags "aut" 0x2319}
+	{Tags "aut" 0x231a}
+	{Tags "aut" 0x231b}
+	{Tags "aut" 0x231c}
+	{Tags "aut" 0x231d}
+	{Tags "aut" 0x231f}
+	{Tags "aut" 0x501b}
+	{Tags "aut" 0x501c}
+	{Tags "aut" 0x501d}
+	{Tags "aut" 0x501e}
+	{Tags "aut" 0x501f}
+	{Tags "aut" 0x5025}
+	{Tags "aut" 0x5026}
+	{Tags "aut" 0x5027}
+	{Tags "aut" 0x5028}
+	{Tags "aut" 0x5029}
+	{Tags "aut" 0x502a}
+	{Tags "aut" 0x502b}
+	{Tags "aut" 0x502c}
+	{Tags "aut" 0x502d}
+	{Tags "aut" 0x502e}
+	{Tags "aut" 0x502f}
+	{Tags "aut" 0x5030}
+	{Tags "aut" 0x5031}
+	{Tags "aut" 0x5032}
+	{Tags "aut" 0x5033}
+	{Tags "aut" 0x4583}
+	{Tags "aut" 0x4584}
+	{Tags "aut" 0x4585}
+	{Tags "aut" 0x4586}
+	{Tags "aut" 0x4587}
+	{Tags "aut" 0x4588}
+	{Tags "aut" 0x104c}
+	{Tags "aut" 0x104d}
+	{Tags "aut" 0x1051}
+	{Tags "aut" 0x1052}
+	{Tags "aut" 0x1054}
+	{Tags "aut" 0x1055}
+	{Tags "aut" 0x1056}
+	{Tags "aut" 0x1057}
+	{Tags "aut" 0x1058}
+	{Tags "aut" 0x1059}
+	{Tags "aut" 0x105a}
+	{Tags "aut" 0x105b}
+	{Tags "aut" 0x105c}
+	{Tags "aut" 0x105d}
+	{Tags "aut" 0x105e}
+	{Tags "aut" 0x1060}
+	{Tags "aut" 0x1061}
+	{Tags "aut" 0x1062}
+	{Tags "aut" 0x1064}
+	{Tags "aut" 0x1066}
+	{Tags "aut" 0x1067}
+	{Tags "aut" 0x1068}
+	{Tags "aut" 0x1069}
+	{Tags "aut" 0x106c}
+	{Tags "aut" 0x106d}
+	{Tags "aut" 0x106e}
+	{Tags "aut" 0x106f}
+	{Tags "aut" 0x1070}
+	{Tags "aut" 0x1071}
+	{Tags "aut" 0x1075}
+	{Tags "aut" 0x1076}
+	{Tags "aut" 0x1078}
+	{Tags "aut" 0x107c}
+	{Tags "aut" 0x107d}
+	{Tags "aut" 0x107e}
+	{Tags "aut" 0x107f}
+	{Tags "aut" 0x1080}
+	{Tags "aut" 0x1081}
+	{Tags "aut" 0x1082}
+	{Tags "aut" 0x1083}
+	{Tags "aut" 0x108c}
+	{Tags "aut" 0x108d}
+	{Tags "aut" 0x108e}
+	{Tags "aut" 0x108f}
+	{Tags "aut" 0x1091}
+	{Tags "aut" 0x1092}
+	{Tags "aut" 0x1093}
+	{Tags "aut" 0x1094}
+	{Tags "aut" 0x1095}
+	{Tags "aut" 0x1096}
+	{Tags "aut" 0x1097}
+	{Tags "aut" 0x1098}
+	{Tags "aut" 0x1099}
+	{Tags "aut" 0x109a}
+	{Tags "aut" 0x109b}
+	{Tags "aut" 0x109c}
+	{Tags "aut" 0x109d}
+	{Tags "aut" 0x109e}
+	{Tags "aut" 0x109f}
+	{Tags "aut" 0x10a0}
+	{Tags "aut" 0x10a1}
+	{Tags "aut" 0x10a2}
+	{Tags "aut" 0x10a3}
+	{Tags "aut" 0x10a4}
+	{Tags "aut" 0x10a5}
+	{Tags "aut" 0x10a6}
+	{Tags "aut" 0x10a7}
+	{Tags "aut" 0x10a8}
+	{Tags "aut" 0x10a9}
+	{Tags "aut" 0x10aa}
+	{Tags "aut" 0x10ab}
+	{Tags "aut" 0x10ad}
+	{Tags "aut" 0x10ae}
+	{Tags "aut" 0x10af}
+	{Tags "aut" 0x71e}
+	{Tags "aut" 0x71f}
+	{Tags "aut" 0x722}
+	{Tags "aut" 0x723}
+	{Tags "aut" 0x724}
+	{Tags "aut" 0x799}
+	{Tags "aut" 0x79a}
+	{Tags "aut" 0x79b}
+	{Tags "aut" 0x79c}
+	{Tags "aut" 0x79d}
+	{Tags "aut" 0x79f}
+	{Tags "aut" 0x7a0}
+	{Tags "aut" 0x7a4}
+	{Tags "aut" 0x7a5}
+	{Tags "aut" 0x7a8}
+	{Tags "aut" 0x7aa}
+	{Tags "aut" 0x7ab}
+	{Tags "aut" 0x7ac}
+	{Tags "aut" 0x7ad}
+	{Tags "aut" 0x7ae}
+	{Tags "aut" 0x7af}
+	{Tags "aut" 0x7b0}
+	{Tags "aut" 0x7b1}
+	{Tags "aut" 0x7b2}
+	{Tags "aut" 0x7b8}
+	{Tags "aut" 0x7b9}
+	{Tags "aut" 0x7ba}
+	{Tags "aut" 0x7bb}
+	{Tags "aut" 0x7bf}
+	{Tags "aut" 0x7c0}
+	{Tags "aut" 0x7c1}
+	{Tags "aut" 0x7c2}
+	{Tags "aut" 0x7c3}
+	{Tags "aut" 0x7c4}
+	{Tags "aut" 0x7c5}
+	{Tags "aut" 0x7c6}
+	{Tags "aut" 0x7c7}
+	{Tags "aut" 0x7c8}
+	{Tags "aut" 0x7c9}
+	{Tags "aut" 0x7cf}
+	{Tags "aut" 0x7d0}
+	{Tags "aut" 0x7d1}
+	{Tags "aut" 0x7d5}
+	{Tags "aut" 0x7d7}
+	{Tags "aut" 0x7d8}
+	{Tags "aut" 0x7d9}
+	{Tags "aut" 0x7da}
+	{Tags "aut" 0x7db}
+	{Tags "aut" 0x7dc}
+	{Tags "aut" 0x7dd}
+	{Tags "aut" 0x7e3}
+	{Tags "aut" 0x458c}
+	{Tags "aut" 0x458d}
+	{Tags "aut" 0x458e}
+	{Tags "aut" 0x458f}
+	{Tags "aut" 0x4592}
+	{Tags "aut" 0x4594}
+	{Tags "aut" 0x4595}
+	{Tags "aut" 0x4596}
+	{Tags "aut" 0x4599}
+	{Tags "aut" 0x459c}
+	{Tags "aut" 0x459d}
+	{Tags "aut" 0x459e}
+	{Tags "aut" 0x459f}
+	{Tags "aut" 0x45a2}
+	{Tags "aut" 0x45a6}
+	{Tags "aut" 0x45a9}
+	{Tags "aut" 0x45ac}
+	{Tags "aut" 0x45ad}
+	{Tags "aut" 0x45ae}
+	{Tags "aut" 0x45af}
+	{Tags "aut" 0x45b0}
+	{Tags "aut" 0x45b1}
+	{Tags "aut" 0x45b2}
+	{Tags "aut" 0x45b3}
+	{Tags "aut" 0x45b4}
+	{Tags "aut" 0x45b5}
+	{Tags "aut" 0x45b6}
+	{Tags "aut" 0x45b7}
+	{Tags "aut" 0x45b8}
+	{Tags "aut" 0x45b9}
+	{Tags "aut" 0x45ba}
+	{Tags "aut" 0x45bb}
+	{Tags "aut" 0x45bc}
+	{Tags "aut" 0x45bd}
+	{Tags "aut" 0x45be}
+	{Tags "aut" 0x45bf}
+	{Tags "aut" 0x45c0}
+	{Tags "aut" 0x45c1}
+	{Tags "aut" 0x45c2}
+	{Tags "aut" 0x45c3}
+	{Tags "aut" 0x45c4}
+	{Tags "aut" 0x45c5}
+	{Tags "aut" 0x45c6}
+	{Tags "aut" 0x45c7}
+	{Tags "aut" 0x45c8}
+	{Tags "aut" 0x45c9}
+	{Tags "aut" 0x45ca}
+	{Tags "aut" 0x45cb}
+	{Tags "aut" 0x45cc}
+	{Tags "aut" 0x45d6}
+	{Tags "aut" 0x45d7}
+	{Tags "aut" 0x45d8}
+	{Tags "aut" 0x45d9}
+	{Tags "aut" 0x45da}
+	{Tags "aut" 0x45de}
+	{Tags "aut" 0x45df}
+	{Tags "aut" 0x45e0}
+	{Tags "aut" 0x45e4}
+	{Tags "aut" 0x45e5}
+	{Tags "aut" 0x45e6}
+	{Tags "aut" 0x45e7}
+	{Tags "aut" 0x45e8}
+	{Tags "aut" 0x45e9}
+	{Tags "aut" 0x45ea}
+	{Tags "aut" 0x45eb}
+	{Tags "aut" 0x45ee}
+	{Tags "aut" 0x45f1}
+	{Tags "aut" 0x45f2}
+	{Tags "aut" 0x2305}
+	{Tags "aut" 0x2307}
+	{Tags "aut" 0x230e}
+	{Tags "aut" 0x2310}
+	{Tags "aut" 0x2312}
+	{Tags "aut" 0x2313}
+	{Tags "aut" 0x2318}
+	{Tags "aut" 0x231e}
+	{Tags "aut" 0x2321}
+	{Tags "aut" 0x2322}
+	{Tags "aut" 0x2325}
+	{Tags "aut" 0x2326}
+	{Tags "aut" 0x2327}
+	{Tags "aut" 0x2328}
+	{Tags "aut" 0x232a}
+	{Tags "aut" 0x232b}
+	{Tags "aut" 0x232c}
+	{Tags "aut" 0x232d}
+	{Tags "aut" 0x232e}
+	{Tags "aut" 0x232f}
+	{Tags "aut" 0x2330}
+	{Tags "aut" 0x2335}
+	{Tags "aut" 0x2336}
+	{Tags "aut" 0x2338}
+	{Tags "aut" 0x2339}
+	{Tags "aut" 0x233a}
+	{Tags "aut" 0x233b}
+	{Tags "aut" 0x233c}
+	{Tags "aut" 0x233d}
+	{Tags "aut" 0x233e}
+	{Tags "aut" 0x2343}
+	{Tags "aut" 0x2346}
+	{Tags "aut" 0x2347}
+	{Tags "aut" 0x234c}
+	{Tags "aut" 0x234f}
+	{Tags "aut" 0x2350}
+	{Tags "aut" 0x2351}
+	{Tags "aut" 0x2353}
+	{Tags "aut" 0x2357}
+	{Tags "aut" 0x2358}
+	{Tags "aut" 0x235d}
+	{Tags "aut" 0x235e}
+	{Tags "aut" 0x235f}
+	{Tags "aut" 0x2360}
+	{Tags "aut" 0x2362}
+	{Tags "aut" 0x2363}
+	{Tags "aut" 0x2364}
+	{Tags "aut" 0x2365}
+	{Tags "aut" 0x2366}
+	{Tags "aut" 0x2367}
+	{Tags "aut" 0x2368}
+	{Tags "aut" 0x2369}
+	{Tags "aut" 0x236a}
+	{Tags "aut" 0x236b}
+	{Tags "aut" 0x236c}
+	{Tags "aut" 0x236d}
+	{Tags "aut" 0x236e}
+	{Tags "aut" 0x2372}
+	{Tags "aut" 0x2373}
+	{Tags "aut" 0x2376}
+	{Tags "aut" 0x2378}
+	{Tags "aut" 0x2379}
+	{Tags "aut" 0x237a}
+	{Tags "aut" 0x237b}
+	{Tags "aut" 0x237c}
+	{Tags "aut" 0x237d}
+	{Tags "aut" 0x237f}
+	{Tags "aut" 0x2380}
+	{Tags "aut" 0x2389}
+	{Tags "aut" 0x6216}
+	{Tags "aut" 0x6217}
+	{Tags "aut" 0x5038}
+	{Tags "aut" 0x5043}
+	{Tags "aut" 0x5044}
+	{Tags "aut" 0x5047}
+	{Tags "aut" 0x5048}
+	{Tags "aut" 0x504b}
+	{Tags "aut" 0x504c}
+	{Tags "aut" 0x504d}
+	{Tags "aut" 0x504f}
+	{Tags "aut" 0x5050}
+	{Tags "aut" 0x5051}
+	{Tags "aut" 0x5053}
+	{Tags "aut" 0x5054}
+	{Tags "aut" 0x5f1}
+	{Tags "aut" 0x5f2}
+	{Tags "aut" 0x5f3}
+	{Tags "aut" 0x5f4}
+	{Tags "aut" 0x5f5}
+	{Tags "aut" 0x5f6}
+	{Tags "aut" 0x5f7}
+	{Tags "aut" 0x5f8}
+	{Tags "aut" 0x5f9}
+	{Tags "aut" 0x5fa}
+	{Tags "aut" 0x5fc}
+	{Tags "aut" 0x5fd}
+	{Tags "aut" 0x5ff}
+	{Tags "aut" 0x600}
+	{Tags "aut" 0x602}
+	{Tags "aut" 0x603}
+	{Tags "aut" 0x604}
+	{Tags "aut" 0x605}
+	{Tags "aut" 0x606}
+	{Tags "aut" 0x607}
+	{Tags "aut" 0x608}
+	{Tags "aut" 0x60a}
+	{Tags "aut" 0x752}
+	{Tags "aut" 0x7a9}
+	{Tags "aut" 0x7b4}
+	{Tags "aut" 0x7e4}
+	{Tags "aut" 0x7ea}
+	{Tags "aut" 0x7ec}
+	{Tags "aut" 0x7ed}
+	{Tags "aut" 0x7ee}
+	{Tags "aut" 0x7ef}
+	{Tags "aut" 0x7f0}
+	{Tags "aut" 0x7f1}
+	{Tags "aut" 0x7f2}
+	{Tags "aut" 0x7f3}
+	{Tags "aut" 0x7f4}
+	{Tags "aut" 0x7f5}
+	{Tags "aut" 0x7fc}
+	{Tags "aut" 0x7fd}
+	{Tags "aut" 0x7fe}
+	{Tags "aut" 0x805}
+	{Tags "aut" 0x808}
+	{Tags "aut" 0x809}
+	{Tags "aut" 0x80a}
+	{Tags "aut" 0x812}
+	{Tags "aut" 0x81d}
+	{Tags "aut" 0x81e}
+	{Tags "aut" 0x81f}
+	{Tags "aut" 0x823}
+	{Tags "aut" 0x824}
+	{Tags "aut" 0x826}
+	{Tags "aut" 0x827}
+	{Tags "aut" 0x828}
+	{Tags "aut" 0x829}
+	{Tags "aut" 0x82b}
+	{Tags "aut" 0x82c}
+	{Tags "aut" 0x82e}
+	{Tags "aut" 0x82f}
+	{Tags "aut" 0x830}
+	{Tags "aut" 0x831}
+	{Tags "aut" 0x832}
+	{Tags "aut" 0x833}
+	{Tags "aut" 0x834}
+	{Tags "aut" 0x835}
+	{Tags "aut" 0x83a}
+	{Tags "aut" 0x83b}
+	{Tags "aut" 0x83c}
+	{Tags "aut" 0x83d}
+	{Tags "aut" 0x83e}
+	{Tags "aut" 0x83f}
+	{Tags "aut" 0x843}
+	{Tags "aut" 0x844}
+	{Tags "aut" 0x845}
+	{Tags "aut" 0x847}
+	{Tags "aut" 0x848}
+	{Tags "aut" 0x84a}
+	{Tags "aut" 0x84b}
+	{Tags "aut" 0x84c}
+	{Tags "aut" 0x851}
+	{Tags "aut" 0x852}
+	{Tags "aut" 0x853}
+	{Tags "aut" 0x854}
+	{Tags "aut" 0x855}
+	{Tags "aut" 0x856}
+	{Tags "aut" 0x858}
+	{Tags "aut" 0x859}
+	{Tags "aut" 0x85a}
+	{Tags "aut" 0x85b}
+	{Tags "aut" 0x85c}
+	{Tags "aut" 0x85d}
+	{Tags "aut" 0x85e}
+	{Tags "aut" 0x85f}
+	{Tags "aut" 0x861}
+	{Tags "aut" 0x862}
+	{Tags "aut" 0x863}
+	{Tags "aut" 0x864}
+	{Tags "aut" 0x865}
+	{Tags "aut" 0x866}
+	{Tags "aut" 0x868}
+	{Tags "aut" 0x86b}
+	{Tags "aut" 0x86d}
+	{Tags "aut" 0x870}
+	{Tags "aut" 0x872}
+	{Tags "aut" 0x874}
+	{Tags "aut" 0x875}
+	{Tags "aut" 0x876}
+	{Tags "aut" 0x877}
+	{Tags "aut" 0x87c}
+	{Tags "aut" 0x87d}
+	{Tags "aut" 0x87e}
+	{Tags "aut" 0x87f}
+	{Tags "aut" 0x880}
+	{Tags "aut" 0x881}
+	{Tags "aut" 0x883}
+	{Tags "aut" 0x884}
+	{Tags "aut" 0x886}
+	{Tags "aut" 0x887}
+	{Tags "aut" 0x888}
+	{Tags "aut" 0x889}
+	{Tags "aut" 0x88a}
+	{Tags "aut" 0x88b}
+	{Tags "aut" 0x88c}
+	{Tags "aut" 0x88d}
+	{Tags "aut" 0x88e}
+	{Tags "aut" 0x88f}
+	{Tags "aut" 0x894}
+	{Tags "aut" 0x895}
+	{Tags "aut" 0x896}
+	{Tags "aut" 0x897}
+	{Tags "aut" 0x898}
+	{Tags "aut" 0x899}
+	{Tags "aut" 0x89a}
+	{Tags "aut" 0x89b}
+	{Tags "aut" 0x89c}
+	{Tags "aut" 0x89d}
+	{Tags "aut" 0x89e}
+	{Tags "aut" 0x89f}
+	{Tags "aut" 0x8a0}
+	{Tags "aut" 0x8a1}
+	{Tags "aut" 0x8a2}
+	{Tags "aut" 0x8a3}
+	{Tags "aut" 0x8a4}
+	{Tags "aut" 0x8a5}
+	{Tags "aut" 0x8a6}
+	{Tags "aut" 0x8a7}
+	{Tags "aut" 0x8aa}
+	{Tags "aut" 0x8b6}
+	{Tags "aut" 0x8b8}
+	{Tags "aut" 0x8ba}
+	{Tags "aut" 0x8bb}
+	{Tags "aut" 0x8bc}
+	{Tags "aut" 0x8bd}
+	{Tags "aut" 0x8be}
+	{Tags "aut" 0x8bf}
+	{Tags "aut" 0x8c3}
+	{Tags "aut" 0x8c4}
+	{Tags "aut" 0x8c5}
+	{Tags "aut" 0x8c6}
+	{Tags "aut" 0x8c7}
+	{Tags "aut" 0x8c8}
+	{Tags "aut" 0x8c9}
+	{Tags "aut" 0x8ca}
+	{Tags "aut" 0x8cf}
+	{Tags "aut" 0x8d0}
+	{Tags "aut" 0x8d3}
+	{Tags "aut" 0x8d5}
+	{Tags "aut" 0x8d6}
+	{Tags "aut" 0x8d7}
+	{Tags "aut" 0x8d8}
+	{Tags "aut" 0x8df}
+	{Tags "aut" 0x8e0}
+	{Tags "aut" 0x8e1}
+	{Tags "aut" 0x8e2}
+	{Tags "aut" 0x8e3}
+	{Tags "aut" 0x8e4}
+	{Tags "aut" 0x8e5}
+	{Tags "aut" 0x8e6}
+	{Tags "aut" 0x8e7}
+	{Tags "aut" 0x8e8}
+	{Tags "aut" 0x8e9}
+	{Tags "aut" 0x8ea}
+	{Tags "aut" 0x8eb}
+	{Tags "aut" 0x8f1}
+	{Tags "aut" 0x8f2}
+	{Tags "aut" 0x8f3}
+	{Tags "aut" 0x8f7}
+	{Tags "aut" 0x8f9}
+	{Tags "aut" 0x8fa}
+	{Tags "aut" 0x8fb}
+	{Tags "aut" 0x8fc}
+	{Tags "aut" 0x8fd}
+	{Tags "aut" 0x8fe}
+	{Tags "aut" 0x8ff}
+	{Tags "aut" 0x903}
+	{Tags "aut" 0x904}
+	{Tags "aut" 0x905}
+	{Tags "aut" 0x907}
+	{Tags "aut" 0x908}
+	{Tags "aut" 0x90a}
+	{Tags "aut" 0x90b}
+	{Tags "aut" 0x90d}
+	{Tags "aut" 0x90e}
+	{Tags "aut" 0x911}
+	{Tags "aut" 0x912}
+	{Tags "aut" 0x913}
+	{Tags "aut" 0x914}
+	{Tags "aut" 0x915}
+	{Tags "aut" 0x916}
+	{Tags "aut" 0x91b}
+	{Tags "aut" 0x91d}
+	{Tags "aut" 0x91e}
+	{Tags "aut" 0x920}
+	{Tags "aut" 0x921}
+	{Tags "aut" 0x924}
+	{Tags "aut" 0x92e}
+	{Tags "aut" 0x92f}
+	{Tags "aut" 0x930}
+	{Tags "aut" 0x931}
+	{Tags "aut" 0x936}
+	{Tags "aut" 0x937}
+	{Tags "aut" 0x938}
+	{Tags "aut" 0x939}
+	{Tags "aut" 0x93c}
+	{Tags "aut" 0x93d}
+	{Tags "aut" 0x93e}
+	{Tags "aut" 0x93f}
+	{Tags "aut" 0x941}
+	{Tags "aut" 0x944}
+	{Tags "aut" 0x945}
+	{Tags "aut" 0x947}
+	{Tags "aut" 0x948}
+	{Tags "aut" 0x949}
+	{Tags "aut" 0x94a}
+	{Tags "aut" 0x94b}
+	{Tags "aut" 0x94c}
+	{Tags "aut" 0x94d}
+	{Tags "aut" 0x94e}
+	{Tags "aut" 0x94f}
+	{Tags "aut" 0x950}
+	{Tags "aut" 0x951}
+	{Tags "aut" 0x952}
+	{Tags "aut" 0x953}
+	{Tags "aut" 0x954}
+	{Tags "aut" 0x955}
+	{Tags "aut" 0x956}
+	{Tags "aut" 0x957}
+	{Tags "aut" 0x958}
+	{Tags "aut" 0x959}
+	{Tags "aut" 0x95a}
+	{Tags "aut" 0x95b}
+	{Tags "aut" 0x95c}
+	{Tags "aut" 0x95d}
+	{Tags "aut" 0x95e}
+	{Tags "aut" 0x95f}
+	{Tags "aut" 0x960}
+	{Tags "aut" 0x961}
+	{Tags "aut" 0x962}
+	{Tags "aut" 0x963}
+	{Tags "aut" 0x964}
+	{Tags "aut" 0x965}
+	{Tags "aut" 0x966}
+	{Tags "aut" 0x967}
+	{Tags "aut" 0x968}
+	{Tags "aut" 0x96a}
+	{Tags "aut" 0x96c}
+	{Tags "aut" 0x96d}
+	{Tags "aut" 0x971}
+	{Tags "aut" 0x972}
+	{Tags "aut" 0x973}
+	{Tags "aut" 0x974}
+	{Tags "aut" 0x975}
+	{Tags "aut" 0x978}
+	{Tags "aut" 0x979}
+	{Tags "aut" 0x97a}
+	{Tags "aut" 0x97d}
+	{Tags "aut" 0x97e}
+	{Tags "aut" 0x982}
+	{Tags "aut" 0x983}
+	{Tags "aut" 0x985}
+	{Tags "aut" 0x986}
+	{Tags "aut" 0x987}
+	{Tags "aut" 0x988}
+	{Tags "aut" 0x989}
+	{Tags "aut" 0x98a}
+	{Tags "aut" 0x98b}
+	{Tags "aut" 0x98c}
+	{Tags "aut" 0x98d}
+	{Tags "aut" 0x98e}
+	{Tags "aut" 0x98f}
+	{Tags "aut" 0x990}
+	{Tags "aut" 0x991}
+	{Tags "aut" 0x992}
+	{Tags "aut" 0x995}
+	{Tags "aut" 0x996}
+	{Tags "aut" 0x997}
+	{Tags "aut" 0x998}
+	{Tags "aut" 0x999}
+	{Tags "aut" 0x99f}
+	{Tags "aut" 0x9a0}
+	{Tags "aut" 0x9a1}
+	{Tags "aut" 0x9a2}
+	{Tags "aut" 0x9a3}
+	{Tags "aut" 0x9a4}
+	{Tags "aut" 0x9a8}
+	{Tags "aut" 0x9aa}
+	{Tags "aut" 0x9ab}
+	{Tags "aut" 0x9ac}
+	{Tags "aut" 0x9b1}
+	{Tags "aut" 0x9b2}
+	{Tags "aut" 0x9b3}
+	{Tags "aut" 0x9b4}
+	{Tags "aut" 0x9b5}
+	{Tags "aut" 0x9b6}
+	{Tags "aut" 0x9b7}
+	{Tags "aut" 0x9b8}
+	{Tags "aut" 0x9b9}
+	{Tags "aut" 0x9ba}
+	{Tags "aut" 0x9bb}
+	{Tags "aut" 0x9bc}
+	{Tags "aut" 0x9bd}
+	{Tags "aut" 0x9be}
+	{Tags "aut" 0x9bf}
+	{Tags "aut" 0x9c0}
+	{Tags "aut" 0x9c1}
+	{Tags "aut" 0x9c2}
+	{Tags "aut" 0x9c3}
+	{Tags "aut" 0x9c4}
+	{Tags "aut" 0x9c5}
+	{Tags "aut" 0x9c6}
+	{Tags "aut" 0x9c7}
+	{Tags "aut" 0x9c8}
+	{Tags "aut" 0x9c9}
+	{Tags "aut" 0x9ca}
+	{Tags "aut" 0x9cb}
+	{Tags "aut" 0x9cc}
+	{Tags "aut" 0x9cd}
+	{Tags "aut" 0x9ce}
+	{Tags "aut" 0x9cf}
+	{Tags "aut" 0x9d0}
+	{Tags "aut" 0x9d1}
+	{Tags "aut" 0x9d2}
+	{Tags "aut" 0x9d3}
+	{Tags "aut" 0x9d4}
+	{Tags "aut" 0x9d5}
+	{Tags "aut" 0x9d6}
+	{Tags "aut" 0x9d7}
+	{Tags "aut" 0x9d8}
+	{Tags "aut" 0x9d9}
+	{Tags "aut" 0x9da}
+	{Tags "aut" 0x9db}
+	{Tags "aut" 0x9dc}
+	{Tags "aut" 0x9dd}
+	{Tags "aut" 0x9de}
+	{Tags "aut" 0x9df}
+	{Tags "aut" 0x9e0}
+	{Tags "aut" 0x9e1}
+	{Tags "aut" 0x9e2}
+	{Tags "aut" 0x9e3}
+	{Tags "aut" 0x9e4}
+	{Tags "aut" 0x9e5}
+	{Tags "aut" 0x9e6}
+	{Tags "aut" 0x9e7}
+	{Tags "aut" 0x9e8}
+	{Tags "aut" 0x9e9}
+	{Tags "aut" 0x9ea}
+	{Tags "aut" 0x9eb}
+	{Tags "aut" 0x9ec}
+	{Tags "aut" 0x9ed}
+	{Tags "aut" 0x9ee}
+	{Tags "aut" 0x9ef}
+	{Tags "aut" 0x9f0}
+	{Tags "aut" 0x9f1}
+	{Tags "aut" 0x9f9}
+	{Tags "aut" 0x9fa}
+	{Tags "aut" 0x9fb}
+	{Tags "aut" 0x9fc}
+	{Tags "aut" 0x9fd}
+	{Tags "aut" 0x9fe}
+	{Tags "aut" 0x9ff}
+	{Tags "aut" 0xa00}
+	{Tags "aut" 0xa01}
+	{Tags "aut" 0xa02}
+	{Tags "aut" 0xa03}
+	{Tags "aut" 0xa0a}
+	{Tags "aut" 0xa0b}
+	{Tags "aut" 0xa0c}
+	{Tags "aut" 0xa0e}
+	{Tags "aut" 0xa0f}
+	{Tags "aut" 0xa11}
+	{Tags "aut" 0xa12}
+	{Tags "aut" 0xa13}
+	{Tags "aut" 0xa14}
+	{Tags "aut" 0xa15}
+	{Tags "aut" 0xa16}
+	{Tags "aut" 0xa17}
+	{Tags "aut" 0xa18}
+	{Tags "aut" 0xa19}
+	{Tags "aut" 0xa1a}
+	{Tags "aut" 0xa1b}
+	{Tags "aut" 0xa1c}
+	{Tags "aut" 0xa1d}
+	{Tags "aut" 0xa1e}
+	{Tags "aut" 0xa1f}
+	{Tags "aut" 0xa20}
+	{Tags "aut" 0xa21}
+	{Tags "aut" 0xa22}
+	{Tags "aut" 0xa23}
+	{Tags "aut" 0xa24}
+	{Tags "aut" 0xa25}
+	{Tags "aut" 0xa26}
+	{Tags "aut" 0xa27}
+	{Tags "aut" 0xa28}
+	{Tags "aut" 0xa29}
+	{Tags "aut" 0xa2e}
+	{Tags "aut" 0xa30}
+	{Tags "aut" 0xa31}
+	{Tags "aut" 0xa34}
+	{Tags "aut" 0xa36}
+	{Tags "aut" 0xa37}
+	{Tags "aut" 0xa38}
+	{Tags "aut" 0xa3b}
+	{Tags "aut" 0xa3c}
+	{Tags "aut" 0xa3d}
+	{Tags "aut" 0xa3e}
+	{Tags "aut" 0xa3f}
+	{Tags "aut" 0xa43}
+	{Tags "aut" 0xa44}
+	{Tags "aut" 0xa45}
+	{Tags "aut" 0xa49}
+	{Tags "aut" 0xa4b}
+	{Tags "aut" 0xa4c}
+	{Tags "aut" 0xa4d}
+	{Tags "aut" 0xa4e}
+	{Tags "aut" 0xa4f}
+	{Tags "aut" 0xa50}
+	{Tags "aut" 0xa54}
+	{Tags "aut" 0xa55}
+	{Tags "aut" 0xa58}
+	{Tags "aut" 0xa5c}
+	{Tags "aut" 0xa5d}
+	{Tags "aut" 0xa5e}
+	{Tags "aut" 0xa5f}
+	{Tags "aut" 0xa60}
+	{Tags "aut" 0xa61}
+	{Tags "aut" 0xa62}
+	{Tags "aut" 0xa63}
+	{Tags "aut" 0xa64}
+	{Tags "aut" 0xa65}
+	{Tags "aut" 0xa68}
+	{Tags "aut" 0xa6b}
+	{Tags "aut" 0xa6c}
+	{Tags "aut" 0xa6d}
+	{Tags "aut" 0xa6f}
+	{Tags "aut" 0xa70}
+	{Tags "aut" 0xa71}
+	{Tags "aut" 0xa72}
+	{Tags "aut" 0xa76}
+	{Tags "aut" 0xa77}
+	{Tags "aut" 0xa78}
+	{Tags "aut" 0xa79}
+	{Tags "aut" 0xa7a}
+	{Tags "aut" 0xa7b}
+	{Tags "aut" 0xa7d}
+	{Tags "aut" 0xa7e}
+	{Tags "aut" 0xa7f}
+	{Tags "aut" 0xa80}
+	{Tags "aut" 0xa81}
+	{Tags "aut" 0xa82}
+	{Tags "aut" 0xa83}
+	{Tags "aut" 0xa84}
+	{Tags "aut" 0xa85}
+	{Tags "aut" 0xa86}
+	{Tags "aut" 0xa87}
+	{Tags "aut" 0xa88}
+	{Tags "aut" 0xa89}
+	{Tags "aut" 0xa8a}
+	{Tags "aut" 0xa8b}
+	{Tags "aut" 0xa8c}
+	{Tags "aut" 0xa8d}
+	{Tags "aut" 0xa8e}
+	{Tags "aut" 0xa8f}
+	{Tags "aut" 0xa90}
+	{Tags "aut" 0xa93}
+	{Tags "aut" 0xa95}
+	{Tags "aut" 0xa96}
+	{Tags "aut" 0xa97}
+	{Tags "aut" 0xa98}
+	{Tags "aut" 0xaa4}
+	{Tags "aut" 0xaa5}
+	{Tags "aut" 0xaa6}
+	{Tags "aut" 0xab1}
+	{Tags "aut" 0xab2}
+	{Tags "aut" 0xab3}
+	{Tags "aut" 0xab4}
+	{Tags "aut" 0xab5}
+	{Tags "aut" 0xaba}
+	{Tags "aut" 0xabb}
+	{Tags "aut" 0xabf}
+	{Tags "aut" 0xac0}
+	{Tags "aut" 0xac1}
+	{Tags "aut" 0xac2}
+	{Tags "aut" 0xac3}
+	{Tags "aut" 0xac4}
+	{Tags "aut" 0xac5}
+	{Tags "aut" 0xac6}
+	{Tags "aut" 0xac7}
+	{Tags "aut" 0xac8}
+	{Tags "aut" 0x10cb}
+	{Tags "aut" 0x10cc}
+	{Tags "aut" 0x10cd}
+	{Tags "aut" 0x10ce}
+	{Tags "aut" 0x10cf}
+	{Tags "aut" 0x10d0}
+	{Tags "aut" 0x10d2}
+	{Tags "aut" 0x10d3}
+	{Tags "aut" 0x10d4}
+	{Tags "aut" 0x10d5}
+	{Tags "aut" 0x10d6}
+	{Tags "aut" 0x10d7}
+	{Tags "aut" 0x7000}
+	{Tags "aut" 0x707a}
+	{Tags "aut" 0x707b}
+	{Tags "aut" 0x707d}
+	{Tags "aut" 0x707e}
+	{Tags "aut" 0x707f}
+	{Tags "aut" 0x7080}
+	{Tags "aut" 0x238f}
+	{Tags "aut" 0x2390}
+	{Tags "bare" 0x3047}
+	{Tags "bare" 0x3048}
+	{Tags "bare" 0x3049}
+	{Tags "bare" 0x304a}
+	{Tags "fpc1" "flag" 0x802f}
+	{Tags "fpc3" "flag" 0x8011}
+	{Tags "fpc5" "flag" 0x8003}
+	{Tags "fpc4" "flag" 0x8004}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
+	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x8014}
 	{Tags "cmp_def" "1_a_2-3" 0x8015}
 	{Tags "cmp_def" "1_a_2-3" 0x8016}
@@ -17198,9 +20111,9 @@
 			{clear}
 			{item "tt33" filled {cell 0 0}}
 			{item "tt33" "ammo" 8 {cell 2 0}}
-			{item "tt33" "ammo" 4 {cell 3 0}}
-			{item "bandage_rus" {cell 4 0}}
-			{item "soviet_tankovy_helmet" {cell 6 0}{user "head"}}
+			{item "tt33" "ammo" 4 {cell 4 0}}
+			{item "bandage_rus" {cell 6 0}}
+			{item "soviet_tankovy_helmet" {cell 0 1}{user "head"}}
 		}
 	}
 	{Inventory 0x8074
@@ -17217,9 +20130,9 @@
 			{clear}
 			{item "tt33" filled {cell 0 0}}
 			{item "tt33" "ammo" 8 {cell 2 0}}
-			{item "tt33" "ammo" 4 {cell 3 0}}
-			{item "bandage_rus" {cell 4 0}}
-			{item "soviet_tankovy_helmet" {cell 6 0}{user "head"}}
+			{item "tt33" "ammo" 4 {cell 4 0}}
+			{item "bandage_rus" {cell 6 0}}
+			{item "soviet_tankovy_helmet" {cell 0 1}{user "head"}}
 		}
 	}
 	{Inventory 0x82ee
@@ -17245,1424 +20158,1707 @@
 	}
 	{Brain 0x8014
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8015
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8016
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8017
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8018
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8023
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8027
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x802b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x802c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8031
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8032
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8033
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8034
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8035
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8036
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8037
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8038
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8039
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803e
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8040
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8041
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8042
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8044
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc002
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc004
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc005
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc006
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8048
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc008
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc009
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc00a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc00b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc00d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc00f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc012
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc013
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc015
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc016
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc017
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc018
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc01a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc01b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc01c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc01d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc01e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc01f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc023
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc027
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc028
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc029
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc02a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc02b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc02c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc02d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc044
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc045
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc046
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc047
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc048
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc049
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc04a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc04b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc04c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc04d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc04e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc04f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc050
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc051
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc052
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc053
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc054
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc055
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc056
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc057
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc058
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc059
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc05a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc05b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc05c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc05d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc05e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc05f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc060
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc061
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc062
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc063
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc064
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc065
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc066
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc067
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc068
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc069
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc06a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc06b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc082
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc083
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc084
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc085
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc086
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc087
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc088
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc089
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc08a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc08b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc08c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc08d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc08e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc08f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc090
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc091
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc092
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc093
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc094
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc095
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc096
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc097
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc098
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc099
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc09a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc09b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc09c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc09d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc09e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc09f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a5
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0a9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0c9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0ca
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0cb
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0cc
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0cd
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0ce
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0cf
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0d9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0da
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0db
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0dc
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0dd
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0de
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0df
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0e0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0e1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0e2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0e3
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0e4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0e5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0e6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xc0e7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x800c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x800f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x802d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8066
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8067
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8069
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8070
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8072
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8073
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8075
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8076
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x802e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8030
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8043
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8049
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa007
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa008
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa009
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa011
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa012
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa017
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa018
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa023
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa030
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa031
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa032
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa033
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa034
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa035
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa036
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa037
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa038
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa039
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa03a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa03f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa040
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa041
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa042
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa043
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa044
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa045
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa046
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa047
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa048
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa049
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8071
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8074
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8077
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
@@ -18679,12 +21875,14 @@
 	{Brain 0x82ee
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x82ef
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
@@ -18694,7 +21892,7 @@
 		}
 	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -18716,31 +21914,6 @@
 		{event "music_rnd"}
 		{event "music_start"}
 		{event "talk_on"}
-		{zone "circle"
-			{position -1.97299 -971.466 94}
-			{Name "forward1"}
-			{Radius 1528.02}
-		}
-		{zone "circle"
-			{position -2950.48 817.169 147.191}
-			{Name "forward2"}
-			{Radius 1926.17}
-		}
-		{zone "circle"
-			{position 3330.14 -1130.56 153.986}
-			{Name "forward3"}
-			{Radius 1794.48}
-		}
-		{zone "circle"
-			{position 2702.06 -5892.29 126}
-			{Name "forward4"}
-			{Radius 1962.34}
-		}
-		{zone "circle"
-			{position -2592.84 5625.54 138}
-			{Name "forward5"}
-			{Radius 2255.67}
-		}
 		{zone "circle"
 			{position -668.957 -8978.16 0}
 			{Name "_bridge1"}
@@ -18792,7 +21965,7 @@
 			{Radius 600}
 		}
 		{zone "circle"
-			{position 7321.29 574.249 58}
+			{position 7327.24 5506.79 93}
 			{Name "b_4"}
 			{Radius 600}
 		}
@@ -18804,6 +21977,31 @@
 			{Point -1475.35 5645.21}
 			{Point 6216.86 169.622}
 			{Point 3579.37 -8321.29}
+		}
+		{zone "circle"
+			{position -1.97299 -971.466 94}
+			{Name "forward1"}
+			{Radius 1528.02}
+		}
+		{zone "circle"
+			{position -2950.48 817.169 147.191}
+			{Name "forward2"}
+			{Radius 1926.17}
+		}
+		{zone "circle"
+			{position 3330.14 -1130.56 153.986}
+			{Name "forward3"}
+			{Radius 1794.48}
+		}
+		{zone "circle"
+			{position 2702.06 -5892.29 126}
+			{Name "forward4"}
+			{Radius 1962.34}
+		}
+		{zone "circle"
+			{position -2592.84 5625.54 138}
+			{Name "forward5"}
+			{Radius 2255.67}
 		}
 		{zone "poly"
 			{position -227.333 -739.546 91.0016}
@@ -31353,9 +34551,7 @@
 				{position -1771.42 6431.43 68.0725}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

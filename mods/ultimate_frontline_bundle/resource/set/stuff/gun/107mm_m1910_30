@@ -10,13 +10,7 @@
 	{reloadSound "utility/"}
 	("medium_artillery")
 	{calibre 107}
-	; UFB realism: native non-story gametype conditions
-{range 420 420}
-(mod "gametype:battle_zones" {range 630 630})
-(mod "gametype:ammunition" {range 630 630})
-(mod "gametype:evacuation" {range 630 630})
-(mod "gametype:frontlines" {range 630 630})
-(mod "gametype:campaign_capture_the_flag" {range 630 630}) ; // 16.3km
+	{range 420 420} ; // 16.3km
 
 	("reload time" seconds(15))
 
@@ -26,18 +20,15 @@
 	;("armor health custom" shell(sr) velocity(670) damage(310) filler(440))
 	("105_slope_multipliers")
 
-	("penetration_long" shell(apcbche) range(200) a(117) b(111) c(103) d(95) e(89))  ; // RHA
+	{parameters "apcbche"
+		{projectileDamageTable {10 119.66363636} {30 117} {100 111} {155 103} {200 95.8} {215 0}}
+		{range 200 200}
+	}  ; // RHA
 
 	; Shrapnel
 	;("penetration_medium" shell(sr) range(420) a(37) b(31) c(29) d(26) e(22)) ; Pen data for shrapnel shell 
 	{parameters "sr" 
-		; UFB realism: native non-story gametype conditions
-{range 380 380}
-(mod "gametype:battle_zones" {range 570 570})
-(mod "gametype:ammunition" {range 570 570})
-(mod "gametype:evacuation" {range 570 570})
-(mod "gametype:frontlines" {range 570 570})
-(mod "gametype:campaign_capture_the_flag" {range 570 570})
+		{range 380 380}
 		("reload time" seconds(17))
 		{DisableRicochet}
 	}

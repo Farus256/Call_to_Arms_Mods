@@ -1,8 +1,6 @@
 {"human"
 	(include "human_idle.inc")
-	(include "ufb_stress.inc")
-	(include "ufb_corpse_pool.inc")
-	(include "ufb_wounds.inc")
+	(include "ufb_combat_events.inc")
 	{inflammation_time 1.0}
 	{on spawn
 		{add_view	"cigarettesmoke"		"smoke"		"head"}
@@ -89,6 +87,48 @@
 		{call "dead_personage"}
 		{if tagged "_anim_loop" {call "check_animation"}}	;// for mission scripts
 	}
+
+	{on animation_event "deflect_release_pose"
+		{if "deflect_ani_playing"
+			{call_synced "deflect_human_spawn_helper"}
+		}
+	}
+
+	{on animation_end "grenade_deflect"
+		{if "deflect_ani_playing"
+			{call_synced "deflect_human_release"}
+			{set "deflect_ani_playing" 0}
+			{tags add "deflect_ani_played"}
+		}
+	}
+
+	{on "deflect_human_spawn_helper"
+		{if not dead
+			{if not senseless
+				{if not linked
+					{spawn "deflect_contact"}
+				}
+			}
+		}
+	}
+
+	{on "deflect_human_release"
+		{if not dead
+			{if not senseless
+				{if not linked
+					{delay 0.25
+						{if tagged "deflect_ani_played"
+							{if not dead
+								{chassis_work 1}
+								{tags remove "deflect_ani_played"}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	{on "dead_personage"
 		{delay 0.5
 			{if tagged "_bleedout_"
@@ -96,56 +136,89 @@
 			}
 		}
 	}
-
-    {on "ai_near_player_cooldown"
-	    {tags add "_ai_near_player_cooldown"}
-		{delay 10
-		    {if tagged "_ai_near_player_cooldown" {tags remove "_ai_near_player_cooldown"}}
+	
+    {on "ai_medic_passive_build_tent"
+		{if not user_control
+			{tags add "_ai_medic_passive_building"}
+			{delay 4
+				{if not dead
+					{if tagged "_ai_medic_passive_building" {tags remove "_ai_medic_passive_building"}}
+					{spawn "medic_rally_ai"}
+					{tags add "_ai_medic_passive_built_tent"}
+				}
+			}
 		}
 	}
 
-    {on "ai_medic_cooldown"
-	    {tags add "_ai_medic_cooldown"}
-		{delay 20
-		    {if tagged "_ai_medic_cooldown" {tags remove "_ai_medic_cooldown"}}
+    {on "ai_near_player_cooldown"
+		{if not user_control
+			{tags add "_ai_near_player_cooldown"}
+			{delay 10
+				{if tagged "_ai_near_player_cooldown" {tags remove "_ai_near_player_cooldown"}}
+			}
 		}
 	}
 
     {on "ai_wirecutter_animation"
-	    {tags add "_ai_wirecutter_animation"}
-		{delay 5
-		    {if tagged "_ai_wirecutter_animation" {tags remove "_ai_wirecutter_animation"}}
+		{if not user_control
+			{tags add "_ai_wirecutter_animation"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 5
+				{if tagged "_ai_wirecutter_animation" {tags remove "_ai_wirecutter_animation"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 
     {on "ai_generic_cooldown_5sec"
-	    {tags add "_ai_generic_cooldown_5sec"}
-		{delay 5
-		    {if tagged "_ai_generic_cooldown_5sec" {tags remove "_ai_generic_cooldown_5sec"}}
+		{if not user_control
+			{tags add "_ai_generic_cooldown_5sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 5
+				{if tagged "_ai_generic_cooldown_5sec" {tags remove "_ai_generic_cooldown_5sec"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 
     {on "ai_generic_cooldown_10sec"
-	    {tags add "_ai_generic_cooldown_10sec"}
-		{delay 10
-		   {if tagged "_ai_generic_cooldown_10sec" {tags remove "_ai_generic_cooldown_10sec"}}
+		{if not user_control
+			{tags add "_ai_generic_cooldown_10sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 10
+			   {if tagged "_ai_generic_cooldown_10sec" {tags remove "_ai_generic_cooldown_10sec"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 
     {on "ai_generic_cooldown_15sec"
-	    {tags add "_ai_generic_cooldown_15sec"}
-		{delay 15
-		    {if tagged "_ai_generic_cooldown_15sec" {tags remove "_ai_generic_cooldown_15sec"}}
+		{if not user_control
+			{tags add "_ai_generic_cooldown_15sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 15
+				{if tagged "_ai_generic_cooldown_15sec" {tags remove "_ai_generic_cooldown_15sec"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 
     {on "ai_generic_cooldown_20sec"
-	    {tags add "_ai_generic_cooldown_20sec"}
-		{delay 20
-		    {if tagged "_ai_generic_cooldown_20sec" {tags remove "_ai_generic_cooldown_20sec"}}
+		{if not user_control
+			{tags add "_ai_generic_cooldown_20sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 20
+				{if tagged "_ai_generic_cooldown_20sec" {tags remove "_ai_generic_cooldown_20sec"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 	
+    {on "ai_generic_cooldown_60sec"
+		{if not user_control	
+			{tags add "_ai_generic_cooldown_60sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 20
+				{if tagged "_ai_generic_cooldown_60sec" {tags remove "_ai_generic_cooldown_60sec"} {tags remove "_ai_do_not_disturb"}}
+			}
+		}		
+	}
+
 	{on "ai_drop_orders"
 		{drop_orders}
 	}
@@ -256,8 +329,9 @@
 							}
 						else
 							("human_health" c(%d))
+							%x
 						}
-						; UFB: one impact applies damage and knockdown once.
+						("human_health" c(%d))
 						%x
 					}
 				)
@@ -279,9 +353,9 @@
 	}
 
 	{on bullet_hit
+		{call "ufb_combat_hit"}
 		{kill_flags reset}
 		{signal hit 5}
-		{call_synced "ufb_stress"}
 		{if stuff "shell fg"
 			{bullet_detonate}
 			{call "process_bullet_hit"}
@@ -297,23 +371,34 @@
 			{if volume_armored
 				{bullet_detonate}
 				{spawn "helmet_hit_bul"}
+				{if rand 0.10
+					{take_off "head"
+						{impulse up 5 2 dir 7 3}
+					}
+				}
 			}
 			{call "process_bullet_hit"}
 			{if tagged "start_personage"
-				{if rand 0.5
-					{call_synced "unhealable"}
-					{if not terrain_fx "water"
-						{ani_play "lie_die"}
-						{ani_stop "lie_wounded"}
-						{ani_stop "lie_wounded_1"}
-						{ani_stop "lie_wounded_2"}
-						{tags add "wounded_dead"}
+				{if not tagged "hf_wounded_carry_pose"
+					{if rand 0.5
+						{call_synced "unhealable"}
 					}
+				else
+					;// do nothing
 				}
 			}
 		else stuff "shell"
 			{call "process_bullet_hit"}
-			{call "unhealable"}
+			{if tagged "start_personage"
+				{if not tagged "hf_wounded_carry_pose"
+					{call_synced "unhealable"}
+				else
+					;// do nothing
+				}
+			else not tagged "start_personage"
+				{call_synced "unhealable"}
+			}
+			
 		else stuff "flare"
 			{tags add "_flare_hit"}
 			{call "_burn"}
@@ -414,7 +499,6 @@
 	}
 
 	{on blast_hit overload sync
-		{call_synced "ufb_stress"}
 		{if not dead
 			{if min_energy 2
 				{call "unhealable"}
@@ -532,7 +616,7 @@
 		{if tagged "no_explosion"
 			{call "die"}
 		else
-			{if not dead {call "die_scream"}}
+			{call "die_scream"}
 			{call "explosion"}
 		}
 	}
@@ -674,8 +758,18 @@
 
 	{on "personage_check"
 		{if not tagged "hero_unit"				;// exception for unit to be revive-able in missions
-			;// UFB: autonomous soldiers can be wounded in ordinary MP too.
-			;// Burns, crushing, dismemberment and subsequent fatal hits remain lethal.
+			(mod "gametype:ammunition"
+				{if not user_control{able "personage" 0}}
+			)
+			(mod "gametype:battle_zones"
+				{if not user_control{able "personage" 0}}
+			)
+			(mod "gametype:evacuation"
+				{if not user_control{able "personage" 0}}
+			)
+			(mod "gametype:frontlines"
+				{if not user_control{able "personage" 0}}
+			)
 			{if swimming
 				{able "personage" 0}
 			else burned
@@ -686,8 +780,7 @@
 				{able "personage" 0}
 				{tags remove "no_revive"}
 			else 
-				;// Eligible MP wounds: 70% survive for treatment (previously 65%).
-				{if rand 0.30
+				{if rand 0.35
 					{call_synced "mp_personage_0"}
 				}
 			}
@@ -705,7 +798,21 @@
 
 	{on "hf_clear_tags"
 		;// HF conquest specific tags
-		{if tagged "_ai_medic_target"				{tags remove "_ai_medic_target"}}
+		{if tagged "_ai_do_not_disturb"				{tags remove "_ai_do_not_disturb"}}
+		{if tagged "_ai_medic"						{tags remove "_ai_medic"}}
+		{if tagged "_ai_medic_passive"				{tags remove "_ai_medic_passive"}}
+		{if tagged "_ai_medic_passive_building"		{tags remove "_ai_medic_passive_building"}}
+		{if tagged "_ai_medic_passive_built_tent"	{tags remove "_ai_medic_passive_built_tent"}}
+		{if tagged "_ai_medic_target" 		  		{tags remove "_ai_medic_target"}}
+		{if tagged "_ai_medic_target_in_range"		{tags remove "_ai_medic_target_in_range"}}
+		{if tagged "_ai_medic_active"				{tags remove "_ai_medic_active"}}
+		{if tagged "_ai_medic_active_working" 		{tags remove "_ai_medic_active_working"}}
+		{if tagged "_ai_medic_active_in_range" 		{tags remove "_ai_medic_active_in_range"}}
+		{if tagged "_ai_wounded_carrier"			{tags remove "_ai_wounded_carrier"}}
+		{if tagged "_ai_wounded_carrier_selected"	{tags remove "_ai_wounded_carrier_selected"}}
+		{if tagged "_ai_wounded_carrier_linked"		{tags remove "_ai_wounded_carrier_linked"}}
+		{if tagged "_ai_wounded_target"				{tags remove "_ai_wounded_target"}}
+		{if tagged "_ai_wounded_target_linked"		{tags remove "_ai_wounded_target_linked"}}		
 		{if tagged "_ai_near_player" 				{tags remove "_ai_near_player"}}
 		{if tagged "_ai_near_player_cooldown" 		{tags remove "_ai_near_player_cooldown"}}
 		{if tagged "_ai_ap_target" 					{tags remove "_ai_ap_target"}}
@@ -722,60 +829,13 @@
 		{if tagged "_ai_pilot_surrender" 			{tags remove "_ai_pilot_surrender"}}
 		{if tagged "_ai_pilot_surrendered" 			{tags remove "_ai_pilot_surrendered"}}
 		{if tagged "_ai_pilot_escaping" 			{tags remove "_ai_pilot_escaping"}}
-		{if tagged "_ai_medic_work" 				{tags remove "_ai_medic_work"}}
-		{if tagged "_ai_medic" 						{tags remove "_ai_medic"}}
-		{if tagged "_ai_medic_near" 				{tags remove "_ai_medic_near"}}
-		{if tagged "_ai_medic_cooldown" 			{tags remove "_ai_medic_cooldown"}}
-		{if tagged "_ai_medic_target" 				{tags remove "_ai_medic_target"}}
-		{if tagged "_ai_medic_target_being_healed" 	{tags remove "_ai_medic_target_being_healed"}}
 		{if tagged "_ai_wirecutter" 				{tags remove "_ai_wirecutter"}}
-		; UFB realism: native non-story gametype conditions
-{if tagged "_ai_wirecutter_do" 				{tags remove "_ai_wirecutter"}}
-(mod "gametype:battle_zones" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
-(mod "gametype:ammunition" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
-(mod "gametype:evacuation" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
-(mod "gametype:frontlines" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
-(mod "gametype:campaign_capture_the_flag" {if tagged "_ai_wirecutter_do" {tags remove "_ai_wirecutter_do"}})
-		; UFB realism: native non-story gametype conditions
-{if tagged "_ai_wirecutter_in_action" 		{tags remove "_ai_wirecutter"}}
-(mod "gametype:battle_zones" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
-(mod "gametype:ammunition" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
-(mod "gametype:evacuation" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
-(mod "gametype:frontlines" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
-(mod "gametype:campaign_capture_the_flag" {if tagged "_ai_wirecutter_in_action" {tags remove "_ai_wirecutter_in_action"}})
-		;//
-	
-(mod "gametype:battle_zones" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
-{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
-{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
-{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
-{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
-{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
-(mod "gametype:ammunition" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
-{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
-{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
-{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
-{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
-{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
-(mod "gametype:evacuation" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
-{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
-{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
-{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
-{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
-{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
-(mod "gametype:frontlines" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
-{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
-{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
-{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
-{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
-{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
-(mod "gametype:campaign_capture_the_flag" {if tagged "_ufb_smoke_120m_actor" {tags remove "_ufb_smoke_120m_actor"}}
-{if tagged "_ufb_smoke_120m_target" {tags remove "_ufb_smoke_120m_target"}}
-{if tagged "_ufb_smoke_60m_actor" {tags remove "_ufb_smoke_60m_actor"}}
-{if tagged "_ufb_smoke_60m_target" {tags remove "_ufb_smoke_60m_target"}}
-{if tagged "_ufb_smoke_wirecutter_actor" {tags remove "_ufb_smoke_wirecutter_actor"}}
-{if tagged "_ufb_smoke_wirecutter_target" {tags remove "_ufb_smoke_wirecutter_target"}})
-}
+		{if tagged "_ai_wirecutter_do" 				{tags remove "_ai_wirecutter"}}
+		{if tagged "_ai_wirecutter_in_action" 		{tags remove "_ai_wirecutter"}}
+		;// Vanilla LUA tags
+		{if tagged "_lua_mi" 						{tags remove "_lua_mi"}}
+		{if tagged "_lua_ignore" 					{tags remove "_lua_ignore"}}
+	}
 
 	{on "die"
 		{view stop "officer"}
@@ -858,6 +918,10 @@
 			{kill_flags piercing}
 		}
 		{call "stop_bagpipes"}
+		{call "hf_clear_tags"}
+		{if tagged "start_personage"
+			{call "hf_wounded_queue_death"}
+		}
 		{die}
 		{delay 5
 			{volumes enable contact}
@@ -1285,7 +1349,7 @@
 		else effector "stuff weapon"	
 			{with_effector
 				{call "link_human"}
-			}			
+			}		
 		}
 	}
 
@@ -1408,6 +1472,7 @@
 
 
 	{on move on
+ {call "ufb_autonomy_move_on"}
 		{if swimming
 			{view start "swim_move"}
 			{play_sound "swim" 1}
@@ -1415,6 +1480,7 @@
 	}
 
 	{on move off
+ {call "ufb_autonomy_move_off"}
 		{view pause "swim_move"}
 		{call "stop_move_sounds"}
 	}
@@ -1732,10 +1798,12 @@
 	{on "kill_neutral"}
 
 	{on "start_healing"
+		{tags add "_ufb_healing_active"}
 		{view start ally neutral "marker_healing"}
 	}
 
 	{on "stop_healing"
+		{tags remove "_ufb_healing_active"}
 		{view pause "marker_healing"}
 	}
 
@@ -1765,30 +1833,203 @@
 	}
 
 	{on "start_personage"
+		{call "stop_wounded_animation"}
+		{kill_delay "hf_wounded_finish"}
+		{tags remove "hf_wounded_death_temp"}
+		{tags remove "hf_wounded_death_played"}
 		{view pause "marker_repair"}
 		{view pause "marker_personage_acute"}
 		{view start ally neutral "marker_personage"}
 		{tags add "start_personage"}
-		{call_synced "ufb_wound_start"}
+		{delay 3 "hf_wounded_animation_start"
+			{call "hf_wounded_update"}
+		}
+	}
+
+	{on "hf_wounded_play"
+		{if not tagged "wounded_animation_playing"
+			{if personage
+				{if tagged "start_personage"
+					{if not linked
+						{if not inactive
+							{if not tagged "hf_wounded_death_temp"
+								{if not terrain_fx "water"
+									{if not tagged "_bleedout_"
+										{if not tagged "no_revive"
+											{if rand 0.33
+												{ani_play "lie_wounded" loop}
+											else rand 0.33
+												{ani_play "lie_wounded_1" loop}
+											else
+												{ani_play "lie_wounded_2" loop}
+											}
+											{tags add "wounded_animation_playing"}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	{on "hf_wounded_pause"
+		{if tagged "wounded_animation_playing"
+			{ani_stop "lie_wounded"}
+			{ani_stop "lie_wounded_1"}
+			{ani_stop "lie_wounded_2"}
+			{tags remove "wounded_animation_playing"}
+		}
+	}
+
+	{on "hf_wounded_carry_stop"
+		{if tagged "hf_wounded_carry_pose"
+			{ani_stop "corpse_move"}
+			{tags remove "hf_wounded_carry_pose"}
+		}
+	}
+
+	{on "hf_wounded_transport_pause"
+		{if not tagged "hf_wounded_carry_pose"
+			{kill_delay "hf_wounded_resume"}
+			{tags remove "hf_wounded_resume_temp"}
+			{call "hf_wounded_pause"}
+			{ani_play "corpse_move" loop}
+			{tags add "hf_wounded_carry_pose"}
+		}
+		{tags add "hf_wounded_carry_paused"}
+		{call "hf_wounded_check_loop"}
+	}
+
+	{on "hf_wounded_check_loop"
+		{kill_delay "hf_wounded_check"}
+		{delay 1 "hf_wounded_check"
+			{call "hf_wounded_update"}
+		}
+	}
+
+	{on "hf_wounded_update"
+		{if linked
+			{call "hf_wounded_transport_pause"}
+		else inactive
+			{call "hf_wounded_transport_pause"}
+		else
+			{call "hf_wounded_carry_stop"}
+			{if tagged "hf_wounded_death_temp"
+				{call "hf_wounded_finish"}
+			else personage
+				{if tagged "start_personage"
+					{if tagged "hf_wounded_carry_paused"
+						{if not tagged "hf_wounded_resume_temp"
+							{tags add "hf_wounded_resume_temp"}
+							{delay 1 "hf_wounded_resume"
+								{tags remove "hf_wounded_resume_temp"}
+								{if not linked
+									{if not inactive
+										{tags remove "hf_wounded_carry_paused"}
+										{call "hf_wounded_play"}
+									}
+								}
+							}
+						}
+					else
+						{call "hf_wounded_play"}
+					}
+					{call "hf_wounded_check_loop"}
+				}
+			else
+				{call "stop_wounded_animation"}
+			}
+		}
+	}
+
+	{on "stop_wounded_animation"
+		{kill_delay "hf_wounded_animation_start"}
+		{kill_delay "hf_wounded_check"}
+		{kill_delay "hf_wounded_resume"}
+		{call "hf_wounded_pause"}
+		{if not linked
+			{if not inactive
+				{call "hf_wounded_carry_stop"}
+			}
+		}
+		{tags remove "hf_wounded_carry_paused"}
+		{tags remove "hf_wounded_resume_temp"}
+	}
+
+	{on "hf_wounded_queue_death"
+		{if tagged "wounded_animation_playing"
+			{tags add "hf_wounded_death_temp"}
+		else tagged "hf_wounded_carry_pose"
+			{tags add "hf_wounded_death_temp"}
+		}
+		{call "stop_wounded_animation"}
+		{if tagged "hf_wounded_death_temp"
+			{kill_delay "hf_wounded_finish"}
+			{delay 0.1 "hf_wounded_finish"
+				{call "hf_wounded_finish"}
+			}
+		}
+	}
+
+	{on "hf_wounded_finish"
+		{if dead
+			{if linked
+				{call "hf_wounded_transport_pause"}
+			else inactive
+				{call "hf_wounded_transport_pause"}
+			else
+				{call "stop_wounded_animation"}
+				{if not terrain_fx "water"
+					{if not tagged "hf_wounded_death_played"
+						{ani_play "lie_die" norestart}
+						{tags add "hf_wounded_death_played"}
+						{tags add "wounded_dead"}
+					}
+				}
+				{tags remove "hf_wounded_death_temp"}
+			}
+		else
+			{tags remove "hf_wounded_death_temp"}
+		}
+	}
+	
+	{on "hf_wounded_tags_clear"
+		{if tagged "_ai_wounded_carrier" 	  		{tags remove "_ai_wounded_carrier"}}
+		{if tagged "_ai_wounded_carrier_selected"   {tags remove "_ai_wounded_carrier_selected"}}
+		{if tagged "_ai_wounded_carrier_linked" 	{tags remove "_ai_wounded_carrier_linked"}}
+		{if tagged "_ai_wounded_target" 	  		{tags remove "_ai_wounded_target"}}
+		{if tagged "_ai_wounded_target_linked" 		{tags remove "_ai_wounded_target_linked"}}
+		{if tagged "_ai_medic_target" 		  		{tags remove "_ai_medic_target"}}
+		{if tagged "_ai_medic_target_in_range"		{tags remove "_ai_medic_target_in_range"}}
+		{call "ai_generic_cooldown_20sec"}
 	}
 
 	{on "stop_personage"
 		{set "die_sound" 0}
 		{view pause "marker_personage"}
 		{view pause "marker_personage_acute"}
-		{call_synced "ufb_wound_stop"}
+		{call "hf_wounded_queue_death"}
 		{if tagged "start_personage"
 			{delay 1
 				{if dead
-					{call "ufb_schedule_bleedout_pool"}
+					{call "ufb_schedule_bleedout_pool"}	;// the same single 5% roll as other deaths
 					{tags add "_bleedout_"}
 					{call "hf_clear_tags"}
+				else not dead
+					{delay 1
+						{if not tagged "bleeding"
+							{call "hf_wounded_tags_clear"}
+						}
+					}
 				}
 			}
+			{tags remove "start_personage"}
 		}
-		{tags remove "start_personage"}
 	}
-
+	
 	{on "start_personage_acute"
 		{view pause "marker_personage"}
 		{view start ally neutral "marker_personage_acute"}
@@ -1850,9 +2091,6 @@
 		{ani_stop "lie_wounded"}
 		{ani_stop "lie_wounded_1"}
 		{ani_stop "lie_wounded_2"}
-		{kill_delay "ufb_wound_animation"}
-		{kill_delay "ufb_wound_death_pose"}
-		{tags remove "wounded_animation_playing"}
 	}
 
 	{on "knock_out_short" 						;// used in mission scripts
@@ -1952,13 +2190,36 @@
 		}
 	}
 
-;=============================================================================
-;   BM Mod dismemberment handler, merged into Horten's Frontline human.inc.
-;   Spawns BM Mod body parts and burst particles only - all ground blood and
-;   blood decals stay stock Gates of Hell.
-;=============================================================================
+{on "ufb_smoke_screen_120m" sync
+ {spawn "ufb_smoke_screen_point" local_offset 200 0 0 constrain_after_dir
+  {tags add "_ufb_smoke_120m_screen"}
+  {delay 4 {delete}}
+ }
+}
 
-	{on "bm_explosion"
+{on "ufb_smoke_screen_60m" sync
+ {spawn "ufb_smoke_screen_point" local_offset 200 0 0 constrain_after_dir
+  {tags add "_ufb_smoke_60m_screen"}
+  {delay 4 {delete}}
+ }
+}
+
+{on "ufb_smoke_screen_wirecutter" sync
+ {spawn "ufb_smoke_screen_point" local_offset 200 0 0 constrain_after_dir
+  {tags add "_ufb_smoke_wirecutter_screen"}
+  {delay 4 {delete}}
+ }
+}
+
+{on "ufb_hf_cover_committed" sync
+ {kill_delay "ufb_hf_cover_expiry"}
+ {tags add "_ufb_hf_cover_active"}
+ {delay 3 "ufb_hf_cover_expiry" {tags remove "_ufb_hf_cover_active"}}
+}
+
+(include "ufb_corpse_pool.inc")
+
+{on "bm_explosion"
 		{volumes disable bullet contact blast touch}		
 		{call "delete"}	
 		{take_off "head"

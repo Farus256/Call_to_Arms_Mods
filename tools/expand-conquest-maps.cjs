@@ -1,6 +1,7 @@
 // Adapt selected installed 4v4 maps, keeping their original terrain and navigation.
 const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const s=require('./lib/sdl.cjs'),NavGrid=require('./lib/gem-nav.cjs'),g=require('./garrison-layout.cjs');
+const staging=require('./lib/garrison-staging.cjs');
 const work=path.resolve(process.argv[2]||'../_survival_work/conquest-maps-20261007');
 const maps=[{name:'4v4_fields',title:'Fields',landscape:'desert',tex:'camo'},
     {name:'4v4_Rikila',title:'Rikila',landscape:'wood',tex:'camo'},
@@ -179,7 +180,8 @@ function build(spec) {
     }
     for(const [id,p] of Object.entries(entries))helperParts.push('{zone "circle" {position '+p.slice(0,2).join(' ')+' '+nav.cell(...p).height+'}{Name "'+id[0]+'_'+id[1]+'"}{Radius 800}}');
     for(let i=1;i<=3;i++)helperParts.push('{zone "circle" {position 0 0 0}{Name "_bridge'+i+'"}{Radius 0}}');
-    const base='{mission\r\n'+output.join('\r\n')+'\r\n{Helpers\r\n'+helperParts.join('\r\n')+'\r\n}\r\n}\r\n';
+    const projected='{mission\r\n'+output.join('\r\n')+'\r\n{Helpers\r\n'+helperParts.join('\r\n')+'\r\n}\r\n}\r\n';
+    const base=staging.repairAddedAnchors(projected,g.mapData(projected)).text;
     const built=g.layout(base),data=g.mapData(base),group=data.script.children.find(n=>name(n)==='waypoints');
     const mission=base.slice(0,group.end-1)+'\r\n(include "ufb_garrison_layout.inc")\r\n'+base.slice(group.end-1);
     const info=';SDL\r\n{game {maxPlayers 8}{mapSelection 1}{landscape '+spec.landscape+'}'+(spec.tex?'{texMod '+spec.tex+'}':'')+'}\r\n';

@@ -1,5 +1,27 @@
 -- Utility variables for various game modes
 
+-- UFB: GEM runs bot callbacks unprotected; any Lua error there reaches lua panic ->
+-- abort() and closes the game (0xc0000409, no minidump, nothing in game.log).
+-- Log each distinct error once instead. Every mode requires this file first.
+local reportedErrors = {}
+local function protect(fn)
+	if type(fn) ~= "function" then return fn end
+	return function(...)
+		local ok, err = xpcall(fn, debug.traceback, ...)
+		if not ok and not reportedErrors[err] then
+			reportedErrors[err] = true
+			print("[UFB] Lua error in bot callback (bot continues): " .. tostring(err))
+		end
+	end
+end
+pcall(function()
+	local events = BotApi.Events
+	local subscribe, setQuantTimer = events.Subscribe, events.SetQuantTimer
+	if type(subscribe) ~= "function" or type(setQuantTimer) ~= "function" then return end
+	events.Subscribe = function(self, event, fn) return subscribe(self, event, protect(fn)) end
+	events.SetQuantTimer = function(self, fn, delay) return setQuantTimer(self, protect(fn), delay) end
+end)
+
 printDebug = true
 printTempDebug = false
 
@@ -52,6 +74,8 @@ Context = {
 	SpawnWait = {
 		CooldownTimer = nil,
 		WaitTimer = nil,
+		DeadlineTimer = nil,
+		WaitOwner = nil,
 		RetryPendingUnit = false
 	},
 	SquadTimers = {}
@@ -82,6 +106,11 @@ function KillSpawnWaitTimer()
 		BotApi.Events:KillQuantTimer(Context.SpawnWait.WaitTimer)
 		Context.SpawnWait.WaitTimer = nil
 	end
+	if Context.SpawnWait.DeadlineTimer then
+		BotApi.Events:KillQuantTimer(Context.SpawnWait.DeadlineTimer)
+		Context.SpawnWait.DeadlineTimer = nil
+	end
+	Context.SpawnWait.WaitOwner = nil
 	Context.SpawnWait.RetryPendingUnit = false
 end
 
@@ -362,11 +391,12 @@ function TrySpawnUnit()
 	--]]
 
 	if GameModeSpawnUnit(unit, MaxSquadSize) then
+		-- Retire the old timeout before its queued callback can clear a successful purchase.
+		KillSpawnWaitTimer()
 		spawningUnit = true
 		return
 	end
 	
-	local currentUnitSpawnWaitTime = GetCurrentSpawnWaitTime()
 	---[[ -- TODO: Move to GetUnitToSpawn()
 	local tts = BotApi.Commands:TimeToSpawnUnit(unit)
 	local min_tts = GetUnitSelectionTTSLimit()
@@ -378,22 +408,30 @@ function TrySpawnUnit()
 	end
 	--]]
 
-	if retryPendingUnit then
-		Context.SpawnInfo = nil
-	end
-
-	-- TODO: Move to GetUnitToSpawn()
-	if not Context.SpawnWait.WaitTimer then
+	-- Keep the chosen unit and the native reselection deadline, but retry its
+	-- purchase once a second: resources/CP/unlock timers can become ready sooner.
+	if not Context.SpawnWait.DeadlineTimer then
+		local currentUnitSpawnWaitTime = GetCurrentSpawnWaitTime()
+		local owner = {}
+		Context.SpawnWait.WaitOwner = owner
 		if printDebug then 
 			print("Print: player#".. BotApi.Instance.playerId .." tried to purchase: ".. unit .." Not enough MP, DP, CP, or the unit timer is not unlocked")
-			print("Print: player#".. BotApi.Instance.playerId .." will wait a maximum of ".. (currentUnitSpawnWaitTime / 1000 + 1) .."s for resources or unit timer before it attempts a new unit purchase")
+			print("Print: player#".. BotApi.Instance.playerId .." will wait a maximum of ".. (currentUnitSpawnWaitTime / 1000 + 1) .."s for resources or unit timer before it attempts a new unit purchase (checking every 1s)")
 		end
-		Context.SpawnWait.WaitTimer = BotApi.Events:SetQuantTimer(
+		Context.SpawnWait.DeadlineTimer = BotApi.Events:SetQuantTimer(
 			function()
-				Context.SpawnWait.WaitTimer = nil
-				Context.SpawnWait.RetryPendingUnit = Context.SpawnInfo ~= nil
+				if Context.SpawnWait.WaitOwner ~= owner then return end
+				Context.SpawnWait.DeadlineTimer = nil
+				KillSpawnWaitTimer()
+				Context.SpawnInfo = nil
 			end, currentUnitSpawnWaitTime + 1000)
 	end
+	local owner = Context.SpawnWait.WaitOwner
+	Context.SpawnWait.WaitTimer = BotApi.Events:SetQuantTimer(function()
+		if Context.SpawnWait.WaitOwner ~= owner then return end
+		Context.SpawnWait.WaitTimer = nil
+		Context.SpawnWait.RetryPendingUnit = Context.SpawnInfo ~= nil
+	end, 1000)
 end
 --]=]
 function OnGameStop()
@@ -406,6 +444,9 @@ function OnGameStop()
 		end
 		Context.SquadTimers[squad] = nil
 	end
+
+	local guard = package.loaded[ [[/script/multiplayer/ufb_order_guard]] ]
+	if type(guard) == "table" and guard.Stop then guard.Stop() end
 end
 
 function SetSquadOrder(order, squad, delay)

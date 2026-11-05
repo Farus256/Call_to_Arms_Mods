@@ -1,0 +1,7 @@
+{mod
+	{name "HF_BM_Patch"}
+	{tags "patch, compatibility, gore"}
+	{desc "Compatibility patch for Horten`s Frontline and BM mod"}
+	{minGameVersion "1.064"}
+	{maxGameVersion "1.088"}
+}

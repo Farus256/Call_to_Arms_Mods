@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position 36.84 -191.63 52}
 		{xform zl 139.78}
@@ -98,7 +98,7 @@
 		{MID 3}
 	}
 	{Entity "map_point_conquest" 0xc000
-		{Position 3766.19 -6882.33}
+		{Position 5641.95 -6975.74}
 		{xform zl 95.23}
 		{Extender "map_point"
 			{name b2}
@@ -140,7 +140,7 @@
 		{MID 9}
 	}
 	{Entity "map_point_conquest" 0x8005
-		{Position 6645.72 -6841.82}
+		{Position 6975.2 -5294.85}
 		{xform zl 138.07}
 		{Extender "map_point"
 			{name b1}
@@ -161,7 +161,7 @@
 		{MID 4}
 	}
 	{Entity "map_point_conquest" 0x8006
-		{Position -3275.47 7002.93}
+		{Position -822.15 7016.26}
 		{xform zl -91.73}
 		{Extender "map_point"
 			{name a2}
@@ -182,7 +182,7 @@
 		{MID 5}
 	}
 	{Entity "map_point_conquest" 0x8007
-		{Position -6869.74 5991.69}
+		{Position -6945.21 6970.48}
 		{xform zl -50.59}
 		{Extender "map_point"
 			{name a3}
@@ -203,7 +203,7 @@
 		{MID 6}
 	}
 	{Entity "map_point_conquest" 0x8008
-		{Position -1859.32 -6959.77}
+		{Position -4058.99 -7023.68}
 		{xform zl 93.43}
 		{Extender "map_point"
 			{name b3}
@@ -5675,7 +5675,7 @@
 		{MID 316}
 	}
 	{Entity "arrow_enemy" 0x82e9
-		{Position -7091.06 6202.7}
+		{Position -7166.53 7181.49}
 		{xform zl -134.07}
 	}
 	{Entity "arrow_enemy" 0x82ea
@@ -5683,7 +5683,7 @@
 		{xform zl 160.58}
 	}
 	{Entity "arrow_enemy" 0x82eb
-		{Position -3288.37 7121.58}
+		{Position -835.05 7134.91}
 		{xform zl -167.04}
 	}
 	{Entity "arrow_enemy" 0x82ec
@@ -5691,11 +5691,11 @@
 		{xform zl 131.03}
 	}
 	{Entity "arrow_enemy" 0xd400
-		{Position 6817.25 -7077.77}
+		{Position 7147.55 -5345.8}
 		{xform zl 42.35}
 	}
 	{Entity "arrow_enemy" 0x80ee
-		{Position 3710.6 -7157.73}
+		{Position 5586.36 -7251.14}
 		{xform zl 19}
 	}
 	{Entity "arrow_enemy" 0x8113
@@ -5703,7 +5703,7 @@
 		{xform zl -50.27}
 	}
 	{Entity "arrow_enemy" 0x8114
-		{Position -1837.11 -7063.81}
+		{Position -4036.78 -7127.72}
 		{xform zl 0.7}
 	}
 	{Human "mp/fin/late/pilot" 0x82ee
@@ -10050,7 +10050,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x8190
-		{Position -1478.18 2126.13}
+		{Position -1478.18 2126.12}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -11086,7 +11086,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x81e0
-		{Position -2525.13 -209.31}
+		{Position -2525.12 -209.31}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -14746,6 +14746,80 @@
 		{Position 705.42 3656.37}
 		{xform zl -40.52}
 	}
+	{Human "mp/eng/late/pilot" 0xc081
+		{Position -4437.91 -9322.91}
+		{xform zl 180 y 3.76 zw -92.32}
+		{Volume "body"
+			{able {blast 0}}
+		}
+		{Volume "head"
+			{able {blast 0}}
+		}
+		{Volume "face"
+			{able {blast 0}}
+		}
+		{Volume "hand1l"
+			{able {blast 0}}
+		}
+		{Volume "hand2l"
+			{able {blast 0}}
+		}
+		{Volume "hand1r"
+			{able {blast 0}}
+		}
+		{Volume "hand2r"
+			{able {blast 0}}
+		}
+		{Volume "foot1r"
+			{able {blast 0}}
+		}
+		{Volume "foot2r"
+			{able {blast 0}}
+		}
+		{Volume "foot1l"
+			{able {blast 0}}
+		}
+		{Volume "foot2l"
+			{able {blast 0}}
+		}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+		{MID 321}
+		{NameId 90 55}
+		{LastItem "enfield_no2_mk1"}
+	}
+	{Entity "hurribomber_mk2c" 0xc083
+		{Position -4438.02 -9322.23}
+		{xform zl 87.68}
+		{Volume "1blade1"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "1blade2"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "1blade3"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "spin1"
+			{able {contact 1}{contact_ground 1}{touch 1}}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 322}
+		{Weaponry
+			{Current "bomb1"}
+		}
+		{Chassis "airborne"
+			{AirborneMode 1}
+			{Altitude 47}
+		}
+		{ChassisManager
+			{Current "airborne"}
+		}
+	}
 	{Link 0x8000 {0x802f "sandbags"}}
 	{Link 0x810d {0x8112 "driver"}}
 	{Link 0x8110 {0x8112 "gunner"}}
@@ -14753,18 +14827,881 @@
 	{Link 0x82ee {0x82ed "driver"}}
 	{Link 0x82ef {0x82ed "gunner"}}
 	{Link 0xc07f {0x828e "driver"}}
+	{Link 0xc081 {0xc083 "driver"}}
+	{Tags "bare" 0x604c}
+	{Tags "bare" 0x604d}
+	{Tags "bare" 0x6075}
+	{Tags "bare" 0x607c}
+	{Tags "bare" 0x6087}
+	{Tags "bare" 0x6088}
+	{Tags "bare" 0x60d3}
+	{Tags "bare" 0x60d8}
+	{Tags "bare" 0x60df}
+	{Tags "bare" 0x60e0}
+	{Tags "bare" 0x60e6}
+	{Tags "bare" 0x60e7}
+	{Tags "bare" 0x60e8}
+	{Tags "bare" 0x60e9}
+	{Tags "bare" 0x60ea}
+	{Tags "bare" 0x60eb}
+	{Tags "bare" 0x60ec}
+	{Tags "bare" 0x60ed}
+	{Tags "bare" 0x60ee}
+	{Tags "bare" 0x60ef}
+	{Tags "bare" 0x60f0}
+	{Tags "bare" 0x6116}
+	{Tags "bare" 0x6117}
+	{Tags "bare" 0x6118}
+	{Tags "bare" 0x6119}
+	{Tags "bare" 0x611a}
+	{Tags "bare" 0x611b}
+	{Tags "bare" 0x611c}
+	{Tags "bare" 0x611d}
+	{Tags "bare" 0x611e}
+	{Tags "bare" 0x611f}
+	{Tags "bare" 0x6120}
+	{Tags "bare" 0x6121}
+	{Tags "bare" 0x6122}
+	{Tags "bare" 0x6123}
+	{Tags "bare" 0x6124}
+	{Tags "bare" 0x6125}
+	{Tags "bare" 0x6126}
+	{Tags "bare" 0x6127}
+	{Tags "bare" 0x6128}
+	{Tags "bare" 0x6129}
+	{Tags "bare" 0x612a}
+	{Tags "bare" 0x612b}
+	{Tags "bare" 0x612c}
+	{Tags "bare" 0x612d}
+	{Tags "bare" 0x612e}
+	{Tags "bare" 0x612f}
+	{Tags "bare" 0x6130}
+	{Tags "bare" 0x6131}
+	{Tags "bare" 0x6132}
+	{Tags "bare" 0x6133}
+	{Tags "bare" 0x614e}
+	{Tags "bare" 0x614f}
+	{Tags "bare" 0x6150}
+	{Tags "bare" 0x6151}
+	{Tags "bare" 0x6152}
+	{Tags "bare" 0x6153}
+	{Tags "bare" 0x6154}
+	{Tags "bare" 0x6155}
+	{Tags "bare" 0x6156}
+	{Tags "bare" 0x6157}
+	{Tags "bare" 0x6158}
+	{Tags "bare" 0x6159}
+	{Tags "bare" 0x615a}
+	{Tags "bare" 0x615b}
+	{Tags "bare" 0x615c}
+	{Tags "bare" 0x615d}
+	{Tags "bare" 0x615e}
+	{Tags "bare" 0x615f}
+	{Tags "bare" 0x6160}
+	{Tags "bare" 0x6161}
+	{Tags "bare" 0x6162}
+	{Tags "bare" 0x6163}
+	{Tags "bare" 0x6164}
+	{Tags "bare" 0x6165}
+	{Tags "bare" 0x6166}
+	{Tags "bare" 0x6167}
+	{Tags "bare" 0x6168}
+	{Tags "bare" 0x6169}
+	{Tags "bare" 0x616a}
+	{Tags "bare" 0x616b}
+	{Tags "bare" 0x616d}
+	{Tags "bare" 0x616e}
+	{Tags "bare" 0x616f}
+	{Tags "bare" 0x6170}
+	{Tags "bare" 0x618f}
+	{Tags "bare" 0x6190}
+	{Tags "bare" 0x6191}
+	{Tags "bare" 0x6192}
+	{Tags "bare" 0x6193}
+	{Tags "bare" 0x6194}
+	{Tags "bare" 0x619d}
+	{Tags "bare" 0x619e}
+	{Tags "bare" 0x619f}
+	{Tags "bare" 0x61a0}
+	{Tags "bare" 0x61a1}
+	{Tags "bare" 0x61a2}
+	{Tags "bare" 0x61a3}
+	{Tags "bare" 0x61a4}
+	{Tags "bare" 0x61a5}
+	{Tags "bare" 0x61a6}
+	{Tags "bare" 0x61a7}
+	{Tags "bare" 0x61a8}
+	{Tags "bare" 0x61a9}
+	{Tags "bare" 0x61aa}
+	{Tags "bare" 0x61ab}
+	{Tags "bare" 0x61ac}
+	{Tags "bare" 0x61ad}
+	{Tags "bare" 0x61ae}
+	{Tags "bare" 0x61af}
+	{Tags "bare" 0x61b0}
+	{Tags "bare" 0x61b1}
+	{Tags "bare" 0x61b2}
+	{Tags "bare" 0x61b4}
+	{Tags "bare" 0x61b6}
+	{Tags "bare" 0x61c5}
+	{Tags "bare" 0x61d7}
+	{Tags "bare" 0x61d8}
+	{Tags "bare" 0x61d9}
+	{Tags "bare" 0x61da}
+	{Tags "bare" 0x61df}
+	{Tags "bare" 0x61e5}
+	{Tags "bare" 0x61e6}
+	{Tags "bare" 0x61e7}
+	{Tags "bare" 0x61e9}
+	{Tags "bare" 0x61ea}
+	{Tags "bare" 0x61eb}
+	{Tags "bare" 0x61ec}
+	{Tags "bare" 0x61ed}
+	{Tags "bare" 0x61ee}
+	{Tags "bare" 0x61ef}
+	{Tags "bare" 0x61f0}
+	{Tags "bare" 0x61f1}
+	{Tags "bare" 0x61f2}
+	{Tags "bare" 0x61f3}
+	{Tags "bare" 0x61f4}
+	{Tags "bare" 0x61f5}
+	{Tags "bare" 0x61f6}
+	{Tags "bare" 0x61f7}
+	{Tags "bare" 0x61f9}
+	{Tags "bare" 0x6201}
+	{Tags "bare" 0x6202}
+	{Tags "bare" 0x6205}
+	{Tags "bare" 0x6207}
+	{Tags "bare" 0x6208}
+	{Tags "bare" 0x620a}
+	{Tags "bare" 0x620b}
+	{Tags "bare" 0x620c}
+	{Tags "bare" 0x620d}
+	{Tags "bare" 0x620e}
+	{Tags "bare" 0x620f}
+	{Tags "bare" 0x6210}
+	{Tags "bare" 0x6234}
+	{Tags "bare" 0x6235}
+	{Tags "bare" 0x6236}
+	{Tags "bare" 0x6237}
+	{Tags "bare" 0x1194}
+	{Tags "bare" 0x1195}
+	{Tags "bare" 0x1196}
+	{Tags "bare" 0x1197}
+	{Tags "bare" 0x1198}
+	{Tags "bare" 0x1199}
+	{Tags "bare" 0x119a}
+	{Tags "bare" 0x119b}
+	{Tags "bare" 0x119c}
+	{Tags "bare" 0x119d}
+	{Tags "bare" 0x119e}
+	{Tags "bare" 0x119f}
+	{Tags "bare" 0x11a0}
+	{Tags "bare" 0x11a1}
+	{Tags "bare" 0x11a2}
+	{Tags "bare" 0x11a3}
+	{Tags "bare" 0x11a4}
+	{Tags "bare" 0x11a5}
+	{Tags "bare" 0x11a6}
+	{Tags "bare" 0x11a7}
+	{Tags "bare" 0x11a8}
+	{Tags "bare" 0x11a9}
+	{Tags "bare" 0x11aa}
+	{Tags "bare" 0x11ab}
+	{Tags "bare" 0x11ac}
+	{Tags "bare" 0x11ad}
+	{Tags "bare" 0x11ae}
+	{Tags "bare" 0x11af}
+	{Tags "bare" 0x11b0}
+	{Tags "bare" 0x11b1}
+	{Tags "bare" 0x11b2}
+	{Tags "bare" 0x11b3}
+	{Tags "bare" 0x11b4}
+	{Tags "bare" 0x11b5}
+	{Tags "bare" 0x11b6}
+	{Tags "bare" 0x11b7}
+	{Tags "bare" 0x11b8}
+	{Tags "bare" 0x11b9}
+	{Tags "bare" 0x11ba}
+	{Tags "bare" 0x11bb}
+	{Tags "bare" 0x11bc}
+	{Tags "bare" 0x11bd}
+	{Tags "bare" 0x11be}
+	{Tags "bare" 0x11bf}
+	{Tags "bare" 0x11c0}
+	{Tags "bare" 0x11c1}
+	{Tags "bare" 0x11c2}
+	{Tags "bare" 0x11c3}
+	{Tags "bare" 0x11c4}
+	{Tags "bare" 0x11c5}
+	{Tags "bare" 0x11c6}
+	{Tags "bare" 0x11c7}
+	{Tags "bare" 0x11c8}
+	{Tags "bare" 0x11c9}
+	{Tags "bare" 0x11ca}
+	{Tags "bare" 0x11cb}
+	{Tags "bare" 0x11cc}
+	{Tags "bare" 0x11cd}
+	{Tags "bare" 0x11ce}
+	{Tags "bare" 0x11cf}
+	{Tags "bare" 0x11d0}
+	{Tags "bare" 0x11d1}
+	{Tags "bare" 0x11d2}
+	{Tags "bare" 0x11d3}
+	{Tags "bare" 0x11d4}
+	{Tags "bare" 0x11d5}
+	{Tags "bare" 0x11d6}
+	{Tags "bare" 0x11d7}
+	{Tags "bare" 0x11d8}
+	{Tags "bare" 0x11d9}
+	{Tags "bare" 0x11da}
+	{Tags "bare" 0x11db}
+	{Tags "bare" 0x11dc}
+	{Tags "bare" 0x11dd}
+	{Tags "bare" 0x11de}
+	{Tags "bare" 0x11df}
+	{Tags "bare" 0x11e0}
+	{Tags "bare" 0x11e1}
+	{Tags "bare" 0x11e2}
+	{Tags "bare" 0x11e3}
+	{Tags "bare" 0x11e4}
+	{Tags "bare" 0x11e5}
+	{Tags "bare" 0x11e6}
+	{Tags "bare" 0x11e7}
+	{Tags "bare" 0x11e8}
+	{Tags "bare" 0x11e9}
+	{Tags "bare" 0x11ea}
+	{Tags "bare" 0x11eb}
+	{Tags "bare" 0x11ec}
+	{Tags "bare" 0x11ed}
+	{Tags "bare" 0x11ee}
+	{Tags "bare" 0x11ef}
+	{Tags "bare" 0x11f0}
+	{Tags "bare" 0x11f1}
+	{Tags "bare" 0x11f2}
+	{Tags "bare" 0x11f3}
+	{Tags "bare" 0x11f4}
+	{Tags "bare" 0x11f5}
+	{Tags "bare" 0x11f6}
+	{Tags "bare" 0x11f7}
+	{Tags "bare" 0x11f8}
+	{Tags "bare" 0x11f9}
+	{Tags "bare" 0x11fa}
+	{Tags "bare" 0x11fb}
+	{Tags "bare" 0x11fc}
+	{Tags "bare" 0x11fd}
+	{Tags "bare" 0x11fe}
+	{Tags "bare" 0x11ff}
+	{Tags "bare" 0x1200}
+	{Tags "bare" 0x1201}
+	{Tags "bare" 0x1202}
+	{Tags "bare" 0x1206}
+	{Tags "bare" 0x1207}
+	{Tags "bare" 0x1208}
+	{Tags "bare" 0x1209}
+	{Tags "bare" 0x120a}
+	{Tags "bare" 0x120b}
+	{Tags "bare" 0x120c}
+	{Tags "bare" 0x120d}
+	{Tags "bare" 0x120e}
+	{Tags "bare" 0x120f}
+	{Tags "bare" 0x1210}
+	{Tags "bare" 0x1211}
+	{Tags "bare" 0x1212}
+	{Tags "bare" 0x1213}
+	{Tags "bare" 0x1214}
+	{Tags "bare" 0x50c9}
+	{Tags "bare" 0x50cb}
+	{Tags "bare" 0x5111}
+	{Tags "bare" 0x5114}
+	{Tags "bare" 0x5115}
+	{Tags "bare" 0x5141}
+	{Tags "bare" 0x5143}
+	{Tags "bare" 0x5144}
+	{Tags "bare" 0x5146}
+	{Tags "bare" 0x516d}
+	{Tags "bare" 0x5174}
+	{Tags "bare" 0x5175}
+	{Tags "bare" 0x5184}
+	{Tags "bare" 0x5186}
+	{Tags "bare" 0x5187}
+	{Tags "bare" 0x51b0}
+	{Tags "bare" 0x51b2}
+	{Tags "bare" 0x51b3}
+	{Tags "bare" 0x51c2}
+	{Tags "bare" 0x51c5}
+	{Tags "bare" 0x51e4}
+	{Tags "bare" 0x51e7}
+	{Tags "bare" 0x51ed}
+	{Tags "bare" 0x51f2}
+	{Tags "bare" 0x51f5}
+	{Tags "bare" 0x51fb}
+	{Tags "bare" 0x5200}
+	{Tags "bare" 0x521d}
+	{Tags "bare" 0x5221}
+	{Tags "bare" 0x5222}
+	{Tags "bare" 0x5223}
+	{Tags "bare" 0x5224}
+	{Tags "bare" 0x5225}
+	{Tags "bare" 0x5226}
+	{Tags "bare" 0x5228}
+	{Tags "bare" 0x5229}
+	{Tags "bare" 0x522a}
+	{Tags "bare" 0x522b}
+	{Tags "bare" 0x522c}
+	{Tags "bare" 0x522d}
+	{Tags "bare" 0x522e}
+	{Tags "bare" 0x522f}
+	{Tags "bare" 0x5230}
+	{Tags "bare" 0x5231}
+	{Tags "bare" 0x5232}
+	{Tags "bare" 0x5233}
+	{Tags "bare" 0x5234}
+	{Tags "bare" 0x5235}
+	{Tags "bare" 0x5236}
+	{Tags "bare" 0x5237}
+	{Tags "bare" 0x5238}
+	{Tags "bare" 0x5253}
+	{Tags "bare" 0x5254}
+	{Tags "bare" 0x5255}
+	{Tags "bare" 0x5256}
+	{Tags "bare" 0x5257}
+	{Tags "bare" 0x5258}
+	{Tags "bare" 0x5259}
+	{Tags "bare" 0x525a}
+	{Tags "bare" 0x525b}
+	{Tags "bare" 0x525c}
+	{Tags "bare" 0x525d}
+	{Tags "bare" 0x525e}
+	{Tags "bare" 0x525f}
+	{Tags "bare" 0x5260}
+	{Tags "bare" 0x5261}
+	{Tags "bare" 0x5262}
+	{Tags "bare" 0x5263}
+	{Tags "bare" 0x5264}
+	{Tags "bare" 0x5265}
+	{Tags "bare" 0x5266}
+	{Tags "bare" 0x5267}
+	{Tags "bare" 0x5268}
+	{Tags "bare" 0x5269}
+	{Tags "bare" 0x526a}
+	{Tags "bare" 0x526b}
+	{Tags "bare" 0x526c}
+	{Tags "bare" 0x526d}
+	{Tags "bare" 0x526e}
+	{Tags "bare" 0x526f}
+	{Tags "bare" 0x5270}
+	{Tags "bare" 0x528c}
+	{Tags "bare" 0x528d}
+	{Tags "bare" 0x528e}
+	{Tags "bare" 0x5291}
+	{Tags "bare" 0x5292}
+	{Tags "bare" 0x5293}
+	{Tags "bare" 0x5294}
+	{Tags "bare" 0x5295}
+	{Tags "bare" 0x5296}
+	{Tags "bare" 0x5297}
+	{Tags "bare" 0x5298}
+	{Tags "bare" 0x5299}
+	{Tags "bare" 0x529a}
+	{Tags "bare" 0x529b}
+	{Tags "bare" 0x529c}
+	{Tags "bare" 0x529d}
+	{Tags "bare" 0x529e}
+	{Tags "bare" 0x52a1}
+	{Tags "bare" 0x52a2}
+	{Tags "bare" 0x52a3}
+	{Tags "bare" 0x52a4}
+	{Tags "bare" 0x52a7}
+	{Tags "bare" 0x52a8}
+	{Tags "bare" 0x52a9}
+	{Tags "bare" 0x52b7}
+	{Tags "bare" 0x52bb}
+	{Tags "bare" 0x52be}
+	{Tags "bare" 0x52bf}
+	{Tags "bare" 0x52c0}
+	{Tags "bare" 0x52c1}
+	{Tags "bare" 0x52c4}
+	{Tags "bare" 0x52c5}
+	{Tags "bare" 0x52c6}
+	{Tags "bare" 0x52c7}
+	{Tags "bare" 0x52c8}
+	{Tags "bare" 0x52c9}
+	{Tags "bare" 0x52ca}
+	{Tags "bare" 0x52cb}
+	{Tags "bare" 0x52cc}
+	{Tags "bare" 0x52cd}
+	{Tags "bare" 0x52ce}
+	{Tags "bare" 0x52cf}
+	{Tags "bare" 0x52d0}
+	{Tags "bare" 0x52d1}
+	{Tags "bare" 0x52d2}
+	{Tags "bare" 0x52d3}
+	{Tags "bare" 0x52d4}
+	{Tags "bare" 0x52d5}
+	{Tags "bare" 0x52d6}
+	{Tags "bare" 0x52d7}
+	{Tags "bare" 0x52d8}
+	{Tags "bare" 0x3090}
+	{Tags "bare" 0x3091}
+	{Tags "bare" 0x309a}
+	{Tags "bare" 0x309b}
+	{Tags "bare" 0x309c}
+	{Tags "bare" 0x309d}
+	{Tags "bare" 0x309f}
+	{Tags "bare" 0x30a0}
+	{Tags "bare" 0x30a1}
+	{Tags "bare" 0x30a3}
+	{Tags "bare" 0x30a4}
+	{Tags "bare" 0x30a5}
+	{Tags "bare" 0x30b4}
+	{Tags "bare" 0x30b5}
+	{Tags "bare" 0x30b6}
+	{Tags "bare" 0x30b7}
+	{Tags "bare" 0x30b8}
+	{Tags "bare" 0x30b9}
+	{Tags "bare" 0x30ba}
+	{Tags "bare" 0x30bb}
+	{Tags "bare" 0x30bc}
+	{Tags "bare" 0x30bd}
+	{Tags "bare" 0x30be}
+	{Tags "bare" 0x30c0}
+	{Tags "bare" 0x30c1}
+	{Tags "bare" 0x30c2}
+	{Tags "bare" 0x30d1}
+	{Tags "bare" 0x30d2}
+	{Tags "bare" 0x30d3}
+	{Tags "bare" 0x30d4}
+	{Tags "bare" 0x30d5}
+	{Tags "bare" 0x30d6}
+	{Tags "bare" 0x30d7}
+	{Tags "bare" 0x30d8}
+	{Tags "bare" 0x30d9}
+	{Tags "bare" 0x30da}
+	{Tags "bare" 0x30db}
+	{Tags "bare" 0x30dd}
+	{Tags "bare" 0x30de}
+	{Tags "bare" 0x30df}
+	{Tags "bare" 0x30ed}
+	{Tags "bare" 0x30ee}
+	{Tags "bare" 0x30f1}
+	{Tags "bare" 0x30f2}
+	{Tags "bare" 0x30f3}
+	{Tags "bare" 0x30f4}
+	{Tags "bare" 0x30f5}
+	{Tags "bare" 0x30f6}
+	{Tags "bare" 0x30f8}
+	{Tags "bare" 0x30f9}
+	{Tags "bare" 0x30fa}
+	{Tags "bare" 0x30fb}
+	{Tags "bare" 0x30fc}
+	{Tags "bare" 0x30fd}
+	{Tags "bare" 0x310b}
+	{Tags "bare" 0x310c}
+	{Tags "bare" 0x310d}
+	{Tags "bare" 0x310e}
+	{Tags "bare" 0x310f}
+	{Tags "bare" 0x3110}
+	{Tags "bare" 0x3111}
+	{Tags "bare" 0x3112}
+	{Tags "bare" 0x3113}
+	{Tags "bare" 0x3114}
+	{Tags "bare" 0x3115}
+	{Tags "bare" 0x3116}
+	{Tags "bare" 0x3117}
+	{Tags "bare" 0x3118}
+	{Tags "bare" 0x3119}
+	{Tags "bare" 0x3183}
+	{Tags "bare" 0x3187}
+	{Tags "bare" 0x3188}
+	{Tags "bare" 0x3189}
+	{Tags "bare" 0x318a}
+	{Tags "bare" 0x318b}
+	{Tags "bare" 0x318c}
+	{Tags "bare" 0x318d}
+	{Tags "bare" 0x318e}
+	{Tags "bare" 0x318f}
+	{Tags "bare" 0x3190}
+	{Tags "bare" 0x3191}
+	{Tags "bare" 0x3192}
+	{Tags "bare" 0x3193}
+	{Tags "bare" 0x3194}
+	{Tags "bare" 0x3195}
+	{Tags "bare" 0x3196}
+	{Tags "bare" 0x3197}
+	{Tags "bare" 0x3198}
+	{Tags "bare" 0x3199}
+	{Tags "bare" 0x319a}
+	{Tags "bare" 0x319b}
+	{Tags "bare" 0x319c}
+	{Tags "bare" 0x319d}
+	{Tags "bare" 0x319e}
+	{Tags "bare" 0x319f}
+	{Tags "bare" 0x31a0}
+	{Tags "bare" 0x31a1}
+	{Tags "bare" 0x31a2}
+	{Tags "bare" 0x31a3}
+	{Tags "bare" 0x31a4}
+	{Tags "bare" 0x31a5}
+	{Tags "bare" 0x31a6}
+	{Tags "bare" 0x31a7}
+	{Tags "bare" 0x31a8}
+	{Tags "bare" 0x31a9}
+	{Tags "bare" 0x31aa}
+	{Tags "bare" 0x31ab}
+	{Tags "bare" 0x31ac}
+	{Tags "bare" 0x31ad}
+	{Tags "bare" 0x31ae}
+	{Tags "bare" 0x31af}
+	{Tags "bare" 0x31b0}
+	{Tags "bare" 0x31b1}
+	{Tags "bare" 0x31b2}
+	{Tags "bare" 0x31b3}
+	{Tags "bare" 0x31b4}
+	{Tags "bare" 0x31b5}
+	{Tags "bare" 0x31b6}
+	{Tags "bare" 0x31b7}
+	{Tags "bare" 0x31b8}
+	{Tags "bare" 0x31b9}
+	{Tags "bare" 0x31ba}
+	{Tags "bare" 0x31bb}
+	{Tags "bare" 0x31bc}
+	{Tags "bare" 0x31bd}
+	{Tags "bare" 0x31be}
+	{Tags "bare" 0x31bf}
+	{Tags "bare" 0x31c0}
+	{Tags "bare" 0x31c1}
+	{Tags "bare" 0x31c2}
+	{Tags "bare" 0x31c3}
+	{Tags "bare" 0x31c4}
+	{Tags "bare" 0x31c5}
+	{Tags "bare" 0x31c6}
+	{Tags "bare" 0x31c7}
+	{Tags "bare" 0x31c8}
+	{Tags "bare" 0x31c9}
+	{Tags "bare" 0x31ca}
+	{Tags "bare" 0x31cb}
+	{Tags "bare" 0x31cc}
+	{Tags "bare" 0x31cd}
+	{Tags "bare" 0x31ce}
+	{Tags "bare" 0x31cf}
+	{Tags "bare" 0x31d0}
+	{Tags "bare" 0x31d1}
+	{Tags "bare" 0x31d2}
+	{Tags "bare" 0x31d3}
+	{Tags "bare" 0x31d4}
+	{Tags "bare" 0x31d5}
+	{Tags "bare" 0x31d6}
+	{Tags "bare" 0x31d7}
+	{Tags "bare" 0x31d8}
+	{Tags "bare" 0x31d9}
+	{Tags "bare" 0x31da}
+	{Tags "bare" 0x31db}
+	{Tags "bare" 0x31dc}
+	{Tags "bare" 0x31dd}
+	{Tags "bare" 0x31de}
+	{Tags "bare" 0x31df}
+	{Tags "bare" 0x31e0}
+	{Tags "bare" 0x31e1}
+	{Tags "bare" 0x31e2}
+	{Tags "bare" 0x31e3}
+	{Tags "bare" 0x31e4}
+	{Tags "bare" 0x31e5}
+	{Tags "bare" 0x31e6}
+	{Tags "bare" 0x31e7}
+	{Tags "bare" 0x31e8}
+	{Tags "bare" 0x31e9}
+	{Tags "bare" 0x31ea}
+	{Tags "bare" 0x31eb}
+	{Tags "bare" 0x31ec}
+	{Tags "bare" 0x31ed}
+	{Tags "bare" 0x31ee}
+	{Tags "bare" 0x31ef}
+	{Tags "bare" 0x31f0}
+	{Tags "bare" 0x31f1}
+	{Tags "bare" 0x31f2}
+	{Tags "bare" 0x31f3}
+	{Tags "bare" 0x31f4}
+	{Tags "bare" 0x31f5}
+	{Tags "bare" 0x31f6}
+	{Tags "bare" 0x31f7}
+	{Tags "bare" 0x31f8}
+	{Tags "bare" 0x31f9}
+	{Tags "bare" 0x31fa}
+	{Tags "bare" 0x31fb}
+	{Tags "bare" 0x31fc}
+	{Tags "bare" 0x31fd}
+	{Tags "bare" 0x31fe}
+	{Tags "bare" 0x31ff}
+	{Tags "bare" 0x3200}
+	{Tags "bare" 0x3201}
+	{Tags "bare" 0x3202}
+	{Tags "bare" 0x3203}
+	{Tags "bare" 0x3204}
+	{Tags "bare" 0x3205}
+	{Tags "bare" 0x3206}
+	{Tags "bare" 0x3207}
+	{Tags "bare" 0x3208}
+	{Tags "bare" 0x3209}
+	{Tags "bare" 0x320a}
+	{Tags "bare" 0x320b}
+	{Tags "bare" 0x320c}
+	{Tags "bare" 0x320d}
+	{Tags "bare" 0x320e}
+	{Tags "bare" 0x320f}
+	{Tags "bare" 0x3210}
+	{Tags "bare" 0x3211}
+	{Tags "bare" 0x3212}
+	{Tags "bare" 0x3213}
+	{Tags "bare" 0x3214}
+	{Tags "bare" 0x3215}
+	{Tags "bare" 0x3216}
+	{Tags "bare" 0x3217}
+	{Tags "bare" 0x3218}
+	{Tags "bare" 0x3219}
+	{Tags "bare" 0x321a}
+	{Tags "bare" 0x321b}
+	{Tags "bare" 0x321c}
+	{Tags "bare" 0x321d}
+	{Tags "bare" 0x321e}
+	{Tags "bare" 0x321f}
+	{Tags "bare" 0x3220}
+	{Tags "bare" 0x3221}
+	{Tags "bare" 0x3222}
+	{Tags "bare" 0x3223}
+	{Tags "bare" 0x3224}
+	{Tags "bare" 0x3225}
+	{Tags "bare" 0x3226}
+	{Tags "bare" 0x3227}
+	{Tags "bare" 0x3228}
+	{Tags "bare" 0x3229}
+	{Tags "bare" 0x3244}
+	{Tags "bare" 0x3245}
+	{Tags "bare" 0x3246}
+	{Tags "bare" 0x3247}
+	{Tags "bare" 0x3248}
+	{Tags "bare" 0x3249}
+	{Tags "bare" 0x324a}
+	{Tags "bare" 0x324b}
+	{Tags "bare" 0x324c}
+	{Tags "bare" 0x324d}
+	{Tags "bare" 0x324e}
+	{Tags "bare" 0x324f}
+	{Tags "bare" 0x3250}
+	{Tags "bare" 0x3251}
+	{Tags "bare" 0x3252}
+	{Tags "bare" 0x3253}
+	{Tags "bare" 0x3254}
+	{Tags "bare" 0x3255}
+	{Tags "bare" 0x3256}
+	{Tags "bare" 0x3257}
+	{Tags "bare" 0x3258}
+	{Tags "bare" 0x3259}
+	{Tags "bare" 0x325a}
+	{Tags "bare" 0x325b}
+	{Tags "bare" 0x325c}
+	{Tags "bare" 0x325d}
+	{Tags "bare" 0x325e}
+	{Tags "bare" 0x325f}
+	{Tags "bare" 0x3260}
+	{Tags "bare" 0x3261}
+	{Tags "bare" 0x3262}
+	{Tags "bare" 0x3263}
+	{Tags "bare" 0x3264}
+	{Tags "bare" 0x3265}
+	{Tags "bare" 0x3266}
+	{Tags "bare" 0x3267}
+	{Tags "bare" 0x3268}
+	{Tags "bare" 0x3269}
+	{Tags "bare" 0x326a}
+	{Tags "bare" 0x326b}
+	{Tags "bare" 0x326c}
+	{Tags "bare" 0x326d}
+	{Tags "bare" 0x326e}
+	{Tags "bare" 0x326f}
+	{Tags "bare" 0x3270}
+	{Tags "bare" 0x3271}
+	{Tags "bare" 0x3272}
+	{Tags "bare" 0x3273}
+	{Tags "bare" 0x3274}
+	{Tags "bare" 0x3275}
+	{Tags "bare" 0x3276}
+	{Tags "bare" 0xeb5}
+	{Tags "bare" 0xeb6}
+	{Tags "bare" 0xeb7}
+	{Tags "bare" 0xeb8}
+	{Tags "bare" 0xeb9}
+	{Tags "bare" 0xeba}
+	{Tags "bare" 0xebb}
+	{Tags "bare" 0xebc}
+	{Tags "bare" 0xebd}
+	{Tags "bare" 0xebe}
+	{Tags "bare" 0xebf}
+	{Tags "bare" 0xec0}
+	{Tags "bare" 0xec1}
+	{Tags "bare" 0xec2}
+	{Tags "bare" 0xec3}
+	{Tags "bare" 0xec4}
+	{Tags "bare" 0xec5}
+	{Tags "bare" 0xec6}
+	{Tags "bare" 0xec7}
+	{Tags "bare" 0xec8}
+	{Tags "bare" 0xec9}
+	{Tags "bare" 0xeca}
+	{Tags "bare" 0xecb}
+	{Tags "bare" 0xecc}
+	{Tags "bare" 0xecd}
+	{Tags "bare" 0xece}
+	{Tags "bare" 0xecf}
+	{Tags "bare" 0xed0}
+	{Tags "bare" 0xed1}
+	{Tags "bare" 0xed2}
+	{Tags "bare" 0xed3}
+	{Tags "bare" 0xed4}
+	{Tags "bare" 0xed5}
+	{Tags "bare" 0xed6}
+	{Tags "bare" 0xed7}
+	{Tags "bare" 0xed8}
+	{Tags "bare" 0x4011}
+	{Tags "bare" 0x4012}
+	{Tags "bare" 0x401c}
+	{Tags "bare" 0x401d}
+	{Tags "bare" 0x4042}
+	{Tags "bare" 0x4043}
+	{Tags "bare" 0x404f}
+	{Tags "bare" 0x4052}
+	{Tags "bare" 0x4057}
+	{Tags "bare" 0x4059}
+	{Tags "bare" 0x405e}
+	{Tags "bare" 0x407a}
+	{Tags "bare" 0x407e}
+	{Tags "bare" 0x407f}
+	{Tags "bare" 0x4087}
+	{Tags "bare" 0x4090}
+	{Tags "bare" 0x4091}
+	{Tags "bare" 0x40b3}
+	{Tags "bare" 0x40bf}
+	{Tags "bare" 0x40c0}
+	{Tags "bare" 0x40d7}
+	{Tags "bare" 0x40fc}
+	{Tags "bare" 0x40fd}
+	{Tags "bare" 0x4105}
+	{Tags "bare" 0x4122}
+	{Tags "bare" 0x4125}
+	{Tags "bare" 0x4145}
+	{Tags "bare" 0x4148}
+	{Tags "bare" 0x414b}
+	{Tags "bare" 0x414e}
+	{Tags "bare" 0x4151}
+	{Tags "bare" 0x42d1}
+	{Tags "bare" 0x42d2}
+	{Tags "bare" 0x42d4}
+	{Tags "bare" 0x42d6}
+	{Tags "bare" 0x42d7}
+	{Tags "bare" 0x42d9}
+	{Tags "bare" 0x42da}
+	{Tags "bare" 0x42db}
+	{Tags "bare" 0x42dc}
+	{Tags "bare" 0x42dd}
+	{Tags "bare" 0x42e0}
+	{Tags "bare" 0x42e1}
+	{Tags "bare" 0xef1}
+	{Tags "bare" 0xef2}
+	{Tags "bare" 0xef3}
+	{Tags "bare" 0xef4}
+	{Tags "bare" 0xef5}
+	{Tags "bare" 0xef6}
+	{Tags "bare" 0xef7}
+	{Tags "bare" 0xef8}
+	{Tags "bare" 0xef9}
+	{Tags "bare" 0xefa}
+	{Tags "bare" 0xefb}
+	{Tags "bare" 0xefc}
+	{Tags "bare" 0xefd}
+	{Tags "bare" 0xefe}
+	{Tags "bare" 0xeff}
+	{Tags "bare" 0xf00}
+	{Tags "bare" 0xf01}
+	{Tags "bare" 0xf02}
+	{Tags "bare" 0xf03}
+	{Tags "bare" 0xf04}
+	{Tags "bare" 0xf05}
+	{Tags "bare" 0xf06}
+	{Tags "bare" 0xf07}
+	{Tags "bare" 0xf08}
+	{Tags "bare" 0xf09}
+	{Tags "bare" 0xf0a}
+	{Tags "bare" 0xf0b}
+	{Tags "bare" 0xf0c}
+	{Tags "bare" 0xf0d}
+	{Tags "bare" 0xf0e}
+	{Tags "bare" 0xf0f}
+	{Tags "bare" 0xf10}
+	{Tags "bare" 0xf11}
+	{Tags "bare" 0xf12}
+	{Tags "bare" 0xf13}
+	{Tags "bare" 0xf14}
+	{Tags "bare" 0xf15}
+	{Tags "bare" 0xf16}
+	{Tags "bare" 0xf17}
+	{Tags "bare" 0xf18}
+	{Tags "bare" 0xf19}
+	{Tags "bare" 0xf1a}
+	{Tags "bare" 0xf1b}
+	{Tags "bare" 0xf1c}
+	{Tags "bare" 0xf1d}
+	{Tags "bare" 0xf1e}
+	{Tags "bare" 0xf1f}
+	{Tags "bare" 0xf20}
+	{Tags "bare" 0xf21}
+	{Tags "bare" 0xf22}
+	{Tags "bare" 0xf23}
+	{Tags "bare" 0xf24}
+	{Tags "bare" 0xf25}
+	{Tags "bare" 0xf26}
+	{Tags "bare" 0xf27}
+	{Tags "bare" 0xf28}
+	{Tags "bare" 0xf29}
+	{Tags "bare" 0xf2a}
+	{Tags "bare" 0xf2b}
+	{Tags "bare" 0xf2c}
+	{Tags "bare" 0xf2d}
+	{Tags "bare" 0xf2e}
+	{Tags "bare" 0xf2f}
+	{Tags "bare" 0xf30}
+	{Tags "bare" 0xf31}
+	{Tags "bare" 0xf32}
+	{Tags "bare" 0xf33}
+	{Tags "bare" 0xf34}
+	{Tags "bare" 0xf35}
+	{Tags "bare" 0xf36}
+	{Tags "bare" 0xf37}
+	{Tags "bare" 0xf38}
+	{Tags "+mobilegun" 0x6438}
+	{Tags "+mobilegun" 0x643a}
+	{Tags "bare" 0x243b}
+	{Tags "bare" 0x64eb}
+	{Tags "bare" 0x64ec}
+	{Tags "bare" 0x64ed}
+	{Tags "bare" 0x64ee}
+	{Tags "bare" 0x64ef}
+	{Tags "bare" 0x64f0}
+	{Tags "+mobilegun" 0x64f1}
+	{Tags "bare" 0x45be}
+	{Tags "bare" 0x4607}
+	{Tags "+mobilegun" 0x12fb}
 	{Tags "fpc1" "flag" 0x802f}
 	{Tags "fpc3" "flag" 0x8011}
 	{Tags "fpc5" "flag" 0x8003}
 	{Tags "fpc4" "flag" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
 	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
@@ -15830,6 +16767,8 @@
 	{Tags "cmp_def" "5_b_2-3" "mines_5_c" "dcg_mine_sign" 0x8295}
 	{Tags "cmp_def" "5_b_2-3" "mines_5_d" "dcg_mine_sign" 0x8296}
 	{Tags "cmp_def" "5_b_2-3" "mines_5_d" "dcg_mine_sign" 0x8297}
+	{Tags "pilot" 0xc081}
+	{Tags "engine_count_1" "hidden" "air_vehicle" "no_scavenge" "airstrike_eng" "move_fast" 0xc083}
 	{Inventory 0x800c
 		{box
 			{clear}
@@ -17296,6 +18235,37 @@
 	{Inventory 0xb029
 		{box
 			{clear}
+		}
+	}
+	{Inventory 0xc081
+		{box
+			{clear}
+			{item "enfield_no2_mk1" filled {cell 0 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 2 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 3 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 4 0}}
+			{item "bandage_eng" {cell 5 0}}
+			{item "bandage_eng" {cell 0 1}}
+		}
+	}
+	{Brain 0x6438
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x643a
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x64f1
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x12fb
+		{Properties
+			{look_around 0}
 		}
 	}
 	{Brain 0x800c
@@ -19056,8 +20026,20 @@
 			{retreat_ratio 4}
 		}
 	}
+	{Brain 0xc081
+		{Properties
+			{move_mode hold}
+			{advance_ratio 0.5}
+			{retreat_ratio 4}
+		}
+	}
+	{Brain 0xc083
+		{Properties
+			{fire_mode hold}
+		}
+	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -19079,6 +20061,71 @@
 		{event "music_rnd"}
 		{event "music_start"}
 		{event "talk_on"}
+		{zone "circle"
+			{position 3209.72 -3494.57 55}
+			{Name "_bridge1"}
+			{Radius 687.538}
+		}
+		{zone "circle"
+			{position -3798.16 3005.01 58}
+			{Name "_bridge2"}
+			{Radius 760.846}
+		}
+		{zone "circle"
+			{position 40.011 -8964.46 8}
+			{Name "_bridge3"}
+			{Radius 150}
+		}
+		{zone "circle"
+			{position 3591.43 6855.12 -4.1779}
+			{Name "a_1"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position -833.254 6840.92 5}
+			{Name "a_2"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position -6773.34 6803.18 116}
+			{Name "a_3"}
+			{Radius 795.727}
+		}
+		{zone "circle"
+			{position 6887.25 3611.64 -7.2725}
+			{Name "a_4"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position 6816.36 -5296.41 37}
+			{Name "b_1"}
+			{Radius 842.39}
+		}
+		{zone "circle"
+			{position 5521.32 -6816.47 79}
+			{Name "b_2"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position -4064.46 -6892.68 -29}
+			{Name "b_3"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position -6839.38 -5958.66 -5.16835}
+			{Name "b_4"}
+			{Radius 600}
+		}
+		{zone "poly"
+			{position -612.691 -203.533 0.56604}
+			{Name "combat"}
+			{Point -4022.87 -3189.7}
+			{Point -5410.56 1320.66}
+			{Point -2279.3 4538.87}
+			{Point 3424.23 3855.56}
+			{Point 5605.06 -1676.25}
+			{Point 2683.45 -4849.15}
+		}
 		{zone "circle"
 			{position 5.82562 -92.9614 41.6868}
 			{Name "forward1"}
@@ -19103,71 +20150,6 @@
 			{position 691.398 1851.25 -28}
 			{Name "forward5"}
 			{Radius 1308.02}
-		}
-		{zone "circle"
-			{position 3209.72 -3494.57 55}
-			{Name "_bridge1"}
-			{Radius 687.538}
-		}
-		{zone "circle"
-			{position -3798.16 3005.01 58}
-			{Name "_bridge2"}
-			{Radius 760.846}
-		}
-		{zone "circle"
-			{position 40.011 -8964.46 8}
-			{Name "_bridge3"}
-			{Radius 150}
-		}
-		{zone "circle"
-			{position 3591.43 6855.12 -4.1779}
-			{Name "a_1"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position -3276.05 6847.26 104}
-			{Name "a_2"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position -6852.11 6076.33 117.171}
-			{Name "a_3"}
-			{Radius 795.727}
-		}
-		{zone "circle"
-			{position 6887.25 3611.64 -7.2725}
-			{Name "a_4"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position 6778.28 -6843.43 125}
-			{Name "b_1"}
-			{Radius 842.39}
-		}
-		{zone "circle"
-			{position 3732.92 -6836.81 78}
-			{Name "b_2"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position -1828.3 -6858.25 -1}
-			{Name "b_3"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position -6839.38 -5958.66 -5.16835}
-			{Name "b_4"}
-			{Radius 600}
-		}
-		{zone "poly"
-			{position -612.691 -203.533 0.56604}
-			{Name "combat"}
-			{Point -4022.87 -3189.7}
-			{Point -5410.56 1320.66}
-			{Point -2279.3 4538.87}
-			{Point 3424.23 3855.56}
-			{Point 5605.06 -1676.25}
-			{Point 2683.45 -4849.15}
 		}
 		{zone "poly"
 			{position 28.1717 -154.593 50.0131}
@@ -31713,9 +32695,7 @@
 				{position -61.0661 1729.67 -4.95069}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

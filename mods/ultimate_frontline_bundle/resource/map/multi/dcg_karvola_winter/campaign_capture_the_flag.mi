@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position -121.48 -416.34}
 		{xform zl 128.72}
@@ -29532,7 +29532,7 @@
 		}
 	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -29554,31 +29554,6 @@
 		{event "music_rnd"}
 		{event "music_start"}
 		{event "talk_on"}
-		{zone "circle"
-			{position -559.832 -4765.97 151.061}
-			{Name "forward1"}
-			{Radius 2279.52}
-		}
-		{zone "circle"
-			{position -841.185 775.926 93.9094}
-			{Name "forward2"}
-			{Radius 1928.04}
-		}
-		{zone "circle"
-			{position 1334.78 3996.73 133.965}
-			{Name "forward3"}
-			{Radius 2052.46}
-		}
-		{zone "circle"
-			{position 5805.28 2531.94 88.7065}
-			{Name "forward4"}
-			{Radius 1962.34}
-		}
-		{zone "circle"
-			{position -3976.28 5524.85 50}
-			{Name "forward5"}
-			{Radius 2255.67}
-		}
 		{zone "circle"
 			{position 2609.46 2744.16 103}
 			{Name "_bridge1"}
@@ -29643,6 +29618,31 @@
 			{Point 4793.52 127.07}
 			{Point 5552.58 -2289.09}
 			{Point 3701.6 -5301.36}
+		}
+		{zone "circle"
+			{position -559.832 -4765.97 151.061}
+			{Name "forward1"}
+			{Radius 2279.52}
+		}
+		{zone "circle"
+			{position -841.185 775.926 93.9094}
+			{Name "forward2"}
+			{Radius 1928.04}
+		}
+		{zone "circle"
+			{position 1334.78 3996.73 133.965}
+			{Name "forward3"}
+			{Radius 2052.46}
+		}
+		{zone "circle"
+			{position 5805.28 2531.94 88.7065}
+			{Name "forward4"}
+			{Radius 1962.34}
+		}
+		{zone "circle"
+			{position -3976.28 5524.85 50}
+			{Name "forward5"}
+			{Radius 2255.67}
 		}
 		{zone "poly"
 			{position 17.2539 -458.725 83}
@@ -33368,7 +33368,7 @@
 				}
 			}
 			{"19"
-				{position 5976.81 -3621.35 109}
+				{position 5550.98 -4595.65 116}
 				{radius 300}
 				{commands
 					{"switch"
@@ -42210,9 +42210,7 @@
 				{position 5893.05 -5352.62 128}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}
@@ -42236,7 +42234,7 @@
 			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 		}
 	}
-	{Fog 0}
+	{Fog 1}
 	{EntityManager {Enabled}
 	}
 }

@@ -1,0 +1,92 @@
+{
+  "state": "installed",
+  "date": "2026-11-05T16:01:12.338Z",
+  "target": "D:/Programs/Steam/steamapps/common/Call to Arms - Gates of Hell/mods/ultimate_frontline_bundle",
+  "sourceAndInstalledIdentical": true,
+  "verifiedModFiles": 784,
+  "nativeHFUnitStats": true,
+  "commandPointMultiplier": 2,
+  "changedResources": [
+    {
+      "file": "map/multi/ufb_combat_autonomy.inc",
+      "beforeSHA256": null,
+      "afterSHA256": "b936156d98cd4f04ab3c5c7fa82d8673e3ad9742d4a2554e381dbb4c7aa98288"
+    },
+    {
+      "file": "map/multi/ufb_crew_safety.inc",
+      "beforeSHA256": "e5a3b762184208dbf1f5bd8ccb0f3ba112906eec63f7f491c3d08630907ead00",
+      "afterSHA256": "ef7e1c19ad4fae31f4606da975bd6dd59047e879fbbe3fde06319cded2e391a8"
+    },
+    {
+      "file": "map/multi/ufb_crew_skirmish.inc",
+      "beforeSHA256": "3416ba734d546cc177ecd7d00434967e6732e1f191bbc85a026a8c366ced7092",
+      "afterSHA256": "29f7ed2b129b95189ef63212bfc7525d5cb19a40e3da3c8e891a44ddbfdd19cd"
+    },
+    {
+      "file": "script/multiplayer/ufb_order_guard.lua",
+      "beforeSHA256": "3f277afa124d8a771adead193aadac7c52b60dfb9ca9b0d7c9ffb9ba47651c95",
+      "afterSHA256": "dffc72fd9e3f66e7e279698ed6ef9c33b7949efd5e3c57a716d0353674b40881"
+    },
+    {
+      "file": "set/interaction_entity/human.inc",
+      "beforeSHA256": "efc978a42a36e24c497af7d7a79777f07e35fd6797208bbfc805ccd6a3b0d134",
+      "afterSHA256": "680b36066889defde1b24be1049c56d152bf39884d0f00d36cbd0486848c85c5"
+    },
+    {
+      "file": "set/interaction_entity/ufb_combat_events.inc",
+      "beforeSHA256": null,
+      "afterSHA256": "23b503e2b9b3d1fda2f4ea62d78f91e952e3391b0e4da6b30e50d4f02801e7d0"
+    },
+    {
+      "file": "set/target/ammo.set",
+      "beforeSHA256": null,
+      "afterSHA256": "eb1818ec000e6d484421099c959cda5c0973b8257f3176470fa8969053e0bffc"
+    },
+    {
+      "file": "set/target/human_fg.inc",
+      "beforeSHA256": null,
+      "afterSHA256": "e87a3608c739f47dbd02cfc301017fc3a5cf943de33a24de5be79440140ff5a0"
+    }
+  ],
+  "unchangedPreviousModFiles": 776,
+  "coverage": {
+    "missionFiles": 436,
+    "withAutonomy": 436,
+    "withoutAutonomy": [],
+    "maxInclusions": 1
+  },
+  "verification": {
+    "combatAutonomy": {
+      "scenarios": 19,
+      "assertions": 86,
+      "passed": true
+    },
+    "botEvents": {
+      "scenarios": 17,
+      "passed": true
+    },
+    "aiLogic": {
+      "scenarios": 13,
+      "assertions": 55,
+      "passed": true
+    },
+    "hfTemporaryJobs": {
+      "passed": true
+    },
+    "hf4Static": {
+      "sdlFiles": 697,
+      "luaFiles": 10,
+      "includes": 1761,
+      "requires": 26,
+      "garrisonMaps": 117,
+      "waypoints": 374010,
+      "maxWaypointID": 7874,
+      "passed": true
+    }
+  },
+  "combatAutonomy": true,
+  "targetingFiles": 2,
+  "playerSlots": 17,
+  "nativeUnitStats": true,
+  "liveBattleAfterPatchTested": false
+}

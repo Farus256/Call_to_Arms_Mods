@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position 2266.26 -975.64}
 		{Placer
@@ -5112,7 +5112,6 @@
 	{Human "" 0xa039
 		{Position -4032.47 -4914.86}
 		{xform zl -151.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5146,7 +5145,6 @@
 	{Human "" 0xa040
 		{Position 5404.15 6223.61}
 		{xform zl -2.2}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5194,7 +5192,6 @@
 	{Human "" 0xa043
 		{Position 5355.05 6911.86}
 		{xform zl 23.04}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5296,7 +5293,6 @@
 	{Human "" 0xa049
 		{Position 5338.28 6005.16}
 		{xform zl -21.32}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5609,7 +5605,6 @@
 	{Entity "bf110_e2" 0x806b
 		{Position 10861.1 -714.23}
 		{xform zl -176.09}
-		{SpawnedInFog}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -5619,9 +5614,6 @@
 		{Volume "1blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
-		{Volume "spin1"
-			{able {contact 1}{contact_ground 1}{touch 1}}
-		}
 		{Volume "2blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -5630,6 +5622,9 @@
 		}
 		{Volume "2blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "spin1"
+			{able {contact 1}{contact_ground 1}{touch 1}}
 		}
 		{Volume "spin2"
 			{able {contact 1}{contact_ground 1}{touch 1}}
@@ -5651,7 +5646,6 @@
 	{Entity "il2_mod42" 0x82a6
 		{Position 10805.1 -123.97}
 		{xform zl -176.04}
-		{SpawnedInFog}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -11583,7 +11577,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x81b0
-		{Position -5267.58 -2440.13}
+		{Position -5267.58 -2440.12}
 		{xform zl 88.75}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -15180,7 +15174,6 @@
 	{Entity "blenheim_mk1" 0x82ed
 		{Position 10816.2 426.05}
 		{xform zl 177.99}
-		{SpawnedInFog}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -15249,14 +15242,14 @@
 	{Tags "fpc3" "flag" 0x8011}
 	{Tags "fpc5" "flag" 0x8003}
 	{Tags "fpc4" "flag" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
 	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
@@ -17747,9 +17740,9 @@
 			{clear}
 			{item "tt33" filled {cell 0 0}}
 			{item "tt33" "ammo" 8 {cell 2 0}}
-			{item "tt33" "ammo" 4 {cell 3 0}}
-			{item "bandage_rus" {cell 4 0}}
-			{item "soviet_tankovy_helmet" {cell 6 0}{user "head"}}
+			{item "tt33" "ammo" 4 {cell 4 0}}
+			{item "bandage_rus" {cell 6 0}}
+			{item "soviet_tankovy_helmet" {cell 0 1}{user "head"}}
 		}
 	}
 	{Inventory 0x82ee
@@ -19509,7 +19502,7 @@
 		}
 	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -19532,42 +19525,17 @@
 		{event "music_start"}
 		{event "talk_on"}
 		{zone "circle"
-			{position 2311.13 -971.942 -3.86865}
-			{Name "forward1"}
-			{Radius 2190.1}
-		}
-		{zone "circle"
-			{position 3397.8 -5101.19 80}
-			{Name "forward2"}
-			{Radius 1996.74}
-		}
-		{zone "circle"
-			{position -2434.05 2194.24 -4}
-			{Name "forward3"}
-			{Radius 2052.46}
-		}
-		{zone "circle"
-			{position -2069.19 -3067.74 2.06763}
-			{Name "forward4"}
-			{Radius 1962.34}
-		}
-		{zone "circle"
-			{position 2323.15 5808.82 0}
-			{Name "forward5"}
-			{Radius 2255.67}
-		}
-		{zone "circle"
-			{position -668.957 -8978.16 0}
+			{position -2422.28 -5912.09 33}
 			{Name "_bridge1"}
-			{Radius 150}
+			{Radius 1428.41}
 		}
 		{zone "circle"
-			{position -321.48 -8971.31 0}
+			{position 4167.48 -2665.1 29}
 			{Name "_bridge2"}
-			{Radius 150}
+			{Radius 1456.15}
 		}
 		{zone "circle"
-			{position 40.011 -8964.46 0}
+			{position 40.011 -8964.46 0.895471}
 			{Name "_bridge3"}
 			{Radius 150}
 		}
@@ -19621,8 +19589,33 @@
 			{Point 3995.27 -6071.39}
 			{Point 2408.68 -7507.44}
 		}
+		{zone "circle"
+			{position 2311.13 -971.942 -3.86865}
+			{Name "forward1"}
+			{Radius 2190.1}
+		}
+		{zone "circle"
+			{position 3397.8 -5101.19 80}
+			{Name "forward2"}
+			{Radius 1996.74}
+		}
+		{zone "circle"
+			{position -2434.05 2194.24 -4}
+			{Name "forward3"}
+			{Radius 2052.46}
+		}
+		{zone "circle"
+			{position -2069.19 -3067.74 2.06763}
+			{Name "forward4"}
+			{Radius 1962.34}
+		}
+		{zone "circle"
+			{position 2323.15 5808.82 0}
+			{Name "forward5"}
+			{Radius 2255.67}
+		}
 		{zone "poly"
-			{position 2258.95 -1372.42 -1.29342}
+			{position 2258.95 -1372.42 -1.29318}
 			{Name "fpc1"}
 			{Point 786.946 -257.822}
 			{Point -123.473 -817.699}
@@ -19634,7 +19627,7 @@
 			{Point 920.794 -7.01242}
 		}
 		{zone "poly"
-			{position 3680.01 -4638.69 79.7558}
+			{position 3680.01 -4638.69 79.7555}
 			{Name "fpc2"}
 			{Point 758.039 -64.2774}
 			{Point 654.963 -269.129}
@@ -19659,7 +19652,7 @@
 			{Point 127.376 -681.792}
 		}
 		{zone "poly"
-			{position -1959.75 -3183.8 -5.85547}
+			{position -1959.75 -3183.8 -5.85449}
 			{Name "fpc4"}
 			{Point -502.353 -497.214}
 			{Point -785.132 43.6076}
@@ -32624,9 +32617,7 @@
 				{position -642.635 6142.67 58}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

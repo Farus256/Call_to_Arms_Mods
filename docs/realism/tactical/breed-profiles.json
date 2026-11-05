@@ -45781,8 +45781,8 @@
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "de8c03dd0f7a8f54930bc6990b10cb70914eec815e061548a16a37382fbef7df",
-      "generatedSHA256": "72a3fe6f614646ef957a78c223de58abfb51841ac7e04dbe2d2722a8f482a5fa"
+      "sourceSHA256": "6e49ebc0271ff6bef5e83ef35e56746a4db395b6b44ece3bb2fcfc343cb8b67c",
+      "generatedSHA256": "87487bc8bd175f75f0a9edd1971477fc3114b051612a06d3f1f8476dfff2329b"
     },
     {
       "file": "set/breed/mp/rus/late/guards_marine_mg_asst.set",
@@ -45797,8 +45797,8 @@
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "6b8d8057f789be6650419f0c85851d711a1ead6ce264a46600103e7f69fc842c",
-      "generatedSHA256": "c3995587800f8541c99e55ce1db781c730895b77a574affe9f1bd6976bb8a196"
+      "sourceSHA256": "612d6a77b61ae5ae02846302b820595051ee42c18a3a23c0137c4a28e9f487ad",
+      "generatedSHA256": "17085ef53ed56274782e2bedf2083b2388e6f1f5888f84aa78a52a40c8ce7f24"
     },
     {
       "file": "set/breed/mp/rus/late/guards_marine_rifle.set",
@@ -46229,8 +46229,8 @@
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "6af908f63ff18b125d7f3cef71af18ba6005941b011f9724e899b8de9b30b6bb",
-      "generatedSHA256": "aa25b47668edae75ae1fa2af89691dbdd6e7ee11139c0a13d2b0a66499ecb277"
+      "sourceSHA256": "e18464e1043eeb2d2d10083da308912d13450b2574e3f2f2623cec3ccf6eda52",
+      "generatedSHA256": "0dd8ec53bb374e13b36fed7b1d4b3f58e4ca9e77f79abadc4e83fae4960a8388"
     },
     {
       "file": "set/breed/mp/rus/late/marine_nco_stick.set",
@@ -46293,8 +46293,8 @@
       "profile": "veteran",
       "tier": "3",
       "reason": "tier",
-      "sourceSHA256": "4a661bd317577bc0882bc335d04152ebbb25e9f146cf191f27ab8f42b8f64e78",
-      "generatedSHA256": "28d3da9c362a94504c6637d6db99c194822562c5503c566d6f6740777b0a652f"
+      "sourceSHA256": "d0207b61ac2bdc36ee7c060d555d8fa9ac77e76578a4949661cd1a2e8ecfd28b",
+      "generatedSHA256": "edcd9116aa383ba68feefe5d95226df3f226a08838f476fae318cb4de32b2e59"
     },
     {
       "file": "set/breed/mp/rus/late/marine_senior.set",

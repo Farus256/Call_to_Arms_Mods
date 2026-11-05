@@ -7,9 +7,7 @@ local SQUAD_TAG_MISSION_SCRIPT = "_lua_mi"
 local SQUAD_TAG_REPAIRING = "repairing"
 local SQUAD_TAG_ALERT = "_lua_alert"
 local SQUAD_TAG_IGNORE = "_lua_ignore"
--- Horten's Frontline mission-script AI (artillery, AA guard, medics) owns these squads.
-local HF_SCRIPT_TAGS = { "bot_arty", "bot_aa_guard", "_ai_medic" }
-local UFBObjectiveBalance = require([[/script/multiplayer/ufb_objective_balance]])
+local SQUAD_TAG_NEXT_ORDER = "_lua_need_next_order"
 
 -- Returns true when normal Lua movement orders must stop for battle result or bot retreat.
 function ShouldStopNormalSquadOrders()
@@ -72,13 +70,7 @@ function IsSquadInScript(squad)
 	if BotApi.Scene:IsSquadTagged(squad, SQUAD_TAG_MISSION_SCRIPT) or BotApi.Scene:IsSquadTagged(squad, SQUAD_TAG_REPAIRING) then
 		if printDebug then print("Print: SQUADinSCRIPT thus no action squad", squad, "Player#", BotApi.Instance.playerId, "Team", team) end
 		return true
-	end
-	for _, tag in ipairs(HF_SCRIPT_TAGS) do
-		if BotApi.Scene:IsSquadTagged(squad, tag) then
-			return true
-		end
-	end
-	if BotApi.Scene:IsSquadTagged(squad, SQUAD_TAG_ALERT) then
+	elseif BotApi.Scene:IsSquadTagged(squad, SQUAD_TAG_ALERT) then
 		if printDebug then print("Print: SQUADinALERT thus seek by squad", squad, "Player#", BotApi.Instance.playerId, "Team", team) end
 		BotApi.Commands:SeekAndDestroy(squad)
 		return true
@@ -88,6 +80,13 @@ end
 -- Returns true when squad is tagged for general ignore behavior.
 function IsSquadToIgnore(squad)
 	if BotApi.Scene:IsSquadTagged(squad, SQUAD_TAG_IGNORE) then
+		return true
+	end
+end
+
+-- Returns true when squad is tagged for needing a next order
+function IsSquadNeedsOrder(squad)
+	if BotApi.Scene:IsSquadTagged(squad, SQUAD_TAG_NEXT_ORDER) then
 		return true
 	end
 end
@@ -132,14 +131,13 @@ function CaptureFlag(squad)
 		end
 	end
 
-	if printDebug then print("Print: [notags] ctf by squad", squad, "Player#", BotApi.Instance.playerId, "Flag name: ", flag.name) end
-	-- Counterattacks retain their explicit objective; ordinary attack waves split.
-	if not ConquestState.botDefender then
-		flag = UFBObjectiveBalance.Choose(squad, flags, flag, team)
+	if IsSquadNeedsOrder(squad) then
+		return BotApi.Commands:CaptureFlag(squad, flag.name)
 	end
-	local result = BotApi.Commands:CaptureFlag(squad, flag.name)
-	if result ~= false then UFBObjectiveBalance.Commit(squad, flag) end
-	return result
+
+	if printDebug then print("Print: [notags] ctf by squad", squad, "Player#", BotApi.Instance.playerId, "Flag name: ", flag.name) end
+	-- Native Conquest owns the shared wave target and defender counterattack target.
+	return BotApi.Commands:CaptureFlag(squad, flag.name)
 end
 
 -- UFB: guard before target selection, fallback attacks, and waypoint orders.

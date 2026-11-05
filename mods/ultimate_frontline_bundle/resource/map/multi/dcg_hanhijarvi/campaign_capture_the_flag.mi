@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position 991.1 43.77}
 		{xform zl 128.72}
@@ -958,8 +958,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8041
-		{Position 1425.47 -389.52}
-		{xform zl -51.33}
+		{Position 1430.47 -384.52}
+		{xform zl 16.46}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -967,7 +967,7 @@
 		{Player 0}
 		{MID 61}
 		{Cover
-			{sector 1425.47 -389.527 {type "bush_stand"}
+			{sector 1430.47 -384.527 {type "bush_stand"}
 			}
 		}
 		{FsmState "stand_noaim"}
@@ -1073,7 +1073,6 @@
 	{Human "" 0xb000
 		{Position 3098.92 -1631.87}
 		{xform zl 153.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1092,7 +1091,6 @@
 	{Human "" 0xb001
 		{Position 3257.11 -2352.43}
 		{xform zl -139.57}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1111,7 +1109,6 @@
 	{Human "" 0xb002
 		{Position 3078.66 -2241.27}
 		{xform zl -160.44}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1130,7 +1127,6 @@
 	{Human "" 0xb003
 		{Position 2897.27 -2115.59}
 		{xform zl -162.17}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1149,7 +1145,6 @@
 	{Human "" 0xb004
 		{Position 2926.05 -2134.57}
 		{xform zl -115.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1168,7 +1163,6 @@
 	{Human "" 0xb005
 		{Position 3270.54 -2357.98}
 		{xform zl -92.55}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1187,7 +1181,6 @@
 	{Human "" 0xb006
 		{Position 3623.22 -1622.13}
 		{xform zl 21.36}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1206,7 +1199,6 @@
 	{Human "" 0xb007
 		{Position 3468.07 -1589.07}
 		{xform zl 85.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1225,7 +1217,6 @@
 	{Human "" 0xb008
 		{Position 3399.69 -1603.01}
 		{xform zl 155.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1244,7 +1235,6 @@
 	{Human "" 0xb009
 		{Position 3499.56 -1591.76}
 		{xform zl 85.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1263,7 +1253,6 @@
 	{Human "" 0xb00a
 		{Position 3359.87 -1660.43}
 		{xform zl 126.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1282,7 +1271,6 @@
 	{Human "" 0xb00b
 		{Position 3587.26 -1602.57}
 		{xform zl 68.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1301,7 +1289,6 @@
 	{Human "" 0xb00c
 		{Position 3432.78 -1585.2}
 		{xform zl 108.13}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1320,7 +1307,6 @@
 	{Human "" 0xb00d
 		{Position 3546.68 -1598.14}
 		{xform zl 86.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1339,7 +1325,6 @@
 	{Human "" 0xb00e
 		{Position 3078.26 -1673.88}
 		{xform zl 153.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1358,7 +1343,6 @@
 	{Human "" 0xb00f
 		{Position 3224.3 -997.3}
 		{xform zl 126.71}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1370,7 +1354,6 @@
 	{Human "" 0xb010
 		{Position 4356.62 -1468.42}
 		{xform zl 29.51}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1389,7 +1372,6 @@
 	{Human "" 0xb011
 		{Position 3253.67 -992.23}
 		{xform zl 126.71}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1401,7 +1383,6 @@
 	{Human "" 0xb012
 		{Position 4383.04 -1514.42}
 		{xform zl -4.11}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1420,7 +1401,6 @@
 	{Human "" 0xb013
 		{Position 4313.41 -1433.96}
 		{xform zl 76.53}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1439,7 +1419,6 @@
 	{Human "" 0xb014
 		{Position 3124.32 -1207.68}
 		{xform zl 127.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1458,7 +1437,6 @@
 	{Human "" 0xb015
 		{Position 4091.84 -889.06}
 		{xform zl 75.28}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1477,7 +1455,6 @@
 	{Human "" 0xb016
 		{Position 3186 -1986.23}
 		{xform zl 171.64}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1496,7 +1473,6 @@
 	{Human "" 0xb017
 		{Position 3297.17 -2066.68}
 		{xform zl -136.75}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1515,7 +1491,6 @@
 	{Human "" 0xb018
 		{Position 3487.46 -2178.82}
 		{xform zl -88.32}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1534,7 +1509,6 @@
 	{Human "" 0xb019
 		{Position 3248.27 -2047.73}
 		{xform zl -123.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1553,7 +1527,6 @@
 	{Human "" 0xb01a
 		{Position 3213.56 -2024.5}
 		{xform zl -123.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1572,7 +1545,6 @@
 	{Human "" 0xb01b
 		{Position 3459.63 -2179.63}
 		{xform zl -88.32}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1591,7 +1563,6 @@
 	{Human "" 0xb01c
 		{Position 3706.48 -2113.87}
 		{xform zl -36.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1610,7 +1581,6 @@
 	{Human "" 0xb01d
 		{Position 3685 -2134.27}
 		{xform zl -83.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1629,7 +1599,6 @@
 	{Human "" 0xb01e
 		{Position 2988.63 -1818.28}
 		{xform zl 175.82}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1648,7 +1617,6 @@
 	{Human "" 0xb01f
 		{Position 3018.94 -1746.34}
 		{xform zl 155.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1667,7 +1635,6 @@
 	{Human "" 0xb020
 		{Position 3001.03 -1786.47}
 		{xform zl 155.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1686,7 +1653,6 @@
 	{Human "" 0xb021
 		{Position 2915.35 -1999.13}
 		{xform zl 165.06}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1705,7 +1671,6 @@
 	{Human "" 0xb022
 		{Position 3369.26 -2532.26}
 		{xform zl -113.54}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1724,7 +1689,6 @@
 	{Human "" 0xb023
 		{Position 3892.54 -1690.01}
 		{xform zl -32.85}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1743,7 +1707,6 @@
 	{Human "" 0xb024
 		{Position 3888.99 -1655.71}
 		{xform zl 14.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1762,7 +1725,6 @@
 	{Human "" 0xb025
 		{Position 4343.96 -1707.05}
 		{xform zl -21.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1781,7 +1743,6 @@
 	{Human "" 0xb026
 		{Position 3751.84 -1888.95}
 		{xform zl 30.58}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1800,7 +1761,6 @@
 	{Human "" 0xb027
 		{Position 3882.09 -1608.35}
 		{xform zl 12.52}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4259,7 +4219,6 @@
 	{Human "" 0x807f
 		{Position 4773.4 -1622.32}
 		{xform zl -6.45}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4279,7 +4238,6 @@
 	{Human "" 0x80ad
 		{Position 4191 -657.52}
 		{xform zl 63.09}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4334,7 +4292,6 @@
 	{Human "" 0x8100
 		{Position 5199.12 -286.1}
 		{xform zl 80.73}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4353,7 +4310,6 @@
 	{Human "" 0x8101
 		{Position 5060.54 -145.27}
 		{xform zl 41.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4372,7 +4328,6 @@
 	{Human "" 0x8102
 		{Position 3460.43 -506.39}
 		{xform zl 151.23}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4391,7 +4346,6 @@
 	{Human "" 0x8103
 		{Position 2580.49 -3773.56}
 		{xform zl 167}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4410,7 +4364,6 @@
 	{Human "" 0x8104
 		{Position 5603.63 -830.92}
 		{xform zl -14.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4429,7 +4382,6 @@
 	{Human "" 0x8105
 		{Position 2919.98 -3694.14}
 		{xform zl -107.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4448,7 +4400,6 @@
 	{Human "" 0x8106
 		{Position 4339.7 -3817.86}
 		{xform zl -89.09}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4467,7 +4418,6 @@
 	{Human "" 0x8107
 		{Position 3891.55 -387.97}
 		{xform zl 168.6}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4504,7 +4454,6 @@
 	{Human "" 0x8109
 		{Position 3736.85 -97.46}
 		{xform zl 73.66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4524,7 +4473,6 @@
 	{Human "" 0x810a
 		{Position 4103.56 -2861.7}
 		{xform zl 37.68}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4543,7 +4491,6 @@
 	{Human "" 0x810b
 		{Position 5157.91 -973.72}
 		{xform zl 111.67}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4596,8 +4543,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa007
-		{Position 2150.47 855.47}
-		{xform zl -28.81}
+		{Position 2100.47 885.47}
+		{xform zl 149.03}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4605,7 +4552,7 @@
 		{Player 0}
 		{MID 235}
 		{Cover
-			{sector 2150.47 855.473 {type "bush_stand"}
+			{sector 2100.47 885.473 {type "bush_stand"}
 			}
 		}
 		{Attack 0 255 "" 4}
@@ -4614,7 +4561,6 @@
 	{Human "" 0xa008
 		{Position 3348.11 -39.72}
 		{xform zl -34}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5960,9 +5906,6 @@
 		{Volume "1blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
-		{Volume "spin1"
-			{able {contact 1}{contact_ground 1}{touch 1}}
-		}
 		{Volume "2blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -5971,6 +5914,9 @@
 		}
 		{Volume "2blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "spin1"
+			{able {contact 1}{contact_ground 1}{touch 1}}
 		}
 		{Volume "spin2"
 			{able {contact 1}{contact_ground 1}{touch 1}}
@@ -6438,7 +6384,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x8129
-		{Position 669.39 2386.88}
+		{Position 669.39 2386.87}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -7909,7 +7855,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x814b
-		{Position 4797.49 -2429.63}
+		{Position 4797.49 -2429.62}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -10598,7 +10544,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8206
-		{Position -427.12 2389.63}
+		{Position -427.12 2389.62}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -13099,7 +13045,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x82af
-		{Position 90.46 2215.13}
+		{Position 90.46 2215.12}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -13113,7 +13059,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0xc008
-		{Position 465.77 2062.88}
+		{Position 465.77 2062.87}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -14826,7 +14772,7 @@
 		}
 	}
 	{Entity "mine_sign" 0x82b4
-		{Position -94.1 2214.13}
+		{Position -94.1 2214.12}
 		{xform zl 94.75}
 	}
 	{Entity "mine_sign" 0x82b5
@@ -14966,7 +14912,7 @@
 		{xform zl 79.74}
 	}
 	{Entity "mine_sign" 0x82df
-		{Position -2381.13 -1629.97}
+		{Position -2381.12 -1629.97}
 		{xform zl -57.1}
 	}
 	{Entity "mine_sign" 0x82e0
@@ -15123,19 +15069,361 @@
 	{Link 0x8111 {0x82d6 "driver"}}
 	{Link 0x82ee {0x82f0 "driver"}}
 	{Link 0x82ef {0x82f0 "gunner"}}
-	{Tags "fpc1" 0x802f}
-	{Tags "fpc3" 0x8011}
-	{Tags "fpc5" 0x8003}
-	{Tags "fpc4" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
-	{Tags "fpc2" 0x8013}
+	{Tags "bare" 0x2165}
+	{Tags "bare" 0x216b}
+	{Tags "bare" 0x3c05}
+	{Tags "bare" 0x3c0b}
+	{Tags "bare" 0x3c15}
+	{Tags "bare" 0x3c1b}
+	{Tags "bare" 0x3c25}
+	{Tags "bare" 0x3c2b}
+	{Tags "bare" 0x3c35}
+	{Tags "bare" 0x3c3b}
+	{Tags "bare" 0x3c45}
+	{Tags "bare" 0x3c4b}
+	{Tags "bare" 0x3c55}
+	{Tags "bare" 0x3c5b}
+	{Tags "bare" 0x3c65}
+	{Tags "bare" 0x3c6b}
+	{Tags "bare" 0x3c75}
+	{Tags "bare" 0x3c7b}
+	{Tags "bare" 0x3c85}
+	{Tags "bare" 0x3c8b}
+	{Tags "bare" 0x3c95}
+	{Tags "bare" 0x3c9b}
+	{Tags "bare" 0x3ca5}
+	{Tags "bare" 0x3cab}
+	{Tags "bare" 0x3cb5}
+	{Tags "bare" 0x3cbb}
+	{Tags "bare" 0x3cc5}
+	{Tags "bare" 0x3ccb}
+	{Tags "bare" 0x3cd5}
+	{Tags "bare" 0x3cdb}
+	{Tags "bare" 0x3ce5}
+	{Tags "bare" 0x3ceb}
+	{Tags "bare" 0x3cf5}
+	{Tags "bare" 0x3cfb}
+	{Tags "bare" 0x3d05}
+	{Tags "bare" 0x3d0b}
+	{Tags "bare" 0x3d15}
+	{Tags "bare" 0x437c}
+	{Tags "bare" 0x4382}
+	{Tags "bare" 0x438c}
+	{Tags "bare" 0x4392}
+	{Tags "bare" 0x439c}
+	{Tags "bare" 0x43a2}
+	{Tags "bare" 0x43ac}
+	{Tags "bare" 0x43b2}
+	{Tags "bare" 0x43bc}
+	{Tags "bare" 0x43c2}
+	{Tags "bare" 0x43cc}
+	{Tags "bare" 0x43d2}
+	{Tags "bare" 0x43dc}
+	{Tags "bare" 0x43e2}
+	{Tags "bare" 0x43ec}
+	{Tags "bare" 0x43f2}
+	{Tags "bare" 0x43fc}
+	{Tags "bare" 0x4602}
+	{Tags "bare" 0x460c}
+	{Tags "bare" 0x4612}
+	{Tags "bare" 0x461c}
+	{Tags "bare" 0x4622}
+	{Tags "bare" 0x462c}
+	{Tags "bare" 0x4632}
+	{Tags "bare" 0x463c}
+	{Tags "bare" 0x4642}
+	{Tags "bare" 0x464c}
+	{Tags "bare" 0x4652}
+	{Tags "bare" 0x465c}
+	{Tags "bare" 0x4662}
+	{Tags "bare" 0x466c}
+	{Tags "bare" 0x4672}
+	{Tags "bare" 0x467c}
+	{Tags "bare" 0x4682}
+	{Tags "bare" 0x468c}
+	{Tags "bare" 0x4692}
+	{Tags "bare" 0x469c}
+	{Tags "bare" 0x46a2}
+	{Tags "bare" 0x46ac}
+	{Tags "bare" 0x46b2}
+	{Tags "bare" 0x46bc}
+	{Tags "bare" 0x46c2}
+	{Tags "bare" 0x46cc}
+	{Tags "bare" 0x46d2}
+	{Tags "bare" 0x46dc}
+	{Tags "bare" 0x46e2}
+	{Tags "bare" 0x46ec}
+	{Tags "bare" 0x46f2}
+	{Tags "bare" 0x46fc}
+	{Tags "bare" 0x4702}
+	{Tags "bare" 0x470c}
+	{Tags "bare" 0x4712}
+	{Tags "bare" 0x471c}
+	{Tags "bare" 0x4722}
+	{Tags "bare" 0x440e}
+	{Tags "bare" 0x4414}
+	{Tags "bare" 0x441e}
+	{Tags "bare" 0x4424}
+	{Tags "bare" 0x442e}
+	{Tags "bare" 0x4434}
+	{Tags "bare" 0x443e}
+	{Tags "bare" 0x4444}
+	{Tags "bare" 0x444e}
+	{Tags "bare" 0x4454}
+	{Tags "bare" 0x445e}
+	{Tags "bare" 0x4464}
+	{Tags "bare" 0x446e}
+	{Tags "bare" 0x4474}
+	{Tags "bare" 0x447e}
+	{Tags "bare" 0x4484}
+	{Tags "bare" 0x448e}
+	{Tags "bare" 0x4494}
+	{Tags "bare" 0x449e}
+	{Tags "bare" 0x44a4}
+	{Tags "bare" 0x44ae}
+	{Tags "bare" 0x44b4}
+	{Tags "bare" 0x44c4}
+	{Tags "bare" 0x860}
+	{Tags "bare" 0x877}
+	{Tags "bare" 0x881}
+	{Tags "bare" 0x887}
+	{Tags "bare" 0x891}
+	{Tags "bare" 0x897}
+	{Tags "bare" 0x8a1}
+	{Tags "bare" 0x8a7}
+	{Tags "bare" 0x8b1}
+	{Tags "bare" 0x8b7}
+	{Tags "bare" 0x8c1}
+	{Tags "bare" 0x8c7}
+	{Tags "bare" 0x8d1}
+	{Tags "bare" 0x8d7}
+	{Tags "bare" 0x8e1}
+	{Tags "bare" 0x8e7}
+	{Tags "bare" 0x8f1}
+	{Tags "bare" 0x8f7}
+	{Tags "bare" 0x901}
+	{Tags "bare" 0x907}
+	{Tags "bare" 0x911}
+	{Tags "bare" 0x917}
+	{Tags "bare" 0x921}
+	{Tags "bare" 0x927}
+	{Tags "bare" 0x931}
+	{Tags "bare" 0x937}
+	{Tags "bare" 0x941}
+	{Tags "bare" 0x947}
+	{Tags "bare" 0x951}
+	{Tags "bare" 0x957}
+	{Tags "bare" 0x961}
+	{Tags "bare" 0x967}
+	{Tags "bare" 0x98d}
+	{Tags "bare" 0x98e}
+	{Tags "bare" 0x9d3}
+	{Tags "bare" 0x9d4}
+	{Tags "bare" 0xa19}
+	{Tags "bare" 0xa1a}
+	{Tags "bare" 0xa5f}
+	{Tags "bare" 0xa60}
+	{Tags "bare" 0xaa5}
+	{Tags "bare" 0xaa6}
+	{Tags "bare" 0xaeb}
+	{Tags "bare" 0xaec}
+	{Tags "bare" 0xb31}
+	{Tags "bare" 0xb32}
+	{Tags "bare" 0xb77}
+	{Tags "bare" 0xb78}
+	{Tags "bare" 0xbbd}
+	{Tags "bare" 0xbbe}
+	{Tags "bare" 0xc15}
+	{Tags "bare" 0xc16}
+	{Tags "bare" 0xc5b}
+	{Tags "bare" 0xc5c}
+	{Tags "bare" 0xca1}
+	{Tags "bare" 0xca2}
+	{Tags "bare" 0xce7}
+	{Tags "bare" 0xce8}
+	{Tags "bare" 0xd2d}
+	{Tags "bare" 0xd2e}
+	{Tags "bare" 0xd73}
+	{Tags "bare" 0xd74}
+	{Tags "bare" 0xdb9}
+	{Tags "bare" 0xdba}
+	{Tags "bare" 0xdff}
+	{Tags "bare" 0xe00}
+	{Tags "bare" 0xe45}
+	{Tags "bare" 0xe46}
+	{Tags "bare" 0xe8b}
+	{Tags "bare" 0xe8c}
+	{Tags "bare" 0xed1}
+	{Tags "bare" 0xed2}
+	{Tags "bare" 0xf17}
+	{Tags "bare" 0xf18}
+	{Tags "bare" 0xf5d}
+	{Tags "bare" 0xf5e}
+	{Tags "bare" 0xfa3}
+	{Tags "bare" 0xfa4}
+	{Tags "bare" 0xfe9}
+	{Tags "bare" 0xfea}
+	{Tags "bare" 0x1153}
+	{Tags "bare" 0x1154}
+	{Tags "bare" 0x1199}
+	{Tags "bare" 0x119a}
+	{Tags "bare" 0x11df}
+	{Tags "bare" 0x11e0}
+	{Tags "bare" 0x1225}
+	{Tags "bare" 0x1226}
+	{Tags "bare" 0x126b}
+	{Tags "bare" 0x126c}
+	{Tags "bare" 0x12b1}
+	{Tags "bare" 0x12b2}
+	{Tags "bare" 0x12f7}
+	{Tags "bare" 0x12f8}
+	{Tags "bare" 0x133d}
+	{Tags "bare" 0x133e}
+	{Tags "bare" 0x1383}
+	{Tags "bare" 0x1384}
+	{Tags "bare" 0x13c9}
+	{Tags "bare" 0x13ca}
+	{Tags "bare" 0x1419}
+	{Tags "bare" 0x141a}
+	{Tags "bare" 0x617f}
+	{Tags "bare" 0x6180}
+	{Tags "bare" 0x61c5}
+	{Tags "bare" 0x61c6}
+	{Tags "bare" 0x620b}
+	{Tags "bare" 0x620c}
+	{Tags "bare" 0x6251}
+	{Tags "bare" 0x6252}
+	{Tags "bare" 0x6297}
+	{Tags "bare" 0x6298}
+	{Tags "bare" 0x62dd}
+	{Tags "bare" 0x62de}
+	{Tags "bare" 0x6323}
+	{Tags "bare" 0x6324}
+	{Tags "bare" 0x6369}
+	{Tags "bare" 0x636a}
+	{Tags "bare" 0x63af}
+	{Tags "bare" 0x63b0}
+	{Tags "bare" 0x63f5}
+	{Tags "bare" 0x63f6}
+	{Tags "bare" 0x643e}
+	{Tags "bare" 0x643f}
+	{Tags "bare" 0x6484}
+	{Tags "bare" 0x6485}
+	{Tags "bare" 0x64ca}
+	{Tags "bare" 0x64cb}
+	{Tags "bare" 0x6510}
+	{Tags "bare" 0x6511}
+	{Tags "bare" 0x6556}
+	{Tags "bare" 0x6557}
+	{Tags "bare" 0x659c}
+	{Tags "bare" 0x659d}
+	{Tags "bare" 0x65e2}
+	{Tags "bare" 0x65e3}
+	{Tags "bare" 0x6628}
+	{Tags "bare" 0x6629}
+	{Tags "bare" 0x666e}
+	{Tags "bare" 0x666f}
+	{Tags "bare" 0x66b4}
+	{Tags "bare" 0x66b5}
+	{Tags "bare" 0x66fa}
+	{Tags "bare" 0x66fb}
+	{Tags "bare" 0x6740}
+	{Tags "bare" 0x6741}
+	{Tags "bare" 0x6786}
+	{Tags "bare" 0x6787}
+	{Tags "bare" 0x67cc}
+	{Tags "bare" 0x67cd}
+	{Tags "bare" 0x685f}
+	{Tags "bare" 0x6860}
+	{Tags "bare" 0x68a5}
+	{Tags "bare" 0x68a6}
+	{Tags "bare" 0x68eb}
+	{Tags "bare" 0x68ec}
+	{Tags "bare" 0x44f3}
+	{Tags "bare" 0x44f4}
+	{Tags "bare" 0x4539}
+	{Tags "bare" 0x453a}
+	{Tags "bare" 0x457f}
+	{Tags "bare" 0x4580}
+	{Tags "bare" 0x45c5}
+	{Tags "bare" 0x45c6}
+	{Tags "bare" 0x4732}
+	{Tags "bare" 0x4733}
+	{Tags "bare" 0x4778}
+	{Tags "bare" 0x4779}
+	{Tags "bare" 0x47be}
+	{Tags "bare" 0x47bf}
+	{Tags "bare" 0x481a}
+	{Tags "bare" 0x481b}
+	{Tags "bare" 0x4863}
+	{Tags "bare" 0x4864}
+	{Tags "bare" 0x48ab}
+	{Tags "bare" 0x48ac}
+	{Tags "bare" 0x48f1}
+	{Tags "bare" 0x48f2}
+	{Tags "bare" 0x4937}
+	{Tags "bare" 0x4938}
+	{Tags "bare" 0x497d}
+	{Tags "bare" 0x497e}
+	{Tags "bare" 0x49c3}
+	{Tags "bare" 0x4a09}
+	{Tags "bare" 0x4a0a}
+	{Tags "bare" 0x4a4f}
+	{Tags "bare" 0x4a50}
+	{Tags "bare" 0x4a95}
+	{Tags "bare" 0x4a96}
+	{Tags "bare" 0x4adb}
+	{Tags "bare" 0x4adc}
+	{Tags "bare" 0x4b21}
+	{Tags "bare" 0x4b22}
+	{Tags "bare" 0x4b67}
+	{Tags "bare" 0x4b68}
+	{Tags "bare" 0x4bad}
+	{Tags "bare" 0x4bae}
+	{Tags "bare" 0x4bf3}
+	{Tags "bare" 0x4bf4}
+	{Tags "bare" 0x4c46}
+	{Tags "bare" 0x4c47}
+	{Tags "bare" 0x4c8c}
+	{Tags "bare" 0x4c8d}
+	{Tags "bare" 0x52da}
+	{Tags "bare" 0x530c}
+	{Tags "bare" 0x530d}
+	{Tags "bare" 0x5371}
+	{Tags "bare" 0x2190}
+	{Tags "bare" 0x2191}
+	{Tags "bare" 0x21bb}
+	{Tags "bare" 0x21bc}
+	{Tags "bare" 0x21e6}
+	{Tags "bare" 0x21e7}
+	{Tags "bare" 0x2211}
+	{Tags "bare" 0x2212}
+	{Tags "bare" 0x223c}
+	{Tags "bare" 0x223d}
+	{Tags "bare" 0x227a}
+	{Tags "bare" 0x616a}
+	{Tags "bare" 0x1487}
+	{Tags "bare" 0x148e}
+	{Tags "bare" 0x5390}
+	{Tags "bare" 0x53a2}
+	{Tags "bare" 0x1499}
+	{Tags "bare" 0x69bd}
+	{Tags "bare" 0x53bc}
+	{Tags "bare" 0x53ce}
+	{Tags "bare" 0x585f}
+	{Tags "fpc1" "flag" 0x802f}
+	{Tags "fpc3" "flag" 0x8011}
+	{Tags "fpc5" "flag" 0x8003}
+	{Tags "fpc4" "flag" 0x8004}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
+	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
 	{Tags "cmp_def" "1_a_2-3" 0x8010}
@@ -17631,9 +17919,9 @@
 			{clear}
 			{item "tt33" filled {cell 0 0}}
 			{item "tt33" "ammo" 8 {cell 2 0}}
-			{item "tt33" "ammo" 4 {cell 3 0}}
-			{item "bandage_rus" {cell 4 0}}
-			{item "soviet_tankovy_helmet" {cell 6 0}{user "head"}}
+			{item "tt33" "ammo" 4 {cell 4 0}}
+			{item "bandage_rus" {cell 6 0}}
+			{item "soviet_tankovy_helmet" {cell 0 1}{user "head"}}
 		}
 	}
 	{Inventory 0x82ee
@@ -17659,1424 +17947,1707 @@
 	}
 	{Brain 0x800c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x800f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8012
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8014
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8015
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8018
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8023
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x802b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x802c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8031
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8032
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8033
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8034
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8035
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8036
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8037
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8038
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8039
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803e
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8040
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8041
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8042
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb000
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb001
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb002
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb003
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb004
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb005
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb006
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb007
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb008
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb009
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb011
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb012
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb013
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb014
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb015
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb016
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb017
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb018
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb023
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb027
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x800b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8028
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8030
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8043
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8044
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8048
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x804c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x804d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x804f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8050
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8052
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8053
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8054
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8055
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8056
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8057
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8058
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8059
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8060
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8061
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8062
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8063
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8064
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8065
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8066
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8067
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8068
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8069
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806a
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8085
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8086
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8087
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8088
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8089
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8090
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8091
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8092
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8093
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8094
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8095
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8096
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8097
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8098
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8099
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a8
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80aa
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ab
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ac
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ca
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80cb
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80cc
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80cd
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ce
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80cf
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80da
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80db
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80dc
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80dd
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80de
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80df
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e6
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ea
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x807f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ad
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80b8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80eb
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8100
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8101
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8102
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8103
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8104
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8105
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8106
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8107
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8108
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8109
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa007
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa008
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa009
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa011
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa012
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa013
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa014
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa023
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa027
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa028
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa030
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa031
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa032
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa033
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa034
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa035
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa036
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa037
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa038
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa039
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa03a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa03b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa03c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa041
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa042
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa043
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa044
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa045
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa046
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa047
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa048
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa049
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa050
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810d
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8110
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8111
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
@@ -19093,12 +19664,14 @@
 	{Brain 0x82ee
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x82ef
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
@@ -19108,7 +19681,7 @@
 		}
 	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -19131,42 +19704,17 @@
 		{event "music_start"}
 		{event "talk_on"}
 		{zone "circle"
-			{position 870.186 351.404 186}
-			{Name "forward1"}
-			{Radius 1609.2}
-		}
-		{zone "circle"
-			{position 3494.07 -1876.45 197.276}
-			{Name "forward2"}
-			{Radius 1820.67}
-		}
-		{zone "circle"
-			{position -4631.81 1366.69 136.654}
-			{Name "forward3"}
-			{Radius 1598.68}
-		}
-		{zone "circle"
-			{position -2051.53 -0.127686 190}
-			{Name "forward4"}
-			{Radius 1320.96}
-		}
-		{zone "circle"
-			{position -578.531 -2401.51 108.483}
-			{Name "forward5"}
-			{Radius 1480.99}
-		}
-		{zone "circle"
-			{position -668.957 -8978.16 0}
+			{position -668.957 -8978.16 126}
 			{Name "_bridge1"}
 			{Radius 150}
 		}
 		{zone "circle"
-			{position -321.48 -8971.31 0}
+			{position -321.48 -8971.31 128}
 			{Name "_bridge2"}
 			{Radius 150}
 		}
 		{zone "circle"
-			{position 40.011 -8964.46 0}
+			{position 40.011 -8964.46 128}
 			{Name "_bridge3"}
 			{Radius 150}
 		}
@@ -19224,6 +19772,31 @@
 			{Point 6085.44 270.58}
 			{Point 6238.09 -1952.98}
 			{Point 3528.87 -4350.08}
+		}
+		{zone "circle"
+			{position 870.186 351.404 186}
+			{Name "forward1"}
+			{Radius 1609.2}
+		}
+		{zone "circle"
+			{position 3494.07 -1876.45 197.276}
+			{Name "forward2"}
+			{Radius 1820.67}
+		}
+		{zone "circle"
+			{position -4631.81 1366.69 136.654}
+			{Name "forward3"}
+			{Radius 1598.68}
+		}
+		{zone "circle"
+			{position -2051.53 -0.127686 190}
+			{Name "forward4"}
+			{Radius 1320.96}
+		}
+		{zone "circle"
+			{position -578.531 -2401.51 108.483}
+			{Name "forward5"}
+			{Radius 1480.99}
 		}
 		{zone "poly"
 			{position 974.407 -78.511 200}
@@ -31786,9 +32359,7 @@
 				{position -1284.15 -3709.47 27}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

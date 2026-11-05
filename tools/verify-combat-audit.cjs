@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const s=require('./lib/sdl.cjs');
 const repo=path.resolve(__dirname,'..');
-const audit=path.resolve(process.argv[2]||path.join(repo,'../_survival_work/audit-20261004'));
+const audit=path.resolve(process.argv[2]||path.join(repo,'../_survival_work/audit-20261005'));
 const root=path.resolve(process.argv[3]||path.join(repo,'mods/ultimate_frontline_bundle/resource'));
 const read=rel=>fs.readFileSync(path.join(root,rel),'utf8');
 const native=rel=>fs.readFileSync(path.join(audit,'vanilla',rel),'utf8');
@@ -11,7 +11,12 @@ let checks=0;function check(ok,msg){assert(ok,msg);checks++;}
 assert.deepEqual(shape(s.parse(read('set/squads.set'))),shape(s.parse(native('set/squads.set'))),'Native placement for both cooperative and competitive modes');checks++;
 const actor=s.parse(read('properties/human.ext')),original=s.parse(native('properties/human.ext'));
 const chassis=tree=>tree.children.find(n=>s.name(n)==='Chassis');
-assert.deepEqual(shape(chassis(actor)),shape(chassis(original)),'Complete native locomotion, not only rotation values');checks++;
+// Native locomotion (speeds, animation, strafe, injured); only turn rates follow tools/tactical-balance.json.
+const rotation=require('./tactical-balance.json').rotationDegreesPerSecond;
+const turnless=tree=>{const c=shape(chassis(tree));for(const p of c.children)if(rotation[p.tokens[0]])for(const m of p.children)if(m.tokens.length===4)m.tokens[3]='R';return c;};
+assert.deepEqual(turnless(actor),turnless(original),'Complete native locomotion apart from turn rates');checks++;
+for(const [posture,modes] of Object.entries(rotation))for(const [mode,value] of Object.entries(modes))
+ check(Number(s.child(s.child(chassis(actor),posture),mode).tokens[3].value)===value,'Situational turn rate '+posture+'/'+mode);
 const switchTime=tree=>s.all(tree,n=>s.name(n)==='const'&&n.tokens[1]?.value==='weapon/change_time')[0].tokens[2].value;
 check(switchTime(actor)===switchTime(original),'Native weapon-change cooldown');
 const hf=s.parse(read('map/multi/HF-dcg_script.inc'));

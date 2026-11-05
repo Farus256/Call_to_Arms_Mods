@@ -136,13 +136,13 @@ local function calculateFlagPriority(f, flags)
         return 0
     end
 
-    -- Attacker behavior in Phase 1
+    -- Attackers reinforce other lanes after completing their own active phase.
     if spawn:sub(1, 1) == "a" then
-        local currentLaneCaptured = isLaneCapturedByAttacker(flags, "1", spawnLane)
+        local currentLaneCaptured = isLaneCapturedByAttacker(flags, activePhase, spawnLane)
 
-        -- Attackers should prioritize other lanes in Phase 1 if their own lane is fully captured
-        if currentLaneCaptured and activePhase == "1" then
-            if f.phase == "1" and f.lane ~= spawnLane and f.owner ~= "a" then
+        -- Keep objective capture active in both phases when another lane remains.
+        if currentLaneCaptured then
+            if f.phase == activePhase and f.lane ~= spawnLane and f.owner ~= "a" then
                 -- Find the lowest order flag in the current lane that is not captured
                 local lowestOrderFlag = getLowestOrderFlagNotOwned(flags, f.phase, f.lane)
 

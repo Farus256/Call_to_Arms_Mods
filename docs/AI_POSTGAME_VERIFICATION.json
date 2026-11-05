@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-05T15:13:24.575Z",
+  "state": "installed",
+  "fixedLogicIssues": 2,
+  "sourceAndInstalledIdentical": true,
+  "sha256VerifiedModFiles": 780,
+  "commandPointMultiplier": 2,
+  "verifiedCPResourceFiles": 22,
+  "nativeHFUnitBalance": true,
+  "nativeHumanMechanics": true,
+  "changedResources": [
+    {
+      "file": "resource/script/multiplayer/modes/utility.lua",
+      "sha256": "8e7659a57c3a149f4f86624dd19e55b0033dac4bf941701d0b7c284253581b7d"
+    },
+    {
+      "file": "resource/script/multiplayer/ufb_order_guard.lua",
+      "sha256": "3f277afa124d8a771adead193aadac7c52b60dfb9ca9b0d7c9ffb9ba47651c95"
+    }
+  ],
+  "verification": {
+    "purchaseWait": {
+      "scenarios": 5,
+      "passed": true
+    },
+    "botEvents": {
+      "scenarios": 17,
+      "passed": true
+    },
+    "aiLogic": {
+      "scenarios": 13,
+      "assertions": 55,
+      "passed": true
+    },
+    "hfTemporaryJobs": {
+      "passed": true
+    },
+    "hf4Static": {
+      "sdlFiles": 693,
+      "luaFiles": 10,
+      "garrisonMaps": 117,
+      "waypoints": 374010,
+      "passed": true
+    }
+  },
+  "observedBattle": {
+    "logModified": "2026-11-05T14:50:37.965Z",
+    "activeMods": [
+      "mod_3408719680",
+      "mod_3540580405",
+      "mod_2922646932",
+      "mod_3196505779",
+      "mod_3562631215",
+      "mod_3359417100",
+      "mod_3079405930",
+      "mod_3139610501",
+      "mod_2562731625",
+      "mod_3791314577",
+      "mod_3566110308",
+      "ultimate_frontline_bundle"
+    ],
+    "botSpawns": 51,
+    "captureOrders": 118,
+    "maximumWaitWindows": 36,
+    "criticalLuaErrors": 0,
+    "xmlErrors": 0,
+    "statsWarnings": {
+      "count": 66,
+      "successfulPurchaseLines": 66,
+      "immediatelyBeforeSuccessfulPurchase": 66
+    },
+    "normalStop": true
+  },
+  "liveBattleAfterPatchTested": false
+}

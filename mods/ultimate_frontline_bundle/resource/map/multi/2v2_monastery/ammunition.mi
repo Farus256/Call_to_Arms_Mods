@@ -1,6 +1,6 @@
 {mission
 	{Entity "ammo_point" 0x802f
-		{Position -628.65 -130.77}
+		{Position -634.55 -135.63}
 		{xform zl -163.84}
 		{Extender "map_point"
 			{name f1}
@@ -21,8 +21,8 @@
 		{MID 48}
 	}
 	{Entity "ammo_point" 0x8011
-		{Position 1105.84 -77.66}
-		{xform zl -16.29 y 6.87 zw 171.81}
+		{Position 570.59 -76.06}
+		{xform zl -16.29 y 6.86 zw -160.63}
 		{Extender "map_point"
 			{name f3}
 			{zone
@@ -42,7 +42,7 @@
 		{MID 17}
 	}
 	{Entity "ammo_point" 0x8013
-		{Position 221.89 -61.82}
+		{Position -193.91 -82.19}
 		{xform zl -150.69}
 		{Extender "map_point"
 			{name f2}
@@ -63,7 +63,7 @@
 		{MID 18}
 	}
 	{Entity "ammo_point" 0x8003
-		{Position 4263.77 -329.69}
+		{Position 1653.78 1515.91}
 		{xform zl -152.23}
 		{Extender "map_point"
 			{name f5}
@@ -84,7 +84,7 @@
 		{MID 2}
 	}
 	{Entity "ammo_point" 0x8004
-		{Position 2246.35 -57.42}
+		{Position 1141.36 841.1}
 		{xform zl 68.57}
 		{Extender "map_point"
 			{name f4}
@@ -105,7 +105,7 @@
 		{MID 3}
 	}
 	{Entity "flag_point_base" 0xe002
-		{Position -1660.37 2389.37 166.03}
+		{Position 3520.03 3866.99 -84}
 		{xform zl 90}
 		{Extender "map_point"
 			{name base_flag_b}
@@ -617,7 +617,7 @@
 		{MID 4}
 	}
 	{Entity "flag_point_base" 0xa000
-		{Position -1265.6 -1829.73 122.03}
+		{Position -3688.2 -3649.83 267.98}
 		{xform zl -90}
 		{Extender "map_point"
 			{name base_flag_a}
@@ -742,7 +742,7 @@
 						0.019 0.998 0
 						-0.998 0.019 0
 						0 0 0.999
-						-1789.51 -2407.13 189.976
+						-1789.51 -2407.12 189.976
 					}
 					{14
 						-0.12 0.992 0
@@ -804,7 +804,7 @@
 						0.573 0.819 0
 						-0.819 0.573 0
 						0 0 1
-						-1012.58 -2344.63 156.095
+						-1012.58 -2344.62 156.095
 					}
 					{14
 						0.357 0.933 0
@@ -1116,7 +1116,7 @@
 		}
 	}
 	{Entity "ammo_point" 0xa001
-		{Position -1776.91 -101.91}
+		{Position -1418.8 -542.8}
 		{xform zl 0.7}
 		{Extender "map_point"
 			{name f8}
@@ -1143,8 +1143,8 @@
 		}
 	}
 	{Entity "ammo_point" 0xa003
-		{Position -2768.62 75.14 134.53}
-		{xform zl 61.62 y 8.01 zw 13.31}
+		{Position -1647.57 -1247.86 72.37}
+		{xform zl 61.62 y 8 zw 13.3}
 		{Extender "map_point"
 			{name f7}
 			{zone
@@ -1170,7 +1170,7 @@
 		}
 	}
 	{Entity "ammo_point" 0xa005
-		{Position -4475.36 248.56}
+		{Position -2581.78 -2299.21}
 		{xform zl -90.03 y 5.11 zw 13.34}
 		{Extender "map_point"
 			{name f10}
@@ -1197,7 +1197,7 @@
 		}
 	}
 	{Entity "ammo_point" 0xa007
-		{Position -3609.67 190.41}
+		{Position -2065.3 -1731.48}
 		{xform zl 59.96}
 		{Extender "map_point"
 			{name f6}
@@ -1224,7 +1224,7 @@
 		}
 	}
 	{Entity "ammo_point" 0xa009
-		{Position 3317.34 -165.25}
+		{Position 2336.61 2371.37}
 		{xform zl -109.31}
 		{Extender "map_point"
 			{name f9}
@@ -1263,7 +1263,7 @@
 		}
 	}
 	{Entity "map_point" 0xb000
-		{Position 126.12 4859.28}
+		{Position -3317.87 4974.2}
 		{xform zl -78.5}
 		{Extender "map_point"
 			{name b1}
@@ -1284,7 +1284,7 @@
 		{MID 28}
 	}
 	{Entity "map_point" 0xb001
-		{Position -1842.55 4882.42}
+		{Position -3918.04 4917.22}
 		{xform zl -111.11}
 		{Extender "map_point"
 			{name b2}
@@ -1305,7 +1305,7 @@
 		{MID 29}
 	}
 	{Entity "map_point" 0xc800
-		{Position -4201.18 4901.54}
+		{Position -4763.79 4953.31}
 		{xform zl -99.44}
 		{Extender "map_point"
 			{name b4}
@@ -1326,7 +1326,7 @@
 		{MID 30}
 	}
 	{Entity "map_point" 0xc003
-		{Position -796.51 4843.07}
+		{Position -3663.53 4967.22}
 		{xform zl -99.54}
 		{Extender "map_point"
 			{name b5}
@@ -1347,7 +1347,7 @@
 		{MID 31}
 	}
 	{Entity "map_point" 0xc004
-		{Position 1577.96 4875.07}
+		{Position -2510.62 4924.12}
 		{xform zl -103.73}
 		{Extender "map_point"
 			{name b6}
@@ -1368,7 +1368,7 @@
 		{MID 32}
 	}
 	{Entity "map_point" 0xc005
-		{Position 4644.28 4882.53}
+		{Position -2279.73 4913.81}
 		{xform zl -95.5}
 		{Extender "map_point"
 			{name b7}
@@ -1389,7 +1389,7 @@
 		{MID 33}
 	}
 	{Entity "map_point" 0xc006
-		{Position -3162.75 4878.36}
+		{Position -4344.95 4957.29}
 		{xform zl -95.49}
 		{Extender "map_point"
 			{name b8}
@@ -1410,7 +1410,7 @@
 		{MID 34}
 	}
 	{Entity "map_point" 0xd002
-		{Position 3191.65 4873.8}
+		{Position -2861.97 4929.21}
 		{xform zl -93.21}
 		{Extender "map_point"
 			{name b3}
@@ -1431,7 +1431,7 @@
 		{MID 35}
 	}
 	{Entity "map_point" 0xc007
-		{Position 634.57 -4799.73}
+		{Position 4240.61 -4991.9}
 		{xform zl 92.25}
 		{Extender "map_point"
 			{name a1}
@@ -1452,7 +1452,7 @@
 		{MID 36}
 	}
 	{Entity "map_point" 0xd000
-		{Position -872.11 -4801.66}
+		{Position 3970.09 -5006.88}
 		{xform zl 80.75}
 		{Extender "map_point"
 			{name a2}
@@ -1473,7 +1473,7 @@
 		{MID 37}
 	}
 	{Entity "map_point" 0xd001
-		{Position 3390.9 -4898.84}
+		{Position 4794.58 -4987.99}
 		{xform zl 85.13}
 		{Extender "map_point"
 			{name a3}
@@ -1494,7 +1494,7 @@
 		{MID 38}
 	}
 	{Entity "map_point" 0xc801
-		{Position 2007.84 -4845.48}
+		{Position 4457.04 -4990.65}
 		{xform zl 86.03}
 		{Extender "map_point"
 			{name a5}
@@ -1515,7 +1515,7 @@
 		{MID 39}
 	}
 	{Entity "map_point" 0xc802
-		{Position -2011.4 -4797.32}
+		{Position 3743.72 -5003.91}
 		{xform zl 87.67}
 		{Extender "map_point"
 			{name a6}
@@ -1536,7 +1536,7 @@
 		{MID 40}
 	}
 	{Entity "map_point" 0xc803
-		{Position 4812.75 -4930.39}
+		{Position 5083.59 -4999.33}
 		{xform zl 83.29}
 		{Extender "map_point"
 			{name a7}
@@ -1557,7 +1557,7 @@
 		{MID 41}
 	}
 	{Entity "map_point" 0xe000
-		{Position -3237.13 -4823.77}
+		{Position 3516.84 -5012.39}
 		{xform zl 88.2}
 		{Extender "map_point"
 			{name a8}
@@ -1578,7 +1578,7 @@
 		{MID 42}
 	}
 	{Entity "map_point" 0xc804
-		{Position -4468.57 -4832.12}
+		{Position 3261.45 -5009.96}
 		{xform zl 84.01}
 		{Extender "map_point"
 			{name a4}
@@ -4135,23 +4135,25 @@
 	{Tags "foxhole_spawned" 0x29f}
 	{Tags "foxhole_spawned" 0x2a0}
 	{Tags "foxhole_spawned" 0x2a1}
-	{Tags "set_texmod" 0x37f}
-	{Tags "set_texmod" 0x380}
-	{Tags "add_exhaustview" "set_texmod" "diesel" 0x38a}
-	{Tags "set_texmod" 0x2419}
-	{Tags "add_exhaustview" "set_texmod" "diesel" 0x241a}
-	{Tags "set_texmod" 0x449a}
-	{Tags "set_texmod" 0x3a6}
-	{Tags "set_texmod" 0x2a8}
-	{Tags "set_texmod" 0x2aa}
-	{Tags "set_texmod" 0x61e1}
-	{Tags "add_exhaustview" "set_texmod" "diesel" 0x61e2}
+	{Tags "set_texmod" "range_170" 0x37f}
+	{Tags "set_texmod" "+mobilegun" "ai_can_deploy_smoke" "range_170" 0x380}
+	{Tags "add_exhaustview" "set_texmod" "diesel" "range_190" 0x38a}
+	{Tags "set_texmod" "range_160" 0x2419}
+	{Tags "set_texmod" "diesel" "range_160" 0x241a}
+	{Tags "set_texmod" "range_170" 0x449a}
+	{Tags "set_texmod" "ai_can_deploy_smoke" "range_160" 0x3a6}
+	{Tags "set_texmod" "ai_can_deploy_smoke" "range_160" 0x2a8}
+	{Tags "set_texmod" "ai_can_deploy_smoke" "range_150" 0x2aa}
+	{Tags "set_texmod" "range_160" 0x61e1}
+	{Tags "set_texmod" "diesel" "range_160" 0x61e2}
 	{Tags "foxhole_spawned" 0x2a2}
 	{Tags "foxhole_spawned" 0x2a3}
 	{Tags "foxhole_spawned" 0x2a4}
 	{Tags "foxhole_spawned" 0x2a5}
 	{Tags "foxhole_spawned" 0x2a6}
 	{Tags "foxhole_spawned" 0x2a9}
+	{Tags "set_texmod" 0xe8a}
+	{Tags "set_texmod" 0xe89}
 	{Tags "aut" 0x3135}
 	{Tags "aut" 0x3136}
 	{Tags "aut" 0x3137}
@@ -4179,9 +4181,16 @@
 	{Tags "aut" 0x40e}
 	{Tags "aut" 0x40f}
 	{Tags "aut" 0x410}
-	{Tags "add_exhaustview" "set_texmod" "diesel" 0x427}
-	{Tags "set_texmod" 0x42c}
-	{Tags "set_texmod" 0x436}
+	{Tags "set_texmod" 0x412}
+	{Tags "set_texmod" 0x413}
+	{Tags "set_texmod" 0x414}
+	{Tags "set_texmod" 0x415}
+	{Tags "set_texmod" 0x416}
+	{Tags "set_texmod" 0x417}
+	{Tags "set_texmod" 0x40c1}
+	{Tags "add_exhaustview" "set_texmod" "diesel" "range_190" 0x427}
+	{Tags "set_texmod" "range_170" 0x42c}
+	{Tags "set_texmod" "range_170" 0x436}
 	{Tags "foxhole_spawned" 0x40c5}
 	{Tags "foxhole_spawned" 0x6236}
 	{Tags "foxhole_spawned" 0x22fb}
@@ -4219,7 +4228,7 @@
 	{Tags "aut" 0x416c}
 	{Tags "aut" 0x416d}
 	{Tags "aut" 0x416e}
-	{Tags "set_texmod" 0x448}
+	{Tags "set_texmod" "+mobilegun" "ai_can_deploy_smoke" "range_170" 0x448}
 	{Tags "flag" 0x802f}
 	{Tags "flag" 0x8011}
 	{Tags "flag" 0x8013}
@@ -4315,108 +4324,113 @@
 		{event "gamestart"}
 		{event "init"}
 		{zone "poly"
-			{position -983.891 -1826.4 128.375}
+			{position -3697.2 -3603.76 273.082}
 			{Name "base_a"}
-			{Point -433.635 -288.026}
-			{Point -597.077 18.0403}
-			{Point -218.585 699.824}
-			{Point 722.074 399.387}
-			{Point 448.562 -310.024}
-			{Point 78.6604 -519.201}
+			{Point -573.208 -260.323}
+			{Point -660.172 400.143}
+			{Point -298.032 654.97}
+			{Point 361.918 371.816}
+			{Point 526.056 157.396}
+			{Point 390.88 -578.054}
+			{Point 252.558 -745.948}
 		}
 		{zone "poly"
-			{position -1712.56 2290.92 168.696}
+			{position 3665.54 3931.06 -80}
 			{Name "base_b"}
-			{Point -518.408 -412.536}
-			{Point -787.175 -9.2887}
-			{Point -408.151 369.349}
-			{Point 340.047 366.336}
-			{Point 608.897 55.9333}
-			{Point 593.146 -119.21}
-			{Point 171.643 -250.585}
+			{Point -435.184 -537.144}
+			{Point -711.002 1.14597}
+			{Point -378.445 436.818}
+			{Point 270.612 513.707}
+			{Point 504.69 279.341}
+			{Point 575.809 -179.539}
+			{Point 173.519 -514.328}
 		}
 		{zone "poly"
-			{position -681.867 -67.5171 -6}
+			{position -773.628 -65.8215 -4}
 			{Name "f1"}
-			{Point 404.495 -749.794}
-			{Point -323.983 -757.042}
-			{Point -406.613 109.723}
-			{Point -93.1591 698.82}
-			{Point 419.26 698.293}
+			{Point 279.663 -746.038}
+			{Point -232.223 -758.738}
+			{Point -314.853 108.027}
+			{Point -1.39872 697.124}
+			{Point 268.811 699.624}
 		}
 		{zone "poly"
-			{position -4500.91 184.247 307}
+			{position -2575.25 -2326.41 216.467}
 			{Name "f10"}
-			{Point -238.832 665.308}
-			{Point 586.594 353.069}
-			{Point 180.084 -702.046}
-			{Point -527.845 -316.331}
+			{Point 66.5744 547.28}
+			{Point 540.503 131.21}
+			{Point -39.1557 -501.149}
+			{Point -567.922 -177.341}
 		}
 		{zone "poly"
-			{position 186.553 -94.4604 -10}
+			{position -169.309 -91.7585 -0.52963}
 			{Name "f2"}
-			{Point 433.258 734.55}
-			{Point 436.792 -731.414}
-			{Point -452.539 -722.88}
-			{Point -417.511 719.744}
+			{Point 291.945 723.494}
+			{Point 302.026 -737.78}
+			{Point -276.375 -709.161}
+			{Point -317.596 723.447}
 		}
 		{zone "poly"
-			{position 1194.23 -55.1032 -24.7802}
+			{position 532.255 -0.772278 -19.0381}
 			{Name "f3"}
-			{Point -467.374 -715.729}
-			{Point -496.482 671.348}
-			{Point 491.518 474.579}
-			{Point 472.337 -430.198}
+			{Point -346.827 -804.11}
+			{Point -377.139 633.49}
+			{Point 153.722 609.079}
+			{Point 352.968 356.918}
+			{Point 217.275 -795.378}
 		}
 		{zone "poly"
-			{position 2302.36 -16.7256 -58.6512}
+			{position 1088.4 806.632 -31}
 			{Name "f4"}
-			{Point -589.279 -463.436}
-			{Point -567.787 440.238}
-			{Point 653.839 681.819}
-			{Point 503.227 -658.62}
+			{Point 349.931 -351.74}
+			{Point -166.038 -419.369}
+			{Point -395.015 -151.106}
+			{Point -387.688 279.614}
+			{Point 96.5655 513.979}
+			{Point 502.245 128.622}
 		}
 		{zone "poly"
-			{position 4290.03 -327.094 -75.5564}
+			{position 1660.25 1525.71 -50.9576}
 			{Name "f5"}
-			{Point 406.53 -416.027}
-			{Point -591.322 -583.19}
-			{Point -383.584 859.303}
-			{Point 568.377 139.915}
+			{Point -47.8108 -553.216}
+			{Point -448.878 -200.261}
+			{Point 16.9567 565.944}
+			{Point 479.732 187.533}
 		}
 		{zone "poly"
-			{position -3590.96 210.102 214.947}
+			{position -2045.83 -1748.1 152.186}
 			{Name "f6"}
-			{Point -611.494 -451.994}
-			{Point -176.912 667.556}
-			{Point 525.194 496.159}
-			{Point 263.212 -711.72}
+			{Point -446.956 -4.38172}
+			{Point -10.1901 465.424}
+			{Point 440.522 -31.7928}
+			{Point 16.6242 -429.249}
 		}
 		{zone "poly"
-			{position -2748.15 92.0123 128.915}
+			{position -1618.52 -1242.77 70.5179}
 			{Name "f7"}
-			{Point -295.175 654.466}
-			{Point 434.518 262.186}
-			{Point 393.424 -444.432}
-			{Point -532.767 -472.219}
+			{Point -150.869 513.116}
+			{Point 181.858 247.528}
+			{Point 309.825 -285.227}
+			{Point 57.8223 -474.298}
+			{Point -398.637 -1.11946}
 		}
 		{zone "poly"
-			{position -1784.88 -66.5193 60.6297}
+			{position -1446.91 -441.893 17}
 			{Name "f8"}
-			{Point -26.5297 -416.086}
-			{Point -547.93 -293.961}
-			{Point -522.805 301.331}
-			{Point -28.7607 419.25}
-			{Point 592.496 254.598}
-			{Point 533.529 -265.13}
+			{Point 407.965 -394.389}
+			{Point -2.83008 -488.809}
+			{Point -300.903 -243.015}
+			{Point -324.495 193.295}
+			{Point -113.989 472.339}
+			{Point 334.251 460.578}
 		}
 		{zone "poly"
-			{position 3342.8 -94.7581 -64.9539}
+			{position 2305.73 2351.76 -68}
 			{Name "f9"}
-			{Point -519.874 -582.186}
-			{Point -358.439 753.861}
-			{Point 543.723 629.318}
-			{Point 334.59 -800.993}
+			{Point -585.795 -240.21}
+			{Point 64.9825 638.839}
+			{Point 633.524 203.518}
+			{Point -112.712 -602.147}
 		}
 		{zone "poly"
 			{position -14.6421 -0.50354 0}
@@ -6100,10 +6114,7 @@
 										{time 0.1}
 									}
 									{"actor_to_cover"
-										{selector
-											{tag unhold_iq}
-											{state operatable}
-										}
+										{selector {source advanced} {group {select {tag {tag unhold_iq}}} {include {state {state operatable}}} {exclude {state {state linked}} {state {state inactive}} {state {state dead}} {state {state user_control}}}}}
 										{mode random}
 									}
 								}
@@ -14399,7 +14410,7 @@
 			}
 		
 ; UFB non-story AI additions.
-(include "/map/multi/ufb_infantry_profile.inc")
+
 (include "/map/multi/ufb_crew_skirmish.inc")
 }
 	}

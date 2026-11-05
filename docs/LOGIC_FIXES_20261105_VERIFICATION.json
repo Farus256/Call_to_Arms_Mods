@@ -1,0 +1,111 @@
+{
+  "state": "installed",
+  "date": "2026-11-05T19:31:12.561Z",
+  "implementedAuditItems": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "target": "D:/Programs/Steam/steamapps/common/Call to Arms - Gates of Hell/mods/ultimate_frontline_bundle",
+  "sourceAndInstalledIdentical": true,
+  "verifiedModFiles": 801,
+  "updatedFiles": 21,
+  "replacedFiles": 8,
+  "newFiles": 13,
+  "otherFilesUnchanged": 780,
+  "backup": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_ai_work\\full-logic-fix-20261105\\package\\backups\\20261105-193020-6849013",
+  "cpMultiplier": 2,
+  "files": 22,
+  "cpSchedules": 165,
+  "conquestFields": 32,
+  "multiplier": 2,
+  "combatAutonomy": true,
+  "targetingFiles": 3,
+  "playerSlots": 17,
+  "manualCaptureAndMovementProtected": true,
+  "automaticATInfantryTargetsRestricted": true,
+  "hfSharedJobProtection": true,
+  "tankAlertCooldownFixed": true,
+  "wirecutterSmokeFixed": true,
+  "mgRequiresShooting": true,
+  "launcherDrawWithinNativeRange": true,
+  "gunSyntaxFixed": true,
+  "correctedGunCurves": 9,
+  "correctedGunFiles": 6,
+  "smoothedOtherATWeapons": 5,
+  "nativeWeaponFieldsOutsideReviewedCurves": true,
+  "nativeHFWeaponLootingRetained": true,
+  "nativeHFMedicsRetained": true,
+  "repairedMedicLoops": 3,
+  "preservedLootingStance": true,
+  "hf4AnimationBindingsRestored": [
+    "stand_fire_gun_down_1",
+    "stand_fire_gun_up_1",
+    "grenade_deflect"
+  ],
+  "combatRegression": {
+    "scenarios": 50,
+    "checks": 286,
+    "triggerDefinitions": 410
+  },
+  "weaponRegression": {
+    "checks": 44,
+    "weaponAndItemFilesParsed": 3334
+  },
+  "aiRegression": {
+    "scenarios": 13,
+    "checks": 55,
+    "botLifecycleScenarios": 17,
+    "nativeTemporaryJobOwnership": true
+  },
+  "fullStaticGate": {
+    "sdlFiles": 701,
+    "luaFiles": 10,
+    "includes": 1768,
+    "requires": 26,
+    "garrisonMaps": 117,
+    "waypoints": 374010,
+    "maxWaypointID": 7874
+  },
+  "missionCoverage": {
+    "missionFiles": 436,
+    "withAutonomy": 436,
+    "maxInclusions": 1
+  },
+  "bloodPools": {
+    "chance": 0.05,
+    "checks": 144,
+    "unchangedFromBefore": true
+  },
+  "dismemberment": {
+    "checks": 15,
+    "unchangedHandlers": 7,
+    "bodyPartPhysicsPreserved": true
+  },
+  "manualOrderPolicy": {
+    "nativeCapturedByUserFilter": true,
+    "nativeMovementEvents": true,
+    "startsOnlyWhileFiring": true,
+    "playerMGBurstsRecheckShooting": true,
+    "directFireModeQueryUsed": false,
+    "midBurstHoldFireTestedInEngine": false
+  },
+  "automaticATPolicy": {
+    "humanTargetsIgnoredForAutomaticAcquisition": true,
+    "explicitCriticalCommandRetained": true,
+    "manualBazookaCommandRetained": true,
+    "vehicleAmmoTablesUnchanged": true
+  },
+  "newBattleRun": false,
+  "frameTimesMeasured": false
+}

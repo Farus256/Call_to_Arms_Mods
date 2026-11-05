@@ -1,7 +1,7 @@
 {mod
 	{name "ultimate_frontline_bundle"}
 	{tags "Bundle, Compatibility, Patch"}
-	{desc "Ultimate Frontline Bundle for game 1.067. Original PBR shaders are preserved; UFB contains no shader overrides. Horten's Frontline is the core. Merges BM Mod gore (human/dummy/generic interaction) into HF's entity logic and combines it with Persistent Everything limits; keeps HF canister shot group. Load LAST, after: Immersive UI, Colditz Germany/Finland, Wobble's Sounds, Tank Projectile Sound Overhaul, BM Mod, Persistent Everything, 01 WAVE, Horten's Frontline, 02 WAVE-HF Patch, Conquest Roll of Honour."}
+	{desc "Ultimate Frontline Bundle on Horten's Frontline 4.0.0. CP limits x2 in multiplayer and Conquest. Reviewed weapon penetration and infantry/vehicle AI fixes; native health, weapon ranges, damage, vision, supply, veterancy, prices and other economy retained. Compatible Conquest maps/garrisons, blood/persistence, sound and PBR anti-glare. Load LAST after Horten's Frontline and WAVE-HF patch."}
 	{minGameVersion "1.066"}
 	{maxGameVersion "1.068"}
 
@@ -13,7 +13,7 @@
 	;{require "mod_2922646932"}	; BM Mod
 	;{require "mod_3196505779"}	; Project Persistent EVERYTHING
 	;{require "mod_3562631215"}	; 01 WAVE
-	;{require "mod_3359417100"}	; Horten's Frontline (core)
+	{require "mod_3359417100"}	; Horten's Frontline (core)
 	;{require "mod_3566110308"}	; 02 WAVE-Horten's Frontline Patch
 	;{require "mod_3791314577"}	; Conquest - Roll of Honour
 }

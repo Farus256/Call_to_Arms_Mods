@@ -15,9 +15,16 @@ local SpawnCooldownTime = {
 local UnitSpawnWaitTime = 1.5 * 60000 -- 1:30min (ms) 
 
 -- Time delay for units to get a new move order after spawn move order. Loops.
-local OrderRotationPeriod = 2.5 * 60000 -- 2:30 min (ms)
+local OrderRotationPeriod
+local OrderRotationTime = {
+	Default = 2 * 60000, -- min (ms)
+}
 
-local firstPurchase = 2
+local firstPurchase = 3
+
+local function orderRotation()
+	OrderRotationPeriod = OrderRotationTime.Default
+end
 
 function GameModeSpawnCooldown()
     if firstPurchase > 0 then
@@ -54,6 +61,11 @@ flagLocationMap = {
 		["default"] = 1,
 	},
 	["ammunition"] = {
+		base_flag_a = function(side) return side == 'a' and FlagLocation.FriendlyBase or FlagLocation.EnemyBase end,
+		base_flag_b = function(side) return side == 'a' and FlagLocation.EnemyBase or FlagLocation.FriendlyBase end,
+		["default"] = FlagLocation.Center,
+	},
+	["annihilation"] = {
 		base_flag_a = function(side) return side == 'a' and FlagLocation.FriendlyBase or FlagLocation.EnemyBase end,
 		base_flag_b = function(side) return side == 'a' and FlagLocation.EnemyBase or FlagLocation.FriendlyBase end,
 		["default"] = FlagLocation.Center,
@@ -127,6 +139,18 @@ local function calculateFlagPriority(f, team, enemyTeam, teamIsLosing, totalFlag
     end
 
     if gameMode == "ammunition" then
+        if f.owner == team and f.location == "center" then
+            return f.priority * 0.75
+        end
+        if f.owner == team and f.location == "enemy" then
+            return f.priority * 3
+        end
+        if f.owner == enemyTeam and f.location == "friendly" then
+            return f.priority * 99
+        end
+    end
+
+    if gameMode == "annihilation" then
         if f.owner == team and f.location == "center" then
             return f.priority * 0.75
         end
@@ -345,6 +369,12 @@ function GetUnitToSpawn(units)
 				priorityMultiplier = priorityMultiplier * 0.25
 			end
 		end
+		
+		if gameMode == "annihilation" then
+			if UnitType("Doctrine") then
+				priorityMultiplier = priorityMultiplier * 0.0
+			end
+		end
 
 		return basePriority * priorityMultiplier
 	end)
@@ -352,6 +382,7 @@ end
 
 function OnGameStart()
     countBackFlags()
+	orderRotation()
 	OnGameStartUtility(BotApi.Instance.unitMode)
 end
 
@@ -447,9 +478,18 @@ end
 local UFBOrderGuard = require([[/script/multiplayer/ufb_order_guard]])
 CaptureFlag = UFBOrderGuard.Wrap(CaptureFlag, false)
 GotoNextWaypoint = UFBOrderGuard.Wrap(GotoNextWaypoint, true)
+function OnPrepTimeOver()
+	for squad in pairs(Context.SquadTimers) do
+		-- Cancel the old timer and issue one assignment through its owner.
+		SetSquadOrder(CaptureFlag, squad, OrderRotationPeriod)
+	end
+	BotApi.Scene:SetVar("prep_inform", 1)
+	print("Print: prep_inform set to 1")
+end
 
 BotApi.Events:Subscribe(BotApi.Events.GameStart, OnGameStart)
 BotApi.Events:Subscribe(BotApi.Events.GameEnd, OnGameStop)
 BotApi.Events:Subscribe(BotApi.Events.Quant, OnGameQuant)
 BotApi.Events:Subscribe(BotApi.Events.GameSpawn, OnGameSpawn)
 BotApi.Events:Subscribe(BotApi.Events.Waypoint, OnWaypoint)
+BotApi.Events:Subscribe(BotApi.Events.PrepTimeOver, OnPrepTimeOver)

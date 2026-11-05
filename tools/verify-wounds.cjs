@@ -68,10 +68,12 @@ check(a.rollCount===1&&a.dropped.length===0&&a.animations.size===0&&a.hand.id===
 for(const [rolls,animation] of [[[0.1,0.1],'lie_wounded'],[[0.1,0.8,0.1],'lie_wounded_1'],[[0.1,0.8,0.9],'lie_wounded_2']]){
  a=new Actor(rolls);const weapon=a.hand;a.event('ufb_wound_start');a.event('ufb_wound_start');a.advance(2.9);
  check(a.dropped.length===1&&a.dropped[0]===weapon&&!a.hand,'one original weapon released');
+ check(a.tags.has('ufb_dropped_weapon'),'dropped weapon tagged on wounded soldier');
  check(!a.animations.size,'animation waits for knockdown');a.advance(0.1);
  check(a.animations.size===1&&a.animations.has(animation),'selected wound animation: '+animation);
  a.personage=false;a.tags.delete('start_personage');a.event('ufb_wound_stop');a.advance(1);
  check(!a.animations.size&&!a.tags.has('wounded_animation_playing')&&!a.tags.has('_ufb_wound_chosen'),'revival clears loop and episode tags');
+ check(a.tags.has('ufb_revived_unarmed')&&!a.tags.has('ufb_dropped_weapon'),'revived unarmed soldier tagged for weapon pickup');
  check(!a.tags.has('wounded_dead'),'revived actor never gets death pose/tag');
 }
 a=new Actor();a.event('ufb_wound_start');a.advance(1);a.personage=false;a.tags.delete('start_personage');a.event('ufb_wound_stop');a.advance(10);

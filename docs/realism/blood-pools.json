@@ -16,7 +16,7 @@
       330,
       360
     ],
-    "spawnChance": 0.04,
+    "spawnChance": 0.05,
     "initialScale": 0.0575,
     "finalScale": 0.23,
     "persistenceSeconds": 9999,
@@ -78,7 +78,7 @@
     },
     {
       "file": "set/interaction_entity/ufb_corpse_pool.inc",
-      "sha256": "f04fee9173d44605a22e113a2926ece88f3391f76f6d9c5fe9786974c327e3fc"
+      "sha256": "e8075356dec5ef7a2dd698d0df560a9919ce99cb126114c1df9cac0da4f4dd5e"
     },
     {
       "file": "entity/fx/hit/blood_tiny.def",

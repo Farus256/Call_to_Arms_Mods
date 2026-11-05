@@ -1,0 +1,4 @@
+// Shared ownership rules for new grenade, smoke, loot and MG routines.
+// A job's own UFB reservation/cooldown is checked separately by its caller.
+const protectedHumanTags=['_lua_mi','_lua_ignore','_ai_do_not_disturb','repairing','reloading','bleeding','_bleeding','wounded','_bleedout_','wounded_animation_playing','medic','_ai_medic','bot_medic','_ufb_healing_active','_ufb_autonomy_moving','_ai_wounded_carrier','_ai_ap_grenade','_ai_at_grenade','_ai_smoke_grenade','_ai_suppressed_by_mg','_ai_mgunner','_ai_reloading','_ai_looting_weapon','crew','tcrew','ecrew','ecrew_a','ecrew_b','bot_arty','bot_aa_guard','_ufb_crew_safe','_ufb_hf_cover_active','_ai_wirecutter_in_action','bot_inf_flank_in_progress',...['120m','60m','wirecutter'].map(x=>`_ufb_smoke_${x}_actor`),...[30,40,50,60,70,80,90].map(x=>`_ai_at_launcher_${x}`)];
+module.exports={protectedHumanTags};

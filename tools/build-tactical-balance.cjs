@@ -1,6 +1,7 @@
 // Explicit offline resource build; never writes into the installed game.
 const fs=require('fs'),path=require('path'),assert=require('assert/strict');
 const sdl=require('./lib/sdl.cjs'),cfg=require('./tactical-balance.json');
+assert(!cfg.retired, 'Historical balance builder retired: ' + cfg.retired);
 const repo=path.resolve(__dirname,'..');
 const sources=path.resolve(process.argv[2]||path.join(repo,'../_survival_work/system-effective'));
 const target=path.join(repo,'mods/ultimate_frontline_bundle/resource');

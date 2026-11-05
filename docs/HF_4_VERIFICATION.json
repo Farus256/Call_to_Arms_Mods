@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-05",
+  "hfVersion": "4.0.0",
+  "sourceAndInstalledIdentical": true,
+  "sha256VerifiedFilesPerCopy": 758,
+  "removedOverrides": 10394,
+  "restoredAISelectorRanges": 8,
+  "backup": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\hf-update-20261105\\installed-before",
+  "nativeBalance": true,
+  "nativeHumanMechanics": true,
+  "luaLifecycles": [
+    "battle_zones",
+    "ammunition",
+    "frontlines",
+    "evacuation",
+    "campaign_capture_the_flag"
+  ],
+  "callbackErrorsContained": true,
+  "garrisonMaps": 117,
+  "waypoints": 374010,
+  "maxWaypointID": 7874,
+  "inGameTested": false
+}

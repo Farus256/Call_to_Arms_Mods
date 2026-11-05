@@ -3481,15 +3481,7 @@
 						}
 					}
 					{"delay"
-						{time 0.5}
-					}
-					{"set_i"
-						{var "dcg_error$"}
-						{op "="}
-						{value 5}
-					}
-					{"delay"
-						{time 0.5}
+						{time 1}
 					}
 					{"event"
 						{event "init"}
@@ -4352,6 +4344,9 @@
 							{advance_ratio 1}
 							{retreat_ratio 5}
 						}
+					}
+					{"delay"
+						{time 10}
 					}
 					{"delay"
 						{time 120}
@@ -7094,20 +7089,10 @@
 					{"switch"
 						{"case"
 							{condition
-								{type entities}
-								{selector
-									{ignore_captured_by_user 0}
-									{tag fpc1}
-									{zone "gamezone"}
-								}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"event"
-								{event "flag1"}
-								{mode set}
-								{delay 0}
+								{type cmp_i}
+								{var "flag1$"}
+								{op ">"}
+								{value 0}
 							}
 							{"delay"
 								{time 0.1}
@@ -7289,20 +7274,10 @@
 					{"switch"
 						{"case"
 							{condition
-								{type entities}
-								{selector
-									{ignore_captured_by_user 0}
-									{tag fpc2}
-									{zone "gamezone"}
-								}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"event"
-								{event "flag2"}
-								{mode set}
-								{delay 0}
+								{type cmp_i}
+								{var "flag2$"}
+								{op ">"}
+								{value 0}
 							}
 							{"delay"
 								{time 0.1}
@@ -7484,20 +7459,10 @@
 					{"switch"
 						{"case"
 							{condition
-								{type entities}
-								{selector
-									{ignore_captured_by_user 0}
-									{tag fpc3}
-									{zone "gamezone"}
-								}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"event"
-								{event "flag3"}
-								{mode set}
-								{delay 0}
+								{type cmp_i}
+								{var "flag3$"}
+								{op ">"}
+								{value 0}
 							}
 							{"delay"
 								{time 0.1}
@@ -7679,20 +7644,10 @@
 					{"switch"
 						{"case"
 							{condition
-								{type entities}
-								{selector
-									{ignore_captured_by_user 0}
-									{tag fpc4}
-									{zone "gamezone"}
-								}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"event"
-								{event "flag4"}
-								{mode set}
-								{delay 0}
+								{type cmp_i}
+								{var "flag4$"}
+								{op ">"}
+								{value 0}
 							}
 							{"delay"
 								{time 0.1}
@@ -7874,20 +7829,10 @@
 					{"switch"
 						{"case"
 							{condition
-								{type entities}
-								{selector
-									{ignore_captured_by_user 0}
-									{tag fpc5}
-									{zone "gamezone"}
-								}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"event"
-								{event "flag5"}
-								{mode set}
-								{delay 0}
+								{type cmp_i}
+								{var "flag5$"}
+								{op ">"}
+								{value 0}
 							}
 							{"delay"
 								{time 0.1}
@@ -8166,9 +8111,6 @@
 									{type vehicle}
 								}
 							}
-							{"delay"
-								{time 0.1}
-							}
 							{"switch"
 								{"case"
 									{condition
@@ -8176,9 +8118,6 @@
 										{var "user_is_defender$"}
 										{op "=="}
 										{value 1}
-									}
-									{"delay"
-										{time 0.1}
 									}
 									{"entity_state"
 										{selector
@@ -8215,8 +8154,8 @@
 													{tag
 														{tag _animal}
 													}
-													{tag
-														{tag air_vehicle}
+													{prop
+														{prop airborne}
 													}
 													{state
 														{state inactive}
@@ -8701,46 +8640,7 @@
 						{delay 0}
 					}
 					{"delay"
-						{time 0.5}
-					}
-					{"entity_state"
-						{selector
-							{source advanced}
-							{ignore_captured_by_user 0}
-							{group
-								{select
-									{zone
-										{zone "gamezone"}
-									}
-								}
-								{include
-									{prop
-										{prop creature}
-									}
-									{state
-										{state operatable}
-									}
-								}
-								{exclude
-									{tag
-										{tag hidden}
-									}
-									{prop
-										{prop human}
-									}
-									{prop
-										{prop vehicle}
-									}
-									{state
-										{state user_control}
-									}
-								}
-							}
-						}
-						{tag_add _animal}
-					}
-					{"delay"
-						{time 0.5}
+						{time 1}
 					}
 					{"set_i"
 						{var "dcg_on$"}
@@ -8788,7 +8688,7 @@
 											}	
 											{tag
 												{tag airstrike_ger_50}
-											}												
+											}																								
 											{tag
 												{tag airstrike_fin}
 											}
@@ -8800,7 +8700,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}											
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -8809,7 +8709,7 @@
 											}	
 											{tag
 												{tag airstrike_eng_100}
-											}											
+											}	
 										}
 									}
 								}
@@ -8846,7 +8746,7 @@
 									{source advanced}
 									{ignore_captured_by_user 0}
 									{group
-										{select
+										{select												
 											{tag
 												{tag airstrike_rus}
 											}
@@ -8870,7 +8770,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}											
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -8918,6 +8818,12 @@
 									{group
 										{select
 											{tag
+												{tag airstrike_ger_250}
+											}	
+											{tag
+												{tag airstrike_ger_50}
+											}													
+											{tag
 												{tag airstrike_rus}
 											}
 											{tag
@@ -8930,12 +8836,6 @@
 												{tag airstrike_rus_rocket}
 											}											
 											{tag
-												{tag airstrike_ger_250}
-											}	
-											{tag
-												{tag airstrike_ger_50}
-											}											
-											{tag
 												{tag airstrike_usa}
 											}
 											{tag
@@ -8943,7 +8843,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}											
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -8995,10 +8895,7 @@
 											}	
 											{tag
 												{tag airstrike_ger_50}
-											}															
-											{tag
-												{tag airstrike_fin}
-											}
+											}													
 											{tag
 												{tag airstrike_rus}
 											}
@@ -9011,6 +8908,9 @@
 											{tag
 												{tag airstrike_rus_rocket}
 											}											
+											{tag
+												{tag airstrike_fin}
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -9062,10 +8962,7 @@
 											}	
 											{tag
 												{tag airstrike_ger_50}
-											}															
-											{tag
-												{tag airstrike_fin}
-											}
+											}													
 											{tag
 												{tag airstrike_rus}
 											}
@@ -9079,6 +8976,9 @@
 												{tag airstrike_rus_rocket}
 											}											
 											{tag
+												{tag airstrike_fin}
+											}
+											{tag
 												{tag airstrike_usa}
 											}
 											{tag
@@ -9086,7 +8986,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}														
+											}	
 										}
 									}
 								}
@@ -9119,6 +9019,12 @@
 									{group
 										{select
 											{tag
+												{tag airstrike_ger_250}
+											}	
+											{tag
+												{tag airstrike_ger_50}
+											}													
+											{tag
 												{tag airstrike_rus}
 											}
 											{tag
@@ -9131,12 +9037,6 @@
 												{tag airstrike_rus_rocket}
 											}											
 											{tag
-												{tag airstrike_ger_250}
-											}	
-											{tag
-												{tag airstrike_ger_50}
-											}											
-											{tag
 												{tag airstrike_fin}
 											}
 											{tag
@@ -9147,7 +9047,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}											
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -9217,7 +9117,7 @@
 											}	
 											{tag
 												{tag airstrike_ger_50}
-											}											
+											}													
 											{tag
 												{tag airstrike_rus}
 											}
@@ -9241,7 +9141,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}		
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -9250,7 +9150,7 @@
 											}	
 											{tag
 												{tag airstrike_eng_100}
-											}												
+											}	
 										}
 										{include
 											{prop
@@ -9317,7 +9217,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}	
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -9326,7 +9226,7 @@
 											}	
 											{tag
 												{tag airstrike_eng_100}
-											}												
+											}	
 										}
 										{include
 											{prop
@@ -9369,7 +9269,7 @@
 											}	
 											{tag
 												{tag airstrike_ger_50}
-											}											
+											}													
 											{tag
 												{tag airstrike_rus}
 											}
@@ -9393,7 +9293,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}			
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -9402,7 +9302,7 @@
 											}	
 											{tag
 												{tag airstrike_eng_100}
-											}												
+											}	
 										}
 										{include
 											{prop
@@ -9445,13 +9345,13 @@
 											}	
 											{tag
 												{tag airstrike_ger_50}
-											}											
+											}													
 											{tag
 												{tag airstrike_rus}
 											}
 											{tag
 												{tag airstrike_rus_500}
-											}	
+											}
 											{tag
 												{tag airstrike_rus_50}
 											}
@@ -9469,7 +9369,7 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}			
+											}
 											{tag
 												{tag airstrike_eng_250}
 											}
@@ -9478,7 +9378,7 @@
 											}	
 											{tag
 												{tag airstrike_eng_100}
-											}												
+											}	
 										}
 										{include
 											{prop
@@ -9520,13 +9420,13 @@
 											}	
 											{tag
 												{tag airstrike_ger_50}
-											}												
+											}													
 											{tag
 												{tag airstrike_rus}
 											}
 											{tag
 												{tag airstrike_rus_500}
-											}	
+											}
 											{tag
 												{tag airstrike_rus_50}
 											}
@@ -9544,7 +9444,16 @@
 											}
 											{tag
 												{tag airstrike_usa_rocket_m8}
-											}											
+											}
+											{tag
+												{tag airstrike_eng_250}
+											}
+											{tag
+												{tag airstrike_eng_250_2}
+											}	
+											{tag
+												{tag airstrike_eng_100}
+											}	
 										}
 										{include
 											{prop
@@ -9569,6 +9478,9 @@
 								{set 0}
 								{add 0}
 								{title "mission/multi/dcg_error01"}
+							}
+							{"con"
+								{text "(Warning) - dcg error 01: enemyid is above 4.(setting to 5)"}
 							}
 							{"delay"
 								{time 5}
@@ -9678,8 +9590,11 @@
 								{add 0}
 								{title "mission/multi/dcg_error02"}
 							}
+							{"con"
+								{text "(Warning) - dcg error 02: user nation unknown.(defaulting to rus)"}
+							}
 							{"delay"
-								{time 30}
+								{time 10}
 							}
 							{"objective_progress"
 								{hide}
@@ -9935,80 +9850,6 @@
 					}
 					{"trigger"
 						{name "dcg/players_units"}
-					}
-				}
-			}
-			{"dcg/warning_air"
-				{condition
-					{expression "!1 & 2"}
-					{terms
-						{"1.event"
-							{id "talk_on"}
-						}
-						{"2.trigger"
-							{name "dcg/ai_airstrike"}
-						}
-					}
-				}
-				{actions
-					{"delay"
-						{time 0.1}
-					}
-					{"event"
-						{event "talk_on"}
-						{mode set}
-						{delay 0}
-					}
-					{"delay"
-						{time 6}
-					}
-					{"switch"
-						{"case"
-							{condition
-								{type rand}
-								{value 0.5}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"talk"
-								{selector
-									{ignore_captured_by_user 0}
-									{amount 1
-									}
-									{tag player}
-									{zone "gamezone"}
-									{type human}
-									{state "not dead"}
-								}
-								{text "mission/multi/enemy_plane_alert2"}
-							}
-						}
-						{"default"
-							{"delay"
-								{time 0.1}
-							}
-							{"talk"
-								{selector
-									{ignore_captured_by_user 0}
-									{amount 1
-									}
-									{tag player}
-									{zone "gamezone"}
-									{type human}
-									{state "not dead"}
-								}
-								{text "mission/multi/enemy_plane_alert1"}
-							}
-						}
-					}
-					{"delay"
-						{time 8}
-					}
-					{"event"
-						{event "talk_on"}
-						{mode reset}
-						{delay 0}
 					}
 				}
 			}
@@ -11136,7 +10977,8 @@
 					}
 				}
 			}
-			{"ai/ai_untow"
+			{## "ai/ai_untow"
+				{disabled}
 				{condition
 					{type 1}
 					{terms
@@ -11368,9 +11210,6 @@
 													{state inhabited}
 												}
 												{drop orders}
-												{emit
-													{mode passengers}
-												}
 											}
 										}
 										{"default"
@@ -11451,9 +11290,6 @@
 														{state operatable}
 													}
 													{drop orders}
-													{emit
-														{mode passengers}
-													}
 												}
 											}
 										}
@@ -11920,16 +11756,6 @@
 					}
 					{"delay"
 						{time 0.2}
-					}
-					{"ables"
-						{selector
-							{ignore_captured_by_user 0}
-							{tag _ai}
-							{zone "gamezone"}
-							{type human}
-							{state operatable}
-						}
-						{remove personage}
 					}
 					{"delay"
 						{time 0.2}
@@ -15702,8 +15528,8 @@
 									}
 								}
 								{exclude
-									{tag
-										{tag air_vehicle}
+									{prop
+										{prop airborne}
 									}
 								}
 							}
@@ -20300,6 +20126,2303 @@
 					}
 				}
 			}
+			{"dcg2/botdefend/setup"
+				{condition
+					{terms
+						{"1.cmp_i"
+							{var "garrison_ready$"}
+							{op "=="}
+							{value 0}
+						}
+						{"2.entities"
+							{selector
+								{source advanced}
+								{ignore_captured_by_user 0}
+								{group
+									{select
+										{zone
+											{zone "forward1"}
+										}
+										{zone
+											{zone "forward2"}
+										}
+										{zone
+											{zone "forward3"}
+										}
+										{zone
+											{zone "forward4"}
+										}
+										{zone
+											{zone "forward5"}
+										}
+									}
+									{include
+										{tag
+											{tag "_garrison_todo+"}
+										}
+										{state
+											{state operatable}
+										}
+									}
+									{exclude
+										{state
+											{state inactive}
+										}
+										{state
+											{state linked}
+										}
+									}
+								}
+							}
+						}
+						{"3.event"
+							{id "dcg2/flags_set"}
+						}
+					}
+				}
+				{actions
+					{"actor_state"
+						{selector
+							{ignore_captured_by_user 0}
+							{tag "_garrison_todo+"}
+							{type human}
+							{state operatable}
+						}
+						{movement
+							{speed assault}
+						}
+					}
+					{"actor_state"
+						{selector
+							{ignore_captured_by_user 0}
+							{tag "_garrison_todo+"}
+							{type vehicle}
+							{state operatable}
+						}
+						{drop orders}
+						{ai_move
+							{mode enable}
+						}
+					}
+					{"if"
+						{condition
+							{type cmp_i}
+							{var "flag1$"}
+							{op ">"}
+							{value 0}
+						}
+						{"call"
+							{function "flag1_bots_d"}
+						}
+					}
+					{"delay"
+						{time 0.05}
+					}
+					{"if"
+						{condition
+							{type cmp_i}
+							{var "flag2$"}
+							{op ">"}
+							{value 0}
+						}
+						{"call"
+							{function "flag2_bots_d"}
+						}
+					}
+					{"delay"
+						{time 0.05}
+					}
+					{"if"
+						{condition
+							{type cmp_i}
+							{var "flag3$"}
+							{op ">"}
+							{value 0}
+						}
+						{"call"
+							{function "flag3_bots_d"}
+						}
+					}
+					{"delay"
+						{time 0.05}
+					}
+					{"if"
+						{condition
+							{type cmp_i}
+							{var "flag4$"}
+							{op ">"}
+							{value 0}
+						}
+						{"call"
+							{function "flag4_bots_d"}
+						}
+					}
+					{"delay"
+						{time 0.05}
+					}
+					{"if"
+						{condition
+							{type cmp_i}
+							{var "flag5$"}
+							{op ">"}
+							{value 0}
+						}
+						{"call"
+							{function "flag5_bots_d"}
+						}
+					}
+					{"delay"
+						{time 1.2}
+					}
+					{"trigger"
+						{name "dcg2/botdefend/setup"}
+					}
+				}
+			}
+			{"dcg2/botdefend/start2flags"
+				{condition
+					{terms
+						{"1.cmp_i"
+							{var "garrison_end$"}
+							{op "=="}
+							{value 0}
+						}
+						{"2.cmp_i"
+							{var "flags$"}
+							{op "=="}
+							{value 2}
+						}
+						{"3.event"
+							{id "dcg2/flags_set"}
+						}
+						{"4.cmp_i"
+							{var "user_is_defender$"}
+							{op "=="}
+							{value 0}
+						}
+					}
+				}
+				{actions
+					{"switch"
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bots_spawnside$"}
+								{op "=="}
+								{value 1}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag1$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag a1}
+													}
+													{tag
+														{tag a2}
+													}
+												}
+											}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+										}
+										{target_waypoint "15"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag2$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag a1}
+															}
+															{tag
+																{tag a2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "16"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 2
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 2
+													}
+												}
+												{target_waypoint "16"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag3$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag a1}
+															}
+															{tag
+																{tag a2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "17"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 2
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 2
+													}
+												}
+												{target_waypoint "17"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag4$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag a1}
+															}
+															{tag
+																{tag a2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "18"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 2
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 2
+													}
+												}
+												{target_waypoint "18"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag5$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{amount 2
+											}
+											{tag _s_notmoved}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+											{amount 2
+											}
+										}
+										{target_waypoint "19"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+						}
+						{"default"
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag1$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag b1}
+													}
+													{tag
+														{tag b2}
+													}
+												}
+											}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+										}
+										{target_waypoint "20"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag2$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag b1}
+															}
+															{tag
+																{tag b2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "21"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 2
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 2
+													}
+												}
+												{target_waypoint "21"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag3$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag b1}
+															}
+															{tag
+																{tag b2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "22"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 2
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 2
+													}
+												}
+												{target_waypoint "22"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag4$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag b1}
+															}
+															{tag
+																{tag b2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "23"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 2
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 2
+													}
+												}
+												{target_waypoint "23"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag5$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{amount 2
+											}
+											{tag _s_notmoved}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+											{amount 2
+											}
+										}
+										{target_waypoint "24"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+						}
+					}
+					{"delay"
+						{time 0.1}
+					}
+					{"call"
+						{function "debug_garrison"}
+					}
+				}
+			}
+			{"dcg2/botdefend/start3flags"
+				{condition
+					{terms
+						{"1.cmp_i"
+							{var "garrison_end$"}
+							{op "=="}
+							{value 0}
+						}
+						{"2.cmp_i"
+							{var "flags$"}
+							{op "=="}
+							{value 3}
+						}
+						{"3.event"
+							{id "dcg2/flags_set"}
+						}
+						{"4.cmp_i"
+							{var "user_is_defender$"}
+							{op "=="}
+							{value 0}
+						}
+					}
+				}
+				{actions
+					{"switch"
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bots_spawnside$"}
+								{op "=="}
+								{value 1}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag1$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag a1}
+													}
+													{tag
+														{tag a2}
+													}
+												}
+											}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+										}
+										{target_waypoint "15"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag2$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag a1}
+															}
+															{tag
+																{tag a2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "16"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 1
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 1
+													}
+												}
+												{target_waypoint "16"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag3$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag a1}
+															}
+															{tag
+																{tag a2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "17"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 1
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 1
+													}
+												}
+												{target_waypoint "17"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag4$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{amount 1
+											}
+											{tag _s_notmoved}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+											{amount 1
+											}
+										}
+										{target_waypoint "18"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag5$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{amount 1
+											}
+											{tag _s_notmoved}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+											{amount 1
+											}
+										}
+										{target_waypoint "19"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+						}
+						{"default"
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag1$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag b1}
+													}
+													{tag
+														{tag b2}
+													}
+												}
+											}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+										}
+										{target_waypoint "20"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag2$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag b1}
+															}
+															{tag
+																{tag b2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "21"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 1
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 1
+													}
+												}
+												{target_waypoint "21"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag3$"}
+										{op ">"}
+										{value 0}
+									}
+									{"switch"
+										{"case"
+											{condition
+												{type entities}
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_notmoved}
+												}
+												{count
+													{op ">"}
+													{value 2}
+												}
+											}
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag b1}
+															}
+															{tag
+																{tag b2}
+															}
+														}
+													}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+												}
+												{target_waypoint "22"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+										{"default"
+											{"delay"
+												{time 0.01}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{amount 1
+													}
+													{tag _s_notmoved}
+												}
+												{tag_add _s_move}
+												{tag_remove _s_notmoved}
+											}
+											{"delay"
+												{time 0.05}
+											}
+											{"placement"
+												{selector
+													{source advanced}
+													{ignore_captured_by_user 0}
+													{group
+														{select
+															{tag
+																{tag _s_move}
+															}
+														}
+														{exclude
+															{tag
+																{tag _s_moved}
+															}
+														}
+													}
+													{amount 1
+													}
+												}
+												{target_waypoint "22"}
+											}
+											{"entity_state"
+												{selector
+													{ignore_captured_by_user 0}
+													{tag _s_move}
+												}
+												{tag_add _s_moved}
+											}
+										}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag4$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{amount 1
+											}
+											{tag _s_notmoved}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+											{amount 1
+											}
+										}
+										{target_waypoint "23"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+							{"delay"
+								{time 0.05}
+							}
+							{"switch"
+								{"case"
+									{condition
+										{type cmp_i}
+										{var "flag5$"}
+										{op ">"}
+										{value 0}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{amount 1
+											}
+											{tag _s_notmoved}
+										}
+										{tag_add _s_move}
+										{tag_remove _s_notmoved}
+									}
+									{"delay"
+										{time 0.05}
+									}
+									{"placement"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag _s_move}
+													}
+												}
+												{exclude
+													{tag
+														{tag _s_moved}
+													}
+												}
+											}
+											{amount 1
+											}
+										}
+										{target_waypoint "24"}
+									}
+									{"entity_state"
+										{selector
+											{ignore_captured_by_user 0}
+											{tag _s_move}
+										}
+										{tag_add _s_moved}
+									}
+								}
+								{"default"}
+							}
+						}
+					}
+					{"delay"
+						{time 0.1}
+					}
+					{"call"
+						{function "debug_garrison"}
+					}
+				}
+			}
+			{"dcg2/botdefend/default_spawns"
+				{condition
+					{terms
+						{"1.cmp_i"
+							{var "garrison_end$"}
+							{op "=="}
+							{value 1}
+						}
+						{"2.event"
+							{id "dcg2/attack_bot_spawning"}
+						}
+					}
+				}
+				{actions
+					{"delay"
+						{time 0.1}
+					}
+					{"switch"
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bots_spawnside$"}
+								{op "=="}
+								{value 1}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag a1}
+											}
+										}
+										{include
+											{tag
+												{tag spawn_a}
+											}
+										}
+									}
+								}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _default_a1}
+								}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag a2}
+											}
+										}
+										{include
+											{tag
+												{tag spawn_a}
+											}
+										}
+									}
+								}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _default_a2}
+								}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag a3}
+											}
+										}
+										{include
+											{tag
+												{tag spawn_a}
+											}
+										}
+									}
+								}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _default_a3}
+								}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag a4}
+											}
+										}
+										{include
+											{tag
+												{tag spawn_a}
+											}
+										}
+									}
+								}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _default_a4}
+								}
+							}
+						}
+						{"default"
+							{"delay"
+								{time 0.1}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag b1}
+											}
+										}
+										{include
+											{tag
+												{tag spawn_b}
+											}
+										}
+									}
+								}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _default_b1}
+								}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag b2}
+											}
+										}
+										{include
+											{tag
+												{tag spawn_b}
+											}
+										}
+									}
+								}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _default_b2}
+								}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag b3}
+											}
+										}
+										{include
+											{tag
+												{tag spawn_b}
+											}
+										}
+									}
+								}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _default_b3}
+								}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag b4}
+											}
+										}
+										{include
+											{tag
+												{tag spawn_b}
+											}
+										}
+									}
+								}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _default_b4}
+								}
+							}
+						}
+					}
+					{"delay"
+						{time 60}
+					}
+					{"switch"
+						{"case"
+							{condition
+								{type trigger}
+								{name "dcg2/botdefend/garrison_ready"}
+							}
+						}
+						{"default"
+							{"trigger"
+								{name "dcg2/botdefend/garrison_ready"}
+								{on}
+							}
+							{"objective_progress"
+								{set 0}
+								{add 0}
+								{title "mission/multi/dcg2_garrison_failsafe"}
+							}
+							{"con"
+								{text "(Warning) - dcg garrison error: Waiting too long... Forcing Garrison Ready!"}
+							}
+							{"delay"
+								{time 8}
+							}
+							{"objective_progress"
+								{hide}
+								{set 0}
+								{add 0}
+								{title "mission/multi/dcg2_garrison_failsafe"}
+							}
+						}
+					}
+				}
+			}
 			{"dcg2/userdefend/prep_end"
 				{condition
 					{terms
@@ -20579,4891 +22702,6 @@
 						{"default"
 							{"delay"
 								{time 0.1}
-							}
-						}
-					}
-				}
-			}
-			{"dcg2/botdefend/setup"
-				{condition
-					{terms
-						{"1.cmp_i"
-							{var "garrison_ready$"}
-							{op "=="}
-							{value 0}
-						}
-						{"2.entities"
-							{selector
-								{source advanced}
-								{ignore_captured_by_user 0}
-								{group
-									{select
-										{zone
-											{zone "forward1"}
-										}
-										{zone
-											{zone "forward2"}
-										}
-										{zone
-											{zone "forward3"}
-										}
-										{zone
-											{zone "forward4"}
-										}
-										{zone
-											{zone "forward5"}
-										}
-									}
-									{include
-										{tag
-											{tag "_garrison_todo+"}
-										}
-										{state
-											{state operatable}
-										}
-									}
-									{exclude
-										{state
-											{state inactive}
-										}
-										{state
-											{state linked}
-										}
-									}
-								}
-							}
-						}
-						{"3.event"
-							{id "dcg2/flags_set"}
-						}
-					}
-				}
-				{actions
-					{"actor_state"
-						{selector
-							{ignore_captured_by_user 0}
-							{tag "_garrison_todo+"}
-							{type human}
-							{state operatable}
-						}
-						{movement
-							{speed assault}
-						}
-					}
-					{"actor_state"
-						{selector
-							{ignore_captured_by_user 0}
-							{tag "_garrison_todo+"}
-							{type vehicle}
-							{state operatable}
-						}
-						{drop orders}
-						{ai_move
-							{mode enable}
-						}
-					}
-					{"if"
-						{condition
-							{type cmp_i}
-							{var "flag1$"}
-							{op ">"}
-							{value 0}
-						}
-						{"call"
-							{function "flag1_bots_d"}
-						}
-					}
-					{"delay"
-						{time 0.05}
-					}
-					{"if"
-						{condition
-							{type cmp_i}
-							{var "flag2$"}
-							{op ">"}
-							{value 0}
-						}
-						{"call"
-							{function "flag2_bots_d"}
-						}
-					}
-					{"delay"
-						{time 0.05}
-					}
-					{"if"
-						{condition
-							{type cmp_i}
-							{var "flag3$"}
-							{op ">"}
-							{value 0}
-						}
-						{"call"
-							{function "flag3_bots_d"}
-						}
-					}
-					{"delay"
-						{time 0.05}
-					}
-					{"if"
-						{condition
-							{type cmp_i}
-							{var "flag4$"}
-							{op ">"}
-							{value 0}
-						}
-						{"call"
-							{function "flag4_bots_d"}
-						}
-					}
-					{"delay"
-						{time 0.05}
-					}
-					{"if"
-						{condition
-							{type cmp_i}
-							{var "flag5$"}
-							{op ">"}
-							{value 0}
-						}
-						{"call"
-							{function "flag5_bots_d"}
-						}
-					}
-					{"delay"
-						{time 1.2}
-					}
-					{"trigger"
-						{name "dcg2/botdefend/setup"}
-					}
-				}
-			}
-			{"dcg2/botdefend/start2flags"
-				{condition
-					{terms
-						{"1.cmp_i"
-							{var "garrison_end$"}
-							{op "=="}
-							{value 0}
-						}
-						{"2.cmp_i"
-							{var "flags$"}
-							{op "=="}
-							{value 2}
-						}
-						{"3.event"
-							{id "dcg2/flags_set"}
-						}
-						{"4.cmp_i"
-							{var "user_is_defender$"}
-							{op "=="}
-							{value 0}
-						}
-					}
-				}
-				{actions
-					{"switch"
-						{"case"
-							{condition
-								{type cmp_i}
-								{var "bots_spawnside$"}
-								{op "=="}
-								{value 1}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag1$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag a1}
-													}
-													{tag
-														{tag a2}
-													}
-												}
-											}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "15015"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "16015"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "17015"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "18015"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "15"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag2$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag a1}
-															}
-															{tag
-																{tag a2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "15016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "16016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "17016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "18016"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "16"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 2
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "15016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "16016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "17016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "18016"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "16"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag3$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag a1}
-															}
-															{tag
-																{tag a2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "15017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "16017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "17017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "18017"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "17"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 2
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "15017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "16017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "17017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "18017"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "17"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag4$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag a1}
-															}
-															{tag
-																{tag a2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "15018"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "16018"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "17018"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "18018"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "18"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 2
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "15018"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "16018"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "17018"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "18018"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "18"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag5$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{amount 2
-											}
-											{tag _s_notmoved}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "15019"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "16019"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "17019"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "18019"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "19"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-						}
-						{"default"
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag1$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag b1}
-													}
-													{tag
-														{tag b2}
-													}
-												}
-											}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "11020"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "12020"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "13020"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "14020"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "20"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag2$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag b1}
-															}
-															{tag
-																{tag b2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "11021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "12021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "13021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "14021"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "21"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 2
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "11021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "12021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "13021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "14021"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "21"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag3$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag b1}
-															}
-															{tag
-																{tag b2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "11022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "12022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "13022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "14022"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "22"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 2
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "11022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "12022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "13022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "14022"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "22"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag4$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag b1}
-															}
-															{tag
-																{tag b2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "11023"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "12023"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "13023"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "14023"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "23"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 2
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "11023"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "12023"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "13023"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "14023"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 2
-													}
-												}
-												{target_waypoint "23"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag5$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{amount 2
-											}
-											{tag _s_notmoved}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "11024"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "12024"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "13024"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "14024"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 2
-											}
-										}
-										{target_waypoint "24"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-						}
-					}
-					{"delay"
-						{time 0.1}
-					}
-					{"call"
-						{function "debug_garrison"}
-					}
-				}
-			}
-			{"dcg2/botdefend/start3flags"
-				{condition
-					{terms
-						{"1.cmp_i"
-							{var "garrison_end$"}
-							{op "=="}
-							{value 0}
-						}
-						{"2.cmp_i"
-							{var "flags$"}
-							{op "=="}
-							{value 3}
-						}
-						{"3.event"
-							{id "dcg2/flags_set"}
-						}
-						{"4.cmp_i"
-							{var "user_is_defender$"}
-							{op "=="}
-							{value 0}
-						}
-					}
-				}
-				{actions
-					{"switch"
-						{"case"
-							{condition
-								{type cmp_i}
-								{var "bots_spawnside$"}
-								{op "=="}
-								{value 1}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag1$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag a1}
-													}
-													{tag
-														{tag a2}
-													}
-												}
-											}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "15015"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "16015"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "17015"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "18015"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "15"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag2$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag a1}
-															}
-															{tag
-																{tag a2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "15016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "16016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "17016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "18016"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "16"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 1
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "15016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "16016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "17016"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "18016"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "16"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag3$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag a1}
-															}
-															{tag
-																{tag a2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "15017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "16017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "17017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "18017"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "17"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 1
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "15017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "16017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "17017"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "18017"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "17"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag4$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{amount 1
-											}
-											{tag _s_notmoved}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "15018"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "16018"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "17018"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "18018"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "18"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag5$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{amount 1
-											}
-											{tag _s_notmoved}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 5}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "15019"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 6}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "16019"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 7}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "17019"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 8}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "18019"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "19"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-						}
-						{"default"
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag1$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag b1}
-													}
-													{tag
-														{tag b2}
-													}
-												}
-											}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "11020"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "12020"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "13020"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "14020"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-										}
-										{target_waypoint "20"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag2$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag b1}
-															}
-															{tag
-																{tag b2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "11021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "12021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "13021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "14021"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "21"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 1
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "11021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "12021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "13021"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "14021"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "21"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag3$"}
-										{op ">"}
-										{value 0}
-									}
-									{"switch"
-										{"case"
-											{condition
-												{type entities}
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_notmoved}
-												}
-												{count
-													{op ">"}
-													{value 2}
-												}
-											}
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag b1}
-															}
-															{tag
-																{tag b2}
-															}
-														}
-													}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "11022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "12022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "13022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "14022"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-												}
-												{target_waypoint "22"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-										{"default"
-											{"delay"
-												{time 0.01}
-											}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{amount 1
-													}
-													{tag _s_notmoved}
-												}
-												{tag_add _s_move}
-												{tag_remove _s_notmoved}
-											}
-											{"delay"
-												{time 0.05}
-											}
-											{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "11022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "12022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "13022"}
-											}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "14022"}
-											}}
-{"default"
-{"placement"
-												{selector
-													{source advanced}
-													{ignore_captured_by_user 0}
-													{group
-														{select
-															{tag
-																{tag _s_move}
-															}
-														}
-														{exclude
-															{tag
-																{tag _s_moved}
-															}
-														}
-													}
-													{amount 1
-													}
-												}
-												{target_waypoint "22"}
-											}}}
-											{"entity_state"
-												{selector
-													{ignore_captured_by_user 0}
-													{tag _s_move}
-												}
-												{tag_add _s_moved}
-											}
-										}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag4$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{amount 1
-											}
-											{tag _s_notmoved}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "11023"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "12023"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "13023"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "14023"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "23"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-							{"delay"
-								{time 0.05}
-							}
-							{"switch"
-								{"case"
-									{condition
-										{type cmp_i}
-										{var "flag5$"}
-										{op ">"}
-										{value 0}
-									}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{amount 1
-											}
-											{tag _s_notmoved}
-										}
-										{tag_add _s_move}
-										{tag_remove _s_notmoved}
-									}
-									{"delay"
-										{time 0.05}
-									}
-									{"switch"
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 1}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "11024"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 2}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "12024"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 3}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "13024"}
-									}}
-{"case" {condition {type cmp_i}{var "player_spawn_name$"}{op "=="}{value 4}}
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "14024"}
-									}}
-{"default"
-{"placement"
-										{selector
-											{source advanced}
-											{ignore_captured_by_user 0}
-											{group
-												{select
-													{tag
-														{tag _s_move}
-													}
-												}
-												{exclude
-													{tag
-														{tag _s_moved}
-													}
-												}
-											}
-											{amount 1
-											}
-										}
-										{target_waypoint "24"}
-									}}}
-									{"entity_state"
-										{selector
-											{ignore_captured_by_user 0}
-											{tag _s_move}
-										}
-										{tag_add _s_moved}
-									}
-								}
-								{"default"}
-							}
-						}
-					}
-					{"delay"
-						{time 0.1}
-					}
-					{"call"
-						{function "debug_garrison"}
-					}
-				}
-			}
-			{"dcg2/botdefend/default_spawns"
-				{condition
-					{terms
-						{"1.cmp_i"
-							{var "garrison_end$"}
-							{op "=="}
-							{value 1}
-						}
-						{"2.event"
-							{id "dcg2/attack_bot_spawning"}
-						}
-					}
-				}
-				{actions
-					{"delay"
-						{time 0.1}
-					}
-					{"switch"
-						{"case"
-							{condition
-								{type cmp_i}
-								{var "bots_spawnside$"}
-								{op "=="}
-								{value 1}
-							}
-							{"placement"
-								{selector
-									{source advanced}
-									{ignore_captured_by_user 0}
-									{group
-										{select
-											{tag
-												{tag a1}
-											}
-										}
-										{include
-											{tag
-												{tag spawn_a}
-											}
-										}
-									}
-								}
-								{target
-									{ignore_captured_by_user 0}
-									{tag _default_a1}
-								}
-							}
-							{"placement"
-								{selector
-									{source advanced}
-									{ignore_captured_by_user 0}
-									{group
-										{select
-											{tag
-												{tag a2}
-											}
-										}
-										{include
-											{tag
-												{tag spawn_a}
-											}
-										}
-									}
-								}
-								{target
-									{ignore_captured_by_user 0}
-									{tag _default_a2}
-								}
-							}
-							{"placement"
-								{selector
-									{source advanced}
-									{ignore_captured_by_user 0}
-									{group
-										{select
-											{tag
-												{tag a3}
-											}
-										}
-										{include
-											{tag
-												{tag spawn_a}
-											}
-										}
-									}
-								}
-								{target
-									{ignore_captured_by_user 0}
-									{tag _default_a3}
-								}
-							}
-							{"placement"
-								{selector
-									{source advanced}
-									{ignore_captured_by_user 0}
-									{group
-										{select
-											{tag
-												{tag a4}
-											}
-										}
-										{include
-											{tag
-												{tag spawn_a}
-											}
-										}
-									}
-								}
-								{target
-									{ignore_captured_by_user 0}
-									{tag _default_a4}
-								}
-							}
-						}
-						{"default"
-							{"delay"
-								{time 0.1}
-							}
-							{"placement"
-								{selector
-									{source advanced}
-									{ignore_captured_by_user 0}
-									{group
-										{select
-											{tag
-												{tag b1}
-											}
-										}
-										{include
-											{tag
-												{tag spawn_b}
-											}
-										}
-									}
-								}
-								{target
-									{ignore_captured_by_user 0}
-									{tag _default_b1}
-								}
-							}
-							{"placement"
-								{selector
-									{source advanced}
-									{ignore_captured_by_user 0}
-									{group
-										{select
-											{tag
-												{tag b2}
-											}
-										}
-										{include
-											{tag
-												{tag spawn_b}
-											}
-										}
-									}
-								}
-								{target
-									{ignore_captured_by_user 0}
-									{tag _default_b2}
-								}
-							}
-							{"placement"
-								{selector
-									{source advanced}
-									{ignore_captured_by_user 0}
-									{group
-										{select
-											{tag
-												{tag b3}
-											}
-										}
-										{include
-											{tag
-												{tag spawn_b}
-											}
-										}
-									}
-								}
-								{target
-									{ignore_captured_by_user 0}
-									{tag _default_b3}
-								}
-							}
-							{"placement"
-								{selector
-									{source advanced}
-									{ignore_captured_by_user 0}
-									{group
-										{select
-											{tag
-												{tag b4}
-											}
-										}
-										{include
-											{tag
-												{tag spawn_b}
-											}
-										}
-									}
-								}
-								{target
-									{ignore_captured_by_user 0}
-									{tag _default_b4}
-								}
-							}
-						}
-					}
-					{"delay"
-						{time 60}
-					}
-					{"switch"
-						{"case"
-							{condition
-								{type trigger}
-								{name "dcg2/botdefend/garrison_ready"}
-							}
-						}
-						{"default"
-							{"trigger"
-								{name "dcg2/botdefend/garrison_ready"}
-								{on}
-							}
-							{"objective_progress"
-								{set 0}
-								{add 0}
-								{title "mission/multi/dcg2_garrison_failsafe"}
-							}
-							{"con"
-								{text "(Warning) - dcg garrison error: Waiting too long... Forcing Garrison Ready!"}
-							}
-							{"delay"
-								{time 8}
-							}
-							{"objective_progress"
-								{hide}
-								{set 0}
-								{add 0}
-								{title "mission/multi/dcg2_garrison_failsafe"}
 							}
 						}
 					}

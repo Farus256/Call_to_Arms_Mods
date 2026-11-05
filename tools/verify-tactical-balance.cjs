@@ -177,12 +177,11 @@ waypoint(1);local old=nextID;assert(orders==0 and count()==1,'cover defers waypo
 waypoint(1);local replacement=nextID;queued[old]();assert(count()==1 and nextID==replacement,'stale callback cannot erase or replace current owner')
 tagged=false;fire(replacement);assert(orders==1 and count()==0,'route resumes once after cover')
 waypoint(1);assert(orders==2,'normal route allowed')
-tagged=true;waypoint(1);local ending=nextID;subs[1]();queued[ending]();waypoint(1)
-assert(count()==0 and orders==2,'game end cannot rearm a queued retry')
-subs[2]();waypoint(1);assert(count()==1,'next game resumes')
-queued[ending]();assert(count()==1,'previous game callback remains invalid after restart')
-alive=false;fire(nextID);assert(count()==0 and orders==2,'dead squad retires')
+tagged=true;waypoint(1);alive=false;fire(nextID);assert(count()==0 and orders==2,'dead squad retires')
 alive=true;BotApi.Scene.Waypoints={};waypoint(1);assert(count()==0,'no retry without route')
+BotApi.Scene.Waypoints={'entry'};waypoint(1);local ending=nextID;G.Stop();queued[ending]();waypoint(1)
+assert(count()==0 and orders==2,'game end cannot rearm a queued retry')
+assert(next(subs)==nil,'guard leaves GameStart/GameEnd to the game mode')
 return true`;
 const guardStatus=lauxlib.luaL_dostring(guardState,to_luastring(guardCode));
 assert(guardStatus===lua.LUA_OK,to_jsstring(lua.lua_tostring(guardState,-1)||to_luastring('Guard failed')));lua.lua_close(guardState);
@@ -203,8 +202,8 @@ ConquestBattleResult={IsWinnerDecided=function()return ending end,IsBotRetreatRe
 getDefaultFlagPriority=function()return 1 end
 GetFlagToCapture=function(_,_,flags)for _,flag in pairs(flags)do if flag.name==chosen then return flag end end end
 ${read('script/multiplayer/modes/conquest/orders.lua')}
-CaptureFlag(1);CaptureFlag(2);assert(commands[1][2]=='a' and commands[2][2]=='b','real capture entry point splits objectives: '..tostring(commands[1][2])..'/'..tostring(commands[2][2]))
-chosen='b';CaptureFlag(1);assert(commands[3][2]=='a','real entry point retains objective')
+CaptureFlag(1);CaptureFlag(2);assert(commands[1][2]=='a' and commands[2][2]=='a','Conquest keeps the native shared wave objective')
+chosen='b';CaptureFlag(1);assert(commands[3][2]=='b','new native wave objective replaces the previous target')
 for _,tag in ipairs({'_ufb_cover_active','_ai_at_grenade','_ufb_smoke_60m_actor','bot_medic','_lua_ignore'})do
  guardTag=tag;CaptureFlag(1);assert(#commands==3,'protected task interrupted: '..tag)
 end

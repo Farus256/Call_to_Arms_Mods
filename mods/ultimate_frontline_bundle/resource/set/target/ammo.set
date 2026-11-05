@@ -19,6 +19,9 @@
 
 {select_ammo
 	{human in_bush											; -TARGET CLASS-
+		; UFB: respect a player launcher already prepared in hand.
+		{"panzerfaust" {enable_for_ai 0} {ready_for_shot}}
+		{"ammo rocketlauncher" {enable_for_ai 0} {ready_for_shot}}
 		{"sharp_edge"}										; thrown knives
 		
 		{"flame" {ready_for_shot}}							; ammo for flamethrowers
@@ -26,7 +29,7 @@
 		{"grenade fg" {check_grenade}}						; standard anti-personel grenades
 		{"grenade fg" {ground} {check_grenade}}				; standard anti-personel grenades
 		{"ammo rifle_grenade"}								; rifle grenade HE ammo
-		{"ammo rifle_grenade_at"}							; rifle grenade HEAT ammo
+									; rifle grenade HEAT ammo
 		
 		{"hmgun"}											; heavy machine gun (.50 cal, etc)		
 		{"mgun mgun_belt"}									; prioritise using belt-fed MG's over mag-fed MG's		
@@ -45,7 +48,8 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
-		{"ptr"{ready_for_shot}}								; anti-tank rifle ammo
+		{"ptr"{ready_for_shot}}
+		{"ammo rifle_grenade_at" {check_grenade}}								; anti-tank rifle ammo
 
 		{"grenade at" {ground} {check_grenade} {enable_for_user 0} {ready_for_shot}}			; anti-tank grenades
 		{"dynamite"{ground} {check_grenade} {enable_for_user 0} {ready_for_shot}}				; explosive charges	
@@ -63,6 +67,7 @@
 		{"all_he auto"}										; auto cannon HE ammo
 		{"can canister" {disable}}							; cannon CAN ammo
 		
+		{"grenade thermite"}								; flame grenades (thermite)
 		{"grenade ic"}										; flame grenades (molotov)
 		{"glass ic"}										; flame shell (Ampulomet glass ball)
 		
@@ -82,13 +87,16 @@
 		{"sword bullet"{disable}}							; swords
 	}
 	{human in_cover											; -TARGET CLASS-			
+		; UFB: respect a player launcher already prepared in hand.
+		{"panzerfaust" {enable_for_ai 0} {ready_for_shot}}
+		{"ammo rocketlauncher" {enable_for_ai 0} {ready_for_shot}}
 		{"sharp_edge"}										; thrown knives
 		
 		{"flame" {ready_for_shot}}							; ammo for flamethrowers
-		{"grenade fg"}										; standard anti-personel grenades
-		{"grenade fg" {ground}}								; standard anti-personel grenades
+		{"grenade fg" {check_grenade}}										; standard anti-personel grenades
+		{"grenade fg" {ground} {check_grenade}}								; standard anti-personel grenades
 		{"ammo rifle_grenade"}								; rifle grenade HE ammo
-		{"ammo rifle_grenade_at"}							; rifle grenade HEAT ammo
+									; rifle grenade HEAT ammo
 
 		{"hmgun"}											; heavy machine gun (.50 cal, etc)		
 		{"mgun mgun_belt"}									; prioritise using belt-fed MG's over mag-fed MG's		
@@ -107,9 +115,11 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
-		{"ptr"{ready_for_shot}}								; anti-tank rifle ammo
+		{"ptr"{ready_for_shot}}
+		{"ammo rifle_grenade_at" {check_grenade}}								; anti-tank rifle ammo
 				
 		{"grenade at" {ground} {check_grenade} {enable_for_user 0} {ready_for_shot}}			; anti-tank grenades
+		{"grenade thermite"}								; flame grenades (thermite)
 		{"grenade ic"}										; flame grenades (molotov)
 		{"dynamite"{ground} {check_grenade} {enable_for_user 0} {ready_for_shot}}				; explosive charges
 		
@@ -143,6 +153,9 @@
 		{"sword bullet"	{disable}}							; swords	
 	}
 	{human													; -TARGET CLASS-
+		; UFB: respect a player launcher already prepared in hand.
+		{"panzerfaust" {enable_for_ai 0} {ready_for_shot}}
+		{"ammo rocketlauncher" {enable_for_ai 0} {ready_for_shot}}
 		{"sharp_edge"}										; thrown knives
 		
 		{"flame" {ready_for_shot}}							; ammo for flamethrowers
@@ -150,7 +163,7 @@
 		{"grenade fg" {check_grenade}}						; standard anti-personel grenades
 		{"grenade fg" {ground} {check_grenade}}				; standard anti-personel grenades
 		{"ammo rifle_grenade"}								; rifle grenade HE ammo
-		{"ammo rifle_grenade_at"}							; rifle grenade HEAT ammo
+									; rifle grenade HEAT ammo
 
 		{"hmgun"}											; heavy machine gun (.50 cal, etc)		
 		{"mgun mgun_belt"}									; prioritise using belt-fed MG's over mag-fed MG's		
@@ -169,9 +182,11 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
-		{"ptr"{ready_for_shot}}								; anti-tank rifle ammo
+		{"ptr"{ready_for_shot}}
+		{"ammo rifle_grenade_at" {check_grenade}}								; anti-tank rifle ammo
 
 		{"grenade at" {ground} {check_grenade} {enable_for_user 0} {ready_for_shot}}			; anti-tank grenades
+		{"grenade thermite"}								; flame grenades (thermite)
 		{"grenade ic"}										; flame grenades (molotov)
 		{"dynamite"{ground} {check_grenade} {enable_for_user 0} {ready_for_shot}}				; explosive charges
 
@@ -208,9 +223,6 @@
 		{"flare_usa"{enable_for_user 0}}										; ammo for flareguns
 		{"flare"{enable_for_user 0}}											; ammo for flareguns
 
-		; UFB: MG fire at vulnerable soft-vehicle volumes before consumable AT weapons.
-		{"mgun" {volume "engine"}}
-		{"mgun" {volume "body"}}
 		{"ammo rocketlauncher" {volume "body"}}				; bazooka class ammo
 
 		{"ammo rifle_grenade_at" {volume "body"}}			; rifle grenade HEAT ammo
@@ -218,7 +230,8 @@
 		
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"grenade fg"{volume "body"}}						; standard anti-personel grenades
-		{"grenade ic" {volume "engine"}}						; flame grenades (molotov)
+		{"grenade thermite"}								; flame grenades (thermite)
+		{"grenade ic" }										; flame grenades (molotov)
 		{"dynamite"{ground} {check_grenade}}				; explosive charges
 
 		{"light"}											; ammo for binoculars and other vision devices
@@ -283,9 +296,10 @@
 		{"ammo rifle_grenade_at"{volume "body"}}							; rifle grenade HEAT ammo
 		{"ammo rocketlauncher" {ready_for_shot}{volume "body"}}				; bazooka class ammo
 		
-		{"grenade fg"}										; standard anti-personel grenades
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"dynamite"}										; explosive charges
+		{"grenade fg"}										; standard anti-personel grenades
+		{"grenade thermite"}								; flame grenades (thermite)
 		{"grenade ic"}										; flame grenades (molotov)
 
 		{"hmgun"}											; heavy machine gun (.50 cal, etc)
@@ -332,9 +346,10 @@
 		{"ammo rifle_grenade_at"{volume "body"}}							; rifle grenade HEAT ammo
 		{"ammo rocketlauncher" {ready_for_shot}{volume "body"}}				; bazooka class ammo
 		
-		{"grenade fg"}										; standard anti-personel grenades
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"dynamite"}										; explosive charges
+		{"grenade fg"}										; standard anti-personel grenades
+		{"grenade thermite"}								; flame grenades (thermite)
 		{"grenade ic"}										; flame grenades (molotov)
 
 		{"hmgun"}											; heavy machine gun (.50 cal, etc)
@@ -382,9 +397,10 @@
 		{"ammo rifle_grenade_at"{volume "body"}}							; rifle grenade HEAT ammo
 		{"ammo rocketlauncher" {ready_for_shot}{volume "body"}}				; bazooka class ammo
 		
-		{"grenade fg"}										; standard anti-personel grenades
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"dynamite"}										; explosive charges
+		{"grenade fg"}										; standard anti-personel grenades
+		{"grenade thermite"}								; flame grenades (thermite)
 		{"grenade ic"}										; flame grenades (molotov)
 
 		{"hmgun"}											; heavy machine gun (.50 cal, etc)
@@ -431,9 +447,10 @@
 		{"ammo rifle_grenade_at"{volume "body"}}							; rifle grenade HEAT ammo
 		{"ammo rocketlauncher" {ready_for_shot}{volume "body"}}				; bazooka class ammo
 		
-		{"grenade fg"}										; standard anti-personel grenades
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"dynamite"}										; explosive charges
+		{"grenade fg"}										; standard anti-personel grenades
+		{"grenade thermite"}								; flame grenades (thermite)
 		{"grenade ic"}										; flame grenades (molotov)
 
 		{"hmgun"}											; heavy machine gun (.50 cal, etc)
@@ -481,9 +498,10 @@
 		{"ammo rifle_grenade_at"{volume "body"}}							; rifle grenade HEAT ammo
 		{"ammo rocketlauncher" {ready_for_shot}{volume "body"}}				; bazooka class ammo
 		
-		{"grenade fg"}										; standard anti-personel grenades
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"dynamite"}										; explosive charges
+		{"grenade fg"}										; standard anti-personel grenades
+		{"grenade thermite"}								; flame grenades (thermite)
 		{"grenade ic"}										; flame grenades (molotov)
 
 		{"hmgun"}											; heavy machine gun (.50 cal, etc)
@@ -560,6 +578,7 @@
 		{"grenade at"}										; anti-tank grenades
 		{"grenade at"{ground}}								; anti-tank grenades
 		
+		{"grenade thermite" {volume "engine"}}				; flame grenades (thermite)
 		{"grenade ic" {volume "engine"}}					; flame grenades (molotov)
 		
 		{"light"}											; ammo for binoculars and other vision devices
@@ -626,6 +645,7 @@
 		{"grenade at"}										; anti-tank grenades
 		{"grenade at"{ground}}								; anti-tank grenades
 		
+		{"grenade thermite" {volume "engine"}}				; flame grenades (thermite)
 		{"grenade ic" {volume "engine"}}					; flame grenades (molotov)
 		
 		{"light"}											; ammo for binoculars and other vision devices
@@ -688,6 +708,7 @@
 		{"grenade at"}										; anti-tank grenade
 		{"grenade at"{ground}}								; anti-tank grenades
 		{"dynamite"}										; explosive charges		
+		{"grenade thermite" {volume "engine"}}				; flame grenades (thermite)
 		{"grenade ic" {volume "engine"}}					; flame grenades (molotov)
 
 		{"light"}											; ammo for binoculars and other vision devices
@@ -757,7 +778,8 @@
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"grenade at" {volume "engine"}}					; anti-tank grenade
 		{"grenade at" }										; anti-tank grenades
-
+		
+		{"grenade thermite" {volume "engine"}}				; flame grenades (thermite)
 		{"grenade ic" {volume "engine"}}					; flame grenades (molotov)
 
 		{"dynamite"}										; explosive charges		
@@ -825,6 +847,7 @@
 	{tank_medium											;-TARGET CLASS-
 		{"ammo rocketlauncher" {volume "body"}}				; bazooka class ammo 
 		{"ammo rocketlauncher"}								; bazooka class ammo 
+		{"grenade thermite" {volume "engine"}}				; flame grenades (thermite)
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"grenade at"}										; anti-tank grenades
 		{"grenade at"{ground}}								; anti-tank grenades
@@ -898,6 +921,7 @@
 	{tank_heavy												;-TARGET CLASS-
 		{"ammo rocketlauncher" {volume "body"}}				; bazooka class ammo 
 		{"ammo rocketlauncher"}								; bazooka class ammo 
+		{"grenade thermite" {volume "engine"}}				; flame grenades (thermite)
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"grenade at"}										; anti-tank grenades
 		{"grenade at"{ground}}								; anti-tank grenades
@@ -976,6 +1000,7 @@
 	{tank_superheavy										;-TARGET CLASS-
 		{"ammo rocketlauncher" {volume "body"}}				; bazooka class ammo 
 		{"ammo rocketlauncher"}								; bazooka class ammo 
+		{"grenade thermite" {volume "engine"}}				; flame grenades (thermite)
 		{"grenade at" {volume "body"}}						; anti-tank grenades
 		{"grenade at"}										; anti-tank grenades
 		{"grenade at"{ground}}								; anti-tank grenades

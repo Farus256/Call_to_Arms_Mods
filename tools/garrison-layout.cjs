@@ -1,6 +1,8 @@
 // Offline Conquest garrison relocation. No new runtime API or periodic scene scan.
 const fs = require('fs'), path = require('path'), assert = require('assert/strict');
 const s = require('./lib/sdl.cjs');
+const wp = require('./lib/gem-waypoints.cjs');
+const staging = require('./lib/garrison-staging.cjs');
 const root = path.resolve(__dirname, '..');
 const resource = path.join(root, 'mods/ultimate_frontline_bundle/resource');
 const configFile = path.join(__dirname, 'garrison-layout.json');
@@ -19,7 +21,18 @@ function edit(text, edits) {
     for (const e of edits.sort((a,b)=>b.start-a.start)) text = text.slice(0,e.start)+e.text+text.slice(e.end);
     return text;
 }
-function alias(spawn, id) { assert(/^\d+$/.test(id)&&Number(id)<1000,'Unsupported original waypoint ID '+id); return String(10000+spawn*1000+Number(id)); }
+// Numeric IDs must fit GoH's 8192-slot allocator. Keep all eight layouts
+// above native/HF IDs (0..1090), with room for the authored IDs (0..736).
+const aliasBase=1200,aliasStride=850;
+function alias(spawn, id) {
+    assert(Number.isInteger(spawn)&&spawn>=1&&spawn<=8,'Unsupported player entrance');
+    assert(/^\d+$/.test(id)&&Number(id)<aliasStride,'Unsupported original waypoint ID '+id);
+    const result=String(aliasBase+(spawn-1)*aliasStride+Number(id));wp.checkID(result);return result;
+}
+function aliasParts(id) {
+    if(!/^\d+$/.test(id)||Number(id)<aliasBase||Number(id)>=aliasBase+8*aliasStride)return null;
+    return {spawn:Math.floor((Number(id)-aliasBase)/aliasStride)+1,id:String((Number(id)-aliasBase)%aliasStride)};
+}
 const occupancyKey = p => p.slice(0,2).map(v=>Math.round(v/(config.unitsPerMetre*config.spacingCellMetres))).join(',');
 function references(ast) {
     return s.all(ast, n => ['transition','waypoint','target_waypoint'].includes(s.name(n)) && n.tokens.length===2);
@@ -77,7 +90,7 @@ function mapData(text) {
     assert(script, 'Missing mission script');
     for (const group of script.children.filter(n=>s.name(n)==='waypoints')) {
         for(const n of group.children.filter(n=>pos(n))) {
-            const id = s.name(n); assert(!points.has(id),'Duplicate original waypoint '+id);
+            const id = s.name(n); wp.checkID(id); assert(!points.has(id),'Duplicate original waypoint '+id);
             points.set(id,n); groups.set(id,group.tokens[1]?.value||'common');
         }
     }
@@ -124,6 +137,7 @@ function layout(text) {
             const required=config.weaponEnvelopeMetres[kind]*config.botRangeScale+config.startZoneMetres+config.marginMetres+spread+random;
             const objective=data.flags[flagOf.get(id)]; assert(objective,'Missing objective for '+id);
             const result=choose(original,candidates[kind],entry,required,objective,usage,kind==='infantry');
+            assert(!data.points.has(alias(spawn,id)),'Garrison alias collides with original ID');
             const edits=[{start:n.tokens[0].start,end:n.tokens[0].end,text:'"'+alias(spawn,id)+'"'}];
             for (const r of references(ast)) edits.push({start:r.tokens[1].start,end:r.tokens[1].end,text:'"'+alias(spawn,r.tokens[1].value)+'"'});
             if(result.changed){ const p=pos(n); edits.push({start:p.start,end:p.end,text:'{position '+result.point.join(' ')+'}'}); variant.relocated++;report.changed++; }
@@ -166,12 +180,16 @@ function run(baselineDir, apply=false) {
     const functions=fs.readFileSync(path.join(baselineDir,'dcg_functions.inc'),'latin1');
     const missionScript=fs.readFileSync(path.join(baselineDir,'dcg_script.inc'),'latin1');
     const funcs=routeActions(functions,n=>/^flag[1-5]_bots_d$/.test(s.name(n)),'waypoint','waypoint');
-    const script=routeActions(missionScript,n=>/^dcg2\/botdefend\/start[23]flags$/.test(s.name(n)),'placement','target_waypoint');
-    const generated=new Map([['map/multi/ufb_garrison_functions.inc',funcs.text],['map/multi/ufb_garrison_script.inc',script.text]]),report={maps:[],functionActions:funcs.count,spawnPlacements:script.count};
+    // Native forwardN selectors discover bought defenders at the staging
+    // anchors 15..24. Only their subsequent combat destinations are relocated.
+    const generated=new Map([['map/multi/ufb_garrison_functions.inc',funcs.text],['map/multi/ufb_garrison_script.inc',missionScript]]),report={maps:[],functionActions:funcs.count,spawnPlacements:0};
     for(const folder of fs.readdirSync(dir,{withFileTypes:true}).filter(x=>x.isDirectory()&&x.name.startsWith('dcg_'))) {
         const rel='map/multi/'+folder.name+'/campaign_capture_the_flag.mi', file=path.join(baselineDir,rel);
         if(!fs.existsSync(file))continue;
-        const text=fs.readFileSync(file,'latin1'), built=layout(text), data=mapData(text);
+        const nativeText=fs.readFileSync(file,'latin1');
+        const zonesFixed=folder.name==='dcg_karvola_winter'?staging.repairKarvolaZones(nativeText,mapData(nativeText)):nativeText;
+        const text=staging.repairAddedAnchors(zonesFixed,mapData(zonesFixed)).text;
+        const built=layout(text), data=mapData(text);
         const group=data.script.children.find(n=>s.name(n)==='waypoints');
         // Includes are local to their named waypoint group, just like the native HF include.
         let modified=text.slice(0,group.end-1)+'\r\n(include "ufb_garrison_layout.inc")\r\n'+text.slice(group.end-1);
@@ -191,4 +209,4 @@ if(require.main===module){
     fs.writeFileSync(reportFile,JSON.stringify(report,null,2)+'\n');
     console.log(JSON.stringify({maps:report.maps.length,relocated:report.maps.reduce((a,m)=>a+m.changed,0),unresolved:report.maps.reduce((a,m)=>a+m.unresolved,0),functionActions:report.functionActions,spawnPlacements:report.spawnPlacements}));
 }
-module.exports={run,layout,mapData,selectSide,routeActions,choose,alias,distance,occupancyKey,config,resource};
+module.exports={run,layout,mapData,selectSide,routeActions,choose,alias,aliasParts,distance,occupancyKey,config,resource};

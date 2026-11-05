@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position -1250.64 1244.24}
 		{Placer
@@ -4764,7 +4764,7 @@
 	}
 	{Human "" 0xa01b
 		{Position -3804.52 4670.47}
-		{xform zl -54.81 y 32.57 zw -38.73}
+		{xform zl -63.39 y 32.57 zw -38.73}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4779,7 +4779,7 @@
 	}
 	{Human "" 0xa01c
 		{Position -3424.52 6145.47}
-		{xform zl -158.42 y 35.01 zw 89.96}
+		{xform zl -149.48 y 35.01 zw 89.96}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -15283,7 +15283,7 @@
 		{Player 0}
 		{MID 319}
 		{NameId 90 55}
-		{LastItem "luger"}
+		{LastItem "enfield_no2_mk1"}
 	}
 	{Entity "hurribomber_mk2c" 0x829e
 		{Position 9598.11 -1328.38}
@@ -15321,17 +15321,25 @@
 	{Link 0x82ef {0x82ed "gunner"}}
 	{Link 0x804d {0x828e "driver"}}
 	{Link 0x829d {0x829e "driver"}}
+	{Tags "bare" 0x270}
+	{Tags "bare" 0x273}
 	{Tags "+mobilegun" 0x403e}
 	{Tags "bare" 0x4a0}
 	{Tags "bare" 0x725}
 	{Tags "+mobilegun" 0x10ef}
 	{Tags "+mobilegun" 0x10f5}
+	{Tags "bare" 0x42b9}
+	{Tags "bare" 0x42e4}
+	{Tags "bare" 0x42e8}
+	{Tags "bare" 0x1298}
 	{Tags "+mobilegun" 0x61ff}
 	{Tags "+mobilegun" 0x6221}
 	{Tags "+mobilegun" 0x227f}
 	{Tags "+mobilegun" 0x2285}
 	{Tags "+mobilegun" 0x228b}
 	{Tags "+mobilegun" 0x2291}
+	{Tags "bare" 0x50db}
+	{Tags "bare" 0x50e5}
 	{Tags "bare" 0x114a}
 	{Tags "bare" 0x114c}
 	{Tags "bare" 0x14ac}
@@ -15342,6 +15350,8 @@
 	{Tags "bare" 0x1588}
 	{Tags "bare" 0x1589}
 	{Tags "bare" 0x158a}
+	{Tags "bare" 0x3147}
+	{Tags "bare" 0x314a}
 	{Tags "bare" 0x6505}
 	{Tags "bare" 0x1f80}
 	{Tags "bare" 0x1f94}
@@ -15376,18 +15386,20 @@
 	{Tags "bare" 0x32c9}
 	{Tags "marine" 0x43ba}
 	{Tags "marine" 0x2f75}
+	{Tags "+mobilegun" 0x5035}
+	{Tags "+mobilegun" 0x503a}
 	{Tags "fpc1" "flag" 0x802f}
 	{Tags "fpc3" "flag" 0x8011}
 	{Tags "fpc5" "flag" 0x8003}
 	{Tags "fpc4" "flag" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
 	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
@@ -17894,6 +17906,18 @@
 			{item "us_m1_b" {cell 0 1}{user "head"}}
 		}
 	}
+	{Inventory 0x829d
+		{box
+			{clear}
+			{item "enfield_no2_mk1" filled {cell 0 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 2 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 3 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 4 0}}
+			{item "bandage_eng" {cell 5 0}}
+			{item "bandage_eng" {cell 0 1}}
+			{item "bandage_eng" {cell 2 1}}
+		}
+	}
 	{Brain 0x403e
 		{Properties
 			{look_around 0}
@@ -17935,6 +17959,16 @@
 		}
 	}
 	{Brain 0x2291
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x5035
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x503a
 		{Properties
 			{look_around 0}
 		}
@@ -19698,7 +19732,7 @@
 		}
 	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -19720,31 +19754,6 @@
 		{event "music_rnd"}
 		{event "music_start"}
 		{event "talk_on"}
-		{zone "circle"
-			{position -1201.3 1217.09 0}
-			{Name "forward1"}
-			{Radius 2279.52}
-		}
-		{zone "circle"
-			{position 2499.76 -2162.2 -12}
-			{Name "forward2"}
-			{Radius 1928.04}
-		}
-		{zone "circle"
-			{position -2067.64 5503.53 1}
-			{Name "forward3"}
-			{Radius 2052.46}
-		}
-		{zone "circle"
-			{position -2219.67 -3209.03 12}
-			{Name "forward4"}
-			{Radius 1962.34}
-		}
-		{zone "circle"
-			{position 2134.07 4431.25 -40}
-			{Name "forward5"}
-			{Radius 2255.67}
-		}
 		{zone "circle"
 			{position -2290.81 3707.49 0}
 			{Name "_bridge1"}
@@ -19808,6 +19817,31 @@
 			{Point 1737.72 7107.54}
 			{Point 4413.19 4367.88}
 			{Point 3649.76 -8024.76}
+		}
+		{zone "circle"
+			{position -1201.3 1217.09 0}
+			{Name "forward1"}
+			{Radius 2279.52}
+		}
+		{zone "circle"
+			{position 2499.76 -2162.2 -12}
+			{Name "forward2"}
+			{Radius 1928.04}
+		}
+		{zone "circle"
+			{position -2067.64 5503.53 1}
+			{Name "forward3"}
+			{Radius 2052.46}
+		}
+		{zone "circle"
+			{position -2219.67 -3209.03 12}
+			{Name "forward4"}
+			{Radius 1962.34}
+		}
+		{zone "circle"
+			{position 2134.07 4431.25 -40}
+			{Name "forward5"}
+			{Radius 2255.67}
 		}
 		{zone "poly"
 			{position -1225.51 1205.04 0}
@@ -32359,9 +32393,7 @@
 				{position 1143.17 4856.76 -3.88115}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

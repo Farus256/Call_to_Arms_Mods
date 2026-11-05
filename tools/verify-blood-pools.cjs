@@ -14,7 +14,7 @@ check(s.all(macro,n=>s.name(n)==='set'&&n.tokens[1].value==='ufb_pool_scheduled'
 const scheduleGuard=macro.children[0];
 const once=s.child(scheduleGuard,'set'),chance=s.child(scheduleGuard,'if');
 check(scheduleGuard.children.indexOf(once)<scheduleGuard.children.indexOf(chance),'no pool: chance is not rerolled on duplicate death callbacks');
-check(cfg.spawnChance===0.04&&chance.tokens[1].value==='rand'&&Number(chance.tokens[2].value)===cfg.spawnChance,'4% corpse pool chance');
+check(cfg.spawnChance===0.05&&chance.tokens[1].value==='rand'&&Number(chance.tokens[2].value)===0.05,'one 5% roll per corpse');
 check(s.all(chance,n=>s.name(n)==='delay').length===1,'one timer only after the successful chance roll');
 check(cfg.growthSeconds.join(',')==='120,150,180,210,240,270,300,330,360','growth slowed three times for every variant');
 for(const key of ['dead','not burned','not under_water'])check(s.all(macro,n=>s.name(n)==='if'&&n.tokens.slice(1).map(t=>t.value).join(' ')===key).length===1,'spawn eligibility: '+key);

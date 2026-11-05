@@ -1,0 +1,6 @@
+; Ephemeral ground coordinate for an actual smoke grenade throw.
+{game_entity
+ {Skeleton}
+ {constrain ground}
+ {obstacleID "nothing"}
+}

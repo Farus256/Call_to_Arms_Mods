@@ -1,5 +1,6 @@
 {
-  "enabled": {"health": true, "supply": true, "botCP": true, "rotation": true, "cautiousAdvance": true, "softVehicleFire": true},
+  "retired": "2026-11-05: native Horten's Frontline 4.0.0 balance restored; historical values below are inactive",
+  "enabled": {"health": false, "supply": false, "botCP": false, "rotation": false, "cautiousAdvance": false, "softVehicleFire": false},
   "baseHealth": 70,
   "maximumBreedHealthMultiplier": 1.15,
   "healthTierCompression": 0.05,
@@ -8,8 +9,8 @@
   "weaponSwitchCooldownSeconds": 5,
   "injuredMovementMultiplier": 0.85,
   "rotationDegreesPerSecond": {
-    "Crawl": {"Slow": 180, "Normal": 180, "Fast": 180},
-    "Run": {"Sneak": 360, "Spot": 420, "Walk": 600, "Slow": 360, "Normal": 600, "Fast": 600, "Bow": 600}
+    "Crawl": {"Slow": 120, "Normal": 180, "Fast": 210},
+    "Run": {"Sneak": 240, "Spot": 420, "Walk": 240, "Slow": 300, "Normal": 360, "Fast": 420, "Bow": 360}
   },
   "supplyRadius": {
     "supply_ammo_fixed": 10,

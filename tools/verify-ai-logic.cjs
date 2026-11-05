@@ -13,7 +13,7 @@ checks=0
 print=function(...) logs[#logs+1]={...} end
 BotApi={Instance={spawnPointName='a1',gameMode='battle_zones',enemyTeam='b',team='a',ownTeamSize=2,playerId=2},
  Commands={CanSpawn=function() return true end, Income=function() return 1000 end,TimeToSpawnUnit=function() return 0 end,IsUnitAvailable=function() return true end},
- Scene={Flags={},Waypoints={},Squads={},IsSquadExists=function() return alive end,IsSquadTagged=function() return false end,
+ Scene={Flags={},Waypoints={},Squads={},SetVar=function() end,IsSquadExists=function() return alive end,IsSquadTagged=function() return false end,
  QueryScene=function() return {{1,{0,0,0,0,0,0,0}},{2,{0,0,0,0,0,0,0}}} end},
  Events={Subscribe=function() end,SetQuantTimer=function(_,fn,delay) nextTimer=nextTimer+1;timers[nextTimer]=fn;queued[nextTimer]=fn;return nextTimer end,
  KillQuantTimer=function(_,id) timers[id]=nil end}}
@@ -51,6 +51,19 @@ CaptureFlag=function() orders=orders+1 end
 SetSquadOrder(CaptureFlag,1,150000);OnPrepTimeOver()
 check(orders==${old?3:2},'preparation assignment count')
 check(timerCount()==${old?2:1},'preparation timer count')
+`);
+run('Battle Zones preparation: one order and one timer per living squad',false,'battlezones',`
+local prepSignals=0
+BotApi.Scene.SetVar=function(_,name,value) if name=='prep_inform' and value==1 then prepSignals=prepSignals+1 end end
+CaptureFlag=function() orders=orders+1 end
+SetSquadOrder(CaptureFlag,1,150000);local stale=nextTimer
+OnPrepTimeOver()
+check(orders==2,'preparation must issue exactly one new order')
+check(timerCount()==1,'preparation must cancel the previous timer')
+check(prepSignals==1,'native preparation-complete signal retained')
+queued[stale]();check(orders==2 and timerCount()==1,'cancelled old callback must be inert')
+alive=false;OnPrepTimeOver()
+check(orders==2 and timerCount()==0 and Context.SquadTimers[1]==nil,'dead squad cannot retain an order timer')
 `);
 for(const old of [true,false])run((old?'Reproduce':'Fix')+' repeated empty purchases',old,null,`
 local selections=0
@@ -108,5 +121,25 @@ BotApi.Scene.QueryScene=function() return {} end
 check(GetUnitToSpawn({unit})==unit,'empty scene accepted')
 BotApi.Scene.QueryScene=function() return {{2,{20,0,3,0,0,0,0}},{8,{40}}} end
 check(GetUnitToSpawn({unit})==unit,'reordered scene accepted')
+`);
+run('Frontlines attackers reinforce other lanes in both phases',false,'frontlines',`
+BotApi.Instance.spawnPointName='a11'
+local function select(flags) return GetFlagToCapture(flags) end
+local phase1={{name='f11_1',occupant='a'},{name='f12_1',occupant='b'}}
+check(select(phase1).name=='f12_1','phase 1 reinforces the remaining enemy lane')
+local phase2={{name='f11_1',occupant='a'},{name='f12_1',occupant='a'},
+ {name='f21_1',occupant='a'},{name='f22_1',occupant='b'}}
+local target=select(phase2)
+check(target and target.name=='f22_1','phase 2 reinforces the remaining enemy lane')
+BotApi.Scene.Flags=phase2
+local captured,seek=nil,0
+BotApi.Commands.CaptureFlag=function(_,squad,flag) captured=flag end
+BotApi.Commands.SeekAndDestroy=function() seek=seek+1 end
+CaptureFlag(1)
+check(captured=='f22_1' and seek==0,'capture order retains its objective')
+phase2[3].occupant='b'
+check(select(phase2).name=='f21_1','unfinished own lane keeps priority')
+phase2[3].occupant='a';phase2[4].occupant='a'
+check(select(phase2)==nil,'fully captured phases have no enemy target')
 `);
 console.log('Logic:',checks,'assertions;',results.length,'scenarios; mocked BotApi, no game launch');

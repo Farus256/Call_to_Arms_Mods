@@ -3998,6 +3998,9 @@
 													{state
 														{state user_control}
 													}
+													{state {state linked}}
+													{state {state inactive}}
+													{state {state dead}}
 												}
 											}
 										}
@@ -12838,7 +12841,7 @@
 			}
 		
 ; UFB non-story AI additions.
-(include "/map/multi/ufb_infantry_profile.inc")
+
 (include "/map/multi/ufb_crew_skirmish.inc")
 }
 	}

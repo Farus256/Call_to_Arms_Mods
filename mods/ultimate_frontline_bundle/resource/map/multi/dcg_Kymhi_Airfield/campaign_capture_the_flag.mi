@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position 774.74 1540.13}
 		{xform zl 128.72}
@@ -289,7 +289,6 @@
 	{Human "" 0x800c
 		{Position 352.03 1189.41}
 		{xform zl -135.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -308,7 +307,6 @@
 	{Human "" 0x800f
 		{Position 1000.47 594.68}
 		{xform zl -77.1}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -327,7 +325,6 @@
 	{Human "" 0x8010
 		{Position 1056.03 580.12}
 		{xform zl -99.26}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -346,7 +343,6 @@
 	{Human "" 0x8012
 		{Position 1031.06 584.2}
 		{xform zl -99.26}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -365,7 +361,6 @@
 	{Human "" 0x8014
 		{Position 1109.17 607.77}
 		{xform zl -74.03}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -384,7 +379,6 @@
 	{Human "" 0x8015
 		{Position 1086.04 597.1}
 		{xform zl -52.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -403,7 +397,6 @@
 	{Human "" 0x8018
 		{Position 228.43 1636.98}
 		{xform zl -146.53}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -422,7 +415,6 @@
 	{Human "" 0x8019
 		{Position 631.31 2141.78}
 		{xform zl 132.75}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -441,7 +433,6 @@
 	{Human "" 0x801a
 		{Position 245.38 1699.83}
 		{xform zl 143.42}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -460,7 +451,6 @@
 	{Human "" 0x801b
 		{Position 598.11 2096.08}
 		{xform zl 134.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -479,7 +469,6 @@
 	{Human "" 0x801c
 		{Position 261.94 1722.15}
 		{xform zl 143.42}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -498,7 +487,6 @@
 	{Human "" 0x801d
 		{Position 669.94 2145.54}
 		{xform zl 85.71}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -517,7 +505,6 @@
 	{Human "" 0x801e
 		{Position 575.46 2074.02}
 		{xform zl 134.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -536,7 +523,6 @@
 	{Human "" 0x801f
 		{Position 230.96 1675.7}
 		{xform zl 166.44}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -555,7 +541,6 @@
 	{Human "" 0x8020
 		{Position 330.71 1210.79}
 		{xform zl -135.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -574,7 +559,6 @@
 	{Human "" 0x8021
 		{Position 384.25 1888.3}
 		{xform zl 161.63}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -593,7 +577,6 @@
 	{Human "" 0x8022
 		{Position 239.78 1660.56}
 		{xform zl 166.44}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -612,7 +595,6 @@
 	{Human "" 0x8023
 		{Position 424.63 1930.63}
 		{xform zl 135.1}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -631,7 +613,6 @@
 	{Human "" 0x8024
 		{Position 392.75 1913.89}
 		{xform zl 161.63}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -650,7 +631,6 @@
 	{Human "" 0x8025
 		{Position 443.66 1949.73}
 		{xform zl 135.1}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -669,7 +649,6 @@
 	{Human "" 0x802b
 		{Position 163.27 1370.34}
 		{xform zl -151.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -688,7 +667,6 @@
 	{Human "" 0x802c
 		{Position 876.71 2233.72}
 		{xform zl 85.07}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -707,7 +685,6 @@
 	{Human "" 0x8031
 		{Position 728.07 1345.21}
 		{xform zl -66.96}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -726,7 +703,6 @@
 	{Human "" 0x8032
 		{Position 591.42 1292.63}
 		{xform zl -67.5}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -745,7 +721,6 @@
 	{Human "" 0x8033
 		{Position 647.35 1311.61}
 		{xform zl -66.96}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -764,7 +739,6 @@
 	{Human "" 0x8034
 		{Position 620.39 1300.14}
 		{xform zl -66.96}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -783,7 +757,6 @@
 	{Human "" 0x8035
 		{Position 562.6 1291.89}
 		{xform zl -114.52}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -802,7 +775,6 @@
 	{Human "" 0x8036
 		{Position 677.86 1310.68}
 		{xform zl -66.96}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -821,7 +793,6 @@
 	{Human "" 0x8037
 		{Position 753.64 1351.74}
 		{xform zl -74.64}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -840,7 +811,6 @@
 	{Human "" 0x8038
 		{Position 709.26 1324.04}
 		{xform zl -66.96}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -859,7 +829,6 @@
 	{Human "" 0x8039
 		{Position 139.37 919.32}
 		{xform zl -160.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -878,7 +847,6 @@
 	{Human "" 0x803a
 		{Position 350.97 1635.48}
 		{xform zl 139.4}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -897,7 +865,6 @@
 	{Human "" 0x803b
 		{Position 269.2 1340.25}
 		{xform zl -99.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -916,7 +883,6 @@
 	{Human "" 0x803c
 		{Position 824.95 618.23}
 		{xform zl -135.44}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -935,7 +901,6 @@
 	{Human "" 0x803d
 		{Position 1525.32 951.29}
 		{xform zl -41.18}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -954,7 +919,6 @@
 	{Human "" 0x803e
 		{Position 142.52 893.34}
 		{xform zl -113.93}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -973,7 +937,6 @@
 	{Human "" 0x803f
 		{Position 1897.8 1556.91}
 		{xform zl 73.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -992,7 +955,6 @@
 	{Human "" 0x8040
 		{Position 1918.16 1539.94}
 		{xform zl 26.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1011,7 +973,6 @@
 	{Human "" 0x8041
 		{Position 1075.51 2036.71}
 		{xform zl 49.91}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1030,7 +991,6 @@
 	{Human "" 0x8042
 		{Position 1098.73 2017.16}
 		{xform zl 49.91}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1129,7 +1089,6 @@
 	{Human "" 0xb000
 		{Position 1720.23 -1130.88}
 		{xform zl -163}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1148,7 +1107,6 @@
 	{Human "" 0xb001
 		{Position 1691.17 -1388.85}
 		{xform zl -95.52}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1167,7 +1125,6 @@
 	{Human "" 0xb002
 		{Position 1579.48 -1388.47}
 		{xform zl -93.45}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1186,7 +1143,6 @@
 	{Human "" 0xb003
 		{Position 1623.8 -1408.21}
 		{xform zl -115.42}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1205,7 +1161,6 @@
 	{Human "" 0xb004
 		{Position 1657.29 -1400.25}
 		{xform zl -68.38}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1224,7 +1179,6 @@
 	{Human "" 0xb005
 		{Position 1600.97 -1397.36}
 		{xform zl -115.42}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1243,7 +1197,6 @@
 	{Human "" 0xb006
 		{Position 2356.54 -714.49}
 		{xform zl 97.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1262,7 +1215,6 @@
 	{Human "" 0xb007
 		{Position 2411.9 -707.22}
 		{xform zl 97.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1281,7 +1233,6 @@
 	{Human "" 0xb008
 		{Position 2390.87 -722.21}
 		{xform zl 97.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1300,7 +1251,6 @@
 	{Human "" 0xb009
 		{Position 2333.95 -714.14}
 		{xform zl 96.36}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1319,7 +1269,6 @@
 	{Human "" 0xb00a
 		{Position 2448.6 -712.51}
 		{xform zl 79.62}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1338,7 +1287,6 @@
 	{Human "" 0xb00b
 		{Position 2304.39 -717.43}
 		{xform zl 96.36}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1357,7 +1305,6 @@
 	{Human "" 0xb00c
 		{Position 2274.86 -720.73}
 		{xform zl 96.36}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1376,7 +1323,6 @@
 	{Human "" 0xb00d
 		{Position 2246.21 -732.51}
 		{xform zl 119.37}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1395,7 +1341,6 @@
 	{Human "" 0xb00e
 		{Position 1716.61 -1160.52}
 		{xform zl -163}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1414,7 +1359,6 @@
 	{Human "" 0xb00f
 		{Position 1538.66 -833.36}
 		{xform zl 102.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1433,7 +1377,6 @@
 	{Human "" 0xb010
 		{Position 2775.28 -606.32}
 		{xform zl 49.7}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1452,7 +1395,6 @@
 	{Human "" 0xb011
 		{Position 1513.59 -865.72}
 		{xform zl 149.19}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1471,7 +1413,6 @@
 	{Human "" 0xb012
 		{Position 1486.32 -899.89}
 		{xform zl -177.3}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1490,7 +1431,6 @@
 	{Human "" 0xb013
 		{Position 2750.89 -617.14}
 		{xform zl 97.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1509,7 +1449,6 @@
 	{Human "" 0xb014
 		{Position 1947.56 255.39}
 		{xform zl 127.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1528,7 +1467,6 @@
 	{Human "" 0xb015
 		{Position 2013.44 267.37}
 		{xform zl 54.9}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1547,7 +1485,6 @@
 	{Human "" 0xb016
 		{Position 2026.1 -1258.29}
 		{xform zl -139.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1566,7 +1503,6 @@
 	{Human "" 0xb017
 		{Position 2039.66 -1286.26}
 		{xform zl -122.41}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1585,7 +1521,6 @@
 	{Human "" 0xb018
 		{Position 2110.81 -1331.1}
 		{xform zl -122.46}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1604,7 +1539,6 @@
 	{Human "" 0xb019
 		{Position 2065.63 -1302.76}
 		{xform zl -122.41}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1623,7 +1557,6 @@
 	{Human "" 0xb01a
 		{Position 2091.62 -1319.26}
 		{xform zl -122.41}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1642,7 +1575,6 @@
 	{Human "" 0xb01b
 		{Position 2136.84 -1347.66}
 		{xform zl -122.46}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1661,7 +1593,6 @@
 	{Human "" 0xb01c
 		{Position 2162.87 -1364.23}
 		{xform zl -122.46}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1680,7 +1611,6 @@
 	{Human "" 0xb01d
 		{Position 2199.25 -1371.47}
 		{xform zl -81.03}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1699,7 +1629,6 @@
 	{Human "" 0xb01e
 		{Position 876.54 -1483.91}
 		{xform zl 137}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1718,7 +1647,6 @@
 	{Human "" 0xb01f
 		{Position 960.58 -1645.23}
 		{xform zl -128}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1737,7 +1665,6 @@
 	{Human "" 0xb020
 		{Position 901.06 -1600.88}
 		{xform zl -126}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1756,7 +1683,6 @@
 	{Human "" 0xb021
 		{Position 1915.91 -2303.83}
 		{xform zl -134.66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1775,7 +1701,6 @@
 	{Human "" 0xb022
 		{Position 1993.65 -2309.87}
 		{xform zl -75.02}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1794,7 +1719,6 @@
 	{Human "" 0xb023
 		{Position 3442.04 -955.35}
 		{xform zl -137}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1813,7 +1737,6 @@
 	{Human "" 0xb024
 		{Position 3574.53 -719.12}
 		{xform zl 49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1832,7 +1755,6 @@
 	{Human "" 0xb025
 		{Position 3608.83 -901.03}
 		{xform zl -46.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1851,7 +1773,6 @@
 	{Human "" 0xb026
 		{Position 3062.65 -641.44}
 		{xform zl 36.73}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1870,7 +1791,6 @@
 	{Human "" 0xb027
 		{Position 3080.69 -665.61}
 		{xform zl 36.73}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1969,7 +1889,6 @@
 	{Human "" 0x800b
 		{Position -5732.86 -323.76}
 		{xform zl 13.54}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1988,7 +1907,6 @@
 	{Human "" 0x8026
 		{Position -4766.46 -376.37}
 		{xform zl -82.38}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2007,7 +1925,6 @@
 	{Human "" 0x8028
 		{Position -4628.17 -325.49}
 		{xform zl -16.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2026,7 +1943,6 @@
 	{Human "" 0x8030
 		{Position -4808.6 -359.46}
 		{xform zl -129.4}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2045,7 +1961,6 @@
 	{Human "" 0x8043
 		{Position -4722.13 -371.2}
 		{xform zl -106.98}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2064,7 +1979,6 @@
 	{Human "" 0x8044
 		{Position -4677.4 -370.76}
 		{xform zl -59.96}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2083,7 +1997,6 @@
 	{Human "" 0x8048
 		{Position -5731.68 -79.41}
 		{xform zl 66.52}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2102,7 +2015,6 @@
 	{Human "" 0x804c
 		{Position -5706.19 -77.26}
 		{xform zl 66.52}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2121,7 +2033,6 @@
 	{Human "" 0x804d
 		{Position -5831.47 -117.49}
 		{xform zl 55.63}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2140,7 +2051,6 @@
 	{Human "" 0x804f
 		{Position -5916.65 -102.89}
 		{xform zl 114.75}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2159,7 +2069,6 @@
 	{Human "" 0x8050
 		{Position -5883.58 -93.09}
 		{xform zl 67.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2178,7 +2087,6 @@
 	{Human "" 0x8052
 		{Position -5678.65 -89.23}
 		{xform zl 66.52}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2197,7 +2105,6 @@
 	{Human "" 0x8053
 		{Position -5646.41 -109.03}
 		{xform zl 18.1}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2216,7 +2123,6 @@
 	{Human "" 0x8054
 		{Position -5860.17 -102.68}
 		{xform zl 67.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2235,7 +2141,6 @@
 	{Human "" 0x8055
 		{Position -5738.38 -405.95}
 		{xform zl 11.28}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2254,7 +2159,6 @@
 	{Human "" 0x8056
 		{Position -5144.44 74.06}
 		{xform zl 125.83}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2273,7 +2177,6 @@
 	{Human "" 0x8057
 		{Position -6244.09 42.08}
 		{xform zl 115.52}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2292,7 +2195,6 @@
 	{Human "" 0x8058
 		{Position -5057.94 50.74}
 		{xform zl 52.18}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2311,7 +2213,6 @@
 	{Human "" 0x8059
 		{Position -6212.19 36.64}
 		{xform zl 68.5}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2330,7 +2231,6 @@
 	{Human "" 0x805a
 		{Position -5101.29 66.43}
 		{xform zl 99.25}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2349,7 +2249,6 @@
 	{Human "" 0x805b
 		{Position -5435.89 394.36}
 		{xform zl 77.73}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2368,7 +2267,6 @@
 	{Human "" 0x805c
 		{Position -5198.13 440.99}
 		{xform zl 68.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2387,7 +2285,6 @@
 	{Human "" 0x805d
 		{Position -5816.83 -1027.63}
 		{xform zl -58.21}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2406,7 +2303,6 @@
 	{Human "" 0x805e
 		{Position -5777.32 -1003.15}
 		{xform zl -58.21}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2425,7 +2321,6 @@
 	{Human "" 0x805f
 		{Position -5894.71 -1059.1}
 		{xform zl -71.3}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2444,7 +2339,6 @@
 	{Human "" 0x8060
 		{Position -5875.25 -1039.72}
 		{xform zl -71.3}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2463,7 +2357,6 @@
 	{Human "" 0x8061
 		{Position -5848.02 -1043.31}
 		{xform zl -71.3}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2482,7 +2375,6 @@
 	{Human "" 0x8062
 		{Position -5750.71 -481.18}
 		{xform zl -48.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2501,7 +2393,6 @@
 	{Human "" 0x8063
 		{Position -5726.27 -451.03}
 		{xform zl -1.84}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2520,7 +2411,6 @@
 	{Human "" 0x8064
 		{Position -5926.63 -1051.68}
 		{xform zl -78.29}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2539,7 +2429,6 @@
 	{Human "" 0x8065
 		{Position -5778.5 -288.52}
 		{xform zl 62.75}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2558,7 +2447,6 @@
 	{Human "" 0x8066
 		{Position -5735.02 -358.79}
 		{xform zl 10.55}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2577,7 +2465,6 @@
 	{Human "" 0x8067
 		{Position -4537.6 -366.46}
 		{xform zl -40.37}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2596,7 +2483,6 @@
 	{Human "" 0x8068
 		{Position -6268.43 -812.05}
 		{xform zl -119.5}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2615,7 +2501,6 @@
 	{Human "" 0x8069
 		{Position -6204.1 -820.65}
 		{xform zl -74.93}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2634,7 +2519,6 @@
 	{Human "" 0x806a
 		{Position -5425.41 288.03}
 		{xform zl -28.61}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2653,7 +2537,6 @@
 	{Human "" 0x806b
 		{Position -4805.33 -83.23}
 		{xform zl 29.23}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2672,7 +2555,6 @@
 	{Human "" 0x806c
 		{Position -4802.38 -107.65}
 		{xform zl -17.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2691,7 +2573,6 @@
 	{Human "" 0x806d
 		{Position -5937.28 -455.05}
 		{xform zl -24.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2710,7 +2591,6 @@
 	{Human "" 0x806e
 		{Position -5946.56 -420.29}
 		{xform zl 22.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2805,7 +2685,6 @@
 	{Human "" 0x8085
 		{Position -1869.19 -1209.3}
 		{xform zl -145.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2824,7 +2703,6 @@
 	{Human "" 0x8086
 		{Position -987.82 -1633.34}
 		{xform zl -150.59}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2843,7 +2721,6 @@
 	{Human "" 0x8087
 		{Position -949.48 -1647.69}
 		{xform zl -103.57}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2862,7 +2739,6 @@
 	{Human "" 0x8088
 		{Position -907.66 -1656.89}
 		{xform zl -62.5}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2881,7 +2757,6 @@
 	{Human "" 0x8089
 		{Position -929.94 -1643.15}
 		{xform zl -109.53}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2900,7 +2775,6 @@
 	{Human "" 0x808a
 		{Position -959.74 -1632.74}
 		{xform zl -103.57}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2919,7 +2793,6 @@
 	{Human "" 0x808b
 		{Position -1023.27 -1406.48}
 		{xform zl 173.85}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2938,7 +2811,6 @@
 	{Human "" 0x808c
 		{Position -689.63 -1104.54}
 		{xform zl 69.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2957,7 +2829,6 @@
 	{Human "" 0x808d
 		{Position -951.04 -1299.44}
 		{xform zl 135.85}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2976,7 +2847,6 @@
 	{Human "" 0x808e
 		{Position -796.28 -1162.22}
 		{xform zl 125.04}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2995,7 +2865,6 @@
 	{Human "" 0x808f
 		{Position -898.23 -1245.89}
 		{xform zl 132.51}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3014,7 +2883,6 @@
 	{Human "" 0x8090
 		{Position -858.29 -1210.87}
 		{xform zl 130.92}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3033,7 +2901,6 @@
 	{Human "" 0x8091
 		{Position -990.23 -1342.38}
 		{xform zl 141.25}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3052,7 +2919,6 @@
 	{Human "" 0x8092
 		{Position -740.9 -1119.88}
 		{xform zl 128.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3071,7 +2937,6 @@
 	{Human "" 0x8093
 		{Position -1885.22 -1186.28}
 		{xform zl -145.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3090,7 +2955,6 @@
 	{Human "" 0x8094
 		{Position -899.87 48.77}
 		{xform zl 108.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3109,7 +2973,6 @@
 	{Human "" 0x8095
 		{Position -848.19 55.87}
 		{xform zl 75.54}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3128,7 +2991,6 @@
 	{Human "" 0x8096
 		{Position -1332.14 -627.38}
 		{xform zl 157.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3147,7 +3009,6 @@
 	{Human "" 0x8097
 		{Position -1313.61 -609.41}
 		{xform zl 110.72}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3166,7 +3027,6 @@
 	{Human "" 0x8098
 		{Position -935.09 27.57}
 		{xform zl 155.83}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3185,7 +3045,6 @@
 	{Human "" 0x8099
 		{Position -1208.09 -183.23}
 		{xform zl 166.73}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3204,7 +3063,6 @@
 	{Human "" 0x809a
 		{Position -1162.82 -148.02}
 		{xform zl 79.75}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3223,7 +3081,6 @@
 	{Human "" 0x809b
 		{Position -478.31 -1481.9}
 		{xform zl -44.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3242,7 +3099,6 @@
 	{Human "" 0x809c
 		{Position -623.87 -1613.29}
 		{xform zl -66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3261,7 +3117,6 @@
 	{Human "" 0x809d
 		{Position -448.05 -1451.65}
 		{xform zl -44.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3280,7 +3135,6 @@
 	{Human "" 0x809e
 		{Position -754.23 -1672.61}
 		{xform zl -66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3299,7 +3153,6 @@
 	{Human "" 0x809f
 		{Position -697.47 -1647.34}
 		{xform zl -66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3318,7 +3171,6 @@
 	{Human "" 0x80a0
 		{Position -803.53 -1690.43}
 		{xform zl -71}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3337,7 +3189,6 @@
 	{Human "" 0x80a1
 		{Position -548.64 -1555.16}
 		{xform zl -49.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3356,7 +3207,6 @@
 	{Human "" 0x80a2
 		{Position -512.25 -1517.89}
 		{xform zl -44.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3375,7 +3225,6 @@
 	{Human "" 0x80a3
 		{Position -1891.07 -1104.85}
 		{xform zl 147.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3394,7 +3243,6 @@
 	{Human "" 0x80a4
 		{Position -161.75 -988.66}
 		{xform zl 75.03}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3413,7 +3261,6 @@
 	{Human "" 0x80a5
 		{Position -1905.8 -1140.75}
 		{xform zl -165.1}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3432,7 +3279,6 @@
 	{Human "" 0x80a6
 		{Position -1535.07 -1691.68}
 		{xform zl -152.2}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3451,7 +3297,6 @@
 	{Human "" 0x80a7
 		{Position -1470.36 -1701.06}
 		{xform zl -59.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3470,7 +3315,6 @@
 	{Human "" 0x80a8
 		{Position -136.5 -997.29}
 		{xform zl 49.01}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3489,7 +3333,6 @@
 	{Human "" 0x80a9
 		{Position -120.67 -1026.4}
 		{xform zl 36.97}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3508,7 +3351,6 @@
 	{Human "" 0x80aa
 		{Position -104.46 -1047.93}
 		{xform zl 36.97}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3527,7 +3369,6 @@
 	{Human "" 0x80ab
 		{Position -351.63 -852.6}
 		{xform zl 51.64}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3546,7 +3387,6 @@
 	{Human "" 0x80ac
 		{Position -313.89 -882.46}
 		{xform zl 51.64}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3613,7 +3453,6 @@
 	{Human "" 0x80c3
 		{Position 5182.87 -2889.42}
 		{xform zl -176.71}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3632,7 +3471,6 @@
 	{Human "" 0x80c4
 		{Position 5083.83 -3946.68}
 		{xform zl -115.57}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3651,7 +3489,6 @@
 	{Human "" 0x80c5
 		{Position 5056.24 -3941.43}
 		{xform zl -162.61}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3670,7 +3507,6 @@
 	{Human "" 0x80c6
 		{Position 5108.52 -3969.58}
 		{xform zl -136.19}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3689,7 +3525,6 @@
 	{Human "" 0x80c7
 		{Position 5049.02 -3916.69}
 		{xform zl -162.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3708,7 +3543,6 @@
 	{Human "" 0x80c8
 		{Position 5041.09 -3884.71}
 		{xform zl 170.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3727,7 +3561,6 @@
 	{Human "" 0x80c9
 		{Position 5551.44 -2349.72}
 		{xform zl 152.79}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3746,7 +3579,6 @@
 	{Human "" 0x80ca
 		{Position 5637.46 -2308.87}
 		{xform zl 99.41}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3765,7 +3597,6 @@
 	{Human "" 0x80cb
 		{Position 5698.37 -2309.54}
 		{xform zl 77.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3784,7 +3615,6 @@
 	{Human "" 0x80cc
 		{Position 5580.68 -2317.63}
 		{xform zl 105.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3803,7 +3633,6 @@
 	{Human "" 0x80cd
 		{Position 5556.33 -2324.51}
 		{xform zl 105.76}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3823,7 +3652,6 @@
 	{Human "" 0x80ce
 		{Position 5615.13 -2324.86}
 		{xform zl 99.41}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3842,7 +3670,6 @@
 	{Human "" 0x80cf
 		{Position 5669.3 -2303.3}
 		{xform zl 77.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3861,7 +3688,6 @@
 	{Human "" 0x80d0
 		{Position 5727.44 -2315.78}
 		{xform zl 77.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3880,7 +3706,6 @@
 	{Human "" 0x80d1
 		{Position 5177.63 -2769.69}
 		{xform zl -177.69}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3899,7 +3724,6 @@
 	{Human "" 0x80d2
 		{Position 5211.43 -1966.34}
 		{xform zl 92.43}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3918,7 +3742,6 @@
 	{Human "" 0x80d3
 		{Position 5139.38 -2023.33}
 		{xform zl 164.92}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3937,7 +3760,6 @@
 	{Human "" 0x80d4
 		{Position 5183.38 -1991.5}
 		{xform zl 139.44}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3956,7 +3778,6 @@
 	{Human "" 0x80d5
 		{Position 5969.66 -2042.11}
 		{xform zl 146.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3975,7 +3796,6 @@
 	{Human "" 0x80d6
 		{Position 6010.36 -2014.96}
 		{xform zl 100.06}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3994,7 +3814,6 @@
 	{Human "" 0x80d7
 		{Position 5621.69 -1796.51}
 		{xform zl 136.53}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4013,7 +3832,6 @@
 	{Human "" 0x80d8
 		{Position 5678.41 -1781.4}
 		{xform zl 66.05}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4032,7 +3850,6 @@
 	{Human "" 0x80d9
 		{Position 5834.77 -3227.46}
 		{xform zl -91.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4051,7 +3868,6 @@
 	{Human "" 0x80da
 		{Position 5804.13 -3237.37}
 		{xform zl -81.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4070,7 +3886,6 @@
 	{Human "" 0x80db
 		{Position 5778.42 -3228.96}
 		{xform zl -81.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4089,7 +3904,6 @@
 	{Human "" 0x80dc
 		{Position 5665.21 -3195.28}
 		{xform zl -148.22}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4108,7 +3922,6 @@
 	{Human "" 0x80dd
 		{Position 5675.25 -3211.48}
 		{xform zl -148.22}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4127,7 +3940,6 @@
 	{Human "" 0x80de
 		{Position 5697.52 -3240.3}
 		{xform zl -134.04}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4146,7 +3958,6 @@
 	{Human "" 0x80df
 		{Position 5724.19 -3231.66}
 		{xform zl -87.02}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4165,7 +3976,6 @@
 	{Human "" 0x80e0
 		{Position 5756.3 -3244.52}
 		{xform zl -81.49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4184,7 +3994,6 @@
 	{Human "" 0x80e1
 		{Position 5136.18 -2720.07}
 		{xform zl -133.66}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4203,7 +4012,6 @@
 	{Human "" 0x80e2
 		{Position 5155.27 -3109.31}
 		{xform zl 176.48}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4222,7 +4030,6 @@
 	{Human "" 0x80e3
 		{Position 5114.88 -2682.81}
 		{xform zl -174.05}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4241,7 +4048,6 @@
 	{Human "" 0x80e4
 		{Position 4939.67 -3535.47}
 		{xform zl -179.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4260,7 +4066,6 @@
 	{Human "" 0x80e5
 		{Position 4949.56 -3484.92}
 		{xform zl 134.65}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4279,7 +4084,6 @@
 	{Human "" 0x80e6
 		{Position 5162.16 -3034.74}
 		{xform zl -142.8}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4298,7 +4102,6 @@
 	{Human "" 0x80e7
 		{Position 5132.66 -2627.44}
 		{xform zl 138.26}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4317,7 +4120,6 @@
 	{Human "" 0x80e8
 		{Position 5161.94 -2997.16}
 		{xform zl 170.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4336,7 +4138,6 @@
 	{Human "" 0x80e9
 		{Position 5178.93 -2802.03}
 		{xform zl -177.69}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4355,7 +4156,6 @@
 	{Human "" 0x80ea
 		{Position 5179.99 -2839.34}
 		{xform zl -176.71}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4455,7 +4255,6 @@
 	{Human "" 0x807f
 		{Position 4283.98 -2295.29}
 		{xform zl -19.04}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4467,7 +4266,6 @@
 	{Human "" 0x80ad
 		{Position 2882.24 -3300.75}
 		{xform zl -20.26}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4486,7 +4284,6 @@
 	{Human "" 0x80b8
 		{Position -1179.41 -1720.8}
 		{xform zl -162.35}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4498,7 +4295,6 @@
 	{Human "" 0x80eb
 		{Position 663.06 -36.18}
 		{xform zl 110.33}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4510,7 +4306,6 @@
 	{Human "" 0x8100
 		{Position 611.82 -2752.8}
 		{xform zl -65.11}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4529,7 +4324,6 @@
 	{Human "" 0x8101
 		{Position -572.06 631.94}
 		{xform zl 124.79}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4541,7 +4335,6 @@
 	{Human "" 0x8102
 		{Position 1502.47 -466.22}
 		{xform zl 146.2}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4553,7 +4346,6 @@
 	{Human "" 0x8103
 		{Position 4828.77 224.04}
 		{xform zl 53}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4572,7 +4364,6 @@
 	{Human "" 0x8104
 		{Position -1225.78 -2599.35}
 		{xform zl -139.07}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4584,7 +4375,6 @@
 	{Human "" 0x8105
 		{Position 3146.68 674.88}
 		{xform zl 48}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4603,7 +4393,6 @@
 	{Human "" 0x8106
 		{Position -173.38 -709.3}
 		{xform zl -168.34}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4615,7 +4404,6 @@
 	{Human "" 0x8107
 		{Position 1626.58 -2933.14}
 		{xform zl -107.67}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4634,7 +4422,6 @@
 	{Human "" 0x8108
 		{Position 348.05 1543.18}
 		{xform zl 165.55}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4653,7 +4440,6 @@
 	{Human "" 0x8109
 		{Position 4135.69 1778.28}
 		{xform zl 49}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4672,7 +4458,6 @@
 	{Human "" 0x810a
 		{Position 3700.03 -1668.4}
 		{xform zl 26.15}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4684,7 +4469,6 @@
 	{Human "" 0x810b
 		{Position 94.14 -2016.17}
 		{xform zl -139.07}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4696,7 +4480,6 @@
 	{Human "" 0x810e
 		{Position 2954.59 3841.84}
 		{xform zl -12.38}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4715,7 +4498,6 @@
 	{Human "" 0x810f
 		{Position -1772.59 1053.51}
 		{xform zl -148.47}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4734,7 +4516,6 @@
 	{Human "" 0xa007
 		{Position 1041.68 -829.45}
 		{xform zl -66.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4753,7 +4534,6 @@
 	{Human "" 0xa008
 		{Position -914.09 -1400.09}
 		{xform zl -140.1}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4772,7 +4552,6 @@
 	{Human "" 0xa009
 		{Position 1822.85 2568.19}
 		{xform zl 99.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4791,7 +4570,6 @@
 	{Human "" 0xa00a
 		{Position 3263.87 2320.18}
 		{xform zl 50.38}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4810,7 +4588,6 @@
 	{Human "" 0xa00b
 		{Position 1721.67 233.84}
 		{xform zl -44.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4829,7 +4606,6 @@
 	{Human "" 0xa00c
 		{Position 2205.11 3504.97}
 		{xform zl 116.86}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4848,7 +4624,6 @@
 	{Human "" 0xa00d
 		{Position -1418 2506.58}
 		{xform zl 124.07}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4867,7 +4642,6 @@
 	{Human "" 0xa00e
 		{Position 3099.87 11.39}
 		{xform zl -15.31}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4886,7 +4660,6 @@
 	{Human "" 0xa00f
 		{Position -2441.75 -1149.52}
 		{xform zl -123.31}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4905,7 +4678,6 @@
 	{Human "" 0xa010
 		{Position 2921.78 1497.57}
 		{xform zl -59.44}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4924,7 +4696,6 @@
 	{Human "" 0xa011
 		{Position 1034.23 3478.5}
 		{xform zl 92.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4943,7 +4714,6 @@
 	{Human "" 0xa012
 		{Position -1862.2 2643.04}
 		{xform zl -178.33}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4962,7 +4732,6 @@
 	{Human "" 0xa013
 		{Position -2433.89 1447.73}
 		{xform zl 81.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4981,7 +4750,6 @@
 	{Human "" 0xa014
 		{Position -225.61 -1215.54}
 		{xform zl -61.4}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5000,7 +4768,6 @@
 	{Human "" 0xa019
 		{Position -5943.98 -1823.3}
 		{xform zl -121.93}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5019,7 +4786,6 @@
 	{Human "" 0xa01a
 		{Position -5766.91 1108.96}
 		{xform zl 76.23}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5038,7 +4804,6 @@
 	{Human "" 0xa01b
 		{Position -5750.82 1203.18}
 		{xform zl 108.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5057,7 +4822,6 @@
 	{Human "" 0xa01c
 		{Position -3794.09 469.57}
 		{xform zl 26.87}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5076,7 +4840,6 @@
 	{Human "" 0xa01d
 		{Position -3826.46 -2348.78}
 		{xform zl -44}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5095,7 +4858,6 @@
 	{Human "" 0xa01e
 		{Position -4913.24 1795.68}
 		{xform zl 132.91}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5114,7 +4876,6 @@
 	{Human "" 0xa01f
 		{Position -4850 1815.87}
 		{xform zl 107.16}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5133,7 +4894,6 @@
 	{Human "" 0xa020
 		{Position -3283.67 -388.89}
 		{xform zl -42.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5152,7 +4912,6 @@
 	{Human "" 0xa021
 		{Position -5790.35 -1948.98}
 		{xform zl -23.21}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5171,7 +4930,6 @@
 	{Human "" 0xa022
 		{Position -3924.03 771.97}
 		{xform zl 64.63}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5190,7 +4948,6 @@
 	{Human "" 0xa023
 		{Position -5462.92 -1813.47}
 		{xform zl -84.36}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5209,7 +4966,6 @@
 	{Human "" 0xa024
 		{Position -4298.15 -1375.53}
 		{xform zl -93.93}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5228,7 +4984,6 @@
 	{Human "" 0xa025
 		{Position -4660.36 920.55}
 		{xform zl 81.97}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5247,7 +5002,6 @@
 	{Human "" 0xa026
 		{Position -3735.16 -1119.03}
 		{xform zl 43.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5266,7 +5020,6 @@
 	{Human "" 0xa027
 		{Position -4673.96 -1960.93}
 		{xform zl -76.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5285,7 +5038,6 @@
 	{Human "" 0xa028
 		{Position -3975.43 -2358.94}
 		{xform zl -140.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5304,7 +5056,6 @@
 	{Human "" 0xa02d
 		{Position 589.43 -376.2}
 		{xform zl 0.39}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5323,7 +5074,6 @@
 	{Human "" 0xa02e
 		{Position -2500.74 1451.31}
 		{xform zl 84.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5343,7 +5093,6 @@
 	{Human "" 0xa02f
 		{Position 1731.86 346.11}
 		{xform zl 40}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5362,7 +5111,6 @@
 	{Human "" 0xa030
 		{Position 197.84 -2929.51}
 		{xform zl -65.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5374,7 +5122,6 @@
 	{Human "" 0xa031
 		{Position -1275.64 1448.69}
 		{xform zl 115.27}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5393,7 +5140,6 @@
 	{Human "" 0xa032
 		{Position -2676 820.75}
 		{xform zl 93.05}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5412,7 +5158,6 @@
 	{Human "" 0xa033
 		{Position -452.91 -3000.85}
 		{xform zl -87.12}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5424,7 +5169,6 @@
 	{Human "" 0xa034
 		{Position -2522.62 -3184.91}
 		{xform zl -88.88}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5443,7 +5187,6 @@
 	{Human "" 0xa035
 		{Position -3226.47 -2150.79}
 		{xform zl 155.85}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5462,7 +5205,6 @@
 	{Human "" 0xa036
 		{Position -2683.82 -168.88}
 		{xform zl -158.09}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5481,7 +5223,6 @@
 	{Human "" 0xa037
 		{Position -2148.84 -3207.83}
 		{xform zl -125.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5500,7 +5241,6 @@
 	{Human "" 0xa038
 		{Position -3769.47 285.27}
 		{xform zl 146.21}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5519,7 +5259,6 @@
 	{Human "" 0xa039
 		{Position -313.52 937.22}
 		{xform zl 41.67}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5538,7 +5277,6 @@
 	{Human "" 0xa03a
 		{Position 255.61 1441.12}
 		{xform zl 47.3}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5557,7 +5295,6 @@
 	{Human "" 0xa03b
 		{Position 1509.87 -1592.15}
 		{xform zl -29.58}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5576,7 +5313,6 @@
 	{Human "" 0xa03c
 		{Position 374.93 -1736.82}
 		{xform zl -10.43}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5588,7 +5324,6 @@
 	{Human "" 0xa041
 		{Position 5399.5 -1013.46}
 		{xform zl 68.61}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5607,7 +5342,6 @@
 	{Human "" 0xa042
 		{Position 4969.37 -4325.9}
 		{xform zl -91.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5626,7 +5360,6 @@
 	{Human "" 0xa043
 		{Position 6188.64 -3456.55}
 		{xform zl -66.19}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5645,7 +5378,6 @@
 	{Human "" 0xa044
 		{Position 4033.12 -22.83}
 		{xform zl 125.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5664,7 +5396,6 @@
 	{Human "" 0xa045
 		{Position 4370.25 -2855.88}
 		{xform zl 145.14}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5676,7 +5407,6 @@
 	{Human "" 0xa046
 		{Position 4562.02 -2251.83}
 		{xform zl 172.46}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5688,7 +5418,6 @@
 	{Human "" 0xa047
 		{Position 7021.08 -771}
 		{xform zl 133.95}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5708,7 +5437,6 @@
 	{Human "" 0xa048
 		{Position 4362.69 -4035.44}
 		{xform zl -132.42}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5727,7 +5455,6 @@
 	{Human "" 0xa049
 		{Position 4838.27 -977.98}
 		{xform zl 117.09}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5739,7 +5466,6 @@
 	{Human "" 0xa04a
 		{Position 4160.69 -3239.2}
 		{xform zl -158.7}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5751,7 +5477,6 @@
 	{Human "" 0xa04b
 		{Position 6026.53 -365.82}
 		{xform zl 55.44}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5770,7 +5495,6 @@
 	{Human "" 0xa04c
 		{Position 3529.55 -3045.18}
 		{xform zl -150.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5782,7 +5506,6 @@
 	{Human "" 0xa04d
 		{Position 6754.9 -4693.19}
 		{xform zl -53.79}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5801,7 +5524,6 @@
 	{Human "" 0xa04e
 		{Position 4661.12 -1504.37}
 		{xform zl 87.04}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5820,7 +5542,6 @@
 	{Human "" 0xa04f
 		{Position 2951.16 -1905.84}
 		{xform zl 135.74}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5839,7 +5560,6 @@
 	{Human "" 0xa050
 		{Position 4019.89 -3683.53}
 		{xform zl 140.17}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -6092,9 +5812,6 @@
 		{Volume "1blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
-		{Volume "spin1"
-			{able {contact 1}{contact_ground 1}{touch 1}}
-		}
 		{Volume "2blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -6103,6 +5820,9 @@
 		}
 		{Volume "2blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "spin1"
+			{able {contact 1}{contact_ground 1}{touch 1}}
 		}
 		{Volume "spin2"
 			{able {contact 1}{contact_ground 1}{touch 1}}
@@ -7029,7 +6749,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0xe017
-		{Position 2176.88 5564.49}
+		{Position 2176.87 5564.49}
 		{xform zl 122.94}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -7089,7 +6809,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0xe01b
-		{Position -2103.14 1843.58}
+		{Position -2103.13 1843.58}
 		{xform zl -53.49}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -7948,7 +7668,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x8142
-		{Position 2513.38 2022.45}
+		{Position 2513.37 2022.45}
 		{xform zl -146.7}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -8950,7 +8670,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8185
-		{Position 107.97 -2239.64}
+		{Position 107.97 -2239.63}
 		{xform zl -94.92}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -8965,7 +8685,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8186
-		{Position 141.33 -2338.14}
+		{Position 141.33 -2338.13}
 		{xform zl -94.92}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -9010,7 +8730,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x8189
-		{Position 180.93 -2245.63}
+		{Position 180.93 -2245.62}
 		{xform zl -94.92}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -9130,7 +8850,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8191
-		{Position -6517.47 2087.88}
+		{Position -6517.47 2087.87}
 		{xform zl -26.22}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -9354,7 +9074,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x81a0
-		{Position -4872.81 2093.88}
+		{Position -4872.81 2093.87}
 		{xform zl 37.34}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -9802,7 +9522,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x81bf
-		{Position -4282.79 2062.13}
+		{Position -4282.79 2062.12}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -10827,7 +10547,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x8204
-		{Position -2071.88 -145.07}
+		{Position -2071.87 -145.07}
 		{xform zl 5.43}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -10946,7 +10666,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x820c
-		{Position -3239.06 2276.88}
+		{Position -3239.06 2276.87}
 		{xform zl -126.63}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -14190,7 +13910,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0xc00b
-		{Position -5041.94 2085.38}
+		{Position -5041.94 2085.37}
 		{xform zl 37.34}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -14604,7 +14324,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0xc053
-		{Position -2461.64 -278.87}
+		{Position -2461.63 -278.87}
 		{xform zl -77.87}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -14634,7 +14354,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0xc055
-		{Position -2740.1 2324.38}
+		{Position -2740.1 2324.37}
 		{xform zl 138.22}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -14709,7 +14429,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0xc05a
-		{Position -2254.64 2105.14}
+		{Position -2254.63 2105.13}
 		{xform zl -23.54}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -15549,12 +15269,361 @@
 			{Current "airborne"}
 		}
 	}
+	{Entity "fly_small" 0x8001
+		{Position 5753.96 -3095.07 128.69}
+	}
+	{Entity "fly_small" 0x8002
+		{Position 2824.42 -4270.69 105.29}
+	}
+	{Entity "fly_small" 0x8009
+		{Position -3457.88 -2390.2 166.64}
+	}
 	{Link 0x8000 {0x802f "sandbags"}}
 	{Link 0x810d {0x8112 "driver"}}
 	{Link 0x8110 {0x8112 "gunner"}}
 	{Link 0x8111 {0x82d6 "driver"}}
 	{Link 0x82f3 {0x82f5 "driver"}}
 	{Link 0x82f4 {0x82f5 "gunner"}}
+	{Tags "bare" 0x753}
+	{Tags "bare" 0x5158}
+	{Tags "bare" 0x5173}
+	{Tags "bare" 0x5176}
+	{Tags "bare" 0x5177}
+	{Tags "bare" 0x518c}
+	{Tags "bare" 0x5192}
+	{Tags "bare" 0x5193}
+	{Tags "bare" 0x5194}
+	{Tags "bare" 0x5331}
+	{Tags "bare" 0x533e}
+	{Tags "bare" 0x5351}
+	{Tags "bare" 0x5311}
+	{Tags "bare" 0x5312}
+	{Tags "bare" 0x700b}
+	{Tags "bare" 0x7027}
+	{Tags "bare" 0x7034}
+	{Tags "bare" 0x7037}
+	{Tags "bare" 0x7038}
+	{Tags "bare" 0x7068}
+	{Tags "bare" 0x7072}
+	{Tags "bare" 0x7074}
+	{Tags "bare" 0x707a}
+	{Tags "bare" 0x7093}
+	{Tags "bare" 0x70a7}
+	{Tags "bare" 0x70ba}
+	{Tags "bare" 0x70c4}
+	{Tags "bare" 0x70d6}
+	{Tags "bare" 0x70e0}
+	{Tags "bare" 0x70e3}
+	{Tags "bare" 0x70e4}
+	{Tags "bare" 0x70f9}
+	{Tags "bare" 0x70ff}
+	{Tags "bare" 0x7100}
+	{Tags "bare" 0x7101}
+	{Tags "bare" 0x7112}
+	{Tags "bare" 0x7120}
+	{Tags "bare" 0x7133}
+	{Tags "bare" 0x4060}
+	{Tags "bare" 0x4062}
+	{Tags "bare" 0x406c}
+	{Tags "bare" 0x4072}
+	{Tags "bare" 0x4073}
+	{Tags "bare" 0x4074}
+	{Tags "bare" 0x4083}
+	{Tags "bare" 0x4092}
+	{Tags "bare" 0x4093}
+	{Tags "bare" 0x40a2}
+	{Tags "bare" 0x1bf}
+	{Tags "bare" 0x1d1}
+	{Tags "bare" 0x1db}
+	{Tags "bare" 0x1df}
+	{Tags "bare" 0x1e0}
+	{Tags "bare" 0x1f3}
+	{Tags "bare" 0x1f9}
+	{Tags "bare" 0x1fa}
+	{Tags "bare" 0x1fb}
+	{Tags "bare" 0x20a}
+	{Tags "bare" 0x220}
+	{Tags "bare" 0x4159}
+	{Tags "bare" 0x415c}
+	{Tags "bare" 0x4165}
+	{Tags "bare" 0x4167}
+	{Tags "bare" 0x4168}
+	{Tags "bare" 0x417c}
+	{Tags "bare" 0x4183}
+	{Tags "bare" 0x4184}
+	{Tags "bare" 0x4185}
+	{Tags "bare" 0x4197}
+	{Tags "bare" 0x60e3}
+	{Tags "bare" 0x60ea}
+	{Tags "bare" 0x60f8}
+	{Tags "bare" 0x6100}
+	{Tags "bare" 0x6101}
+	{Tags "bare" 0x6119}
+	{Tags "bare" 0x6154}
+	{Tags "bare" 0x6190}
+	{Tags "bare" 0x61bb}
+	{Tags "bare" 0x61d5}
+	{Tags "bare" 0x61e6}
+	{Tags "bare" 0x6204}
+	{Tags "bare" 0x6210}
+	{Tags "bare" 0x6213}
+	{Tags "bare" 0x6214}
+	{Tags "bare" 0x6225}
+	{Tags "bare" 0x622b}
+	{Tags "bare" 0x622c}
+	{Tags "bare" 0x622d}
+	{Tags "bare" 0x21f5}
+	{Tags "bare" 0x21f8}
+	{Tags "bare" 0x21f9}
+	{Tags "bare" 0x220c}
+	{Tags "bare" 0x221e}
+	{Tags "bare" 0x2224}
+	{Tags "bare" 0x2227}
+	{Tags "bare" 0x2232}
+	{Tags "bare" 0x2233}
+	{Tags "bare" 0x39c}
+	{Tags "bare" 0x5068}
+	{Tags "bare" 0x506e}
+	{Tags "bare" 0x507d}
+	{Tags "bare" 0x507e}
+	{Tags "bare" 0x5099}
+	{Tags "bare" 0x50a5}
+	{Tags "bare" 0x50b2}
+	{Tags "bare" 0x50b6}
+	{Tags "bare" 0x50c5}
+	{Tags "bare" 0x50c6}
+	{Tags "bare" 0x50cb}
+	{Tags "bare" 0x50df}
+	{Tags "bare" 0x50ea}
+	{Tags "bare" 0x50f6}
+	{Tags "bare" 0x5112}
+	{Tags "bare" 0x511f}
+	{Tags "bare" 0x512e}
+	{Tags "bare" 0x5149}
+	{Tags "bare" 0x5154}
+	{Tags "bare" 0x516b}
+	{Tags "bare" 0x51af}
+	{Tags "bare" 0x51ba}
+	{Tags "bare" 0x51cf}
+	{Tags "bare" 0x51e5}
+	{Tags "bare" 0x404}
+	{Tags "bare" 0x405}
+	{Tags "bare" 0x20cf}
+	{Tags "bare" 0x20d1}
+	{Tags "bare" 0x20d2}
+	{Tags "bare" 0x2257}
+	{Tags "bare" 0x6273}
+	{Tags "bare" 0x4095}
+	{Tags "bare" 0x41d4}
+	{Tags "bare" 0x41dc}
+	{Tags "bare" 0x41e6}
+	{Tags "bare" 0x41f2}
+	{Tags "bare" 0x41f9}
+	{Tags "bare" 0x41fc}
+	{Tags "bare" 0x41fd}
+	{Tags "bare" 0x4216}
+	{Tags "bare" 0x423a}
+	{Tags "bare" 0x425b}
+	{Tags "bare" 0x429b}
+	{Tags "bare" 0x42e9}
+	{Tags "bare" 0x42f7}
+	{Tags "bare" 0x2265}
+	{Tags "bare" 0x2270}
+	{Tags "bare" 0x2283}
+	{Tags "bare" 0x2294}
+	{Tags "bare" 0x2295}
+	{Tags "bare" 0x22a5}
+	{Tags "bare" 0x22ab}
+	{Tags "bare" 0x22b5}
+	{Tags "bare" 0x428}
+	{Tags "bare" 0x42c}
+	{Tags "bare" 0x42f}
+	{Tags "bare" 0x430}
+	{Tags "bare" 0x44c}
+	{Tags "bare" 0x452}
+	{Tags "bare" 0x453}
+	{Tags "bare" 0x454}
+	{Tags "bare" 0x22ec}
+	{Tags "bare" 0x22f2}
+	{Tags "bare" 0x22f3}
+	{Tags "bare" 0x1075}
+	{Tags "bare" 0x1077}
+	{Tags "bare" 0x108b}
+	{Tags "bare" 0x1091}
+	{Tags "bare" 0x1092}
+	{Tags "bare" 0x1093}
+	{Tags "bare" 0x10c1}
+	{Tags "bare" 0x598}
+	{Tags "bare" 0x5a2}
+	{Tags "bare" 0x5ad}
+	{Tags "bare" 0x61ac}
+	{Tags "bare" 0x627d}
+	{Tags "bare" 0x5e6}
+	{Tags "bare" 0x5f2}
+	{Tags "bare" 0x4353}
+	{Tags "bare" 0x4359}
+	{Tags "bare" 0x435a}
+	{Tags "bare" 0x71ca}
+	{Tags "bare" 0x71d8}
+	{Tags "bare" 0x71e3}
+	{Tags "bare" 0x7206}
+	{Tags "bare" 0x7213}
+	{Tags "bare" 0x7221}
+	{Tags "bare" 0x7224}
+	{Tags "bare" 0x138}
+	{Tags "bare" 0x141}
+	{Tags "bare" 0x142}
+	{Tags "bare" 0x14b}
+	{Tags "bare" 0x151}
+	{Tags "bare" 0x15f}
+	{Tags "bare" 0x61c}
+	{Tags "bare" 0x69a}
+	{Tags "bare" 0x6ac}
+	{Tags "bare" 0x6be}
+	{Tags "bare" 0x315f}
+	{Tags "bare" 0x3161}
+	{Tags "bare" 0x2342}
+	{Tags "bare" 0x2346}
+	{Tags "bare" 0x43df}
+	{Tags "bare" 0x43e7}
+	{Tags "bare" 0x43f1}
+	{Tags "bare" 0x43fa}
+	{Tags "bare" 0x43fd}
+	{Tags "bare" 0x43fe}
+	{Tags "bare" 0x43ff}
+	{Tags "bare" 0x2364}
+	{Tags "bare" 0x723}
+	{Tags "bare" 0x724}
+	{Tags "bare" 0x72a}
+	{Tags "bare" 0x72b}
+	{Tags "bare" 0x72c}
+	{Tags "bare" 0x73a}
+	{Tags "bare" 0x62ee}
+	{Tags "bare" 0x62f7}
+	{Tags "bare" 0x6303}
+	{Tags "bare" 0x6314}
+	{Tags "bare" 0x2381}
+	{Tags "bare" 0x23b7}
+	{Tags "bare" 0x23cb}
+	{Tags "bare" 0x6340}
+	{Tags "bare" 0x6352}
+	{Tags "bare" 0x2408}
+	{Tags "bare" 0x2410}
+	{Tags "bare" 0x2422}
+	{Tags "bare" 0x2434}
+	{Tags "bare" 0x641f}
+	{Tags "bare" 0x6425}
+	{Tags "bare" 0x642e}
+	{Tags "bare" 0x6430}
+	{Tags "bare" 0x6447}
+	{Tags "bare" 0x644e}
+	{Tags "bare" 0x646c}
+	{Tags "bare" 0x647b}
+	{Tags "bare" 0x649a}
+	{Tags "bare" 0x649c}
+	{Tags "bare" 0x649e}
+	{Tags "bare" 0x64a4}
+	{Tags "bare" 0x64a5}
+	{Tags "bare" 0x64a6}
+	{Tags "bare" 0x64ba}
+	{Tags "bare" 0x1139}
+	{Tags "bare" 0x1141}
+	{Tags "bare" 0x114a}
+	{Tags "bare" 0x861}
+	{Tags "bare" 0x867}
+	{Tags "bare" 0x868}
+	{Tags "bare" 0x64ed}
+	{Tags "bare" 0x64ef}
+	{Tags "bare" 0x64f1}
+	{Tags "bare" 0x64fd}
+	{Tags "bare" 0x6517}
+	{Tags "bare" 0x6528}
+	{Tags "bare" 0x6538}
+	{Tags "bare" 0x6561}
+	{Tags "bare" 0x6568}
+	{Tags "bare" 0x24b0}
+	{Tags "bare" 0x24c3}
+	{Tags "bare" 0x24ce}
+	{Tags "bare" 0x24dd}
+	{Tags "bare" 0x24e8}
+	{Tags "bare" 0x9ed}
+	{Tags "bare" 0xa11}
+	{Tags "bare" 0x64dc}
+	{Tags "bare" 0x64dd}
+	{Tags "bare" 0x64e0}
+	{Tags "bare" 0x65ce}
+	{Tags "bare" 0x65d5}
+	{Tags "bare" 0x2558}
+	{Tags "bare" 0x45f3}
+	{Tags "bare" 0x45fe}
+	{Tags "bare" 0x258a}
+	{Tags "bare" 0x119e}
+	{Tags "bare" 0x11a0}
+	{Tags "bare" 0x11a4}
+	{Tags "bare" 0x11a5}
+	{Tags "bare" 0x11a6}
+	{Tags "bare" 0x5257}
+	{Tags "bare" 0x5259}
+	{Tags "bare" 0x525d}
+	{Tags "bare" 0x525e}
+	{Tags "bare" 0x525f}
+	{Tags "bare" 0x527e}
+	{Tags "bare" 0x5287}
+	{Tags "bare" 0x528d}
+	{Tags "bare" 0x529d}
+	{Tags "bare" 0x52b7}
+	{Tags "bare" 0x52bf}
+	{Tags "bare" 0x52c8}
+	{Tags "bare" 0x4624}
+	{Tags "bare" 0x462d}
+	{Tags "bare" 0x2598}
+	{Tags "bare" 0x25a1}
+	{Tags "bare" 0x25c1}
+	{Tags "bare" 0x663d}
+	{Tags "bare" 0x663e}
+	{Tags "bare" 0x6653}
+	{Tags "bare" 0x665c}
+	{Tags "bare" 0x667b}
+	{Tags "bare" 0x667f}
+	{Tags "bare" 0x668e}
+	{Tags "bare" 0x668f}
+	{Tags "bare" 0x6699}
+	{Tags "bare" 0x669b}
+	{Tags "bare" 0x669d}
+	{Tags "bare" 0x669e}
+	{Tags "bare" 0x669f}
+	{Tags "bare" 0x66ae}
+	{Tags "bare" 0x52d9}
+	{Tags "bare" 0x52f6}
+	{Tags "bare" 0x7138}
+	{Tags "bare" 0x7139}
+	{Tags "bare" 0x7140}
+	{Tags "bare" 0x714e}
+	{Tags "bare" 0x7154}
+	{Tags "bare" 0x715e}
+	{Tags "bare" 0x71a0}
+	{Tags "bare" 0x720d}
+	{Tags "bare" 0x7211}
+	{Tags "bare" 0x721b}
+	{Tags "bare" 0x721c}
+	{Tags "bare" 0x726e}
+	{Tags "bare" 0x7274}
+	{Tags "bare" 0x7275}
+	{Tags "bare" 0x7276}
+	{Tags "bare" 0x11fc}
+	{Tags "bare" 0x11fe}
+	{Tags "bare" 0x11ff}
+	{Tags "bare" 0x120e}
+	{Tags "bare" 0x1266}
+	{Tags "bare" 0x4683}
+	{Tags "bare" 0x468b}
+	{Tags "bare" 0x469a}
+	{Tags "bare" 0x46ab}
+	{Tags "bare" 0x46bc}
+	{Tags "bare" 0x46cc}
+	{Tags "fly_spawn" 0x66e9}
+	{Tags "fly_spawn" 0x6713}
+	{Tags "fly_spawn" 0x12d3}
 	{Tags "engine_count_2" "move_fast" 0xac5}
 	{Tags "engine_count_2" "move_fast" 0xac6}
 	{Tags "engine_count_2" "move_fast" 0xac7}
@@ -15563,19 +15632,23 @@
 	{Tags "engine_count_2" "move_fast" 0xad6}
 	{Tags "engine_count_2" "move_fast" 0xad7}
 	{Tags "engine_count_2" "move_fast" 0xad8}
-	{Tags "fpc1" 0x802f}
-	{Tags "fpc3" 0x8011}
-	{Tags "fpc5" 0x8003}
-	{Tags "fpc4" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
-	{Tags "fpc2" 0x8013}
+	{Tags "bare" 0x4049}
+	{Tags "bare" 0x404a}
+	{Tags "bare" 0x404d}
+	{Tags "bare" 0x404e}
+	{Tags "fpc1" "flag" 0x802f}
+	{Tags "fpc3" "flag" 0x8011}
+	{Tags "fpc5" "flag" 0x8003}
+	{Tags "fpc4" "flag" 0x8004}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
+	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
 	{Tags "cmp_def" "1_a_2-3" 0x8010}
@@ -18062,9 +18135,9 @@
 			{clear}
 			{item "tt33" filled {cell 0 0}}
 			{item "tt33" "ammo" 8 {cell 2 0}}
-			{item "tt33" "ammo" 4 {cell 3 0}}
-			{item "bandage_rus" {cell 4 0}}
-			{item "soviet_tankovy_helmet" {cell 6 0}{user "head"}}
+			{item "tt33" "ammo" 4 {cell 4 0}}
+			{item "bandage_rus" {cell 6 0}}
+			{item "soviet_tankovy_helmet" {cell 0 1}{user "head"}}
 		}
 	}
 	{Inventory 0x82f3
@@ -18090,1424 +18163,1707 @@
 	}
 	{Brain 0x800c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x800f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8012
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8014
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8015
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8018
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x801f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8023
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x802b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x802c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8031
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8032
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8033
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8034
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8035
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8036
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8037
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8038
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8039
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803e
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x803f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8040
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8041
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8042
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb000
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb001
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb002
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb003
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb004
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb005
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb006
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb007
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb008
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb009
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb00f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb011
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb012
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb013
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb014
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb015
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb016
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb017
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb018
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb01f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb023
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xb027
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x800b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8028
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8030
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8043
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8044
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8048
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x804c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x804d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x804f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8050
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8052
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8053
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8054
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8055
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8056
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8057
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8058
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8059
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x805f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8060
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8061
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8062
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8063
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8064
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8065
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8066
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8067
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8068
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8069
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806a
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x806e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8085
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8086
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8087
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8088
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8089
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x808f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8090
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8091
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8092
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8093
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8094
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8095
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8096
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8097
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8098
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8099
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x809f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a8
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80a9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80aa
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ab
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ac
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80c9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ca
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80cb
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80cc
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80cd
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ce
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80cf
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d6
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80d9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80da
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80db
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80dc
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80dd
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80de
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80df
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e0
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e1
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e2
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e3
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e4
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e5
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e6
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e7
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80e9
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ea
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x807f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80ad
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80b8
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x80eb
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8100
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8101
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8102
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8103
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8104
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8105
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8106
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8107
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8108
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8109
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa007
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa008
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa009
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa00f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa010
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa011
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa012
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa013
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa014
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa019
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa01f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa020
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa021
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa022
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa023
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa024
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa025
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa026
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa027
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa028
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa02f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa030
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa031
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa032
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa033
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa034
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa035
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa036
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa037
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa038
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa039
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa03a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa03b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa03c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa041
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa042
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa043
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa044
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa045
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa046
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa047
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa048
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa049
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04a
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04b
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04c
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04d
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04e
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa04f
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0xa050
 		{Properties
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x810d
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8110
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x8111
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
@@ -19524,12 +19880,14 @@
 	{Brain 0x82f3
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
 	{Brain 0x82f4
 		{Properties
 			{move_mode hold}
+			{advance_ratio 0.5}
 			{retreat_ratio 4}
 		}
 	}
@@ -19539,7 +19897,7 @@
 		}
 	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -19561,31 +19919,6 @@
 		{event "music_rnd"}
 		{event "music_start"}
 		{event "talk_on"}
-		{zone "circle"
-			{position 772.266 1624.31 167}
-			{Name "forward1"}
-			{Radius 1518.66}
-		}
-		{zone "circle"
-			{position 2208.28 -1194.76 38.3438}
-			{Name "forward2"}
-			{Radius 1630.9}
-		}
-		{zone "circle"
-			{position -5873.92 -436.316 44}
-			{Name "forward3"}
-			{Radius 2052.46}
-		}
-		{zone "circle"
-			{position -908.545 -1162.95 162.014}
-			{Name "forward4"}
-			{Radius 1490.31}
-		}
-		{zone "circle"
-			{position 5762.77 -2681.04 101}
-			{Name "forward5"}
-			{Radius 2198.19}
-		}
 		{zone "circle"
 			{position -668.957 -8978.16 0}
 			{Name "_bridge1"}
@@ -19650,6 +19983,31 @@
 			{Point 7237.41 1165.92}
 			{Point 7220.42 -3571.08}
 			{Point -1485.43 -3503.45}
+		}
+		{zone "circle"
+			{position 772.266 1624.31 167}
+			{Name "forward1"}
+			{Radius 1518.66}
+		}
+		{zone "circle"
+			{position 2208.28 -1194.76 38.3438}
+			{Name "forward2"}
+			{Radius 1630.9}
+		}
+		{zone "circle"
+			{position -5873.92 -436.316 44}
+			{Name "forward3"}
+			{Radius 2052.46}
+		}
+		{zone "circle"
+			{position -908.545 -1162.95 162.014}
+			{Name "forward4"}
+			{Radius 1490.31}
+		}
+		{zone "circle"
+			{position 5762.77 -2681.04 101}
+			{Name "forward5"}
+			{Radius 2198.19}
 		}
 		{zone "poly"
 			{position 805.969 1615.14 167}
@@ -32197,9 +32555,7 @@
 				{position 2769.64 -3419.94 44.9169}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

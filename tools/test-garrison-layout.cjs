@@ -1,5 +1,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert/strict');
 const s=require('./lib/sdl.cjs'),g=require('./garrison-layout.cjs');
+const wp=require('./lib/gem-waypoints.cjs');
+const staging=require('./lib/garrison-staging.cjs');
 const baseline=path.resolve(process.argv[2]||'../_survival_work/garrison-safe-20261007/baseline');
 const reports=JSON.parse(fs.readFileSync(path.join(__dirname,'../docs/realism/GARRISON_LAYOUT_REPORT.json')));
 const read=p=>fs.readFileSync(p,'latin1');
@@ -21,9 +23,12 @@ for(const [source,dest] of [['dcg_functions.inc','ufb_garrison_functions.inc'],[
 for(const m of reports.maps) {
     const rel='map/multi/'+m.map,original=read(path.join(baseline,rel,'campaign_capture_the_flag.mi'));
     const modified=read(path.join(g.resource,rel,'campaign_capture_the_flag.mi'));
+    wp.collect(path.join(g.resource,rel,'campaign_capture_the_flag.mi'),g.resource);
+    const zonesFixed=m.map==='dcg_karvola_winter'?staging.repairKarvolaZones(original,g.mapData(original)):original;
+    const expectedOriginal=staging.repairAddedAnchors(zonesFixed,g.mapData(zonesFixed)).text;
     assert.equal(modified.replace('\r\n(include "ufb_garrison_layout.inc")\r\n','')
         .replace('"../ufb_garrison_functions.inc"','"../dcg_functions.inc"')
-        .replace('"../ufb_garrison_script.inc"','"../dcg_script.inc"'),original,'Unrelated mission changes: '+m.map);
+        .replace('"../ufb_garrison_script.inc"','"../dcg_script.inc"'),expectedOriginal,'Unrelated mission changes: '+m.map);
     const data=g.mapData(original), generated=s.parse(read(path.join(g.resource,rel,'ufb_garrison_layout.inc')));
     const ids=new Set(generated.children.map(s.name));assert.equal(ids.size,generated.children.length);
     for(const id of ids)assert(!data.points.has(id),'Collision with original ID');
@@ -42,7 +47,9 @@ for(const m of reports.maps) {
             const originalNode=data.points.get(id), selected=s.parse(g.selectSide(original.slice(originalNode.start,originalNode.end),side==='a'?1:2)).children[0];
             const bodyShape=node=>tree(node,(value,owner)=>{
                 if(['position','Position'].includes(s.name(owner)))return 'coordinate';
-                return /^\d+$/.test(value)&&Number(value)>=11000?String((Number(value)-10000)%1000):value;
+                const identifier=value===s.name(owner)&&(s.child(owner,'position')||s.child(owner,'Position'));
+                const reference=['waypoint','transition','target_waypoint'].includes(s.name(owner))&&owner.tokens.length===2&&value===owner.tokens[1].value;
+                return (identifier||reference)&&g.aliasParts(value)?g.aliasParts(value).id:value;
             });
             assert.deepEqual(bodyShape(n),bodyShape(selected),'Changed garrison command '+alias);
             const p=(s.child(n,'position')||s.child(n,'Position')).tokens.slice(1).map(t=>Number(t.value));
@@ -57,11 +64,11 @@ for(const m of reports.maps) {
                 const issue=v.unsupported.find(x=>x.id===id);assert(issue,'Unreported shortfall');assert(Math.abs(issue.availableMetres-d)<1e-8);}
             for(const ref of s.all(n,r=>['waypoint','transition'].includes(s.name(r))&&r.tokens.length===2)) {
                 assert(ids.has(ref.tokens[1].value),'Dangling chain target');
-                assert.equal(Math.floor((Number(ref.tokens[1].value)-10000)/1000),spawn,'Chain crosses entry layouts');
+                assert.equal(g.aliasParts(ref.tokens[1].value).spawn,spawn,'Chain crosses entry layouts');
             }
         }
         assert.equal(found.size,v.unsupported.length,'Stale shortfall report');
-        assert.equal(generated.children.filter(n=>Math.floor((Number(s.name(n))-10000)/1000)===spawn).length,expected.length);
+        assert.equal(generated.children.filter(n=>g.aliasParts(s.name(n)).spawn===spawn).length,expected.length);
     }
 }
 assert.equal(variants,912);assert.equal(infantryUnsafe,0,'Infantry protection must hold on every supported entrance');

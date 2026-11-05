@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const assert = require('assert/strict');
 const sdl = require('./lib/sdl.cjs');
+const waypoints = require('./lib/gem-waypoints.cjs');
 
 function inspect(text, file = '<input>') {
     const ast = sdl.parse(text), issues = [];
@@ -40,20 +41,28 @@ function selfTest() {
     assert.equal(inspect('{"delay" {time 0.1}} {human {ai {advance_ratio 0.5}}}').length, 0);
     assert.equal(inspect('; {"actor_state" {ai {advance_ratio 0.5}}}\n').length, 0);
     assert.throws(() => inspect('{"actor_state"'));
-    return 13;
+    waypoints.checkID('8191');
+    for(const id of ['8192','11021'])assert.throws(()=>waypoints.checkID(id),/outside engine pool/);
+    return 16;
 }
 
 if (require.main === module) {
     const root = path.resolve(__dirname, '..');
     const tests = selfTest(), issues = [];
-    let files = 0;
+    let files = 0,waypointMaps = 0;
     for (const file of walk(path.join(root, 'mods'))) {
         if (!/\.(inc|mi)$/i.test(file) || !file.replaceAll('\\','/').includes('/resource/map/')) continue;
         files++;
-        try { issues.push(...inspect(fs.readFileSync(file, 'utf8'), path.relative(root, file).replaceAll('\\','/'))); }
+        try {
+            issues.push(...inspect(fs.readFileSync(file, 'utf8'), path.relative(root, file).replaceAll('\\','/')));
+            if(path.basename(file)==='campaign_capture_the_flag.mi'&&fs.existsSync(path.join(path.dirname(file),'ufb_garrison_layout.inc'))){
+                const marker=path.sep+'resource'+path.sep,resource=file.slice(0,file.indexOf(marker)+marker.length-1);
+                waypoints.collect(file,resource);waypointMaps++;
+            }
+        }
         catch (e) { issues.push({file: path.relative(root, file), error: e.message}); }
     }
-    console.log(JSON.stringify({files, regressionTests: tests, issues}, null, 2));
+    console.log(JSON.stringify({files, waypointMaps, regressionTests: tests, issues}, null, 2));
     if (issues.length) process.exitCode = 1;
 }
 module.exports = {inspect};

@@ -1,3 +1,5 @@
+(include "/map/multi/ufb_combat_autonomy.inc")
+
 ; UFB Conquest crew safety. Breed crew identity is queried as a property;
 ; the tag alternative also supports mission-created crew with an explicit tag.
 ; No movement orders are issued to user-controlled units.

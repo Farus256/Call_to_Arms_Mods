@@ -1,0 +1,206 @@
+// HF 4 targeting and native mission commands, with reviewed weapon-only fixes.
+const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
+const repo=p.resolve(__dirname,'..');
+const reference=p.resolve(repo,'../_survival_work/hf-update-20261105/reference/resource');
+const resource=p.join(repo,'mods/ultimate_frontline_bundle/resource');
+const read=(root,rel)=>fs.readFileSync(p.join(root,rel),'latin1');
+const shape=n=>({kind:n.kind,tokens:n.tokens.map(t=>t.value),children:n.children.map(shape)});
+function ammo(base){
+ const tree=s.parse(base),edits=[];
+ for(const target of tree.children[0].children.filter(n=>s.name(n)==='human')){
+  if(target.tokens[1]?.value==='in_cover')for(const n of target.children.filter(n=>s.name(n)==='grenade fg')){
+   assert(!s.child(n,'check_grenade'));edits.push({start:n.end-1,end:n.end-1,text:' {check_grenade}'});
+  }
+  // Keep a deliberately prepared player launcher. Automatic human target
+  // acquisition is restricted separately; explicit bazooka_shot still works.
+  const first=target.children[0];
+  edits.push({start:first.start,end:first.start,text:'; UFB: respect a player launcher already prepared in hand.\n'+['panzerfaust','ammo rocketlauncher'].map(name=>'\t\t{'+JSON.stringify(name)+' {enable_for_ai 0} {ready_for_shot}}').join('\n')+'\n\t\t'});
+  const launchers=target.children.filter(n=>['panzerfaust','ammo rocketlauncher'].includes(s.name(n)));
+  assert.equal(launchers.length,2); // Native prepared-weapon entries only.
+  const after=target.children.find(n=>s.name(n)==='ptr');assert(after);
+  // Reserve HEAT rifle grenades for armor while an ordinary firearm is usable.
+  const heat=target.children.find(n=>s.name(n)==='ammo rifle_grenade_at');assert(heat);
+  edits.push({start:heat.start,end:heat.end,text:''});
+  edits.push({start:after.end,end:after.end,text:'\n\t\t{"ammo rifle_grenade_at" {check_grenade}}'});
+ }
+ for(const e of edits.sort((a,b)=>b.start-a.start||b.end-a.end))base=base.slice(0,e.start)+e.text+base.slice(e.end);
+ return base;
+}
+function antiTankTargets(base){
+ const tree=s.parse(base),edits=[];
+ for(const selector of tree.children){const unit=s.child(selector,'unit'),group=s.child(selector,'group');if(!unit||!group)continue;
+  if(!/^range_\d+$/.test(unit.tokens[2]?.value||'')&&unit.tokens[2]?.value!=='ap')continue;
+  edits.push({start:group.tokens[0].end,end:group.tokens[0].end,text:'\n\t\t; UFB: automatic AT targeting reserves infantry for explicit critical/manual shots.\n\t\t{ignore {class human}}'});
+ }
+ assert(edits.length>=7);for(const e of edits.sort((a,b)=>b.start-a.start))base=base.slice(0,e.start)+e.text+base.slice(e.end);return base;
+}
+function fragTargets(base){
+ const at=base.indexOf('{ignore');assert(at>=0);
+ const end=base.indexOf('\n',at);assert(end>=0);
+ return base.slice(0,end)+'\n\n\t\t; UFB: a hand frag is for nearby infantry before armored targets.\n\t\t{sort {class human} {attacking} {in_range 25}}\n\t\t{sort {class human} {in_range 25}}\n'+base.slice(end);
+}
+
+const jobs=['launcher','at','critical','ap','smoke','idle'];
+const tag=(kind,role)=>`_ufb_combat_${kind}_${role}_%player`;
+const T=name=>`{tag {tag ${name}}}`;
+const P=name=>`{prop {prop ${name}}}`;
+const S=name=>`{state {state ${name}}}`;
+const I=(item,type='amount')=>`{with_item {type ${type}} {item "${item}"}${type==='amount'?' {min 1}':''}}`;
+const blocked=require('./infantry-job-policy.cjs').protectedHumanTags;
+function actor(kind,{acquire=false,all=false,item,using,extra=[],command=false}={}){
+ const select=acquire?(kind==='critical'||kind==='smoke'?T('_ufb_recent_hit'):P('human')):T(tag(kind,'actor'));
+ const include=[`{player {player "%player"}}`,P('human'),S('operatable'),...(!all?[S('user_control')]:[]),...(!command&&kind!=='idle'?[P('shooting')]:[]),...(item?[I(item)]:[]),...(using?[I(using,'using')]:[]),...extra].join('\n');
+ const exclude=[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),...blocked.filter(tag=>all||tag!=='reloading').map(T),T('_ufb_suppress_actor_%player'),...(kind==='idle'?[S('user_control')]:[]),...(['ap','at','smoke'].includes(kind)?[I('rocketlauncher','using')]:[]),...(!command?[T('_ufb_combat_busy'),T(`_ufb_combat_${kind}_cooldown`)]:[]),...(acquire?[T('_ufb_job_reserved'),...jobs.map(j=>T(tag(j,'actor')))]:[]),...(kind==='smoke'?['m15_wp','m42_wp','no77_wp'].map(n=>I(n,'existance')):[])].join('\n');
+ return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {select ${select}}\n {include ${include}}\n {exclude ${exclude}}\n}${acquire?'\n{amount 1}':''}`;
+}
+function enemy({kind,paired=false,vehicle=false,mgun=false,cover=false,threat=false}={}){
+ const vehicles=`${P('vehicle')} ${P('tank')} ${P('car')} ${P('cannon')}`;
+ const select=paired?T(tag(kind,'target')):threat?`${vehicles} ${I('mgun','using')}`:vehicle?vehicles:P('human');
+ const include=[`{relation {relation enemy} {player "%player"}}`,S('operatable'),...(mgun?[I('mgun','using')]:[]),...(cover?[T(`_ufb_combat_cover_%player`)]:[])].join('\n');
+ return `{source advanced}\n{ignore_captured_by_user 0}\n{group {select ${select}} {include ${include}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('airborne')} ${T('bleeding')} ${T('_bleedout_')} ${T('wounded_animation_playing')}}}`;
+}
+function see(a,e,min,max,pair){return `{selector ${a}}\n{enemy ${e}}\n{distance {mode in_range} {min ${min}} {max ${max}}}\n{detection visible}${pair?`\n{tag {"tag pair"} {"for selector" ${tag(pair,'actor')}} {"for enemy" ${tag(pair,'target')}}}`:''}`;}
+function friendlyNear(kind){return `{units {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}}\n{near_to {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include {relation {relation ally} {player "%player"}} ${S('operatable')}} {exclude ${S('dead')}}}}\n{distance 12}`;}
+function clear(kind,role){return `{"entity_state" {selector {ignore_captured_by_user 0} {tag ${tag(kind,role)}}} {tag_remove ${tag(kind,role)}}}`;}
+function action(kind,options,name,target){return `{"action" {selector ${actor(kind,{...options,command:true})}} {action ${name}} {target ${target||`{ignore_captured_by_user 0} {tag ${tag(kind,'target')}}`}}}`;}
+function cooldown(kind,options){return `{"effect" {selector ${actor(kind,{...options,command:true})}} {effect ufb_combat_${kind}_cooldown}}`;}
+function pairRoutine(kind,options){
+ const {min,max,vehicle=false,mgun=false,all=false,item,using,armorGuard=false,friendlyGuard=true,command,cover=false,threat=false}=options;
+ const aOptions={all,item,using};
+ const acquireActor=actor(kind,{...aOptions,acquire:true});
+ const pairedEnemy=enemy({kind,paired:true,vehicle,mgun,cover});
+ const expr=['1',...(friendlyGuard?['!2']:[]),...(armorGuard?['!3']:[])].join(' & ');
+ let execute=cooldown(kind,aOptions)+'\n'+action(kind,aOptions,command);
+ if(kind==='smoke')execute=`${cooldown(kind,aOptions)}\n{"effect" {selector ${actor(kind,{...aOptions,command:true})}} {effect ufb_combat_smoke_point_%player}}\n${action(kind,aOptions,'throw_sk_grenade',`{ignore_captured_by_user 0} {tag _ufb_combat_smoke_point_%player}`)}`;
+ return `; ${kind}: one reserved pair per player; no drop-orders or fire-mode changes.\n(define "ufb_combat_${kind}"
+ {"ufb/combat/${kind}/acquire %player"
+  {condition {terms {"1.see_actors" ${see(acquireActor,enemy({vehicle,mgun,threat}),min,max,kind)}}}}
+  {actions
+   {"effect" {selector {ignore_captured_by_user 0} {tag ${tag(kind,'actor')}}} {effect ufb_reserve_job}}
+   ${cover?`{"effect" {selector {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}} {effect ufb_combat_probe_cover_%player}}`:''}
+   {"delay" {time 6}}
+   ${clear(kind,'actor')}
+   ${clear(kind,'target')}
+   {"delay" {time 2}}
+   {"trigger" {name "ufb/combat/${kind}/acquire %player"}}
+  }
+ }
+ {"ufb/combat/${kind}/apply %player"
+  {condition {expression "${expr}"} {terms
+   {"1.see_actors" ${see(actor(kind,aOptions),pairedEnemy,min,max)}}
+   ${friendlyGuard?`{"2.near" ${friendlyNear(kind)}}`:''}
+   ${armorGuard?`{"3.see_actors" ${see(actor(kind,aOptions),enemy({vehicle:true}),0,110)}}`:''}
+  }}
+  {actions
+   {"con" {text "[UFB combat] ${kind} order: player %player"}}
+   ${execute}
+   {"delay" {time 1}}
+   {"trigger" {name "ufb/combat/${kind}/apply %player"}}
+  }
+ }
+)`;
+}
+function mission(){
+ const pieces=[`; UFB combat autonomy. Native commands consume existing inventory and keep native ranges.
+; Diplomacy is evaluated for EACH owning player, including cooperative and opposing teams.
+; Player ownership and active user capture are separate native states.
+; Only stationary troops already firing may receive extra offensive orders.
+; Prepared launchers are excluded from grenade/smoke switching; idle stowing is bot-only.
+`,
+ pairRoutine('at',{min:12,max:16,item:'at',vehicle:true,command:'throw_at_grenade'}),
+ pairRoutine('launcher',{min:18,max:25,item:'rocketlauncher',vehicle:true,command:'bazooka_shot'}),
+ pairRoutine('critical',{min:18,max:25,item:'rocketlauncher',mgun:true,all:true,armorGuard:true,cover:true,command:'bazooka_shot'}),
+ pairRoutine('ap',{min:14,max:20,item:'fg',command:'throw_ap_grenade'}),
+ pairRoutine('smoke',{min:30,max:110,item:'smoke',threat:true,friendlyGuard:false,command:'throw_sk_grenade'}),
+ `(define "ufb_combat_idle"
+ {"ufb/combat/idle/acquire %player"
+  {condition {terms {"1.entities" {selector ${actor('idle',{acquire:true,all:true,item:'weapon bullet',using:'rocketlauncher'})}}}}}
+  {actions
+   {"entity_state" {selector ${actor('idle',{acquire:true,all:true,item:'weapon bullet',using:'rocketlauncher'})}} {tag_add ${tag('idle','actor')}}}
+   {"delay" {time 0.5}}
+   ${clear('idle','actor')}
+   {"delay" {time 1.5}}
+   {"trigger" {name "ufb/combat/idle/acquire %player"}}
+  }
+ }
+ {"ufb/combat/idle/apply %player"
+  {condition {expression "1 & !2"} {terms
+   {"1.entities" {selector ${actor('idle',{all:true,item:'weapon bullet',using:'rocketlauncher'})}}}
+   {"2.see_actors" ${see(actor('idle',{all:true}),enemy(),0,110)}}
+   {"3.see_actors" ${see(actor('idle',{all:true}),enemy({vehicle:true}),0,110)}}
+  }}
+  {actions
+   {"inventory" {selector ${actor('idle',{all:true,item:'weapon bullet',using:'rocketlauncher',command:true})}} {action take} {item "weapon bullet"}}
+   {"delay" {time 1}}
+   {"trigger" {name "ufb/combat/idle/apply %player"}}
+  }
+ }
+)`];
+ pieces[pieces.length-1]=pieces.at(-1).replace('{expression "1 & !2"}','{expression "1 & !3"}');
+ for(let player=0;player<=16;player++)for(const kind of jobs)pieces.push(`("ufb_combat_${kind}" player(${player}))`);
+ return pieces.join('\n\n')+'\n(include "/map/multi/ufb_infantry_support.inc")\n';
+}
+function events(){
+ let out=`; Only tags and short-lived target coordinates; no damage, health or free ammunition.
+{on "ufb_reserve_job"
+ {tags add "_ufb_job_reserved"}
+ {delay 6 {tags remove "_ufb_job_reserved"}}
+}
+{on "ufb_autonomy_move_on" {tags add "_ufb_autonomy_moving"}}
+{on "ufb_autonomy_move_off" {tags remove "_ufb_autonomy_moving"}}
+{on "ufb_combat_hit"
+ {if not dead {if not linked {if not tagged "_ufb_recent_hit"
+  {tags add "_ufb_recent_hit"}
+  {delay 8 {tags remove "_ufb_recent_hit"}}
+ }}}
+}
+`;
+ for(const [kind,seconds]of Object.entries({ap:12,at:10,launcher:8,smoke:35,critical:30}))out+=`
+{on "ufb_combat_${kind}_cooldown"
+ {tags add "_ufb_combat_busy"}
+ {tags add "_ufb_combat_${kind}_cooldown"}
+ {delay 6 {tags remove "_ufb_combat_busy"}}
+ {delay ${seconds} {tags remove "_ufb_combat_${kind}_cooldown"}}
+}
+`;
+ out+=`
+(define "ufb_combat_target_events"
+ {on "ufb_combat_probe_cover_%player"
+  {if in_cover
+   {tags add "_ufb_combat_cover_%player"}
+   {delay 1 {tags remove "_ufb_combat_cover_%player"}}
+  else {tags remove "_ufb_combat_cover_%player"}}
+ }
+ {on "ufb_combat_smoke_point_%player" sync
+  {spawn "ufb_smoke_screen_point" local_offset 200 0 0 constrain_after_dir
+   {tags add "_ufb_combat_smoke_point_%player"}
+   {delay 3 {delete}}
+  }
+ }
+)
+`;
+ for(let player=0;player<=16;player++)out+=`("ufb_combat_target_events" player(${player}))\n`;
+ return out+'\n(include "ufb_infantry_support_events.inc")\n';
+}
+function expected(ref=reference){return [
+ {file:'set/target/ammo.set',text:ammo(read(ref,'set/target/ammo.set'))},
+ {file:'set/target/human_fg.inc',text:fragTargets(read(ref,'set/target/human_fg.inc'))},
+ {file:'set/target/human_ap.inc',text:antiTankTargets(read(ref,'set/target/human_ap.inc'))},
+ {file:'map/multi/ufb_combat_autonomy.inc',text:mission()},
+ {file:'set/interaction_entity/ufb_combat_events.inc',text:events()},
+ ...require('./infantry-extra.cjs').expected(ref)
+];}
+function verify(root=resource,ref=reference){
+ for(const e of expected(ref))assert.equal(read(root,e.file),e.text,e.file+' differs from reviewed autonomy policy');
+ const human=s.parse(read(root,'set/interaction_entity/human.inc')).children[0];
+ const hit=human.children.find(n=>s.name(n)==='on'&&n.tokens[1]?.value==='bullet_hit');
+ assert.equal(s.all(hit,n=>s.name(n)==='call'&&n.tokens[1]?.value==='ufb_combat_hit').length,1,'Missing one recent-hit hook');
+ assert.equal(human.children.filter(n=>s.name(n)==='include'&&n.tokens[1]?.value==='ufb_combat_events.inc').length,1);
+ for(const f of ['map/multi/ufb_crew_safety.inc','map/multi/ufb_crew_skirmish.inc'])assert.equal(s.parse(read(root,f)).children.filter(n=>s.name(n)==='include'&&n.tokens[1]?.value==='/map/multi/ufb_combat_autonomy.inc').length,1,'Missing shared entry point: '+f);
+ return {combatAutonomy:true,targetingFiles:3,playerSlots:17,manualCaptureAndMovementProtected:true,automaticATInfantryTargetsRestricted:true};
+}
+if(require.main===module){
+ if(process.argv.includes('--build')){const files=expected();for(const e of files){const dest=p.join(resource,e.file);fs.mkdirSync(p.dirname(dest),{recursive:true});fs.writeFileSync(dest,e.text,'latin1');}console.log('Built '+files.length+' combat-autonomy resources from fresh HF reference.');}
+ else console.log(JSON.stringify(verify(process.argv[2]||resource)));
+}
+module.exports={ammo,fragTargets,antiTankTargets,mission,events,expected,verify,reference};

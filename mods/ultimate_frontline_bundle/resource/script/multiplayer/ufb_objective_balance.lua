@@ -42,5 +42,6 @@ function Balance.Commit(squad, flag)
     assignments[squad] = flag and flag.name or nil
 end
 
-BotApi.Events:Subscribe(BotApi.Events.GameEnd, function() assignments = {} end)
+-- No GameEnd subscription: it would replace the mode's OnGameStop, and this
+-- per-bot Lua state is discarded after the match anyway.
 return Balance

@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position 2266.26 -975.64}
 		{Placer
@@ -2905,6 +2905,7 @@
 	{Human "" 0xc091
 		{Position -2247.48 -3549.87}
 		{xform zl -118.47}
+		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2995,6 +2996,7 @@
 	{Human "" 0xc096
 		{Position -2257.25 -3645.37}
 		{xform zl -109.86}
+		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3175,6 +3177,7 @@
 	{Human "" 0xc0a0
 		{Position -2054.56 -3624.25}
 		{xform zl -65.11}
+		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4270,7 +4273,6 @@
 	{Human "" 0x8066
 		{Position 1355.7 -5710.62}
 		{xform zl -131.69}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4307,7 +4309,6 @@
 	{Human "" 0x8069
 		{Position 2333.35 -6465.18}
 		{xform zl -94.09}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4387,7 +4388,6 @@
 	{Human "" 0x8072
 		{Position 1100.9 -5153.92}
 		{xform zl -139.18}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4540,7 +4540,6 @@
 	{Human "" 0xa009
 		{Position -127.53 -2440.23}
 		{xform zl -118.99}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4559,7 +4558,6 @@
 	{Human "" 0xa00a
 		{Position 190.08 -2492.79}
 		{xform zl -101.4}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4668,7 +4666,6 @@
 	{Human "" 0xa010
 		{Position 55.65 -2224.99}
 		{xform zl 178.69}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4741,7 +4738,6 @@
 	{Human "" 0xa018
 		{Position -4817.9 4216.94}
 		{xform zl 150.08}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4811,7 +4807,6 @@
 	{Human "" 0xa01d
 		{Position -4802.18 2520.84}
 		{xform zl 131}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4830,7 +4825,6 @@
 	{Human "" 0xa01e
 		{Position -3778.9 251.1}
 		{xform zl -113.21}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4860,7 +4854,6 @@
 	{Human "" 0xa020
 		{Position -2724.32 -254.18}
 		{xform zl -133.51}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4969,7 +4962,6 @@
 	{Human "" 0xa026
 		{Position -3784.65 755.35}
 		{xform zl -126.37}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5000,7 +4992,6 @@
 	{Human "" 0xa02c
 		{Position 176.47 -2258.32}
 		{xform zl 14.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5019,6 +5010,7 @@
 	{Human "" 0xa02d
 		{Position -1969.32 -4660.06}
 		{xform zl -82.14}
+		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5030,7 +5022,6 @@
 	{Human "" 0xa02e
 		{Position -222.74 -5124.95}
 		{xform zl 17.83}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5042,7 +5033,6 @@
 	{Human "" 0xa02f
 		{Position 422.87 -3227.5}
 		{xform zl 17.24}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5065,7 +5055,6 @@
 	{Human "" 0xa031
 		{Position -3080.54 -1672.04}
 		{xform zl 128.53}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5109,13 +5098,6 @@
 		}
 		{Player 0}
 		{MID 285}
-		{Cover
-			{sector -4383.05 -3331.02 {type "hide_squat"}
-				{wall -4361.44 -3355.69 -4392.24 -3332.94}
-				{row 0}
-				{link 0x47b0}
-			}
-		}
 		{FsmState "squat"}
 	}
 	{Human "" 0xa034
@@ -5157,7 +5139,6 @@
 	{Human "" 0xa036
 		{Position -4059.15 -2393.06}
 		{xform zl -174.13}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5234,7 +5215,6 @@
 	{Human "" 0xa040
 		{Position 5404.15 6223.61}
 		{xform zl -2.2}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5282,7 +5262,6 @@
 	{Human "" 0xa043
 		{Position 5355.05 6911.86}
 		{xform zl 23.04}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5355,7 +5334,6 @@
 	{Human "" 0xa047
 		{Position 1046.48 7308.65}
 		{xform zl 99.48}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5385,7 +5363,6 @@
 	{Human "" 0xa049
 		{Position 5338.28 6005.16}
 		{xform zl -21.32}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5404,7 +5381,6 @@
 	{Human "" 0xa04a
 		{Position 900.59 7121.3}
 		{xform zl 171.54}
-		{SpawnedInFog}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5700,7 +5676,6 @@
 		{Position 11235.2 -737.45}
 		{xform zl -176.09}
 		{TexMod "winter"}
-		{SpawnedInFog}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -5710,9 +5685,6 @@
 		{Volume "1blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
-		{Volume "spin1"
-			{able {contact 1}{contact_ground 1}{touch 1}}
-		}
 		{Volume "2blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -5721,6 +5693,9 @@
 		}
 		{Volume "2blade3"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "spin1"
+			{able {contact 1}{contact_ground 1}{touch 1}}
 		}
 		{Volume "spin2"
 			{able {contact 1}{contact_ground 1}{touch 1}}
@@ -5743,7 +5718,6 @@
 		{Position 11179.2 -147.19}
 		{xform zl -176.04}
 		{TexMod "winter"}
-		{SpawnedInFog}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -6144,7 +6118,6 @@
 	{Entity "mine_sign" 0x8298
 		{Position -4484.12 3589.71}
 		{xform zl -89.24}
-		{SpawnedInFog}
 	}
 	{Entity "mine_sign" 0x8299
 		{Position -3032.28 -9.47}
@@ -7309,7 +7282,6 @@
 	{Entity "mine_tmi_35" 0x8119
 		{Position -4965.73 3558.51}
 		{xform zl 65.22}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -7325,7 +7297,6 @@
 	{Entity "mine_tmi_35" 0x811a
 		{Position -4984.89 3894.54}
 		{xform zl 68.6}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -7341,7 +7312,6 @@
 	{Entity "mine_tmi_35" 0x811b
 		{Position -5177.68 3245.49}
 		{xform zl 139.48}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -7357,7 +7327,6 @@
 	{Entity "mine_tmi_35" 0x811c
 		{Position -5035.02 3353.21}
 		{xform zl 65.22}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -7373,7 +7342,6 @@
 	{Entity "mine_tmi_35" 0x811d
 		{Position -4936.56 3770.41}
 		{xform zl 68.6}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -11356,7 +11324,6 @@
 	{Entity "mine_pmd" 0x810c
 		{Position -4868.45 3474.8}
 		{xform zl 65.22}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -11436,7 +11403,6 @@
 	{Entity "mine_pmd" 0x8111
 		{Position -4933.5 3412.04}
 		{xform zl 65.22}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -11484,7 +11450,6 @@
 	{Entity "mine_pmd" 0x8114
 		{Position -4994.84 3800.91}
 		{xform zl 68.6}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -11516,7 +11481,6 @@
 	{Entity "mine_pmd" 0x8116
 		{Position -4916.7 3868.15}
 		{xform zl 68.6}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -11532,7 +11496,6 @@
 	{Entity "mine_pmd" 0x8117
 		{Position -4894.02 4003.1}
 		{xform zl 68.6}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -11548,7 +11511,6 @@
 	{Entity "mine_pmd" 0x8118
 		{Position -4823.29 4024.34}
 		{xform zl 68.6}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -14595,7 +14557,6 @@
 	{Entity "mine_pmd" 0x824b
 		{Position -4883.02 3941.11}
 		{xform zl 68.6}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -14627,7 +14588,6 @@
 	{Entity "mine_pmd" 0x824c
 		{Position -4995.39 3669.91}
 		{xform zl 68.6}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -14643,7 +14603,6 @@
 	{Entity "mine_pmd" 0x824d
 		{Position -4793.97 3487.31}
 		{xform zl 65.22}
-		{SpawnedInFog}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -15350,7 +15309,6 @@
 		{Position 11291.3 442.7}
 		{xform zl 178.09}
 		{TexMod "winter"}
-		{SpawnedInFog}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -15400,22 +15358,6 @@
 	{Link 0x8068 {0x82a6 "driver"}}
 	{Link 0x82ee {0x82ed "driver"}}
 	{Link 0x82ef {0x82ed "gunner"}}
-	{Tags "snow" 0x160}
-	{Tags "snow" 0x161}
-	{Tags "snow" 0x162}
-	{Tags "snow" 0x163}
-	{Tags "snow" 0x164}
-	{Tags "snow" 0x165}
-	{Tags "snow" 0x166}
-	{Tags "snow" 0x167}
-	{Tags "snow" 0x168}
-	{Tags "snow" 0x169}
-	{Tags "snow" 0x16a}
-	{Tags "snow" 0x16b}
-	{Tags "snow" 0x16c}
-	{Tags "snow" 0x16d}
-	{Tags "snow" 0x16e}
-	{Tags "snow" 0x16f}
 	{Tags "switch_right" 0x4552}
 	{Tags "switch_right" 0x22b5}
 	{Tags "switch_right" 0x22b6}
@@ -15428,251 +15370,6 @@
 	{Tags "switch_right" 0x3843}
 	{Tags "switch_right" 0x4553}
 	{Tags "switch_right" 0x22b8}
-	{Tags "snow" 0x4ad}
-	{Tags "snow" 0x4ae}
-	{Tags "snow" 0x4af}
-	{Tags "snow" 0x4b0}
-	{Tags "snow" 0x4b1}
-	{Tags "snow" 0x4b2}
-	{Tags "snow" 0x4b3}
-	{Tags "snow" 0x4b4}
-	{Tags "snow" 0x4b5}
-	{Tags "snow" 0x4b6}
-	{Tags "snow" 0x4b7}
-	{Tags "snow" 0x4b8}
-	{Tags "snow" 0x4b9}
-	{Tags "snow" 0x4ba}
-	{Tags "snow" 0x4bb}
-	{Tags "snow" 0x4bc}
-	{Tags "snow" 0x4c0}
-	{Tags "snow" 0x4c1}
-	{Tags "snow" 0x4c2}
-	{Tags "snow" 0x4c3}
-	{Tags "snow" 0x4c4}
-	{Tags "snow" 0x4c5}
-	{Tags "snow" 0x4c9}
-	{Tags "snow" 0x4cb}
-	{Tags "snow" 0x4cc}
-	{Tags "snow" 0x4cd}
-	{Tags "snow" 0x4d4}
-	{Tags "snow" 0x4d5}
-	{Tags "snow" 0x4d6}
-	{Tags "snow" 0x4d8}
-	{Tags "snow" 0x4d9}
-	{Tags "snow" 0x4da}
-	{Tags "snow" 0x4db}
-	{Tags "snow" 0x4dc}
-	{Tags "snow" 0x4dd}
-	{Tags "snow" 0x4de}
-	{Tags "snow" 0x4df}
-	{Tags "snow" 0x4e0}
-	{Tags "snow" 0x4e1}
-	{Tags "snow" 0x4e2}
-	{Tags "snow" 0x4e3}
-	{Tags "snow" 0x4e4}
-	{Tags "snow" 0x4e5}
-	{Tags "snow" 0x4e6}
-	{Tags "snow" 0x4e7}
-	{Tags "snow" 0x4e8}
-	{Tags "snow" 0x4e9}
-	{Tags "snow" 0x4ea}
-	{Tags "snow" 0x4ee}
-	{Tags "snow" 0x4f6}
-	{Tags "snow" 0x4f8}
-	{Tags "snow" 0x4fc}
-	{Tags "snow" 0x4fd}
-	{Tags "snow" 0x4fe}
-	{Tags "snow" 0x4ff}
-	{Tags "snow" 0x500}
-	{Tags "snow" 0x501}
-	{Tags "snow" 0x502}
-	{Tags "snow" 0x503}
-	{Tags "snow" 0x504}
-	{Tags "snow" 0x505}
-	{Tags "snow" 0x506}
-	{Tags "snow" 0x507}
-	{Tags "snow" 0x508}
-	{Tags "snow" 0x509}
-	{Tags "snow" 0x50a}
-	{Tags "snow" 0x50b}
-	{Tags "snow" 0x50c}
-	{Tags "snow" 0x50d}
-	{Tags "snow" 0x50f}
-	{Tags "snow" 0x511}
-	{Tags "snow" 0x512}
-	{Tags "snow" 0x513}
-	{Tags "snow" 0x514}
-	{Tags "snow" 0x515}
-	{Tags "snow" 0x516}
-	{Tags "snow" 0x518}
-	{Tags "snow" 0x519}
-	{Tags "snow" 0x51a}
-	{Tags "snow" 0x51b}
-	{Tags "snow" 0x51c}
-	{Tags "snow" 0x51d}
-	{Tags "snow" 0x51e}
-	{Tags "snow" 0x51f}
-	{Tags "snow" 0x520}
-	{Tags "snow" 0x521}
-	{Tags "snow" 0x522}
-	{Tags "snow" 0x523}
-	{Tags "snow" 0x524}
-	{Tags "snow" 0x525}
-	{Tags "snow" 0x526}
-	{Tags "snow" 0x527}
-	{Tags "snow" 0x528}
-	{Tags "snow" 0x529}
-	{Tags "snow" 0x52a}
-	{Tags "snow" 0x52b}
-	{Tags "snow" 0x52c}
-	{Tags "snow" 0x52d}
-	{Tags "snow" 0x52e}
-	{Tags "snow" 0x52f}
-	{Tags "snow" 0x530}
-	{Tags "snow" 0x531}
-	{Tags "snow" 0x532}
-	{Tags "snow" 0x533}
-	{Tags "snow" 0x534}
-	{Tags "snow" 0x536}
-	{Tags "snow" 0x537}
-	{Tags "snow" 0x538}
-	{Tags "snow" 0x539}
-	{Tags "snow" 0x53a}
-	{Tags "snow" 0x53b}
-	{Tags "snow" 0x53c}
-	{Tags "snow" 0x53d}
-	{Tags "snow" 0x53e}
-	{Tags "snow" 0x53f}
-	{Tags "snow" 0x540}
-	{Tags "snow" 0x541}
-	{Tags "snow" 0x542}
-	{Tags "snow" 0x543}
-	{Tags "snow" 0x544}
-	{Tags "snow" 0x545}
-	{Tags "snow" 0x546}
-	{Tags "snow" 0x547}
-	{Tags "snow" 0x548}
-	{Tags "snow" 0x549}
-	{Tags "snow" 0x54a}
-	{Tags "snow" 0x54b}
-	{Tags "snow" 0x54c}
-	{Tags "snow" 0x54d}
-	{Tags "snow" 0x54e}
-	{Tags "snow" 0x54f}
-	{Tags "snow" 0x550}
-	{Tags "snow" 0x552}
-	{Tags "snow" 0x553}
-	{Tags "snow" 0x554}
-	{Tags "snow" 0x555}
-	{Tags "snow" 0x556}
-	{Tags "snow" 0x558}
-	{Tags "snow" 0x559}
-	{Tags "snow" 0x55a}
-	{Tags "snow" 0x55d}
-	{Tags "snow" 0x55f}
-	{Tags "snow" 0x560}
-	{Tags "snow" 0x561}
-	{Tags "snow" 0x562}
-	{Tags "snow" 0x563}
-	{Tags "snow" 0x564}
-	{Tags "snow" 0x565}
-	{Tags "snow" 0x566}
-	{Tags "snow" 0x567}
-	{Tags "snow" 0x568}
-	{Tags "snow" 0x569}
-	{Tags "snow" 0x56a}
-	{Tags "snow" 0x56b}
-	{Tags "snow" 0x56c}
-	{Tags "snow" 0x56d}
-	{Tags "snow" 0x56e}
-	{Tags "snow" 0x56f}
-	{Tags "snow" 0x570}
-	{Tags "snow" 0x571}
-	{Tags "snow" 0x572}
-	{Tags "snow" 0x573}
-	{Tags "snow" 0x574}
-	{Tags "snow" 0x575}
-	{Tags "snow" 0x576}
-	{Tags "snow" 0x577}
-	{Tags "snow" 0x578}
-	{Tags "snow" 0x579}
-	{Tags "snow" 0x57a}
-	{Tags "snow" 0x57b}
-	{Tags "snow" 0x57c}
-	{Tags "snow" 0x57d}
-	{Tags "snow" 0x57e}
-	{Tags "snow" 0x57f}
-	{Tags "snow" 0x580}
-	{Tags "snow" 0x581}
-	{Tags "snow" 0x582}
-	{Tags "snow" 0x583}
-	{Tags "snow" 0x584}
-	{Tags "snow" 0x585}
-	{Tags "snow" 0x586}
-	{Tags "snow" 0x587}
-	{Tags "snow" 0x588}
-	{Tags "snow" 0x589}
-	{Tags "snow" 0x58a}
-	{Tags "snow" 0x58b}
-	{Tags "snow" 0x58c}
-	{Tags "snow" 0x58d}
-	{Tags "snow" 0x58e}
-	{Tags "snow" 0x58f}
-	{Tags "snow" 0x590}
-	{Tags "snow" 0x591}
-	{Tags "snow" 0x592}
-	{Tags "snow" 0x593}
-	{Tags "snow" 0x594}
-	{Tags "snow" 0x595}
-	{Tags "snow" 0x597}
-	{Tags "snow" 0x598}
-	{Tags "snow" 0x599}
-	{Tags "snow" 0x59a}
-	{Tags "snow" 0x59b}
-	{Tags "snow" 0x419b}
-	{Tags "snow" 0x419c}
-	{Tags "snow" 0x419d}
-	{Tags "snow" 0x419e}
-	{Tags "snow" 0x419f}
-	{Tags "snow" 0x41a1}
-	{Tags "snow" 0x41a2}
-	{Tags "snow" 0x41a3}
-	{Tags "snow" 0x41a5}
-	{Tags "snow" 0x41a6}
-	{Tags "snow" 0x41a7}
-	{Tags "snow" 0x41a8}
-	{Tags "snow" 0x41a9}
-	{Tags "snow" 0x41aa}
-	{Tags "snow" 0x41ab}
-	{Tags "snow" 0x41ac}
-	{Tags "snow" 0x41ad}
-	{Tags "snow" 0x41ae}
-	{Tags "snow" 0x41af}
-	{Tags "snow" 0x41b0}
-	{Tags "snow" 0x41b1}
-	{Tags "snow" 0x41b2}
-	{Tags "snow" 0x41b3}
-	{Tags "snow" 0x41b4}
-	{Tags "snow" 0x41b5}
-	{Tags "snow" 0x41b6}
-	{Tags "snow" 0x41b7}
-	{Tags "snow" 0x41b8}
-	{Tags "snow" 0x41b9}
-	{Tags "snow" 0x41ba}
-	{Tags "snow" 0x41bb}
-	{Tags "snow" 0x41bc}
-	{Tags "snow" 0x41bd}
-	{Tags "snow" 0x41be}
-	{Tags "snow" 0x41bf}
-	{Tags "snow" 0x41c0}
-	{Tags "snow" 0x41c1}
-	{Tags "snow" 0x41c2}
-	{Tags "snow" 0x41c3}
-	{Tags "snow" 0x41c4}
-	{Tags "snow" 0x41c5}
-	{Tags "snow" 0x41c6}
-	{Tags "snow" 0x41c7}
-	{Tags "snow" 0x41c9}
 	{Tags "switch_right" 0x60ee}
 	{Tags "switch_right" 0x6107}
 	{Tags "switch_right" 0x5054}
@@ -15681,36 +15378,21 @@
 	{Tags "switch_right" 0x6803}
 	{Tags "switch_right" 0x582a}
 	{Tags "switch_right" 0x4826}
-	{Tags "snow" 0x4270}
-	{Tags "snow" 0x1412}
-	{Tags "snow" 0x1413}
-	{Tags "snow" 0x1415}
-	{Tags "snow" 0x1417}
-	{Tags "snow" 0x1418}
-	{Tags "snow" 0x2065}
-	{Tags "snow" 0x2066}
-	{Tags "snow" 0x2067}
-	{Tags "snow" 0x2068}
-	{Tags "snow" 0x2069}
-	{Tags "snow" 0x206a}
-	{Tags "snow" 0x206b}
 	{Tags "snow" 0x9}
-	{Tags "snow" 0x517}
-	{Tags "snow" 0x510}
-	{Tags "snow" 0x41a0}
-	{Tags "snow" 0x50e}
+	{Tags "snow" {0x4127 "p15"}}
+	{Tags "snow" {0xcb8 "p15"}}
 	{Tags "fpc1" "flag" 0x802f}
 	{Tags "fpc3" "flag" 0x8011}
 	{Tags "fpc5" "flag" 0x8003}
 	{Tags "fpc4" "flag" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
 	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
@@ -16778,14 +16460,12 @@
 	{Tags "pilot" 0x82ee}
 	{Tags "pilot" 0x82ef}
 	{Tags "engine_count_2" "hidden" "air_vehicle" "no_scavenge" "airstrike_fin" "move_fast" 0x82ed}
-	{Tags "snow" {0x4127 "p15"}}
 	{Tags "snow" {0x2243 "p_base_walls"}}
 	{Tags "snow" {0x2249 "p_base_walls"}}
 	{Tags "snow" {0x224f "p_base_walls"}}
 	{Tags "snow" {0x225a "p_base_walls"}}
 	{Tags "snow" {0x2260 "p_base_walls"}}
 	{Tags "snow" {0x2267 "p_base_walls"}}
-	{Tags "snow" {0xcb8 "p15"}}
 	{Inventory 0x800c
 		{box
 			{clear}
@@ -18209,9 +17889,9 @@
 			{clear}
 			{item "tt33" filled {cell 0 0}}
 			{item "tt33" "ammo" 8 {cell 2 0}}
-			{item "tt33" "ammo" 4 {cell 3 0}}
-			{item "bandage_rus" {cell 4 0}}
-			{item "soviet_tankovy_helmet" {cell 6 0}{user "head"}}
+			{item "tt33" "ammo" 4 {cell 4 0}}
+			{item "bandage_rus" {cell 6 0}}
+			{item "soviet_tankovy_helmet" {cell 0 1}{user "head"}}
 		}
 	}
 	{Inventory 0x82ee
@@ -19970,8 +19650,8 @@
 			{fire_mode hold}
 		}
 	}
-	{Environment "goh/multi/2v2_ziborovo/var4"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Environment "goh/black"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -19994,42 +19674,17 @@
 		{event "music_start"}
 		{event "talk_on"}
 		{zone "circle"
-			{position 2311.13 -971.942 -3.86865}
-			{Name "forward1"}
-			{Radius 2190.1}
-		}
-		{zone "circle"
-			{position 3397.8 -5101.19 80}
-			{Name "forward2"}
-			{Radius 1996.74}
-		}
-		{zone "circle"
-			{position -2434.05 2194.24 -4}
-			{Name "forward3"}
-			{Radius 2052.46}
-		}
-		{zone "circle"
-			{position -2069.19 -3067.74 2.06763}
-			{Name "forward4"}
-			{Radius 1962.34}
-		}
-		{zone "circle"
-			{position 2323.15 5808.82 0}
-			{Name "forward5"}
-			{Radius 2255.67}
-		}
-		{zone "circle"
-			{position -668.957 -8978.16 0}
+			{position -2422.28 -5912.09 33}
 			{Name "_bridge1"}
-			{Radius 150}
+			{Radius 1428.41}
 		}
 		{zone "circle"
-			{position -321.48 -8971.31 0}
+			{position 4167.48 -2665.1 29}
 			{Name "_bridge2"}
-			{Radius 150}
+			{Radius 1456.15}
 		}
 		{zone "circle"
-			{position 40.011 -8964.46 0}
+			{position 40.011 -8964.46 0.895471}
 			{Name "_bridge3"}
 			{Radius 150}
 		}
@@ -20083,66 +19738,91 @@
 			{Point 3995.27 -6071.39}
 			{Point 2408.68 -7507.44}
 		}
+		{zone "circle"
+			{position 2311.13 -971.942 -3.86865}
+			{Name "forward1"}
+			{Radius 2190.1}
+		}
+		{zone "circle"
+			{position 3397.8 -5101.19 80}
+			{Name "forward2"}
+			{Radius 1996.74}
+		}
+		{zone "circle"
+			{position -2434.05 2194.24 -4}
+			{Name "forward3"}
+			{Radius 2052.46}
+		}
+		{zone "circle"
+			{position -2069.19 -3067.74 2.06763}
+			{Name "forward4"}
+			{Radius 1962.34}
+		}
+		{zone "circle"
+			{position 2323.15 5808.82 0}
+			{Name "forward5"}
+			{Radius 2255.67}
+		}
 		{zone "poly"
-			{position 2216.33 -1365.11 0}
+			{position 2258.95 -1372.42 -1.29318}
 			{Name "fpc1"}
-			{Point -181.327 -888.797}
-			{Point -374.647 -794.733}
-			{Point -901.607 15.4994}
-			{Point -881.944 148.842}
-			{Point 203.8 887.845}
-			{Point 344.472 882.383}
-			{Point 954.312 9.85727}
-			{Point 836.94 -260.896}
+			{Point 786.946 -257.822}
+			{Point -123.473 -817.699}
+			{Point -488.374 -643.478}
+			{Point -817.73 -121.997}
+			{Point -840.269 174.368}
+			{Point 182.798 878.393}
+			{Point 379.307 795.248}
+			{Point 920.794 -7.01242}
 		}
 		{zone "poly"
-			{position 3695.84 -4628.56 80.0143}
+			{position 3680.01 -4638.69 79.7555}
 			{Name "fpc2"}
-			{Point 735.413 -144.654}
-			{Point 588.975 -404.306}
-			{Point 0.154243 -741.476}
-			{Point -121.652 -731.843}
-			{Point -683.008 -248.592}
-			{Point -841.397 524.843}
-			{Point -751.067 628.987}
-			{Point 325.08 669.147}
-			{Point 747.501 447.896}
+			{Point 758.039 -64.2774}
+			{Point 654.963 -269.129}
+			{Point 19.6681 -754.687}
+			{Point -107.009 -746.438}
+			{Point -569.299 -369.081}
+			{Point -705.88 445.578}
+			{Point -624.018 561.549}
+			{Point -20.0263 672.179}
+			{Point 593.563 524.307}
 		}
 		{zone "poly"
-			{position -2744.97 2298.06 0}
+			{position -2786.54 2286.68 0}
 			{Name "fpc3"}
-			{Point -103.095 -771.718}
-			{Point -747.006 -67.412}
-			{Point -698.396 123.587}
-			{Point -86.4484 669.742}
-			{Point 123.225 738.288}
-			{Point 707.606 171.269}
-			{Point 722.242 -116.437}
-			{Point 81.8718 -747.32}
+			{Point -130.402 -639.005}
+			{Point -696.236 -9.54096}
+			{Point -676.479 172.155}
+			{Point -106.352 675.583}
+			{Point 160.199 629.275}
+			{Point 680.864 60.6426}
+			{Point 641.031 -207.318}
+			{Point 127.376 -681.792}
 		}
 		{zone "poly"
-			{position -1826.07 -3225.86 -7.73303}
+			{position -1959.75 -3183.8 -5.85449}
 			{Name "fpc4"}
-			{Point -543.568 -485.212}
-			{Point -857.148 31.508}
-			{Point -830.904 181.182}
-			{Point 302.07 931.494}
-			{Point 819.666 470.11}
-			{Point 900.676 -95.0445}
-			{Point 383.44 -434.926}
-			{Point -174.232 -599.113}
+			{Point -502.353 -497.214}
+			{Point -785.132 43.6076}
+			{Point -716.187 217.135}
+			{Point 392.048 921.399}
+			{Point 750.038 552.112}
+			{Point 900.458 -114.464}
+			{Point 255.707 -530.121}
+			{Point -294.578 -592.455}
 		}
 		{zone "poly"
-			{position 2417.69 5786.94 -3}
+			{position 2232.18 5781.29 -1.83667}
 			{Name "fpc5"}
-			{Point 587.649 -734.051}
-			{Point -127.476 -716.056}
-			{Point -673.805 -146.791}
-			{Point -725.692 138.987}
-			{Point -607.167 616.953}
-			{Point 359.7 736.588}
-			{Point 510.728 638.519}
-			{Point 676.064 -534.148}
+			{Point 670.732 -719.129}
+			{Point -27.6666 -703.968}
+			{Point -742.725 -341.73}
+			{Point -886.899 443.991}
+			{Point -804.932 526.951}
+			{Point 440.342 717.422}
+			{Point 587.067 657.486}
+			{Point 764.082 -581.023}
 		}
 		{zone "poly"
 			{position 52.8062 -9.10767 0}
@@ -33086,9 +32766,7 @@
 				{position -642.635 6142.67 58}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

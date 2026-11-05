@@ -1,6 +1,7 @@
 // Build-time breed classification. At runtime only tags and bounded entity timers.
 const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const s=require('./lib/sdl.cjs'),cfg=require('./survival-profiles.json');
+assert(!cfg.retired, 'Historical survival builder retired: ' + cfg.retired);
 const repo=path.resolve(__dirname,'..');
 const output=path.join(repo,'mods/ultimate_frontline_bundle/resource'),backup=path.join(repo,'../_survival_work/tactical-before');
 const manifestPath=path.join(repo,'docs/realism/tactical/breed-profiles.json');

@@ -3407,7 +3407,7 @@
 			}
 		
 ; UFB non-story AI additions.
-(include "/map/multi/ufb_infantry_profile.inc")
+
 (include "/map/multi/ufb_crew_skirmish.inc")
 }
 		{waypoints

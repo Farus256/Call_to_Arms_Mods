@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position 123.01 -141.73 10.5}
 		{xform zl 90}
@@ -100,8 +100,8 @@
 		{MID 3}
 	}
 	{Entity "map_point_conquest" 0xc000
-		{Position 1184.5 -3782.57}
-		{xform zl 123.74}
+		{Position 151.59 -6522}
+		{xform zl 90.41}
 		{Extender "map_point"
 			{name b2}
 			{team b}
@@ -121,8 +121,8 @@
 		{MID 1}
 	}
 	{Entity "map_point_conquest" 0xc007
-		{Position 221.95 3890.26}
-		{xform zl -99.02}
+		{Position 622.08 6636.14}
+		{xform zl -90.23}
 		{Extender "map_point"
 			{name a1}
 			{team a}
@@ -142,8 +142,8 @@
 		{MID 9}
 	}
 	{Entity "map_point_conquest" 0x8005
-		{Position 2868.02 -3902.74}
-		{xform zl 116.27}
+		{Position 3237.97 -6504.79}
+		{xform zl 105.69}
 		{Extender "map_point"
 			{name b1}
 			{team b}
@@ -163,8 +163,8 @@
 		{MID 4}
 	}
 	{Entity "map_point_conquest" 0x8006
-		{Position -2295.82 3732.32}
-		{xform zl -75.01}
+		{Position -1697.3 6607.75}
+		{xform zl -89.26}
 		{Extender "map_point"
 			{name a2}
 			{team a}
@@ -184,8 +184,8 @@
 		{MID 5}
 	}
 	{Entity "map_point_conquest" 0x8007
-		{Position -3692.51 3646.65}
-		{xform zl -68.18}
+		{Position -3611.78 6645.5}
+		{xform zl -89.48}
 		{Extender "map_point"
 			{name a3}
 			{team a}
@@ -205,8 +205,8 @@
 		{MID 6}
 	}
 	{Entity "map_point_conquest" 0x8008
-		{Position -1853.18 -3916.52}
-		{xform zl 86.33}
+		{Position -1968.27 -6496.44}
+		{xform zl 89.07}
 		{Extender "map_point"
 			{name b3}
 			{team b}
@@ -226,8 +226,8 @@
 		{MID 7}
 	}
 	{Entity "map_point_conquest" 0x800d
-		{Position -3707.42 -3872.87}
-		{xform zl 47.57}
+		{Position -3911.65 -6492.58}
+		{xform zl 85.66}
 		{Extender "map_point"
 			{name b4}
 			{team b}
@@ -247,8 +247,8 @@
 		{MID 13}
 	}
 	{Entity "map_point_conquest" 0x800e
-		{Position 2944.63 3880.18}
-		{xform zl -116.67}
+		{Position 2571 6620}
+		{xform zl -91.44}
 		{Extender "map_point"
 			{name a4}
 			{team a}
@@ -311,7 +311,7 @@
 	}
 	{Human "" 0x800f
 		{Position 60.47 -649.52}
-		{xform zl 106.66 y 22.4 zw -165.96}
+		{xform zl 99.06 y 22.39 zw -165.91}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1528,8 +1528,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xb020
-		{Position 1695.47 520.47}
-		{xform zl -115.05 y 45}
+		{Position 1695.47 520.46}
+		{xform zl -91.67 y 45}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3048,8 +3048,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80aa
-		{Position -2549.38 -677.12}
-		{xform zl -66.29}
+		{Position -2579.52 -679.52}
+		{xform zl -28.53}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3057,13 +3057,10 @@
 		{Player 0}
 		{MID 171}
 		{Cover
-			{sector -2549.39 -677.127 {type "snipe_cover"}
-				{wall -2515.69 -669.974 -2607.22 -710.169}
-				{row 0}
-				{link 0x50df}
+			{sector -2579.53 -679.527 {type "bush_squat"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "squat"}
 	}
 	{Human "" 0x80ab
 		{Position -2544.57 -458.55}
@@ -4508,8 +4505,8 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0xa020
-		{Position -2600.12 -727.39}
-		{xform zl 119.45}
+		{Position -2544.9 -701.04}
+		{xform zl 26.62}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4517,13 +4514,10 @@
 		{Player 0}
 		{MID 266}
 		{Cover
-			{sector -2600.12 -727.394 {type "snipe_cover"}
-				{wall -2685.16 -767.389 -2598.12 -718.225}
-				{row 0}
-				{link 0x50dc}
+			{sector -2544.53 -699.527 {type "bush_squat"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "squat"}
 	}
 	{Human "" 0xa021
 		{Position -935.73 -2779.27}
@@ -5322,7 +5316,7 @@
 		{MID 256}
 	}
 	{Human "mp/ger/late/pilot" 0x810d
-		{Position 1602.6 -6569.95}
+		{Position 1735.35 -8459.95}
 		{xform zl 90.47}
 		{Volume "body"
 			{able {blast 0}}
@@ -5367,7 +5361,7 @@
 		{LastItem "luger"}
 	}
 	{Human "mp/ger/late/pilot" 0x8110
-		{Position 1602.9 -6606.02}
+		{Position 1735.65 -8496.02}
 		{xform zl -89.53}
 		{Volume "body"
 			{able {blast 0}}
@@ -5412,7 +5406,7 @@
 		{LastItem "luger"}
 	}
 	{Human "mp/rus/late/pilot" 0x8111
-		{Position 2059.24 -6598.76}
+		{Position 2191.99 -8488.76}
 		{xform zl 90.52}
 		{Volume "body"
 			{able {blast 0}}
@@ -5457,7 +5451,7 @@
 		{LastItem "tt33"}
 	}
 	{Entity "bf110_e2" 0x8112
-		{Position 1603.13 -6619.31}
+		{Position 1735.88 -8509.3}
 		{xform zl 90.47}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
@@ -5498,7 +5492,7 @@
 		}
 	}
 	{Entity "il2_mod42" 0x82d6
-		{Position 2061.05 -6593.15}
+		{Position 2193.8 -8483.15}
 		{xform zl 90.52}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
@@ -5624,39 +5618,39 @@
 		{MID 316}
 	}
 	{Entity "arrow_enemy" 0x82e9
-		{Position -3922.6 4037.91}
-		{xform zl -147.94}
+		{Position -3442 6200.28}
+		{xform zl -165.29}
 	}
 	{Entity "arrow_enemy" 0x82ea
-		{Position 272.63 4115.52}
-		{xform zl 171.62}
+		{Position 578.44 5974.92}
+		{xform zl -179.15}
 	}
 	{Entity "arrow_enemy" 0x82eb
-		{Position -2360.02 4043.1}
-		{xform zl -157.75}
+		{Position -1674.6 6190.91}
+		{xform zl -177.55}
 	}
 	{Entity "arrow_enemy" 0x82ec
-		{Position 3043.34 4174.16}
-		{xform zl 160.78}
+		{Position 2500.9 6131.58}
+		{xform zl 178.99}
 	}
 	{Entity "arrow_enemy" 0xd400
-		{Position 2950.31 -4090.01}
-		{xform zl 30.04}
+		{Position 3109.32 -5991.61}
+		{xform zl 6.6}
 	}
 	{Entity "arrow_enemy" 0x80ee
-		{Position 1318.97 -4053.74}
-		{xform zl 20.29}
+		{Position 145.56 -6002.9}
+		{xform zl 0.68}
 	}
 	{Entity "arrow_enemy" 0x8113
-		{Position -4026.58 -4074.5}
-		{xform zl -31.96}
+		{Position -3797.6 -6001}
+		{xform zl -9.35}
 	}
 	{Entity "arrow_enemy" 0x8114
-		{Position -1846.17 -4137.31}
-		{xform zl -14.25}
+		{Position -1939.23 -5998.65}
+		{xform zl 1.97}
 	}
 	{Human "mp/fin/late/pilot" 0x82ee
-		{Position 2568.97 -6606.82}
+		{Position 2701.72 -8496.83}
 		{xform zl 90.69}
 		{Volume "body"
 			{able {blast 0}}
@@ -5701,7 +5695,7 @@
 		{LastItem "lahti_l35"}
 	}
 	{Human "mp/fin/late/pilot" 0x82ef
-		{Position 2564.92 -6693.39}
+		{Position 2697.67 -8583.4}
 		{xform zl -89.31}
 		{Volume "body"
 			{able {blast 0}}
@@ -5746,7 +5740,7 @@
 		{LastItem "lahti_l35"}
 	}
 	{Entity "blenheim_mk1" 0x82ed
-		{Position 2564.62 -6657.16}
+		{Position 2697.37 -8547.17}
 		{xform zl 90.69}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
@@ -6204,7 +6198,7 @@
 		{xform zl 116.09}
 	}
 	{Human "mp/usa/mid/pilot" 0xc07f
-		{Position 918.67 -6610.09}
+		{Position 1051.42 -8500.09}
 		{xform zl 180 y 4.05 zw -90}
 		{Volume "body"
 			{able {blast 0}}
@@ -6249,7 +6243,7 @@
 		{LastItem "m1911"}
 	}
 	{Entity "p47_d22" 0x828e
-		{Position 918.93 -6612.13}
+		{Position 1051.68 -8502.13}
 		{xform zl 90}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
@@ -7619,7 +7613,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8079
-		{Position 2446.38 1982.49}
+		{Position 2446.37 1982.49}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -7717,7 +7711,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8082
-		{Position 2437.42 2080.14}
+		{Position 2437.42 2080.12}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
 		}
@@ -14281,26 +14275,102 @@
 		{Position 187.72 2059.37}
 		{xform zl -58.19}
 	}
+	{Human "mp/eng/late/pilot" 0xc081
+		{Position 444.39 -8421.19}
+		{xform zl 180 y 3.76 zw -92.32}
+		{Volume "body"
+			{able {blast 0}}
+		}
+		{Volume "head"
+			{able {blast 0}}
+		}
+		{Volume "face"
+			{able {blast 0}}
+		}
+		{Volume "hand1l"
+			{able {blast 0}}
+		}
+		{Volume "hand2l"
+			{able {blast 0}}
+		}
+		{Volume "hand1r"
+			{able {blast 0}}
+		}
+		{Volume "hand2r"
+			{able {blast 0}}
+		}
+		{Volume "foot1r"
+			{able {blast 0}}
+		}
+		{Volume "foot2r"
+			{able {blast 0}}
+		}
+		{Volume "foot1l"
+			{able {blast 0}}
+		}
+		{Volume "foot2l"
+			{able {blast 0}}
+		}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+		{MID 319}
+		{NameId 90 55}
+		{LastItem "enfield_no2_mk1"}
+	}
+	{Entity "hurribomber_mk2c" 0xc083
+		{Position 444.29 -8420.51}
+		{xform zl 87.68}
+		{Volume "1blade1"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "1blade2"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "1blade3"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "spin1"
+			{able {contact 1}{contact_ground 1}{touch 1}}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 320}
+		{Weaponry
+			{Current "bomb1"}
+		}
+		{Chassis "airborne"
+			{AirborneMode 1}
+			{Altitude 47}
+		}
+		{ChassisManager
+			{Current "airborne"}
+		}
+	}
 	{Link 0x810d {0x8112 "driver"}}
 	{Link 0x8110 {0x8112 "gunner"}}
 	{Link 0x8111 {0x82d6 "driver"}}
 	{Link 0x82ee {0x82ed "driver"}}
 	{Link 0x82ef {0x82ed "gunner"}}
 	{Link 0xc07f {0x828e "driver"}}
+	{Link 0xc081 {0xc083 "driver"}}
 	{Tags "marine" 0x300c}
 	{Tags "marine" 0x301c}
+	{Tags "+mobilegun" 0x19aa}
 	{Tags "fpc1" "flag" 0x802f}
 	{Tags "fpc3" "flag" 0x8011}
 	{Tags "fpc5" "flag" 0x8003}
 	{Tags "fpc4" "flag" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
 	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
@@ -15327,6 +15397,8 @@
 	{Tags "cmp_def" "5_b_2-3" "mines_5_c" "dcg_mine_sign" 0x8290}
 	{Tags "cmp_def" "5_b_2-3" "mines_5_d" "dcg_mine_sign" 0x8291}
 	{Tags "cmp_def" "5_b_2-3" "mines_5_d" "dcg_mine_sign" 0x8292}
+	{Tags "pilot" 0xc081}
+	{Tags "engine_count_1" "hidden" "air_vehicle" "no_scavenge" "airstrike_eng" "move_fast" 0xc083}
 	{Inventory 0x800c
 		{box
 			{clear}
@@ -16785,6 +16857,17 @@
 			{item "us_m1_b" {cell 0 1}{user "head"}}
 		}
 	}
+	{Inventory 0xc081
+		{box
+			{clear}
+			{item "enfield_no2_mk1" filled {cell 0 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 2 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 3 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 4 0}}
+			{item "bandage_eng" {cell 5 0}}
+			{item "bandage_eng" {cell 0 1}}
+		}
+	}
 	{Brain 0x300c
 		{Properties
 			{fire_mode hold}
@@ -16793,6 +16876,11 @@
 	{Brain 0x301c
 		{Properties
 			{fire_mode hold}
+		}
+	}
+	{Brain 0x19aa
+		{Properties
+			{look_around 0}
 		}
 	}
 	{Brain 0x800c
@@ -18541,8 +18629,20 @@
 			{fire_mode hold}
 		}
 	}
+	{Brain 0xc081
+		{Properties
+			{move_mode hold}
+			{advance_ratio 0.5}
+			{retreat_ratio 4}
+		}
+	}
+	{Brain 0xc083
+		{Properties
+			{fire_mode hold}
+		}
+	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -18564,6 +18664,71 @@
 		{event "music_rnd"}
 		{event "music_start"}
 		{event "talk_on"}
+		{zone "circle"
+			{position -1444.99 -61.3423 -80}
+			{Name "_bridge1"}
+			{Radius 2130.65}
+		}
+		{zone "circle"
+			{position 2415.29 1986.31 0}
+			{Name "_bridge2"}
+			{Radius 1582.25}
+		}
+		{zone "circle"
+			{position 2440.7 -1498.16 -49.1531}
+			{Name "_bridge3"}
+			{Radius 1587.78}
+		}
+		{zone "circle"
+			{position 588.225 6599.34 0}
+			{Name "a_1"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position -1690.49 6640.29 0}
+			{Name "a_2"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position -3629.56 6833.53 0}
+			{Name "a_3"}
+			{Radius 796.414}
+		}
+		{zone "circle"
+			{position 2558.23 6584.81 0}
+			{Name "a_4"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position 3229.32 -6424.19 0}
+			{Name "b_1"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position 164.917 -6386.43 0}
+			{Name "b_2"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position -1986.07 -6412.57 0}
+			{Name "b_3"}
+			{Radius 600}
+		}
+		{zone "circle"
+			{position -3916.61 -6440.48 0}
+			{Name "b_4"}
+			{Radius 726.626}
+		}
+		{zone "poly"
+			{position 95.0169 -77.1675 -59.7412}
+			{Name "combat"}
+			{Point -3552.62 -2266.89}
+			{Point -4166.52 1106.34}
+			{Point -769.124 2865.07}
+			{Point 3742.33 1321.35}
+			{Point 3744.44 -805.79}
+			{Point 1001.49 -2220.09}
+		}
 		{zone "circle"
 			{position 670.012 -316.7 -80}
 			{Name "forward1"}
@@ -18588,71 +18753,6 @@
 			{position -1181.93 2348.25 0}
 			{Name "forward5"}
 			{Radius 1960.27}
-		}
-		{zone "circle"
-			{position -1444.99 -61.3423 -80}
-			{Name "_bridge1"}
-			{Radius 2130.65}
-		}
-		{zone "circle"
-			{position 2415.29 1986.31 0}
-			{Name "_bridge2"}
-			{Radius 1582.25}
-		}
-		{zone "circle"
-			{position 2440.7 -1498.16 -49.1341}
-			{Name "_bridge3"}
-			{Radius 1587.78}
-		}
-		{zone "circle"
-			{position 233.982 3858.42 -6.82428}
-			{Name "a_1"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position -2340.86 3829.01 -5}
-			{Name "a_2"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position -3892.38 3808.69 -8.79651}
-			{Name "a_3"}
-			{Radius 796.414}
-		}
-		{zone "circle"
-			{position 2945.58 3827.73 -3}
-			{Name "a_4"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position 2885.18 -3842.75 -12}
-			{Name "b_1"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position 1203.98 -3852.93 -8.22409}
-			{Name "b_2"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position -1854.21 -3855.45 -2}
-			{Name "b_3"}
-			{Radius 600}
-		}
-		{zone "circle"
-			{position -3889.18 -3883.66 7}
-			{Name "b_4"}
-			{Radius 726.626}
-		}
-		{zone "poly"
-			{position 95.0169 -77.1675 -59.7412}
-			{Name "combat"}
-			{Point -3552.62 -2266.89}
-			{Point -4166.52 1106.34}
-			{Point -769.124 2865.07}
-			{Point 3742.33 1321.35}
-			{Point 3744.44 -805.79}
-			{Point 1001.49 -2220.09}
 		}
 		{zone "poly"
 			{position -12.9511 -140.062 8}
@@ -31197,9 +31297,7 @@
 				{position -111.891 -994.238 -2.5271}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

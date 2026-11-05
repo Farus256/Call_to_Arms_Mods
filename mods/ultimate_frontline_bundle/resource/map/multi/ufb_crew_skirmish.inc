@@ -1,3 +1,5 @@
+(include "/map/multi/ufb_combat_autonomy.inc")
+
 ; UFB skirmish crew safety. Breed crew identity is queried as a property;
 ; the tag alternative also supports mission-created crew with an explicit tag.
 ; No movement orders are issued to user-controlled units.
@@ -32,7 +34,7 @@
     {source advanced}
     {group
         {select {tag {tag _ufb_crew_profile}}}
-        {include {state {state operatable}}}
+        {include {state {state operatable}} {tag {tag _bot}}}
         {exclude
             {player {player "0"}}
             {state {state user_control}} {state {state linked}}

@@ -1,0 +1,165 @@
+{
+  "reference": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\hf-update-20261105\\reference\\resource",
+  "config": {
+    "enabled": true,
+    "multiplier": 2,
+    "multiplayer": true,
+    "conquest": true
+  },
+  "files": [
+    {
+      "file": "set/multiplayer/games/presets/annihilation_early.inc",
+      "sourceSHA256": "169625272d010df90f5862f741becdd1b741868bf6ae1363f26c61ac1789a863",
+      "generatedSHA256": "915909f3c8d655627706b42d183b9a583fcd4ea41bdd11c7f74263e9bbcb8f13",
+      "schedules": 8,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/annihilation_late.inc",
+      "sourceSHA256": "6f3020202b01fd7e0ef4664be1031e1d01f3f8a0a5e4379c2cdfca383a634b43",
+      "generatedSHA256": "d966d4948ff69adcf9a8e94bd60118a983033f4d8fea9363890b9c8f5d66654c",
+      "schedules": 8,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/annihilation_mid.inc",
+      "sourceSHA256": "552fa7abf30249e09381c55ab7cf75d314bbe253217c23f7205d9cbbcf37e442",
+      "generatedSHA256": "3ed5616e9d3b04baaddbb8b85b5d9ec9592ad1478f96141d1989f7058a3dd7f4",
+      "schedules": 8,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_early.inc",
+      "sourceSHA256": "cf05a87f73e89f41a066efc11db2a94e8be96fb4692f17bb31556ed2a93ae108",
+      "generatedSHA256": "f9ec684a177368c3a04b2d9b2e41a99b8dd6666530017870258b3b1a84e8b9c8",
+      "schedules": 6,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_late.inc",
+      "sourceSHA256": "b15179f2a343dab5880208d3a24fb25084df38be71ea95b09aea75f9fdaea20e",
+      "generatedSHA256": "ccec76ed7cda13f1460a1e7e6459bd7134faa2a90aa67fdc419f49f8749b43d4",
+      "schedules": 6,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontlines_mid.inc",
+      "sourceSHA256": "1d9495c38f11ee3a470c3a31a528b513180760ca1ef7a9abc8eee1b93cf1dab7",
+      "generatedSHA256": "1715ac5cdcf12f123388d7e3728f0ed5ade806417232248ffb9fa8fa78594bab",
+      "schedules": 6,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_early.inc",
+      "sourceSHA256": "2ea57f6e6627de9062112b5bcc7c5dfccce120cf6d2e069a9dfc91268c958b53",
+      "generatedSHA256": "fa572a15df6c1c0570f3772e740bdd3956ae4690261976f884e870ff1dcee7f5",
+      "schedules": 18,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_late.inc",
+      "sourceSHA256": "ff7845d2963f48e21d54503d94cc190dc67d53d72e917c7e71ee6823bcb2d3bd",
+      "generatedSHA256": "fa0d5cc797e402089c90d32ec619ade9562e2edc278bb627cb1f71646c090bcd",
+      "schedules": 18,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/frontline_mid.inc",
+      "sourceSHA256": "97b03002af706d2ce56f55d50be45ba56da9dc5d496a0cb71dcf7ed0e7899254",
+      "generatedSHA256": "e0d7af198f061507f7aad79fccddb6dbbdffbd20159a93bc3cb7f07a56e32ae8",
+      "schedules": 18,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_early.inc",
+      "sourceSHA256": "fd09e95ba5cd93e32c513ac2530d0537629c22e654620b1379f60c8059c8553e",
+      "generatedSHA256": "35804a4b98e0edcdf4aec6a910a16bffca4134574dc2796b7715ef9d87a7cfdb",
+      "schedules": 12,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_late.inc",
+      "sourceSHA256": "520a28b849997b7d67da8312e506cc2433141face8937549f38f59a6b6fcba95",
+      "generatedSHA256": "c8a8711d75c6379b328acfc785878e8d70bce6ca2dd0d756c51f1557e552cc20",
+      "schedules": 12,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/laststand_mid.inc",
+      "sourceSHA256": "d9662b8d98d6dcaa162d107142739d8f52a10705000a88a2f9eb44ab71f9006f",
+      "generatedSHA256": "62fd962d7fa96b96b4cbcbb5e38afe92fb899502b2a76dbfd36ffd37b0ce8c2c",
+      "schedules": 12,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_early.inc",
+      "sourceSHA256": "1a3d63b683705c3e1acdac6f8180535d64162aecfb5b1f6de51604a97842897b",
+      "generatedSHA256": "73490dcce12cb328477c4f3805fc1bca055a75a5e33b967286c5340b76e98f66",
+      "schedules": 10,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_late.inc",
+      "sourceSHA256": "119ecd24d19fd2335a0e121cf6a6d158213021d24bd2b9b7e966fdcdf257b478",
+      "generatedSHA256": "7e73b2666942e77806a422dd4b00d77929e179fcd4b298efc4faae1dfbae3f39",
+      "schedules": 10,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_mid.inc",
+      "sourceSHA256": "89f25e4b5faf8b51c30d1eba838285b50661e627ab7caa546360bbd1e204e565",
+      "generatedSHA256": "3d12bcb033f8f94080741674e25138beb82c557c946cb42d2efafdfc7ff43b45",
+      "schedules": 10,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_early.inc",
+      "sourceSHA256": "413aa8b27c5c07e9dca47b0960a8c593ea7836a89a96efc1c935e93e41016ad3",
+      "generatedSHA256": "315ce0613cb5ff4134ee124fdd3012388c40001603525c81ce7d9c5bf67c0a71",
+      "schedules": 1,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_late.inc",
+      "sourceSHA256": "163c4ba75cfd34b61ef4ff9de130a1f77762512da7776b0beaf2529886d0707c",
+      "generatedSHA256": "1b7161e9fa1b3424714eda186a10b0fc6209a77b5202f35b547b714010ce4e91",
+      "schedules": 1,
+      "fields": 0
+    },
+    {
+      "file": "set/multiplayer/games/presets/preset_test_mid.inc",
+      "sourceSHA256": "a0f8fbded6c424ea22db463f41513e3aabdd2244535b2ae5201bc4b7bca973c1",
+      "generatedSHA256": "8df1ae3142c4024cf0a38bb341d396e9d912ca6c75f43ed869d7744954e5d3f8",
+      "schedules": 1,
+      "fields": 0
+    },
+    {
+      "file": "set/dynamic_campaign/resources_high.set",
+      "sourceSHA256": "a5613dfd5a9701b22e27187299011e66a73baad44cc72c3a3b10a38d93ef2c93",
+      "generatedSHA256": "4d2731fc3394cb9dcfd0e0e0e92254e114f185917a257644fcbd7e9795363e37",
+      "schedules": 0,
+      "fields": 8
+    },
+    {
+      "file": "set/dynamic_campaign/resources_low.set",
+      "sourceSHA256": "a53c06ac20c6c6b17e058208b07afb38c7de3b07e58f24d19d5fc14163f83ef0",
+      "generatedSHA256": "abcc71bf412349a2de6f2f299235cc85302a313916c7a0e71551d0b7099c3b92",
+      "schedules": 0,
+      "fields": 8
+    },
+    {
+      "file": "set/dynamic_campaign/resources_standard.set",
+      "sourceSHA256": "adcfed6300c85d86f0d8fff65d2f4938d507cee364642bd05a2bcba0448f5de1",
+      "generatedSHA256": "a4434da593fc91d7baeb70971a1e611b0101bdbf2d0c20d5e5ca6ff8b16fa3a4",
+      "schedules": 0,
+      "fields": 8
+    },
+    {
+      "file": "set/dynamic_campaign/resources_very_high.set",
+      "sourceSHA256": "c6468a5de7f616822b16b0f1adea341f5e6090f91f36c6d46893a3201f4cbe4a",
+      "generatedSHA256": "1cd82128161f0912bb682757b19df1e85cc431fd13773e44e33077501cf64e8c",
+      "schedules": 0,
+      "fields": 8
+    }
+  ]
+}

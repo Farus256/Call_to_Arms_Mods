@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-05",
+  "hfVersion": "4.0.0",
+  "fixedLogicIssues": 2,
+  "sourceAndInstalledIdentical": true,
+  "sha256VerifiedFiles": 758,
+  "unchangedModFiles": 756,
+  "changedResources": [
+    {
+      "file": "resource/script/multiplayer/modes/battlezones.lua",
+      "sha256": "e3a617a584792d137ed90bb670f301d2ad6043acacbd41e928ce2e0439656f8f"
+    },
+    {
+      "file": "resource/script/multiplayer/ufb_order_guard.lua",
+      "sha256": "c072ed94993016004fb6d3c5343169805835064779bf043a5b0a4cf17b8ea39f"
+    }
+  ],
+  "nativeHFBalance": true,
+  "nativeHumanMechanics": true,
+  "luaExecutableVersion": "5.2.3",
+  "botLifecycleScenarios": 16,
+  "modes": [
+    "battle_zones",
+    "ammunition",
+    "annihilation",
+    "frontlines",
+    "evacuation",
+    "campaign_capture_the_flag"
+  ],
+  "conquestArmies": [
+    "ger",
+    "rus",
+    "fin",
+    "usa",
+    "eng"
+  ],
+  "conquestRoles": [
+    "defender",
+    "attacker"
+  ],
+  "logicAssertions": 55,
+  "logicScenarios": 13,
+  "nativeJobOwnershipRegression": true,
+  "nativeMacroCallsUnchanged": true,
+  "conditionExpressionErrors": 0,
+  "sdlFiles": 671,
+  "luaFiles": 10,
+  "sdlIncludes": 1590,
+  "luaRequires": 26,
+  "garrisonMaps": 117,
+  "waypoints": 374010,
+  "maxWaypointID": 7874,
+  "missionFilesChecked": 562,
+  "xmlFilesValid": 2,
+  "audioLinksResolved": 230,
+  "wavHeadersValid": 5392,
+  "inGameTested": false,
+  "backup": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\hf4-review-20261105\\installed-before"
+}

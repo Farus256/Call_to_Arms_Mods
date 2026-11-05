@@ -35,7 +35,7 @@ for(const file of walk(path.join(repo,'mods'))){
   const row=report.missions.byMode[mode]??={total:0,withCoverInclude:0};row.total++;if(covered)row.withCoverInclude++;
  }
 }
-for(const mod of ['hortens_frontline_patch','ultimate_frontline_bundle'])for(const file of walk(path.join(installed,mod))){
+for(const mod of ['ultimate_frontline_bundle'])for(const file of walk(path.join(installed,mod))){
  const fileRel=rel(installed,file);if(!fs.existsSync(path.join(repo,'mods',fileRel)))report.installed.extra.push(fileRel);
 }
 const manifest=JSON.parse(fs.readFileSync(path.join(repo,'docs/realism/tactical/breed-profiles.json'),'utf8'));

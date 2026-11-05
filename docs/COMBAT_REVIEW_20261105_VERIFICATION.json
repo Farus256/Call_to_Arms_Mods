@@ -1,0 +1,226 @@
+{
+  "state": "installed",
+  "date": "2026-11-05T18:38:57.812Z",
+  "target": "D:/Programs/Steam/steamapps/common/Call to Arms - Gates of Hell/mods/ultimate_frontline_bundle",
+  "sourceAndInstalledIdentical": true,
+  "verifiedModFiles": 788,
+  "updatedResourceFiles": 10,
+  "replacedResourceFiles": 6,
+  "newResourceFiles": 4,
+  "otherFilesUnchanged": 778,
+  "backup": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_ai_work\\combat-review-20261105\\package\\backups\\20261105-183844-0754348",
+  "cpMultiplier": 2,
+  "files": 22,
+  "cpSchedules": 165,
+  "conquestFields": 32,
+  "multiplier": 2,
+  "combatAutonomy": true,
+  "targetingFiles": 2,
+  "playerSlots": 17,
+  "nativeUnitStatsExceptPanzerfaust60": true,
+  "nativeHFWeaponLootingRetained": true,
+  "nativeHFMedicsRetained": true,
+  "repairedMedicLoops": 3,
+  "preservedLootingStance": true,
+  "hf4AnimationBindingsRestored": [
+    "stand_fire_gun_down_1",
+    "stand_fire_gun_up_1",
+    "grenade_deflect"
+  ],
+  "bloodPools": {
+    "chance": 0.05,
+    "checks": 144,
+    "oneRollPerEligibleCorpse": true,
+    "bleedoutBypassRemoved": true
+  },
+  "gore": {
+    "checks": 15,
+    "unchangedDismembermentHandlers": 7,
+    "bodyPartPhysicsPreserved": true
+  },
+  "combatRegression": {
+    "scenarios": 33,
+    "checks": 142,
+    "triggerDefinitions": 410,
+    "gemBattleTested": false
+  },
+  "missionCoverage": {
+    "missionFiles": 436,
+    "withAutonomy": 436,
+    "maxInclusions": 1
+  },
+  "botLifecycleScenarios": 17,
+  "aiLogic": {
+    "scenarios": 13,
+    "checks": 55
+  },
+  "fullStaticGate": {
+    "sdlFiles": 700,
+    "luaFiles": 10,
+    "includes": 1768,
+    "requires": 26,
+    "garrisonMaps": 117,
+    "waypoints": 374010,
+    "maxWaypointID": 7874
+  },
+  "animationAudit": {
+    "activeSequenceCount": 1366,
+    "nativeSequenceCount": 1347,
+    "configurationFiles": 15,
+    "missingIncludes": [],
+    "missingMacros": [],
+    "missingAssets": [],
+    "lostNativeSequenceNames": [],
+    "referencedLostNativeSequences": [],
+    "nonPositiveSpeeds": [],
+    "redefinedSequences": [],
+    "nativeMissingAssets": [],
+    "gameplayFrameTimesMeasured": false
+  },
+  "logAudit": {
+    "activeMods": [
+      "mod_3408719680",
+      "mod_3540580405",
+      "mod_2922646932",
+      "mod_3196505779",
+      "mod_3562631215",
+      "mod_3359417100",
+      "mod_3079405930",
+      "mod_3139610501",
+      "mod_2562731625",
+      "mod_3791314577",
+      "mod_3566110308",
+      "ultimate_frontline_bundle"
+    ],
+    "diagnostics": [
+      {
+        "count": 55,
+        "firstLine": 7017,
+        "example": "[00:04:39] !!! No valid ev.actor in eGenericCombatGame::HandleStatsEvent"
+      },
+      {
+        "count": 12,
+        "firstLine": 6939,
+        "example": "[00:03:33] Enumerator : can't find \"enumerator\" bones for gaz_aaa_supply[0x2745 actor] (eEntityEnumerator.cpp:177) @ [main_loop]"
+      },
+      {
+        "count": 8,
+        "firstLine": 6929,
+        "example": "[00:03:32] bone \"part5\" not found in entity blitz3_6[0x2726 actor] (eEntitySlicer.cpp:111) @ [main_loop]"
+      },
+      {
+        "count": 8,
+        "firstLine": 6930,
+        "example": "[00:03:32] bone \"part6\" not found in entity blitz3_6[0x2726 actor] (eEntitySlicer.cpp:111) @ [main_loop]"
+      },
+      {
+        "count": 8,
+        "firstLine": 6946,
+        "example": "[00:03:34] Enumerator : can't find \"enumerator\" bones for 88mm_flak36[0x273c actor] (eEntityEnumerator.cpp:177) @ [main_loop]"
+      },
+      {
+        "count": 4,
+        "firstLine": 6931,
+        "example": "[00:03:32] Enumerator : can't find \"enumerator\" bones for kubelwagen[0x2734 actor] (eEntityEnumerator.cpp:177) @ [main_loop]"
+      },
+      {
+        "count": 4,
+        "firstLine": 6941,
+        "example": "[00:03:33] Enumerator : can't find \"enumerator\" bones for gaz_aaa[0x2713 actor] (eEntityEnumerator.cpp:177) @ [main_loop]"
+      },
+      {
+        "count": 4,
+        "firstLine": 6949,
+        "example": "[00:03:34] Enumerator : can't find \"enumerator\" bones for ford_b3000[0x2753 actor] (eEntityEnumerator.cpp:177) @ [main_loop]"
+      },
+      {
+        "count": 2,
+        "firstLine": 6872,
+        "example": "[00:03:14] Enumerator : can't find \"enumerator\" bones for kubelwagen[0x0 actor] (/map/multi/+hf_8v8_berlin/map, 25009)"
+      },
+      {
+        "count": 2,
+        "firstLine": 6887,
+        "example": "[00:03:14] Enumerator : can't find \"enumerator\" bones for gaz_aaa_supply[0x0 actor] (/map/multi/+hf_8v8_berlin/map, 49981)"
+      },
+      {
+        "count": 2,
+        "firstLine": 6907,
+        "example": "[00:03:15] Enumerator : can't find \"enumerator\" bones for gaz_aaa[0x0 actor] (/map/multi/+hf_8v8_berlin/map, 54773)"
+      },
+      {
+        "count": 2,
+        "firstLine": 6920,
+        "example": "[00:03:15] Enumerator : can't find \"enumerator\" bones for gaz_aaa_supply[0x0 actor] (/map/multi/+hf_8v8_berlin/map, 67468)"
+      },
+      {
+        "count": 2,
+        "firstLine": 6921,
+        "example": "[00:03:15] Enumerator : can't find \"enumerator\" bones for 88mm_flak36[0x0 actor] (/map/multi/+hf_8v8_berlin/map, 67816)"
+      },
+      {
+        "count": 2,
+        "firstLine": 6922,
+        "example": "[00:03:15] Enumerator : can't find \"enumerator\" bones for gaz_aaa_supply[0x0 actor] (/map/multi/+hf_8v8_berlin/map, 68291)"
+      },
+      {
+        "count": 2,
+        "firstLine": 6924,
+        "example": "[00:03:15] Enumerator : can't find \"enumerator\" bones for 88mm_flak36[0x0 actor] (/map/multi/+hf_8v8_berlin/map, 69014)"
+      },
+      {
+        "count": 2,
+        "firstLine": 6925,
+        "example": "[00:03:15] Enumerator : can't find \"enumerator\" bones for ford_b3000[0x0 actor] (/map/multi/+hf_8v8_berlin/map, 69115)"
+      },
+      {
+        "count": 2,
+        "firstLine": 7920,
+        "example": "[00:26:42] Unit [human[0xd1:mp/rus/late/assault-sap_recon_sl human]] cannot move to covers \"\" (eHelperCommandActorOrder.cpp:410) @ [quant]"
+      },
+      {
+        "count": 1,
+        "firstLine": 7388,
+        "example": "[00:14:00] Unit [human[0xb:mp/rus/late/rifleman_2 human]] cannot move to covers \"\" (eHelperCommandActorOrder.cpp:410) @ [quant]"
+      },
+      {
+        "count": 1,
+        "firstLine": 7413,
+        "example": "[00:14:36] Unit [human[0x2c:mp/rus/late/sapper_smg_stick human]] cannot move to covers \"\" (eHelperCommandActorOrder.cpp:410) @ [quant]"
+      },
+      {
+        "count": 1,
+        "firstLine": 7473,
+        "example": "[00:16:09] Unit [human[0x60:mp/rus/late/antitank_5 human]] cannot move to covers \"\" (eHelperCommandActorOrder.cpp:410) @ [quant]"
+      },
+      {
+        "count": 1,
+        "firstLine": 7502,
+        "example": "[00:17:06] [LUA] Print: !!WARNING!! player#2 tried to purchase: kv1_42 but the TTS (unit timer) is greater than UnitSpawnWaitTime 137.284s verses 90s"
+      },
+      {
+        "count": 1,
+        "firstLine": 7754,
+        "example": "[00:22:49] Unit [human[0x4f:mp/rus/late/tankodesant_2 human]] cannot move to covers \"\" (eHelperCommandActorOrder.cpp:410) @ [quant]"
+      },
+      {
+        "count": 1,
+        "firstLine": 7755,
+        "example": "[00:22:49] Unit [human[0x6f:mp/rus/late/antitank_3 human]] cannot move to covers \"\" (eHelperCommandActorOrder.cpp:410) @ [quant]"
+      },
+      {
+        "count": 1,
+        "firstLine": 7976,
+        "example": "[00:27:52] Unit [human[0xd8:mp/rus/late/tankodesant_nco human]] cannot move to covers \"\" (eHelperCommandActorOrder.cpp:410) @ [quant]"
+      },
+      {
+        "count": 1,
+        "firstLine": 8103,
+        "example": "[00:30:26] Unknown bitmap: \"/interface/scene/squad/icon_vehicle()_00\" (eGC_ButtonActor.cpp:66) @ [quant]"
+      }
+    ],
+    "normalStop": true
+  },
+  "newBattleRun": false,
+  "frameTimesMeasured": false
+}

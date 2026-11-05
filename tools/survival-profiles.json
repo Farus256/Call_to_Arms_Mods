@@ -1,5 +1,6 @@
 {
-  "enabled": true,
+  "retired": "2026-11-05: native Horten's Frontline 4.0.0 human mechanics restored",
+  "enabled": false,
   "defaultProfile": "regular",
   "tierProfiles": {
     "1": "conscript",

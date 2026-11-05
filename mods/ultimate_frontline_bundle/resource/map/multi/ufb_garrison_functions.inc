@@ -684,7 +684,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15015"}
+								{waypoint "4615"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -702,7 +702,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16015"}
+								{waypoint "5465"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -720,7 +720,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17015"}
+								{waypoint "6315"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -738,7 +738,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18015"}
+								{waypoint "7165"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -775,7 +775,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15001"}
+								{waypoint "4601"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -793,7 +793,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16001"}
+								{waypoint "5451"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -811,7 +811,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17001"}
+								{waypoint "6301"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -829,7 +829,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18001"}
+								{waypoint "7151"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -886,7 +886,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15110"}
+											{waypoint "4710"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -902,7 +902,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16110"}
+											{waypoint "5560"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -918,7 +918,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17110"}
+											{waypoint "6410"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -934,7 +934,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18110"}
+											{waypoint "7260"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -975,7 +975,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15111"}
+											{waypoint "4711"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -991,7 +991,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16111"}
+											{waypoint "5561"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1007,7 +1007,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17111"}
+											{waypoint "6411"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1023,7 +1023,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18111"}
+											{waypoint "7261"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1064,7 +1064,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15112"}
+											{waypoint "4712"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1080,7 +1080,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16112"}
+											{waypoint "5562"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1096,7 +1096,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17112"}
+											{waypoint "6412"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1112,7 +1112,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18112"}
+											{waypoint "7262"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1153,7 +1153,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15230"}
+											{waypoint "4830"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1169,7 +1169,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16230"}
+											{waypoint "5680"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1185,7 +1185,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17230"}
+											{waypoint "6530"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1201,7 +1201,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18230"}
+											{waypoint "7380"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1236,7 +1236,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15070"}
+											{waypoint "4670"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1252,7 +1252,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16070"}
+											{waypoint "5520"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1268,7 +1268,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17070"}
+											{waypoint "6370"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1284,7 +1284,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18070"}
+											{waypoint "7220"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1375,7 +1375,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15071"}
+											{waypoint "4671"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1391,7 +1391,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16071"}
+											{waypoint "5521"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1407,7 +1407,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17071"}
+											{waypoint "6371"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1423,7 +1423,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18071"}
+											{waypoint "7221"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1464,7 +1464,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15072"}
+											{waypoint "4672"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1480,7 +1480,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16072"}
+											{waypoint "5522"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1496,7 +1496,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17072"}
+											{waypoint "6372"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1512,7 +1512,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18072"}
+											{waypoint "7222"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1547,7 +1547,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15073"}
+											{waypoint "4673"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1563,7 +1563,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16073"}
+											{waypoint "5523"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1579,7 +1579,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17073"}
+											{waypoint "6373"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1595,7 +1595,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18073"}
+											{waypoint "7223"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1660,7 +1660,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11020"}
+								{waypoint "1220"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -1678,7 +1678,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12020"}
+								{waypoint "2070"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -1696,7 +1696,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13020"}
+								{waypoint "2920"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -1714,7 +1714,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14020"}
+								{waypoint "3770"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -1751,7 +1751,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11001"}
+								{waypoint "1201"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -1769,7 +1769,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12001"}
+								{waypoint "2051"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -1787,7 +1787,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13001"}
+								{waypoint "2901"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -1805,7 +1805,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14001"}
+								{waypoint "3751"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -1862,7 +1862,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11170"}
+											{waypoint "1370"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1878,7 +1878,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12170"}
+											{waypoint "2220"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1894,7 +1894,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13170"}
+											{waypoint "3070"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1910,7 +1910,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14170"}
+											{waypoint "3920"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1951,7 +1951,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11171"}
+											{waypoint "1371"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1967,7 +1967,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12171"}
+											{waypoint "2221"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1983,7 +1983,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13171"}
+											{waypoint "3071"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -1999,7 +1999,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14171"}
+											{waypoint "3921"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2040,7 +2040,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11172"}
+											{waypoint "1372"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2056,7 +2056,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12172"}
+											{waypoint "2222"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2072,7 +2072,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13172"}
+											{waypoint "3072"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2088,7 +2088,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14172"}
+											{waypoint "3922"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2129,7 +2129,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11235"}
+											{waypoint "1435"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2145,7 +2145,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12235"}
+											{waypoint "2285"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2161,7 +2161,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13235"}
+											{waypoint "3135"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2177,7 +2177,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14235"}
+											{waypoint "3985"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2212,7 +2212,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11090"}
+											{waypoint "1290"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2228,7 +2228,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12090"}
+											{waypoint "2140"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2244,7 +2244,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13090"}
+											{waypoint "2990"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2260,7 +2260,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14090"}
+											{waypoint "3840"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2351,7 +2351,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11091"}
+											{waypoint "1291"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2367,7 +2367,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12091"}
+											{waypoint "2141"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2383,7 +2383,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13091"}
+											{waypoint "2991"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2399,7 +2399,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14091"}
+											{waypoint "3841"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2440,7 +2440,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11092"}
+											{waypoint "1292"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2456,7 +2456,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12092"}
+											{waypoint "2142"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2472,7 +2472,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13092"}
+											{waypoint "2992"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2488,7 +2488,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14092"}
+											{waypoint "3842"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2523,7 +2523,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11093"}
+											{waypoint "1293"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2539,7 +2539,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12093"}
+											{waypoint "2143"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2555,7 +2555,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13093"}
+											{waypoint "2993"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2571,7 +2571,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14093"}
+											{waypoint "3843"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -2853,7 +2853,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15016"}
+								{waypoint "4616"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -2871,7 +2871,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16016"}
+								{waypoint "5466"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -2889,7 +2889,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17016"}
+								{waypoint "6316"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -2907,7 +2907,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18016"}
+								{waypoint "7166"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -2944,7 +2944,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15002"}
+								{waypoint "4602"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -2962,7 +2962,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16002"}
+								{waypoint "5452"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -2980,7 +2980,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17002"}
+								{waypoint "6302"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -2998,7 +2998,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18002"}
+								{waypoint "7152"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -3055,7 +3055,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15122"}
+											{waypoint "4722"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3071,7 +3071,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16122"}
+											{waypoint "5572"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3087,7 +3087,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17122"}
+											{waypoint "6422"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3103,7 +3103,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18122"}
+											{waypoint "7272"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3144,7 +3144,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15123"}
+											{waypoint "4723"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3160,7 +3160,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16123"}
+											{waypoint "5573"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3176,7 +3176,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17123"}
+											{waypoint "6423"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3192,7 +3192,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18123"}
+											{waypoint "7273"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3233,7 +3233,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15124"}
+											{waypoint "4724"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3249,7 +3249,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16124"}
+											{waypoint "5574"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3265,7 +3265,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17124"}
+											{waypoint "6424"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3281,7 +3281,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18124"}
+											{waypoint "7274"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3322,7 +3322,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15231"}
+											{waypoint "4831"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3338,7 +3338,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16231"}
+											{waypoint "5681"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3354,7 +3354,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17231"}
+											{waypoint "6531"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3370,7 +3370,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18231"}
+											{waypoint "7381"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3405,7 +3405,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15074"}
+											{waypoint "4674"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3421,7 +3421,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16074"}
+											{waypoint "5524"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3437,7 +3437,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17074"}
+											{waypoint "6374"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3453,7 +3453,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18074"}
+											{waypoint "7224"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3544,7 +3544,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15075"}
+											{waypoint "4675"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3560,7 +3560,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16075"}
+											{waypoint "5525"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3576,7 +3576,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17075"}
+											{waypoint "6375"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3592,7 +3592,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18075"}
+											{waypoint "7225"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3633,7 +3633,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15076"}
+											{waypoint "4676"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3649,7 +3649,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16076"}
+											{waypoint "5526"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3665,7 +3665,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17076"}
+											{waypoint "6376"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3681,7 +3681,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18076"}
+											{waypoint "7226"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3716,7 +3716,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15077"}
+											{waypoint "4677"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3732,7 +3732,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16077"}
+											{waypoint "5527"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3748,7 +3748,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17077"}
+											{waypoint "6377"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3764,7 +3764,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18077"}
+											{waypoint "7227"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -3829,7 +3829,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11021"}
+								{waypoint "1221"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -3847,7 +3847,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12021"}
+								{waypoint "2071"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -3865,7 +3865,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13021"}
+								{waypoint "2921"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -3883,7 +3883,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14021"}
+								{waypoint "3771"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -3920,7 +3920,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11002"}
+								{waypoint "1202"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -3938,7 +3938,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12002"}
+								{waypoint "2052"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -3956,7 +3956,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13002"}
+								{waypoint "2902"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -3974,7 +3974,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14002"}
+								{waypoint "3752"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -4031,7 +4031,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11182"}
+											{waypoint "1382"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4047,7 +4047,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12182"}
+											{waypoint "2232"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4063,7 +4063,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13182"}
+											{waypoint "3082"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4079,7 +4079,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14182"}
+											{waypoint "3932"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4120,7 +4120,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11183"}
+											{waypoint "1383"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4136,7 +4136,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12183"}
+											{waypoint "2233"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4152,7 +4152,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13183"}
+											{waypoint "3083"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4168,7 +4168,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14183"}
+											{waypoint "3933"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4209,7 +4209,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11184"}
+											{waypoint "1384"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4225,7 +4225,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12184"}
+											{waypoint "2234"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4241,7 +4241,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13184"}
+											{waypoint "3084"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4257,7 +4257,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14184"}
+											{waypoint "3934"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4298,7 +4298,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11236"}
+											{waypoint "1436"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4314,7 +4314,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12236"}
+											{waypoint "2286"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4330,7 +4330,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13236"}
+											{waypoint "3136"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4346,7 +4346,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14236"}
+											{waypoint "3986"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4381,7 +4381,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11094"}
+											{waypoint "1294"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4397,7 +4397,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12094"}
+											{waypoint "2144"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4413,7 +4413,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13094"}
+											{waypoint "2994"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4429,7 +4429,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14094"}
+											{waypoint "3844"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4520,7 +4520,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11095"}
+											{waypoint "1295"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4536,7 +4536,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12095"}
+											{waypoint "2145"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4552,7 +4552,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13095"}
+											{waypoint "2995"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4568,7 +4568,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14095"}
+											{waypoint "3845"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4609,7 +4609,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11096"}
+											{waypoint "1296"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4625,7 +4625,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12096"}
+											{waypoint "2146"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4641,7 +4641,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13096"}
+											{waypoint "2996"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4657,7 +4657,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14096"}
+											{waypoint "3846"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4692,7 +4692,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11097"}
+											{waypoint "1297"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4708,7 +4708,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12097"}
+											{waypoint "2147"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4724,7 +4724,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13097"}
+											{waypoint "2997"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -4740,7 +4740,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14097"}
+											{waypoint "3847"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5022,7 +5022,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15017"}
+								{waypoint "4617"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -5040,7 +5040,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16017"}
+								{waypoint "5467"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -5058,7 +5058,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17017"}
+								{waypoint "6317"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -5076,7 +5076,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18017"}
+								{waypoint "7167"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -5113,7 +5113,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15003"}
+								{waypoint "4603"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -5131,7 +5131,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16003"}
+								{waypoint "5453"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -5149,7 +5149,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17003"}
+								{waypoint "6303"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -5167,7 +5167,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18003"}
+								{waypoint "7153"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -5224,7 +5224,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15134"}
+											{waypoint "4734"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5240,7 +5240,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16134"}
+											{waypoint "5584"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5256,7 +5256,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17134"}
+											{waypoint "6434"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5272,7 +5272,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18134"}
+											{waypoint "7284"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5313,7 +5313,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15135"}
+											{waypoint "4735"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5329,7 +5329,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16135"}
+											{waypoint "5585"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5345,7 +5345,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17135"}
+											{waypoint "6435"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5361,7 +5361,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18135"}
+											{waypoint "7285"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5402,7 +5402,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15136"}
+											{waypoint "4736"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5418,7 +5418,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16136"}
+											{waypoint "5586"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5434,7 +5434,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17136"}
+											{waypoint "6436"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5450,7 +5450,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18136"}
+											{waypoint "7286"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5491,7 +5491,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15232"}
+											{waypoint "4832"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5507,7 +5507,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16232"}
+											{waypoint "5682"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5523,7 +5523,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17232"}
+											{waypoint "6532"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5539,7 +5539,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18232"}
+											{waypoint "7382"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5574,7 +5574,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15078"}
+											{waypoint "4678"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5590,7 +5590,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16078"}
+											{waypoint "5528"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5606,7 +5606,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17078"}
+											{waypoint "6378"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5622,7 +5622,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18078"}
+											{waypoint "7228"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5713,7 +5713,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15079"}
+											{waypoint "4679"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5729,7 +5729,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16079"}
+											{waypoint "5529"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5745,7 +5745,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17079"}
+											{waypoint "6379"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5761,7 +5761,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18079"}
+											{waypoint "7229"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5802,7 +5802,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15080"}
+											{waypoint "4680"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5818,7 +5818,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16080"}
+											{waypoint "5530"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5834,7 +5834,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17080"}
+											{waypoint "6380"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5850,7 +5850,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18080"}
+											{waypoint "7230"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5885,7 +5885,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15081"}
+											{waypoint "4681"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5901,7 +5901,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16081"}
+											{waypoint "5531"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5917,7 +5917,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17081"}
+											{waypoint "6381"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5933,7 +5933,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18081"}
+											{waypoint "7231"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -5998,7 +5998,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11022"}
+								{waypoint "1222"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -6016,7 +6016,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12022"}
+								{waypoint "2072"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -6034,7 +6034,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13022"}
+								{waypoint "2922"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -6052,7 +6052,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14022"}
+								{waypoint "3772"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -6089,7 +6089,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11003"}
+								{waypoint "1203"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -6107,7 +6107,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12003"}
+								{waypoint "2053"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -6125,7 +6125,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13003"}
+								{waypoint "2903"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -6143,7 +6143,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14003"}
+								{waypoint "3753"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -6200,7 +6200,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11194"}
+											{waypoint "1394"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6216,7 +6216,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12194"}
+											{waypoint "2244"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6232,7 +6232,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13194"}
+											{waypoint "3094"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6248,7 +6248,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14194"}
+											{waypoint "3944"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6289,7 +6289,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11195"}
+											{waypoint "1395"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6305,7 +6305,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12195"}
+											{waypoint "2245"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6321,7 +6321,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13195"}
+											{waypoint "3095"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6337,7 +6337,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14195"}
+											{waypoint "3945"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6378,7 +6378,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11196"}
+											{waypoint "1396"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6394,7 +6394,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12196"}
+											{waypoint "2246"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6410,7 +6410,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13196"}
+											{waypoint "3096"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6426,7 +6426,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14196"}
+											{waypoint "3946"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6467,7 +6467,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11237"}
+											{waypoint "1437"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6483,7 +6483,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12237"}
+											{waypoint "2287"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6499,7 +6499,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13237"}
+											{waypoint "3137"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6515,7 +6515,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14237"}
+											{waypoint "3987"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6550,7 +6550,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11098"}
+											{waypoint "1298"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6566,7 +6566,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12098"}
+											{waypoint "2148"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6582,7 +6582,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13098"}
+											{waypoint "2998"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6598,7 +6598,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14098"}
+											{waypoint "3848"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6689,7 +6689,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11099"}
+											{waypoint "1299"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6705,7 +6705,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12099"}
+											{waypoint "2149"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6721,7 +6721,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13099"}
+											{waypoint "2999"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6737,7 +6737,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14099"}
+											{waypoint "3849"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6778,7 +6778,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11100"}
+											{waypoint "1300"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6794,7 +6794,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12100"}
+											{waypoint "2150"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6810,7 +6810,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13100"}
+											{waypoint "3000"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6826,7 +6826,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14100"}
+											{waypoint "3850"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6861,7 +6861,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11101"}
+											{waypoint "1301"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6877,7 +6877,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12101"}
+											{waypoint "2151"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6893,7 +6893,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13101"}
+											{waypoint "3001"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -6909,7 +6909,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14101"}
+											{waypoint "3851"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7191,7 +7191,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15018"}
+								{waypoint "4618"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -7209,7 +7209,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16018"}
+								{waypoint "5468"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -7227,7 +7227,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17018"}
+								{waypoint "6318"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -7245,7 +7245,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18018"}
+								{waypoint "7168"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -7282,7 +7282,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15004"}
+								{waypoint "4604"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -7300,7 +7300,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16004"}
+								{waypoint "5454"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -7318,7 +7318,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17004"}
+								{waypoint "6304"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -7336,7 +7336,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18004"}
+								{waypoint "7154"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -7393,7 +7393,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15146"}
+											{waypoint "4746"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7409,7 +7409,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16146"}
+											{waypoint "5596"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7425,7 +7425,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17146"}
+											{waypoint "6446"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7441,7 +7441,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18146"}
+											{waypoint "7296"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7482,7 +7482,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15147"}
+											{waypoint "4747"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7498,7 +7498,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16147"}
+											{waypoint "5597"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7514,7 +7514,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17147"}
+											{waypoint "6447"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7530,7 +7530,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18147"}
+											{waypoint "7297"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7571,7 +7571,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15148"}
+											{waypoint "4748"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7587,7 +7587,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16148"}
+											{waypoint "5598"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7603,7 +7603,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17148"}
+											{waypoint "6448"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7619,7 +7619,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18148"}
+											{waypoint "7298"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7660,7 +7660,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15233"}
+											{waypoint "4833"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7676,7 +7676,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16233"}
+											{waypoint "5683"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7692,7 +7692,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17233"}
+											{waypoint "6533"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7708,7 +7708,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18233"}
+											{waypoint "7383"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7743,7 +7743,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15082"}
+											{waypoint "4682"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7759,7 +7759,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16082"}
+											{waypoint "5532"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7775,7 +7775,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17082"}
+											{waypoint "6382"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7791,7 +7791,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18082"}
+											{waypoint "7232"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7882,7 +7882,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15083"}
+											{waypoint "4683"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7898,7 +7898,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16083"}
+											{waypoint "5533"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7914,7 +7914,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17083"}
+											{waypoint "6383"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7930,7 +7930,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18083"}
+											{waypoint "7233"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7971,7 +7971,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15084"}
+											{waypoint "4684"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -7987,7 +7987,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16084"}
+											{waypoint "5534"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8003,7 +8003,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17084"}
+											{waypoint "6384"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8019,7 +8019,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18084"}
+											{waypoint "7234"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8054,7 +8054,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15085"}
+											{waypoint "4685"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8070,7 +8070,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16085"}
+											{waypoint "5535"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8086,7 +8086,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17085"}
+											{waypoint "6385"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8102,7 +8102,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18085"}
+											{waypoint "7235"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8167,7 +8167,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11023"}
+								{waypoint "1223"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -8185,7 +8185,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12023"}
+								{waypoint "2073"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -8203,7 +8203,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13023"}
+								{waypoint "2923"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -8221,7 +8221,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14023"}
+								{waypoint "3773"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -8258,7 +8258,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11004"}
+								{waypoint "1204"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -8276,7 +8276,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12004"}
+								{waypoint "2054"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -8294,7 +8294,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13004"}
+								{waypoint "2904"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -8312,7 +8312,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14004"}
+								{waypoint "3754"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -8369,7 +8369,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11206"}
+											{waypoint "1406"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8385,7 +8385,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12206"}
+											{waypoint "2256"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8401,7 +8401,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13206"}
+											{waypoint "3106"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8417,7 +8417,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14206"}
+											{waypoint "3956"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8458,7 +8458,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11207"}
+											{waypoint "1407"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8474,7 +8474,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12207"}
+											{waypoint "2257"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8490,7 +8490,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13207"}
+											{waypoint "3107"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8506,7 +8506,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14207"}
+											{waypoint "3957"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8547,7 +8547,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11208"}
+											{waypoint "1408"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8563,7 +8563,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12208"}
+											{waypoint "2258"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8579,7 +8579,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13208"}
+											{waypoint "3108"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8595,7 +8595,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14208"}
+											{waypoint "3958"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8636,7 +8636,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11238"}
+											{waypoint "1438"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8652,7 +8652,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12238"}
+											{waypoint "2288"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8668,7 +8668,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13238"}
+											{waypoint "3138"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8684,7 +8684,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14238"}
+											{waypoint "3988"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8719,7 +8719,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11102"}
+											{waypoint "1302"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8735,7 +8735,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12102"}
+											{waypoint "2152"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8751,7 +8751,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13102"}
+											{waypoint "3002"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8767,7 +8767,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14102"}
+											{waypoint "3852"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8858,7 +8858,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11103"}
+											{waypoint "1303"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8874,7 +8874,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12103"}
+											{waypoint "2153"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8890,7 +8890,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13103"}
+											{waypoint "3003"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8906,7 +8906,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14103"}
+											{waypoint "3853"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8947,7 +8947,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11104"}
+											{waypoint "1304"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8963,7 +8963,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12104"}
+											{waypoint "2154"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8979,7 +8979,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13104"}
+											{waypoint "3004"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -8995,7 +8995,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14104"}
+											{waypoint "3854"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9030,7 +9030,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11105"}
+											{waypoint "1305"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9046,7 +9046,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12105"}
+											{waypoint "2155"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9062,7 +9062,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13105"}
+											{waypoint "3005"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9078,7 +9078,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14105"}
+											{waypoint "3855"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9360,7 +9360,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15019"}
+								{waypoint "4619"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -9378,7 +9378,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16019"}
+								{waypoint "5469"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -9396,7 +9396,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17019"}
+								{waypoint "6319"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -9414,7 +9414,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18019"}
+								{waypoint "7169"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -9451,7 +9451,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "15005"}
+								{waypoint "4605"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -9469,7 +9469,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "16005"}
+								{waypoint "5455"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -9487,7 +9487,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "17005"}
+								{waypoint "6305"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -9505,7 +9505,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "18005"}
+								{waypoint "7155"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -9562,7 +9562,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15158"}
+											{waypoint "4758"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9578,7 +9578,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16158"}
+											{waypoint "5608"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9594,7 +9594,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17158"}
+											{waypoint "6458"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9610,7 +9610,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18158"}
+											{waypoint "7308"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9651,7 +9651,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15159"}
+											{waypoint "4759"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9667,7 +9667,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16159"}
+											{waypoint "5609"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9683,7 +9683,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17159"}
+											{waypoint "6459"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9699,7 +9699,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18159"}
+											{waypoint "7309"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9740,7 +9740,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15160"}
+											{waypoint "4760"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9756,7 +9756,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16160"}
+											{waypoint "5610"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9772,7 +9772,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17160"}
+											{waypoint "6460"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9788,7 +9788,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18160"}
+											{waypoint "7310"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9829,7 +9829,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15234"}
+											{waypoint "4834"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9845,7 +9845,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16234"}
+											{waypoint "5684"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9861,7 +9861,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17234"}
+											{waypoint "6534"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9877,7 +9877,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18234"}
+											{waypoint "7384"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9912,7 +9912,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15086"}
+											{waypoint "4686"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9928,7 +9928,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16086"}
+											{waypoint "5536"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9944,7 +9944,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17086"}
+											{waypoint "6386"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -9960,7 +9960,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18086"}
+											{waypoint "7236"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10051,7 +10051,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15086"}
+											{waypoint "4686"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10067,7 +10067,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16086"}
+											{waypoint "5536"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10083,7 +10083,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17086"}
+											{waypoint "6386"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10099,7 +10099,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18086"}
+											{waypoint "7236"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10140,7 +10140,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15087"}
+											{waypoint "4687"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10156,7 +10156,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16087"}
+											{waypoint "5537"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10172,7 +10172,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17087"}
+											{waypoint "6387"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10188,7 +10188,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18087"}
+											{waypoint "7237"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10223,7 +10223,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "15088"}
+											{waypoint "4688"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10239,7 +10239,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "16088"}
+											{waypoint "5538"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10255,7 +10255,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "17088"}
+											{waypoint "6388"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10271,7 +10271,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "18088"}
+											{waypoint "7238"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10336,7 +10336,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11024"}
+								{waypoint "1224"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -10354,7 +10354,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12024"}
+								{waypoint "2074"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -10372,7 +10372,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13024"}
+								{waypoint "2924"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -10390,7 +10390,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14024"}
+								{waypoint "3774"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -10427,7 +10427,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "11005"}
+								{waypoint "1205"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -10445,7 +10445,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "12005"}
+								{waypoint "2055"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -10463,7 +10463,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "13005"}
+								{waypoint "2905"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -10481,7 +10481,7 @@
 							}
 							{action
 								{type start}
-								{waypoint "14005"}
+								{waypoint "3755"}
 								{make_squad}
 								{approach "safe teleport"}
 							}
@@ -10538,7 +10538,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11218"}
+											{waypoint "1418"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10554,7 +10554,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12218"}
+											{waypoint "2268"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10570,7 +10570,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13218"}
+											{waypoint "3118"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10586,7 +10586,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14218"}
+											{waypoint "3968"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10627,7 +10627,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11219"}
+											{waypoint "1419"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10643,7 +10643,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12219"}
+											{waypoint "2269"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10659,7 +10659,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13219"}
+											{waypoint "3119"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10675,7 +10675,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14219"}
+											{waypoint "3969"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10716,7 +10716,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11220"}
+											{waypoint "1420"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10732,7 +10732,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12220"}
+											{waypoint "2270"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10748,7 +10748,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13220"}
+											{waypoint "3120"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10764,7 +10764,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14220"}
+											{waypoint "3970"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10805,7 +10805,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11239"}
+											{waypoint "1439"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10821,7 +10821,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12239"}
+											{waypoint "2289"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10837,7 +10837,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13239"}
+											{waypoint "3139"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10853,7 +10853,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14239"}
+											{waypoint "3989"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10888,7 +10888,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11106"}
+											{waypoint "1306"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10904,7 +10904,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12106"}
+											{waypoint "2156"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10920,7 +10920,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13106"}
+											{waypoint "3006"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -10936,7 +10936,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14106"}
+											{waypoint "3856"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11027,7 +11027,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11107"}
+											{waypoint "1307"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11043,7 +11043,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12107"}
+											{waypoint "2157"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11059,7 +11059,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13107"}
+											{waypoint "3007"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11075,7 +11075,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14107"}
+											{waypoint "3857"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11116,7 +11116,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11108"}
+											{waypoint "1308"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11132,7 +11132,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12108"}
+											{waypoint "2158"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11148,7 +11148,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13108"}
+											{waypoint "3008"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11164,7 +11164,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14108"}
+											{waypoint "3858"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11199,7 +11199,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "11109"}
+											{waypoint "1309"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11215,7 +11215,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "12109"}
+											{waypoint "2159"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11231,7 +11231,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "13109"}
+											{waypoint "3009"}
 											{make_squad}
 											{approach "safe teleport"}
 										}
@@ -11247,7 +11247,7 @@
 										}
 										{action
 											{type start}
-											{waypoint "14109"}
+											{waypoint "3859"}
 											{make_squad}
 											{approach "safe teleport"}
 										}

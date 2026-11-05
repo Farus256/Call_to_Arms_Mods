@@ -33,10 +33,14 @@ ok(human.includes('{if not dead {call "die_scream"}}'), 'corpses do not scream')
 const dU = parse(ufb, 'set/interaction_entity/dummy.inc'), dB = parse(bmp, 'set/interaction_entity/dummy.inc');
 // Only the reviewed landing trace changes; all BM body-part physics remain equal.
 const limb=dU.children.find(n=>s.name(n)==='bm_limb_a');
+const ghU=s.all(limb,n=>s.name(n)==='on'&&n.tokens[1]?.value==='ground_hit')[0];
+ok(!s.all(ghU,n=>s.name(n)==='call'&&n.tokens[1]?.value==='blood').length,'no duplicate blood call on limb landing');
 const landing=s.all(limb,n=>s.name(n)==='on'&&n.tokens[1]?.value==='blood_stain')[0];
 const paint=s.child(landing,'spawn');
 ok(paint.tokens[1]?.value==='ground_blood_small','body part landing makes a small trace, never an immediate corpse pool');
 paint.tokens[1].value='bloodstain';
+const ghGuard=s.child(ghU,'if');
+ghGuard.children.push(s.parse('{call "blood"}').children[0]);
 for (const name of ['bm_limb_a', 'bm_limb_b', 'bm_limb_c', 'part'])
   ok(entity(dU, name) === entity(dB, name), 'dummy.inc entity matches HF_BM_Patch: ' + name);
 const dummy = text(ufb, 'set/interaction_entity/dummy.inc');

@@ -1,82 +1,68 @@
 {"generic"
 	(include "\set\interaction_terrain\effects\effects-defines.inc")
-	{on ground_hit
-		{if material "flesh"
-			{delay 0.01 {volumes disable bullet blast contact touch}}
-			{delay 10 {volumes enable bullet blast contact touch}}
-			{if rand 0.25 {start_sound "human/bm_explosion" use_position}}			
-			{if min_speed 10
-				{if rand 0.05 {call "blood_low"}}
-					else
-					{if min_speed 1
-						{if rand 0.02 {call "blood_low"}}
-					}
-			}	
-		}
-	}
 	{on bullet_hit
 		{if not under_water
 			{if material "flesh"
 				{if stuff "bullet_fx size1"						;	Pistol Caliber
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 
 				else stuff "bullet_fx size2 intermediate"		;	Intermediate Rifle Caliber
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					("sonic_crack_s1")
 
 				else stuff "bullet_fx size2"					;	Rifle Caliber
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					("sonic_crack_s2")
 
 				else stuff "bullet_fx size3"					;	Large Rifle Caliber
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					("sonic_crack_s3")
 
 				else stuff "15mm he"
 					{spawn "object_hit_fg_15mm"}
 					{spawn "hit_he_fragments_15mm"}
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 
 				else stuff "auto size2 he"
 					{spawn "object_hit_fg_auto_size2"}
 					{spawn "hit_he_fragments_size1"}
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 
 				else stuff "auto he"
 					{spawn "object_hit_fg_auto"}
 					{spawn "hit_he_fragments_auto"}
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 
 				else stuff "auto aphe"			;// plane autocannon
 					{spawn "object_hit_fg_auto"}
 					{spawn "hit_he_fragments_size1"}
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 					{blastwave c4 0.504 r0 0.2 r1 0.5 position}		; needs blast because ammo is pierce
 					{blastwave c4 0.36 r0 0.75 r1 3.06 position}
 
 				else stuff "auto pierce"
 					("sonic_crack_s4")
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}	
 
 				else stuff "auto"
 					("sonic_crack_s4")
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 
 				else stuff "rifle_grenade_at"
 					{spawn "ex_air_small_heat"}
 					{spawn "hit_he_fragments_size1"}
-					{if not dead {spawn "blood" random_orientation}}
+					{spawn "blood"}
 
 				else stuff "rifle_grenade"
 					{spawn "ex_air_small"}
 					{spawn "hit_he_fragments_size1"}
-					{if not dead {spawn "blood" random_orientation}}
+					{spawn "blood"}
 
 				else stuff "bomb size3"
 					{spawn "ex_air_he_size5"}
@@ -89,34 +75,34 @@
 					{spawn "hit_he_fragments_size3"}
 
 				else stuff "small mortar"
-					{if not dead {spawn "blood" random_orientation}}
+					{spawn "blood"}
 					{spawn "ex_air_norm"}
 					{spawn "hit_he_fragments_size1"}
 
 				else stuff "mortar"
-					{if not dead {spawn "blood" random_orientation}}
+					{spawn "blood"}
 					{spawn "ex_air_big"}
 					{spawn "hit_he_fragments_size2"}
 
 				else stuff "rocketlauncher heat_shell size1"
 					{spawn "ex_heat"}
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 					{blastwave c4 2.5 r0 2 r1 3.5 position}		; needs blast because ammo is pierce
 
 				else stuff "rocketlauncher heat_shell size2"
 					{spawn "ex_heat"}
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 					{blastwave c4 2.5 r0 2 r1 3.5 position}		; needs blast because ammo is pierce
 
 				else stuff "shell size1 all_he"
-					{if not dead {spawn "blood" random_orientation}}
+					{spawn "blood"}
 					{spawn "ex_air_he_size1"}
 					{spawn "hit_he_fragments_size1"}
 
 				else stuff "shell size2 all_he"
-					{if not dead {spawn "blood" random_orientation}}
+					{spawn "blood"}
 					{spawn "ex_air_he_size2"}
 					{spawn "hit_he_fragments_size2"}
 
@@ -131,7 +117,7 @@
 					{spawn "hit_he_fragments_size4"}
 
 				else stuff "size4 std_ap"
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 
 				else stuff "size4"
@@ -154,16 +140,16 @@
 
 				else stuff "heat_shell"
 					{spawn "ex_heat"}
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 
 				else stuff "shell all_he"
-					{if not dead {spawn "blood" random_orientation}}
+					{spawn "blood"}
 					{spawn "ex_air_big"}
 					{spawn "hit_he_fragments_size2"}
 
 				else stuff "shell"
-					{if dead {spawn "blood_small_air"} else {spawn "blood_small"}{spawn "ufb_blood_spot_small" random_orientation}}
+					{spawn "blood_small"}
 					{spawn "blood_big"}
 
 				else stuff "flare marker"							; Special Flare ammo for mission scripts 
@@ -267,7 +253,10 @@
 				(include "killzones.inc")
 				{if stuff "grenade fire"							; Molotov Grenades
 					{spawn "ex_molot_ground"}
-
+					
+				else stuff "grenade thermite"						; Thermite Grenades		
+					{spawn "ex_molot_ground"}
+					
 				else stuff "grapple_fx"								; grapple hook
 					{if rain
 						{spawn "ex_ap_size2"}
@@ -2466,11 +2455,4 @@
 			}
 		}
 	}
-	
-	{on "blood"	;// UFB: pool spawns removed (clipped into terrain on gibs)
-	}
-	
-	{on "blood_low"	;// UFB: pool spawns removed (clipped into terrain on gibs)
-	}	
-	
-}
+}

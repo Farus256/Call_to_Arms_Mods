@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_2" 0x802f
 		{Position -141.83 -97.04}
 		{xform zl 127.9}
@@ -72,7 +72,7 @@
 		{MID 2}
 	}
 	{Entity "flag_point_campaign_4" 0x8004
-		{Position -1095.82 -1300.4 269.49}
+		{Position -1095.81 -1300.4 269.49}
 		{xform zl -149.67}
 		{Placer
 			{State "ammo" {Unlinked}}
@@ -138,8 +138,8 @@
 		{MID 9}
 	}
 	{Entity "map_point_conquest" 0x8005
-		{Position 5265.1 -5328.39}
-		{xform zl 129.85}
+		{Position 1031.36 -5250.4}
+		{xform zl 91.82}
 		{Extender "map_point"
 			{name b1}
 			{team b}
@@ -180,8 +180,8 @@
 		{MID 5}
 	}
 	{Entity "map_point_conquest" 0x8007
-		{Position -4373.02 5430.33}
-		{xform zl -51.23}
+		{Position -210.09 5428.32}
+		{xform zl -101}
 		{Extender "map_point"
 			{name a3}
 			{team a}
@@ -222,7 +222,7 @@
 		{MID 7}
 	}
 	{Entity "map_point_conquest" 0x800d
-		{Position -5385.23 -5321.38}
+		{Position -2505.51 -5306.34}
 		{xform zl 46.59}
 		{Extender "map_point"
 			{name b4}
@@ -243,7 +243,7 @@
 		{MID 13}
 	}
 	{Entity "map_point_conquest" 0x800e
-		{Position 3211.58 5476.41}
+		{Position 2067.87 5393.9}
 		{xform zl -101.82}
 		{Extender "map_point"
 			{name a4}
@@ -290,8 +290,8 @@
 		{MID 18}
 	}
 	{Human "" 0x800c
-		{Position 3424.29 -385.63}
-		{xform zl 143.99}
+		{Position 3424.3 -385.63}
+		{xform zl 144}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -308,7 +308,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x800f
-		{Position 3256.48 -1106.34}
+		{Position 3256.48 -1106.35}
 		{xform zl -122.4}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -326,7 +326,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8010
-		{Position 3606.34 -907.59}
+		{Position 3606.35 -907.59}
 		{xform zl -90.45}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -344,8 +344,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8012
-		{Position 3648.19 -898.66}
-		{xform zl -38.59}
+		{Position 3648.2 -898.66}
+		{xform zl -38.58}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -380,7 +380,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8015
-		{Position 3202.48 -1064.63}
+		{Position 3202.49 -1064.64}
 		{xform zl -157.26}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -417,7 +417,7 @@
 	}
 	{Human "" 0x8019
 		{Position 3377.07 -588.49}
-		{xform zl 122.67}
+		{xform zl 122.68}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -434,7 +434,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x801a
-		{Position 3364.27 -606.15}
+		{Position 3364.28 -606.15}
 		{xform zl 147.71}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -452,7 +452,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x801b
-		{Position 3431.9 -562.61}
+		{Position 3431.91 -562.61}
 		{xform zl 97.16}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -471,7 +471,7 @@
 	}
 	{Human "" 0x801c
 		{Position 3359.45 -627.57}
-		{xform zl 171.69}
+		{xform zl 171.68}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -488,7 +488,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x801d
-		{Position 3524.33 -574.21}
+		{Position 3524.34 -574.21}
 		{xform zl 47.35}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -524,7 +524,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x801f
-		{Position 3507.05 -561.03}
+		{Position 3507.06 -561.03}
 		{xform zl 72.38}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -542,7 +542,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8020
-		{Position 3376.13 -1017.96}
+		{Position 3376.14 -1017.96}
 		{xform zl 145}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -578,7 +578,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8022
-		{Position 3204.68 -865.44}
+		{Position 3204.69 -865.44}
 		{xform zl 145}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -632,7 +632,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8025
-		{Position 2987.91 -867.81}
+		{Position 2987.92 -867.81}
 		{xform zl 156.09}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -650,7 +650,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x802b
-		{Position 3723.55 452.78}
+		{Position 3723.56 452.79}
 		{xform zl 110.82}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -668,8 +668,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x802c
-		{Position 2746.37 -918.33}
-		{xform zl 167.81}
+		{Position 2746.38 -918.33}
+		{xform zl 167.8}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -687,7 +687,7 @@
 	}
 	{Human "" 0x8031
 		{Position 3370.81 -688.4}
-		{xform zl -179.76}
+		{xform zl -179.77}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -705,7 +705,7 @@
 	}
 	{Human "" 0x8032
 		{Position 3508.51 -738.8}
-		{xform zl -57.15}
+		{xform zl -57.16}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -722,8 +722,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8033
-		{Position 3444.39 -752.97}
-		{xform zl -90.42}
+		{Position 3444.4 -752.97}
+		{xform zl -90.41}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -759,7 +759,7 @@
 	}
 	{Human "" 0x8035
 		{Position 3383.75 -729.11}
-		{xform zl -130.75}
+		{xform zl -130.76}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -795,7 +795,7 @@
 	}
 	{Human "" 0x8037
 		{Position 3521.89 -721.4}
-		{xform zl -33.15}
+		{xform zl -33.14}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -812,8 +812,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8038
-		{Position 3372.91 -710.02}
-		{xform zl -154.73}
+		{Position 3372.92 -710.02}
+		{xform zl -154.72}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -830,8 +830,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8039
-		{Position 3771.64 -106.5}
-		{xform zl 145}
+		{Position 3771.65 -106.5}
+		{xform zl 144.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -866,7 +866,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x803b
-		{Position 3561.77 -975.62}
+		{Position 3561.78 -975.62}
 		{xform zl 145}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -884,7 +884,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x803c
-		{Position 3713.06 -1030.85}
+		{Position 3713.07 -1030.86}
 		{xform zl -93.88}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -903,7 +903,7 @@
 	}
 	{Human "" 0x803d
 		{Position 3160.2 -1325.74}
-		{xform zl -90.35}
+		{xform zl -90.37}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -920,7 +920,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x803e
-		{Position 3851.85 -461.88}
+		{Position 3851.86 -461.88}
 		{xform zl -35.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -939,7 +939,7 @@
 	}
 	{Human "" 0x803f
 		{Position 4029.05 -80.3}
-		{xform zl -34.99}
+		{xform zl -35}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -957,7 +957,7 @@
 	}
 	{Human "" 0x8040
 		{Position 4233.47 180.78}
-		{xform zl -125.6}
+		{xform zl -125.59}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -993,7 +993,7 @@
 	}
 	{Human "" 0x8042
 		{Position 4007.36 -377.08}
-		{xform zl 54}
+		{xform zl 53.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1641,20 +1641,13 @@
 	}
 	{Human "" 0xb023
 		{Position 612.87 407.29}
-		{xform zl 24.98}
+		{xform zl 24.97}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 89}
-		{Cover
-			{sector 612.878 407.292 {type "snipe_cover"}
-				{wall 615.062 419.176 625.537 396.699}
-				{row 0}
-				{link 0x42e4}
-			}
-		}
 		{FsmState "snipe"}
 	}
 	{Human "" 0xb024
@@ -1666,13 +1659,6 @@
 		}
 		{Player 0}
 		{MID 90}
-		{Cover
-			{sector 120.59 141.739 {type "snipe_cover"}
-				{wall 65.625 118.136 125.733 152.783}
-				{row 0}
-				{link 0x5}
-			}
-		}
 		{FsmState "snipe"}
 	}
 	{Human "" 0xb025
@@ -1738,13 +1724,6 @@
 		}
 		{Player 0}
 		{MID 94}
-		{Cover
-			{sector -2248.43 -304.329 {type "snipe_cover"}
-				{wall -2246 -294.126 -2198.37 -381.974}
-				{row 0}
-				{link 0x2038}
-			}
-		}
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8026
@@ -1821,7 +1800,7 @@
 	}
 	{Human "" 0x8044
 		{Position -2403.12 -468.82}
-		{xform zl -36.47}
+		{xform zl -36.45}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1838,7 +1817,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8048
-		{Position -2612.41 -302.66}
+		{Position -2612.4 -302.66}
 		{xform zl 25.14}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -1856,7 +1835,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x804c
-		{Position -2641.29 -271.18}
+		{Position -2641.3 -271.18}
 		{xform zl 74.16}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -1874,7 +1853,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x804d
-		{Position -2671.93 -263.17}
+		{Position -2671.94 -263.17}
 		{xform zl 81.42}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -1893,7 +1872,7 @@
 	}
 	{Human "" 0x804f
 		{Position -2795.87 -283.03}
-		{xform zl 142.38}
+		{xform zl 142.39}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1910,7 +1889,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8050
-		{Position -2713.16 -258.19}
+		{Position -2713.17 -258.19}
 		{xform zl 85.12}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -1946,7 +1925,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8053
-		{Position -2747.35 -256.75}
+		{Position -2747.35 -256.76}
 		{xform zl 93.36}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -1965,7 +1944,7 @@
 	}
 	{Human "" 0x8054
 		{Position -2781.18 -266.72}
-		{xform zl 118.39}
+		{xform zl 118.4}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1982,8 +1961,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8055
-		{Position -2355.82 -103.97}
-		{xform zl 28.46}
+		{Position -2419.52 -29.52}
+		{xform zl 94.6}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -1991,16 +1970,13 @@
 		{Player 0}
 		{MID 108}
 		{Cover
-			{sector -2355.82 -103.978 {type "snipe_cover"}
-				{wall -2385.63 -34.3161 -2338 -122.164}
-				{row 0}
-				{link 0x205c}
+			{sector -2419.53 -29.5273 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x8056
-		{Position -2831.63 44.59}
+		{Position -2831.64 44.59}
 		{xform zl 87.2}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2054,7 +2030,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8059
-		{Position -2906.44 44.96}
+		{Position -2906.45 44.96}
 		{xform zl 107.8}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2090,8 +2066,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x805b
-		{Position -2981.67 299.94}
-		{xform zl 129.03}
+		{Position -3084.52 250.47}
+		{xform zl -83.89}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2099,17 +2075,14 @@
 		{Player 0}
 		{MID 114}
 		{Cover
-			{sector -2981.68 299.949 {type "snipe_cover"}
-				{wall -3035.99 264.916 -2958.49 327.769}
-				{row 0}
-				{link 0x709f}
+			{sector -3084.53 250.473 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x805c
-		{Position -2656.03 450.61}
-		{xform zl 28.46}
+		{Position -2634.52 465.47}
+		{xform zl -157.46}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2117,13 +2090,10 @@
 		{Player 0}
 		{MID 115}
 		{Cover
-			{sector -2656.04 450.612 {type "snipe_cover"}
-				{wall -2666.16 483.964 -2618.53 396.116}
-				{row 0}
-				{link 0x2062}
+			{sector -2634.53 465.473 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x805d
 		{Position -2630.84 -327.21}
@@ -2145,7 +2115,7 @@
 	}
 	{Human "" 0x805e
 		{Position -2636.92 -348.3}
-		{xform zl -35.68}
+		{xform zl -35.69}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2162,7 +2132,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x805f
-		{Position -2677.08 -378.08}
+		{Position -2677.09 -378.08}
 		{xform zl -68.95}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2198,7 +2168,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8061
-		{Position -2709.83 -389.96}
+		{Position -2709.84 -389.96}
 		{xform zl -72.65}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2217,7 +2187,7 @@
 	}
 	{Human "" 0x8062
 		{Position -2803.76 -388.08}
-		{xform zl -128.93}
+		{xform zl -128.92}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2252,7 +2222,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8064
-		{Position -2772.03 -403.48}
+		{Position -2772.04 -403.48}
 		{xform zl -103.88}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2271,7 +2241,7 @@
 	}
 	{Human "" 0x8065
 		{Position -2503.84 169.37}
-		{xform zl 28.53}
+		{xform zl 28.54}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2288,21 +2258,14 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8066
-		{Position -2147.96 -486.9}
-		{xform zl 29.8}
+		{Position -2147.97 -486.9}
+		{xform zl 29.81}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 125}
-		{Cover
-			{sector -2147.97 -486.901 {type "snipe_cover"}
-				{wall -2151.68 -466.344 -2126.6 -510.106}
-				{row 0}
-				{link 0x4317}
-			}
-		}
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8067
@@ -2343,7 +2306,7 @@
 	}
 	{Human "" 0x8069
 		{Position -2091.18 -678.72}
-		{xform zl -70.36}
+		{xform zl -70.37}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2360,8 +2323,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x806a
-		{Position -3182.03 -489.99}
-		{xform zl -142.49}
+		{Position -3179.52 -489.52}
+		{xform zl -110.7}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2369,17 +2332,14 @@
 		{Player 0}
 		{MID 129}
 		{Cover
-			{sector -3182.03 -489.99 {type "snipe_cover"}
-				{wall -3132.05 -566.629 -3192.85 -487.391}
-				{row 0}
-				{link 0x103e}
+			{sector -3179.53 -489.527 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x806b
-		{Position -3249.28 85.79}
-		{xform zl 127.49}
+		{Position -3261.43 151.17}
+		{xform zl 100.07}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2387,17 +2347,14 @@
 		{Player 0}
 		{MID 130}
 		{Cover
-			{sector -3249.29 85.7934 {type "snipe_cover"}
-				{wall -3268.73 79.7036 -3189.55 140.438}
-				{row 0}
-				{link 0x7099}
+			{sector -3259.53 140.473 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x806c
-		{Position -3452.42 -69.44}
-		{xform zl 127.49}
+		{Position -3444.52 -79.51}
+		{xform zl 29.68}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2405,17 +2362,14 @@
 		{Player 0}
 		{MID 131}
 		{Cover
-			{sector -3452.43 -69.4444 {type "snipe_cover"}
-				{wall -3503.63 -99.8965 -3424.45 -39.1619}
-				{row 0}
-				{link 0x709c}
+			{sector -3444.53 -79.5273 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x806d
-		{Position -2921.77 -283.43}
-		{xform zl 149.95}
+		{Position -2921.78 -283.43}
+		{xform zl 149.96}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2432,8 +2386,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x806e
-		{Position -2924.79 -355.82}
-		{xform zl -137.15}
+		{Position -2924.8 -355.82}
+		{xform zl -137.14}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2480,7 +2434,7 @@
 	}
 	{Human "" 0x8087
 		{Position -1152.64 -1584.43}
-		{xform zl -125.93}
+		{xform zl -125.92}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2497,7 +2451,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8088
-		{Position -1112.98 -1571.42}
+		{Position -1112.99 -1571.42}
 		{xform zl -48.13}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2515,7 +2469,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8089
-		{Position -1010.27 -1160.46}
+		{Position -1010.28 -1160.46}
 		{xform zl -50.38}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2533,7 +2487,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x808a
-		{Position -838.92 -1407.82}
+		{Position -838.92 -1407.83}
 		{xform zl -90.45}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2551,8 +2505,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x808b
-		{Position -1168.77 -1173.2}
-		{xform zl 129.61}
+		{Position -1168.78 -1173.19}
+		{xform zl 129.62}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2569,8 +2523,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x808c
-		{Position -1130.49 -1356.03}
-		{xform zl -179.64}
+		{Position -1130.49 -1356.04}
+		{xform zl -179.63}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2587,7 +2541,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x808d
-		{Position -1233.86 -1230.91}
+		{Position -1233.87 -1230.92}
 		{xform zl 130.6}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2623,7 +2577,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x808f
-		{Position -1088.59 -1325.72}
+		{Position -1088.6 -1325.73}
 		{xform zl 120.32}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2641,7 +2595,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8090
-		{Position -1040.35 -1269.79}
+		{Position -1040.35 -1269.8}
 		{xform zl 37.92}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2677,8 +2631,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8092
-		{Position -1190.8 -1191.44}
-		{xform zl 129.62}
+		{Position -1190.81 -1191.43}
+		{xform zl 129.63}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2713,8 +2667,8 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x8094
-		{Position -1083.22 -1011.46}
-		{xform zl 10.18}
+		{Position -1083.23 -1011.47}
+		{xform zl 10.17}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2731,7 +2685,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8095
-		{Position -1181.91 -1065.95}
+		{Position -1181.92 -1065.94}
 		{xform zl 153.98}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2749,7 +2703,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8096
-		{Position -1183.8 -1097.63}
+		{Position -1183.8 -1097.64}
 		{xform zl -162.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2785,7 +2739,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x8098
-		{Position -1092.6 -1110.14}
+		{Position -1092.61 -1110.15}
 		{xform zl 129.62}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2803,7 +2757,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8099
-		{Position -1562.06 -1142.33}
+		{Position -1562.07 -1142.34}
 		{xform zl 95.18}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2840,7 +2794,7 @@
 	}
 	{Human "" 0x809b
 		{Position -1087.02 -1388.79}
-		{xform zl -112.5}
+		{xform zl -112.49}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2857,8 +2811,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x809c
-		{Position -980.96 -1361.33}
-		{xform zl -50.06}
+		{Position -980.96 -1361.34}
+		{xform zl -50.05}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2875,7 +2829,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x809d
-		{Position -1019.87 -1391.22}
+		{Position -1019.88 -1391.23}
 		{xform zl -81.25}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2911,7 +2865,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x809f
-		{Position -957.64 -1311.32}
+		{Position -957.64 -1311.33}
 		{xform zl -1.04}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -2929,8 +2883,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80a0
-		{Position -965.67 -1345.9}
-		{xform zl -25.01}
+		{Position -965.67 -1345.91}
+		{xform zl -25.02}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2947,8 +2901,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80a1
-		{Position -998.94 -1376.54}
-		{xform zl -51.56}
+		{Position -998.94 -1376.55}
+		{xform zl -51.57}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -2965,8 +2919,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80a2
-		{Position -1103.11 -1374.19}
-		{xform zl -137.53}
+		{Position -1103.11 -1374.2}
+		{xform zl -137.52}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3019,8 +2973,8 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x80a5
-		{Position -1351.54 -1331.12}
-		{xform zl 130.42}
+		{Position -1351.54 -1331.13}
+		{xform zl 130.41}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3037,8 +2991,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80a6
-		{Position -1032.28 -1835.26}
-		{xform zl -98.33}
+		{Position -1032.28 -1835.27}
+		{xform zl -98.32}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3056,7 +3010,7 @@
 	}
 	{Human "" 0x80a7
 		{Position -761.28 -1826.59}
-		{xform zl -77}
+		{xform zl -76.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3092,7 +3046,7 @@
 	}
 	{Human "" 0x80a9
 		{Position -1193.11 -1832.55}
-		{xform zl 40.19}
+		{xform zl 40.18}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3128,7 +3082,7 @@
 	}
 	{Human "" 0x80ab
 		{Position -845.91 -1830.74}
-		{xform zl -90.85}
+		{xform zl -90.86}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3181,7 +3135,7 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x80c4
-		{Position 2062.85 -184.33}
+		{Position 2062.86 -184.33}
 		{xform zl -88.15}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3217,7 +3171,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x80c6
-		{Position 2109.64 -180.7}
+		{Position 2109.63 -180.7}
 		{xform zl -68.15}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3272,7 +3226,7 @@
 	}
 	{Human "" 0x80c9
 		{Position 2250.38 378.47}
-		{xform zl 63.02}
+		{xform zl 63.01}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3290,7 +3244,7 @@
 	}
 	{Human "" 0x80ca
 		{Position 2277.81 356.29}
-		{xform zl 37.99}
+		{xform zl 38}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3307,7 +3261,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80cb
-		{Position 2096.1 333.22}
+		{Position 2096.11 333.22}
 		{xform zl 155.23}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3361,7 +3315,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80ce
-		{Position 2127.66 366.75}
+		{Position 2127.67 366.75}
 		{xform zl 106.21}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3397,7 +3351,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80d0
-		{Position 2188.39 379.57}
+		{Position 2188.38 379.57}
 		{xform zl 97.97}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3415,7 +3369,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80d1
-		{Position 2328.8 128.38}
+		{Position 2328.81 128.38}
 		{xform zl -23}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3452,7 +3406,7 @@
 	}
 	{Human "" 0x80d3
 		{Position 1814.18 529.45}
-		{xform zl 136.37}
+		{xform zl 136.36}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3469,8 +3423,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x80d4
-		{Position 2001.24 265.1}
-		{xform zl 162.42}
+		{Position 2001.25 265.1}
+		{xform zl 162.43}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3487,7 +3441,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80d5
-		{Position 2297.98 587.3}
+		{Position 2297.99 587.3}
 		{xform zl 142.14}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3505,7 +3459,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x80d6
-		{Position 2392.22 595.68}
+		{Position 2392.23 595.68}
 		{xform zl 54.63}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3523,7 +3477,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x80d7
-		{Position 1560.15 338.63}
+		{Position 1560.16 338.63}
 		{xform zl 130.22}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3541,7 +3495,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x80d8
-		{Position 2086.68 830.07}
+		{Position 2086.69 830.07}
 		{xform zl 95.9}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3560,7 +3514,7 @@
 	}
 	{Human "" 0x80d9
 		{Position 2323.11 -144.05}
-		{xform zl -66.4}
+		{xform zl -66.39}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3577,7 +3531,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80da
-		{Position 1999.3 51.26}
+		{Position 1999.31 51.26}
 		{xform zl -108.9}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3595,7 +3549,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80db
-		{Position 2335.44 2.38}
+		{Position 2335.45 2.38}
 		{xform zl -147}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3631,7 +3585,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80dd
-		{Position 2210.44 248.44}
+		{Position 2210.44 248.45}
 		{xform zl -166.13}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3649,8 +3603,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80de
-		{Position 2118.67 184.74}
-		{xform zl -125.99}
+		{Position 2118.68 184.74}
+		{xform zl -126}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3668,7 +3622,7 @@
 	}
 	{Human "" 0x80df
 		{Position 2282.12 65.65}
-		{xform zl -137}
+		{xform zl -136.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3686,7 +3640,7 @@
 	}
 	{Human "" 0x80e0
 		{Position 1972.15 84.24}
-		{xform zl -157.92}
+		{xform zl -157.9}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3703,8 +3657,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80e1
-		{Position 1542.48 223.82}
-		{xform zl 142}
+		{Position 1585.47 245.47}
+		{xform zl 26.72}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3712,13 +3666,10 @@
 		{Player 0}
 		{MID 204}
 		{Cover
-			{sector 1542.49 223.822 {type "snipe_cover"}
-				{wall 1515.7 200.898 1577.2 279.64}
-				{row 0}
-				{link 0x2208}
+			{sector 1585.47 245.473 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x80e2
 		{Position 2732.29 -336.26}
@@ -3739,8 +3690,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80e3
-		{Position 1731.32 308.67}
-		{xform zl 140.43}
+		{Position 1732.71 304.17}
+		{xform zl -131.36}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3748,17 +3699,14 @@
 		{Player 0}
 		{MID 206}
 		{Cover
-			{sector 1731.32 308.671 {type "snipe_cover"}
-				{wall 1722.74 309.275 1786.38 386.302}
-				{row 0}
-				{link 0x21fe}
+			{sector 1735.47 300.473 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x80e4
-		{Position 2127.55 -478.41}
-		{xform zl -89.2}
+		{Position 2127.56 -478.41}
+		{xform zl -89.21}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3775,8 +3723,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0x80e5
-		{Position 1883.69 -304.23}
-		{xform zl -128.43}
+		{Position 1883.7 -304.23}
+		{xform zl -128.42}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3793,7 +3741,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80e6
-		{Position 2707.75 -229.95}
+		{Position 2707.76 -229.95}
 		{xform zl 57.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3811,8 +3759,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80e7
-		{Position 1919 534.11}
-		{xform zl 140.43}
+		{Position 1930.47 530.46}
+		{xform zl 44.43}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3820,13 +3768,10 @@
 		{Player 0}
 		{MID 210}
 		{Cover
-			{sector 1919 534.111 {type "snipe_cover"}
-				{wall 1910.42 534.716 1974 611.658}
-				{row 0}
-				{link 0x21ff}
+			{sector 1930.47 530.473 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x80e8
 		{Position 2638.67 -399.27}
@@ -3848,7 +3793,7 @@
 	}
 	{Human "" 0x80e9
 		{Position 1734.01 102.03}
-		{xform zl -160.87}
+		{xform zl -160.85}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3865,8 +3810,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x80ea
-		{Position 1737.2 168.83}
-		{xform zl 152.26}
+		{Position 1737.21 168.83}
+		{xform zl 152.25}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3883,8 +3828,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x807f
-		{Position -1719.22 56.52}
-		{xform zl 127.29}
+		{Position -1739.52 -29.52}
+		{xform zl -39.59}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3892,17 +3837,14 @@
 		{Player 0}
 		{MID 221}
 		{Cover
-			{sector -1719.22 56.5282 {type "snipe_cover"}
-				{wall -1759.82 34.403 -1680.3 94.9772}
-				{row 0}
-				{link 0x580f}
+			{sector -1739.53 -29.5273 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x80ad
-		{Position 860.68 -1259.08}
-		{xform zl -67.92}
+		{Position 875.47 -1264.52}
+		{xform zl -20.18}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3910,13 +3852,10 @@
 		{Player 0}
 		{MID 222}
 		{Cover
-			{sector 860.683 -1259.09 {type "snipe_cover"}
-				{wall 934.14 -1249.93 841.533 -1287.49}
-				{row 0}
-				{link 0x895}
+			{sector 875.473 -1264.53 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x80b8
 		{Position -311.44 -1086.52}
@@ -3930,26 +3869,19 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x80eb
-		{Position 1432.85 -379.8}
-		{xform zl -66.65}
+		{Position 1432.06 -378.13}
+		{xform zl -88.25}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 225}
-		{Cover
-			{sector 1432.86 -379.803 {type "snipe_cover"}
-				{wall 1453.61 -378.474 1361.83 -418.078}
-				{row 0}
-				{link 0x10b5}
-			}
-		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x8100
 		{Position -113.16 -858.34}
-		{xform zl -93.43}
+		{xform zl -93.42}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3966,8 +3898,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8101
-		{Position 322.77 -1482.86}
-		{xform zl -158.7}
+		{Position 385.47 -1439.52}
+		{xform zl 34.63}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3975,17 +3907,14 @@
 		{Player 0}
 		{MID 228}
 		{Cover
-			{sector 322.772 -1482.86 {type "snipe_cover"}
-				{wall 319.193 -1492.96 312.932 -1476.89}
-				{row 0}
-				{link 0x20ed}
+			{sector 385.473 -1439.53 {type "bush_lie"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "lie"}
 	}
 	{Human "" 0x8102
 		{Position -333.55 -1680.72}
-		{xform zl 26.65}
+		{xform zl 26.64}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4002,8 +3931,8 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x8103
-		{Position 619.19 1107.72}
-		{xform zl 52.5}
+		{Position 619.19 1107.73}
+		{xform zl 52.48}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4021,7 +3950,7 @@
 	}
 	{Human "" 0x8104
 		{Position 744.49 -2214.9}
-		{xform zl -68}
+		{xform zl -67.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4038,8 +3967,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8105
-		{Position -1618.76 661.48}
-		{xform zl 128.05}
+		{Position -1629.52 630.46}
+		{xform zl -109.14}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4047,17 +3976,14 @@
 		{Player 0}
 		{MID 234}
 		{Cover
-			{sector -1618.76 661.482 {type "snipe_cover"}
-				{wall -1627.02 663.912 -1548.32 725.513}
-				{row 0}
-				{link 0x350}
+			{sector -1629.53 630.473 {type "bush_squat"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "squat"}
 	}
 	{Human "" 0x8106
-		{Position -2311.4 -1212.34}
-		{xform zl -160}
+		{Position -2311.39 -1212.35}
+		{xform zl -159.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4075,7 +4001,7 @@
 	}
 	{Human "" 0x8107
 		{Position 920.33 -1691.93}
-		{xform zl -62.53}
+		{xform zl -62.54}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4092,7 +4018,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8108
-		{Position -814.33 -1831.21}
+		{Position -814.33 -1831.22}
 		{xform zl -90.85}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4110,8 +4036,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8109
-		{Position -262.46 1700.61}
-		{xform zl 128.97}
+		{Position -164.52 1755.47}
+		{xform zl 29.24}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4119,17 +4045,14 @@
 		{Player 0}
 		{MID 240}
 		{Cover
-			{sector -262.467 1700.61 {type "snipe_cover"}
-				{wall -282.172 1693.68 -242.959 1725.4}
-				{row 0}
-				{link 0x445c}
+			{sector -164.527 1755.47 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x810a
-		{Position -99.8 1892.41}
-		{xform zl 130.63}
+		{Position -99.8 1892.42}
+		{xform zl 130.64}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4182,8 +4105,8 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x810f
-		{Position 1978.67 -1978.69}
-		{xform zl -115.84}
+		{Position 1978.67 -1978.7}
+		{xform zl -115.83}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4200,7 +4123,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa007
-		{Position 3182.55 2018.17}
+		{Position 3182.56 2018.17}
 		{xform zl 54}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4218,8 +4141,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa008
-		{Position 2237.16 2254.38}
-		{xform zl 50.11}
+		{Position 2237.15 2254.38}
+		{xform zl 50.12}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4236,7 +4159,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa009
-		{Position 2342.72 2166.04}
+		{Position 2342.73 2166.04}
 		{xform zl 50.12}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4255,7 +4178,7 @@
 	}
 	{Human "" 0xa00a
 		{Position 4191.02 -2123.9}
-		{xform zl -32.99}
+		{xform zl -33}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4272,7 +4195,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0xa00b
-		{Position 2473.22 -1698.82}
+		{Position 2473.23 -1698.83}
 		{xform zl -35.43}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4308,25 +4231,18 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa00d
-		{Position 1286.01 299.03}
-		{xform zl -37.63}
+		{Position 1286.02 299.03}
+		{xform zl -37.64}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 247}
-		{Cover
-			{sector 1286.02 299.035 {type "hide_stand"}
-				{wall 1277.42 299.351 1311.21 343.161}
-				{row 0}
-				{link 0x444}
-			}
-		}
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0xa00e
-		{Position 3964.65 1450.09}
+		{Position 3964.66 1450.1}
 		{xform zl 54}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4344,7 +4260,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa00f
-		{Position 1881.14 -1269.2}
+		{Position 1881.14 -1269.19}
 		{xform zl -136.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4370,18 +4286,11 @@
 		}
 		{Player 0}
 		{MID 250}
-		{Cover
-			{sector 2120.84 -1763.04 {type "snipe_cover"}
-				{wall 2175 -1809.09 2092.84 -1752.15}
-				{row 0}
-				{link 0xed4}
-			}
-		}
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa011
-		{Position 3786.3 2126.47}
-		{xform zl 51}
+		{Position 3786.31 2126.47}
+		{xform zl 50.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4398,7 +4307,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa012
-		{Position 1723.5 934.29}
+		{Position 1723.51 934.29}
 		{xform zl 142.21}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4416,7 +4325,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa013
-		{Position 3556.54 1752.41}
+		{Position 3556.55 1752.42}
 		{xform zl 52.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4434,8 +4343,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa014
-		{Position 4111.4 1586.38}
-		{xform zl -4.88}
+		{Position 4111.41 1586.38}
+		{xform zl -4.89}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4452,8 +4361,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa019
-		{Position -3951.38 -2483.17}
-		{xform zl -65}
+		{Position -3951.39 -2483.17}
+		{xform zl -64.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4470,8 +4379,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa01a
-		{Position -4115.31 -1731.07}
-		{xform zl -164}
+		{Position -4115.31 -1731.08}
+		{xform zl -163.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4489,7 +4398,7 @@
 	}
 	{Human "" 0xa01b
 		{Position -1590.21 2256.06}
-		{xform zl 124.99}
+		{xform zl 125}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4506,8 +4415,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa01c
-		{Position -2726.46 1623.54}
-		{xform zl 129.14}
+		{Position -2726.47 1623.54}
+		{xform zl 129.15}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4524,8 +4433,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0xa01d
-		{Position -1951.41 -1504.08}
-		{xform zl -149.09}
+		{Position -1951.42 -1504.09}
+		{xform zl -149.08}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4542,7 +4451,7 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0xa01e
-		{Position -3331.45 2185.98}
+		{Position -3331.46 2185.98}
 		{xform zl 121.88}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4560,8 +4469,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa01f
-		{Position -3294.28 817.31}
-		{xform zl 81.99}
+		{Position -3294.29 817.31}
+		{xform zl 82}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4578,7 +4487,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa020
-		{Position -1410.65 1111.48}
+		{Position -1410.65 1111.49}
 		{xform zl 38.62}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4614,8 +4523,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa022
-		{Position -2985.85 1121.5}
-		{xform zl 158}
+		{Position -2985.86 1121.51}
+		{xform zl 158.01}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4632,7 +4541,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa023
-		{Position -1386.87 -1996.23}
+		{Position -1386.87 -1996.24}
 		{xform zl 40.19}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4651,7 +4560,7 @@
 	}
 	{Human "" 0xa024
 		{Position -2854.21 -1963.55}
-		{xform zl -108}
+		{xform zl -107.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4704,8 +4613,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0xa027
-		{Position -3110.96 839.55}
-		{xform zl 136}
+		{Position -3110.97 839.55}
+		{xform zl 135.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4722,7 +4631,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa028
-		{Position -3362.35 -2492.91}
+		{Position -3362.35 -2492.9}
 		{xform zl -43.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4740,7 +4649,7 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0xa02d
-		{Position 937.6 -961.84}
+		{Position 883.91 -873.9}
 		{xform zl 22.35}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4758,8 +4667,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa02e
-		{Position -2293.55 -1241.36}
-		{xform zl -153}
+		{Position -2293.56 -1241.37}
+		{xform zl -152.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4776,8 +4685,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa02f
-		{Position 1662.87 -818.36}
-		{xform zl -68}
+		{Position 1662.88 -818.36}
+		{xform zl -67.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4812,8 +4721,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa031
-		{Position -1206.64 453.27}
-		{xform zl 127.39}
+		{Position -1159.52 475.47}
+		{xform zl 25.22}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4821,17 +4730,14 @@
 		{Player 0}
 		{MID 283}
 		{Cover
-			{sector -1206.65 453.275 {type "snipe_cover"}
-				{wall -1250.08 428.884 -1170.72 489.547}
-				{row 0}
-				{link 0x40ba}
+			{sector -1159.53 475.473 {type "bush_squat"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "squat"}
 	}
 	{Human "" 0xa032
-		{Position -1088.24 -96.01}
-		{xform zl 124.77}
+		{Position -1088.25 -96.01}
+		{xform zl 124.76}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4884,8 +4790,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0xa035
-		{Position -1852.84 -996.6}
-		{xform zl -152.4}
+		{Position -1852.85 -996.6}
+		{xform zl -152.41}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4902,8 +4808,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa036
-		{Position -2883.2 -2232.36}
-		{xform zl 63.99}
+		{Position -2883.2 -2232.37}
+		{xform zl 64}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4920,8 +4826,8 @@
 		{FsmState "squat"}
 	}
 	{Human "" 0xa037
-		{Position -2094.77 303.88}
-		{xform zl 125.86}
+		{Position -2114.52 250.47}
+		{xform zl -120.84}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4929,17 +4835,14 @@
 		{Player 0}
 		{MID 289}
 		{Cover
-			{sector -2094.78 303.885 {type "snipe_cover"}
-				{wall -2174.76 254.706 -2093.82 313.219}
-				{row 0}
-				{link 0x61f1}
+			{sector -2114.53 250.473 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0xa038
 		{Position 653.64 -2223.38}
-		{xform zl -11.99}
+		{xform zl -12}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4956,7 +4859,7 @@
 		{FsmState "stand_noaim"}
 	}
 	{Human "" 0xa039
-		{Position -1634.73 -2106.69}
+		{Position -1634.74 -2106.69}
 		{xform zl -136.01}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -4974,8 +4877,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa03a
-		{Position -2042.49 -110.4}
-		{xform zl 122}
+		{Position -2042.5 -110.4}
+		{xform zl 121.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4993,7 +4896,7 @@
 	}
 	{Human "" 0xa03b
 		{Position -504.13 -2088.32}
-		{xform zl -91.77}
+		{xform zl -91.78}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5010,7 +4913,7 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa03c
-		{Position 43.77 -2892.85}
+		{Position 43.77 -2892.86}
 		{xform zl -54}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -5028,8 +4931,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa041
-		{Position 1784.86 1383.83}
-		{xform zl 51.02}
+		{Position 1845.47 1320.47}
+		{xform zl -44.74}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5037,16 +4940,13 @@
 		{Player 0}
 		{MID 299}
 		{Cover
-			{sector 1784.86 1383.84 {type "snipe_cover"}
-				{wall 1750.89 1420.32 1828.61 1357.45}
-				{row 0}
-				{link 0x60e5}
+			{sector 1845.47 1320.47 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0xa042
-		{Position 1153.69 -1751.23}
+		{Position 1153.7 -1751.22}
 		{xform zl -67.3}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -5082,8 +4982,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa044
-		{Position 1852.54 2161.81}
-		{xform zl 51.66}
+		{Position 1852.55 2161.82}
+		{xform zl 51.65}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5100,8 +5000,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa045
-		{Position 268.46 -1342.3}
-		{xform zl -159.85}
+		{Position 265.47 -1294.52}
+		{xform zl 93.58}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5109,16 +5009,13 @@
 		{Player 0}
 		{MID 303}
 		{Cover
-			{sector 268.466 -1342.3 {type "snipe_cover"}
-				{wall 263.617 -1349.41 229.184 -1255.57}
-				{row 0}
-				{link 0x86c}
+			{sector 265.473 -1294.53 {type "bush_lie"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "lie"}
 	}
 	{Human "" 0xa046
-		{Position 3777.51 166.05}
+		{Position 3777.52 166.05}
 		{xform zl 53.99}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -5144,18 +5041,11 @@
 		}
 		{Player 0}
 		{MID 305}
-		{Cover
-			{sector 180.841 176.005 {type "snipe_cover"}
-				{wall 127.353 153.253 186.485 187.338}
-				{row 0}
-				{link 0x6}
-			}
-		}
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa048
-		{Position 4128.99 1338.99}
-		{xform zl 53.99}
+		{Position 4129 1339}
+		{xform zl 54}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5172,8 +5062,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa049
-		{Position 860.99 -1058.08}
-		{xform zl -157.63}
+		{Position 860.99 -1058.09}
+		{xform zl -157.64}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5190,8 +5080,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa04a
-		{Position 3549.6 -929.29}
-		{xform zl -34.99}
+		{Position 3549.61 -929.29}
+		{xform zl -35}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5226,25 +5116,18 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa04c
-		{Position 1020.02 -1417.21}
-		{xform zl -158.28}
+		{Position 1024.47 -1416.54}
+		{xform zl -110.88}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 310}
-		{Cover
-			{sector 1020.02 -1417.22 {type "snipe_cover"}
-				{wall 1022.62 -1442.66 1003.96 -1395.8}
-				{row 0}
-				{link 0x4758}
-			}
-		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0xa04d
-		{Position 1858.52 -1588.18}
+		{Position 1858.53 -1588.18}
 		{xform zl 55.08}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -5280,26 +5163,19 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa04f
-		{Position 1748.66 -1973.37}
-		{xform zl -154.71}
+		{Position 1748.67 -1973.38}
+		{xform zl -154.7}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 313}
-		{Cover
-			{sector 1748.67 -1973.38 {type "snipe_cover"}
-				{wall 1761.7 -2017.35 1735.54 -1961.99}
-				{row 0}
-				{link 0x47f}
-			}
-		}
 		{FsmState "snipe"}
 	}
 	{Human "" 0xa050
-		{Position 397 1919.67}
-		{xform zl 138.46}
+		{Position 455.47 1925.47}
+		{xform zl 6.87}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5307,13 +5183,10 @@
 		{Player 0}
 		{MID 314}
 		{Cover
-			{sector 397.005 1919.67 {type "snipe_cover"}
-				{wall 378.949 1909.84 445.072 1984.49}
-				{row 0}
-				{link 0x6171}
+			{sector 455.473 1925.47 {type "bush_stand"}
 			}
 		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Entity "spawn_point" 0xc080
 		{Position 3150.24 -74.86}
@@ -5353,7 +5226,7 @@
 	}
 	{Entity "spawn_point" 0x8016
 		{Position 1650.7 332.13}
-		{xform zl 124.9}
+		{xform zl 124.89}
 		{Extender "spawn_point"
 			{pos 0}
 		}
@@ -5655,7 +5528,7 @@
 	}
 	{Entity "spawn_point" 0x82e3
 		{Position 1884.02 -87.09}
-		{xform zl -149.51}
+		{xform zl -149.5}
 		{Extender "spawn_point"
 			{pos 0}
 		}
@@ -5672,7 +5545,7 @@
 		{MID 296}
 	}
 	{Entity "spawn_point" 0x82e5
-		{Position 3111.38 -1302.58}
+		{Position 3111.38 -1302.56}
 		{xform zl -121.93}
 		{Extender "spawn_point"
 			{pos 0}
@@ -5708,8 +5581,8 @@
 		{MID 316}
 	}
 	{Entity "arrow_enemy" 0x82e9
-		{Position -4117.47 5300.75}
-		{xform zl -144.71}
+		{Position -144 5149.52}
+		{xform zl 165.51}
 	}
 	{Entity "arrow_enemy" 0x82ea
 		{Position 906.05 5244.84}
@@ -5720,19 +5593,19 @@
 		{xform zl -173.09}
 	}
 	{Entity "arrow_enemy" 0x82ec
-		{Position 3273.14 5300.37}
+		{Position 2129.45 5217.86}
 		{xform zl 168.52}
 	}
 	{Entity "arrow_enemy" 0xd400
-		{Position 5123.1 -5121.02}
-		{xform zl 35.81}
+		{Position 1047.25 -4999.56}
+		{xform zl -2.21}
 	}
 	{Entity "arrow_enemy" 0x80ee
 		{Position 2621.29 -5158.17}
 		{xform zl 19.13}
 	}
 	{Entity "arrow_enemy" 0x8113
-		{Position -5326.84 -5082.52}
+		{Position -2447.12 -5067.48}
 		{xform zl -33.79}
 	}
 	{Entity "arrow_enemy" 0x8114
@@ -5876,16 +5749,16 @@
 		{xform zl 91.59}
 	}
 	{Entity "sandbag_structured_curved" 0x811d
-		{Position 3200.06 -1067.19}
+		{Position 3200.06 -1067.18}
 		{xform zl -155.21}
 	}
 	{Entity "sandbag_structured_curved" 0x811e
 		{Position 3651.6 -899.55}
-		{xform zl -36.55}
+		{xform zl -36.54}
 	}
 	{Entity "sandbag_structured_straight" 0x811f
-		{Position 3238.27 -1111.57}
-		{xform zl 59.64}
+		{Position 3238.27 -1111.56}
+		{xform zl 59.63}
 	}
 	{Entity "sandbag_structured_curved" 0x8120
 		{Position 3161.6 -1328.97}
@@ -5927,7 +5800,7 @@
 	}
 	{Entity "sandbag_framed_curved" 0xb040
 		{Position 3502.57 -555.32 253}
-		{xform zl 72.38}
+		{xform zl 72.37}
 		{Constrain none}
 	}
 	{Entity "sandbag_framed_straight" 0xb041
@@ -5972,7 +5845,7 @@
 		{xform zl -121.58}
 	}
 	{Entity "sandbag_structured_curved" 0xd004
-		{Position 2112.16 -183.17}
+		{Position 2112.12 -183.17}
 		{xform zl -66.11}
 	}
 	{Entity "sandbag_structured_straight" 0xd005
@@ -5980,7 +5853,7 @@
 		{xform zl 93.27}
 	}
 	{Entity "sandbag_framed_curved" 0xd007
-		{Position 2307.18 -149.68 301.5}
+		{Position 2307.18 -149.67 301.5}
 		{xform zl -90.38}
 		{Constrain none}
 	}
@@ -5998,18 +5871,18 @@
 		{xform zl -157.83}
 	}
 	{Entity "sandbag_framed_straight" 0xd00f
-		{Position 2201.42 397.69 292.55}
+		{Position 2201.42 397.69 292.54}
 		{xform zl 94.26}
 		{Constrain none}
 	}
 	{Entity "sandbag_framed_curved" 0xd010
-		{Position 2110.15 360.77 296}
+		{Position 2110.12 360.77 296}
 		{xform zl 131.24}
 		{Constrain none}
 	}
 	{Entity "sandbag_framed_curved" 0xd011
-		{Position 2259.41 378.47 293}
-		{xform zl 63.02}
+		{Position 2259.37 378.47 293}
+		{xform zl 63.01}
 		{Constrain none}
 	}
 	{Entity "sandbag_framed_straight" 0xd012
@@ -6039,11 +5912,11 @@
 	}
 	{Entity "sandbag_structured_curved" 0xd018
 		{Position 1556.98 340.18}
-		{xform zl 132.26}
+		{xform zl 132.25}
 	}
 	{Entity "sandbag_structured_straight" 0xd020
 		{Position -2435.92 -509.93}
-		{xform zl 125.58}
+		{xform zl 125.57}
 	}
 	{Entity "sandbag_structured_curved" 0xd021
 		{Position -2794.7 -650.37}
@@ -6051,7 +5924,7 @@
 	}
 	{Entity "sandbag_structured_curved" 0xd022
 		{Position -2399.68 -469.59}
-		{xform zl -34.42}
+		{xform zl -34.41}
 	}
 	{Entity "sandbag_structured_straight" 0xd023
 		{Position -2741.29 -669.9}
@@ -6074,7 +5947,7 @@
 	}
 	{Entity "sandbag_framed_straight" 0xd027
 		{Position -2679.46 -397.33 207.5}
-		{xform zl -68.95}
+		{xform zl -68.94}
 		{Constrain none}
 	}
 	{Entity "sandbag_heap_curved" 0xd028
@@ -6093,7 +5966,7 @@
 		{Constrain none}
 	}
 	{Entity "sandbag_framed_curved" 0xd02e
-		{Position -2776.05 -259.3 206.5}
+		{Position -2776.05 -259.29 206.5}
 		{xform zl 118.4}
 		{Constrain none}
 	}
@@ -6111,7 +5984,7 @@
 		{xform zl -90.13}
 	}
 	{Entity "sandbag_structured_curved" 0xd032
-		{Position -2743.75 35.94}
+		{Position -2743.75 35.93}
 		{xform zl 54.38}
 	}
 	{Entity "sandbag_structured_curved" 0xd033
@@ -6128,7 +6001,7 @@
 	}
 	{Entity "sandbag_structured_curved" 0xd03d
 		{Position -759.16 -1829.41}
-		{xform zl -74.95}
+		{xform zl -74.94}
 	}
 	{Entity "sandbag_structured_straight" 0xd03e
 		{Position -808.32 -1422.24}
@@ -6144,7 +6017,7 @@
 	}
 	{Entity "sandbag_structured_straight" 0xd041
 		{Position -1101.54 -1580.2}
-		{xform zl 133.9}
+		{xform zl 133.89}
 	}
 	{Entity "sandbag_framed_straight" 0xd042
 		{Position -1026.3 -1409.53 269.5}
@@ -6342,6 +6215,7 @@
 	{Entity "p47_d22" 0x828e
 		{Position -4044.33 -7111.9}
 		{xform zl 90}
+		{SpawnedInFog}
 		{Volume "1blade1"
 			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
 		}
@@ -6367,6 +6241,81 @@
 	}
 	{Entity "flagpoint_sandbags" 0x8009
 	}
+	{Human "mp/eng/late/pilot" 0xc081
+		{Position -4552.16 -7104.92}
+		{xform zl 180 y 3.76 zw -92.32}
+		{Volume "body"
+			{able {blast 0}}
+		}
+		{Volume "head"
+			{able {blast 0}}
+		}
+		{Volume "face"
+			{able {blast 0}}
+		}
+		{Volume "hand1l"
+			{able {blast 0}}
+		}
+		{Volume "hand2l"
+			{able {blast 0}}
+		}
+		{Volume "hand1r"
+			{able {blast 0}}
+		}
+		{Volume "hand2r"
+			{able {blast 0}}
+		}
+		{Volume "foot1r"
+			{able {blast 0}}
+		}
+		{Volume "foot2r"
+			{able {blast 0}}
+		}
+		{Volume "foot1l"
+			{able {blast 0}}
+		}
+		{Volume "foot2l"
+			{able {blast 0}}
+		}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+		{MID 319}
+		{NameId 90 55}
+		{LastItem "enfield_no2_mk1"}
+	}
+	{Entity "hurribomber_mk2c" 0xc083
+		{Position -4552.27 -7104.24}
+		{xform zl 87.68}
+		{SpawnedInFog}
+		{Volume "1blade1"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "1blade2"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "1blade3"
+			{able {bullet 0}{contact 0}{blast 0}{touch 0}{nowounddecal 0}}
+		}
+		{Volume "spin1"
+			{able {contact 1}{contact_ground 1}{touch 1}}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 320}
+		{Weaponry
+			{Current "bomb1"}
+		}
+		{Chassis "airborne"
+			{AirborneMode 1}
+			{Altitude 47}
+		}
+		{ChassisManager
+			{Current "airborne"}
+		}
+	}
 	{Link 0x8009 {0x8004 "sandbags"}}
 	{Link 0x810d {0x8112 "driver"}}
 	{Link 0x8110 {0x8112 "gunner"}}
@@ -6374,19 +6323,284 @@
 	{Link 0x82ee {0x82ed "driver"}}
 	{Link 0x82ef {0x82ed "gunner"}}
 	{Link 0xc07f {0x828e "driver"}}
+	{Link 0xc081 {0xc083 "driver"}}
+	{Tags "bare" 0xa03}
+	{Tags "bare" 0xa04}
+	{Tags "bare" 0xa09}
+	{Tags "bare" 0xa0a}
+	{Tags "bare" 0xa0f}
+	{Tags "bare" 0xa12}
+	{Tags "bare" 0xa17}
+	{Tags "bare" 0x41ae}
+	{Tags "bare" 0x41af}
+	{Tags "bare" 0x41b4}
+	{Tags "bare" 0x41b5}
+	{Tags "bare" 0x41ba}
+	{Tags "bare" 0x6142}
+	{Tags "bare" 0x6143}
+	{Tags "bare" 0x6148}
+	{Tags "bare" 0x6149}
+	{Tags "bare" 0x614e}
+	{Tags "bare" 0x614f}
+	{Tags "bare" 0x6150}
+	{Tags "bare" 0x6151}
+	{Tags "bare" 0x6156}
+	{Tags "bare" 0x7095}
+	{Tags "bare" 0x7096}
+	{Tags "bare" 0x70b4}
+	{Tags "bare" 0x70b5}
+	{Tags "bare" 0x70ba}
+	{Tags "bare" 0x70bb}
+	{Tags "bare" 0x70bc}
+	{Tags "bare" 0x70bd}
+	{Tags "bare" 0x70c2}
+	{Tags "bare" 0x614c}
+	{Tags "bare" 0x615a}
+	{Tags "bare" 0x615f}
+	{Tags "bare" 0x6160}
+	{Tags "bare" 0x6165}
+	{Tags "bare" 0x6166}
+	{Tags "bare" 0x6167}
+	{Tags "bare" 0x6168}
+	{Tags "bare" 0x616d}
+	{Tags "bare" 0x571}
+	{Tags "bare" 0x575}
+	{Tags "bare" 0x576}
+	{Tags "bare" 0x577}
+	{Tags "bare" 0x57e}
+	{Tags "bare" 0x588}
+	{Tags "bare" 0x58c}
+	{Tags "bare" 0x58d}
+	{Tags "bare" 0x58e}
+	{Tags "bare" 0x593}
+	{Tags "bare" 0x594}
+	{Tags "bare" 0x595}
+	{Tags "bare" 0x596}
+	{Tags "bare" 0x59b}
+	{Tags "bare" 0x400c}
+	{Tags "bare" 0x4010}
+	{Tags "bare" 0x4011}
+	{Tags "bare" 0x4013}
+	{Tags "bare" 0x4017}
+	{Tags "bare" 0x4018}
+	{Tags "bare" 0x4019}
+	{Tags "bare" 0x401c}
+	{Tags "bare" 0x405f}
+	{Tags "bare" 0x40b3}
+	{Tags "bare" 0x40de}
+	{Tags "bare" 0x41bb}
+	{Tags "bare" 0x41bc}
+	{Tags "bare" 0x41c1}
+	{Tags "bare" 0x41df}
+	{Tags "bare" 0x41e6}
+	{Tags "bare" 0x41e7}
+	{Tags "bare" 0x41f0}
+	{Tags "bare" 0x41f9}
+	{Tags "bare" 0x41fa}
+	{Tags "bare" 0x41fb}
+	{Tags "bare" 0x41fc}
+	{Tags "bare" 0x4204}
+	{Tags "bare" 0x4206}
+	{Tags "bare" 0x420a}
+	{Tags "bare" 0x420f}
+	{Tags "bare" 0x4213}
+	{Tags "bare" 0x4214}
+	{Tags "bare" 0x4216}
+	{Tags "bare" 0x4217}
+	{Tags "bare" 0x4219}
+	{Tags "bare" 0x421a}
+	{Tags "bare" 0x421d}
+	{Tags "bare" 0x4220}
+	{Tags "bare" 0x4225}
+	{Tags "bare" 0x4229}
+	{Tags "bare" 0x422a}
+	{Tags "bare" 0x422c}
+	{Tags "bare" 0x422d}
+	{Tags "bare" 0x422f}
+	{Tags "bare" 0x4230}
+	{Tags "bare" 0x650}
+	{Tags "bare" 0x652}
+	{Tags "bare" 0x65b}
+	{Tags "bare" 0x65d}
+	{Tags "bare" 0x672}
+	{Tags "bare" 0x67a}
+	{Tags "bare" 0x67f}
+	{Tags "bare" 0x683}
+	{Tags "bare" 0x684}
+	{Tags "bare" 0x68a}
+	{Tags "bare" 0x68e}
+	{Tags "bare" 0x424a}
+	{Tags "bare" 0x424b}
+	{Tags "bare" 0x424c}
+	{Tags "bare" 0x424f}
+	{Tags "bare" 0x4261}
+	{Tags "bare" 0x4263}
+	{Tags "bare" 0x426e}
+	{Tags "bare" 0x426f}
+	{Tags "bare" 0x4270}
+	{Tags "bare" 0x61ac}
+	{Tags "bare" 0x61d2}
+	{Tags "bare" 0x3008}
+	{Tags "bare" 0x313d}
+	{Tags "bare" 0x313e}
+	{Tags "bare" 0x313f}
+	{Tags "bare" 0x3188}
+	{Tags "bare" 0x3189}
+	{Tags "bare" 0x318a}
+	{Tags "bare" 0x318b}
+	{Tags "bare" 0x3190}
+	{Tags "bare" 0x31e3}
+	{Tags "bare" 0x31e4}
+	{Tags "bare" 0x31e5}
+	{Tags "bare" 0x31e6}
+	{Tags "bare" 0x31eb}
+	{Tags "bare" 0x31f3}
+	{Tags "bare" 0x31f7}
+	{Tags "bare" 0x31f8}
+	{Tags "bare" 0x31f9}
+	{Tags "bare" 0x3200}
+	{Tags "bare" 0x3201}
+	{Tags "bare" 0x3202}
+	{Tags "bare" 0x3203}
+	{Tags "bare" 0x9dc}
+	{Tags "bare" 0x439c}
+	{Tags "bare" 0x43a2}
+	{Tags "bare" 0x2397}
+	{Tags "bare" 0x9f2}
+	{Tags "bare" 0x23a4}
+	{Tags "bare" 0xa30}
+	{Tags "bare" 0xa33}
+	{Tags "bare" 0xa45}
+	{Tags "bare" 0xa51}
+	{Tags "bare" {0x41e9 "attach4"}}
+	{Tags "bare" 0x23c3}
+	{Tags "bare" 0x23ca}
 	{Tags "_no-recrew" 0x622c}
+	{Tags "bare" 0xb68}
+	{Tags "bare" 0xb6b}
+	{Tags "bare" 0xb6f}
+	{Tags "bare" 0xb70}
+	{Tags "bare" 0x629e}
+	{Tags "bare" 0x44fb}
+	{Tags "bare" 0x44fc}
+	{Tags "bare" 0x44fd}
+	{Tags "bare" 0x4501}
+	{Tags "bare" 0xbd0}
+	{Tags "bare" 0x2841}
+	{Tags "bare" 0x2843}
+	{Tags "bare" 0x2849}
+	{Tags "bare" 0x2850}
+	{Tags "bare" 0x2856}
+	{Tags "bare" 0x2857}
+	{Tags "bare" 0x2858}
+	{Tags "bare" 0x2859}
+	{Tags "bare" 0x286d}
+	{Tags "bare" 0x713f}
+	{Tags "bare" 0x7141}
+	{Tags "bare" 0x3b7}
+	{Tags "bare" 0x4008}
+	{Tags "bare" 0x3b9}
+	{Tags "bare" 0x3c0}
+	{Tags "bare" 0x3c7}
+	{Tags "bare" 0x5821}
+	{Tags "bare" 0x5111}
+	{Tags "bare" 0x5114}
+	{Tags "bare" 0x3401}
+	{Tags "bare" 0x24d}
+	{Tags "bare" 0x2bd}
+	{Tags "bare" 0x2be}
+	{Tags "_no-recrew" 0x2d8}
+	{Tags "bare" 0x2e8}
+	{Tags "bare" 0x5404}
+	{Tags "bare" 0x5408}
+	{Tags "bare" 0x9fa}
+	{Tags "bare" 0x9fc}
+	{Tags "bare" 0x9fd}
+	{Tags "bare" 0xa02}
+	{Tags "bare" 0x61da}
+	{Tags "bare" 0x61dc}
+	{Tags "bare" 0x7851}
+	{Tags "bare" 0x2384}
+	{Tags "bare" 0x2385}
+	{Tags "bare" 0x2387}
+	{Tags "bare" 0x4ce}
+	{Tags "bare" 0x4d3}
+	{Tags "bare" 0x66e}
+	{Tags "bare" 0x4299}
+	{Tags "bare" 0x62fc}
+	{Tags "bare" 0x6300}
+	{Tags "bare" 0x6301}
+	{Tags "bare" 0x6302}
+	{Tags "bare" 0x841}
+	{Tags "bare" 0x45b5}
+	{Tags "bare" 0x45ce}
+	{Tags "bare" 0xca}
+	{Tags "bare" 0x45de}
+	{Tags "bare" 0x45e3}
+	{Tags "bare" 0xe00}
+	{Tags "bare" 0x5235}
+	{Tags "bare" 0x5239}
+	{Tags "bare" 0x523a}
+	{Tags "bare" 0x523b}
+	{Tags "bare" 0x523d}
+	{Tags "bare" 0x523e}
+	{Tags "bare" 0x5240}
+	{Tags "bare" 0x2519}
+	{Tags "bare" 0x251b}
+	{Tags "bare" {0x71d6 "attach4"}}
+	{Tags "bare" 0x6241}
+	{Tags "bare" 0x6374}
+	{Tags "bare" {0x254a "attach4"}}
+	{Tags "bare" 0x2555}
+	{Tags "bare" {0x46c1 "attach2"}}
+	{Tags "bare" {0x46c7 "attach4"}}
+	{Tags "bare" 0xb32}
+	{Tags "bare" 0xb33}
+	{Tags "bare" 0xb34}
+	{Tags "bare" 0xc88}
+	{Tags "bare" 0xcd9}
+	{Tags "bare" 0x6377}
+	{Tags "bare" 0x6387}
+	{Tags "bare" 0x6388}
+	{Tags "bare" 0x6389}
+	{Tags "bare" 0x638c}
+	{Tags "bare" 0x638d}
+	{Tags "bare" 0x638f}
+	{Tags "bare" 0x71e3}
+	{Tags "bare" 0x63af}
+	{Tags "bare" 0x63df}
+	{Tags "bare" 0x25e6}
+	{Tags "bare" 0x25ec}
+	{Tags "bare" 0xd91}
+	{Tags "bare" 0xda1}
+	{Tags "bare" 0x48d1}
+	{Tags "bare" 0x25f6}
+	{Tags "bare" 0xc4c}
+	{Tags "bare" 0xc4d}
+	{Tags "bare" 0xc51}
+	{Tags "_no-recrew" 0x1227}
+	{Tags "_no-recrew" 0x1228}
+	{Tags "_no-recrew" 0xe3c}
+	{Tags "_no-recrew" 0xe43}
+	{Tags "+mobilegun" 0x5219}
+	{Tags "+mobilegun" 0x52b9}
+	{Tags "+mobilegun" 0x3041}
+	{Tags "+mobilegun" 0x7210}
+	{Tags "bare" 0x7211}
+	{Tags "_no-recrew" 0xefe}
+	{Tags "_no-recrew" 0x4254}
 	{Tags "fpc2" "flag" 0x802f}
 	{Tags "fpc3" "flag" 0x8011}
 	{Tags "fpc5" "flag" 0x8003}
 	{Tags "fpc4" "flag" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
 	{Tags "fpc1" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
@@ -6806,6 +7020,8 @@
 	{Tags "pilot" 0xc07f}
 	{Tags "engine_count_1" "move_fast" "hidden" "air_vehicle" "no_scavenge" "airstrike_usa" 0x828e}
 	{Tags "cmp_def" "2_a_1-3" 0x8009}
+	{Tags "pilot" 0xc081}
+	{Tags "engine_count_1" "hidden" "air_vehicle" "no_scavenge" "airstrike_eng" "move_fast" 0xc083}
 	{Inventory 0x800c
 		{box
 			{clear}
@@ -8229,9 +8445,9 @@
 			{clear}
 			{item "tt33" filled {cell 0 0}}
 			{item "tt33" "ammo" 8 {cell 2 0}}
-			{item "tt33" "ammo" 4 {cell 3 0}}
-			{item "bandage_rus" {cell 4 0}}
-			{item "soviet_tankovy_helmet" {cell 6 0}{user "head"}}
+			{item "tt33" "ammo" 4 {cell 4 0}}
+			{item "bandage_rus" {cell 6 0}}
+			{item "soviet_tankovy_helmet" {cell 0 1}{user "head"}}
 		}
 	}
 	{Inventory 0x82ee
@@ -8262,6 +8478,37 @@
 			{item "m1911_mag" "ammo" 7 {cell 5 0}}
 			{item "bandage_usa" {cell 6 0}}
 			{item "us_m1_b" {cell 0 1}{user "head"}}
+		}
+	}
+	{Inventory 0xc081
+		{box
+			{clear}
+			{item "enfield_no2_mk1" filled {cell 0 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 2 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 3 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 4 0}}
+			{item "bandage_eng" {cell 5 0}}
+			{item "bandage_eng" {cell 0 1}}
+		}
+	}
+	{Brain 0x5219
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x52b9
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x3041
+		{Properties
+			{look_around 0}
+		}
+	}
+	{Brain 0x7210
+		{Properties
+			{look_around 0}
 		}
 	}
 	{Brain 0x800c
@@ -10010,8 +10257,20 @@
 			{fire_mode hold}
 		}
 	}
+	{Brain 0xc081
+		{Properties
+			{move_mode hold}
+			{advance_ratio 0.5}
+			{retreat_ratio 4}
+		}
+	}
+	{Brain 0xc083
+		{Properties
+			{fire_mode hold}
+		}
+	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -10033,31 +10292,6 @@
 		{event "music_rnd"}
 		{event "music_start"}
 		{event "talk_on"}
-		{zone "circle"
-			{position 4194.11 -475.932 254.008}
-			{Name "forward1"}
-			{Radius 1523.34}
-		}
-		{zone "circle"
-			{position -261.262 586.016 308}
-			{Name "forward2"}
-			{Radius 1200.65}
-		}
-		{zone "circle"
-			{position -3141.33 181.899 193}
-			{Name "forward3"}
-			{Radius 1374.06}
-		}
-		{zone "circle"
-			{position -1202.08 -1985.77 257}
-			{Name "forward4"}
-			{Radius 1516.89}
-		}
-		{zone "circle"
-			{position 1867.33 349.788 304}
-			{Name "forward5"}
-			{Radius 935.315}
-		}
 		{zone "circle"
 			{position -668.957 -8978.16 0}
 			{Name "_bridge1"}
@@ -10084,17 +10318,17 @@
 			{Radius 600}
 		}
 		{zone "circle"
-			{position -4149.36 5126.58 92}
+			{position -368.66 5069.81 144.132}
 			{Name "a_3"}
-			{Radius 715.246}
+			{Radius 643.101}
 		}
 		{zone "circle"
-			{position 3155.15 5023.43 68}
+			{position 2131.5 5119.19 60}
 			{Name "a_4"}
-			{Radius 644.748}
+			{Radius 593.983}
 		}
 		{zone "circle"
-			{position 5186.95 -5156.26 384}
+			{position 1016.09 -5025.4 277}
 			{Name "b_1"}
 			{Radius 743.757}
 		}
@@ -10109,9 +10343,9 @@
 			{Radius 600}
 		}
 		{zone "circle"
-			{position -5086.3 -4998.08 135}
+			{position -2418.84 -5193.65 201}
 			{Name "b_4"}
-			{Radius 753.626}
+			{Radius 644.808}
 		}
 		{zone "poly"
 			{position 494.007 214.937 329}
@@ -10122,6 +10356,31 @@
 			{Point 2907.73 2774.31}
 			{Point 4783.86 -85.4314}
 			{Point 2917.36 -1785.82}
+		}
+		{zone "circle"
+			{position 4194.11 -475.932 254.008}
+			{Name "forward1"}
+			{Radius 1523.34}
+		}
+		{zone "circle"
+			{position -261.262 586.016 308}
+			{Name "forward2"}
+			{Radius 1200.65}
+		}
+		{zone "circle"
+			{position -3141.33 181.899 193}
+			{Name "forward3"}
+			{Radius 1374.06}
+		}
+		{zone "circle"
+			{position -1202.08 -1985.77 257}
+			{Name "forward4"}
+			{Radius 1516.89}
+		}
+		{zone "circle"
+			{position 1867.33 349.788 304}
+			{Name "forward5"}
+			{Radius 935.315}
 		}
 		{zone "poly"
 			{position 3595.42 -483.412 251}
@@ -10159,7 +10418,7 @@
 			{Point 232.887 -504.029}
 		}
 		{zone "poly"
-			{position 2144.35 156.495 300.335}
+			{position 2144.35 156.495 296.81}
 			{Name "fpc5"}
 			{Point -662.517 -158.741}
 			{Point 17.1944 672.626}
@@ -10167,7 +10426,7 @@
 			{Point -11.5563 -669.765}
 		}
 		{zone "poly"
-			{position -8.37622 40.1533 328.526}
+			{position -8.37622 40.1533 345}
 			{Name "gamezone"}
 			{Point -6085.82 -6062.86}
 			{Point -6080.39 6038.33}
@@ -22668,9 +22927,7 @@
 				{position 1825.07 1156.18 275}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

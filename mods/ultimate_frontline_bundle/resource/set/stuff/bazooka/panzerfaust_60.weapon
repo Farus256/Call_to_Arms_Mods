@@ -15,19 +15,8 @@
 
 	{spreading 1.4}
 
-	; UFB realism: native non-story gametype conditions
-{range 40 40}
-(mod "gametype:battle_zones" {range 60 60})
-(mod "gametype:ammunition" {range 60 60})
-(mod "gametype:evacuation" {range 60 60})
-(mod "gametype:frontlines" {range 60 60})
-(mod "gametype:campaign_capture_the_flag" {range 60 60})
-	{projectileDamageTable {41 200} {46 0}}
-(mod "gametype:battle_zones" {projectileDamageTable {61.5 200} {69 0}})
-(mod "gametype:ammunition" {projectileDamageTable {61.5 200} {69 0}})
-(mod "gametype:evacuation" {projectileDamageTable {61.5 200} {69 0}})
-(mod "gametype:frontlines" {projectileDamageTable {61.5 200} {69 0}})
-(mod "gametype:campaign_capture_the_flag" {projectileDamageTable {61.5 200} {69 0}})
+	{range 40 40}
+	{projectileDamageTable {0 200} {40 160} {200 0}}
 	("armor health" damage(300))
 	("human health" damage(500))
 	("standard_slope")

@@ -236,12 +236,15 @@
 		;// FIX: contact can be a wall or a vehicle in mid-air, see {on blast}.
 	}
 	{on ground_hit
-		{if min_speed 0.1
-			{if rand 0.2 {spawn "ground_blood_big"}}
-			{if rand 0.3 {spawn "ground_blood_small"}}
-			{if rand 0.25 {spawn "ground_blood01"}}
-			{if rand 0.2 {spawn "ground_blood02"}}
-			{if rand 0.15 {spawn "ground_blood03"}}
+		{if not "blood_ground_done"
+			{set "blood_ground_done" 1}
+			{if min_speed 0.1
+				{if rand 0.25
+					{spawn "ground_blood_small"}
+				else rand 0.25
+					{spawn "ground_blood01"}
+				}
+			}
 		}
 	}
 }
@@ -263,11 +266,10 @@
 		{delay 0.01 {volumes disable bullet blast contact touch}}
 		{delay 10 {volumes enable bullet blast contact touch float}}
 	}
-	{on ground_hit							;// FIX: paint on landing, not on a timer
+	{on ground_hit							;// FIX: paint on landing, not on a timer; single decal without duplicate stacking
 		{if not "bm_painted"
 			{set "bm_painted" 1}
 			{call "blood_stain"}
-			{call "blood"}
 		}
 	}	
 	{on blast_hit
@@ -1723,55 +1725,6 @@
 	}
 }
 
-{"stamp_hybrid_with_x ice"
-	(define "snow_fx"
-		{spawn "snow_mound_crush" "%bone"}
-	)
-	{on "crush_fx" overload
-		{tags add "test_ice"}
-		("snow_fx" bone(point1))
-		("snow_fx" bone(point2))
-		("snow_fx" bone(point3))
-		("snow_fx" bone(point4))
-	}
-}
-
-{"stamp_hybrid_with_x"
-	{on break_armor
-		{if volume "body"
-			{if name "blast"
-				{call "change_model"}
-			}
-		}
-	}
-	{on "break"
-		{call "change_model"}
-	}
-	{on "change_model"
-		{if not "sliced"
-			{tags add "crushed"}
-			{call "crush_fx"}
-			{set "sliced" 1}
-			{delay_ex 0.4
-				{call_synced "change_model_synced"}
-			}
-		}
-	}
-	{on "change_model_synced"
-		{call_synced "set_skeleton_local"}
-		{delay 0
-			{update_visibility_patch}
-		}
-	}
-	{on "set_skeleton_local"
-		{set_skeleton "_x" local}
-	}
-	{on "disable_volumes"
-		{volumes disable visible bullet contact blast touch}
-	}
-	{on "crush_fx"}
-}
-
 {"pointer_attack"
 	{on spawn
 		{tags add "pointer_attack"}
@@ -1863,12 +1816,6 @@
 		{delay 10
 			{hide 5}
 		}
-	}
-}
-
-{"map_point_conquest"
-	{on spawn
-		{tags add "spawnpoint_conquest"}
 	}
 }
 
@@ -2444,6 +2391,11 @@
 	}
 }
 
+{"deflect_contact"
+    {on spawn
+        {delay 0.12 {delete}}
+    }
+}
 
 
 ;// register engine-used props

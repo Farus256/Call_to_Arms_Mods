@@ -105,13 +105,13 @@
 		{MID 3}
 	}
 	{Entity "flag_point_base" 0xe002
-		{Position -3207.01 1308.79}
+		{Position -3240.68 1316.16}
 		{xform zl -161.03}
 		{Extender "map_point"
-			{name base_flag_a}
+			{name base_flag_b}
 			{zone
 				{radius 0}
-				{zoneId "base_a"}
+				{zoneId "base_b"}
 			}
 			{phase 0}
 			{order 0}
@@ -181,7 +181,7 @@
 					}
 					{19
 						0.988 -0.15 0
-						0.15 0.988 -0
+						0.15 0.988 0
 						0 0 1
 						-2115.8 400.241 77
 					}
@@ -227,7 +227,7 @@
 						0.695 0.718 0
 						-0.718 0.695 0
 						0 0 1
-						-2780.54 1226.69 109
+						-2780.54 1226.68 109
 					}
 					{14
 						0.5 0.865 0
@@ -263,10 +263,10 @@
 		{Position -1035.88 2398.54}
 		{xform zl -121.63}
 		{Extender "map_point"
-			{name base_flag_b}
+			{name base_flag_a}
 			{zone
 				{radius 0}
-				{zoneId "base_b"}
+				{zoneId "base_a"}
 			}
 			{phase 0}
 			{order 0}
@@ -296,7 +296,7 @@
 						-0.954 -0.297 0
 						0.297 -0.954 0
 						0 0 1
-						-1665.36 2572.64 100
+						-1665.36 2572.63 100
 					}
 					{6
 						-0.58 0.814 0
@@ -984,8 +984,8 @@
 	{Tags "flag" 0x8013}
 	{Tags "flag" 0x8003}
 	{Tags "flag" 0x8004}
-	{Tags "base_a" "flag" 0xe002}
-	{Tags "base_b" "flag" 0xa000}
+	{Tags "flag" "base_b" 0xe002}
+	{Tags "flag" "base_a" 0xa000}
 	{Tags "flag" 0xa001}
 	{Tags "flag" 0xa003}
 	{Tags "flag" 0xa005}
@@ -999,20 +999,22 @@
 		{event "gamestart"}
 		{event "init"}
 		{zone "poly"
-			{position -3053.65 1282.92 98}
+			{position -1016.5 2325.14 94}
 			{Name "base_a"}
-			{Point 500.008 -138.547}
-			{Point 135.722 -416.249}
-			{Point -508.141 79.2658}
-			{Point -127.59 475.53}
+			{Point 353.047 -22.3015}
+			{Point 311.664 -156.424}
+			{Point 78.6288 -421.872}
+			{Point -520.503 116.049}
+			{Point -222.837 484.548}
 		}
 		{zone "poly"
-			{position -1077.21 2367.81 96}
+			{position -3025.39 1182 116}
 			{Name "base_b"}
-			{Point 158.123 -454.943}
-			{Point -469.743 99.0385}
-			{Point -149.79 457.238}
-			{Point 461.411 -101.334}
+			{Point 127.388 -291.231}
+			{Point -65.2697 -208.445}
+			{Point -436.86 82.2694}
+			{Point -52.8325 467.332}
+			{Point 427.574 -49.9253}
 		}
 		{zone "poly"
 			{position -2402.77 2237.9 102}
@@ -3653,6 +3655,9 @@
 													{state
 														{state user_control}
 													}
+													{state {state linked}}
+													{state {state inactive}}
+													{state {state dead}}
 												}
 											}
 										}
@@ -12688,7 +12693,7 @@
 			}
 		
 ; UFB non-story AI additions.
-(include "/map/multi/ufb_infantry_profile.inc")
+
 (include "/map/multi/ufb_crew_skirmish.inc")
 }
 	}

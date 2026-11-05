@@ -4462,10 +4462,7 @@
 										{time 0.1}
 									}
 									{"actor_to_cover"
-										{selector
-											{tag unhold_iq}
-											{state operatable}
-										}
+										{selector {source advanced} {group {select {tag {tag unhold_iq}}} {include {state {state operatable}}} {exclude {state {state linked}} {state {state inactive}} {state {state dead}} {state {state user_control}}}}}
 										{mode random}
 									}
 								}
@@ -13331,7 +13328,7 @@
 			}
 		
 ; UFB non-story AI additions.
-(include "/map/multi/ufb_infantry_profile.inc")
+
 (include "/map/multi/ufb_crew_skirmish.inc")
 }
 	}

@@ -1,0 +1,29 @@
+;_________________________________________
+; German Light AT gun
+;=========================================
+
+
+{from "pattern gun"
+	{tag "rocketlauncher_fx"}
+	{filling "bulletger_88_rw43"}
+	{fireSound "reactive/d1/Shared/Rocket_Launcher/"}
+	{fireSoundclose "reactive/d1/Shared/Rocket_Launcher/"}
+	{reloadsound "panzershreck"}
+	("range_120")
+	{calibre 88}
+
+	("reload time" seconds(6))
+
+	("velocity m/s" ap(140) apcr(140) he(140) heat(140))
+	("armor health" damage(300))
+	("heat_slope_multiplier")
+	{gravity 0.75}
+	
+	{parameters "heat"
+		{projectileDamageTable {10 186.3} {30 185} {100 185} {120 185} {135 0}}
+		{range 120 120}
+	}
+
+	("accuracy_direct" r1(2.4) range_ap(120) range_he(120) range_heat(120))
+}
+

@@ -1020,8 +1020,8 @@
 		}
 	}
 	{Entity "map_point" 0xc007
-		{Position -4891.01 4689.63}
-		{xform zl -48.68}
+		{Position -4607.26 4846.64}
+		{xform zl -29.11}
 		{Extender "map_point"
 			{name a1}
 			{team a}
@@ -1041,8 +1041,8 @@
 		{MID 21}
 	}
 	{Entity "map_point" 0xd000
-		{Position -4379.24 4914.49}
-		{xform zl -90.48}
+		{Position -4228.46 5114.51}
+		{xform zl -70.73}
 		{Extender "map_point"
 			{name a2}
 			{team a}
@@ -1062,8 +1062,8 @@
 		{MID 23}
 	}
 	{Entity "map_point" 0xd001
-		{Position -4986.05 3954.19}
-		{xform zl -14.75}
+		{Position -5243.92 3416.15}
+		{xform zl -23.67}
 		{Extender "map_point"
 			{name a3}
 			{team a}
@@ -1083,8 +1083,8 @@
 		{MID 24}
 	}
 	{Entity "map_point" 0xc801
-		{Position -4950.27 4365.5}
-		{xform zl -22.77}
+		{Position -5053.56 3627.93}
+		{xform zl -49.55}
 		{Extender "map_point"
 			{name a5}
 			{team a}
@@ -1104,8 +1104,8 @@
 		{MID 25}
 	}
 	{Entity "map_point" 0xc802
-		{Position -4699.62 4882.89}
-		{xform zl -50.65}
+		{Position -4457.68 5025.36}
+		{xform zl -29.73}
 		{Extender "map_point"
 			{name a6}
 			{team a}
@@ -1125,8 +1125,8 @@
 		{MID 26}
 	}
 	{Entity "map_point" 0xc803
-		{Position -4989.42 3659.35}
-		{xform zl -13.89}
+		{Position -5384.71 3199.71}
+		{xform zl -22.81}
 		{Extender "map_point"
 			{name a7}
 			{team a}
@@ -1146,8 +1146,8 @@
 		{MID 27}
 	}
 	{Entity "map_point" 0xe000
-		{Position -3860.85 4920.52 -64}
-		{xform zl -81.15}
+		{Position -3675.91 5168.02 10.63}
+		{xform zl -76.22}
 		{Extender "map_point"
 			{name a8}
 			{team a}
@@ -1167,8 +1167,8 @@
 		{MID 34}
 	}
 	{Entity "map_point" 0xc804
-		{Position -4130.39 4922.61}
-		{xform zl -87.4}
+		{Position -3944.64 5146.97}
+		{xform zl -82.47}
 		{Extender "map_point"
 			{name a4}
 			{team a}
@@ -1252,7 +1252,7 @@
 	}
 	{Entity "map_point" 0xc003
 		{Position 4899.35 -4607.77}
-		{xform zl 157.43}
+		{xform zl 157.42}
 		{Extender "map_point"
 			{name b5}
 			{team b}
@@ -1293,7 +1293,7 @@
 		{MID 40}
 	}
 	{Entity "map_point" 0xc005
-		{Position 3707.56 -5004.01}
+		{Position 3707.56 -5004}
 		{xform zl 93.7}
 		{Extender "map_point"
 			{name b7}
@@ -1488,8 +1488,8 @@
 	{Tags "aut" 0xb4c}
 	{Tags "aut" 0xb4e}
 	{Tags "aut" 0xb4f}
-	{Tags "aut" 0xb50}
-	{Tags "aut" 0xb51}
+	{Tags "aut" 0x4291}
+	{Tags "aut" 0x4292}
 	{Tags "flag" 0x802f}
 	{Tags "flag" 0x8011}
 	{Tags "flag" 0x8013}
@@ -4137,6 +4137,9 @@
 													{state
 														{state user_control}
 													}
+													{state {state linked}}
+													{state {state inactive}}
+													{state {state dead}}
 												}
 											}
 										}
@@ -13242,7 +13245,7 @@
 			}
 		
 ; UFB non-story AI additions.
-(include "/map/multi/ufb_infantry_profile.inc")
+
 (include "/map/multi/ufb_crew_skirmish.inc")
 }
 	}

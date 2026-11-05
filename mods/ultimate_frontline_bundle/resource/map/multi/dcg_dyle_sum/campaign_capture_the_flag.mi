@@ -1,4 +1,4 @@
-{mission 	(include "../HF-dcg_entities.inc")
+{mission (include "../HF-dcg_entities.inc")
 	{Entity "flag_point_campaign_1" 0x802f
 		{Position -5420.06 1889.48}
 		{xform zl 170.59}
@@ -605,22 +605,15 @@
 		{FsmState "snipe"}
 	}
 	{Human "" 0x8024
-		{Position -5589.62 2303.79}
-		{xform zl 140.05}
+		{Position -5570.47 2314.09}
+		{xform zl 28.3}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
 		}
 		{Player 0}
 		{MID 32}
-		{Cover
-			{sector -5589.62 2303.79 {type "snipe_cover"}
-				{wall -5602.49 2299.33 -5586.69 2318.2}
-				{row 0}
-				{link 0x1649}
-			}
-		}
-		{FsmState "snipe"}
+		{FsmState "stand_noaim"}
 	}
 	{Human "" 0x8025
 		{Position -5294.56 2466.37}
@@ -5062,7 +5055,7 @@
 	}
 	{Human "" 0xa027
 		{Position -1534.52 3640.47}
-		{xform zl -75.92 y 22.98 zw -134.96}
+		{xform zl -77.99 y 22.98 zw -134.96}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -8446,7 +8439,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x815b
-		{Position 789.59 -2527.63}
+		{Position 789.59 -2527.62}
 		{xform zl -32.79}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -10481,7 +10474,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x81e9
-		{Position -2183.99 -2305.38}
+		{Position -2183.99 -2305.37}
 		{xform zl 26.97}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -11387,7 +11380,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8227
-		{Position -2310.38 -286.34}
+		{Position -2310.37 -286.34}
 		{xform zl -94.4}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -12257,7 +12250,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8261
-		{Position 1446.97 2187.63}
+		{Position 1446.97 2187.62}
 		{xform zl 57.68}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -12317,7 +12310,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0x8265
-		{Position 1670.11 2121.63}
+		{Position 1670.11 2121.62}
 		{xform zl 57.68}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -12392,7 +12385,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0x826a
-		{Position 1448.22 2456.38}
+		{Position 1448.22 2456.37}
 		{xform zl 57.68}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -14330,7 +14323,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0xc051
-		{Position -2291.19 -2074.88}
+		{Position -2291.19 -2074.87}
 		{xform zl 26.97}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -14474,7 +14467,7 @@
 		}
 	}
 	{Entity "mine_pmd" 0xc05b
-		{Position -2193.63 -247.79}
+		{Position -2193.62 -247.79}
 		{xform zl -94.4}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -14804,7 +14797,7 @@
 		}
 	}
 	{Entity "mine_tmi_35" 0xc071
-		{Position 1510.05 2191.63}
+		{Position 1510.05 2191.62}
 		{xform zl 57.68}
 		{Volume "body1"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{select 0}{blockcamera 0}}
@@ -15212,7 +15205,7 @@
 		{Player 0}
 		{MID 319}
 		{NameId 90 55}
-		{LastItem "luger"}
+		{LastItem "enfield_no2_mk1"}
 	}
 	{Entity "hurribomber_mk2c" 0x82cf
 		{Position -4287.86 -9165.73}
@@ -15263,14 +15256,14 @@
 	{Tags "fpc3" "flag" 0x8011}
 	{Tags "fpc5" "flag" 0x8003}
 	{Tags "fpc4" "flag" 0x8004}
-	{Tags "spawn_b" "b2" 0xc000}
-	{Tags "spawn_a" "a1" 0xc007}
-	{Tags "spawn_b" "b1" 0x8005}
-	{Tags "spawn_a" "a2" 0x8006}
-	{Tags "spawn_a" "a3" 0x8007}
-	{Tags "spawn_b" "b3" 0x8008}
-	{Tags "spawn_b" "b4" 0x800d}
-	{Tags "spawn_a" "a4" 0x800e}
+	{Tags "spawn_b" "b2" "spawnpoint_conquest" 0xc000}
+	{Tags "spawn_a" "a1" "spawnpoint_conquest" 0xc007}
+	{Tags "spawn_b" "b1" "spawnpoint_conquest" 0x8005}
+	{Tags "spawn_a" "a2" "spawnpoint_conquest" 0x8006}
+	{Tags "spawn_a" "a3" "spawnpoint_conquest" 0x8007}
+	{Tags "spawn_b" "b3" "spawnpoint_conquest" 0x8008}
+	{Tags "spawn_b" "b4" "spawnpoint_conquest" 0x800d}
+	{Tags "spawn_a" "a4" "spawnpoint_conquest" 0x800e}
 	{Tags "fpc2" "flag" 0x8013}
 	{Tags "cmp_def" "1_a_2-3" "1_b_2-3" 0x800c}
 	{Tags "cmp_def" "1_a_2-3" 0x800f}
@@ -17785,6 +17778,18 @@
 			{item "us_m1_b" {cell 0 1}{user "head"}}
 		}
 	}
+	{Inventory 0x82ce
+		{box
+			{clear}
+			{item "enfield_no2_mk1" filled {cell 0 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 2 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 3 0}}
+			{item "eng_revolver_clip_38" "ammo" 6 {cell 4 0}}
+			{item "bandage_eng" {cell 5 0}}
+			{item "bandage_eng" {cell 0 1}}
+			{item "bandage_eng" {cell 2 1}}
+		}
+	}
 	{Brain 0x800c
 		{Properties
 			{advance_ratio 0.5}
@@ -19544,7 +19549,7 @@
 		}
 	}
 	{Environment "goh/black"}
-	{Helpers {event "dynamic_weather_failsafe"}
+	{Helpers
 		{event "ai_air_on"}
 		{event "ai_air_possible"}
 		{event "airplane_set"}
@@ -19566,31 +19571,6 @@
 		{event "music_rnd"}
 		{event "music_start"}
 		{event "talk_on"}
-		{zone "circle"
-			{position -6210.61 1968.43 19}
-			{Name "forward1"}
-			{Radius 2279.52}
-		}
-		{zone "circle"
-			{position 2323.62 -2215.92 6}
-			{Name "forward2"}
-			{Radius 2657.36}
-		}
-		{zone "circle"
-			{position -1702.91 3502.72 -18}
-			{Name "forward3"}
-			{Radius 2437.73}
-		}
-		{zone "circle"
-			{position -2673.87 -1227.25 -9.86865}
-			{Name "forward4"}
-			{Radius 2349.82}
-		}
-		{zone "circle"
-			{position 3144.34 2646.48 15}
-			{Name "forward5"}
-			{Radius 2255.67}
-		}
 		{zone "circle"
 			{position -1960.01 3768.44 27}
 			{Name "_bridge1"}
@@ -19655,6 +19635,31 @@
 			{Point 5887.31 3595.61}
 			{Point 7755.62 -1546.67}
 			{Point -1071.2 -6774.64}
+		}
+		{zone "circle"
+			{position -6210.61 1968.43 19}
+			{Name "forward1"}
+			{Radius 2279.52}
+		}
+		{zone "circle"
+			{position 2323.62 -2215.92 6}
+			{Name "forward2"}
+			{Radius 2657.36}
+		}
+		{zone "circle"
+			{position -1702.91 3502.72 -18}
+			{Name "forward3"}
+			{Radius 2437.73}
+		}
+		{zone "circle"
+			{position -2673.87 -1227.25 -9.86865}
+			{Name "forward4"}
+			{Radius 2349.82}
+		}
+		{zone "circle"
+			{position 3144.34 2646.48 15}
+			{Name "forward5"}
+			{Radius 2255.67}
 		}
 		{zone "poly"
 			{position -5425.01 1879.4 8}
@@ -32202,9 +32207,7 @@
 				{position 2776.38 458.794 9}
 			}
 		}
-		{modifiers
-			{"file"{name "/map/multi/ai_range_fix.mod"}}
-		}
+		{modifiers{"file"{name "/map/multi/ai_range_fix.mod"}}}
 	}
 	{Players
 		{count 17}

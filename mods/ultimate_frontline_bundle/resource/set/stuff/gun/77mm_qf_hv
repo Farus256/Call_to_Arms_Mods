@@ -18,17 +18,17 @@
 	("armor health custom" shell(apcbc) damage(200) velocity(785) filler(0))
 	("76_eng_slope_multipliers")
 
-	("penetration_long" shell(apcbc) range(200) a(149) b(139) c(128) d(117) e(108))		; APCBC shot MK.VIII
-	("penetration_long" shell(apds) range(200) a(221) b(202) c(180) d(160) e(143))		; APDS shot MK.I
+	{parameters "apcbc"
+		{projectileDamageTable {10 152.57272727} {30 149} {100 139} {155 128} {200 118.1} {215 0}}
+		{range 200 200}
+	}		; APCBC shot MK.VIII
+	{parameters "apds"
+		{projectileDamageTable {10 226.61818182} {30 221} {100 202} {155 180} {200 162} {215 0}}
+		{range 200 200}
+	}		; APDS shot MK.I
 
 	{parameters "he"
-		; UFB realism: native non-story gametype conditions
-{range 180 180}
-(mod "gametype:battle_zones" {range 270 270})
-(mod "gametype:ammunition" {range 270 270})
-(mod "gametype:evacuation" {range 270 270})
-(mod "gametype:frontlines" {range 270 270})
-(mod "gametype:campaign_capture_the_flag" {range 270 270})
+		{range 180 180}
 	}
 
 	("accuracy_direct" r1(0.65) range_ap(200) range_he(180) range_heat(180))

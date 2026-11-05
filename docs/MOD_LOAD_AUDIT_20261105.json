@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-05",
+  "observedActiveMods": [
+    "mod_3540580405",
+    "mod_2922646932",
+    "mod_3359417100"
+  ],
+  "selectedModCount": 12,
+  "selectedModSetUnchanged": true,
+  "otherProfileSettingsUnchanged": true,
+  "savedOrder": [
+    "mod_3408719680",
+    "mod_3540580405",
+    "mod_2922646932",
+    "mod_3196505779",
+    "mod_3562631215",
+    "mod_3359417100",
+    "mod_3566110308",
+    "mod_3079405930",
+    "mod_3139610501",
+    "mod_2562731625",
+    "mod_3791314577",
+    "ultimate_frontline_bundle"
+  ],
+  "requiresNextLaunchConfirmation": true,
+  "sourceAndInstalledIdentical": true,
+  "sha256VerifiedModFiles": 758,
+  "changedModFiles": [
+    "resource/interface/layout/components/changelog.xml",
+    "resource/interface/layout/pagemain.xml"
+  ],
+  "gameplayFilesUnchanged": true,
+  "uiNativeSchemaValid": true,
+  "immersiveUIOriginalImagesPreserved": 12,
+  "colditzFinlandHFPathCollisions": 36,
+  "activationMismatchCause": "Not determined from the existing log",
+  "backup": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\mod-load-audit-20261105"
+}
