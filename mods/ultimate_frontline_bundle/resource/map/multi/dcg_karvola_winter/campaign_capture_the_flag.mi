@@ -29620,27 +29620,27 @@
 			{Point 3701.6 -5301.36}
 		}
 		{zone "circle"
-			{position -559.832 -4765.97 151.061}
+			{position -121.48 -416.34 83}
 			{Name "forward1"}
 			{Radius 2279.52}
 		}
 		{zone "circle"
-			{position -841.185 775.926 93.9094}
+			{position 839.42 -2783.68 101}
 			{Name "forward2"}
 			{Radius 1928.04}
 		}
 		{zone "circle"
-			{position 1334.78 3996.73 133.965}
+			{position -4454.6 2393.08 80}
 			{Name "forward3"}
 			{Radius 2052.46}
 		}
 		{zone "circle"
-			{position 5805.28 2531.94 88.7065}
+			{position -2570.17 -806.16 109}
 			{Name "forward4"}
 			{Radius 1962.34}
 		}
 		{zone "circle"
-			{position -3976.28 5524.85 50}
+			{position 4911.02 -5697.03 67}
 			{Name "forward5"}
 			{Radius 2255.67}
 		}

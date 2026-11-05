@@ -367,35 +367,31 @@
  }
 }
 {"ufb/tank/bail %player"
- {condition {expression "1 | 2"} {terms {"1.entities" {selector {source advanced} {ignore_captured_by_user 1} {group
- {select {prop {prop tank}}}
- {include {player {player "%player"}} {state {state inhabited}} {tag {tag burned}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_tank_bailed}} }}}} {"2.see_actors" {selector {source advanced} {ignore_captured_by_user 1} {group
+ {condition {terms {"1.see_actors" {selector {source advanced} {ignore_captured_by_user 1} {group
  {select {prop {prop tank}}}
  {include {player {player "%player"}} {state {state inhabited}} {tag {tag gun_broken}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_tank_bailed}} {state {state chassis_work}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state chassis_work}} {tag {tag _ufb_tank_bailed}} {tag {tag burned}} {tag {tag ammo_broken}} {tag {tag ammo_cooked}} {tag {tag barrel_fire}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group
  {select {prop {prop human}} {prop {prop vehicle}}}
  {include {relation {relation enemy} {player "%player"}} {state {state operatable}}}
  {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}}}}} {distance {mode in_range} {min 0} {max 200}} {detection visible}}}}
  {actions
-  {"entity_state" {selector {source advanced} {ignore_captured_by_user 1} {group
- {select {prop {prop tank}}}
- {include {player {player "%player"}} {state {state inhabited}} {tag {tag burned}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_tank_bailed}} }}} {tag_add _ufb_tank_bail_%player}}
+  {"delay" {time 20}}
   {"if" {condition {type see_actors} {selector {source advanced} {ignore_captured_by_user 1} {group
  {select {prop {prop tank}}}
  {include {player {player "%player"}} {state {state inhabited}} {tag {tag gun_broken}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_tank_bailed}} {state {state chassis_work}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state chassis_work}} {tag {tag _ufb_tank_bailed}} {tag {tag burned}} {tag {tag ammo_broken}} {tag {tag ammo_cooked}} {tag {tag barrel_fire}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group
  {select {prop {prop human}} {prop {prop vehicle}}}
  {include {relation {relation enemy} {player "%player"}} {state {state operatable}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}}}}} {distance {mode in_range} {min 0} {max 200}} {detection visible}} {"entity_state" {selector {source advanced} {ignore_captured_by_user 1} {group
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}}}}} {distance {mode in_range} {min 0} {max 200}} {detection visible}}
+   {"entity_state" {selector {source advanced} {ignore_captured_by_user 1} {group
  {select {prop {prop tank}}}
  {include {player {player "%player"}} {state {state inhabited}} {tag {tag gun_broken}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_tank_bailed}} {state {state chassis_work}}}}} {tag_add _ufb_tank_bail_%player}}}
-  {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_tank_bail_%player}} {effect emit_crew}}
-  {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_tank_bail_%player}} {tag_add _ufb_tank_bailed}}
-  {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_tank_bail_%player}} {tag_remove _ufb_tank_bail_%player}}
-  {"con" {text "[UFB tank] crew bails out: player %player"}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state chassis_work}} {tag {tag _ufb_tank_bailed}} {tag {tag burned}} {tag {tag ammo_broken}} {tag {tag ammo_cooked}} {tag {tag barrel_fire}}}}} {tag_add _ufb_tank_bail_%player}}
+   {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_tank_bail_%player}} {effect emit_crew}}
+   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_tank_bail_%player}} {tag_add _ufb_tank_bailed}}
+   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_tank_bail_%player}} {tag_remove _ufb_tank_bail_%player}}
+   {"con" {text "[UFB tank] crew bails out: player %player"}}
+  }
   {"delay" {time 3}}
 {"trigger" {name "ufb/tank/bail %player"}}
  }
@@ -455,7 +451,7 @@
  {exclude {state {state dead}} {state {state inactive}} {state {state linked}}}}} {distance {mode in_range} {min 0} {max 15}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_surrender_%player}}}}}
  {actions
   {"delay" {time 2}}
-  {"actor_state" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {drop orders} {fire_mode hold} {move_mode hold} {ai_move {mode disable}} {movement {speed slow} {type normal}}}
+  {"actor_state" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {drop orders} {fire_mode hold} {move_mode free} {ai_move {mode disable}} {movement {speed slow} {type normal}}}
   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {tag_add _ufb_surrendered}}
   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {tag_add _ufb_native_pickup_initialized}}
   {"delay" {time 0.25}}
@@ -463,15 +459,29 @@
   {"delay" {time 0.25}}
   {"inventory" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {action drop}}
   {"delay" {time 2}}
-  {"actor_state" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {drop orders} {fire_mode hold} {move_mode hold} {ai_move {mode disable}} {movement {speed slow} {type normal}}}
+  {"actor_state" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {drop orders} {fire_mode hold} {move_mode free} {ai_move {mode disable}} {movement {speed slow} {type normal}}}
   {"delay" {time 0.5}}
-  {"animation" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {drop "orders sensor"} {collage stand_giveup_1} {cicledelay 9000} {delay 9000} {flags loop}}
+  {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {tag_add _ufb_prisoner}}
   {"if" {condition {type entities} {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}}}
    {"con" {text "[UFB surrender] wounded soldier gives up to player %player"}}
   }
   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_surrender_%player}} {tag_remove _ufb_surrender_%player}}
   {"delay" {time 4}}
 {"trigger" {name "ufb/surrender/mark %player"}}
+ }
+}
+{"ufb/surrender/hands %player"
+ {condition {terms {"1.entities" {selector {source advanced} {ignore_captured_by_user 1} {group
+ {select {tag {tag _ufb_prisoner}}}
+ {include {player {player "%player"}} {state {state operatable}}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_autonomy_moving}}}}}}}}
+ {actions
+  {"animation" {selector {source advanced} {ignore_captured_by_user 1} {group
+ {select {tag {tag _ufb_prisoner}}}
+ {include {player {player "%player"}} {state {state operatable}}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_autonomy_moving}}}}} {collage stand_giveup_1} {cicledelay 0} {delay 0} {totalTime 6} {flags loop}}
+  {"delay" {time 7}}
+{"trigger" {name "ufb/surrender/hands %player"}}
  }
 }
 {"ufb/surrender/helped %player"

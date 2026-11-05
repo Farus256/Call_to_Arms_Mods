@@ -9,7 +9,7 @@ const I=(x,type='existance')=>`{with_item {type ${type}} {item "${x}"}}`;
 const players=Array.from({length:17},(_,i)=>i);
 const tagged=x=>`{ignore_captured_by_user 0} {tag ${x}}`;
 // Tunables, in meters unless stated. Real battles may want these adjusted.
-const tune={abandon:80,crewReach:7,returnClear:110,fortifyChance:0.6,fortifyMinEnemy:40,deploy:{mg:[40,130],mortar:[60,240],at:[60,220]},tankFear:30,bailEnemy:200,surrenderEnemy:15,surrenderFriend:25,calmRetreat:2.2,shakenRetreat:1.4};
+const tune={abandon:80,crewReach:7,returnClear:110,fortifyChance:0.6,fortifyMinEnemy:40,deploy:{mg:[40,130],mortar:[60,240],at:[60,220]},tankFear:30,bailEnemy:200,bailWait:20,surrenderEnemy:15,surrenderFriend:25,calmRetreat:2.2,shakenRetreat:1.4};
 const hmgProps=['muzzle_hmg','muzzle_hmg_dshk','muzzle_hmg_m2hb','c_mg_heavy'];
 // A bunker or ring mount is the cover; 20 mm and the ampulomet can hurt light armor.
 const notAGunPit=[P('bunker'),P('hatch'),P('muzzle_20mm_25mm_auto'),S('dead'),S('inactive'),S('linked')];
@@ -197,22 +197,25 @@ function gunReturn(){
  }
 }`;
 }
+// Only a tank that can neither fight nor leave. Fire is left to the game: _burn plays
+// the engine-fire scene and burn_emit decides when the crew gets out.
 function tankBail(){
- const tank=(extra,exclude)=>`{source advanced} {ignore_captured_by_user 1} {group
+ const helpless=`{source advanced} {ignore_captured_by_user 1} {group
  {select ${P('tank')}}
- {include {player {player "%player"}} ${S('inhabited')} ${extra}}
- {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${T('_ufb_tank_bailed')} ${exclude}}}`;
- const burning=tank(T('burned'),''),helpless=tank(T('gun_broken'),S('chassis_work'));
- const out=x=>`{"entity_state" {selector ${x}} {tag_add _ufb_tank_bail_%player}}`;
+ {include {player {player "%player"}} ${S('inhabited')} ${T('gun_broken')}}
+ {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${S('chassis_work')} ${T('_ufb_tank_bailed')} ${['burned','ammo_broken','ammo_cooked','barrel_fire'].map(T).join(' ')}}}`;
+ const seen=see(helpless,anyEnemy,tune.bailEnemy);
  return `{"ufb/tank/bail %player"
- {condition {expression "1 | 2"} {terms {"1.entities" {selector ${burning}}} {"2.see_actors" ${see(helpless,anyEnemy,tune.bailEnemy)}}}}
+ {condition {terms {"1.see_actors" ${seen}}}}
  {actions
-  ${out(burning)}
-  {"if" {condition {type see_actors} ${see(helpless,anyEnemy,tune.bailEnemy)}} ${out(helpless)}}
-  {"effect" {selector ${tagged('_ufb_tank_bail_%player')}} {effect emit_crew}}
-  {"entity_state" {selector ${tagged('_ufb_tank_bail_%player')}} {tag_add _ufb_tank_bailed}}
-  ${clear('_ufb_tank_bail_%player','_ufb_tank_bail_%player')}
-  {"con" {text "[UFB tank] crew bails out: player %player"}}
+  {"delay" {time ${tune.bailWait}}}
+  {"if" {condition {type see_actors} ${seen}}
+   {"entity_state" {selector ${helpless}} {tag_add _ufb_tank_bail_%player}}
+   {"effect" {selector ${tagged('_ufb_tank_bail_%player')}} {effect emit_crew}}
+   {"entity_state" {selector ${tagged('_ufb_tank_bail_%player')}} {tag_add _ufb_tank_bailed}}
+   ${clear('_ufb_tank_bail_%player','_ufb_tank_bail_%player')}
+   {"con" {text "[UFB tank] crew bails out: player %player"}}
+  }
   ${loop('ufb/tank/bail %player',3)}
  }
 }`;
@@ -268,7 +271,11 @@ function surrender(){
  {select ${P('human')} ${P('vehicle')}}
  {include {relation {relation enemy} {player "%player"}} ${S('operatable')}}
  {exclude ${S('dead')} ${S('inactive')} ${T('_ufb_was_hit')}}}`;
- const prisoner=tagged(pair),still=`{"actor_state" {selector ${prisoner}} {drop orders} {fire_mode hold} {move_mode hold} {ai_move {mode disable}} {movement {speed slow} {type normal}}}`;
+ const idle=`{source advanced} {ignore_captured_by_user 1} {group
+ {select ${T('_ufb_prisoner')}}
+ {include {player {player "%player"}} ${S('operatable')}}
+ {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${T('_ufb_autonomy_moving')}}}`;
+ const prisoner=tagged(pair),still=`{"actor_state" {selector ${prisoner}} {drop orders} {fire_mode hold} {move_mode free} {ai_move {mode disable}} {movement {speed slow} {type normal}}}`;
  return `{"ufb/surrender/mark %player"
  {condition {terms {"1.see_actors" ${see(victim,captor,tune.surrenderEnemy,pair)}}}}
  {actions
@@ -283,12 +290,19 @@ function surrender(){
   {"delay" {time 2}}
   ${still}
   {"delay" {time 0.5}}
-  {"animation" {selector ${prisoner}} {drop "orders sensor"} {collage stand_giveup_1} {cicledelay 9000} {delay 9000} {flags loop}}
+  {"entity_state" {selector ${prisoner}} {tag_add _ufb_prisoner}}
   {"if" {condition {type entities} {selector ${prisoner}}}
    {"con" {text "[UFB surrender] wounded soldier gives up to player %player"}}
   }
   ${clear(pair,pair)}
   ${loop('ufb/surrender/mark %player',4)}
+ }
+}
+{"ufb/surrender/hands %player"
+ {condition {terms {"1.entities" {selector ${idle}}}}}
+ {actions
+  {"animation" {selector ${idle}} {collage stand_giveup_1} {cicledelay 0} {delay 0} {totalTime 6} {flags loop}}
+  ${loop('ufb/surrender/hands %player',7)}
  }
 }
 {"ufb/surrender/helped %player"

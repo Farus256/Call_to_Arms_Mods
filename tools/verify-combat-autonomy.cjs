@@ -19,7 +19,7 @@ function expand(source){
  return output;
 }
 const triggers=new Map([...expand(mission),...expand(text('map/multi/ufb_infantry_support.inc')),...expand(text('map/multi/ufb_static_weapons.inc'))].map(n=>[s.name(n),n]));
-assert.equal(triggers.size,702,'duplicate/missing expanded triggers');
+assert.equal(triggers.size,719,'duplicate/missing expanded triggers');
 const eventMap=new Map([...expand(events),...expand(text('set/interaction_entity/ufb_infantry_support_events.inc')),...expand(text('set/interaction_entity/ufb_static_weapon_events.inc'))].filter(n=>s.name(n)==='on').map(n=>[n.tokens[1].value,n]));
 const value=(n,key)=>s.child(n,key)?.tokens[1]?.value;
 const words=x=>String(x).split(/\s+/);
@@ -112,7 +112,7 @@ class Scene{
   for(const e of actors){
    if(key==='entity_state'){const add=value(n,'tag_add'),remove=value(n,'tag_remove');if(add)e.tags.add(add);if(remove)e.tags.delete(remove);}
    else if(key==='effect')this.event(value(n,'effect'),e);
-   else if(key==='actor_state'){for(const field of s.child(n,'ai')?.children||[]){const v=field.tokens[1].value;e.ai[s.name(field)]=v==='on'?true:v==='off'?false:Number(v);}if(s.child(n,'cannon')){e.cannon=value(n,'cannon');e.moveMode=value(n,'move_mode');}}
+   else if(key==='actor_state'){for(const field of s.child(n,'ai')?.children||[]){const v=field.tokens[1].value;e.ai[s.name(field)]=v==='on'?true:v==='off'?false:Number(v);}if(s.child(n,'cannon'))e.cannon=value(n,'cannon');if(s.child(n,'move_mode'))e.moveMode=value(n,'move_mode');}
    else if(key==='actor_to_cover')this.commands.push({name:'cover',actor:e.id,at:this.now});
    else if(key==='board'){const gun=this.select(s.child(n,'vehicle'))[0];if(gun){gun.states.add('inhabited');e.states.add('linked');this.commands.push({name:'board',actor:e.id,target:gun.id,at:this.now});}}
    else if(key==='player')e.player=Number(value(n,'player'));
@@ -419,12 +419,14 @@ test('a bot crew returns to its gun after the armor leaves',()=>{
  const late=flee();late.w.advance(125);late.enemy.visible=false;check(!late.w.named('ufb/gun/return 0'),'crew gone for two minutes has moved on');
 });
 test('a player crew is not walked back to the gun',()=>{const z=gunScene(['mg_stan'],armorUnit(60,['tank']));z.w.named('ufb/gun/abandon light 0');z.w.named('ufb/gun/crew 0');z.w.advance(3);z.enemy.visible=false;check(!z.w.named('ufb/gun/return 0'));});
-test('crews leave a burning tank, or one with neither gun nor tracks under enemy eyes',()=>{
- const tank=(tags,states,seen=true)=>{const g=gun('t',0,0,['tank'],{bot:true});tags.forEach(x=>g.tags.add(x));states.forEach(x=>g.states.add(x));const e=unit('foe',1,150,{team:1});e.visible=seen;const w=new Scene([g,e]);w.named('ufb/tank/bail 0');return {g,w};};
- check(tank(['burned'],['chassis_work']).w.native.some(n=>n.name==='emit_crew'));check(tank(['gun_broken'],[]).w.native.some(n=>n.name==='emit_crew'));
- check(!tank(['gun_broken'],['chassis_work']).w.native.length,'it can still drive away');check(!tank([],[]).w.native.length,'broken tracks with a live gun keeps fighting');check(!tank(['gun_broken'],[],false).w.native.length,'no enemy in sight');
- const once=tank(['burned'],[]);assert.equal(once.w.native.length,1);once.g.states.add('inhabited');check(!once.w.named('ufb/tank/bail 0'),'bail only once');
- const held=gun('t',0,0,['tank'],{bot:true});held.tags.add('burned');held.captured=true;check(!new Scene([held]).named('ufb/tank/bail 0'));
+test('the game keeps its engine-fire scene; only a helpless tank is abandoned, after a pause',()=>{
+ const tank=(tags,states,seen=true)=>{const g=gun('t',0,0,['tank'],{bot:true});tags.forEach(x=>g.tags.add(x));states.forEach(x=>g.states.add(x));const e=unit('foe',1,150,{team:1});e.visible=seen;const w=new Scene([g,e]);w.named('ufb/tank/bail 0');return {g,e,w};};
+ for(const fire of ['burned','ammo_broken','ammo_cooked','barrel_fire']){const z=tank([fire],[]);z.w.advance(30);check(!z.w.native.length,'fire scene belongs to the game: '+fire);const y=tank([fire,'gun_broken'],[]);y.w.advance(30);check(!y.w.native.length,'burning and helpless: '+fire);}
+ const z=tank(['gun_broken'],[]);z.w.advance(19);check(!z.w.native.length,'not at once');z.w.advance(2);check(z.w.native.some(n=>n.name==='emit_crew'));check(z.g.tags.has('_ufb_tank_bailed'));
+ const caught=tank(['gun_broken'],[]);caught.w.advance(5);caught.g.tags.add('burned');caught.w.advance(20);check(!caught.w.native.length,'fire started during the pause');
+ const gone=tank(['gun_broken'],[]);gone.e.visible=false;gone.w.advance(21);check(!gone.w.native.length,'enemy left during the pause');
+ check(!tank(['gun_broken'],['chassis_work']).w.condition(s.child(triggers.get('ufb/tank/bail 0'),'condition')),'it can still drive away');check(!tank([],[]).w.condition(s.child(triggers.get('ufb/tank/bail 0'),'condition')),'a live gun keeps fighting');check(!tank(['gun_broken'],[],false).w.condition(s.child(triggers.get('ufb/tank/bail 0'),'condition')),'no enemy in sight');
+ const held=gun('t',0,0,['tank'],{bot:true});held.tags.add('gun_broken');held.captured=true;const foe=unit('foe',1,150,{team:1});check(!new Scene([held,foe]).named('ufb/tank/bail 0'));
 });
 test('a bot near a real blast runs for cover once; players and busy men do not',()=>{
  const z=unit('inf',0,0,{bot:true}),w=new Scene([z]);w.event('ufb_near_blast',z);check(w.named('ufb/fear/blast 0'));check(w.commands.filter(c=>c.name==='cover').length===1);check(!w.named('ufb/fear/blast 0'),'one order per blast');w.advance(2);check(!w.named('ufb/fear/blast 0'));w.event('ufb_near_blast',z);check(!w.named('ufb/fear/blast 0'),'20 s pause');w.advance(21);w.event('ufb_near_blast',z);check(w.named('ufb/fear/blast 0'));
@@ -447,7 +449,7 @@ test('machine gun shout names real machine guns only',()=>{
 });
 function capture(opts={}){const v=unit('v',1,0,{team:1,bot:true}),c=unit('me',0,10);if(opts.hit!==false)v.tags.add('_ufb_was_hit');const list=[v,c,...(opts.more||[])];const w=new Scene(list);return {v,c,w};}
 test('a lone wounded bot gives up to the human next to him',()=>{
- const z=capture();check(z.w.named('ufb/surrender/mark 0'));z.w.advance(6);assert.equal(z.v.player,0);check(!z.v.items.length,'weapons dropped');check(z.w.commands.some(c=>c.name==='animation'&&c.clip==='stand_giveup_1'));check(z.v.tags.has('_ufb_surrendered'));check(z.v.tags.has('_ufb_native_pickup_initialized'),'prisoner must not rearm');check(!z.w.named('ufb/surrender/mark 0'));
+ const z=capture();check(z.w.named('ufb/surrender/mark 0'));z.w.advance(6);assert.equal(z.v.player,0);check(!z.v.items.length,'weapons dropped');assert.equal(z.v.moveMode,'free','the owner must be able to walk him');check(z.w.named('ufb/surrender/hands 0'));check(z.w.commands.some(c=>c.name==='animation'&&c.clip==='stand_giveup_1'));z.w.commands.length=0;z.v.tags.add('_ufb_autonomy_moving');check(!z.w.named('ufb/surrender/hands 0'),'no hands-up loop while walking');z.v.tags.delete('_ufb_autonomy_moving');check(z.w.named('ufb/surrender/hands 0'),'hands go up again on stopping');z.v.captured=true;check(!z.w.named('ufb/surrender/hands 0'),'direct control is free');z.v.captured=false;check(z.v.tags.has('_ufb_surrendered'));check(z.v.tags.has('_ufb_native_pickup_initialized'),'prisoner must not rearm');check(!z.w.named('ufb/surrender/mark 0'));
  const p3=unit('v',1,0,{team:1,bot:true}),me=unit('me',3,10,{team:3});p3.tags.add('_ufb_was_hit');const w3=new Scene([p3,me]);w3.named('ufb/surrender/mark 3');w3.advance(6);assert.equal(p3.player,3,'not always player 0');
 });
 test('no surrender when healthy, helped, far away, downed or to another bot',()=>{

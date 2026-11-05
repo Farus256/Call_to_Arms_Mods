@@ -25599,7 +25599,7 @@
 				}
 			}
 			{"16"
-				{position -2924.42 -2891.22 38.0215}
+				{position -3091.35 -3335.44 25.8175}
 				{radius 300}
 				{commands
 					{"switch"
@@ -26961,7 +26961,7 @@
 		}
 		{waypoints "b_def_spawns"
 			{"20"
-				{position 1138.21 -1365.79 85}
+				{position 293.217 -1346.95 61.2325}
 				{radius 300}
 				{commands
 					{"switch"

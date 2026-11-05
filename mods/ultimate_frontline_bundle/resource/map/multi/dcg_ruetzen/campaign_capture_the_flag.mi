@@ -21190,7 +21190,7 @@
 }
 		{waypoints "a_def_spawns"
 			{"15"
-				{position -2496.16 227.349 124}
+				{position -2280.66 849.504 128}
 				{radius 300}
 				{commands
 					{"switch"

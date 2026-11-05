@@ -20843,7 +20843,7 @@
 }
 		{waypoints "a_def_spawns"
 			{"15"
-				{position -1299.66 6675.49 225}
+				{position -1524.99 6404.55 214}
 				{radius 300}
 				{commands
 					{"switch"
