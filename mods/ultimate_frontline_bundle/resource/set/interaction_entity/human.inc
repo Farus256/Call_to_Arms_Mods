@@ -901,7 +901,6 @@
 			{if not able "personage"
 				{if not burned
 					{spawn "ground_blood_small"}							;// blood splatter ground texture
-					{call "ufb_schedule_corpse_pool"}
 				}
 				{tags add "_bleedout_"}
 			}
@@ -2015,7 +2014,6 @@
 		{if tagged "start_personage"
 			{delay 1
 				{if dead
-					{call "ufb_schedule_bleedout_pool"}	;// the same single 5% roll as other deaths
 					{tags add "_bleedout_"}
 					{call "hf_clear_tags"}
 				else not dead
@@ -2217,7 +2215,6 @@
  {delay 3 "ufb_hf_cover_expiry" {tags remove "_ufb_hf_cover_active"}}
 }
 
-(include "ufb_corpse_pool.inc")
 
 {on "bm_explosion"
 		{volumes disable bullet contact blast touch}		

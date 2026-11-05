@@ -1,9 +1,0 @@
-{
-  "startDelaySeconds": [10, 40],
-  "growthSeconds": [120, 150, 180, 210, 240, 270, 300, 330, 360],
-  "spawnChance": 0.05,
-  "initialScale": 0.0575,
-  "finalScale": 0.23,
-  "persistenceSeconds": 9999,
-  "groundTraceScale": {"tiny": 0.022, "small": 0.035, "medium": 0.055, "big": 0.075}
-}

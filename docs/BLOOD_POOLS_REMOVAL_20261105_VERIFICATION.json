@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-05",
+  "installation": {
+    "sourceAndInstalledIdentical": true,
+    "modFiles": 781,
+    "removedPoolFiles": 20,
+    "editedFiles": 1,
+    "unrelatedFilesUnchanged": 780,
+    "backup": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_ai_work\\remove-blood-pools-20261105\\installed-before",
+    "battleTested": false
+  },
+  "tests": [
+    {
+      "command": "node tools/verify-blood-pools.cjs",
+      "exitCode": 0,
+      "result": {
+        "checks": 1377,
+        "corpsePoolsRemoved": true,
+        "deathHooksRemoved": 3,
+        "otherBloodResourcesPreserved": 10,
+        "bodyPartPhysicsPreserved": true,
+        "humanActionsOtherwisePreserved": true,
+        "battleTested": false
+      }
+    },
+    {
+      "command": "node tools/verify-hf4-gore.cjs",
+      "exitCode": 0,
+      "result": {
+        "checks": 12,
+        "dismembermentHandlersPreserved": 6,
+        "bodyPartPhysicsPreserved": true,
+        "corpsePoolsRemoved": true,
+        "renderingTested": false
+      }
+    },
+    {
+      "command": "node tools/verify-hf4-update.cjs",
+      "exitCode": 0,
+      "result": {
+        "nativeHFBalanceOutsideReviewedWeaponFixes": true,
+        "linearPanzerfaust60": true,
+        "gunSyntaxFixed": true,
+        "correctedGunCurves": 9,
+        "correctedGunFiles": 6,
+        "smoothedOtherATWeapons": 5,
+        "nativeWeaponFieldsOutsideReviewedCurves": true,
+        "hfSharedJobProtection": true,
+        "tankAlertCooldownFixed": true,
+        "wirecutterSmokeFixed": true,
+        "mgRequiresShooting": true,
+        "launcherDrawWithinNativeRange": true,
+        "commandPointMultiplier": 2,
+        "combatAutonomy": true,
+        "nativeHumanDamageAndWounds": true,
+        "nativeHFWeaponLootingRetained": true,
+        "nativeHFMedicsRetained": true,
+        "repairedMedicLoops": 3,
+        "preservedLootingStance": true,
+        "hf4AnimationBindingsRestored": [
+          "stand_fire_gun_down_1",
+          "stand_fire_gun_up_1",
+          "grenade_deflect"
+        ],
+        "allHFDefinitionsRetained": true,
+        "sdlFiles": 681,
+        "luaFiles": 10,
+        "includes": 1767,
+        "requires": 26,
+        "garrisonMaps": 117,
+        "waypoints": 374010,
+        "maxWaypointID": 7874
+      }
+    },
+    {
+      "command": "node tools/verify-blood-pools.cjs D:/Programs/Steam/steamapps/common/Call to Arms - Gates of Hell/mods/ultimate_frontline_bundle/resource",
+      "exitCode": 0,
+      "result": {
+        "checks": 1377,
+        "corpsePoolsRemoved": true,
+        "deathHooksRemoved": 3,
+        "otherBloodResourcesPreserved": 10,
+        "bodyPartPhysicsPreserved": true,
+        "humanActionsOtherwisePreserved": true,
+        "battleTested": false
+      }
+    }
+  ],
+  "battleTested": false,
+  "legacyTests": {
+    "verify-crew-effects.cjs": "Fails also on baseline: no automatic MP ban on wounded AI or player soldiers",
+    "verify-hf-bm-gore.cjs": "Fails also on baseline: UFB stress hooks kept"
+  }
+}

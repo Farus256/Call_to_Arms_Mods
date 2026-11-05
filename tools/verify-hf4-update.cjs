@@ -25,12 +25,14 @@ const human=read(p.join(resource,'set/interaction_entity/human.inc'));
 const visual=new Set(['die_with_blood','explosion','crush','bm_explosion','ufb_smoke_screen_120m','ufb_smoke_screen_60m','ufb_smoke_screen_wirecutter','ufb_hf_cover_committed']);
 const nativeHuman=s.parse(read(p.join(reference,'set/interaction_entity/human.inc'))).children[0];
 const currentHuman=s.parse(human).children[0];
-const mechanic=n=>!(s.name(n)==='on'&&visual.has(n.tokens[1]?.value))&&!(s.name(n)==='include'&&['ufb_corpse_pool.inc','ufb_combat_events.inc'].includes(n.tokens[1]?.value));
-// The new hook records impact. Only the native unconditional bleedout pool is
-// replaced by the same guarded 5% scheduler used for immediate deaths.
-const humanShape=n=>{const copy=shape(n);if(s.name(n)==='on'&&n.tokens[1]?.value==='bullet_hit')copy.children=copy.children.filter(c=>!(c.tokens[0]==='call'&&c.tokens[1]==='ufb_combat_hit'));if(s.name(n)==='on'&&n.tokens[1]?.value==='stop_personage'){
- const normalize=a=>{for(let i=0;i<a.children.length;i++){const c=a.children[i];if(c.tokens[0]==='call'&&c.tokens[1]==='ufb_schedule_bleedout_pool')a.children[i]={kind:'{',tokens:['spawn','bloodstain','basis','x'],children:[]};else normalize(c);}};normalize(copy);
- }if(s.name(n)==='on'&&['start_healing','stop_healing'].includes(n.tokens[1]?.value))copy.children=copy.children.filter(c=>!(c.tokens[0]==='tags'&&c.tokens[2]==='_ufb_healing_active'));if(s.name(n)==='on'&&n.tokens[1]?.value==='move')copy.children=copy.children.filter(c=>!(c.tokens[0]==='call'&&['ufb_autonomy_move_on','ufb_autonomy_move_off'].includes(c.tokens[1])));return copy;};
+const mechanic=n=>!(s.name(n)==='on'&&visual.has(n.tokens[1]?.value))&&!(s.name(n)==='include'&&n.tokens[1]?.value==='ufb_combat_events.inc');
+// Remove only the native bleedout pool from the reference before comparing mechanics.
+const nativeStop=s.all(nativeHuman,n=>s.name(n)==='on'&&n.tokens[1]?.value==='stop_personage')[0];
+const nativePool=s.all(nativeStop,n=>s.name(n)==='spawn'&&n.tokens[1]?.value==='bloodstain');
+assert.equal(nativePool.length,1,'Expected one native bleedout pool');
+const nativePoolParent=s.all(nativeStop,n=>n.children.includes(nativePool[0]))[0];
+nativePoolParent.children=nativePoolParent.children.filter(n=>n!==nativePool[0]);
+const humanShape=n=>{const copy=shape(n);if(s.name(n)==='on'&&n.tokens[1]?.value==='bullet_hit')copy.children=copy.children.filter(c=>!(c.tokens[0]==='call'&&c.tokens[1]==='ufb_combat_hit'));if(s.name(n)==='on'&&['start_healing','stop_healing'].includes(n.tokens[1]?.value))copy.children=copy.children.filter(c=>!(c.tokens[0]==='tags'&&c.tokens[2]==='_ufb_healing_active'));if(s.name(n)==='on'&&n.tokens[1]?.value==='move')copy.children=copy.children.filter(c=>!(c.tokens[0]==='call'&&['ufb_autonomy_move_on','ufb_autonomy_move_off'].includes(c.tokens[1])));return copy;};
 assert.deepEqual(currentHuman.children.filter(mechanic).map(humanShape),nativeHuman.children.filter(mechanic).map(shape),'Native HF human mechanics changed');
 const hfFile='map/multi/HF-dcg_script.inc',hf=read(p.join(resource,hfFile)),hfTree=s.parse(hf),nativeHF=s.parse(read(p.join(reference,hfFile)));
 const key=n=>n.kind+':'+n.tokens.map(t=>t.value).join('|');
