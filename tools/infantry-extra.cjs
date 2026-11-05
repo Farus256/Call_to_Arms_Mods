@@ -2,16 +2,16 @@
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
 const T=x=>`{tag {tag ${x}}}`,P=x=>`{prop {prop ${x}}}`,S=x=>`{state {state ${x}}}`;
 const I=(x,type='existance')=>`{with_item {type ${type}} {item "${x}"}}`;
-const actorTag=kind=>`_ufb_${kind}_actor_%player`;
-const protectedHumanTags=require('./infantry-job-policy.cjs').protectedHumanTags;
+const actorTag=kind=>`_ufb_${kind}_actor_%team`;
+const {protectedHumanTags,sides}=require('./infantry-job-policy.cjs');
 function selector({kind,acquire=false,item,player=true,extra=[],exclude=[],using}={}){
  return `{source advanced} {ignore_captured_by_user 1}
  {group {select ${acquire?P('human'):T(actorTag(kind))}}
- {include ${P('human')} ${S('operatable')} ${player?`{player {player "%player"}}`:''} ${item?I(item):''} ${using?I(using,'using'):''} ${extra.join(' ')}}
+ {include ${P('human')} ${S('operatable')} ${player?`{team {team %team}}`:''} ${item?I(item):''} ${using?I(using,'using'):''} ${extra.join(' ')}}
  {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('crew')} ${P('repairing')} ${P('throwing')}
  ${[...protectedHumanTags,'_ufb_combat_busy'].map(T).join(' ')}
  ${exclude.join(' ')}
- ${acquire?[T('_ufb_job_reserved'),T(actorTag('suppress')),...['mgun','assaultrifle','battlerifle','autorifle','semirifle'].map(k=>T(actorTag('loot_'+k))),...['launcher','at','critical','ap','smoke'].map(k=>T(`_ufb_combat_${k}_actor_%player`))].join(' '):''}
+ ${acquire?[T('_ufb_job_reserved'),T(actorTag('suppress')),...['mgun','assaultrifle','battlerifle','autorifle','semirifle'].map(k=>T(actorTag('loot_'+k))),...['launcher','at','critical','ap','smoke'].map(k=>T(`_ufb_combat_${k}_actor_%team`))].join(' '):''}
  }}`;
 }
 function support(){
@@ -45,44 +45,44 @@ function support(){
  const body=`{source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('hidden')} ${T('_ai_wounded_target_linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}`;
  text+=`
 (define "ufb_player_body_loot"
- {"ufb/support/loot %weapon/acquire %player"
+ {"ufb/support/loot %weapon/acquire %team"
   {condition {terms {"1.see_actors"
    {selector ${actor}}
    {enemy ${body}}
    {distance {mode near_than} {meters 3}}
-   {tag {"tag pair"} {"for selector" ${actorTag('loot_%weapon')}} {"for enemy" _ufb_loot_%weapon_body_%player}}
+   {tag {"tag pair"} {"for selector" ${actorTag('loot_%weapon')}} {"for enemy" _ufb_loot_%weapon_body_%team}}
   }}}
   {actions
    {"effect" {selector {ignore_captured_by_user 0} {tag ${actorTag('loot_%weapon')}}} {effect ufb_reserve_job}}
    {"delay" {time 1}}
    {"entity_state" {selector {ignore_captured_by_user 0} {tag ${actorTag('loot_%weapon')}}} {tag_remove _ufb_job_reserved}}
    {"entity_state" {selector {ignore_captured_by_user 0} {tag ${actorTag('loot_%weapon')}}} {tag_remove ${actorTag('loot_%weapon')}}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_loot_%weapon_body_%player}} {tag_remove _ufb_loot_%weapon_body_%player}}
+   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_loot_%weapon_body_%team}} {tag_remove _ufb_loot_%weapon_body_%team}}
    {"delay" {time 8}}
-   {"trigger" {name "ufb/support/loot %weapon/acquire %player"}}
+   {"trigger" {name "ufb/support/loot %weapon/acquire %team"}}
   }
  }
- {"ufb/support/loot %weapon/apply %player"
+ {"ufb/support/loot %weapon/apply %team"
   {condition {expression "1 & !2"} {terms
-   {"1.near" {units ${selector(common)}} {near_to {source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_loot_%weapon_body_%player')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}} {distance 3}}
+   {"1.near" {units ${selector(common)}} {near_to {source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_loot_%weapon_body_%team')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}} {distance 3}}
    {"2.see_actors" {selector ${selector(common)}}
-    {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')} ${P('vehicle')}} {include ${S('operatable')} {relation {relation enemy} {player "%player"}}} {exclude ${S('dead')} ${S('inactive')}}}}
+    {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')} ${P('vehicle')}} {include ${S('operatable')} {team {team %foe}}} {exclude ${S('dead')} ${S('inactive')}}}}
     {distance {mode near_than} {meters 30}} {detection visible}
    }
   }}
   {actions
    {"inventory" {selector ${selector(common)}} {action take_from} {item "loot_%weapon"}
-    {entity {source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_loot_%weapon_body_%player')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}}
+    {entity {source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_loot_%weapon_body_%team')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}}
    }
    {"effect" {selector {source advanced} {ignore_captured_by_user 1} {group {select ${T(actorTag('loot_%weapon'))}} {include ${I('loot_%weapon')}}}} {effect ufb_loot_cooldown}}
-   {"con" {text "[UFB support] corpse weapon pickup order: %weapon, player %player"}}
+   {"con" {text "[UFB support] corpse weapon pickup order: %weapon, team %team"}}
    {"delay" {time 2}}
-   {"trigger" {name "ufb/support/loot %weapon/apply %player"}}
+   {"trigger" {name "ufb/support/loot %weapon/apply %team"}}
   }
  }
 )
 `;
- for(let player=0;player<=16;player++)for(const weapon of kinds)text+=`("ufb_player_body_loot" player(${player}) weapon(${weapon}))\n`;
+ for(const [team,foe] of sides)for(const weapon of kinds)text+=`("ufb_player_body_loot" team(${team}) foe(${foe}) weapon(${weapon}))\n`;
  return text+suppression();
 }
 function suppression(){
@@ -90,8 +90,8 @@ function suppression(){
  const active=selector({kind:'suppress',using:'mgun'}).replace(T('_ufb_combat_busy'),'');
  const botActive=selector({kind:'suppress',using:'mgun',exclude:[S('user_control')]}).replace(T('_ufb_combat_busy'),'');
  const playerActive=selector({kind:'suppress',using:'mgun',extra:[S('user_control'),P('shooting')]}).replace(T('_ufb_combat_busy'),'');
- const point='{ignore_captured_by_user 0} {tag _ufb_suppress_point_%player}';
- const nearFriend=`{units ${point}} {near_to {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('operatable')} {relation {relation ally} {player "%player"}}} {exclude ${S('dead')}}}} {distance 12}`;
+ const point='{ignore_captured_by_user 0} {tag _ufb_suppress_point_%team}';
+ const nearFriend=`{units ${point}} {near_to {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('operatable')} {team {team %team}}} {exclude ${S('dead')}}}} {distance 12}`;
  const shot=`{"switch"
  {"case" {condition {type near} ${nearFriend}}}
  {"default"
@@ -109,32 +109,32 @@ function suppression(){
 ; A point is sampled while the target is visible. Later fire never targets or
 ; follows the hidden soldier. Three ordinary bursts at 0/2/4 seconds at most.
 (define "ufb_mg_suppress"
- {"ufb/suppress/acquire %player"
+ {"ufb/suppress/acquire %team"
   {condition {terms {"1.see_actors"
    {selector ${selector({...base,acquire:true})}}
-   {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('operatable')} {relation {relation enemy} {player "%player"}}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}}
+   {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('operatable')} {team {team %foe}}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}}
    {distance {mode in_range} {min 20} {max 120}} {detection visible}
-   {tag {"tag pair"} {"for selector" ${actorTag('suppress')}} {"for enemy" _ufb_suppress_enemy_%player}}
+   {tag {"tag pair"} {"for selector" ${actorTag('suppress')}} {"for enemy" _ufb_suppress_enemy_%team}}
   }}}
   {actions
-   {"effect" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_suppress_enemy_%player}} {effect ufb_suppress_point_%player}}
+   {"effect" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_suppress_enemy_%team}} {effect ufb_suppress_point_%team}}
    {"switch"
     {"case" {condition {type entities} {selector ${point}}}
      {"effect" {selector {ignore_captured_by_user 0} {tag ${actorTag('suppress')}}} {effect ufb_reserve_job}}
     }
     {"default"
      {"entity_state" {selector {ignore_captured_by_user 0} {tag ${actorTag('suppress')}}} {tag_remove ${actorTag('suppress')}}}
-     {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_suppress_enemy_%player}} {tag_remove _ufb_suppress_enemy_%player}}
+     {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_suppress_enemy_%team}} {tag_remove _ufb_suppress_enemy_%team}}
     }
    }
    {"delay" {time 6}}
    {"entity_state" {selector {ignore_captured_by_user 0} {tag ${actorTag('suppress')}}} {tag_remove ${actorTag('suppress')}}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_suppress_enemy_%player}} {tag_remove _ufb_suppress_enemy_%player}}
+   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_suppress_enemy_%team}} {tag_remove _ufb_suppress_enemy_%team}}
    {"delay" {time 4}}
-   {"trigger" {name "ufb/suppress/acquire %player"}}
+   {"trigger" {name "ufb/suppress/acquire %team"}}
   }
  }
- {"ufb/suppress/apply %player"
+ {"ufb/suppress/apply %team"
   {condition {expression "1 & 2 & !3 & !4"} {terms
    {"1.entities" {selector ${selector({...base,extra:[]})}}}
    {"2.near" {units ${active}} {near_to ${point}} {distance 120}}
@@ -143,19 +143,19 @@ function suppression(){
   }}
   {actions
    {"effect" {selector ${active}} {effect ufb_suppress_cooldown}}
-   {"con" {text "[UFB support] bounded MG suppression: player %player"}}
+   {"con" {text "[UFB support] bounded MG suppression: team %team"}}
    ${shot}
    {"delay" {time 2}}
    ${shot}
    {"delay" {time 2}}
    ${shot}
    {"delay" {time 2}}
-   {"trigger" {name "ufb/suppress/apply %player"}}
+   {"trigger" {name "ufb/suppress/apply %team"}}
   }
  }
 )
 `;
- for(let player=0;player<=16;player++)text+=`("ufb_mg_suppress" player(${player}))\n`;
+ for(const [team,foe] of sides)text+=`("ufb_mg_suppress" team(${team}) foe(${foe}))\n`;
  return text;
 }
 function events(){
@@ -170,20 +170,20 @@ function events(){
  {delay 15 {tags remove "_ufb_suppress_cooldown"}}
 }
 (define "ufb_suppress_point_events"
- {on "ufb_suppress_point_%player"
-  {if in_cover {call "ufb_suppress_point_spawn_%player"}
-  else lying {call "ufb_suppress_point_spawn_%player"}
-  else squatting {call "ufb_suppress_point_spawn_%player"}}
+ {on "ufb_suppress_point_%team"
+  {if in_cover {call "ufb_suppress_point_spawn_%team"}
+  else lying {call "ufb_suppress_point_spawn_%team"}
+  else squatting {call "ufb_suppress_point_spawn_%team"}}
  }
- {on "ufb_suppress_point_spawn_%player" sync
+ {on "ufb_suppress_point_spawn_%team" sync
   {spawn "ufb_smoke_screen_point" "basis" x
-   {tags add "_ufb_suppress_point_%player"}
+   {tags add "_ufb_suppress_point_%team"}
    {delay 4 1 {delete}}
   }
  }
 )
 `;
- for(let player=0;player<=16;player++)text+=`("ufb_suppress_point_events" player(${player}))\n`;
+ for(const [team] of sides)text+=`("ufb_suppress_point_events" team(${team}))\n`;
  return text;
 }
 function panzerfaust(base){

@@ -50,26 +50,26 @@ function fragTargets(base){
 }
 
 const jobs=['launcher','at','critical','ap','smoke'];
-const tag=(kind,role)=>`_ufb_combat_${kind}_${role}_%player`;
+const tag=(kind,role)=>`_ufb_combat_${kind}_${role}_%team`;
 const T=name=>`{tag {tag ${name}}}`;
 const P=name=>`{prop {prop ${name}}}`;
 const S=name=>`{state {state ${name}}}`;
 const I=(item,type='amount')=>`{with_item {type ${type}} {item "${item}"}${type==='amount'?' {min 1}':''}}`;
-const blocked=require('./infantry-job-policy.cjs').protectedHumanTags;
+const {protectedHumanTags:blocked,sides}=require('./infantry-job-policy.cjs');
 function actor(kind,{acquire=false,all=false,item,using,extra=[],command=false,single=false}={}){
  const select=acquire?(kind==='critical'||kind==='smoke'?T('_ufb_recent_hit'):P('human')):T(tag(kind,'actor'));
- const include=[`{player {player "%player"}}`,P('human'),S('operatable'),...(!all?[S('user_control')]:[]),...(!command?[P('shooting')]:[]),...(item?[I(item)]:[]),...(using?[I(using,'using')]:[]),...extra].join('\n');
- const exclude=[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),...blocked.filter(tag=>all||tag!=='reloading').map(T),T('_ufb_suppress_actor_%player'),...(['ap','at','smoke'].includes(kind)?[I('rocketlauncher','using')]:[]),...(!command?[T('_ufb_combat_busy'),T(`_ufb_combat_${kind}_cooldown`)]:[]),...(acquire?[T('_ufb_job_reserved'),...jobs.map(j=>T(tag(j,'actor')))]:[]),...(kind==='smoke'?['m15_wp','m42_wp','no77_wp'].map(n=>I(n,'existance')):[])].join('\n');
+ const include=[`{team {team %team}}`,P('human'),S('operatable'),...(!all?[S('user_control')]:[]),...(!command?[P('shooting')]:[]),...(item?[I(item)]:[]),...(using?[I(using,'using')]:[]),...extra].join('\n');
+ const exclude=[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),...blocked.filter(tag=>all||tag!=='reloading').map(T),T('_ufb_suppress_actor_%team'),...(['ap','at','smoke'].includes(kind)?[I('rocketlauncher','using')]:[]),...(!command?[T('_ufb_combat_busy'),T(`_ufb_combat_${kind}_cooldown`)]:[]),...(acquire?[T('_ufb_job_reserved'),...jobs.map(j=>T(tag(j,'actor')))]:[]),...(kind==='smoke'?['m15_wp','m42_wp','no77_wp'].map(n=>I(n,'existance')):[])].join('\n');
  return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {select ${select}}\n {include ${include}}\n {exclude ${exclude}}\n}${single?'\n{amount 1}':''}`;
 }
 function enemy({kind,paired=false,vehicle=false,mgun=false,cover=false,threat=false}={}){
  const vehicles=`${P('vehicle')} ${P('tank')} ${P('car')} ${P('cannon')}`;
  const select=paired?T(tag(kind,'target')):threat?`${vehicles} ${I('mgun','using')}`:vehicle?vehicles:P('human');
- const include=[`{relation {relation enemy} {player "%player"}}`,S('operatable'),...(mgun?[I('mgun','using')]:[]),...(cover?[T(`_ufb_combat_cover_%player`)]:[])].join('\n');
+ const include=[`{team {team %foe}}`,S('operatable'),...(mgun?[I('mgun','using')]:[]),...(cover?[T(`_ufb_combat_cover_%team`)]:[])].join('\n');
  return `{source advanced}\n{ignore_captured_by_user 0}\n{group {select ${select}} {include ${include}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('airborne')} ${T('bleeding')} ${T('_bleedout_')} ${T('wounded_animation_playing')}}}`;
 }
 function see(a,e,min,max,pair){return `{selector ${a}}\n{enemy ${e}}\n{distance {mode in_range} {min ${min}} {max ${max}}}\n{detection visible}${pair?`\n{tag {"tag pair"} {"for selector" ${tag(pair,'pick')}} {"for enemy" ${tag(pair,'target')}}}`:''}`;}
-function friendlyNear(kind){return `{units {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}}\n{near_to {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include {relation {relation ally} {player "%player"}} ${S('operatable')}} {exclude ${S('dead')}}}}\n{distance 12}`;}
+function friendlyNear(kind){return `{units {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}}\n{near_to {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include {team {team %team}} ${S('operatable')}} {exclude ${S('dead')}}}}\n{distance 12}`;}
 function clear(kind,role){return `{"entity_state" {selector {ignore_captured_by_user 0} {tag ${tag(kind,role)}}} {tag_remove ${tag(kind,role)}}}`;}
 function action(kind,options,name,target){return `{"action" {selector ${actor(kind,{...options,command:true,single:true})}} {action ${name}} {target ${target||`{ignore_captured_by_user 0} {tag ${tag(kind,'target')}}`}}}`;}
 function cooldown(kind,options){return `{"effect" {selector ${actor(kind,{...options,command:true})}} {effect ufb_combat_${kind}_cooldown}}`;}
@@ -80,33 +80,33 @@ function pairRoutine(kind,options){
  const pairedEnemy=enemy({kind,paired:true,vehicle,mgun,cover});
  const expr=['1',...(friendlyGuard?['!2']:[]),...(armorGuard?['!3']:[])].join(' & ');
  let execute=cooldown(kind,aOptions)+'\n'+action(kind,aOptions,command);
- if(kind==='smoke')execute=`${cooldown(kind,aOptions)}\n{"effect" {selector ${actor(kind,{...aOptions,command:true,single:true})}} {effect ufb_combat_smoke_point_%player}}\n${action(kind,aOptions,'throw_sk_grenade',`{ignore_captured_by_user 0} {tag _ufb_combat_smoke_point_%player}`)}`;
+ if(kind==='smoke')execute=`${cooldown(kind,aOptions)}\n{"effect" {selector ${actor(kind,{...aOptions,command:true,single:true})}} {effect ufb_combat_smoke_point_%team}}\n${action(kind,aOptions,'throw_sk_grenade',`{ignore_captured_by_user 0} {tag _ufb_combat_smoke_point_%team}`)}`;
  return `; ${kind}: one reserved pair per player; no drop-orders or fire-mode changes.\n(define "ufb_combat_${kind}"
- {"ufb/combat/${kind}/acquire %player"
+ {"ufb/combat/${kind}/acquire %team"
   {condition {terms {"1.see_actors" ${see(acquireActor,enemy({vehicle,mgun,threat}),min,max,kind)}}}}
   {actions
    {"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag ${tag(kind,'pick')}}} {tag_add ${tag(kind,'actor')}}}
    ${clear(kind,'pick')}
    {"effect" {selector {ignore_captured_by_user 0} {tag ${tag(kind,'actor')}}} {effect ufb_reserve_job}}
-   ${cover?`{"effect" {selector {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}} {effect ufb_combat_probe_cover_%player}}`:''}
+   ${cover?`{"effect" {selector {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}} {effect ufb_combat_probe_cover_%team}}`:''}
    {"delay" {time 6}}
    ${clear(kind,'actor')}
    ${clear(kind,'target')}
    {"delay" {time 2}}
-   {"trigger" {name "ufb/combat/${kind}/acquire %player"}}
+   {"trigger" {name "ufb/combat/${kind}/acquire %team"}}
   }
  }
- {"ufb/combat/${kind}/apply %player"
+ {"ufb/combat/${kind}/apply %team"
   {condition {expression "${expr}"} {terms
    {"1.see_actors" ${see(actor(kind,aOptions),pairedEnemy,min,max)}}
    ${friendlyGuard?`{"2.near" ${friendlyNear(kind)}}`:''}
    ${armorGuard?`{"3.see_actors" ${see(actor(kind,aOptions),enemy({vehicle:true}),0,110)}}`:''}
   }}
   {actions
-   {"con" {text "[UFB combat] ${kind} order: player %player"}}
+   {"con" {text "[UFB combat] ${kind} order: team %team"}}
    ${execute}
    {"delay" {time 1}}
-   {"trigger" {name "ufb/combat/${kind}/apply %player"}}
+   {"trigger" {name "ufb/combat/${kind}/apply %team"}}
   }
  }
 )`;
@@ -117,12 +117,12 @@ const launcherTiers={near:{classes:[30,40,50],reach:70},far:{classes:[60,70,80,9
 const launcherClass=tier=>launcherTiers[tier].classes.map(m=>I('range_'+m,'using'));
 function holder({include=[],exclude=[]}={}){
  const busy=blocked.filter(x=>x!=='_ufb_autonomy_moving').map(T);
- return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {select ${P('human')}}\n {include {player {player "%player"}} ${S('operatable')} ${I('rocketlauncher','using')} ${I('weapon bullet')} ${include.join(' ')}}\n {exclude ${[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),P('shooting'),T('_ufb_job_reserved'),T('_ufb_combat_busy'),...busy,...exclude].join(' ')}}\n}`;
+ return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {select ${P('human')}}\n {include {team {team %team}} ${S('operatable')} ${I('rocketlauncher','using')} ${I('weapon bullet')} ${include.join(' ')}}\n {exclude ${[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),P('shooting'),T('_ufb_job_reserved'),T('_ufb_combat_busy'),...busy,...exclude].join(' ')}}\n}`;
 }
 function launcherRelease(){
  const keep=T('_ufb_launcher_keep');
  const armed=tier=>{
-  const pair=`_ufb_launcher_keep_${tier}_%player`,name=`ufb/launcher/keep ${tier} %player`;
+  const pair=`_ufb_launcher_keep_${tier}_%team`,name=`ufb/launcher/keep ${tier} %team`;
   const who=holder({exclude:[keep,...launcherClass(tier==='near'?'far':'near')]});
   return `{"${name}"
   {condition {terms {"1.see_actors" {selector ${who}} {enemy ${enemy({vehicle:true})}} {distance {mode in_range} {min 0} {max ${launcherTiers[tier].reach}}} {detection visible} {tag {"tag pair"} {"for selector" ${pair}}}}}}
@@ -138,27 +138,27 @@ function launcherRelease(){
  return `(define "ufb_combat_launcher_release"
  ${armed('near')}
  ${armed('far')}
- {"ufb/launcher/tick %player"
+ {"ufb/launcher/tick %team"
   {condition {terms {"1.entities" {selector ${holder()}}}}}
   {actions
    {"effect" {selector ${holder({exclude:[keep,T('_ufb_launcher_seen')]})}} {effect ufb_launcher_grace}}
    {"if" {condition {type entities} {selector ${ready}}}
-    {"entity_state" {selector ${ready}} {tag_add _ufb_launcher_stow_%player}}
+    {"entity_state" {selector ${ready}} {tag_add _ufb_launcher_stow_%team}}
     {"inventory" {selector ${ready}} {action take} {item "weapon bullet"}}
-    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%player}} {tag_remove _ufb_launcher_ready}}
-    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%player}} {tag_remove _ufb_launcher_seen}}
-    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%player}} {tag_remove _ufb_launcher_stow_%player}}
-    {"con" {text "[UFB combat] launcher stowed: player %player"}}
+    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%team}} {tag_remove _ufb_launcher_ready}}
+    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%team}} {tag_remove _ufb_launcher_seen}}
+    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%team}} {tag_remove _ufb_launcher_stow_%team}}
+    {"con" {text "[UFB combat] launcher stowed: team %team"}}
    }
    {"delay" {time 2}}
-   {"trigger" {name "ufb/launcher/tick %player"}}
+   {"trigger" {name "ufb/launcher/tick %team"}}
   }
  }
 )`;
 }
 function mission(){
  const pieces=[`; UFB combat autonomy. Native commands consume existing inventory and keep native ranges.
-; Diplomacy is evaluated for EACH owning player, including cooperative and opposing teams.
+; Sides come from native {team} selectors; multiplayer missions define no diplomacy.
 ; Player ownership and active user capture are separate native states.
 ; Only stationary troops already firing may receive extra offensive orders.
 ; Prepared launchers are excluded from grenade/smoke switching; without armor nearby any
@@ -170,7 +170,7 @@ function mission(){
  pairRoutine('ap',{min:14,max:20,item:'fg',command:'throw_ap_grenade'}),
  pairRoutine('smoke',{min:30,max:110,item:'smoke',threat:true,friendlyGuard:false,command:'throw_sk_grenade'}),
  launcherRelease()];
- for(let player=0;player<=16;player++)for(const kind of [...jobs,'launcher_release'])pieces.push(`("ufb_combat_${kind}" player(${player}))`);
+ for(const [team,foe] of sides)for(const kind of [...jobs,'launcher_release'])pieces.push(`("ufb_combat_${kind}" team(${team}) foe(${foe}))`);
  return pieces.join('\n\n')+'\n(include "/map/multi/ufb_infantry_support.inc")\n(include "/map/multi/ufb_static_weapons.inc")\n';
 }
 function events(){
@@ -209,21 +209,21 @@ function events(){
 `;
  out+=`
 (define "ufb_combat_target_events"
- {on "ufb_combat_probe_cover_%player"
+ {on "ufb_combat_probe_cover_%team"
   {if in_cover
-   {tags add "_ufb_combat_cover_%player"}
-   {delay 1 {tags remove "_ufb_combat_cover_%player"}}
-  else {tags remove "_ufb_combat_cover_%player"}}
+   {tags add "_ufb_combat_cover_%team"}
+   {delay 1 {tags remove "_ufb_combat_cover_%team"}}
+  else {tags remove "_ufb_combat_cover_%team"}}
  }
- {on "ufb_combat_smoke_point_%player" sync
+ {on "ufb_combat_smoke_point_%team" sync
   {spawn "ufb_smoke_screen_point" local_offset 200 0 0 constrain_after_dir
-   {tags add "_ufb_combat_smoke_point_%player"}
+   {tags add "_ufb_combat_smoke_point_%team"}
    {delay 3 {delete}}
   }
  }
 )
 `;
- for(let player=0;player<=16;player++)out+=`("ufb_combat_target_events" player(${player}))\n`;
+ for(const [team] of sides)out+=`("ufb_combat_target_events" team(${team}))\n`;
  return out+'\n(include "ufb_infantry_support_events.inc")\n(include "ufb_static_weapon_events.inc")\n';
 }
 function expected(ref=reference){return [
@@ -242,7 +242,7 @@ function verify(root=resource,ref=reference){
  assert.equal(s.all(hit,n=>s.name(n)==='call'&&n.tokens[1]?.value==='ufb_combat_hit').length,1,'Missing one recent-hit hook');
  assert.equal(human.children.filter(n=>s.name(n)==='include'&&n.tokens[1]?.value==='ufb_combat_events.inc').length,1);
  for(const f of ['map/multi/ufb_crew_safety.inc','map/multi/ufb_crew_skirmish.inc'])assert.equal(s.parse(read(root,f)).children.filter(n=>s.name(n)==='include'&&n.tokens[1]?.value==='/map/multi/ufb_combat_autonomy.inc').length,1,'Missing shared entry point: '+f);
- return {combatAutonomy:true,targetingFiles:3,playerSlots:17,manualCaptureAndMovementProtected:true,automaticATInfantryTargetsRestricted:true};
+ return {combatAutonomy:true,targetingFiles:3,sides:2,manualCaptureAndMovementProtected:true,automaticATInfantryTargetsRestricted:true};
 }
 if(require.main===module){
  if(process.argv.includes('--build')){const files=expected();for(const e of files){const dest=p.join(resource,e.file);fs.mkdirSync(p.dirname(dest),{recursive:true});fs.writeFileSync(dest,e.text,'latin1');}console.log('Built '+files.length+' combat-autonomy resources from fresh HF reference.');}

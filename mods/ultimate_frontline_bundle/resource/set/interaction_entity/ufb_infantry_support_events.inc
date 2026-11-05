@@ -9,32 +9,17 @@
  {delay 15 {tags remove "_ufb_suppress_cooldown"}}
 }
 (define "ufb_suppress_point_events"
- {on "ufb_suppress_point_%player"
-  {if in_cover {call "ufb_suppress_point_spawn_%player"}
-  else lying {call "ufb_suppress_point_spawn_%player"}
-  else squatting {call "ufb_suppress_point_spawn_%player"}}
+ {on "ufb_suppress_point_%team"
+  {if in_cover {call "ufb_suppress_point_spawn_%team"}
+  else lying {call "ufb_suppress_point_spawn_%team"}
+  else squatting {call "ufb_suppress_point_spawn_%team"}}
  }
- {on "ufb_suppress_point_spawn_%player" sync
+ {on "ufb_suppress_point_spawn_%team" sync
   {spawn "ufb_smoke_screen_point" "basis" x
-   {tags add "_ufb_suppress_point_%player"}
+   {tags add "_ufb_suppress_point_%team"}
    {delay 4 1 {delete}}
   }
  }
 )
-("ufb_suppress_point_events" player(0))
-("ufb_suppress_point_events" player(1))
-("ufb_suppress_point_events" player(2))
-("ufb_suppress_point_events" player(3))
-("ufb_suppress_point_events" player(4))
-("ufb_suppress_point_events" player(5))
-("ufb_suppress_point_events" player(6))
-("ufb_suppress_point_events" player(7))
-("ufb_suppress_point_events" player(8))
-("ufb_suppress_point_events" player(9))
-("ufb_suppress_point_events" player(10))
-("ufb_suppress_point_events" player(11))
-("ufb_suppress_point_events" player(12))
-("ufb_suppress_point_events" player(13))
-("ufb_suppress_point_events" player(14))
-("ufb_suppress_point_events" player(15))
-("ufb_suppress_point_events" player(16))
+("ufb_suppress_point_events" team(a))
+("ufb_suppress_point_events" team(b))
