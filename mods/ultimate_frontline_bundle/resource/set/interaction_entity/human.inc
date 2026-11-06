@@ -1375,6 +1375,7 @@
 	}
 
     {on fire "hand_right"
+		{call "ufb_firing"}
         {if effector "stuff weapon sword"    ;// Plays animation for sword swings
             {if standing
                 {ani_stop "stand_fire_pistol"}

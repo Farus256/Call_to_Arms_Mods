@@ -48,6 +48,8 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
+		{"pistol"}							; UFB: draw a sidearm when the main weapon is dry
+		{"revolver"}						; UFB: draw a sidearm when the main weapon is dry
 		{"ptr"{ready_for_shot}}
 		{"ammo rifle_grenade_at" {check_grenade}}								; anti-tank rifle ammo
 
@@ -115,6 +117,8 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
+		{"pistol"}							; UFB: draw a sidearm when the main weapon is dry
+		{"revolver"}						; UFB: draw a sidearm when the main weapon is dry
 		{"ptr"{ready_for_shot}}
 		{"ammo rifle_grenade_at" {check_grenade}}								; anti-tank rifle ammo
 				
@@ -182,6 +186,8 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
+		{"pistol"}							; UFB: draw a sidearm when the main weapon is dry
+		{"revolver"}						; UFB: draw a sidearm when the main weapon is dry
 		{"ptr"{ready_for_shot}}
 		{"ammo rifle_grenade_at" {check_grenade}}								; anti-tank rifle ammo
 

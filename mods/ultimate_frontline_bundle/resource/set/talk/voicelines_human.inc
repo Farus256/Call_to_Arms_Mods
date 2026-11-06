@@ -128,7 +128,7 @@
 
 {talk "alert_at_gun"		;// (condition) - unit sees vehicle with "at_gun" prop
 	("human_phrases" args alert_at_gun)
-	{freq 0.5}
+	{freq 0.8}
 }
 
 ;{talk "alert_mgun"			;// (condition) - unit sees vehicle with "mg_stan" prop

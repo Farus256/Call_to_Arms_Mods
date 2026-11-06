@@ -6,7 +6,7 @@ const actorTag=kind=>`_ufb_${kind}_actor_%team`;
 const {protectedHumanTags,sides}=require('./infantry-job-policy.cjs');
 function selector({kind,acquire=false,item,player=true,extra=[],exclude=[],using}={}){
  return `{source advanced} {ignore_captured_by_user 1}
- {group {select ${acquire?P('human'):T(actorTag(kind))}}
+ {group ${acquire?'':`{select ${T(actorTag(kind))}}`}
  {include ${P('human')} ${S('operatable')} ${player?`{team {team %team}}`:''} ${item?I(item):''} ${using?I(using,'using'):''} ${extra.join(' ')}}
  {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('crew')} ${P('repairing')} ${P('throwing')}
  ${[...protectedHumanTags,'_ufb_combat_busy'].map(T).join(' ')}
@@ -16,7 +16,7 @@ function selector({kind,acquire=false,item,player=true,extra=[],exclude=[],using
 }
 function support(){
  const init=(medic=false)=>`{source advanced} {ignore_captured_by_user 0} {group
- {select ${medic?T('medic'):P('human')}}
+ ${medic?`{select ${T('medic')}}`:''}
  {include ${P('human')} ${S('user_control')} ${S('operatable')}}
  {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${T(medic?'_ufb_native_medic_initialized':'_ufb_native_pickup_initialized')}}}`;
  let text=`; Native properties preserve the engine's inventory, medic and manual-order rules.
@@ -42,7 +42,7 @@ function support(){
  // inventory creation, replacing a prepared launcher, or stealing from wounded men.
  const common={kind:'loot_%weapon',item:'rifle',extra:[S('user_control')],using:'rifle',exclude:[I('sniper'),I('rocketlauncher','using'),I('loot_riflegrenade'),I('loot_atrifle'),...kinds.map(k=>I('loot_'+k)),T('_ufb_loot_cooldown')]};
  const actor=selector({...common,acquire:true});
- const body=`{source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('hidden')} ${T('_ai_wounded_target_linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}`;
+ const body=`{source advanced} {ignore_captured_by_user 0} {group {include ${P('human')} ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('hidden')} ${T('_ai_wounded_target_linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}`;
  text+=`
 (define "ufb_player_body_loot"
  {"ufb/support/loot %weapon/acquire %team"
@@ -66,7 +66,7 @@ function support(){
   {condition {expression "1 & !2"} {terms
    {"1.near" {units ${selector(common)}} {near_to {source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_loot_%weapon_body_%team')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}} {distance 3}}
    {"2.see_actors" {selector ${selector(common)}}
-    {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')} ${P('vehicle')}} {include ${S('operatable')} {team {team %foe}}} {exclude ${S('dead')} ${S('inactive')}}}}
+    {enemy {source advanced} {ignore_captured_by_user 0} {group {include ${S('operatable')} {team {team %foe}}} {exclude ${S('dead')} ${S('inactive')}}}}
     {distance {mode near_than} {meters 30}} {detection visible}
    }
   }}
@@ -86,12 +86,12 @@ function support(){
  return text+suppression();
 }
 function suppression(){
- const base={kind:'suppress',using:'mgun',extra:[P('shooting')],exclude:[T('_ufb_suppress_cooldown'),T(actorTag('loot'))]};
+ const base={kind:'suppress',using:'mgun',extra:[T('_ufb_firing')],exclude:[T('_ufb_suppress_cooldown'),T(actorTag('loot'))]};
  const active=selector({kind:'suppress',using:'mgun'}).replace(T('_ufb_combat_busy'),'');
  const botActive=selector({kind:'suppress',using:'mgun',exclude:[S('user_control')]}).replace(T('_ufb_combat_busy'),'');
- const playerActive=selector({kind:'suppress',using:'mgun',extra:[S('user_control'),P('shooting')]}).replace(T('_ufb_combat_busy'),'');
+ const playerActive=selector({kind:'suppress',using:'mgun',extra:[S('user_control'),T('_ufb_firing')]}).replace(T('_ufb_combat_busy'),'');
  const point='{ignore_captured_by_user 0} {tag _ufb_suppress_point_%team}';
- const nearFriend=`{units ${point}} {near_to {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('operatable')} {team {team %team}}} {exclude ${S('dead')}}}} {distance 12}`;
+ const nearFriend=`{units ${point}} {near_to {source advanced} {ignore_captured_by_user 0} {group {include ${P('human')} ${S('operatable')} {team {team %team}}} {exclude ${S('dead')}}}} {distance 12}`;
  const shot=`{"switch"
  {"case" {condition {type near} ${nearFriend}}}
  {"default"
@@ -112,7 +112,7 @@ function suppression(){
  {"ufb/suppress/acquire %team"
   {condition {terms {"1.see_actors"
    {selector ${selector({...base,acquire:true})}}
-   {enemy {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include ${S('operatable')} {team {team %foe}}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}}
+   {enemy {source advanced} {ignore_captured_by_user 0} {group {include ${P('human')} ${S('operatable')} {team {team %foe}}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}}
    {distance {mode in_range} {min 20} {max 120}} {detection visible}
    {tag {"tag pair"} {"for selector" ${actorTag('suppress')}} {"for enemy" _ufb_suppress_enemy_%team}}
   }}}

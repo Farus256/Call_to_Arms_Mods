@@ -1,4 +1,29 @@
 -- Preserve native/Horten decision making, but never overwrite a specialist's job.
+-- Real tank hatches: tools/native/ufb_hatch.cpp. Failing here only loses that behaviour.
+local function loadHatchControl()
+    if package.loaded.ufb_hatch or type(package.loadlib) ~= "function" then
+        return
+    end
+    local binaries = string.match(tostring(package.cpath or ""), "([^;]-[\\/]binaries[\\/]x64)[\\/]%?%.dll")
+    if not binaries then
+        return
+    end
+    local dll = binaries .. [[\..\..\mods\ultimate_frontline_bundle\ufb_hatch.dll]]
+    local loaded, loader, failure = pcall(package.loadlib, dll, "luaopen_ufb_hatch")
+    if loaded and type(loader) == "function" then
+        loaded, failure = pcall(loader)
+    else
+        loaded = false
+    end
+    if loaded then
+        package.loaded.ufb_hatch = true
+        print("[UFB hatch] native hatch control active")
+    else
+        print("[UFB hatch] native hatch control unavailable: " .. tostring(failure))
+    end
+end
+loadHatchControl()
+
 local Guard = {}
 local waypointRetries = {}
 local stopped = false

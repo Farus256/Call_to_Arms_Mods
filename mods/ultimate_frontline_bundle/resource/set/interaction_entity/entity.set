@@ -20,6 +20,7 @@
 	(include "vehicle/moto.inc")
 	(include "tank/tank-main.inc")
 	(include "tank/tank-specifics.inc")
+	(include "ufb_tank_hatch.inc")
 
 	(include "cannon.inc")
 	(include "airborne.inc")

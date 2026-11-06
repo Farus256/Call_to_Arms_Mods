@@ -15432,7 +15432,7 @@
 											{state operatable}
 										}
 									
- {prop {prop shooting}}
+ {tag {tag _ufb_firing}}
 }
 									{exclude
 										{state

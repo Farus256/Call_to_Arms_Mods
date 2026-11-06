@@ -3,6 +3,12 @@
  {tags add "_ufb_job_reserved"}
  {delay 6 {tags remove "_ufb_job_reserved"}}
 }
+; The engine's own shooting prop never reaches infantry; this comes from the weapon's fire event.
+{on "ufb_firing"
+ {tags add "_ufb_firing"}
+ {kill_delay "ufb_firing_end"}
+ {delay 4 "ufb_firing_end" {tags remove "_ufb_firing"}}
+}
 {on "ufb_launcher_keep"
  {tags add "_ufb_launcher_keep"}
  {delay 10 {tags remove "_ufb_launcher_keep"}}

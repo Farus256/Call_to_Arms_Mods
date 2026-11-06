@@ -9,6 +9,9 @@ const heavyMgTargets=['tank_light','tank_light_super','tank_medium','tank_heavy'
 function ammo(base){
  const tree=s.parse(base),edits=[];
  for(const target of tree.children[0].children.filter(n=>s.name(n)==='human')){
+  // HF keeps sidearm rows only for a weapon already in hand, so an empty rifle never yields to a pistol.
+  const sidearm=target.children.find(n=>s.name(n)==='bullet');assert(sidearm);
+  {let eol=base.indexOf('\n',sidearm.end);if(base[eol-1]==='\r')eol--;edits.push({start:eol,end:eol,text:'\n\t\t{"pistol"}\t\t\t\t\t\t\t; UFB: draw a sidearm when the main weapon is dry\n\t\t{"revolver"}\t\t\t\t\t\t; UFB: draw a sidearm when the main weapon is dry'});}
   if(target.tokens[1]?.value==='in_cover')for(const n of target.children.filter(n=>s.name(n)==='grenade fg')){
    assert(!s.child(n,'check_grenade'));edits.push({start:n.end-1,end:n.end-1,text:' {check_grenade}'});
   }
@@ -57,19 +60,18 @@ const S=name=>`{state {state ${name}}}`;
 const I=(item,type='amount')=>`{with_item {type ${type}} {item "${item}"}${type==='amount'?' {min 1}':''}}`;
 const {protectedHumanTags:blocked,sides}=require('./infantry-job-policy.cjs');
 function actor(kind,{acquire=false,all=false,item,using,extra=[],command=false,single=false}={}){
- const select=acquire?(kind==='critical'||kind==='smoke'?T('_ufb_recent_hit'):P('human')):T(tag(kind,'actor'));
- const include=[`{team {team %team}}`,P('human'),S('operatable'),...(!all?[S('user_control')]:[]),...(!command?[P('shooting')]:[]),...(item?[I(item)]:[]),...(using?[I(using,'using')]:[]),...extra].join('\n');
+ const select=acquire?(kind==='critical'||kind==='smoke'?T('_ufb_recent_hit'):''):T(tag(kind,'actor'));
+ const include=[`{team {team %team}}`,P('human'),S('operatable'),...(!all?[S('user_control')]:[]),...(!command?[T('_ufb_firing')]:[]),...(item?[I(item)]:[]),...(using?[I(using,'using')]:[]),...extra].join('\n');
  const exclude=[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),...blocked.filter(tag=>all||tag!=='reloading').map(T),T('_ufb_suppress_actor_%team'),...(['ap','at','smoke'].includes(kind)?[I('rocketlauncher','using')]:[]),...(!command?[T('_ufb_combat_busy'),T(`_ufb_combat_${kind}_cooldown`)]:[]),...(acquire?[T('_ufb_job_reserved'),...jobs.map(j=>T(tag(j,'actor')))]:[]),...(kind==='smoke'?['m15_wp','m42_wp','no77_wp'].map(n=>I(n,'existance')):[])].join('\n');
- return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {select ${select}}\n {include ${include}}\n {exclude ${exclude}}\n}${single?'\n{amount 1}':''}`;
+ return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n ${select?`{select ${select}}`:''}\n {include ${include}}\n {exclude ${exclude}}\n}${single?'\n{amount 1}':''}`;
 }
-function enemy({kind,paired=false,vehicle=false,mgun=false,cover=false,threat=false}={}){
- const vehicles=`${P('vehicle')} ${P('tank')} ${P('car')} ${P('cannon')}`;
- const select=paired?T(tag(kind,'target')):threat?`${vehicles} ${I('mgun','using')}`:vehicle?vehicles:P('human');
- const include=[`{team {team %foe}}`,S('operatable'),...(mgun?[I('mgun','using')]:[]),...(cover?[T(`_ufb_combat_cover_%team`)]:[])].join('\n');
- return `{source advanced}\n{ignore_captured_by_user 0}\n{group {select ${select}} {include ${include}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('airborne')} ${T('bleeding')} ${T('_bleedout_')} ${T('wounded_animation_playing')}}}`;
+function enemy({kind,paired=false,vehicle=false,mgun=false,cover=false}={}){
+ const select=paired?`{select ${T(tag(kind,'target'))}} `:'';
+ const include=[`{team {team %foe}}`,S('operatable'),...(paired?[]:[P(vehicle?'vehicle':'human')]),...(mgun?[I('mgun','using')]:[]),...(cover?[T(`_ufb_combat_cover_%team`)]:[])].join('\n');
+ return `{source advanced}\n{ignore_captured_by_user 0}\n{group ${select}{include ${include}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('airborne')} ${T('bleeding')} ${T('_bleedout_')} ${T('wounded_animation_playing')}}}`;
 }
 function see(a,e,min,max,pair){return `{selector ${a}}\n{enemy ${e}}\n{distance {mode in_range} {min ${min}} {max ${max}}}\n{detection visible}${pair?`\n{tag {"tag pair"} {"for selector" ${tag(pair,'pick')}} {"for enemy" ${tag(pair,'target')}}}`:''}`;}
-function friendlyNear(kind){return `{units {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}}\n{near_to {source advanced} {ignore_captured_by_user 0} {group {select ${P('human')}} {include {team {team %team}} ${S('operatable')}} {exclude ${S('dead')}}}}\n{distance 12}`;}
+function friendlyNear(kind){return `{units {ignore_captured_by_user 0} {tag ${tag(kind,'target')}}}\n{near_to {source advanced} {ignore_captured_by_user 0} {group {include ${P('human')} {team {team %team}} ${S('operatable')}} {exclude ${S('dead')}}}}\n{distance 12}`;}
 function clear(kind,role){return `{"entity_state" {selector {ignore_captured_by_user 0} {tag ${tag(kind,role)}}} {tag_remove ${tag(kind,role)}}}`;}
 function action(kind,options,name,target){return `{"action" {selector ${actor(kind,{...options,command:true,single:true})}} {action ${name}} {target ${target||`{ignore_captured_by_user 0} {tag ${tag(kind,'target')}}`}}}`;}
 function cooldown(kind,options){return `{"effect" {selector ${actor(kind,{...options,command:true})}} {effect ufb_combat_${kind}_cooldown}}`;}
@@ -83,7 +85,7 @@ function pairRoutine(kind,options){
  if(kind==='smoke')execute=`${cooldown(kind,aOptions)}\n{"effect" {selector ${actor(kind,{...aOptions,command:true,single:true})}} {effect ufb_combat_smoke_point_%team}}\n${action(kind,aOptions,'throw_sk_grenade',`{ignore_captured_by_user 0} {tag _ufb_combat_smoke_point_%team}`)}`;
  return `; ${kind}: one reserved pair per player; no drop-orders or fire-mode changes.\n(define "ufb_combat_${kind}"
  {"ufb/combat/${kind}/acquire %team"
-  {condition {terms {"1.see_actors" ${see(acquireActor,enemy({vehicle,mgun,threat}),min,max,kind)}}}}
+  {condition ${threat?`{expression "1 | 2"} {terms {"1.see_actors" ${see(acquireActor,enemy({vehicle:true}),min,max,kind)}} {"2.see_actors" ${see(acquireActor,enemy({mgun:true}),min,max,kind)}}}`:`{terms {"1.see_actors" ${see(acquireActor,enemy({vehicle,mgun}),min,max,kind)}}}`}}
   {actions
    {"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag ${tag(kind,'pick')}}} {tag_add ${tag(kind,'actor')}}}
    ${clear(kind,'pick')}
@@ -117,7 +119,7 @@ const launcherTiers={near:{classes:[30,40,50],reach:70},far:{classes:[60,70,80,9
 const launcherClass=tier=>launcherTiers[tier].classes.map(m=>I('range_'+m,'using'));
 function holder({include=[],exclude=[]}={}){
  const busy=blocked.filter(x=>x!=='_ufb_autonomy_moving').map(T);
- return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {select ${P('human')}}\n {include {team {team %team}} ${S('operatable')} ${I('rocketlauncher','using')} ${I('weapon bullet')} ${include.join(' ')}}\n {exclude ${[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),P('shooting'),T('_ufb_job_reserved'),T('_ufb_combat_busy'),...busy,...exclude].join(' ')}}\n}`;
+ return `{source advanced}\n{ignore_captured_by_user 1}\n{group\n {include ${P('human')} {team {team %team}} ${S('operatable')} ${I('rocketlauncher','using')} ${I('weapon bullet')} ${include.join(' ')}}\n {exclude ${[S('dead'),S('inactive'),S('linked'),P('crew'),P('repairing'),P('throwing'),T('_ufb_firing'),T('_ufb_job_reserved'),T('_ufb_combat_busy'),...busy,...exclude].join(' ')}}\n}`;
 }
 function launcherRelease(){
  const keep=T('_ufb_launcher_keep');
@@ -178,6 +180,12 @@ function events(){
 {on "ufb_reserve_job"
  {tags add "_ufb_job_reserved"}
  {delay 6 {tags remove "_ufb_job_reserved"}}
+}
+; The engine's own shooting prop never reaches infantry; this comes from the weapon's fire event.
+{on "ufb_firing"
+ {tags add "_ufb_firing"}
+ {kill_delay "ufb_firing_end"}
+ {delay 4 "ufb_firing_end" {tags remove "_ufb_firing"}}
 }
 {on "ufb_launcher_keep"
  {tags add "_ufb_launcher_keep"}
