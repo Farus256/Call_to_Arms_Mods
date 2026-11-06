@@ -1,6 +1,5 @@
 {
   "enabled": true,
   "multiplier": 2,
-  "multiplayer": true,
-  "conquest": true
+  "multiplayer": true
 }

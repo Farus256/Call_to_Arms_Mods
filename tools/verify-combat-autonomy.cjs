@@ -556,6 +556,10 @@ test('generated selectors use only forms proven by HF',()=>{
   for(const term of s.all(s.child(n,'condition'),x=>/\.see_actors$/.test(s.name(x)||'')))if(/^ufb\/(gun|launcher|fear|tank|shout|surrender)/.test(name))for(const side of ['selector','enemy'])check(s.child(s.child(term,side),'source'),'simple selector: '+name);
  }
 });
+test('every tag with a symbol is quoted',()=>{
+ // Unquoted, the parser stops at the symbol, logs "Unread data" and matches the wrong tag.
+ for(const file of ['map/multi/ufb_static_weapons.inc','map/multi/ufb_combat_autonomy.inc','map/multi/ufb_infantry_support.inc'])assert.deepEqual(text(file).match(/\{tag(?:_add|_remove)? (?!\{)[^"{}\s]*[^\w%"{}\s][^{}]*\}/g)||[],[],file);checks++;
+});
 test('no condition limits candidates before the distance test',()=>{
  for(const [name,n]of triggers)for(const term of s.all(s.child(n,'condition'),x=>/\.see_actors$/.test(s.name(x)||'')))for(const side of ['selector','enemy'])check(!s.child(s.child(term,side),'amount'),name);
 });

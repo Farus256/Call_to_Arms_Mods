@@ -387,7 +387,7 @@
 {"ufb/gun/return %team"
  {condition {expression "1 & 2 & !3"} {terms {"1.entities" {selector {source advanced} {ignore_captured_by_user 0} {group
  {select {tag {tag _ufb_gun_return_%team}}}
- {exclude {state {state inhabited}} {state {state dead}} {state {state inactive}} {tag {tag destroyed}} {tag {tag _no-recrew}}}}}} {"2.entities" {selector {source advanced} {ignore_captured_by_user 1} {group
+ {exclude {state {state inhabited}} {state {state dead}} {state {state inactive}} {tag {tag destroyed}} {tag {tag "_no-recrew"}}}}}} {"2.entities" {selector {source advanced} {ignore_captured_by_user 1} {group
  {select {tag {tag _ufb_gun_back_%team}}}
  {include {state {state operatable}}}
  {exclude {state {state user_control}} {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag repairing}}}}}} {"3.see_actors" {selector {source advanced} {ignore_captured_by_user 1} {group
@@ -413,7 +413,7 @@
  {include {state {state operatable}}}
  {exclude {state {state user_control}} {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag repairing}}}}} {vehicle {source advanced} {ignore_captured_by_user 0} {group
  {select {tag {tag _ufb_gun_return_%team}}}
- {exclude {state {state inhabited}} {state {state dead}} {state {state inactive}} {tag {tag destroyed}} {tag {tag _no-recrew}}}} {amount 1}}}
+ {exclude {state {state inhabited}} {state {state dead}} {state {state inactive}} {tag {tag destroyed}} {tag {tag "_no-recrew"}}}} {amount 1}}}
     {"con" {text "[UFB gun] bot crew returns to its gun: team %team"}}
     {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_gun_back_%team}} {tag_remove _ufb_gun_back_%team}}
     {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_gun_return_%team}} {tag_remove _ufb_gun_return_%team}}

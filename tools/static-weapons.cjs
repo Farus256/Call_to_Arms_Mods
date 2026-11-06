@@ -177,7 +177,7 @@ function fear(){
 function gunReturn(){
  const gun=`{source advanced} {ignore_captured_by_user 0} {group
  {select ${T('_ufb_gun_return_%team')}}
- {exclude ${S('inhabited')} ${S('dead')} ${S('inactive')} ${T('destroyed')} ${T('_no-recrew')}}}`;
+ {exclude ${S('inhabited')} ${S('dead')} ${S('inactive')} ${T('destroyed')} ${T('"_no-recrew"')}}}`;
  const men=`{source advanced} {ignore_captured_by_user 1} {group
  {select ${T('_ufb_gun_back_%team')}}
  {include ${S('operatable')}}
