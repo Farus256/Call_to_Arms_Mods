@@ -1,0 +1,5 @@
+{from "ptrd"
+	{entity "pzb_783r"}
+
+	{tag "ufb_supply_4"} ; UFB: native filling group, no weapon statistics changed
+}

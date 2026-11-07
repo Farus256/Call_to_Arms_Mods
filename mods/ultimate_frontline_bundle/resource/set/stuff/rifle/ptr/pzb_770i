@@ -1,0 +1,5 @@
+{from "pzb_35p"
+	{entity "pzb_770i"}
+
+	{tag "ufb_supply_3"} ; UFB: native filling group, no weapon statistics changed
+}

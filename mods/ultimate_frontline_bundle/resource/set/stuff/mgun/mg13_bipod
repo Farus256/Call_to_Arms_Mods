@@ -1,0 +1,5 @@
+{from "mg13_no_bipod"
+	{entity "mg13_bipod"}
+
+	{tag "ufb_supply_70"} ; UFB: native filling group, no weapon statistics changed
+}

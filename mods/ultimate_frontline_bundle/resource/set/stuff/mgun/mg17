@@ -1,0 +1,20 @@
+{from "pattern mgun"		;Ju87 wing mg
+	{tag "gun aa"}
+	{filling "mgun_ger belt" 1000}
+	{entity "mg34_tank"}
+	{fireSound "smallarms/s3/d1/GER/MG17/Head/"}
+	{fireSoundclose "smallarms/s3/d1/GER/MG17/Head/"}
+	{reloadSound "mg34"}
+	{calibre 7.92}
+	{mass 20.4}
+
+	("fire rate" rpm(1200))
+	("velocity" mps(855))
+
+	("reload time" seconds(30))
+
+	("burst_aa")
+	("airborne_mg")
+
+	{tag "ufb_supply_67"} ; UFB: native filling group, no weapon statistics changed
+}

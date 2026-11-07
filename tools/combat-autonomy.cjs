@@ -1,7 +1,7 @@
 // HF 4 targeting and native mission commands, with reviewed weapon-only fixes.
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
 const repo=p.resolve(__dirname,'..');
-const reference=p.resolve(repo,'../_survival_work/hf-update-20261105/reference/resource');
+const reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
 const resource=p.join(repo,'mods/ultimate_frontline_bundle/resource');
 const read=(root,rel)=>fs.readFileSync(p.join(root,rel),'latin1');
 const shape=n=>({kind:n.kind,tokens:n.tokens.map(t=>t.value),children:n.children.map(shape)});
@@ -11,7 +11,7 @@ function ammo(base){
  for(const target of tree.children[0].children.filter(n=>s.name(n)==='human')){
   // HF keeps sidearm rows only for a weapon already in hand, so an empty rifle never yields to a pistol.
   const sidearm=target.children.find(n=>s.name(n)==='bullet');assert(sidearm);
-  {let eol=base.indexOf('\n',sidearm.end);if(base[eol-1]==='\r')eol--;edits.push({start:eol,end:eol,text:'\n\t\t{"pistol"}\t\t\t\t\t\t\t; UFB: draw a sidearm when the main weapon is dry\n\t\t{"revolver"}\t\t\t\t\t\t; UFB: draw a sidearm when the main weapon is dry'});}
+  {let eol=base.indexOf('\n',sidearm.end);if(base[eol-1]==='\r')eol--;edits.push({start:eol,end:eol,text:'\n\t\t{"small_arms"}\t\t\t\t\t\t; UFB: allow drawing any usable reserve firearm\n\t\t{"pistol"}\t\t\t\t\t\t\t; UFB: draw a sidearm when the main weapon is dry\n\t\t{"revolver"}\t\t\t\t\t\t; UFB: draw a sidearm when the main weapon is dry'});}
   if(target.tokens[1]?.value==='in_cover')for(const n of target.children.filter(n=>s.name(n)==='grenade fg')){
    assert(!s.child(n,'check_grenade'));edits.push({start:n.end-1,end:n.end-1,text:' {check_grenade}'});
   }
@@ -241,6 +241,7 @@ function expected(ref=reference){return [
  {file:'map/multi/ufb_combat_autonomy.inc',text:mission()},
  {file:'set/interaction_entity/ufb_combat_events.inc',text:events()},
  ...require('./infantry-extra.cjs').expected(ref),
+ ...require('./infantry-logistics.cjs').expected(ref),
  ...require('./static-weapons.cjs').expected(ref)
 ];}
 function verify(root=resource,ref=reference){

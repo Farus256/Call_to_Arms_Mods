@@ -1,0 +1,17 @@
+{from "pattern rifle" ;// Gewehr 209(i), fucile m91/38 chambered in 6.5mm
+	{tag "rifle_shell m38"}
+	{filling "ammo rifle_ita2 clip" 6}
+	{inventory {size 5 2}}
+	{entity "g209i"}
+	{fireSound "smallarms/s3/d1/FIN/Gevar_M96/"}
+	{fireSoundclose "smallarms/s3/3p/FIN/Gevar_M96/"}
+	{reloadSound "reload_clip"}
+	{calibre 6.5}
+	{mass 3.4}
+
+	("velocity" mps(649)) ; for 6.5mm cartridge
+	("bolt_action")
+	("m38_rate")
+
+	{tag "ufb_supply_44"} ; UFB: native filling group, no weapon statistics changed
+}

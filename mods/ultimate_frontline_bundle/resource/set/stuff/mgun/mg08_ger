@@ -1,0 +1,5 @@
+{from "mg08"
+	{entity "mg08_ger_gun"}
+
+	{tag "ufb_supply_66"} ; UFB: native filling group, no weapon statistics changed
+}

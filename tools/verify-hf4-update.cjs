@@ -2,7 +2,7 @@
 // node tools/verify-hf4-update.cjs [UFB resource] [reference resource]
 const fs=require('fs'),p=require('path'),assert=require('assert/strict');
 const s=require('./lib/sdl.cjs'),lua=require('luaparse');
-const repo=p.resolve(__dirname,'..'),work=p.resolve(repo,'../_survival_work/hf-update-20261105');
+const repo=p.resolve(__dirname,'..'),work=p.resolve(repo,'../_survival_work/hf-update-20261107');
 const resource=p.resolve(process.argv[2]||p.join(repo,'mods/ultimate_frontline_bundle/resource'));
 const reference=p.resolve(process.argv[3]||p.join(work,'reference/resource'));
 const walk=d=>fs.existsSync(d)?fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(p.join(d,e.name)):[p.join(d,e.name)]):[];
@@ -13,18 +13,26 @@ const resolve=(rel)=>[resource,...animation.externalRoots(),reference].map(root=
 const balance=/^(set\/(breed\/|stuff\/|ability\/|dynamic_campaign\/|multiplayer\/|target\/|vision\/)|set\/(ballistics\.set|small_firearms_accuracy\.inc|squads\.set|talk\.set)$|properties\/(human\.ext|vehicle\.ext|resupply\.inc|human_fsm\/))/;
 const cp=require('./cp-multiplier.cjs'),cpFiles=new Set(cp.expected(reference).map(e=>e.file));
 const combat=require('./combat-autonomy.cjs'),combatFiles=new Set(['set/target/ammo.set','set/target/human_fg.inc','set/target/human_ap.inc','set/stuff/bazooka/panzerfaust_60.weapon']);
+// These overrides add only native-filling marker tags; combat.verify checks the
+// complete generated file, preserving every HF statistic and inheritance field.
+for(const w of require('./infantry-logistics.cjs').catalog(reference).weapons)combatFiles.add(w.file);
+const bleedout=require('./bleedout.cjs'),bleedoutFiles=new Set(bleedout.files);
 const weaponFixes=require('./weapon-logic-fixes.cjs'),weaponFiles=new Set(weaponFixes.expected(reference).map(e=>e.file));
-for(const f of local)assert(!balance.test(relative(f))||cpFiles.has(relative(f))||combatFiles.has(relative(f))||weaponFiles.has(relative(f)),'Old balance override: '+relative(f));
+// Entities HF references but does not ship. If HF adds its own, this copy must go.
+const missingBreeds=new Set(['set/breed/mp/ger/mid/driver.set','entity/-vehicle/+germany/cannon/mg08_fin/heavy_mg_mg08.def']);
+for(const f of missingBreeds)assert(!fs.existsSync(p.join(reference,f)),'HF now ships '+f);
+for(const f of local)assert(!balance.test(relative(f))||missingBreeds.has(relative(f))||cpFiles.has(relative(f))||combatFiles.has(relative(f))||weaponFiles.has(relative(f))||bleedoutFiles.has(relative(f)),'Old balance override: '+relative(f));
 const cpResult=cp.verify(resource,reference);
 const combatResult=combat.verify(resource,reference);
 const supportResult=require('./repair-hf-support.cjs').verify(resource,reference);
 const animationResult=require('./animation-compat.cjs').verify(resource,reference);
 const weaponResult=weaponFixes.verify(resource,reference);
+const bleedoutResult=bleedout.verify();
 const hfLogicResult=require('./hf-logic-fixes.cjs').verify(resource);
 const human=read(p.join(resource,'set/interaction_entity/human.inc'));
 const visual=new Set(['die_with_blood','explosion','crush','bm_explosion','ufb_smoke_screen_120m','ufb_smoke_screen_60m','ufb_smoke_screen_wirecutter','ufb_hf_cover_committed']);
 const nativeHuman=s.parse(read(p.join(reference,'set/interaction_entity/human.inc'))).children[0];
-const currentHuman=s.parse(human).children[0];
+const currentHuman=bleedout.withoutBleedout(s.parse(human).children[0]); // UFB bleed-out tiers and still pose
 const mechanic=n=>!(s.name(n)==='on'&&visual.has(n.tokens[1]?.value))&&!(s.name(n)==='include'&&n.tokens[1]?.value==='ufb_combat_events.inc');
 // Remove only the native bleedout pool from the reference before comparing mechanics.
 const nativeStop=s.all(nativeHuman,n=>s.name(n)==='on'&&n.tokens[1]?.value==='stop_personage')[0];
@@ -98,5 +106,5 @@ for(const file of local.filter(f=>p.basename(f)==='ufb_garrison_layout.inc')){
  maps++;waypoints+=points.size;
 }
 assert.equal(maps,117,'Additional maps/garrisons lost');
-const info=read(p.join(resource,'../mod.info'));assert(info.includes('4.0.0')&&/^[ \t]*\{require "mod_3359417100"\}/m.test(info),'HF dependency missing');
-console.log(JSON.stringify({nativeHFBalanceOutsideReviewedWeaponFixes:true,linearPanzerfaust60:true,...weaponResult,...hfLogicResult,commandPointMultiplier:cpResult.multiplier,combatAutonomy:combatResult.combatAutonomy,nativeHumanDamageAndWounds:true,...supportResult,...animationResult,allHFDefinitionsRetained:true,sdlFiles,luaFiles,includes,requires,garrisonMaps:maps,waypoints,maxWaypointID:maxID}));
+const info=read(p.join(resource,'../mod.info'));assert(info.includes('4.0.1')&&/^[ \t]*\{require "mod_3359417100"\}/m.test(info),'HF dependency missing');
+console.log(JSON.stringify({nativeHFBalanceOutsideReviewedWeaponFixes:true,linearPanzerfaust60:true,...weaponResult,...hfLogicResult,...bleedoutResult,commandPointMultiplier:cpResult.multiplier,combatAutonomy:combatResult.combatAutonomy,nativeHumanDamageAndWounds:true,...supportResult,...animationResult,allHFDefinitionsRetained:true,sdlFiles,luaFiles,includes,requires,garrisonMaps:maps,waypoints,maxWaypointID:maxID}));

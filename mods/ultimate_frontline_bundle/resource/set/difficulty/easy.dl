@@ -1,0 +1,32 @@
+{difficulty
+	(include "difficulty_generic.inc")
+	{any	;// temp to give enemy stats
+		{health 0.5}
+		{accuracy 0.5}
+		{grenade_timeout 0.40}
+		
+		{vehicle_burst 1}		;// increase bullet count in 1 burst for all vehicles (values < 1 reduce shots in burst)
+		{cover_mgun_burst 1}		;// increase bullet count in 1 burst of soldier with mgun in horizontal cover
+		{cover_mgun_delay 1}		;// decrease timeout between bursts of soldier with mgun in horizontal cover
+
+		;// to give AI medics a chance at reviving someone
+		{death_delay_min 1320}		;// min bleeding out time in seconds
+		{death_delay_max 1380}		;// max bleeding out time in seconds
+	}
+	{enemy	;// not working in coop
+		{health 0.5}
+		{accuracy 0.5}
+		{grenade_timeout 1.5}		; modifier on FiringTimeout
+	}
+	{ally
+		{health 1.0}
+		{accuracy 1.0}
+		{grenade_timeout 0.40}
+	}
+	{player
+		{health 1.0}
+		{accuracy 1.2}
+		{grenade_timeout 0.40}
+	}
+
+}

@@ -1,0 +1,5 @@
+{from "ppsh41_stick"
+	{entity "mp717r_stick"}
+
+	{tag "ufb_supply_37"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,0 +1,12 @@
+{from "breda_m38"
+	{filling "breda_m38_mag" 48}
+	{mass 30.74}
+
+	("fire rate" rpm(1200))
+	("velocity" mps(775))
+
+	("reload time" seconds(8))
+	("burst_medium")
+
+	{tag "ufb_supply_60"} ; UFB: native filling group, no weapon statistics changed
+}

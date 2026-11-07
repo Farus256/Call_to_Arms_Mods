@@ -1,0 +1,29 @@
+{from "pattern at_rifle"
+	{tag "bolt_action"}
+	{states
+		{reload		"reload"}
+		{unload		"unload"}
+		{fire		"fire"	}
+		{aim 		"aim"	}
+		{can_aim	"can-aim-bolt"}
+	}
+	{filling "ammo atrifle_ger2" 4}
+	{entity "pzb_35p"}
+	{fireSound "smallarms/s4/d1/RUS/PTR/"}	;Placeholder
+	{fireSoundclose "smallarms/s4/3p/RUS/PTR/"}	;Placeholder
+	{reloadSound "ptrd"}
+	{calibre 7.92}
+	{mass 10}
+
+	("penetration" args 30 27 22)
+	
+	("penetration" args 30 27 22)
+
+	("reload time" seconds(12))	
+	("fire rate" rpm(25))
+	("velocity" mps(1275))
+
+	{cursorReloading "gun_apcr"}
+
+	{tag "ufb_supply_3"} ; UFB: native filling group, no weapon statistics changed
+}

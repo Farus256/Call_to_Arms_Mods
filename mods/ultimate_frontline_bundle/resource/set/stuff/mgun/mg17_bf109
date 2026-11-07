@@ -1,0 +1,20 @@
+{from "pattern mgun"		;BF109 2x MG Barrels
+	{tag "gun aa"}
+	{filling "mgun_ger belt" 12}
+	{entity "mg13_no_bipod"}
+	{fireSound "smallarms/s3/d1/GER/MG17/Head/"}
+	{fireSoundclose "smallarms/s3/d1/GER/MG17/Head/"}
+	{reloadSound "blank"}
+	{calibre 7.92}
+	{mass 20.4}
+
+	("fire rate" rpm(1200))
+	("velocity" mps(855))
+
+	("reload time" seconds(0.25))
+
+	("burst_aa")
+	("airborne_mg")
+
+	{tag "ufb_supply_67"} ; UFB: native filling group, no weapon statistics changed
+}

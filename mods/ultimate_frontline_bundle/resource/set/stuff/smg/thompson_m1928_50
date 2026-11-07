@@ -1,0 +1,18 @@
+{from "pattern smg"
+	{tag "pistol_shell"}
+	{filling "ammo thompson_mag" 50}
+	{entity "thompson_m1928_50"}
+	{fireSound "smallarms/s1/d1/USA/M1A1_Thompson/Head/"}
+	{fireSoundclose "smallarms/s1/3p/USA/M1A1_Thompson/"}
+	{reloadSound "ppsh41"}
+	{calibre 11.43}
+	{mass 4.9}
+
+	("fire rate" rpm(830))
+	("velocity" mps(285))
+	("spreading_medium")
+	("burst_long")
+	("recoil_smg_low")
+
+	{tag "ufb_supply_54"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,0 +1,9 @@
+{from "dt"
+	{filling "mgun_rus" 126}
+	{mass 24.2}
+	("fire rate" rpm(1200))
+
+	("reload time" seconds(10))
+
+	{tag "ufb_supply_73"} ; UFB: native filling group, no weapon statistics changed
+}

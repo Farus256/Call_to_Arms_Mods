@@ -9,7 +9,7 @@
 		{chargeFactors
 			{value "*=0"}
 		}
-		(include "global_parameters/budget.inc" s(%start) f(%finish) d(%doctrine))
+		(include "global_parameters/annihilation/budget.inc" s(%start) f(%finish) d(%doctrine))
 	}
 	{bots
 		(include "global_parameters/bots_generic.inc" period("mid"))
@@ -27,7 +27,7 @@
 		{chargeFactors
 			{value "*=0"}
 		}
-		(include "global_parameters/budget_custom.inc" s(%start) f(%finish) d(%doctrine))
+		(include "global_parameters/annihilation/budget_custom.inc" s(%start) f(%finish) d(%doctrine))
 	}
 	{bots
 		(include "global_parameters/bots_generic.inc" period("mid"))

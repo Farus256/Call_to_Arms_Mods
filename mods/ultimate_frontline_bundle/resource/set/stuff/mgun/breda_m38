@@ -1,0 +1,18 @@
+{from "pattern mgun"
+	{filling "breda_m38_mag" 24}
+	{entity "breda_m38"}
+	{fireSound "smallarms/s3/d1/GER/MG08/Head/"}
+	{fireSoundclose "smallarms/s3/d1/GER/MG08/Head/"}
+	{reloadSound "interior/small/dt_reload_interior"}
+	{calibre 8}
+	{mass 15.37}
+
+	("fire rate" rpm(600))
+	("velocity" mps(775))
+	
+	("rus_7-62_ap_bullets")
+	("burst_medium")
+	("spreading_mounted")
+
+	{tag "ufb_supply_60"} ; UFB: native filling group, no weapon statistics changed
+}

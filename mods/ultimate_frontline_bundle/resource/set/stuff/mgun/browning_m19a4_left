@@ -1,0 +1,4 @@
+{from "browning_m19a4" ;// used for Multi MG half tracks
+
+	{tag "ufb_supply_75"} ; UFB: native filling group, no weapon statistics changed
+}

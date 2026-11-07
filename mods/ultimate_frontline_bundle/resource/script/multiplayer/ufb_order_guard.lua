@@ -1,34 +1,37 @@
 -- Preserve native/Horten decision making, but never overwrite a specialist's job.
--- Real tank hatches: tools/native/ufb_hatch.cpp. Failing here only loses that behaviour.
-local function loadHatchControl()
-    if package.loaded.ufb_hatch or type(package.loadlib) ~= "function" then
+-- Native helpers in tools/native: ufb_hatch (real tank hatches) and ufb_roh_ru (Russian Roll of
+-- Honour memorial; needs fallen_memorial.dll, which Roll of Honour's bot.main.lua loads first).
+-- Failing here only loses that behaviour.
+local function loadNative(name, label)
+    if package.loaded[name] or type(package.loadlib) ~= "function" then
         return
     end
     local binaries = string.match(tostring(package.cpath or ""), "([^;]-[\\/]binaries[\\/]x64)[\\/]%?%.dll")
     if not binaries then
         return
     end
-    local dll = binaries .. [[\..\..\mods\ultimate_frontline_bundle\ufb_hatch.dll]]
-    local loaded, loader, failure = pcall(package.loadlib, dll, "luaopen_ufb_hatch")
+    local dll = binaries .. [[\..\..\mods\ultimate_frontline_bundle\]] .. name .. ".dll"
+    local loaded, loader, failure = pcall(package.loadlib, dll, "luaopen_" .. name)
     if loaded and type(loader) == "function" then
         loaded, failure = pcall(loader)
     else
         loaded = false
     end
     if loaded then
-        package.loaded.ufb_hatch = true
-        print("[UFB hatch] native hatch control active")
+        package.loaded[name] = true
+        print("[UFB " .. label .. "] native " .. label .. " active")
     else
-        print("[UFB hatch] native hatch control unavailable: " .. tostring(failure))
+        print("[UFB " .. label .. "] native " .. label .. " unavailable: " .. tostring(failure))
     end
 end
-loadHatchControl()
+loadNative("ufb_hatch", "hatch")
+loadNative("ufb_roh_ru", "memorial ru")
 
 local Guard = {}
 local waypointRetries = {}
 local stopped = false
 local protectedTags = {
-    "_ufb_cover_active", "_ufb_combat_busy", "_ufb_job_reserved", "_ufb_healing_active",
+    "_ufb_cover_active", "_ufb_combat_busy", "_ufb_job_reserved", "_ufb_healing_active", "_ufb_rescue_active",
     "_ai_do_not_disturb", -- HF 4 reserves animations and temporary native jobs.
     "_ai_suppressed_by_mg", "_ai_mgunner", "_ai_reloading", "_ufb_hf_cover_active",
     "_lua_mi", "repairing", "tcrew", "ecrew", "ecrew_a", "ecrew_b",
@@ -64,7 +67,7 @@ function Guard.IsProtected(squad)
 end
 
 local function HasTemporaryHFJob(squad)
-    for _, tag in ipairs({"_ai_do_not_disturb", "_ai_suppressed_by_mg", "_ai_mgunner", "_ai_reloading", "_ufb_hf_cover_active", "_ufb_combat_busy", "_ufb_job_reserved", "_ufb_healing_active"}) do
+    for _, tag in ipairs({"_ai_do_not_disturb", "_ai_suppressed_by_mg", "_ai_mgunner", "_ai_reloading", "_ufb_hf_cover_active", "_ufb_combat_busy", "_ufb_job_reserved", "_ufb_healing_active", "_ufb_rescue_active"}) do
         if BotApi.Scene:IsSquadTagged(squad, tag) then return true end
     end
     return false

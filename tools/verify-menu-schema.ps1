@@ -4,7 +4,7 @@ param(
 )
 $ErrorActionPreference='Stop'
 $issues=[Collections.Generic.List[string]]::new()
-foreach($relative in @('interface/layout/pagemain.xml','interface/layout/components/changelog.xml')) {
+foreach($relative in @('interface/layout/pagemain.xml','interface/layout/components/changelog.xml','interface/layout/views/scene/SceneGameView.xml')) {
  $settings=[Xml.XmlReaderSettings]::new()
  $settings.ValidationType=[Xml.ValidationType]::Schema
  # The shipped schema has overlapping content models; keep validation but allow its compilation.
@@ -15,4 +15,4 @@ foreach($relative in @('interface/layout/pagemain.xml','interface/layout/compone
  try {while($reader.Read()) {}} finally {$reader.Dispose()}
 }
 if($issues.Count){$issues | ForEach-Object {Write-Output $_};throw "Native menu schema: $($issues.Count) errors."}
-Write-Output 'Native GEM schema: both HF menu XML files valid.'
+Write-Output 'Native GEM schema: HF menu and scene layout XML files valid.'

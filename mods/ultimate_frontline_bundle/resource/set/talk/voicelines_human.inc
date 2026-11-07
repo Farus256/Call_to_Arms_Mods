@@ -118,7 +118,7 @@
 
 {talk "alert_airborne"		;// (condition) - unit sees vehicle with "airborne" prop
 	("human_phrases" args alert_airborne)
-	{freq 0.5}
+	{freq 0}
 }
 
 {talk "alert_tank"			;// (condition) - unit sees vehicle with "tank" prop
@@ -176,4 +176,9 @@
 {talk "ufb_alert_mgun"	;// UFB: scripted, real machine guns only
 	("human_phrases" args alert_mgun)
 	{freq 1}
+}
+
+{talk "ufb_alert_airborne"
+ ("human_phrases" args alert_airborne)
+ {freq 1}
 }

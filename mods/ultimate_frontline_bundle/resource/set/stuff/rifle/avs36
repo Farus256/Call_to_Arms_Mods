@@ -1,0 +1,20 @@
+{from "pattern rifle"
+	{tag "-rifle rifle_shell smg battlerifle"}
+	{filling "ammo rifle_rus" 15}
+	{entity "avs36"}
+	{fireSound "smallarms/s3/d1/RUS/SVT40/"}
+	{fireSoundClose "smallarms/s3/3p/RUS/SVT40/"}
+	{reloadSound "svt"}
+	{calibre 7.62}
+	{mass 4.4}
+
+	("fire rate" rpm(800))
+	("velocity" mps(840))
+	("auto_rifle")
+	{parameters "clip"
+		("reload time" seconds(8))	
+		{reloadSound "reload_clip_x2"}
+	}
+
+	{tag "ufb_supply_45"} ; UFB: native filling group, no weapon statistics changed
+}

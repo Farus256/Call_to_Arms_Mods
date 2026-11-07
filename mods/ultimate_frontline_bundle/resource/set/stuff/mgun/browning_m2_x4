@@ -1,0 +1,15 @@
+{from "browning_m2"
+	{filling "hmgun_usa" 800} ;//4x 200 rounds
+	{entity "browning_m2"}
+	{fireSound "smallarms/s4/d1/USA/M2HB/Gun_Mounts/M45_QuadMount_Head/"}
+	{fireSoundclose "smallarms/s4/d1/USA/M2HB/Gun_Mounts/M45_QuadMount_Head/"}
+	{mass 152}
+
+	("fire rate" rpm(1600)) ;// 400 rpm per gun in M45 mount
+
+	{rechargeTime 30}
+
+	("burst_aa_quad")
+
+	{tag "ufb_supply_63"} ; UFB: native filling group, no weapon statistics changed
+}

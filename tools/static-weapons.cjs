@@ -347,6 +347,7 @@ function lids(state){
 function hatchBlock(){
  return `; UFB: tanks button up under fire and open again when it is quiet. See tools/native/ufb_hatch.cpp.
 {"tank"
+ {on "ufb_air_alert" {tags add "_ufb_air_alert_cooldown"} {talk "ufb_tank_alert_airborne"} {delay 90 {tags remove "_ufb_air_alert_cooldown"}}}
  {on bullet_hit {call "ufb_hatch_danger"}}
  {on blast_hit {call "ufb_hatch_danger"}}
  {on "ufb_hatch_danger"
@@ -438,6 +439,23 @@ function classify(){
  }
 }`;
 }
+function airAlert(){
+ return ['human','tank'].map(kind=>{
+  const who=`{source advanced} {ignore_captured_by_user 0} {group {include ${P(kind)} ${S('operatable')} {team {team %team}} ${kind==='tank'?S('inhabited'):''}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${T('bleeding')} ${T('_ufb_air_alert_cooldown')}}}`;
+  const plane=`{source advanced} {ignore_captured_by_user 0} {group {include ${P('vehicle')} ${P('airborne')} ${S('operatable')} {team {team %foe}}} {exclude ${S('dead')} ${S('inactive')} ${T('hidden')}}}`;
+  const pair=`_ufb_air_alert_${kind}_%team`,name=`ufb/air/${kind} %team`;
+  return `{"${name}"
+ {condition {terms {"1.see_actors" ${see(who,plane,300)}}}}
+ {actions
+  {"if" {condition {type see_actors} ${see(who,plane,300,pair)}}
+   {"effect" {selector {amount 1} ${tagged(pair)}} {effect ufb_air_alert}}
+  }
+  ${clear(pair,pair)}
+  ${loop(name,90)}
+ }
+}`;
+ }).join('\n');
+}
 function mission(){
  let text=`; UFB stationary weapons. See tools/static-weapons.cjs.
 ${classify()}
@@ -459,6 +477,7 @@ ${release()}
 ${fear()}
 ${hatchLog()}
 ${truckDismount()}
+${airAlert()}
 )
 `;
  for(const [team,foe] of sides)text+=`("ufb_static_weapons" team(${team}) foe(${foe}))\n`;
@@ -473,6 +492,7 @@ function events(){
 }
 {on "ufb_tank_fear_shout" {talk "alert_tank"}}
 {on "ufb_mg_shout" {talk "ufb_alert_mgun"}}
+{on "ufb_air_alert" {tags add "_ufb_air_alert_cooldown"} {talk "ufb_alert_airborne"} {delay 90 {tags remove "_ufb_air_alert_cooldown"}}}
 {on "ufb_near_blast"
  {if not tagged "_ufb_blast_cover"
   {tags add "_ufb_blast_cover"}
@@ -511,8 +531,8 @@ function events(){
  return text;
 }
 // Louder soldiers from the game's own voice sets; only trigger rates change.
-const voiceRates={alert_tank:1,alert_airborne:0.5,in_battle:0.35,'ally die':1,bleeding_out:1,alert_at_gun:0.8};
-const tankVoiceRates={tank_alert_airborne:0.5,tank_in_battle:0.35,'tank_bullet missed':0.4};
+const voiceRates={alert_tank:1,alert_airborne:0,in_battle:0.35,'ally die':1,bleeding_out:1,alert_at_gun:0.8};
+const tankVoiceRates={tank_alert_airborne:0,tank_in_battle:0.35,'tank_bullet missed':0.4};
 const mgLine='\r\n{talk "ufb_alert_mgun"\t;// UFB: scripted, real machine guns only\r\n\t("human_phrases" args alert_mgun)\r\n\t{freq 1}\r\n}\r\n';
 function rates(base,table){
  for(const [talk,freq]of Object.entries(table)){
@@ -522,12 +542,13 @@ function rates(base,table){
  }
  return base;
 }
-const voices=base=>rates(base,voiceRates)+mgLine;
+const airLine=tank=>`\n{talk "ufb_${tank?'tank_':''}alert_airborne"\n ("${tank?'tank':'human'}_phrases" args alert_airborne)\n {freq 1}\n}\n`;
+const voices=base=>rates(base,voiceRates)+mgLine+airLine(false);
 function expected(ref){return [
  {file:'map/multi/ufb_static_weapons.inc',text:mission()},
  {file:'set/interaction_entity/ufb_static_weapon_events.inc',text:events()},
  {file:'set/talk/voicelines_human.inc',text:voices(fs.readFileSync(p.join(ref,'set/talk/voicelines_human.inc'),'latin1'))},
- {file:'set/talk/voicelines_tank.inc',text:rates(fs.readFileSync(p.join(ref,'set/talk/voicelines_tank.inc'),'latin1'),tankVoiceRates)},
+ {file:'set/talk/voicelines_tank.inc',text:rates(fs.readFileSync(p.join(ref,'set/talk/voicelines_tank.inc'),'latin1'),tankVoiceRates)+airLine(true)},
  {file:'set/interaction_entity/ufb_tank_hatch.inc',text:hatchBlock()}
 ];}
 module.exports={mission,events,voices,expected,tune,voiceRates,tankVoiceRates,mgLine,hatchBlock};

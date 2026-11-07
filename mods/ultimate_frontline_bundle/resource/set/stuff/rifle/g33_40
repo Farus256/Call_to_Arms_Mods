@@ -1,0 +1,9 @@
+{from "k98"
+	{entity "g33_40"}
+	{mass 3.45}
+	{inventory {size 5 2}}
+
+	("velocity" mps(720))
+
+	{tag "ufb_supply_42"} ; UFB: native filling group, no weapon statistics changed
+}

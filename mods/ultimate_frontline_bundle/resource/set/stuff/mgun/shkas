@@ -1,0 +1,22 @@
+{from "pattern mgun"
+	{tag "aa"}
+	{filling "mgun_rus belt" 450}
+	{entity "dt"}
+	{fireSound "smallarms/s3/d1/RUS/PM1910_30/Head/"}
+	{fireSoundclose "smallarms/s3/d1/RUS/PM1910_30/Head/"}
+	{reloadSound "dt"}
+	{calibre 7.62}
+	{mass 21}
+
+	("fire rate" rpm(1800))
+	("velocity" mps(800))
+	("reload time" seconds(15))
+	("rus_ap_bullets")
+
+	{Spreading {BurstAccuracy 200}}
+
+	("burst_aa")
+	("airborne_mg")
+
+	{tag "ufb_supply_74"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,0 +1,27 @@
+{from "pattern rifle"
+	{tag "-rifle rifle_shell smg battlerifle assaultrifle"}
+	{inventory {size 6 2}}
+	{filling "ammo fedorov" 25}
+	{entity "fedorov_avtomat"}
+	{fireSound "smallarms/s3/d1/GER/G41/"}
+	{fireSoundclose "smallarms/s3/3p/GER/G41/"}
+	{reloadSound "svt"}
+	{calibre 6.5}
+	{mass 5.2}
+
+	("fire rate" rpm(600))
+	("velocity" mps(660))
+	("battle_rifle")
+	{parameters "mag"
+		("reload time" seconds(4.67))
+	}
+	{parameters "clip"
+		("reload time" seconds(8))
+		{reloadSound "reload_clip_x2"}
+	}
+
+	("penetration" args 6 4 2 1 0)
+	("armor health" damage(5.1))
+
+	{tag "ufb_supply_14"} ; UFB: native filling group, no weapon statistics changed
+}

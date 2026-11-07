@@ -1,0 +1,20 @@
+{from "pattern smg"
+	{tag "pistol_shell silenced silencedsmg"}
+	{filling "ammo eng_smg" 32}
+	{entity "sten_mk2s"}
+	{inventory {size 6 2}}
+	{fireSound "smallarms/s1/d1/ENG/STEN_Gun_Suppressed/Head/"}
+	{fireSoundclose "smallarms/s1/3p/ENG/STEN_Gun_Suppressed/"}
+	{reloadSound "mp40"}
+	{calibre 9}
+	{mass 3.2}
+
+	("fire rate" rpm(550))
+	("velocity" mps(305))
+	("spreading_high")
+	("burst_short")
+	("recoil_smg_low")
+	("stick_reload")
+
+	{tag "ufb_supply_13"} ; UFB: native filling group, no weapon statistics changed
+}

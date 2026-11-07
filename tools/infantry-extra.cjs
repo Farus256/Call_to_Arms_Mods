@@ -14,7 +14,7 @@ function selector({kind,acquire=false,item,player=true,extra=[],exclude=[],using
  ${acquire?[T('_ufb_job_reserved'),T(actorTag('suppress')),...['mgun','assaultrifle','battlerifle','autorifle','semirifle'].map(k=>T(actorTag('loot_'+k))),...['launcher','at','critical','ap','smoke'].map(k=>T(`_ufb_combat_${k}_actor_%team`))].join(' '):''}
  }}`;
 }
-function support(){
+function support(ref=p.resolve(__dirname,'../../_survival_work/hf-update-20261107/reference/resource')){
  const init=(medic=false)=>`{source advanced} {ignore_captured_by_user 0} {group
  ${medic?`{select ${T('medic')}}`:''}
  {include ${P('human')} ${S('user_control')} ${S('operatable')}}
@@ -74,6 +74,9 @@ function support(){
    {"inventory" {selector ${selector(common)}} {action take_from} {item "loot_%weapon"}
     {entity {source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_loot_%weapon_body_%team')}} {include ${S('dead')} ${I('loot_%weapon')}} {exclude ${S('linked')} ${T('bleeding')} ${T('start_personage')} ${T('wounded_animation_playing')}}}}
    }
+   ${require('./infantry-logistics.cjs').transfers(ref,
+    `{source advanced} {ignore_captured_by_user 1} {group {select ${T(actorTag('loot_%weapon'))}} {include ${P('human')} ${S('operatable')} ${I('loot_%weapon')}} {exclude ${S('dead')} ${S('inactive')} ${S('linked')}}}`,
+    `{source advanced} {ignore_captured_by_user 0} {group {select ${T('_ufb_loot_%weapon_body_%team')}} {include ${P('human')} ${S('dead')}} {exclude ${S('linked')} ${T('bleeding')} ${T('_bleedout_')} ${T('start_personage')} ${T('wounded_animation_playing')}}}`)}
    {"effect" {selector {source advanced} {ignore_captured_by_user 1} {group {select ${T(actorTag('loot_%weapon'))}} {include ${I('loot_%weapon')}}}} {effect ufb_loot_cooldown}}
    {"con" {text "[UFB support] corpse weapon pickup order: %weapon, team %team"}}
    {"delay" {time 2}}
@@ -83,7 +86,7 @@ function support(){
 )
 `;
  for(const [team,foe] of sides)for(const weapon of kinds)text+=`("ufb_player_body_loot" team(${team}) foe(${foe}) weapon(${weapon}))\n`;
- return text+suppression();
+ return text+suppression()+'\n(include "/map/multi/ufb_logistics.inc")\n';
 }
 function suppression(){
  const base={kind:'suppress',using:'mgun',extra:[T('_ufb_firing')],exclude:[T('_ufb_suppress_cooldown'),T(actorTag('loot'))]};
@@ -184,14 +187,14 @@ function events(){
 )
 `;
  for(const [team] of sides)text+=`("ufb_suppress_point_events" team(${team}))\n`;
- return text;
+ return text+'\n(include "ufb_medical_events.inc")\n';
 }
 function panzerfaust(base){
  const n=s.all(s.parse(base),n=>s.name(n)==='projectileDamageTable')[0];assert(n);
  return base.slice(0,n.start)+'{projectileDamageTable {0 200} {40 160} {200 0}}'+base.slice(n.end);
 }
 function expected(ref){return [
- {file:'map/multi/ufb_infantry_support.inc',text:support()},
+ {file:'map/multi/ufb_infantry_support.inc',text:support(ref)},
  {file:'set/interaction_entity/ufb_infantry_support_events.inc',text:events()},
  {file:'set/stuff/bazooka/panzerfaust_60.weapon',text:panzerfaust(fs.readFileSync(p.join(ref,'set/stuff/bazooka/panzerfaust_60.weapon'),'latin1'))}
 ];}

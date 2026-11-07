@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout xmlns="http://www.digitalmindsoft.eu/xmllayout"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.digitalmindsoft.eu/xmllayout ../../LayoutSchema.xsd"
+		version="1"
+		skin="main_menu_dark_skin">
+<Content>
+	<DockPanel>
+		<Children>
+            <StackPanel id="scene_area_top" placement="top" enableif="gui.modern and gui.editor or game.singleplayer and !game.cooperative">
+                <PreferredSize y="75"/>
+                <MaxSize y="75"/>
+                <Children>
+                    <StackPanel>
+                        <Children>
+                            <FlowPanel halign="left" valign="center">
+                                <Insets top="0" left="32"/>
+                                <Children>
+                                    <DockPanel id="toprightmenu_container" vgap="8">
+                                        <Children>
+                                            <FlowPanel direction="horizontal" gap="8" placement="center">
+                                                <Children>
+                                                    <SceneMenuPanel gap="4"  direction="horizontal" itemSize="40">
+														<Item action="gc_cp_game_menu"/>
+                                                        <Item action="gc_cp_state_message_history"/>
+														<Item action="gc_cp_state_highlight_silhouettes"/>
+														<Item action="gc_cp_state_highlight_stuff"/>
+														<Item action="gc_cp_state_highlight_corpses"/>
+													</SceneMenuPanel>
+                                                </Children>
+                                            </FlowPanel>
+<!--                                            <DialogRef refid="gui_spacer_horizontal" placement="bottom"/>-->
+                                        </Children>
+                                    </DockPanel>
+                                </Children>
+                            </FlowPanel>
+                        </Children>
+                    </StackPanel>
+                </Children>
+            </StackPanel>
+			<StackPanel id="scene_area_top" placement="top" enableif="gui.modern and game.multiplayer">
+				<PreferredSize y="75"/>
+				<MaxSize y="75"/>
+				<Children>
+					<StackPanel>
+						<Children>
+							<FlowPanel halign="left" valign="center">
+								<Insets top="0" left="32"/>
+								<Children>
+									<DockPanel id="toprightmenu_container" vgap="8">
+										<Children>
+											<FlowPanel direction="horizontal" gap="8" placement="center">
+												<Children>
+													<SceneMenuPanel gap="4"  direction="horizontal" itemSize="40">
+														<Item action="gc_cp_game_menu"/>
+														<Item action="gc_cp_state_message_history"/>
+														<Item action="gc_cp_state_highlight_silhouettes"/>
+														<Item action="gc_cp_state_highlight_stuff"/>
+														<Item action="gc_cp_state_highlight_corpses"/>
+													</SceneMenuPanel>
+												</Children>
+											</FlowPanel>
+										</Children>
+									</DockPanel>
+								</Children>
+							</FlowPanel>
+						</Children>
+					</StackPanel>
+				</Children>
+				<Children>
+					<StackPanel>
+						<Children>
+							<FlowPanel halign="right" valign="center">
+								<Insets top="0" right="32"/>
+								<Children>
+									<DockPanel id="toprightmenu_container" vgap="8">
+										<Children>
+											<FlowPanel direction="horizontal" gap="4" placement="center">
+												<Children>
+													<FlowPanel direction="horizontal" valign="center" halign="center" id="flag_container" enableif="game.frontlines">
+													</FlowPanel>
+													<DialogRef refid="mp_frontline_bar" enableif="game.frontlines">
+														<PreferredSize x="40" y="40"/>
+													</DialogRef>
+													
+													<DialogRef refid="mp_unit_transfer_button" enableif="game.active">
+														<PreferredSize x="40" y="40"/>
+													</DialogRef>
+													
+													<DialogRef refid="mp_scores_button">
+														<PreferredSize x="40" y="40"/>
+													</DialogRef>
+													
+													<DialogRef refid="mp_chat_button">
+														<PreferredSize x="40" y="40"/>
+													</DialogRef>
+													
+													<DialogRef refid="mp_kill_log_button">
+														<PreferredSize x="40" y="40"/>
+													</DialogRef>
+													
+												</Children>
+											</FlowPanel>
+										</Children>
+									</DockPanel>
+								</Children>
+							</FlowPanel>
+						</Children>
+					</StackPanel>
+				</Children>
+
+			</StackPanel>
+			<StackPanel placement="center"/>
+		</Children>
+	</DockPanel>
+	<FlowPanel halign="center" valign="top" enableif="gui.modern and game.multiplayer">
+		<Insets top="10"/>
+		<Alphabuffer value="true"/>
+		<Children>
+			<!-- gamemode bar -->
+			<DialogRef refid="gui_gc_gamebar_selector">
+				<MinSize x="600" y="60"/>
+			</DialogRef>
+		</Children>
+	</FlowPanel>
+	<DockPanel>
+		<Children>
+			<StackPanel placement="top">
+				<PreferredSize y="50"/>
+			</StackPanel>
+			<StackPanel id="scene_area_center" placement="center">
+				<Children>
+					<Panel id="minimap_layer" layout="overlay" enableif="!gui.editor">
+						<Children>
+							<DialogRef refid="gui_minimap"/>
+							<DialogRef refid="gui_map_control"/>
+						</Children>
+					</Panel>
+					<!-- top middle notifications area -->
+					<FlowPanel direction="vertical" justify="false" halign="center" gap="5">
+						<Insets top="80"/>
+						<PreferredSize x="450"/>
+						<Children>
+							<BackgroundPanel backgroundResource="/interface/skin/game/frame/bkg/task_background" placement="center" >
+								<Alphabuffer value="true"/>
+								<Insets right="75" left="75" />
+								<Children>
+									<DialogRef refid="objective_hint"/>
+								</Children>
+							</BackgroundPanel>
+							<DialogRef refid="objective_progress"/>
+							<DialogRef refid="scene_timer"/>
+							<DialogRef refid="preparation_text" enableif="game.multiplayer"/>
+									<DialogRef refid="game_hint">
+									</DialogRef>
+									<DialogRef refid="slowdown_hint">
+									</DialogRef>
+									<DialogRef refid="pause_hint">
+									</DialogRef>
+									<!--<DialogRef refid="notification_hint"/>-->
+									<DialogRef refid="slow_hint" enableif="game.multiplayer"/>
+									<DialogRef refid="outofsync_hint" enableif="game.multiplayer"/>
+									<DialogRef refid="waiting_hint" enableif="game.multiplayer"/>
+						</Children>
+					</FlowPanel>
+
+					<FlowPanel halign="right" valign="bottom" direction="vertical">
+						<Insets right="230" />
+						<Children>
+							<DialogRef refid="gc_hint_view">
+								<Active value="false"/>
+							</DialogRef>
+							<DialogRef refid="gc_hint_scene">
+								<Active value="false"/>
+							</DialogRef>
+						</Children>
+					</FlowPanel>
+					<FlowPanel halign="right" valign="top" justify="false" enableif="game.active" >
+						<Insets right="50" top="30"/>
+						<Children>
+							<DialogRef refid="ui_replay_control" skin="default_skin"/>
+						</Children>
+					</FlowPanel>
+					<FlowPanel valign="bottom" halign="left" id="squads_button_layer" enableif="gui.modern">
+						<Insets bottom="150"/>
+						<Children>
+							<DialogRef refid="game_alerts"/>
+							<DialogRef refid="panel_squads_toggle_button"/>
+						</Children>
+					</FlowPanel>
+					<FlowPanel valign="bottom" halign="left" id="squads_layer" enableif="gui.modern">
+						<Insets bottom="10" left="20"/>
+						<Children>
+							<DialogRef refid="panel_squads">
+								<Ables mouse="false"/>
+							</DialogRef>
+						</Children>
+					</FlowPanel>
+					<FlowPanel id="unitspawn_layer" halign="right" valign="bottom">
+						<Insets right="20"/>
+						<Children>
+							<FlowPanel direction="vertical" halign="right" gap="8" justify="false" enableif="game.multiplayer and !game.cooperative and !game.campaign">
+								<Children>
+									<DialogRef refid="gui_gc_unitspawn"/>
+									<DialogRef refid="gui_mp_points"/>
+								</Children>
+							</FlowPanel>
+							<FlowPanel direction="vertical" halign="right" gap="8" justify="false" enableif="gui.editor or game.singleplayer or game.cooperative">
+								<Insets right="10"/>
+								<Children>
+									<DialogRef refid="gui_gc_reinforcement"/>
+									<DialogRef refid="gui_sp_points"/>
+								</Children>
+							</FlowPanel>
+							<FlowPanel direction="vertical" halign="right" gap="8" justify="false" enableif="game.campaign and gameclient.master">
+								<Insets right="10"/>
+								<Children>
+									<DialogRef refid="gui_campaign_spawn"/>
+									<DialogRef refid="gui_campaign_points"/>
+								</Children>
+							</FlowPanel>
+						</Children>
+					</FlowPanel>
+					<!-- UFB: no event feed in the dynamic campaign; the kill log button still opens the history. -->
+					<StackPanel id="event_log_layer" enableif="!game.campaign">
+						<Insets top="10"/>
+						<Children>
+							<Panel layout="overlay">
+								<Children>
+									<DialogRef refid="gui_event_log" skin="default_skin" shared="scene"/>
+								</Children>
+							</Panel>
+							<FlowPanel enableif="game.multiplayer and gui.develop">
+								<Insets left="10" top="70" />
+								<Children>
+									<DialogRef refid="mp_speed_selector">
+										<Active value="false"/>
+									</DialogRef>
+								</Children>
+							</FlowPanel>
+						</Children>
+					</StackPanel>
+				</Children>
+			</StackPanel>
+			<StackPanel id="scene_area_bottom" placement="bottom">
+				<MinSize y="240"/>
+				<Children>
+					<DialogRef refid="gui_gc_gamemainbar" enableif="gui.modern"/>
+				</Children>
+			</StackPanel>
+		</Children>
+	</DockPanel>
+	<Panel id="misc_dialogs" layout="overlay">
+		<Children>
+			<DialogRef refid="damage_report" shared="scene"/>
+			<DialogRef refid="objectives" shared="scene"/>
+			<DialogRef refid="message_history" shared="scene"/>
+			<DialogRef refid="event_history" shared="scene"/>
+			<DialogRef refid="mp_unit_info" shared="scene" enableif="game.multiplayer"/>
+			<DialogRef refid="gui_mp_gamechat" enableif="game.multiplayer"/>
+			<DialogRef refid="messagewheel" enableif="game.multiplayer"/>
+			<DialogRef refid="notificationwheel" enableif="game.multiplayer"/>
+			<DialogRef refid="manual_control_icon" enableif="game.multiplayer"/>
+			<DialogRef refid="paint_threats" enableif="game.multiplayer"/>
+		</Children>
+	</Panel>
+	<Panel id="misc_dialogs_container">
+		<!--
+        DO NOT REMOVE. Container for misc scene dialogs
+         -->
+	</Panel>
+	<StackPanel id="top_bar_layer" enableif="gui.legacy">
+		<Children>
+			<DialogRef refid="gc_gamebar" id="gamebar" enableif="game.active">
+				<Visible value="true"/>
+			</DialogRef>
+		</Children>
+	</StackPanel>
+	<Panel id="bottom_bar_layer" layout="overlay" enableif="gui.legacy">
+		<Children>
+			<DialogRef refid="gc_main_bar">
+				<Visible value="true"/>
+			</DialogRef>
+		</Children>
+	</Panel>
+</Content>
+</Layout>

@@ -4,7 +4,7 @@
 const fs=require('fs'),p=require('path'),cp=require('child_process'),assert=require('assert/strict');
 const repo=p.resolve(__dirname,'..'),file='set/level_of_detail.inc';
 const target=p.join(repo,'mods/ultimate_frontline_bundle/resource',file);
-const reference=p.resolve(repo,'../_survival_work/hf-update-20261105/reference/resource',file);
+const reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource',file);
 const pak='D:/Programs/Steam/steamapps/common/Call to Arms - Gates of Hell/resource/gamelogic.pak';
 const distance=/(\{distance\s+\("scale2?"\s+d2?\()(\d+)(\)\))/g;
 // Category -> distances, in file order.

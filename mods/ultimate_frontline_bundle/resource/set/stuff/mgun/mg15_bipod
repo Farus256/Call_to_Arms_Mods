@@ -1,0 +1,17 @@
+{from "pattern mgun"		;Ju87/BF110 rear MG
+	{filling "mgun_ger doubledrum" 75}
+	{entity "mg15"}
+	{fireSound "smallarms/s3/d1/GER/MG15/Head/"}
+	{fireSoundclose "smallarms/s3/d1/GER/MG15/Head/"}
+	{reloadSound "mg34"}
+	{calibre 7.92}
+	{mass 12.4}
+
+	("fire rate" rpm(1025))
+	("velocity" mps(755))
+
+	("burst_medium")
+	("spreading_low")
+
+	{tag "ufb_supply_68"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,6 +1,7 @@
 {"human"
 	(include "human_idle.inc")
 	(include "ufb_combat_events.inc")
+	(include "ufb_bleedout.inc")
 	{inflammation_time 1.0}
 	{on spawn
 		{add_view	"cigarettesmoke"		"smoke"		"head"}
@@ -1842,6 +1843,7 @@
 		{view pause "marker_personage_acute"}
 		{view start ally neutral "marker_personage"}
 		{tags add "start_personage"}
+		{call "ufb_bleedout_start"}
 		{delay 3 "hf_wounded_animation_start"
 			{call "hf_wounded_update"}
 		}
@@ -1857,12 +1859,14 @@
 								{if not terrain_fx "water"
 									{if not tagged "_bleedout_"
 										{if not tagged "no_revive"
-											{if rand 0.33
-												{ani_play "lie_wounded" loop}
-											else rand 0.33
-												{ani_play "lie_wounded_1" loop}
-											else
-												{ani_play "lie_wounded_2" loop}
+											{if not tagged "_ufb_wound_still"
+												{if rand 0.33
+													{ani_play "lie_wounded" loop}
+												else rand 0.5
+													{ani_play "lie_wounded_1" loop}
+												else
+													{ani_play "lie_wounded_2" loop}
+												}
 											}
 											{tags add "wounded_animation_playing"}
 										}
@@ -2009,6 +2013,7 @@
 	}
 
 	{on "stop_personage"
+		{kill_delay "ufb_bleedout"}
 		{set "die_sound" 0}
 		{view pause "marker_personage"}
 		{view pause "marker_personage_acute"}

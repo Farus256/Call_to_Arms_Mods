@@ -1,0 +1,19 @@
+{from "pattern smg"
+	{tag "pistol_shell"}
+	{filling "ammo m38_42_mag" 20}
+	{entity "m38_42_20"}
+	{fireSound "smallarms/s1/d1/GER/MP28/Head/"}
+	{fireSoundclose "smallarms/s1/3p/GER/MP28/"}
+	{reloadSound "mp40"}
+	{calibre 9}
+	{mass 3.97}
+
+	("fire rate" rpm(550))
+	("velocity" mps(424))
+	("spreading_lower")
+	("burst_short")
+	("recoil_smg_lower")
+	("stick_reload")
+
+	{tag "ufb_supply_26"} ; UFB: native filling group, no weapon statistics changed
+}

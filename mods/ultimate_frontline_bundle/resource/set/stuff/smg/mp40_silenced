@@ -1,0 +1,12 @@
+{from "mp40_unfolded"
+	{tag "pistol_shell silenced silencedsmg"}
+	{entity "mp40_silenced"}
+	{fireSound "smallarms/s1/d1/ENG/STEN_Gun_Suppressed/Head/"}
+	{fireSoundclose "smallarms/s1/3p/ENG/STEN_Gun_Suppressed/"}
+	{mass 4.67}
+	{inventory
+		{size 6 2}
+	}
+
+	{tag "ufb_supply_30"} ; UFB: native filling group, no weapon statistics changed
+}

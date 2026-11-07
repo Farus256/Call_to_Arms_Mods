@@ -1,5 +1,5 @@
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
-const repo=p.resolve(__dirname,'..'),root=p.resolve(process.argv[2]||p.join(repo,'mods/ultimate_frontline_bundle/resource')),reference=p.resolve(repo,'../_survival_work/hf-update-20261105/reference/resource');
+const repo=p.resolve(__dirname,'..'),root=p.resolve(process.argv[2]||p.join(repo,'mods/ultimate_frontline_bundle/resource')),reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
 const shape=n=>({kind:n.kind,tokens:n.tokens.map(t=>t.value),children:n.children.map(shape)}),read=(base,f)=>fs.readFileSync(p.join(base,f),'latin1');
 const values=n=>n.children.map(c=>c.tokens.map(t=>Number(t.value)));
 const cases={'107mm_m1910':{apcbche:[190,97.4]},'107mm_m1910_30':{apcbche:[200,95.8]},'28mm_pzb41':{apcr:[150,44.18181818]},'77mm_qf_hv':{apcbc:[200,118.1],apds:[200,162]},'85mm_zis53':{aphe:[200,93.5],aphebc:[200,96.9],apcr:[200,75.7]},'88mm_rw43':{heat:[120,185]}};

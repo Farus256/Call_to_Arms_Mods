@@ -1,0 +1,7 @@
+{from "g43"
+	{entity "k43"}
+	{mass 4.1}
+	("velocity" mps(745))
+
+	{tag "ufb_supply_41"} ; UFB: native filling group, no weapon statistics changed
+}

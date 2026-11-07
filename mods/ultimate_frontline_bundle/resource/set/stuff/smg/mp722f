@@ -1,0 +1,5 @@
+{from "mas38"
+	{entity "mp722f"}
+
+	{tag "ufb_supply_29"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,0 +1,6 @@
+{from "vickers_go_no1"
+	("burst_aa")
+	("airborne_mg")
+
+	{tag "ufb_supply_58"} ; UFB: native filling group, no weapon statistics changed
+}

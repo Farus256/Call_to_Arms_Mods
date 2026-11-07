@@ -1,0 +1,7 @@
+{from "browning_m19a4" ;// used for MG Jeeps
+	{filling "mgun_usa" 100}
+
+	("burst_long")
+
+	{tag "ufb_supply_75"} ; UFB: native filling group, no weapon statistics changed
+}

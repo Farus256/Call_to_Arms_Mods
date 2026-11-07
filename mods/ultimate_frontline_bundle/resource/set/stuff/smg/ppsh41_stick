@@ -1,0 +1,18 @@
+{from "pattern smg"
+	{tag "pistol2_shell"}
+	{filling "ammo ppsh_stick" 35}
+	{entity "ppsh41_stick"}
+	{fireSound "smallarms/s1/d1/RUS/PPSh41/Head/"}
+	{fireSoundclose "smallarms/s1/3p/RUS/PPSh41/"}
+	{reloadSound "ppsh41"}
+	{calibre 7.62}
+	{mass 3.63}
+
+	("fire rate" rpm(900))
+	("velocity" mps(488))
+	("spreading_max")
+	("burst_long")
+	("stick_reload")
+
+	{tag "ufb_supply_37"} ; UFB: native filling group, no weapon statistics changed
+}

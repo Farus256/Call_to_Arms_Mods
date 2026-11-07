@@ -1,0 +1,19 @@
+{from "pattern mgun_light"
+	{inventory {size 7 2}}
+	{filling "mgun_ita" 20}
+	{entity "breda_m30"}
+	{fireSound "smallarms/s3/d1/Shared/MAC1931/Head/"}
+	{fireSoundclose "smallarms/s3/3p/Shared/MAC1931/Head/"}
+	{reloadSound "dt"}
+	{calibre 6.5}
+	{mass 10.6}
+
+	("fire rate" rpm(500))
+	("velocity" mps(630))
+
+	("burst_short")
+	("reload_belt")
+	("spreading_low")
+
+	{tag "ufb_supply_72"} ; UFB: native filling group, no weapon statistics changed
+}

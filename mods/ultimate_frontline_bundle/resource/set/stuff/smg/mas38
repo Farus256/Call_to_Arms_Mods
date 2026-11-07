@@ -1,0 +1,20 @@
+{from "pattern smg"
+	{tag "pistol_shell"}
+	{filling "ammo mas38" 32}
+	{entity "mas38"}
+	{inventory {size 5 2}}
+	{fireSound "smallarms/s1/d1/ENG/STEN_Gun/Head/"}
+	{fireSoundclose "smallarms/s1/3p/ENG/STEN_Gun/"}
+	{reloadSound "mp40"}
+	{calibre 9}
+	{mass 3.56}
+
+	("fire rate" rpm(650))
+	("velocity" mps(350))
+	("spreading_medium")
+	("burst_short")
+	("recoil_smg_medium")
+	("stick_reload")
+
+	{tag "ufb_supply_29"} ; UFB: native filling group, no weapon statistics changed
+}

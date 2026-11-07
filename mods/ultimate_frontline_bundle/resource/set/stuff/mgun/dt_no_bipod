@@ -1,0 +1,9 @@
+{from "dt"
+	{fireSound "smallarms/s3/d1/RUS/DP27/Head/"}
+	{fireSoundclose "smallarms/s3/3p/RUS/DP27/"}
+	{reloadSound "dt"}
+
+	("spreading_medium")
+
+	{tag "ufb_supply_73"} ; UFB: native filling group, no weapon statistics changed
+}

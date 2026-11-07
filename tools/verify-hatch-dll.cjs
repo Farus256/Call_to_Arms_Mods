@@ -25,5 +25,5 @@ const dll=fs.readFileSync(dllPath);
 assert(dll.includes('luaopen_ufb_hatch'),'Missing Lua entry');
 assert.equal(dll.readUInt16LE(dll.readUInt32LE(0x3c)+4),0x8664,'DLL must be x64');
 const lua=fs.readFileSync(p.join(repo,'mods/ultimate_frontline_bundle/resource/script/multiplayer/ufb_order_guard.lua'),'latin1');
-assert(lua.includes('ufb_hatch.dll')&&lua.includes('pcall(package.loadlib'),'Guarded Lua loader missing');
+assert(lua.includes('loadNative("ufb_hatch"')&&lua.includes('pcall(package.loadlib'),'Guarded Lua loader missing');
 console.log(JSON.stringify({gameBuildMatches:true,dllBytes:dll.length}));

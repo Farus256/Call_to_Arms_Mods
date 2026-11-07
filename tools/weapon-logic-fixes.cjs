@@ -1,6 +1,6 @@
 // Reviewed, per-weapon overrides. Native presets, damage and firing ranges stay intact.
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
-const repo=p.resolve(__dirname,'..'),reference=p.resolve(repo,'../_survival_work/hf-update-20261105/reference/resource');
+const repo=p.resolve(__dirname,'..'),reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
 const guns=['107mm_m1910','107mm_m1910_30','28mm_pzb41','77mm_qf_hv','85mm_zis53','88mm_rw43'];
 const launchers={faustpatrone_30:{range:30,penetration:140},panzerfaust_30:{range:30,penetration:200},panzerfaust_30_fin:{range:30,penetration:200},panzerfaust_100:{range:50,penetration:200},recoilless_m18:{range:90,penetration:80}};
 const number=v=>Number(v.toFixed(8)).toString();

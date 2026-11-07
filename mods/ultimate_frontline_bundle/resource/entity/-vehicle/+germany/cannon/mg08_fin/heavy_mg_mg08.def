@@ -1,0 +1,2 @@
+;// HF sells the emplacement "heavy_mg_mg08" but ships the gun only as mg08_ger.
+(include "mg08_ger.def")

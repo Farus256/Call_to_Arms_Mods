@@ -1,0 +1,29 @@
+{from "pattern hmgun"		;IL-2 Rear MG
+	{tag "aa"}
+	{filling "hmgun_rus" 200}
+	{entity "dshk"}
+	{inventory {size 6 3}}
+	{fireSound "smallarms/s4/d1/RUS/DShK38/Head/"}
+	{fireSoundClose "smallarms/s4/d1/RUS/DShK38/Head/"}
+	{reloadSound "dt"}
+	{calibre 12.7}
+	{mass 21.5}
+
+	("fire rate" rpm(1026))
+	("velocity" mps(850))
+
+	("reload_belt")
+
+	{projectileDamageTable {20 26} {100 16} {140 12.3} {150 0}} ;// adjusted to reduce far shoot
+
+	{parameters "api"
+		("armor health" damage(15))
+		("human health" damage(250))
+		{projectileDamageTable {20 24} {100 14.5} {165 9} {215 4.5} {250 2.75}} ;// B-32 API
+	}
+	
+	("burst_aa")
+	("airborne_mg")
+
+	{tag "ufb_supply_62"} ; UFB: native filling group, no weapon statistics changed
+}

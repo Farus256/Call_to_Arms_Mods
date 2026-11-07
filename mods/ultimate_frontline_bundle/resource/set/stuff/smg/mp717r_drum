@@ -1,0 +1,5 @@
+{from "ppsh41_drum"
+	{entity "mp717r_drum"}
+
+	{tag "ufb_supply_36"} ; UFB: native filling group, no weapon statistics changed
+}

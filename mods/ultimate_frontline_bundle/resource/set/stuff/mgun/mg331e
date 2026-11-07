@@ -1,0 +1,5 @@
+{from "vickers_tank"
+	{entity "mg331e"}
+
+	{tag "ufb_supply_64"} ; UFB: native filling group, no weapon statistics changed
+}

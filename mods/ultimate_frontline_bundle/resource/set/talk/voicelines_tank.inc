@@ -65,7 +65,7 @@
 
 {talk "tank_alert_airborne"		;// (condition) - unit sees vehicle with "airborne" prop
 	("tank_phrases" args alert_airborne)
-	{freq 0.5}
+	{freq 0}
 }
 
 {talk "tank_alert_tank"			;// (condition) - unit sees vehicle with "tank" prop
@@ -144,3 +144,7 @@
 }
 
 ;/*================ Triggered by Interaction Scripts or Conditions End ================*/
+{talk "ufb_tank_alert_airborne"
+ ("tank_phrases" args alert_airborne)
+ {freq 1}
+}

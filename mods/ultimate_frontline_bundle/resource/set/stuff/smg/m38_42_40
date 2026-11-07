@@ -1,0 +1,6 @@
+{from "m38_42_20"
+	{filling "ammo m38_42_mag" 40}
+	{entity "m38_42_40"}
+
+	{tag "ufb_supply_26"} ; UFB: native filling group, no weapon statistics changed
+}

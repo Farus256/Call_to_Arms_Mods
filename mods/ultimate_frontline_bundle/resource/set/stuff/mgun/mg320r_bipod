@@ -1,0 +1,5 @@
+{from "dt_bipod"
+	{entity "mg320r_bipod"}
+
+	{tag "ufb_supply_73"} ; UFB: native filling group, no weapon statistics changed
+}

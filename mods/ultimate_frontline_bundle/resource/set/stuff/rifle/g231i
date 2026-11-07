@@ -1,0 +1,17 @@
+{from "pattern rifle" ;// Gewehr 231(i)
+	{tag "rifle_shell m38"}
+	{filling "ammo rifle_ita clip" 6}
+	{inventory {size 5 2}}
+	{entity "g231i"}
+	{fireSound "smallarms/s3/d1/FIN/Gevar_M96/"}
+	{fireSoundclose "smallarms/s3/3p/FIN/Gevar_M96/"}
+	{reloadSound "reload_clip"}
+	{calibre 7.35}
+	{mass 3.4}
+
+	("velocity" mps(757))
+	("bolt_action")
+	("m38_rate")
+
+	{tag "ufb_supply_43"} ; UFB: native filling group, no weapon statistics changed
+}

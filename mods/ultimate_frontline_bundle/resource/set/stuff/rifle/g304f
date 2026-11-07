@@ -1,0 +1,5 @@
+{from "berthier_m1916"
+	{entity "g304f"}
+
+	{tag "ufb_supply_40"} ; UFB: native filling group, no weapon statistics changed
+}

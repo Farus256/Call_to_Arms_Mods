@@ -1,0 +1,24 @@
+{from "pattern rifle"
+	{tag "rifle_shell"}
+	{filling "ammo rifle_ger" 10}
+	{entity "vg2"}
+	{fireSound "smallarms/s3/d1/GER/K98k/"}
+	{fireSoundclose "smallarms/s3/3p/GER/K98k/"}
+	{calibre 7.92}
+	{mass 4.1}
+
+	("velocity" mps(847))
+	("bolt_action")
+	("vg2_rate")
+
+	{parameters "clip"
+		("reload time" seconds(8))
+		{reloadSound "reload_clip"}
+	}
+	{parameters "gewehr"
+		("reload time" seconds(4.5))
+		{reloadSound "g43"}
+	}
+
+	{tag "ufb_supply_41"} ; UFB: native filling group, no weapon statistics changed
+}

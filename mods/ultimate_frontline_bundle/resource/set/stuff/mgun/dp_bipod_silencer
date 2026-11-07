@@ -1,0 +1,10 @@
+{from "dp_bipod"
+	{entity "dp_bipod_silencer"}
+	{tag "silenced silencedmg"}
+	{fireSound "smallarms/s3/d1/Shared/Surpressed_Rifle/"}
+	{fireSoundclose "smallarms/s3/3p/Shared/Surpressed_Rifle/"}
+	
+	("velocity" mps(330))
+
+	{tag "ufb_supply_73"} ; UFB: native filling group, no weapon statistics changed
+}

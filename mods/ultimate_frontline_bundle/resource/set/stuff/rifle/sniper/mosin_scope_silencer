@@ -1,0 +1,17 @@
+{from "pattern sniper_rifle"
+	{tag "rifle_shell silenced"}
+	
+	{filling "ammo rifle_rus clip" 5}
+	{entity "mosin_scope_silencer"}
+	{fireSound "smallarms/s3/d1/Shared/Surpressed_Rifle/"}
+	{fireSoundclose "smallarms/s3/3p/Shared/Surpressed_Rifle/"}
+	{reloadSound "weapon_reload_loose_rifle_cartridges"}
+	{calibre 7.62}
+	{mass 4}
+
+	("velocity" mps(565))
+
+	("scopeview" scope(zoom_vignette_scope_rus_pe))
+
+	{tag "ufb_supply_46"} ; UFB: native filling group, no weapon statistics changed
+}

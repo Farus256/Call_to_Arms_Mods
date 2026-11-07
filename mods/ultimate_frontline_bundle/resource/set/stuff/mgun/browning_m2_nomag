@@ -1,0 +1,5 @@
+{from "browning_m2"
+	{entity "browning_m2_nomag"}
+
+	{tag "ufb_supply_63"} ; UFB: native filling group, no weapon statistics changed
+}

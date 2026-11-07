@@ -1,0 +1,5 @@
+{from "chauchat"
+	{entity "mg156f"}
+
+	{tag "ufb_supply_9"} ; UFB: native filling group, no weapon statistics changed
+}

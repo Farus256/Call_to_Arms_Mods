@@ -1,0 +1,17 @@
+{from "pattern mgun_light"	;// Finnish kg_m21
+	{filling "ammo kg_m21_mag" 20}
+	{entity "pk_21"}
+	{fireSound "smallarms/s3/d1/FIN/KG_m21/Head/"}
+	{fireSoundclose "smallarms/s3/3p/FIN/KG_m21/"}
+	{reloadSound "svt"}
+	{calibre 6.5}
+	{mass 8.7}
+
+	("fire rate" rpm(500))
+	("velocity" mps(860))
+
+	("burst_short")
+	("spreading_low")
+
+	{tag "ufb_supply_19"} ; UFB: native filling group, no weapon statistics changed
+}

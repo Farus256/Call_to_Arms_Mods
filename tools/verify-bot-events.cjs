@@ -5,7 +5,7 @@
 const fs = require('fs'), path = require('path'), assert = require('assert/strict');
 const { lua, lauxlib, lualib, to_luastring, to_jsstring } = require('fengari');
 const repo = path.resolve(__dirname, '..');
-const vanilla = path.resolve(process.argv[2] || path.join(repo, '../_survival_work/hf-update-20261105/reference/resource/script'));
+const vanilla = path.resolve(process.argv[2] || path.join(repo, '../_survival_work/hf-update-20261107/reference/resource/script'));
 assert(fs.existsSync(vanilla), 'Pass the current effective game + HF script directory; the HF 4 test must not use an old vanilla snapshot.');
 const roots = [
   path.join(process.argv[3] ? path.resolve(process.argv[3]) : path.join(repo, 'mods/ultimate_frontline_bundle/resource'), 'script'),

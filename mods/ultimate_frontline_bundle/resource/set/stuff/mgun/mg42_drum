@@ -1,0 +1,19 @@
+{from "pattern mgun"
+	{filling "mgun_ger" 50}
+	{entity "mg42_drum"}
+	{fireSound "smallarms/s3/d1/GER/MG42/Head/"}
+	{fireSoundclose "smallarms/s3/3p/GER/MG42/"}
+	{reloadSound "mg34"}
+	{calibre 7.92}
+	{mass 11.57}
+
+	("fire rate" rpm(1200))
+	("velocity" mps(740))
+
+	("ger_ap_bullets")
+
+	("burst_long")
+	("spreading_low")
+
+	{tag "ufb_supply_66"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,0 +1,27 @@
+{difficulty
+	(include "difficulty_generic.inc")
+	{any	;// temp to give enemy stats
+		{health 1.00} 	;// A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health.
+		{accuracy 1.0}
+		{grenade_timeout 0.40}
+
+		;// to give AI medics a chance at reviving someone
+		{death_delay_min 1320}		;// min bleeding out time in seconds
+		{death_delay_max 1380}		;// max bleeding out time in seconds
+	}
+	{enemy	;// not working in coop
+		{health 1.00} 	;// A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health.
+		{accuracy 1.0}
+		{grenade_timeout 0.40}
+	}
+	{ally
+		{health 1.00}
+		{accuracy 1.0}
+		{grenade_timeout 0.40}
+	}
+	{player
+		{health 1.00}
+		{accuracy 1.0}
+		{grenade_timeout 0.40}
+	}
+}

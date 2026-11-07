@@ -1,0 +1,4 @@
+{from "browning_m19a4_tank"
+
+	{tag "ufb_supply_75"} ; UFB: native filling group, no weapon statistics changed
+}

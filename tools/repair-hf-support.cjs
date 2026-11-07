@@ -19,7 +19,7 @@ function repair(text){
  for(const e of edits.sort((a,b)=>b.start-a.start))text=text.slice(0,e.start)+e.text+text.slice(e.end);
  return text;
 }
-function verify(resource=root,ref=p.resolve(repo,'../_survival_work/hf-update-20261105/reference/resource')){
+function verify(resource=root,ref=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource')){
  const current=s.parse(fs.readFileSync(p.join(resource,rel),'latin1'));
  const native=s.parse(require('./hf-logic-fixes.cjs').repair(repair(fs.readFileSync(p.join(ref,rel),'latin1'))));
  const targets=[...names,'hf_looting_body','hf_looting_ground'];

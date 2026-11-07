@@ -1,0 +1,7 @@
+{from "lewis_gun"
+	{entity "lewis_gun_rus"}
+	{filling "ammo lewis_mag_rus" 47}
+	{calibre 7.62}
+
+	{tag "-ufb_supply_20 ufb_supply_21"} ; UFB: native filling group, no weapon statistics changed
+}

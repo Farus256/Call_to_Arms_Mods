@@ -23,3 +23,5 @@
 )
 ("ufb_suppress_point_events" team(a))
 ("ufb_suppress_point_events" team(b))
+
+(include "ufb_medical_events.inc")

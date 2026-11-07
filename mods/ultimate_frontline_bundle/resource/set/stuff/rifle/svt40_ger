@@ -1,0 +1,5 @@
+{from "svt40"
+	{entity "svt40_ger"}
+
+	{tag "ufb_supply_45"} ; UFB: native filling group, no weapon statistics changed
+}

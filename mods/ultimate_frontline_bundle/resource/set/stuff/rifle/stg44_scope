@@ -1,0 +1,8 @@
+{from "stg44"
+	{entity "stg44_scope"}
+
+	("accuracy_rifle_auto")
+	("scopeview" scope(zoom_vignette_scope_ger_k98))
+
+	{tag "ufb_supply_51"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,0 +1,20 @@
+{from "pattern semi_sniper_rifle"
+	{filling "ammo rifle_rus" 10}
+	{entity "svt40_scope"}
+	{fireSound "smallarms/s3/d1/RUS/SVT40/"}
+	{fireSoundClose "smallarms/s3/3p/RUS/SVT40/"}
+	{reloadSound "svt"}
+	{calibre 7.62}
+	{mass 3.85}
+
+	("velocity" mps(830))
+	("zeroing_boost")
+	
+	{parameters "clip"
+		("reload time" seconds(10))
+	}
+
+	("scopeview" scope(zoom_vignette_scope_rus_pe))
+
+	{tag "ufb_supply_45"} ; UFB: native filling group, no weapon statistics changed
+}

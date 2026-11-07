@@ -1,0 +1,18 @@
+{from "pattern mgun"
+	{filling "mgun_rus" 63}
+	{entity "dt_bipod"}
+	{fireSound "smallarms/s3/d1/RUS/DP27/Head/"}
+	{fireSoundclose "smallarms/s3/3p/RUS/DP27/"}
+	{reloadSound "dt"}
+	{calibre 7.62}
+	{mass 9.12}
+
+	("fire rate" rpm(600))
+	("velocity" mps(840))
+	
+	("rus_7-62_ap_bullets")
+	("burst_medium")
+	("spreading_medium")
+
+	{tag "ufb_supply_73"} ; UFB: native filling group, no weapon statistics changed
+}

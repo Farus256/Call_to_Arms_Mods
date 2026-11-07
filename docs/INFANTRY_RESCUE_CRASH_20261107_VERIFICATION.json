@@ -1,0 +1,39 @@
+{
+  "installed": true,
+  "gameBattleTested": false,
+  "combatScenarios": 110,
+  "combatChecks": 4717,
+  "nativeBridgeBorrowedCellCalls": 5000,
+  "nativeBridgeRealROHDll": true,
+  "sourceAndInstalledEqualFiles": 1022,
+  "installedChanges": 240,
+  "newInstalledFiles": 228,
+  "firearmMarkerDefinitions": 225,
+  "nativeFillingGroups": 76,
+  "expandedMissionTriggers": 273,
+  "rohDllSHA256": "e282269215bc77ae7900371c99179d0a81e2f7d496e1841650ad57973dd68fab",
+  "crashException": "0xc0000374",
+  "crashEventLocalTime": "2026-11-07T19:12:03+01:00",
+  "passed": [
+    "tools/native/build.cmd",
+    "verify-combat-autonomy.cjs (source and installed)",
+    "verify-hf4-update.cjs",
+    "verify-ai-logic.cjs",
+    "verify-bot-events.cjs",
+    "verify-hf4-ai.cjs",
+    "verify-weapon-logic.cjs",
+    "verify-hf-retreat.cjs",
+    "verify-blood-pools.cjs",
+    "verify-hatch-dll.cjs",
+    "source/installed byte equality",
+    "Apply-TacticalPatch.ps1 baseline and installed hash checks"
+  ],
+  "backup": "_ai_work/infantry-rescue-20261107/package/backups/20261107-184330-5252376",
+  "untested": [
+    "GEM pathfinding and carry animation",
+    "medic resuming treatment after the smoke throw",
+    "actual sound playback and aircraft classification in a live battle",
+    "completion of a battle after the heap ownership fix",
+    "runtime FPS"
+  ]
+}

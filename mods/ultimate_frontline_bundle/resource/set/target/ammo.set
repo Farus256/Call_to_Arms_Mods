@@ -48,6 +48,7 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
+		{"small_arms"}						; UFB: allow drawing any usable reserve firearm
 		{"pistol"}							; UFB: draw a sidearm when the main weapon is dry
 		{"revolver"}						; UFB: draw a sidearm when the main weapon is dry
 		{"ptr"{ready_for_shot}}
@@ -117,6 +118,7 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
+		{"small_arms"}						; UFB: allow drawing any usable reserve firearm
 		{"pistol"}							; UFB: draw a sidearm when the main weapon is dry
 		{"revolver"}						; UFB: draw a sidearm when the main weapon is dry
 		{"ptr"{ready_for_shot}}
@@ -186,6 +188,7 @@
 		{"revolver"{ready_for_shot}}						; revolver ammo
 		{"small_arms"{ready_for_shot}}						; bullet ammo (pistols, rifles, smgs, mgs)
 		{"bullet"{ready_for_shot}}							; bullet ammo (pistols, rifles, smgs, mgs)
+		{"small_arms"}						; UFB: allow drawing any usable reserve firearm
 		{"pistol"}							; UFB: draw a sidearm when the main weapon is dry
 		{"revolver"}						; UFB: draw a sidearm when the main weapon is dry
 		{"ptr"{ready_for_shot}}

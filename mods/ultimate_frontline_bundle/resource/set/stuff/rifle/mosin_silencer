@@ -1,0 +1,16 @@
+{from "pattern rifle"
+	{tag "rifle_shell silenced silencedrifle"}
+	{filling "ammo rifle_rus clip" 5}
+	{entity "mosin_silencer"}
+	{fireSound "smallarms/s3/d1/Shared/Surpressed_Rifle/"}
+	{fireSoundclose "smallarms/s3/3p/Shared/Surpressed_Rifle/"}
+	{reloadSound "reload_clip"}
+	{calibre 7.62}
+	{mass 4}
+
+	("velocity" mps(565))
+	("bolt_action")
+	("mosin_rate")
+
+	{tag "ufb_supply_46"} ; UFB: native filling group, no weapon statistics changed
+}

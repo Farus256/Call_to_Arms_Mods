@@ -5,6 +5,7 @@
 }
 {on "ufb_tank_fear_shout" {talk "alert_tank"}}
 {on "ufb_mg_shout" {talk "ufb_alert_mgun"}}
+{on "ufb_air_alert" {tags add "_ufb_air_alert_cooldown"} {talk "ufb_alert_airborne"} {delay 90 {tags remove "_ufb_air_alert_cooldown"}}}
 {on "ufb_near_blast"
  {if not tagged "_ufb_blast_cover"
   {tags add "_ufb_blast_cover"}

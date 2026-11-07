@@ -1,0 +1,5 @@
+{from "mosin"
+	{entity "mosin_ger"}
+
+	{tag "ufb_supply_46"} ; UFB: native filling group, no weapon statistics changed
+}

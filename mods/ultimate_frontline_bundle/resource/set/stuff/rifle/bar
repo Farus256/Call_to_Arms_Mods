@@ -1,0 +1,6 @@
+{from "bar_bipod"
+	{mass 8.4}
+	{entity "bar"}
+
+	{tag "ufb_supply_5"} ; UFB: native filling group, no weapon statistics changed
+}

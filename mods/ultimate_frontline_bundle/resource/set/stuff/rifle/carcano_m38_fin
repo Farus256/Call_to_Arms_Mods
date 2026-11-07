@@ -1,0 +1,17 @@
+{from "pattern rifle" ;// 7,35 kiv/38, fucile m91/38 chambered in 7.35mm
+	{tag "rifle_shell m38"}
+	{filling "ammo rifle_ita clip" 6}
+	{inventory {size 5 2}}
+	{entity "carcano_m38_fin"}
+	{fireSound "smallarms/s3/d1/FIN/Gevar_M96/"}
+	{fireSoundclose "smallarms/s3/3p/FIN/Gevar_M96/"}
+	{reloadSound "reload_clip"}
+	{calibre 6.5}
+	{mass 3.4}
+
+	("velocity" mps(730)) ; for 7.35mm cartridge
+	("bolt_action")
+	("m38_rate")
+
+	{tag "ufb_supply_43"} ; UFB: native filling group, no weapon statistics changed
+}

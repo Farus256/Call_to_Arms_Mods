@@ -1,0 +1,7 @@
+{from "thompson_m1928a1_50"
+	{filling "ammo thompson_mag" 30}
+	{entity "thompson_m1928a1_30"}
+	("stick_reload")
+
+	{tag "ufb_supply_54"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,0 +1,23 @@
+{from "pattern mgun"
+	{tag "mg37t_bipod"}
+	{filling "mgun_ger belt" 225}
+	{entity "mg37t_bipod"}
+	{fireSound "smallarms/s3/d1/Shared/ZB37/Head/"}
+	{fireSoundclose "smallarms/s3/d1/Shared/ZB37/Head/"}
+
+	{reloadSound "mg42"}
+	{calibre 7.92}
+	{mass 21}
+
+	("fire rate" rpm(650))
+	("velocity" mps(722))
+
+	("reload_belt")
+
+	("ger_ap_bullets")
+
+	("burst_medium")
+	("spreading_mounted")
+
+	{tag "ufb_supply_67"} ; UFB: native filling group, no weapon statistics changed
+}

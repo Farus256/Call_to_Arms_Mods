@@ -56,7 +56,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{count
@@ -82,7 +84,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{count
@@ -108,7 +112,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{count
@@ -134,7 +140,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{count
@@ -160,7 +168,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{count
@@ -285,6 +295,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -339,6 +351,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -424,6 +438,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -481,6 +497,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -568,6 +586,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -625,6 +645,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -659,6 +681,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -736,6 +760,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -793,6 +819,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -827,6 +855,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -904,6 +934,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -961,6 +993,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -995,6 +1029,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -1064,6 +1100,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -1112,6 +1150,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -1180,6 +1220,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -1254,6 +1296,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1303,6 +1347,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1353,6 +1399,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1410,6 +1458,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1453,6 +1503,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1514,6 +1566,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1559,6 +1613,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -1607,6 +1663,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -1675,6 +1733,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -1749,6 +1809,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1798,6 +1860,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1848,6 +1912,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1905,6 +1971,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -1948,6 +2016,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2009,6 +2079,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2054,6 +2126,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -2102,6 +2176,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -2170,6 +2246,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -2244,6 +2322,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2293,6 +2373,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2343,6 +2425,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2400,6 +2484,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2443,6 +2529,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2504,6 +2592,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2549,6 +2639,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -2597,6 +2689,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -2665,6 +2759,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -2739,6 +2835,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2788,6 +2886,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2838,6 +2938,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2895,6 +2997,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2938,6 +3042,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -2999,6 +3105,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -3044,6 +3152,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -3092,6 +3202,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -3160,6 +3272,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{amount 1
@@ -3234,6 +3348,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -3283,6 +3399,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -3333,6 +3451,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -3390,6 +3510,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -3433,6 +3555,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -3494,6 +3618,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -3589,6 +3715,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{sort
@@ -3643,6 +3771,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -3688,6 +3818,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -3733,6 +3865,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -3778,6 +3912,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -3823,6 +3959,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -3868,6 +4006,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -3909,6 +4049,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 1
@@ -3966,6 +4108,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{sort
@@ -4039,6 +4183,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4096,6 +4242,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4153,6 +4301,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4196,6 +4346,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 						}
@@ -4227,6 +4379,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -4294,6 +4448,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4351,6 +4507,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4408,6 +4566,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4451,6 +4611,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 						}
@@ -4482,6 +4644,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -4549,6 +4713,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4606,6 +4772,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4663,6 +4831,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4706,6 +4876,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 						}
@@ -4737,6 +4909,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -4813,6 +4987,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4870,6 +5046,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -4957,6 +5135,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -5014,6 +5194,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -5043,7 +5225,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							{amount 1
 							}							
@@ -5120,6 +5304,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -5177,6 +5363,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -5206,7 +5394,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							{amount 1
 							}
@@ -5283,6 +5473,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -5340,6 +5532,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -5369,7 +5563,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							{amount 1
 							}
@@ -5430,6 +5626,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 								{amount 1
@@ -5552,7 +5750,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{action take_from}
@@ -5752,6 +5952,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -5792,7 +5994,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							{amount 1
 							}
@@ -5871,6 +6075,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -5888,7 +6094,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 						}
@@ -5979,6 +6187,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 																}
 																{sort
@@ -6106,6 +6316,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 																}
 															}
@@ -6182,6 +6394,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -6358,6 +6572,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -6406,7 +6622,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{tag_add ai_using_mine_detector}
@@ -6532,7 +6750,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{tag_remove ai_mine_detector}
@@ -6565,7 +6785,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{tag_remove _lua_mi}
@@ -6594,7 +6816,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{tag_remove ai_using_mine_detector}
@@ -6703,6 +6927,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -6762,6 +6988,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -6812,6 +7040,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -6861,6 +7091,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -6914,6 +7146,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -7003,6 +7237,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -7141,6 +7377,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -7191,6 +7429,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -7238,7 +7478,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{tag_remove bot_arty_fortified}
@@ -7284,7 +7526,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{drop "orders sensor"}
@@ -7334,7 +7578,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{drop orders}
@@ -7420,7 +7666,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{tag_remove bot_arty_move}
@@ -7552,6 +7800,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -7602,6 +7852,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -7649,7 +7901,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{tag_remove bot_arty_fortified}
@@ -7695,7 +7949,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{drop "orders sensor"}
@@ -7745,7 +8001,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{drop orders}
@@ -7831,7 +8089,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{tag_remove bot_arty_move}
@@ -7985,6 +8245,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8012,6 +8274,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8069,6 +8333,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8121,6 +8387,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8170,6 +8438,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8255,6 +8525,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8342,6 +8614,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8427,6 +8701,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8514,6 +8790,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8599,6 +8877,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8751,6 +9031,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8775,7 +9057,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{drop orders}
@@ -8831,6 +9115,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8882,6 +9168,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -8928,7 +9216,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{action rotate}
@@ -9010,7 +9300,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{attack enemies}
@@ -9094,7 +9386,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{action suppression_fire}
@@ -9176,7 +9470,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{attack enemies}
@@ -9260,7 +9556,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{action suppression_fire}
@@ -9342,7 +9640,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{tag_remove bot_arty_fire}
@@ -9494,6 +9794,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -9518,7 +9820,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{drop orders}
@@ -9574,6 +9878,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -9625,6 +9931,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -9671,7 +9979,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{action rotate}
@@ -9753,7 +10063,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{attack enemies}
@@ -9837,7 +10149,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{action suppression_fire}
@@ -9919,7 +10233,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{attack enemies}
@@ -10003,7 +10319,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{action suppression_fire}
@@ -10085,7 +10403,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{tag_remove bot_arty_fire}
@@ -10264,6 +10584,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -10696,6 +11018,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -10788,6 +11112,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -10845,6 +11171,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -10974,6 +11302,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -11065,7 +11395,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 									}
 								}
@@ -11100,7 +11432,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 								}
 								{drop "orders sensor senseless"}
@@ -11146,6 +11480,8 @@
 									
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -11173,7 +11509,9 @@
 									}
 								
 {exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{count
@@ -11225,7 +11563,9 @@
 										}
 									
 {exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 									{amount 2
 									}
@@ -11264,7 +11604,9 @@
 										}
 									
 {exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 									{amount 2
 									}
@@ -11303,7 +11645,9 @@
 										}
 									
 {exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 									{amount 2
 									}
@@ -11342,7 +11686,9 @@
 										}
 									
 {exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 									{amount 2
 									}
@@ -11381,7 +11727,9 @@
 										}
 									
 {exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 									{amount 2
 									}
@@ -11427,6 +11775,8 @@
 										
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 2
@@ -11478,6 +11828,8 @@
 										
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 									{amount 2
@@ -11523,6 +11875,8 @@
 								
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -11553,6 +11907,8 @@
 								
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 2
@@ -11581,6 +11937,8 @@
 								
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -11615,6 +11973,8 @@
 								
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -11650,6 +12010,8 @@
 								
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -11732,6 +12094,8 @@
 									
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -11777,6 +12141,8 @@
 										
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -11813,6 +12179,8 @@
 										
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -11849,6 +12217,8 @@
 										
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -11879,6 +12249,8 @@
 										
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -11915,6 +12287,8 @@
 											
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -12003,7 +12377,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							{sort
 								{type entity}
@@ -12045,7 +12421,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{drop orders}
@@ -12073,7 +12451,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{action drop}
@@ -12125,7 +12505,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 								{sort
 									{type entity}
@@ -12169,6 +12551,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12200,6 +12584,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12228,6 +12614,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12252,6 +12640,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12276,6 +12666,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12300,6 +12692,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12347,6 +12741,8 @@
 									
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -12401,7 +12797,9 @@
 									}
 								
 {exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{enemy
@@ -12463,6 +12861,8 @@
 								
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12551,6 +12951,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -12589,6 +12991,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12622,6 +13026,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12661,7 +13067,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{enemy
@@ -12706,7 +13114,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 							{enemy
@@ -12753,7 +13163,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{action drop}
@@ -12785,6 +13197,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12821,6 +13235,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -12918,6 +13334,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -12997,6 +13415,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -13173,6 +13593,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -13235,6 +13657,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -13405,6 +13829,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -13495,6 +13921,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -13642,6 +14070,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -13765,6 +14195,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -13934,6 +14366,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -14050,6 +14484,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -14331,6 +14767,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -14447,6 +14885,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -14701,6 +15141,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -14833,6 +15275,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -14935,6 +15379,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -15023,6 +15469,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -15069,6 +15517,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -15177,6 +15627,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -15234,7 +15686,9 @@
 						{time 0.1}
 					}
 					; UFB: recheck native AT range before drawing or issuing an attack.
-{"if" {condition {type see_actors} {selector {source advanced} {ignore_captured_by_user 1} {group {select {tag {tag _ai_at_launcher_%meters}}} {include {prop {prop human}} {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state user_control}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_healing_active}} {tag {tag medic}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag _ai_at_launcher_target_%meters}}} {include {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}}}}} {distance {mode in_range} {min 0} {max %meters}} {detection visible}}
+{"if" {condition {type see_actors} {selector {source advanced} {ignore_captured_by_user 1} {group {select {tag {tag _ai_at_launcher_%meters}}} {include {prop {prop human}} {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state user_control}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_healing_active}} {tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}}} {enemy {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag _ai_at_launcher_target_%meters}}} {include {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}}}}} {distance {mode in_range} {min 0} {max %meters}} {detection visible}}
 {"inventory"
 						{selector
 							{source advanced}
@@ -15260,6 +15714,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -15271,7 +15727,9 @@
 						{time 1.25}
 					}
 					; UFB: recheck native AT range before drawing or issuing an attack.
-{"if" {condition {type see_actors} {selector {source advanced} {ignore_captured_by_user 1} {group {select {tag {tag _ai_at_launcher_%meters}}} {include {prop {prop human}} {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state user_control}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_healing_active}} {tag {tag medic}}}}} {enemy {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag _ai_at_launcher_target_%meters}}} {include {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}}}}} {distance {mode in_range} {min 0} {max %meters}} {detection visible}}
+{"if" {condition {type see_actors} {selector {source advanced} {ignore_captured_by_user 1} {group {select {tag {tag _ai_at_launcher_%meters}}} {include {prop {prop human}} {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state user_control}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_healing_active}} {tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}}} {enemy {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag _ai_at_launcher_target_%meters}}} {include {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}}}}} {distance {mode in_range} {min 0} {max %meters}} {detection visible}}
 {"action"
 						{selector
 							{amount 1
@@ -15409,6 +15867,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -15533,6 +15993,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -15585,6 +16047,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														} {effect ufb_hf_cover_committed}}
@@ -15704,6 +16168,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -15821,6 +16287,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -15873,6 +16341,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														} {effect ufb_hf_cover_committed}}
@@ -15972,6 +16442,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -16161,6 +16633,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -16206,6 +16680,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -16268,6 +16744,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -16315,6 +16793,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -16362,6 +16842,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -16409,6 +16891,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -16456,6 +16940,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -16503,6 +16989,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -16550,6 +17038,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -16593,6 +17083,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -16638,6 +17130,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -16695,6 +17189,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -16756,7 +17252,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{tag_remove _ai_pilot_escaping}
@@ -16793,6 +17291,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -16842,6 +17342,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -16864,7 +17366,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{action drop}
@@ -16901,6 +17405,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -16949,6 +17455,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -16985,6 +17493,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -17028,6 +17538,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -17059,7 +17571,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							{amount 1
 							}
@@ -17169,6 +17683,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -17301,6 +17817,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -17586,6 +18104,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{amount 1
@@ -17617,7 +18137,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							{amount 4
 							}
@@ -17669,7 +18191,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{tag_add _lua_mi}
@@ -17726,6 +18250,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 							{sort
@@ -17762,6 +18288,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -17807,6 +18335,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -17862,6 +18392,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -17970,6 +18502,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 															{sort
@@ -18074,7 +18608,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 															{sort
 																{type entity}
@@ -18124,7 +18660,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 															{sort
 																{type entity}
@@ -18197,6 +18735,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -18252,6 +18792,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -18303,7 +18845,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{collage stand_cut_wire}
@@ -18364,7 +18908,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 																{amount 1
 																}
@@ -18470,6 +19016,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -18525,6 +19073,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18572,6 +19122,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18619,6 +19171,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18666,6 +19220,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18709,6 +19265,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18766,6 +19324,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18813,6 +19373,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18860,6 +19422,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18907,6 +19471,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -18950,6 +19516,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 										}
 									}
@@ -19657,7 +20225,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 									{amount 1
 									}
@@ -19726,7 +20296,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 									{amount 1
 									}
@@ -19780,7 +20352,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 						}
@@ -19818,7 +20392,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 							}
 						}
@@ -19881,6 +20457,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -19918,6 +20496,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -19974,6 +20554,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -20025,6 +20607,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -20270,6 +20854,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 									}
 								}
@@ -20321,6 +20907,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20376,6 +20964,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20431,6 +21021,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20486,6 +21078,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20535,6 +21129,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20591,6 +21187,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20640,6 +21238,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20689,6 +21289,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20738,6 +21340,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20781,6 +21385,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 											}
 											{sort
@@ -20964,6 +21570,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -21004,6 +21612,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -21042,6 +21652,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -21086,6 +21698,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -21158,6 +21772,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 								{amount 1
@@ -21416,6 +22032,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -21480,6 +22098,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -21509,6 +22129,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -21533,6 +22155,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -21564,7 +22188,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 						}
 						{drop orders}
@@ -21592,6 +22218,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -21673,6 +22301,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							}
@@ -21759,6 +22389,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -21808,6 +22440,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -21852,6 +22486,8 @@
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
 }
 															}
 														}
@@ -21903,7 +22539,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
 }
 														}
 														{drop orders}

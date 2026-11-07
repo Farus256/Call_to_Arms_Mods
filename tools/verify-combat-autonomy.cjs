@@ -18,10 +18,10 @@ function expand(source){
  }
  return output;
 }
-const TRIGGERS=111;const triggers=new Map([...expand(mission),...expand(text('map/multi/ufb_infantry_support.inc')),...expand(text('map/multi/ufb_static_weapons.inc'))].map(n=>[s.name(n),n]));
+const TRIGGERS=273;const triggers=new Map([...expand(mission),...expand(text('map/multi/ufb_infantry_support.inc')),...expand(text('map/multi/ufb_static_weapons.inc')),...expand(text('map/multi/ufb_logistics.inc')),...expand(text('map/multi/ufb_medical_support.inc'))].map(n=>[s.name(n),n]));
 assert.equal(triggers.size,TRIGGERS,'duplicate/missing expanded triggers');
 const hatch=s.parse(text('set/interaction_entity/ufb_tank_hatch.inc')).children[0];
-const eventMap=new Map([...hatch.children,...expand(events),...expand(text('set/interaction_entity/ufb_infantry_support_events.inc')),...expand(text('set/interaction_entity/ufb_static_weapon_events.inc'))].filter(n=>s.name(n)==='on').map(n=>[n.tokens[1].value,n]));
+const eventMap=new Map([...hatch.children,...expand(events),...expand(text('set/interaction_entity/ufb_infantry_support_events.inc')),...expand(text('set/interaction_entity/ufb_static_weapon_events.inc')),...expand(text('set/interaction_entity/ufb_medical_events.inc'))].filter(n=>s.name(n)==='on').map(n=>[n.tokens[1].value,n]));
 const value=(n,key)=>s.child(n,key)?.tokens[1]?.value;
 const words=x=>String(x).split(/\s+/);
 let checks=0,scenarios=0;
@@ -49,7 +49,9 @@ class Scene{
   if(key==='relation'){const ally=e.team===this.playerTeam(value(n,'player'));return value(n,'relation')==='ally'?ally:!ally;}
   if(key==='with_item'){
    const tags=words(value(n,'item')),type=value(n,'type');
-   return type==='using'?tags.every(t=>e.held.has(t)):e.items.some(i=>i.amount>0&&tags.every(t=>i.tags.has(t)));
+   if(type==='using')return tags.every(t=>e.held.has(t));
+   const matches=e.items.filter(i=>i.amount>0&&tags.every(t=>i.tags.has(t)));
+   return type==='amount'?matches.reduce((n,i)=>n+i.amount,0)>=Number(value(n,'min')||0):matches.length>0;
   }
   throw Error('Unsupported selector clause '+key);
  }
@@ -58,6 +60,7 @@ class Scene{
   const group=s.child(n,'group');
   if(group){const raw=s.child(group,'select'),picked=raw?.children.filter(c=>selectable.has(s.name(c))),sel=picked?.length?{children:picked}:null,inc=s.child(group,'include'),ex=s.child(group,'exclude');a=a.filter(e=>(!sel||sel.children.some(c=>this.match(e,c)))&&(!inc||inc.children.every(c=>this.match(e,c)))&&(!ex||!ex.children.some(c=>this.match(e,c))));}
   for(const c of n.children.filter(c=>['tag','prop','state','player'].includes(s.name(c))))a=a.filter(e=>this.match(e,c));
+  const sort=s.child(n,'sort');if(value(sort||{children:[]},'type')==='entity'){const from=this.select(s.child(sort,'entity'))[0];if(from)a.sort((a,b)=>Math.abs(a.x-from.x)-Math.abs(b.x-from.x));}
   const amount=s.child(n,'amount')?.tokens[1]?.value;if(amount)a=a.slice(0,Number(amount));
   return a;
  }
@@ -113,6 +116,7 @@ class Scene{
   if(key==='delay'){this.later(Number(value(n,'time')),()=>this.actions(nodes,i+1));return;}
   if(key==='trigger'){this.jobs.push(value(n,'name'));continue;}
   if(key==='con')continue;
+  if(key==='delete'){const doomed=this.select(s.child(n,'selector'));this.entities=this.entities.filter(e=>!doomed.includes(e));continue;}
   if(key==='emit'){for(const e of this.select(s.child(n,'selector'))){e.states.delete('inhabited');this.commands.push({name:'emit',actor:e.id,at:this.now});}continue;}
   if(key==='switch'){
    const branch=n.children.find(c=>s.name(c)==='case'&&this.term(s.child(c,'condition'),value(s.child(c,'condition'),'type')))||n.children.find(c=>s.name(c)==='default');
@@ -129,10 +133,17 @@ class Scene{
    else if(key==='player')e.player=Number(value(n,'player'));
    else if(key==='animation')this.commands.push({name:'animation',actor:e.id,clip:value(n,'collage'),at:this.now});
    else if(key==='inventory'){
-    if(value(n,'action')==='drop')e.items=[];
+    if(value(n,'action')==='drop'){
+     const tag=value(n,'item');
+     for(const item of [...e.items])if(!tag||words(tag).every(t=>item.tags.has(t))){e.items=e.items.filter(i=>i!==item);if(item.patient){item.patient.states.delete('linked');item.patient.x=e.x;}}
+    }
     else if(value(n,'action')==='take_from'){
      const donor=this.select(s.child(n,'entity'))[0],item=donor?.items.find(i=>i.amount>0&&words(value(n,'item')).every(t=>i.tags.has(t)));
-     if(item&&e.items.length<(e.maxItems||100)){donor.items=donor.items.filter(i=>i!==item);e.items.push(item);}
+     if(item&&e.items.length<(e.maxItems||100)){
+      const limit=Number(value(n,'amount')||item.amount);
+      if(item.amount>limit){item.amount-=limit;e.items.push({...item,tags:new Set(item.tags),amount:limit});}
+      else {donor.items=donor.items.filter(i=>i!==item);e.items.push(item);}
+     }
     }else {const w=e.items.find(i=>i.amount>0&&words(value(n,'item')).every(t=>i.tags.has(t)));if(w)e.held=new Set(w.tags);}
    }
    else if(key==='actor_fire'){
@@ -140,6 +151,8 @@ class Scene{
    }
    else if(key==='action'){
     const name=value(n,'action'),target=this.select(s.child(n,'target'))[0];if(!target)continue;
+    if(name==='collect'&&!e.pathBlocked&&!target.states.has('linked')){e.items.push({tags:new Set(['human']),amount:1,patient:target});target.states.add('linked');}
+    if(name==='move'&&!e.pathBlocked&&[...target.tags].some(t=>t.startsWith('_ufb_rescue_')))e.x=target.x;
     const itemTag={throw_ap_grenade:'fg',throw_at_grenade:'at',throw_sk_grenade:'smoke',bazooka_shot:'rocketlauncher'}[name];
     const item=itemTag&&e.items.find(i=>i.amount>0&&i.tags.has(itemTag));if(itemTag&&(!item||(name==='bazooka_shot'&&item.ammo<=0)))continue;
     if(itemTag){if(name==='bazooka_shot')item.ammo--;else item.amount--;}
@@ -419,8 +432,9 @@ test('voice rates change only the chosen lines',()=>{
  const native=fs.readFileSync(p.join(combat.reference,'set/talk/voicelines_human.inc'),'latin1'),now=text('set/talk/voicelines_human.inc'),rate=(t,n)=>value(s.parse(t).children.find(c=>c.tokens[1]?.value===n),'freq');
  for(const [line,freq]of Object.entries(require('./static-weapons.cjs').voiceRates)){assert.equal(Number(rate(now,line)),freq);checks++;}
  const tankNow=text('set/talk/voicelines_tank.inc');for(const [line,freq]of Object.entries(require('./static-weapons.cjs').tankVoiceRates)){assert.equal(Number(rate(tankNow,line)),freq);checks++;}
- assert.equal(tankNow.replace(/\{freq [0-9.]+\}/g,''),fs.readFileSync(p.join(combat.reference,'set/talk/voicelines_tank.inc'),'latin1').replace(/\{freq [0-9.]+\}/g,''));checks++;
- const mg=require('./static-weapons.cjs').mgLine;check(now.endsWith(mg));assert.equal(now.slice(0,-mg.length).replace(/\{freq [0-9.]+\}/g,''),native.replace(/\{freq [0-9.]+\}/g,''));checks++;
+ const nativeShape=t=>{const tree=s.parse(t);tree.children=tree.children.filter(n=>!n.tokens[1]?.value.startsWith('ufb_'));for(const n of tree.children)n.children=n.children.filter(c=>s.name(c)!=='freq');return shape(tree);};
+ assert.deepEqual(nativeShape(tankNow),nativeShape(fs.readFileSync(p.join(combat.reference,'set/talk/voicelines_tank.inc'),'latin1')));checks++;
+ check(now.includes(require('./static-weapons.cjs').mgLine));assert.deepEqual(nativeShape(now),nativeShape(native));checks++;
 });
 test('several soldiers in range: one owner for the job, the rest stay free',()=>{
  const a=unit('a',0,0,{shooting:true}),c=unit('c',0,1,{shooting:true}),b=unit('b',1,20,{team:1});b.held=new Set(['mgun']);const w=new Scene([a,c,b]);
@@ -528,7 +542,7 @@ test('the hatch DLL loader survives a missing library',()=>{
  const run=stub=>{const L=lauxlib.luaL_newstate();lualib.luaL_openlibs(L);const code=`BotApi={} local out={} print=function(x) out[#out+1]=x end package.cpath=[[D:\\Game\\binaries\\x64\\?.dll]] ${stub} dofile('${file}') return table.concat(out,'|')`;const r=lauxlib.luaL_dostring(L,to_luastring(code));const v=to_jsstring(lua.lua_tostring(L,-1));lua.lua_close(L);assert.equal(r,lua.LUA_OK,v);return v;};
  assert.match(run('package.loadlib=function() return nil,"not found" end'),/unavailable: not found/);checks++;
  assert.match(run('package.loadlib=function() error("boom") end'),/unavailable/);checks++;
- assert.match(run('package.loadlib=function(path) assert(path:find("mods.ultimate_frontline_bundle.ufb_hatch.dll")) return function() end end'),/control active/);checks++;
+ assert.match(run('package.loadlib=function(path) assert(path:find("mods.ultimate_frontline_bundle.ufb_hatch.dll")) return function() end end'),/native hatch active/);checks++;
  assert.match(run('package.loadlib=function() return function() error("boom") end end'),/unavailable/);checks++;
 });
 test('the firing tag follows real shots and fades after the last one',()=>{
@@ -583,5 +597,88 @@ test('HF launcher draw and attack both recheck visibility and native range',()=>
  z.b.x=50;check(!z.w.condition(s.child(trigger,'condition')));z.b.x=25;check(z.w.condition(s.child(trigger,'condition')));
  const gates=s.all(s.child(trigger,'actions'),n=>s.name(n)==='if'&&value(s.child(n,'condition'),'type')==='see_actors');check(gates.length===2);
  for(const gate of gates){const condition=s.child(gate,'condition');check(z.w.term(condition,'see_actors'));z.b.x=35;check(!z.w.term(condition,'see_actors'));z.b.x=25;z.b.visible=false;check(!z.w.term(condition,'see_actors'));z.b.visible=true;z.a.captured=true;check(!z.w.term(condition,'see_actors'));z.a.captured=false;}
+});
+const logistics=require('./infantry-logistics.cjs'),catalog=logistics.catalog(combat.reference);
+const dp=catalog.groups.find(g=>g.fill==='mgun_rus');assert(dp);
+function supply(){const a=unit('supply',0,0);a.items=[weapon('weapon bullet mgun '+dp.tag,0)];a.held=new Set(a.items[0].tags);
+ const b=unit('body',1,2,{states:new Set(['dead'])});b.items=[{tags:new Set(['ammo','mgun_rus','bullet']),amount:200},{tags:new Set(['ammo','mgun_ger','bullet']),amount:150}];return {a,b,w:new Scene([a,b])};}
+test('a captured DP receives its native ammunition with the weapon, after the gun leaves the corpse',()=>{
+ const z=looting();z.corpse.items=[weapon('weapon bullet mgun loot_mgun '+dp.tag),{tags:new Set(['ammo','mgun_rus','bullet']),amount:100},{tags:new Set(['ammo','mgun_ger','bullet']),amount:100}];
+ check(z.w.named('ufb/support/loot mgun/acquire a'));check(z.w.named('ufb/support/loot mgun/apply a'));
+ check(z.a.items.some(i=>i.tags.has('mgun_rus')));check(!z.a.items.some(i=>i.tags.has('mgun_ger')));assert.equal(z.corpse.items.length,1);
+});
+test('nearby resupply transfers compatible rounds, conserves stock and caps the transfer',()=>{
+ const z=supply();check(z.w.named('ufb/supply/'+dp.tag+' a'));assert.equal(z.a.items.find(i=>i.tags.has('mgun_rus')).amount,120);assert.equal(z.b.items.find(i=>i.tags.has('mgun_rus')).amount,80);assert.equal(z.b.items.find(i=>i.tags.has('mgun_ger')).amount,150);
+ z.w.named('ufb/supply/'+dp.tag+' a');assert.equal(z.b.items.find(i=>i.tags.has('mgun_rus')).amount,80);
+});
+test('a bot can also take compatible rounds after finishing its native HF loot job',()=>{
+ const z=supply();z.a.states.delete('user_control');z.a.tags.add('_ai_looting_weapon');z.w.named('ufb/supply/'+dp.tag+' a');assert.equal(z.b.items[0].amount,200);
+ z.a.tags.delete('_ai_looting_weapon');z.w.named('ufb/supply/'+dp.tag+' a');assert.equal(z.a.items.find(i=>i.tags.has('mgun_rus')).amount,120);
+});
+test('resupply refuses capture, wounded donors, distant bodies, combat danger and a full bag',()=>{
+ for(const mode of ['capture','wounded','far','danger','full','enough']){const z=supply();
+  if(mode==='capture')z.a.captured=true;if(mode==='wounded'){z.b.states.delete('dead');z.b.tags.add('bleeding');}if(mode==='far')z.b.x=5;
+  if(mode==='danger')z.w.entities.push(unit('foe',1,15));if(mode==='full')z.a.maxItems=z.a.items.length;
+  if(mode==='enough')z.a.items.push({tags:new Set(['ammo','mgun_rus']),amount:30});
+  z.w.named('ufb/supply/'+dp.tag+' a');assert.equal(z.b.items[0].amount,200,mode);
+ }
+});
+test('resupply cannot reuse a stale corpse after a threat blocked the previous attempt',()=>{
+ const z=supply(),foe=unit('foe',1,15);z.w.entities.push(foe);z.w.named('ufb/supply/'+dp.tag+' a');z.b.x=100;foe.visible=false;
+ z.w.named('ufb/supply/'+dp.tag+' a');assert.equal(z.b.items[0].amount,200);check(!z.a.tags.has('_ufb_supply_actor_a'));
+});
+test('firearm markers preserve every native statistic and replace inherited incompatible markers',()=>{
+ for(const w of catalog.weapons){const tree=s.parse(logistics.marker(w)),original=s.parse(w.source),node=tree.children[0];const tag=node.children.pop();check(s.name(tag)==='tag');assert.deepEqual(shape(tree),shape(original),w.file);checks++;}
+ const st=s.parse(text('set/target/ammo.set'));for(const n of st.children[0].children.filter(n=>s.name(n)==='human'))check(n.children.some(n=>s.name(n)==='small_arms'&&!s.child(n,'ready_for_shot')),'usable reserve firearm draw');
+});
+function rescueScene({medic=true,foe=true}={}){
+ const a=unit('rescuer',0,0),b=unit('casualty',0,3);b.tags.add('bleeding');
+ const entities=[a,b];let m;if(medic){m=unit('medic',0,-30);m.tags.add('medic');entities.push(m);}let e;if(foe){e=unit('foe',1,50);entities.push(e);}
+ return {a,b,m,e,w:new Scene(entities)};
+}
+test('player rescue collects a wounded ally, carries him to a medic, drops only the patient and returns',()=>{
+ const z=rescueScene(),count=z.a.items.length;check(z.w.named('ufb/rescue/acquire a'));check(z.a.items.some(i=>i.tags.has('human')));check(z.a.tags.has('_ufb_rescue_active'));
+ z.w.advance(6);assert.equal(z.a.x,-30);z.w.advance(14);assert.equal(z.b.x,-30);check(!z.b.states.has('linked'));assert.equal(z.a.items.length,count);
+ z.w.advance(2);assert.equal(z.a.x,0);z.w.advance(25);check(!z.a.tags.has('_ufb_rescue_active'));check(!z.b.tags.has('_ufb_rescue_patient'));check(z.w.points.every(p=>!z.w.entities.includes(p)));
+});
+test('without a medic the casualty is carried toward the rear and the carrier returns',()=>{
+ const z=rescueScene({medic:false});check(z.w.named('ufb/rescue/acquire a'));z.w.advance(20);assert.equal(z.b.x,-25);z.w.advance(2);assert.equal(z.a.x,0);
+});
+test('a danger near the destination or an enemy at point-blank range prevents evacuation',()=>{
+ for(const close of [false,true]){const z=rescueScene();z.e.x=close?10:30;if(!close)z.m.x=10;z.w.named('ufb/rescue/acquire a');z.w.advance(22);check(!z.w.commands.some(c=>c.name==='collect'),String(close));check(!z.b.states.has('linked'));}
+});
+test('evacuation is occasional and does not commandeer a moving, selected or busy soldier',()=>{
+ for(const mode of ['random','moving','capture','busy']){const z=rescueScene();if(mode==='random')z.w.roll=0.7;if(mode==='moving')z.a.tags.add('_ufb_autonomy_moving');if(mode==='capture')z.a.captured=true;if(mode==='busy')z.a.tags.add('_ufb_job_reserved');
+  z.w.named('ufb/rescue/acquire a');check(!z.w.commands.some(c=>c.name==='collect'),mode);}
+});
+test('manual capture permanently cancels delayed rescue orders, including after deselection',()=>{
+ const z=rescueScene();z.w.named('ufb/rescue/acquire a');z.w.advance(6);z.a.captured=true;check(z.w.named('ufb/rescue/manual a'));z.a.captured=false;
+ const before=z.w.commands.length;z.w.advance(41);assert.equal(z.w.commands.length,before);check(z.a.items.some(i=>i.tags.has('human')),'carried patient stays under manual control');
+});
+test('a new threat at the saved position prevents the automatic return',()=>{
+ const z=rescueScene();z.w.named('ufb/rescue/acquire a');z.w.advance(20);z.e.x=0;z.w.advance(2);assert.equal(z.a.x,-30);
+});
+test('failed pickup and multiple helpers cannot create a patient or reserve the whole squad',()=>{
+ const z=rescueScene();z.a.pathBlocked=true;z.w.entities.push(unit('other',0,1));z.w.named('ufb/rescue/acquire a');
+ assert.equal(z.w.entities.filter(e=>e.tags.has('_ufb_rescue_active')).length,1);z.w.advance(47);check(!z.a.items.some(i=>i.tags.has('human')));check(!z.b.states.has('linked'));check(!z.a.tags.has('_ufb_rescue_active'));
+});
+test('medic smoke needs both a wounded ally and a visible threat and consumes real stock',()=>{
+ const z=rescueScene();z.a.tags.add('medic');z.m.tags.delete('medic');const before=z.a.items.find(i=>i.tags.has('smoke')).amount;
+ check(z.w.named('ufb/medic/smoke a'));assert.equal(z.a.items.find(i=>i.tags.has('smoke')).amount,before-1);check(z.w.commands.some(c=>c.name==='throw_sk_grenade'));check(z.a.tags.has('_ufb_medic_smoke_cooldown'));check(!z.w.named('ufb/medic/smoke a'));
+ z.w.advance(4);check(z.w.points.every(p=>!z.w.entities.includes(p)));
+});
+test('medics do not use smoke without stock, for dead enemies, without casualties or during healing/direct control',()=>{
+ for(const mode of ['none','dead','no-patient','healing','capture','wp','hidden','linked']){const z=rescueScene();z.a.tags.add('medic');z.m.tags.delete('medic');
+  if(mode==='none')z.a.items.find(i=>i.tags.has('smoke')).amount=0;if(mode==='dead')z.e.states.add('dead');if(mode==='no-patient')z.b.tags.clear();
+  if(mode==='healing')z.a.tags.add('_ufb_healing_active');if(mode==='capture')z.a.captured=true;if(mode==='wp')z.a.items.push(weapon('m15_wp'));
+  if(mode==='hidden')z.e.visible=false;if(mode==='linked')z.a.states.add('linked');z.w.named('ufb/medic/smoke a');check(!z.w.commands.some(c=>c.name==='throw_sk_grenade'),mode);
+ }
+});
+test('air warning requires a living visible enemy aircraft, rather than a wreck, ally or ground vehicle',()=>{
+ for(const mode of ['real','none','dead','inactive','ally','hidden','ground']){const a=unit('speaker',0,0),plane=unit('plane',1,150);plane.props=new Set(['vehicle','airborne']);
+  if(mode==='dead')plane.states.add('dead');if(mode==='inactive')plane.states.add('inactive');if(mode==='ally')plane.team=0;if(mode==='hidden')plane.visible=false;if(mode==='ground')plane.props.delete('airborne');
+  const w=new Scene(mode==='none'?[a]:[a,plane]);w.named('ufb/air/human a');assert.equal(w.commands.some(c=>c.name==='talk'&&c.line==='ufb_alert_airborne'),mode==='real',mode);
+  if(mode==='real'){check(!w.named('ufb/air/human a'));w.advance(91);check(w.named('ufb/air/human a'));}
+ }
 });
 console.log(JSON.stringify({scenarios,checks,passed:true,gemBattleTested:false}));

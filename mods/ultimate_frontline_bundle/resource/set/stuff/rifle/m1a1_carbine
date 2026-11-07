@@ -1,0 +1,6 @@
+{from "m1_carbine"
+	{entity "m1a1_carbine"}
+	{mass 2.3}
+
+	{tag "ufb_supply_24"} ; UFB: native filling group, no weapon statistics changed
+}

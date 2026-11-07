@@ -1,6 +1,6 @@
 // Narrow edits to the installed HF mission logic, preserving earlier UFB repairs.
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
-const guards=['_ufb_job_reserved','_ufb_combat_busy','_ufb_healing_active'];
+const guards=['_ufb_job_reserved','_ufb_combat_busy','_ufb_healing_active','_ufb_rescue_active'];
 const shape=n=>({kind:n.kind,tokens:n.tokens.map(t=>t.value),children:n.children.map(shape)});
 function repair(text){
  const tree=s.parse(text),edits=[];
@@ -27,7 +27,7 @@ function repair(text){
   if(s.name(c)==='selector'&&s.child(c,'group')){
    const group=s.child(c,'group');let exclude=s.child(group,'exclude');
    const protectedOwner=parents.some(a=>/^hf inf ai\/medics\//.test(s.name(a)||''));
-   const tags=protectedOwner?guards.filter(x=>x!=='_ufb_healing_active'):[...guards,'medic'];
+   const tags=protectedOwner?guards.filter(x=>x!=='_ufb_healing_active'):[...guards.filter(x=>x!=='_ufb_rescue_active'),'medic','_ufb_rescue_active'];
    const missing=tags.filter(tag=>!s.all(exclude||{children:[]},n=>s.name(n)==='tag'&&n.children[0]?.tokens[1]?.value===tag).length);
    if(missing.length){const body=missing.map(tag=>`{tag {tag ${tag}}}`).join('\n');if(exclude)edits.push({start:exclude.end-1,end:exclude.end-1,text:'\n'+body+'\n'});else edits.push({start:group.end-1,end:group.end-1,text:'\n{exclude '+body+'}\n'});}
   }

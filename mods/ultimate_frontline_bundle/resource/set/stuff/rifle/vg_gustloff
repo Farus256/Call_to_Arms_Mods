@@ -1,0 +1,18 @@
+{from "pattern rifle"
+	{tag "inter_shell"}
+	{filling "ammo stg44" 30}
+	{entity "vg_gustloff"}
+	{fireSound "smallarms/s2/d1/GER/StG44/Head/"}
+	{fireSoundclose "smallarms/s2/3p/GER/StG44/"}
+	{reloadSound "stg"}
+	{calibre 7.92}
+	{mass 5.37}
+
+	("reload time" seconds(4.5))
+	("fire rate" rpm(130))
+	("velocity" mps(670))
+
+	("carbine_rifle")
+
+	{tag "ufb_supply_51"} ; UFB: native filling group, no weapon statistics changed
+}

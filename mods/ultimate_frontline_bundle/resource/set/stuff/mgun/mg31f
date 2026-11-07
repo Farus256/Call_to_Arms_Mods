@@ -1,0 +1,17 @@
+{from "pattern mgun"
+	{filling "mgun_fra" 150}
+	{entity "mac31_tank"}
+	{fireSound "smallarms/s3/d1/Shared/MAC1931/Head/"}
+	{fireSoundclose "smallarms/s3/int/Shared/MAC1931/"}
+	{reloadSound "interior/small/dt_reload_interior"}
+	{calibre 7.5}
+	{mass 11.8}
+
+	("fire rate" rpm(750))
+	("velocity" mps(830))
+
+	("burst_long")
+	("spreading_mounted")
+
+	{tag "ufb_supply_65"} ; UFB: native filling group, no weapon statistics changed
+}

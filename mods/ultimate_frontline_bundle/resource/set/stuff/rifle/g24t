@@ -1,0 +1,5 @@
+{from "k98"
+	{entity "g24t"}
+
+	{tag "ufb_supply_42"} ; UFB: native filling group, no weapon statistics changed
+}

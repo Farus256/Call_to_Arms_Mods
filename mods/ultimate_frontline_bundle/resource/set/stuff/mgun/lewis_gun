@@ -1,0 +1,17 @@
+{from "pattern mgun_light"
+	{filling "ammo lewis_mag" 47}
+	{entity "lewis_gun"}
+	{fireSound 	"smallarms/s3/d1/ENG/Lewis_Gun/Head/"}
+	{fireSoundclose "smallarms/s3/3p/ENG/Lewis_Gun/"}
+	{reloadSound "dt"}
+	{calibre 7.7}
+	{mass 13}
+
+	("fire rate" rpm(550))
+	("velocity" mps(743))
+
+	("burst_short")
+	("spreading_low")
+
+	{tag "ufb_supply_20"} ; UFB: native filling group, no weapon statistics changed
+}

@@ -1,0 +1,6 @@
+{from "ds39"
+	{filling "mgun_rus" 200}
+	("spreading_mounted_low")
+
+	{tag "ufb_supply_73"} ; UFB: native filling group, no weapon statistics changed
+}
