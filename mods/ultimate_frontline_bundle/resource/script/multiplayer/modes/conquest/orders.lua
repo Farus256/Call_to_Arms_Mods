@@ -1,3 +1,4 @@
+local UFBOrderGuard = require([[/script/multiplayer/ufb_order_guard]])
 -- =========================================================
 -- AI ORDERS
 -- =========================================================
@@ -132,15 +133,15 @@ function CaptureFlag(squad)
 	end
 
 	if IsSquadNeedsOrder(squad) then
-		return BotApi.Commands:CaptureFlag(squad, flag.name)
+		return UFBOrderGuard.Capture(squad, flag.name)
 	end
 
 	if printDebug then print("Print: [notags] ctf by squad", squad, "Player#", BotApi.Instance.playerId, "Flag name: ", flag.name) end
 	-- Native Conquest owns the shared wave target and defender counterattack target.
-	return BotApi.Commands:CaptureFlag(squad, flag.name)
+	return UFBOrderGuard.Capture(squad, flag.name)
 end
 
 -- UFB: guard before target selection, fallback attacks, and waypoint orders.
-local UFBOrderGuard = require([[/script/multiplayer/ufb_order_guard]])
+
 CaptureFlag = UFBOrderGuard.Wrap(CaptureFlag, false)
 GotoNextWaypoint = UFBOrderGuard.Wrap(GotoNextWaypoint, true)

@@ -345,10 +345,6 @@ function TrySpawnUnit()
 		return
 	end
 
-	if not BotApi.Commands:CanSpawn() then
-		return
-	end
-
 	if spawningUnit then
 		if OnUnitPurchased then -- used for conquest
 			OnUnitPurchased()
@@ -360,6 +356,12 @@ function TrySpawnUnit()
 		Context.SpawnInfo = nil
 		SetSpawnCooldownTimer()
 		spawningUnit = nil
+		return
+	end
+
+	-- Commit a successful purchase even when it filled the last available CP.
+	-- CanSpawn applies to the next purchase, not to accounting for the last one.
+	if not BotApi.Commands:CanSpawn() then
 		return
 	end
 
@@ -437,6 +439,9 @@ end
 function OnGameStop()
 	KillSpawnCooldownTimer()
 	KillSpawnWaitTimer()
+	if type(ConquestDefenderCounterattack) == "table" and ConquestDefenderCounterattack.Stop then
+		ConquestDefenderCounterattack.Stop()
+	end
 
 	for squad, timer in pairs(Context.SquadTimers) do
 		if timer then

@@ -61,6 +61,20 @@ int main() {
     { closes = 0; Closed closed; Tank empty(0); apply(close.memory, empty.entity, fakeSetSealed, closed); CHECK(closes == 1); }
     { Closed closed; std::vector<int> marks(300);
       for (auto& mark : marks) closed.add(&mark);
-      CHECK(closed.has(&marks.back())); CHECK(!closed.has(&marks.front())); }
+      CHECK(!closed.has(&marks.back())); CHECK(closed.has(&marks.front())); }
+    { Closed closed; Tank reused(4, true); closed.add(reused.entity);
+      Action reset("ufb_hatch_reset",false); apply(reset.memory,reused.entity,fakeSetSealed,closed);
+      opens=0; apply(close.memory,reused.entity,fakeSetSealed,closed);
+      apply(open.memory,reused.entity,fakeSetSealed,closed); CHECK(opens==0); }
+    { Closed closed; Tank reused(4); closed.add(reused.entity); Action reset("ufb_hatch_reset",false);
+      CHECK(isHatchRequest(reset.memory)); apply(reset.memory,reused.entity,fakeSetSealed,closed);
+      opens=0; apply(open.memory,reused.entity,fakeSetSealed,closed); CHECK(opens==0); }
+    { Closed closed; std::vector<int> marks(256); for(auto& m:marks) CHECK(closed.add(&m));
+      Tank overflow(4); closes=0; apply(close.memory,overflow.entity,fakeSetSealed,closed); CHECK(closes==0);
+      CHECK(closed.has(&marks.front())); }
+    { Closed closed; Tank tank(4); apply(close.memory,tank.entity,fakeSetSealed,closed);
+      tank.seal(0); apply(close.memory,tank.entity,fakeSetSealed,closed);
+      CHECK(closed.has(tank.entity)); opens=0; apply(open.memory,tank.entity,fakeSetSealed,closed); CHECK(opens==1); }
+    { Closed closed; int owner=0; closed.add(&owner); closed.clear(); CHECK(!closed.has(&owner)); }
     printf("{\"checks\":%d,\"passed\":true}\n", checks);
 }

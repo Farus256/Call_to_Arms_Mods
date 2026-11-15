@@ -48,7 +48,10 @@ function transfers(ref,actor,donor){return catalog(ref).groups.map(g=>`{"if" {co
 }`).join('\n');}
 function mission(ref){
  let text='; Resupply only from dead bodies within inventory reach, using the actual weapon filling.\n';
- for(const g of catalog(ref).groups){
+ // A polled entities condition re-scanned every soldier against ~50 tags each quant, x152 triggers:
+ // constant frametime spikes. The cheap always-true rand fires at once; the real check is the timed
+ // see_actors gate below. Periods 4.0-5.9s keep the 152 checks from landing on one quant.
+ for(const [i,g] of catalog(ref).groups.entries()){
   const actor=`{source advanced} {ignore_captured_by_user 1} {group
    {include ${P('human')} ${S('operatable')} {team {team %team}} ${I(g.tag,'using')}}
    {exclude ${S('dead')} ${S('inactive')} ${S('linked')} ${P('crew')} ${P('repairing')} ${P('throwing')} ${I(g.fill,'amount')}
@@ -57,7 +60,7 @@ function mission(ref){
   const donor=corpse(g.fill,'_ufb_supply_body_%team').replace('{source advanced}',`{source advanced} {amount 1} {sort {type entity} {entity ${picked}}}`);
   text+=`(define "ufb_supply_${g.tag}"
  {"ufb/supply/${g.tag} %team"
-  {condition {terms {"1.entities" {selector ${actor}}}}}
+  {condition {terms {"1.rand" {value 1}}}}
   {actions
    {"if" {condition {type see_actors} {selector ${actor}} {enemy ${corpse(g.fill)}} {distance {mode near_than} {meters 3}}
     {tag {"tag pair"} {"for selector" _ufb_supply_actor_%team} {"for enemy" _ufb_supply_body_%team}}}
@@ -71,7 +74,7 @@ function mission(ref){
    }
    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_supply_actor_%team}} {tag_remove _ufb_supply_actor_%team}}
    {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_supply_body_%team}} {tag_remove _ufb_supply_body_%team}}
-   {"delay" {time 4}}
+   {"delay" {time ${(4+(i%20)*0.1).toFixed(1)}}}
    {"trigger" {name "ufb/supply/${g.tag} %team"}}
   }
  }

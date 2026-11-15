@@ -1,3 +1,4 @@
+local UFBOrderGuard = require([[/script/multiplayer/ufb_order_guard]])
 require([[/script/multiplayer/modes/utility]])
 
 -- Time from start of match AI will wait before attempting to buy a unit.
@@ -460,7 +461,7 @@ function CaptureFlag(squad)
 	end
 
 	--if printDebug then print("Print: [notags] ctf by squad", squad, "Player#",BotApi.Instance.playerId, "Team", team, "Flag name: ", flag.name) end
-	return BotApi.Commands:CaptureFlag(squad, flag.name)
+	return UFBOrderGuard.Capture(squad, flag.name)
 end
 
 function OnGameSpawn(args)
@@ -475,7 +476,7 @@ end
 
 
 -- UFB: guard before target selection, fallback attacks, and waypoint orders.
-local UFBOrderGuard = require([[/script/multiplayer/ufb_order_guard]])
+
 CaptureFlag = UFBOrderGuard.Wrap(CaptureFlag, false)
 GotoNextWaypoint = UFBOrderGuard.Wrap(GotoNextWaypoint, true)
 function OnPrepTimeOver()

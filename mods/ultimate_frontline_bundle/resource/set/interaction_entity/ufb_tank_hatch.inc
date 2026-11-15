@@ -1,6 +1,7 @@
 ; UFB: tanks button up under fire and open again when it is quiet. See tools/native/ufb_hatch.cpp.
 {"tank"
  {on "ufb_air_alert" {tags add "_ufb_air_alert_cooldown"} {talk "ufb_tank_alert_airborne"} {delay 90 {tags remove "_ufb_air_alert_cooldown"}}}
+ {on spawn sync {crew_enable group "ufb_hatch_reset" 0}}
  {on bullet_hit {call "ufb_hatch_danger"}}
  {on blast_hit {call "ufb_hatch_danger"}}
  {on "ufb_hatch_danger"

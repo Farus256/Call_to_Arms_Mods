@@ -16,7 +16,7 @@ local jobs,timers,queued,id,orders,exists,retreat = {},{},{},0,0,true,false
 BotApi={Scene={Waypoints={},IsSquadExists=function() return exists end,IsSquadTagged=function(_,squad,tag) return jobs[tag] or false end},
  Events={SetQuantTimer=function(_,fn,delay) assert(delay>0);id=id+1;timers[id]=fn;queued[id]=fn;return id end,KillQuantTimer=function(_,key) timers[key]=nil end}}
 ShouldStopNormalSquadOrders=function() return retreat end
-local guard=dofile('${file}')
+package.preload['/script/multiplayer/ufb_squad_tactics']=function() return dofile('${p.join(resource,'script/multiplayer/ufb_squad_tactics.lua').replaceAll('\\','/')}') end local guard=dofile('${file}')
 local function count() local n=0;for _ in pairs(timers) do n=n+1 end;return n end
 local function fire(key) local fn=timers[key];assert(fn);timers[key]=nil;fn() end
 local capture=guard.Wrap(function() orders=orders+1 end,false)

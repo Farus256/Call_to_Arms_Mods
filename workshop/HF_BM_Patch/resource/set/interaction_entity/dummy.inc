@@ -2394,6 +2394,11 @@
 	}
 }
 
+{"deflect_contact"
+    {on spawn
+        {delay 0.12 {delete}}
+    }
+}
 
 
 ;// register engine-used props

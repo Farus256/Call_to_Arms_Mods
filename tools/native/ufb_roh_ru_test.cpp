@@ -6,6 +6,13 @@
 int main() {
     using roh::translate;
     assert(translate("Rifleman") == "Стрелок");
+    assert(translate("Commissar") == "Комиссар");
+    assert(roh::roleAlias("commisar") == "Commissar");
+    assert(roh::roleAlias("COMMISSAR") == "Commissar");
+    assert(roh::roleAlias("mgun_3") == "Machine Gunner");
+    assert(roh::roleAlias("mgun_asst_2") == "Asst. MG");
+    for (const auto job : {"tank_commander","tankman","medic","sniper","mgun_special","NCO","rifleman"})
+        assert(roh::roleAlias(job).empty());
     assert(translate("Gefr.\nOb. Gefr.\n\nRyadovoy") == "Гефр.\nОбергефр.\n\nРядовой");
     assert(translate("Pz. IV Crew") == "Экипаж Pz. IV");
     assert(translate("Tank Crew") == "Танкист");

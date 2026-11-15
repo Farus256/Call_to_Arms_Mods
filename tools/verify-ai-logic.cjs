@@ -18,7 +18,7 @@ BotApi={Instance={spawnPointName='a1',gameMode='battle_zones',enemyTeam='b',team
  Events={Subscribe=function() end,SetQuantTimer=function(_,fn,delay) nextTimer=nextTimer+1;timers[nextTimer]=fn;queued[nextTimer]=fn;return nextTimer end,
  KillQuantTimer=function(_,id) timers[id]=nil end}}
 package.preload['/script/multiplayer/modes/utility']=function() return {} end
-package.preload['/script/multiplayer/ufb_order_guard']=function() return {Wrap=function(fn) return fn end} end
+package.preload['/script/multiplayer/ufb_order_guard']=function() return {Wrap=function(fn) return fn end,Capture=function(squad,target) return BotApi.Commands:CaptureFlag(squad,target) end} end
 `;
 function run(name,old,mode,body){
  if(old&&!baseline)return;

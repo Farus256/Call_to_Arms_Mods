@@ -196,9 +196,10 @@ function events(){
  {delay 12 {if tagged "_ufb_launcher_seen" {tags add "_ufb_launcher_ready"}}}
  {delay 24 {tags remove "_ufb_launcher_seen"} {tags remove "_ufb_launcher_ready"}}
 }
-{on "ufb_autonomy_move_on" {tags add "_ufb_autonomy_moving"}}
+{on "ufb_autonomy_move_on" {tags add "_ufb_autonomy_moving"} {tags remove "_ufb_hf_cover_retry"} {kill_delay "ufb_hf_cover_retry_expiry"}}
 {on "ufb_autonomy_move_off" {tags remove "_ufb_autonomy_moving"}}
 {on "ufb_combat_hit"
+ {if not dead {if not linked {if tagged "_ufb_shaken" {call "ufb_morale_quiet"}}}}
  {if not dead {if not linked {if not tagged "_ufb_recent_hit"
   {tags add "_ufb_recent_hit"}
   {tags add "_ufb_was_hit"}
@@ -234,7 +235,7 @@ function events(){
  for(const [team] of sides)out+=`("ufb_combat_target_events" team(${team}))\n`;
  return out+'\n(include "ufb_infantry_support_events.inc")\n(include "ufb_static_weapon_events.inc")\n';
 }
-function expected(ref=reference){return [
+function expected(ref=reference){const quants=require('./quant-spread-policy.cjs');return quants.spreadFiles([
  {file:'set/target/ammo.set',text:ammo(read(ref,'set/target/ammo.set'))},
  {file:'set/target/human_fg.inc',text:fragTargets(read(ref,'set/target/human_fg.inc'))},
  {file:'set/target/human_ap.inc',text:antiTankTargets(read(ref,'set/target/human_ap.inc'))},
@@ -243,7 +244,7 @@ function expected(ref=reference){return [
  ...require('./infantry-extra.cjs').expected(ref),
  ...require('./infantry-logistics.cjs').expected(ref),
  ...require('./static-weapons.cjs').expected(ref)
-];}
+],p.join(resource,'map/multi'));}
 function verify(root=resource,ref=reference){
  for(const e of expected(ref))assert.equal(read(root,e.file),e.text,e.file+' differs from reviewed autonomy policy');
  const human=s.parse(read(root,'set/interaction_entity/human.inc')).children[0];

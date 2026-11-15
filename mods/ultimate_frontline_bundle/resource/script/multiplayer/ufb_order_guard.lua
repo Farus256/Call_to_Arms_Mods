@@ -28,10 +28,12 @@ loadNative("ufb_hatch", "hatch")
 loadNative("ufb_roh_ru", "memorial ru")
 
 local Guard = {}
+local Tactics = require([[/script/multiplayer/ufb_squad_tactics]])
+local nativeOrders = {}
 local waypointRetries = {}
 local stopped = false
 local protectedTags = {
-    "_ufb_cover_active", "_ufb_combat_busy", "_ufb_job_reserved", "_ufb_healing_active", "_ufb_rescue_active",
+    "_ufb_cover_active", "_ufb_combat_busy", "_ufb_job_reserved", "_ufb_healing_active", "_ufb_rescue_active", "_ufb_gun_job_active",
     "_ai_do_not_disturb", -- HF 4 reserves animations and temporary native jobs.
     "_ai_suppressed_by_mg", "_ai_mgunner", "_ai_reloading", "_ufb_hf_cover_active",
     "_lua_mi", "repairing", "tcrew", "ecrew", "ecrew_a", "ecrew_b",
@@ -67,7 +69,7 @@ function Guard.IsProtected(squad)
 end
 
 local function HasTemporaryHFJob(squad)
-    for _, tag in ipairs({"_ai_do_not_disturb", "_ai_suppressed_by_mg", "_ai_mgunner", "_ai_reloading", "_ufb_hf_cover_active", "_ufb_combat_busy", "_ufb_job_reserved", "_ufb_healing_active", "_ufb_rescue_active"}) do
+    for _, tag in ipairs({"_ai_do_not_disturb", "_ai_suppressed_by_mg", "_ai_mgunner", "_ai_reloading", "_ufb_hf_cover_active", "_ufb_combat_busy", "_ufb_job_reserved", "_ufb_healing_active", "_ufb_rescue_active", "_ufb_gun_job_active"}) do
         if BotApi.Scene:IsSquadTagged(squad, tag) then return true end
     end
     return false
@@ -77,6 +79,9 @@ function Guard.Wrap(order, needsWaypoint)
     local wrapped
     wrapped = function(squad)
         if stopped then return end
+        -- A fresh native decision owns the squad; retire the previous delayed
+        -- cohort command even if this decision takes a waypoint/fallback branch.
+        Tactics.Cancel(squad)
         if waypointRetries[squad] then
             BotApi.Events:KillQuantTimer(waypointRetries[squad].timer)
             waypointRetries[squad] = nil
@@ -99,23 +104,39 @@ function Guard.Wrap(order, needsWaypoint)
                     if stopped or waypointRetries[squad] ~= retry then return end
                     waypointRetries[squad] = nil
                     wrapped(squad)
-                end, 5000)
+                end, 750)
             end
             return
         end
         if needsWaypoint and #BotApi.Scene.Waypoints == 0 then
             return
         end
+        nativeOrders[squad] = wrapped
         return order(squad)
     end
     return wrapped
+end
+
+function Guard.Capture(squad, target)
+    if stopped or Guard.IsProtected(squad) then return end
+    return Tactics.Capture(squad, target, Guard.IsProtected, nativeOrders[squad] or function() end)
 end
 
 -- Called from OnGameStop in utility.lua. Do not Subscribe here: GEM keeps one
 -- handler per event, so an extra GameStart/GameEnd subscription silently replaces
 -- the mode's OnGameStart/OnGameStop (bots never initialise, then the game aborts).
 function Guard.Stop()
+    -- The native hook consumes this request on the simulation thread, before the next action.
+    if package.loaded.ufb_hatch and type(package.loadlib) == "function" then
+        local binaries = string.match(tostring(package.cpath or ""), "([^;]-[\\/]binaries[\\/]x64)[\\/]%?%.dll")
+        if binaries then
+            local ok, reset = pcall(package.loadlib, binaries .. [[\..\..\mods\ultimate_frontline_bundle\ufb_hatch.dll]], "luaopen_ufb_hatch_reset")
+            if ok and type(reset) == "function" then pcall(reset) end
+        end
+    end
     stopped = true
+    Tactics.Stop()
+    nativeOrders = {}
     for squad, retry in pairs(waypointRetries) do
         BotApi.Events:KillQuantTimer(retry.timer)
         waypointRetries[squad] = nil

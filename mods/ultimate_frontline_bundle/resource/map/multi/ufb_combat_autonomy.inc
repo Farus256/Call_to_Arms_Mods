@@ -9,7 +9,9 @@
 ; at: one reserved pair per player; no drop-orders or fire-mode changes.
 (define "ufb_combat_at"
  {"ufb/combat/at/acquire %team"
-  {condition {terms {"1.see_actors" {selector {source advanced}
+  {condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"if" {condition {type see_actors} {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  
@@ -70,6 +72,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {tag {tag _ufb_combat_busy}}
@@ -80,30 +83,25 @@
 {tag {tag _ufb_combat_critical_actor_%team}}
 {tag {tag _ufb_combat_ap_actor_%team}}
 {tag {tag _ufb_combat_smoke_actor_%team}}}
-}}
-{enemy {source advanced}
+}} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {include {team {team %foe}}
 {state {state operatable}}
-{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}}
-{distance {mode in_range} {min 12} {max 16}}
-{detection visible}
-{tag {"tag pair"} {"for selector" _ufb_combat_at_pick_%team} {"for enemy" _ufb_combat_at_target_%team}}}}}
-  {actions
-   {"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_combat_at_pick_%team}} {tag_add _ufb_combat_at_actor_%team}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_at_pick_%team}} {tag_remove _ufb_combat_at_pick_%team}}
-   {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_combat_at_actor_%team}} {effect ufb_reserve_job}}
-   
-   {"delay" {time 6}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_at_actor_%team}} {tag_remove _ufb_combat_at_actor_%team}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_at_target_%team}} {tag_remove _ufb_combat_at_target_%team}}
-   {"delay" {time 2}}
-   {"trigger" {name "ufb/combat/at/acquire %team"}}
+{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 12} {max 16}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_combat_at_pick_%team} {"for enemy" _ufb_combat_at_target_%team}}}
+{"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_combat_at_pick_%team}} {tag_add _ufb_combat_at_actor_%team}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_at_pick_%team}} {tag_remove _ufb_combat_at_pick_%team}}
+{"effect" {selector {ignore_captured_by_user 0} {tag _ufb_combat_at_actor_%team}} {effect ufb_reserve_job}}
+{"delay" {time 6}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_at_actor_%team}} {tag_remove _ufb_combat_at_actor_%team}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_at_target_%team}} {tag_remove _ufb_combat_at_target_%team}}
+{"delay" {time 2}}
+}
+{"delay" {time 0.5}}
+{"trigger" {name "ufb/combat/at/acquire %team"}}
   }
  }
  {"ufb/combat/at/apply %team"
-  {condition {expression "1 & !2"} {terms
-   {"1.see_actors" {selector {source advanced}
+  {condition {terms {"1.see_actors" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_at_actor_%team}}}
@@ -164,25 +162,19 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_combat_at_cooldown}}}
-}}
-{enemy {source advanced}
+}} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {select {tag {tag _ufb_combat_at_target_%team}}} {include {team {team %foe}}
-{state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}}
-{distance {mode in_range} {min 12} {max 16}}
-{detection visible}}
-   {"2.near" {units {ignore_captured_by_user 0} {tag _ufb_combat_at_target_%team}}
-{near_to {source advanced} {ignore_captured_by_user 0} {group {include {prop {prop human}} {team {team %team}} {state {state operatable}}} {exclude {state {state dead}}}}}
-{distance 12}}
-   
-  }}
-  {actions
-   {"con" {text "[UFB combat] at order: team %team"}}
-   {"effect" {selector {source advanced}
+{state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 12} {max 16}} {detection visible}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"switch" {"case" {condition {type near} {units {ignore_captured_by_user 0} {tag _ufb_combat_at_target_%team}} {near_to {source advanced} {ignore_captured_by_user 0} {group {include {prop {prop human}} {team {team %team}} {state {state operatable}}} {exclude {state {state dead}}}}} {distance 12}}} {"default"
+{"con" {text "[UFB combat] at order: team %team"}}
+{"effect" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_at_actor_%team}}}
@@ -242,6 +234,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}}
 }} {effect ufb_combat_at_cooldown}}
@@ -305,12 +298,15 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}}
 }
 {amount 1}} {action throw_at_grenade} {target {ignore_captured_by_user 0} {tag _ufb_combat_at_target_%team}}}
-   {"delay" {time 1}}
-   {"trigger" {name "ufb/combat/at/apply %team"}}
+{"delay" {time 1}}
+}}
+{"delay" {time 0.5}}
+{"trigger" {name "ufb/combat/at/apply %team"}}
   }
  }
 )
@@ -318,7 +314,10 @@
 ; launcher: one reserved pair per player; no drop-orders or fire-mode changes.
 (define "ufb_combat_launcher"
  {"ufb/combat/launcher/acquire %team"
-  {condition {terms {"1.see_actors" {selector {source advanced}
+  {condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0.25s
+{"delay" {time 0.25}}
+{"if" {condition {type see_actors} {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  
@@ -379,6 +378,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_combat_launcher_cooldown}}
@@ -388,30 +388,25 @@
 {tag {tag _ufb_combat_critical_actor_%team}}
 {tag {tag _ufb_combat_ap_actor_%team}}
 {tag {tag _ufb_combat_smoke_actor_%team}}}
-}}
-{enemy {source advanced}
+}} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {include {team {team %foe}}
 {state {state operatable}}
-{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}}
-{distance {mode in_range} {min 18} {max 25}}
-{detection visible}
-{tag {"tag pair"} {"for selector" _ufb_combat_launcher_pick_%team} {"for enemy" _ufb_combat_launcher_target_%team}}}}}
-  {actions
-   {"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_combat_launcher_pick_%team}} {tag_add _ufb_combat_launcher_actor_%team}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_launcher_pick_%team}} {tag_remove _ufb_combat_launcher_pick_%team}}
-   {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_combat_launcher_actor_%team}} {effect ufb_reserve_job}}
-   
-   {"delay" {time 6}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_launcher_actor_%team}} {tag_remove _ufb_combat_launcher_actor_%team}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_launcher_target_%team}} {tag_remove _ufb_combat_launcher_target_%team}}
-   {"delay" {time 2}}
-   {"trigger" {name "ufb/combat/launcher/acquire %team"}}
+{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 18} {max 25}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_combat_launcher_pick_%team} {"for enemy" _ufb_combat_launcher_target_%team}}}
+{"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_combat_launcher_pick_%team}} {tag_add _ufb_combat_launcher_actor_%team}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_launcher_pick_%team}} {tag_remove _ufb_combat_launcher_pick_%team}}
+{"effect" {selector {ignore_captured_by_user 0} {tag _ufb_combat_launcher_actor_%team}} {effect ufb_reserve_job}}
+{"delay" {time 6}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_launcher_actor_%team}} {tag_remove _ufb_combat_launcher_actor_%team}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_launcher_target_%team}} {tag_remove _ufb_combat_launcher_target_%team}}
+{"delay" {time 2}}
+}
+{"delay" {time 0.25}}
+{"trigger" {name "ufb/combat/launcher/acquire %team"}}
   }
  }
  {"ufb/combat/launcher/apply %team"
-  {condition {expression "1 & !2"} {terms
-   {"1.see_actors" {selector {source advanced}
+  {condition {terms {"1.see_actors" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_launcher_actor_%team}}}
@@ -472,24 +467,18 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_combat_launcher_cooldown}}}
-}}
-{enemy {source advanced}
+}} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {select {tag {tag _ufb_combat_launcher_target_%team}}} {include {team {team %foe}}
-{state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}}
-{distance {mode in_range} {min 18} {max 25}}
-{detection visible}}
-   {"2.near" {units {ignore_captured_by_user 0} {tag _ufb_combat_launcher_target_%team}}
-{near_to {source advanced} {ignore_captured_by_user 0} {group {include {prop {prop human}} {team {team %team}} {state {state operatable}}} {exclude {state {state dead}}}}}
-{distance 12}}
-   
-  }}
-  {actions
-   {"con" {text "[UFB combat] launcher order: team %team"}}
-   {"effect" {selector {source advanced}
+{state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 18} {max 25}} {detection visible}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"switch" {"case" {condition {type near} {units {ignore_captured_by_user 0} {tag _ufb_combat_launcher_target_%team}} {near_to {source advanced} {ignore_captured_by_user 0} {group {include {prop {prop human}} {team {team %team}} {state {state operatable}}} {exclude {state {state dead}}}}} {distance 12}}} {"default"
+{"con" {text "[UFB combat] launcher order: team %team"}}
+{"effect" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_launcher_actor_%team}}}
@@ -549,6 +538,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}}
 }} {effect ufb_combat_launcher_cooldown}}
 {"action" {selector {source advanced}
@@ -611,11 +601,14 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}}
 }
 {amount 1}} {action bazooka_shot} {target {ignore_captured_by_user 0} {tag _ufb_combat_launcher_target_%team}}}
-   {"delay" {time 1}}
-   {"trigger" {name "ufb/combat/launcher/apply %team"}}
+{"delay" {time 1}}
+}}
+{"delay" {time 0.5}}
+{"trigger" {name "ufb/combat/launcher/apply %team"}}
   }
  }
 )
@@ -684,6 +677,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_combat_critical_cooldown}}
@@ -716,8 +710,7 @@
   }
  }
  {"ufb/combat/critical/apply %team"
-  {condition {expression "1 & !2 & !3"} {terms
-   {"1.see_actors" {selector {source advanced}
+  {condition {expression "1 & !2"} {terms {"1.see_actors" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_critical_actor_%team}}}
@@ -778,22 +771,16 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_combat_critical_cooldown}}}
-}}
-{enemy {source advanced}
+}} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {select {tag {tag _ufb_combat_critical_target_%team}}} {include {team {team %foe}}
 {state {state operatable}}
 {with_item {type using} {item "mgun"}}
-{tag {tag _ufb_combat_cover_%team}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}}
-{distance {mode in_range} {min 18} {max 25}}
-{detection visible}}
-   {"2.near" {units {ignore_captured_by_user 0} {tag _ufb_combat_critical_target_%team}}
-{near_to {source advanced} {ignore_captured_by_user 0} {group {include {prop {prop human}} {team {team %team}} {state {state operatable}}} {exclude {state {state dead}}}}}
-{distance 12}}
-   {"3.see_actors" {selector {source advanced}
+{tag {tag _ufb_combat_cover_%team}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 18} {max 25}} {detection visible}} {"2.see_actors" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_critical_actor_%team}}}
@@ -854,21 +841,19 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_combat_critical_cooldown}}}
-}}
-{enemy {source advanced}
+}} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {include {team {team %foe}}
 {state {state operatable}}
-{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}}
-{distance {mode in_range} {min 0} {max 110}}
-{detection visible}}
-  }}
-  {actions
-   {"con" {text "[UFB combat] critical order: team %team"}}
-   {"effect" {selector {source advanced}
+{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 0} {max 110}} {detection visible}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"switch" {"case" {condition {type near} {units {ignore_captured_by_user 0} {tag _ufb_combat_critical_target_%team}} {near_to {source advanced} {ignore_captured_by_user 0} {group {include {prop {prop human}} {team {team %team}} {state {state operatable}}} {exclude {state {state dead}}}}} {distance 12}}} {"default"
+{"con" {text "[UFB combat] critical order: team %team"}}
+{"effect" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_critical_actor_%team}}}
@@ -928,6 +913,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}}
 }} {effect ufb_combat_critical_cooldown}}
 {"action" {selector {source advanced}
@@ -990,11 +976,14 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}}
 }
 {amount 1}} {action bazooka_shot} {target {ignore_captured_by_user 0} {tag _ufb_combat_critical_target_%team}}}
-   {"delay" {time 1}}
-   {"trigger" {name "ufb/combat/critical/apply %team"}}
+{"delay" {time 1}}
+}}
+{"delay" {time 0.5}}
+{"trigger" {name "ufb/combat/critical/apply %team"}}
   }
  }
 )
@@ -1002,7 +991,9 @@
 ; ap: one reserved pair per player; no drop-orders or fire-mode changes.
 (define "ufb_combat_ap"
  {"ufb/combat/ap/acquire %team"
-  {condition {terms {"1.see_actors" {selector {source advanced}
+  {condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"if" {condition {type see_actors} {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  
@@ -1063,6 +1054,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {tag {tag _ufb_combat_busy}}
@@ -1073,30 +1065,25 @@
 {tag {tag _ufb_combat_critical_actor_%team}}
 {tag {tag _ufb_combat_ap_actor_%team}}
 {tag {tag _ufb_combat_smoke_actor_%team}}}
-}}
-{enemy {source advanced}
+}} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {include {team {team %foe}}
 {state {state operatable}}
-{prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}}
-{distance {mode in_range} {min 14} {max 20}}
-{detection visible}
-{tag {"tag pair"} {"for selector" _ufb_combat_ap_pick_%team} {"for enemy" _ufb_combat_ap_target_%team}}}}}
-  {actions
-   {"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_combat_ap_pick_%team}} {tag_add _ufb_combat_ap_actor_%team}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_ap_pick_%team}} {tag_remove _ufb_combat_ap_pick_%team}}
-   {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_combat_ap_actor_%team}} {effect ufb_reserve_job}}
-   
-   {"delay" {time 6}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_ap_actor_%team}} {tag_remove _ufb_combat_ap_actor_%team}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_ap_target_%team}} {tag_remove _ufb_combat_ap_target_%team}}
-   {"delay" {time 2}}
-   {"trigger" {name "ufb/combat/ap/acquire %team"}}
+{prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 14} {max 20}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_combat_ap_pick_%team} {"for enemy" _ufb_combat_ap_target_%team}}}
+{"entity_state" {selector {amount 1} {ignore_captured_by_user 0} {tag _ufb_combat_ap_pick_%team}} {tag_add _ufb_combat_ap_actor_%team}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_ap_pick_%team}} {tag_remove _ufb_combat_ap_pick_%team}}
+{"effect" {selector {ignore_captured_by_user 0} {tag _ufb_combat_ap_actor_%team}} {effect ufb_reserve_job}}
+{"delay" {time 6}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_ap_actor_%team}} {tag_remove _ufb_combat_ap_actor_%team}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_combat_ap_target_%team}} {tag_remove _ufb_combat_ap_target_%team}}
+{"delay" {time 2}}
+}
+{"delay" {time 0.5}}
+{"trigger" {name "ufb/combat/ap/acquire %team"}}
   }
  }
  {"ufb/combat/ap/apply %team"
-  {condition {expression "1 & !2"} {terms
-   {"1.see_actors" {selector {source advanced}
+  {condition {terms {"1.see_actors" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_ap_actor_%team}}}
@@ -1157,25 +1144,19 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_combat_ap_cooldown}}}
-}}
-{enemy {source advanced}
+}} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {select {tag {tag _ufb_combat_ap_target_%team}}} {include {team {team %foe}}
-{state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}}
-{distance {mode in_range} {min 14} {max 20}}
-{detection visible}}
-   {"2.near" {units {ignore_captured_by_user 0} {tag _ufb_combat_ap_target_%team}}
-{near_to {source advanced} {ignore_captured_by_user 0} {group {include {prop {prop human}} {team {team %team}} {state {state operatable}}} {exclude {state {state dead}}}}}
-{distance 12}}
-   
-  }}
-  {actions
-   {"con" {text "[UFB combat] ap order: team %team"}}
-   {"effect" {selector {source advanced}
+{state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 14} {max 20}} {detection visible}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"switch" {"case" {condition {type near} {units {ignore_captured_by_user 0} {tag _ufb_combat_ap_target_%team}} {near_to {source advanced} {ignore_captured_by_user 0} {group {include {prop {prop human}} {team {team %team}} {state {state operatable}}} {exclude {state {state dead}}}}} {distance 12}}} {"default"
+{"con" {text "[UFB combat] ap order: team %team"}}
+{"effect" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {select {tag {tag _ufb_combat_ap_actor_%team}}}
@@ -1235,6 +1216,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}}
 }} {effect ufb_combat_ap_cooldown}}
@@ -1298,12 +1280,15 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}}
 }
 {amount 1}} {action throw_ap_grenade} {target {ignore_captured_by_user 0} {tag _ufb_combat_ap_target_%team}}}
-   {"delay" {time 1}}
-   {"trigger" {name "ufb/combat/ap/apply %team"}}
+{"delay" {time 1}}
+}}
+{"delay" {time 0.5}}
+{"trigger" {name "ufb/combat/ap/apply %team"}}
   }
  }
 )
@@ -1372,6 +1357,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {tag {tag _ufb_combat_busy}}
@@ -1454,6 +1440,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {tag {tag _ufb_combat_busy}}
@@ -1552,6 +1539,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {tag {tag _ufb_combat_busy}}
@@ -1631,6 +1619,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {with_item {type existance} {item "m15_wp"}}
@@ -1697,6 +1686,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {with_item {type existance} {item "m15_wp"}}
@@ -1764,6 +1754,7 @@
 {tag {tag _ai_at_launcher_80}}
 {tag {tag _ai_at_launcher_90}}
 {tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag _ufb_suppress_actor_%team}}
 {with_item {type using} {item "rocketlauncher"}}
 {with_item {type existance} {item "m15_wp"}}
@@ -1779,80 +1770,91 @@
 
 (define "ufb_combat_launcher_release"
  {"ufb/launcher/keep near %team"
-  {condition {terms {"1.see_actors" {selector {source advanced}
+  {condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0.25s
+{"delay" {time 0.25}}
+{"if" {condition {type see_actors} {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {include {prop {prop human}} {team {team %team}} {state {state operatable}} {with_item {type using} {item "rocketlauncher"}} {with_item {type amount} {item "weapon bullet"} {min 1}} }
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_launcher_keep}} {with_item {type using} {item "range_60"}} {with_item {type using} {item "range_70"}} {with_item {type using} {item "range_80"}} {with_item {type using} {item "range_90"}}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_launcher_keep}} {with_item {type using} {item "range_60"}} {with_item {type using} {item "range_70"}} {with_item {type using} {item "range_80"}} {with_item {type using} {item "range_90"}}}
 }} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {include {team {team %foe}}
 {state {state operatable}}
-{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 0} {max 70}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_launcher_keep_near_%team}}}}}
-  {actions
-   {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_keep_near_%team}} {effect ufb_launcher_keep}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_keep_near_%team}} {tag_remove _ufb_launcher_keep_near_%team}}
-   {"delay" {time 1}}
-   {"trigger" {name "ufb/launcher/keep near %team"}}
+{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 0} {max 70}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_launcher_keep_near_%team}}}
+{"effect" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_keep_near_%team}} {effect ufb_launcher_keep}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_keep_near_%team}} {tag_remove _ufb_launcher_keep_near_%team}}
+{"delay" {time 1}}
+}
+{"delay" {time 0.25}}
+{"trigger" {name "ufb/launcher/keep near %team"}}
   }
  }
  {"ufb/launcher/keep far %team"
-  {condition {terms {"1.see_actors" {selector {source advanced}
+  {condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"if" {condition {type see_actors} {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {include {prop {prop human}} {team {team %team}} {state {state operatable}} {with_item {type using} {item "rocketlauncher"}} {with_item {type amount} {item "weapon bullet"} {min 1}} }
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_launcher_keep}} {with_item {type using} {item "range_30"}} {with_item {type using} {item "range_40"}} {with_item {type using} {item "range_50"}}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_launcher_keep}} {with_item {type using} {item "range_30"}} {with_item {type using} {item "range_40"}} {with_item {type using} {item "range_50"}}}
 }} {enemy {source advanced}
 {ignore_captured_by_user 0}
 {group {include {team {team %foe}}
 {state {state operatable}}
-{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 0} {max 110}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_launcher_keep_far_%team}}}}}
-  {actions
-   {"effect" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_keep_far_%team}} {effect ufb_launcher_keep}}
-   {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_keep_far_%team}} {tag_remove _ufb_launcher_keep_far_%team}}
-   {"delay" {time 1}}
-   {"trigger" {name "ufb/launcher/keep far %team"}}
+{prop {prop vehicle}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop airborne}} {tag {tag bleeding}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}}}}} {distance {mode in_range} {min 0} {max 110}} {detection visible} {tag {"tag pair"} {"for selector" _ufb_launcher_keep_far_%team}}}
+{"effect" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_keep_far_%team}} {effect ufb_launcher_keep}}
+{"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_keep_far_%team}} {tag_remove _ufb_launcher_keep_far_%team}}
+{"delay" {time 1}}
+}
+{"delay" {time 0.5}}
+{"trigger" {name "ufb/launcher/keep far %team"}}
   }
  }
  {"ufb/launcher/tick %team"
-  {condition {terms {"1.entities" {selector {source advanced}
+  {condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0.25s
+{"delay" {time 0.25}}
+{"if" {condition {type entities} {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {include {prop {prop human}} {team {team %team}} {state {state operatable}} {with_item {type using} {item "rocketlauncher"}} {with_item {type amount} {item "weapon bullet"} {min 1}} }
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}}}
-}}}}}
-  {actions
-   {"effect" {selector {source advanced}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_gun_job_active}}}
+}}}
+{"effect" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {include {prop {prop human}} {team {team %team}} {state {state operatable}} {with_item {type using} {item "rocketlauncher"}} {with_item {type amount} {item "weapon bullet"} {min 1}} }
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_launcher_keep}} {tag {tag _ufb_launcher_seen}}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_launcher_keep}} {tag {tag _ufb_launcher_seen}}}
 }} {effect ufb_launcher_grace}}
-   {"if" {condition {type entities} {selector {source advanced}
+{"if" {condition {type entities} {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {include {prop {prop human}} {team {team %team}} {state {state operatable}} {with_item {type using} {item "rocketlauncher"}} {with_item {type amount} {item "weapon bullet"} {min 1}} {tag {tag _ufb_launcher_ready}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_launcher_keep}}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_launcher_keep}}}
 }}}
     {"entity_state" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {include {prop {prop human}} {team {team %team}} {state {state operatable}} {with_item {type using} {item "rocketlauncher"}} {with_item {type amount} {item "weapon bullet"} {min 1}} {tag {tag _ufb_launcher_ready}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_launcher_keep}}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_launcher_keep}}}
 }} {tag_add _ufb_launcher_stow_%team}}
     {"inventory" {selector {source advanced}
 {ignore_captured_by_user 1}
 {group
  {include {prop {prop human}} {team {team %team}} {state {state operatable}} {with_item {type using} {item "rocketlauncher"}} {with_item {type amount} {item "weapon bullet"} {min 1}} {tag {tag _ufb_launcher_ready}}}
- {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_launcher_keep}}}
+ {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {prop {prop crew}} {prop {prop repairing}} {prop {prop throwing}} {tag {tag _ufb_firing}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_surrendered}} {tag {tag _lua_mi}} {tag {tag _lua_ignore}} {tag {tag _ai_do_not_disturb}} {tag {tag repairing}} {tag {tag reloading}} {tag {tag bleeding}} {tag {tag _bleeding}} {tag {tag wounded}} {tag {tag _bleedout_}} {tag {tag wounded_animation_playing}} {tag {tag medic}} {tag {tag _ai_medic}} {tag {tag bot_medic}} {tag {tag _ufb_healing_active}} {tag {tag _ai_wounded_carrier}} {tag {tag _ai_ap_grenade}} {tag {tag _ai_at_grenade}} {tag {tag _ai_smoke_grenade}} {tag {tag _ai_suppressed_by_mg}} {tag {tag _ai_mgunner}} {tag {tag _ai_reloading}} {tag {tag _ai_looting_weapon}} {tag {tag crew}} {tag {tag tcrew}} {tag {tag ecrew}} {tag {tag ecrew_a}} {tag {tag ecrew_b}} {tag {tag bot_arty}} {tag {tag bot_aa_guard}} {tag {tag _ufb_crew_safe}} {tag {tag _ufb_hf_cover_active}} {tag {tag _ai_wirecutter_in_action}} {tag {tag bot_inf_flank_in_progress}} {tag {tag _ufb_smoke_120m_actor}} {tag {tag _ufb_smoke_60m_actor}} {tag {tag _ufb_smoke_wirecutter_actor}} {tag {tag _ai_at_launcher_30}} {tag {tag _ai_at_launcher_40}} {tag {tag _ai_at_launcher_50}} {tag {tag _ai_at_launcher_60}} {tag {tag _ai_at_launcher_70}} {tag {tag _ai_at_launcher_80}} {tag {tag _ai_at_launcher_90}} {tag {tag _ufb_rescue_active}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_launcher_keep}}}
 }} {action take} {item "weapon bullet"}}
     {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%team}} {tag_remove _ufb_launcher_ready}}
     {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%team}} {tag_remove _ufb_launcher_seen}}
     {"entity_state" {selector {ignore_captured_by_user 0} {tag _ufb_launcher_stow_%team}} {tag_remove _ufb_launcher_stow_%team}}
     {"con" {text "[UFB combat] launcher stowed: team %team"}}
    }
-   {"delay" {time 2}}
-   {"trigger" {name "ufb/launcher/tick %team"}}
+{"delay" {time 2}}
+}
+{"delay" {time 0.25}}
+{"trigger" {name "ufb/launcher/tick %team"}}
   }
  }
 )

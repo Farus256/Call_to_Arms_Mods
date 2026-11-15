@@ -24,6 +24,18 @@ const edits=[
  [0x33919,0xfde9,0,'zip path size: ANSI instead of UTF-8'],
  [0x33947,0xfde9,0,'zip path text: ANSI instead of UTF-8']
 ];
+// The native formatter still owns 25 string cells. Redistribute every casualty
+// over the first three groups; the last two groups become empty compatibility widgets.
+const columnEdits=[
+ [0xf0ce,'48b8cdcccccccccccccc49f7e048c1ea02488d0492','48b8abaaaaaaaaaaaaaa49f7e048c1ea01488d0452','divide casualty count by three'],
+ [0xf111,'33c04983f8030f97c04803c248894598488955a0','48c745980000000048c745a0000000000f1f4000','zero groups four and five'],
+ [0xf471,'4983fc04','4983fc02','last visible separator'],
+ [0x42e90,Buffer.from('[GUI] Five-column KIA memorial written: ').toString('hex'),Buffer.from('[GUI] Three-col.  KIA memorial written: ').toString('hex'),'layout log label']
+];
+function rvaOffset(buffer,rva){const pe=buffer.readUInt32LE(0x3c),count=buffer.readUInt16LE(pe+6),table=pe+24+buffer.readUInt16LE(pe+20);
+ for(let i=0;i<count;i++){const at=table+i*40,va=buffer.readUInt32LE(at+12),size=buffer.readUInt32LE(at+16);if(rva>=va&&rva<va+size)return rva-va+buffer.readUInt32LE(at+20);}throw Error('Unmapped ROH RVA '+rva.toString(16));}
+function patchColumns(buffer){const out=Buffer.from(buffer);for(const [rva,before,after,label]of columnEdits){const a=Buffer.from(before,'hex'),b=Buffer.from(after,'hex'),offset=rvaOffset(out,rva);assert.equal(a.length,b.length,label);const value=out.subarray(offset,offset+a.length);assert(value.equals(a)||value.equals(b),'Unknown formatter: '+label);b.copy(out,offset);}return out;}
+const columnsDone=buffer=>columnEdits.every(([rva,,after])=>{const value=Buffer.from(after,'hex'),offset=rvaOffset(buffer,rva);return buffer.subarray(offset,offset+value.length).equals(value);});
 const modeLine='        ammunition = "battlezones", -- ammuntion aka "domination"\n';
 const addedMode='        annihilation = "battlezones",\n';
 function patchDll(buffer){
@@ -38,13 +50,16 @@ function patchLua(text){
 }
 // Only the five memorial columns: the score table above keeps the game's sizes.
 function patchXml(text){
- assert(text.includes('<Text value="Killed In Action"/>'),'PageGameResult.xml changed');
+ assert(text.includes('<Text value="Killed In Action"/>')||text.includes(title),'PageGameResult.xml changed');
  text=text.replace(/<Text value="Killed In Action"\/>(\s*)<TextStyle value="x\.s\(18\)/,(_,gap)=>'<Text value="'+title+'"/>'+gap+'<TextStyle value="x.s(24)');
  let columns=0;
- text=text.replace(/<FlowPanel id="fallen_person_col_\d"[\s\S]*?<\/FlowPanel>/g,block=>{columns++;return block
+ text=text.replace(/<FlowPanel id="fallen_person_col_(\d)"[\s\S]*?<\/FlowPanel>/g,(block,index)=>{columns++;block=block
   .replace('<PreferredSize x="390"/>','<PreferredSize x="460"/>').replace('<PreferredSize x="60"/>','<PreferredSize x="90"/>')
   .replace('<PreferredSize x="170"/>','<PreferredSize x="190"/>').replace('<PreferredSize x="130"/>','<PreferredSize x="150"/>')
-  .replaceAll('x.s(10)','x.s(12)');});
+  .replaceAll('x.s(10)','x.s(12)');
+  if(Number(index)>3&&!block.includes('<Visible value="false"/>'))block=block.replace(/(<FlowPanel[^>]+>)/,'$1\n<Visible value="false"/>');
+  if(Number(index)<=3)block=block.replace(/(<TextStyle[^>]+\/>)(\s*<\/StaticText>)/g,'$1\n<TextClip value="true" showHint="true"/>$2');
+  return block;});
  assert.equal(columns,5,'memorial columns');assert(text.includes(title),'title');
  return text;
 }
@@ -56,7 +71,9 @@ function state(){
  assert(luaDone||sha(Buffer.from(l,'latin1')).startsWith(sources.lua),'Unknown bot.main.lua: the mod was updated');
  const x=fs.readFileSync(xml,'utf8'),xmlDone=x.includes(title);
  assert(xmlDone||sha(Buffer.from(x,'utf8')).startsWith(sources.xml),'Unknown PageGameResult.xml: the mod was updated');
- return {gameBuildMatches:sha(fs.readFileSync(exe)).startsWith(gameBuild),dllPatched:patched,luaPatched:luaDone,xmlPatched:xmlDone};
+ const groups=[...x.matchAll(/<FlowPanel id="fallen_person_col_(\d)"[\s\S]*?<\/FlowPanel>/g)];
+ const threeColumns=columnsDone(d),xmlThreeColumns=groups.length===5&&groups.every(m=>m[0].includes('<Visible value="false"/>')===(Number(m[1])>3));
+ return {gameBuildMatches:sha(fs.readFileSync(exe)).startsWith(gameBuild),dllPatched:patched,luaPatched:luaDone,xmlPatched:xmlDone,threeColumns,xmlThreeColumns};
 }
 if(require.main===module){
  const now=state();
@@ -64,9 +81,10 @@ if(require.main===module){
  if(process.argv.includes('--apply')){
   fs.mkdirSync(backup,{recursive:true});
   if(!now.dllPatched){const d=fs.readFileSync(dll);fs.writeFileSync(p.join(backup,'fallen_memorial.dll'),d);fs.writeFileSync(dll,patchDll(d));}
+  if(!now.threeColumns){const d=fs.readFileSync(dll);if(!fs.existsSync(p.join(backup,'fallen_memorial-before-three-columns.dll')))fs.writeFileSync(p.join(backup,'fallen_memorial-before-three-columns.dll'),d);fs.writeFileSync(dll,patchColumns(d));}
   if(!now.luaPatched){const l=fs.readFileSync(lua,'latin1');fs.writeFileSync(p.join(backup,'bot.main.lua'),l,'latin1');fs.writeFileSync(lua,patchLua(l),'latin1');}
-  if(!now.xmlPatched){const x=fs.readFileSync(xml,'utf8');fs.writeFileSync(p.join(backup,'PageGameResult.xml'),x,'utf8');fs.writeFileSync(xml,patchXml(x),'utf8');}
+  if(!now.xmlPatched||!now.xmlThreeColumns){const x=fs.readFileSync(xml,'utf8');if(!fs.existsSync(p.join(backup,'PageGameResult-before-three-columns.xml')))fs.writeFileSync(p.join(backup,'PageGameResult-before-three-columns.xml'),x,'utf8');fs.writeFileSync(xml,patchXml(x),'utf8');}
  }
  console.log(JSON.stringify(state()));
 }
-module.exports={edits,patchDll,patchLua,patchXml,state};
+module.exports={edits,columnEdits,rvaOffset,patchDll,patchColumns,columnsDone,patchLua,patchXml,state};

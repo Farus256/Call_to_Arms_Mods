@@ -58,6 +58,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -86,6 +88,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -114,6 +118,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -142,6 +148,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -170,6 +178,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -240,10 +250,10 @@
 
 ;//LUA related scripts
 			{"hf lua/lua forced order"
-				{condition
-					{terms
-						{"1.entities"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0.25s
+{"delay" {time 0.25}}
+{"if" {condition {type entities} {selector
 								{source advanced}
 								{group
 									{select
@@ -297,17 +307,15 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 300}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -353,27 +361,31 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{tag_add _lua_need_next_order}
 					}
-					{"delay"
+{"delay"
 						{time 60}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _lua_need_next_order}
 						}
 						{tag_remove _lua_need_next_order}
 					}
-					{"delay"
+{"delay"
 						{time 1}
 					}
-					{"trigger"
+}
+{"delay" {time 0.75}}
+{"trigger"
 						{name "hf lua/lua forced order"}
 					}
-				}
+  }
 			}
 
 ;// Officers and other RP elements
@@ -440,6 +452,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -499,6 +513,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -588,6 +604,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -647,6 +665,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -683,6 +703,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -762,6 +784,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -821,6 +845,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -857,6 +883,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -936,6 +964,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -995,6 +1025,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -1031,6 +1063,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -1102,6 +1136,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -1152,6 +1188,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -1222,6 +1260,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -1298,6 +1338,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1349,6 +1391,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1401,6 +1445,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1460,6 +1506,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1505,6 +1553,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1568,6 +1618,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1615,6 +1667,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -1665,6 +1719,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -1735,6 +1791,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -1811,6 +1869,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1862,6 +1922,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1914,6 +1976,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -1973,6 +2037,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2018,6 +2084,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2081,6 +2149,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2128,6 +2198,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -2178,6 +2250,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -2248,6 +2322,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -2324,6 +2400,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2375,6 +2453,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2427,6 +2507,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2486,6 +2568,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2531,6 +2615,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2594,6 +2680,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2641,6 +2729,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -2691,6 +2781,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -2761,6 +2853,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -2837,6 +2931,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2888,6 +2984,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2940,6 +3038,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -2999,6 +3099,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3044,6 +3146,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3107,6 +3211,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3154,6 +3260,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -3204,6 +3312,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -3274,6 +3384,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{amount 1
@@ -3350,6 +3462,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3401,6 +3515,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3453,6 +3569,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3512,6 +3630,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3557,6 +3677,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3620,6 +3742,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -3717,6 +3841,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{sort
@@ -3773,6 +3899,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -3820,6 +3948,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -3867,6 +3997,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -3914,6 +4046,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -3961,6 +4095,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -4008,6 +4144,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -4051,6 +4189,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 1
@@ -4110,6 +4250,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{sort
@@ -4132,11 +4274,125 @@
 				}
 			}
 			{"hf officer system/airstrike fail var1"
-				{condition
-					{expression "1 & 2 & !3"}
-					{terms
-						{"1.entities"
-							{selector
+				{condition {expression "1 & !2"} {terms {"1.entities" {selector
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag officer}
+										}
+									}
+									{include
+										{state
+											{state user_control}
+										}
+										{state
+											{state operatable}
+										}
+										{prop
+											{prop human}
+										}
+									}
+									{exclude
+										{state
+											{state dead}
+										}
+										{state
+											{state inactive}
+										}
+										{tag
+											{tag _bot}
+										}
+										{tag
+											{tag bot}
+										}
+										{tag
+											{tag _lua_mi}
+										}
+										{tag
+											{tag wounded}
+										}
+										{tag
+											{tag bleeding}
+										}
+										{tag
+											{tag _bleeding}
+										}
+										{tag
+											{tag wounded_animation_playing}
+										}
+									
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}
+								}
+							}} {"2.entities" {selector
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag signaller}
+										}
+									}
+									{include
+										{state
+											{state user_control}
+										}
+										{state
+											{state operatable}
+										}
+										{prop
+											{prop human}
+										}
+									}
+									{exclude
+										{state
+											{state dead}
+										}
+										{state
+											{state inactive}
+										}
+										{tag
+											{tag _bot}
+										}
+										{tag
+											{tag bot}
+										}
+										{tag
+											{tag _lua_mi}
+										}
+										{tag
+											{tag wounded}
+										}
+										{tag
+											{tag bleeding}
+										}
+										{tag
+											{tag _bleeding}
+										}
+										{tag
+											{tag wounded_animation_playing}
+										}
+									
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}
+								}
+							}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0s
+{"if" {condition {type entities} {selector
 								{source advanced}
 								{group
 									{include
@@ -4185,135 +4441,15 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
-}
-								}
-							}
-						}
-						{"2.entities"
-							{selector
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag officer}
-										}
-									}
-									{include
-										{state
-											{state user_control}
-										}
-										{state
-											{state operatable}
-										}
-										{prop
-											{prop human}
-										}
-									}
-									{exclude
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{tag
-											{tag _bot}
-										}
-										{tag
-											{tag bot}
-										}
-										{tag
-											{tag _lua_mi}
-										}
-										{tag
-											{tag wounded}
-										}
-										{tag
-											{tag bleeding}
-										}
-										{tag
-											{tag _bleeding}
-										}
-										{tag
-											{tag wounded_animation_playing}
-										}
-									
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
 
-{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-						}
-						{"3.entities"
-							{selector
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag signaller}
-										}
-									}
-									{include
-										{state
-											{state user_control}
-										}
-										{state
-											{state operatable}
-										}
-										{prop
-											{prop human}
-										}
-									}
-									{exclude
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{tag
-											{tag _bot}
-										}
-										{tag
-											{tag bot}
-										}
-										{tag
-											{tag _lua_mi}
-										}
-										{tag
-											{tag wounded}
-										}
-										{tag
-											{tag bleeding}
-										}
-										{tag
-											{tag _bleeding}
-										}
-										{tag
-											{tag wounded_animation_playing}
-										}
-									
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-}
-								}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"delete"
+{"delete"
 						{selector
 							{source advanced}
 								{group
@@ -4348,14 +4484,16 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 0.5}
 					}
-					{"talk"
+{"talk"
 						{selector
 							{source advanced}
 							{group
@@ -4381,6 +4519,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -4388,74 +4528,18 @@
 						}
 						{text "mission/multi/hq_failed_airstrike_var1"}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"trigger"
+}
+{"delay" {time 1}}
+{"trigger"
 						{name "hf officer system/airstrike fail var1"}
 					}
-				}
+  }
 			}
 			{"hf officer system/airstrike fail var2"
-				{condition
-					{expression "1 & !2 & 3"}
-					{terms
-						{"1.entities"
-							{selector
-								{source advanced}
-								{group
-									{include
-										{prop
-											{prop airborne}
-										}
-										{state
-											{state operatable}
-										}
-										{state
-											{state inhabited}
-										}
-									}
-									{exclude
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{tag
-											{tag airstrike_ai}
-										}
-										{tag
-											{tag airstrike_rus}
-										}
-										{tag
-											{tag airstrike_ger}
-										}	
-										{tag
-											{tag airstrike_fin}
-										}	
-										{tag
-											{tag airstrike_usa}
-										}
-										{tag
-											{tag airstrike_eng}
-										}	
-										{tag
-											{tag hidden}
-										}
-									
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-}
-								}
-							}
-						}
-						{"2.entities"
-							{selector
+				{condition {expression "!1 & 2"} {terms {"1.entities" {selector
 								{source advanced}
 								{group
 									{select
@@ -4509,12 +4593,11 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-						}
-						{"3.entities"
-							{selector
+							}} {"2.entities" {selector
 								{source advanced}
 								{group
 									{select
@@ -4568,17 +4651,70 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0s
+{"if" {condition {type entities} {selector
+								{source advanced}
+								{group
+									{include
+										{prop
+											{prop airborne}
+										}
+										{state
+											{state operatable}
+										}
+										{state
+											{state inhabited}
+										}
+									}
+									{exclude
+										{state
+											{state dead}
+										}
+										{state
+											{state inactive}
+										}
+										{tag
+											{tag airstrike_ai}
+										}
+										{tag
+											{tag airstrike_rus}
+										}
+										{tag
+											{tag airstrike_ger}
+										}	
+										{tag
+											{tag airstrike_fin}
+										}	
+										{tag
+											{tag airstrike_usa}
+										}
+										{tag
+											{tag airstrike_eng}
+										}	
+										{tag
+											{tag hidden}
+										}
+									
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}
+								}
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"delete"
+{"delete"
 						{selector
 							{source advanced}
 								{group
@@ -4613,14 +4749,16 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 0.5}
 					}
-					{"talk"
+{"talk"
 						{selector
 							{source advanced}
 							{group
@@ -4646,6 +4784,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -4653,74 +4793,18 @@
 						}
 						{text "mission/multi/hq_failed_airstrike_var2"}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"trigger"
+}
+{"delay" {time 1}}
+{"trigger"
 						{name "hf officer system/airstrike fail var2"}
 					}
-				}
+  }
 			}
 			{"hf officer system/airstrike fail var3"
-				{condition
-					{expression "1 & !2 & !3"}
-					{terms
-						{"1.entities"
-							{selector
-								{source advanced}
-								{group
-									{include
-										{prop
-											{prop airborne}
-										}
-										{state
-											{state operatable}
-										}
-										{state
-											{state inhabited}
-										}
-									}
-									{exclude
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{tag
-											{tag airstrike_ai}
-										}
-										{tag
-											{tag airstrike_rus}
-										}
-										{tag
-											{tag airstrike_ger}
-										}	
-										{tag
-											{tag airstrike_fin}
-										}	
-										{tag
-											{tag airstrike_usa}
-										}
-										{tag
-											{tag airstrike_eng}
-										}	
-										{tag
-											{tag hidden}
-										}
-									
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-}
-								}
-							}
-						}
-						{"2.entities"
-							{selector
+				{condition {expression "!1 & !2"} {terms {"1.entities" {selector
 								{source advanced}
 								{group
 									{select
@@ -4774,12 +4858,11 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-						}
-						{"3.entities"
-							{selector
+							}} {"2.entities" {selector
 								{source advanced}
 								{group
 									{select
@@ -4833,17 +4916,70 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0s
+{"if" {condition {type entities} {selector
+								{source advanced}
+								{group
+									{include
+										{prop
+											{prop airborne}
+										}
+										{state
+											{state operatable}
+										}
+										{state
+											{state inhabited}
+										}
+									}
+									{exclude
+										{state
+											{state dead}
+										}
+										{state
+											{state inactive}
+										}
+										{tag
+											{tag airstrike_ai}
+										}
+										{tag
+											{tag airstrike_rus}
+										}
+										{tag
+											{tag airstrike_ger}
+										}	
+										{tag
+											{tag airstrike_fin}
+										}	
+										{tag
+											{tag airstrike_usa}
+										}
+										{tag
+											{tag airstrike_eng}
+										}	
+										{tag
+											{tag hidden}
+										}
+									
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}
+								}
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"delete"
+{"delete"
 						{selector
 							{source advanced}
 								{group
@@ -4878,14 +5014,16 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 0.5}
 					}
-					{"talk"
+{"talk"
 						{selector
 							{source advanced}
 							{group
@@ -4911,6 +5049,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -4918,13 +5058,15 @@
 						}
 						{text "mission/multi/hq_failed_airstrike_var3"}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"trigger"
+}
+{"delay" {time 1}}
+{"trigger"
 						{name "hf officer system/airstrike fail var3"}
 					}
-				}
+  }
 			}
 			{"hf officer system/fire mission approved"
 				{condition
@@ -4989,6 +5131,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -5048,6 +5192,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -5137,6 +5283,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -5196,6 +5344,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -5227,6 +5377,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							{amount 1
@@ -5306,6 +5458,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -5365,6 +5519,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -5396,6 +5552,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							{amount 1
@@ -5475,6 +5633,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -5534,6 +5694,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -5565,6 +5727,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							{amount 1
@@ -5585,10 +5749,10 @@
 
 (define "hf_looting_body"
 			{"hf inf ai/looting weapon/looting body: %tag"
-				{condition
-					{terms
-						{"1.see_actors"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0.75s
+{"delay" {time 0.75}}
+{"if" {condition {type see_actors} {selector
 								{source advanced}
 								{group
 									{select
@@ -5628,12 +5792,13 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 								{amount 1
 								}
-							}
-							{enemy
+							} {enemy
 								{source advanced}
 								{group
 									{select
@@ -5699,40 +5864,33 @@
 										}
 									}
 								}
-							}
-							{distance
+							} {distance
 								{mode near_than}
 								{meters 10}
-							}
-							{tag
+							} {tag
 								{"tag pair"}
 								{"for selector" _ai_looting_%tag}
 								{"for enemy" _ai_looting_target_%tag}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_looting_%tag}
 						}
 						{tag_add _lua_mi}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_looting_%tag}
 						}
 						{tag_add _ai_looting_weapon}
 					}
-					; UFB: retain the soldier's existing stance and squad following.
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"inventory"
+{"inventory"
 						{selector
 							{source advanced}
 							{group
@@ -5752,6 +5910,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
@@ -5774,43 +5934,45 @@
 							}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 4}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_looting_%tag}
 						}
 						{tag_remove _lua_mi}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_looting_%tag}
 						}
 						{tag_remove _ai_looting_weapon}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_looting_%tag}
 						}
 						{tag_remove _ai_looting_%tag}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_looting_target_%tag}
 						}
 						{tag_remove _ai_looting_target_%tag}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"trigger"
+}
+{"delay" {time 0.25}}
+{"trigger"
 						{name "hf inf ai/looting weapon/looting body: %tag"}
 					}
-				}
+  }
 			}
 )
 
@@ -5954,6 +6116,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -5996,6 +6160,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							{amount 1
@@ -6077,6 +6243,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -6096,6 +6264,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -6189,6 +6359,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 																}
 																{sort
@@ -6318,6 +6490,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 																}
 															}
@@ -6396,6 +6570,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -6574,6 +6750,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -6624,6 +6802,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -6712,9 +6892,15 @@
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
 													{"actor_state"
-														{selector
-															{tag ai_using_mine_detector}
-														}
+														{selector {source advanced}  {group {select {tag {tag "ai_using_mine_detector"}}}  {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}}
 														{drop orders}
 														{control AI}
 														{fire_mode open}
@@ -6752,6 +6938,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
@@ -6787,6 +6975,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -6818,6 +7008,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
@@ -6929,6 +7121,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -6990,6 +7184,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -7042,6 +7238,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -7078,7 +7276,7 @@
 																	{tag
 																		{tag bot_arty_move}
 																	}
-																}
+																 {prop {prop cannon}} {state {state operatable}} {state {state inhabited}} }
 																{exclude
 																	{tag
 																		{tag range_less_than_320}
@@ -7093,7 +7291,9 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
-}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+ {state {state user_control}} }
 															}
 														}
 														{drop "orders sensor"}
@@ -7148,6 +7348,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -7239,6 +7441,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -7379,6 +7583,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -7431,6 +7637,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -7480,6 +7688,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -7521,14 +7731,16 @@
 																	{tag
 																		{tag range_less_than_320}
 																	}
-																}
+																 {prop {prop cannon}} {state {state operatable}} {state {state inhabited}} }
 															
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
-}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+ {state {state user_control}} }
 }
 														}
 														{drop "orders sensor"}
@@ -7580,6 +7792,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -7668,6 +7882,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -7802,6 +8018,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -7854,6 +8072,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -7903,6 +8123,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -7944,14 +8166,16 @@
 																	{tag
 																		{tag range_more_than_400}
 																	}
-																}
+																 {prop {prop cannon}} {state {state operatable}} {state {state inhabited}} }
 															
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
-}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+ {state {state user_control}} }
 }
 														}
 														{drop "orders sensor"}
@@ -8003,6 +8227,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -8091,6 +8317,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -8247,6 +8475,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -8276,7 +8506,10 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
-}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+ {state {state user_control}} }
+															{include {prop {prop cannon}} {state {state operatable}} {state {state inhabited}}}
 															}
 														}
 														{drop orders}
@@ -8335,6 +8568,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -8389,6 +8624,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -8440,6 +8677,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -8527,6 +8766,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -8616,6 +8857,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -8703,6 +8946,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -8792,6 +9037,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -8879,6 +9126,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -9033,6 +9282,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -9052,14 +9303,16 @@
 																	{tag
 																		{tag range_less_than_320}
 																	}
-																}
+																 {prop {prop cannon}} {state {state operatable}} {state {state inhabited}} }
 															
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
-}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+ {state {state user_control}} }
 }
 														}
 														{drop orders}
@@ -9117,6 +9370,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -9170,6 +9425,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -9218,6 +9475,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -9302,6 +9561,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -9388,6 +9649,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -9472,6 +9735,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -9558,6 +9823,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -9642,6 +9909,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -9796,6 +10065,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -9815,14 +10086,16 @@
 																	{tag
 																		{tag range_more_than_400}
 																	}
-																}
+																 {prop {prop cannon}} {state {state operatable}} {state {state inhabited}} }
 															
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
-}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+ {state {state user_control}} }
 }
 														}
 														{drop orders}
@@ -9880,6 +10153,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -9933,6 +10208,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -9981,6 +10258,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -10065,6 +10344,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -10151,6 +10432,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -10235,6 +10518,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -10321,6 +10606,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -10405,6 +10692,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -10586,7 +10875,10 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
-}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+ {state {state user_control}} }
+															{include {prop {prop cannon}} {state {state operatable}} {state {state inhabited}}}
 															}
 														}
 														{drop "orders sensor"}
@@ -10744,12 +11036,18 @@
 														{tag_remove bot_aa_guard_move}
 													}
 													{"actor_state"
-														{selector
-															{amount 1
-															}
-															{tag bot_aa_guard}
-															{state "not dead"}
-														}
+														{selector {source advanced} {amount 1
+															} {group {select {tag {tag "bot_aa_guard"}}}  {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state dead}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+ {state {state user_control}} }
+{include {prop {prop cannon}} {state {state operatable}} {state {state inhabited}}}
+}}
 														{drop orders}
 														{move_mode hold}
 														{ai_move
@@ -10962,11 +11260,148 @@
 			
 ;// Medic AI
 			{"hf inf ai/wounded evac/wounded pick up"
-				{condition
-					{expression "1 & !2 & !3"}
-					{terms
-						{"1.see_actors"
-							{selector
+				{condition {expression "!1 & !2"} {terms {"1.see_actors" {selector
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag _ai_wounded_carrier}
+										}
+									}
+									{include
+										{state
+											{state operatable}
+										}
+									}
+									{exclude
+										{tag
+											{tag bot_medic}
+										}
+										{tag
+											{tag _ai_do_not_disturb}
+										}
+										{state
+											{state dead}
+										}
+										{state
+											{state inactive}
+										}
+										{state
+											{state user_control}
+										}
+										{tag
+											{tag _ai_wounded_carrier_selected}
+										}
+										{tag
+											{tag _ai_wounded_carrier_linked}
+										}
+										{tag
+											{tag _ai_medic}
+										}
+										{tag
+											{tag bleeding}
+										}
+									
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}
+								}
+							} {enemy
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag _ai_medic}
+										}
+									}
+									{include
+										{state
+											{state operatable}
+										}
+									}
+									{exclude
+										{tag
+											{tag bleeding}
+										}
+									}
+								}
+							} {distance
+								{mode near_than}
+								{meters 30}
+							}} {"2.see_actors" {selector
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag _ai_wounded_carrier}
+										}
+									}
+									{include
+										{state
+											{state operatable}
+										}
+									}
+									{exclude
+										{state
+											{state dead}
+										}
+										{state
+											{state inactive}
+										}
+										{tag
+											{tag bleeding}
+										}
+									
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}
+								}
+							} {enemy
+								{source advanced}
+								{group
+									{select
+										{zone_ex
+											{zone "gamezone"}
+										}
+									}
+									{include
+										{state
+											{state user_control}
+										}
+										{state
+											{state operatable}
+										}
+									}
+									{exclude
+										{state
+											{state dead}
+										}
+										{state
+											{state inactive}
+										}
+										{tag
+											{tag bleeding}
+										}
+									}
+								}
+							} {distance
+								{mode near_than}
+								{meters 30}
+							}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0s
+{"if" {condition {type see_actors} {selector
 								{source advanced}
 								{group
 									{select
@@ -11020,10 +11455,11 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-							{enemy
+							} {enemy
 								{source advanced}
 								{group
 									{select
@@ -11054,169 +11490,18 @@
 										}
 									}
 								}
-							}
-							{distance
+							} {distance
 								{mode near_than}
 								{meters 10}
-							}
-							{tag
+							} {tag
 								{"tag pair"}
 								{"for selector" _ai_wounded_carrier}
 								{"for enemy" _ai_wounded_target}
-							}
-						}
-						{"2.see_actors"
-							{selector
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _ai_wounded_carrier}
-										}
-									}
-									{include
-										{state
-											{state operatable}
-										}
-									}
-									{exclude
-										{tag
-											{tag bot_medic}
-										}
-										{tag
-											{tag _ai_do_not_disturb}
-										}
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{state
-											{state user_control}
-										}
-										{tag
-											{tag _ai_wounded_carrier_selected}
-										}
-										{tag
-											{tag _ai_wounded_carrier_linked}
-										}
-										{tag
-											{tag _ai_medic}
-										}
-										{tag
-											{tag bleeding}
-										}
-									
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-}
-								}
-							}
-							{enemy
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _ai_medic}
-										}
-									}
-									{include
-										{state
-											{state operatable}
-										}
-									}
-									{exclude
-										{tag
-											{tag bleeding}
-										}
-									}
-								}
-							}
-							{distance
-								{mode near_than}
-								{meters 30}
-							}
-						}
-						{"3.see_actors"
-							{selector
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _ai_wounded_carrier}
-										}
-									}
-									{include
-										{state
-											{state operatable}
-										}
-									}
-									{exclude
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{tag
-											{tag bleeding}
-										}
-									
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-}
-								}
-							}
-							{enemy
-								{source advanced}
-								{group
-									{select
-										{zone_ex
-											{zone "gamezone"}
-										}
-									}
-									{include
-										{state
-											{state user_control}
-										}
-										{state
-											{state operatable}
-										}
-									}
-									{exclude
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{tag
-											{tag bleeding}
-										}
-									}
-								}
-							}
-							{distance
-								{mode near_than}
-								{meters 30}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{amount 1
 							}
@@ -11227,7 +11512,7 @@
 						{tag_add _ai_wounded_carrier_selected}
 						{tag_remove _ai_wounded_carrier}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_wounded_carrier_selected}
 							{type human}
@@ -11235,10 +11520,10 @@
 						}
 						{tag_add _lua_mi}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"action"
+{"action"
 						{selector
 							{amount 1
 							}
@@ -11267,13 +11552,15 @@
 							}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 8}
 					}
-					{"trigger"
+}
+{"delay" {time 1}}
+{"trigger"
 						{name "hf inf ai/wounded evac/wounded pick up"}
 					}
-				}
+  }
 			}
 			{"hf inf ai/wounded evac/wounded carry away"
 				{condition
@@ -11304,6 +11591,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -11344,12 +11633,7 @@
 						}
 						{tag_remove _ai_wounded_carrier}
 					}
-					{"entity_state"
-						{selector
-							{tag _ai_wounded_carrier_linked}
-						}
-						{tag_remove _ai_wounded_carrier_selected}
-					}
+					
 					{"entity_state"
 						{selector
 							{tag _ai_wounded_target_linked}
@@ -11390,13 +11674,15 @@
 												{state
 													{state operatable}
 												}
-											}
+											 {tag {tag _ai_wounded_carrier_selected}} }
 										
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 									}
@@ -11427,13 +11713,15 @@
 												{type existance}
 												{item "human"}
 											}
-										}
+										 {tag {tag _ai_wounded_carrier_selected}} }
 									
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 								}
@@ -11444,6 +11732,12 @@
 								}
 							}
 						}
+					}
+{"entity_state"
+						{selector
+							{tag _ai_wounded_carrier_linked}
+						}
+						{tag_remove _ai_wounded_carrier_selected}
 					}
 					{"delay"
 						{time 5}
@@ -11482,6 +11776,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -11511,6 +11807,8 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -11565,6 +11863,8 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 									{amount 2
@@ -11606,6 +11906,8 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 									{amount 2
@@ -11647,6 +11949,8 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 									{amount 2
@@ -11688,6 +11992,8 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 									{amount 2
@@ -11729,6 +12035,8 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 									{amount 2
@@ -11777,6 +12085,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 2
@@ -11830,6 +12140,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 									{amount 2
@@ -11877,6 +12189,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -11909,6 +12223,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 2
@@ -11939,6 +12255,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -11975,6 +12293,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -12012,6 +12332,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -12062,10 +12384,9 @@
 				}
 			}
 			{"hf inf ai/medics/medic passive"
-				{condition
-					{terms
-						{"1.entities"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0s
+{"if" {condition {type entities} {selector
 								{source advanced}
 								{group
 									{select
@@ -12096,14 +12417,12 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-						}
-					}
-				}
-				{actions
-					{"switch"
+							}}
+{"switch"
 						{"case"
 							{condition
 								{type cmp_i}
@@ -12143,6 +12462,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -12181,6 +12502,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -12219,6 +12542,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -12251,6 +12576,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -12289,6 +12616,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -12322,19 +12651,20 @@
 							}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 120}
 					}
-					{"trigger"
+}
+{"delay" {time 1}}
+{"trigger"
 						{name "hf inf ai/medics/medic passive"}
 					}
-				}
+  }
 			}
 			{"hf inf ai/wounded evac/wounded carrier near tent"
-				{condition
-					{terms
-						{"1.near"
-							{units
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0s
+{"if" {condition {type near} {units
 								{source advanced}
 								{group
 									{select
@@ -12349,16 +12679,10 @@
 										}
 									}
 								}
-							}
-							{near_to
+							} {near_to
 								{tag map_point_medic_rally_ai}
-							}
-							{distance 10}
-						}
-					}
-				}
-				{actions
-					{"entity_state"
+							} {distance 10}}
+{"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -12379,6 +12703,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							{sort
@@ -12399,10 +12725,10 @@
 						}
 						{tag_add _ai_wounded_carrier_drop}
 					}
-					{"delay"
+{"delay"
 						{time 0.75 -0.25}
 					}
-					{"action"
+{"action"
 						{selector
 							{source advanced}
 							{group
@@ -12423,16 +12749,18 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
 						{drop orders}
 						{action cancel}
 					}
-					{"delay"
+{"delay"
 						{time 1}
 					}
-					{"inventory"
+{"inventory"
 						{selector
 							{source advanced}
 							{group
@@ -12453,15 +12781,17 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
 						{action drop}
 					}
-					{"delay"
+{"delay"
 						{time 3}
 					}
-					{"if"
+{"if"
 						{condition
 							{type near}
 							{units
@@ -12507,6 +12837,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 								{sort
@@ -12532,7 +12864,7 @@
 							{tag_remove _ai_wounded_target_linked}
 						}
 					}
-					{"actor_state"
+{"actor_state"
 						{selector
 							{source advanced}
 							{group
@@ -12553,6 +12885,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -12562,10 +12896,10 @@
 							{mode enable}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 1}
 					}
-					{"action"
+{"action"
 						{selector
 							{source advanced}
 							{group
@@ -12586,6 +12920,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -12595,7 +12931,7 @@
 							{tag player}
 						}
 					}
-					{"effect"
+{"effect"
 						{selector
 							{source advanced}
 							{group
@@ -12616,12 +12952,14 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{effect ai_generic_cooldown_60sec}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -12642,12 +12980,14 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{tag_remove _lua_mi}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -12668,12 +13008,14 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{tag_remove _ai_wounded_carrier_linked}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -12694,18 +13036,22 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{tag_remove _ai_wounded_carrier_drop}
 					}
-					{"delay"
+{"delay"
 						{time 3}
 					}
-					{"trigger"
+}
+{"delay" {time 1}}
+{"trigger"
 						{name "hf inf ai/wounded evac/wounded carrier near tent"}
 					}
-				}
+  }
 			}
 			{"hf inf ai/medics/medic active move"
 				{condition
@@ -12743,6 +13089,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -12799,6 +13147,8 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -12863,6 +13213,8 @@
 {tag {tag _ufb_combat_busy}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -12953,12 +13305,14 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
 							{count
 								{op ">"}
-								{value 1}
+								{value 0}
 							}
 						}
 					}
@@ -12993,6 +13347,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -13002,7 +13358,37 @@
 							{mode enable}
 						}
 					}
-					{"entity_state"
+					{"entity_state" {selector
+							{source advanced}
+							{group
+								{select
+									{tag
+										{tag _ai_wounded_carrier_linked}
+									}
+								}
+								{include
+									{state
+										{state operatable}
+									}
+								}
+								{exclude
+									{with_item
+										{type existance}
+										{item "human"}
+									}
+								
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}
+							}
+						} {tag_remove _lua_mi} {tag_remove _ai_wounded_carrier_abort}}
+{"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -13028,6 +13414,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -13042,110 +13430,7 @@
 				}
 			}
 			{"hf inf ai/wounded evac/wounded carrier anim check"
-				{condition
-					{expression "!1 & 2"}
-					{terms
-						{"1.see_actors"
-							{selector
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _ai_wounded_carrier_linked}
-										}
-									}
-									{include
-										{with_item
-											{type existance}
-											{item "human"}
-										}
-										{state
-											{state operatable}
-										}
-									}
-								
-{exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-{tag {tag _ufb_rescue_active}}
-}
-}
-							}
-							{enemy
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _ai_wounded_target_linked}
-										}
-									}
-									{include
-										{tag
-											{tag hf_wounded_carry_pose}
-										}
-										{tag
-											{tag bleeding}
-										}
-									}
-								}
-							}
-							{distance
-								{mode near_than}
-								{meters 2}
-							}
-						}
-						{"2.see_actors"
-							{selector
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _ai_wounded_carrier_linked}
-										}
-									}
-									{include
-										{with_item
-											{type existance}
-											{item "human"}
-										}
-									}
-								
-{exclude {tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-{tag {tag _ufb_rescue_active}}
-}
-}
-							}
-							{enemy
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag hf_wounded_death_played}
-										}
-									}
-								}
-							}
-							{distance
-								{mode near_than}
-								{meters 3}
-							}
-							{tag
-								{"tag pair"}
-								{"for selector" _ai_wounded_carrier_abort}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
-						{time 1}
-					}
-					{"inventory"
-						{selector
+ {condition {terms {"1.entities" {selector
 							{source advanced}
 							{group
 								{select
@@ -13154,26 +13439,28 @@
 									}
 								}
 								{include
+									{state
+										{state operatable}
+									}
+								}
+								{exclude
 									{with_item
 										{type existance}
 										{item "human"}
 									}
-								}
-							
-{exclude {tag {tag _ufb_job_reserved}}
+								
+{tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
+
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
-}
-						}
-						{action drop}
-					}
-					{"delay"
-						{time 2.5}
-					}
-					{"actor_state"
+							}
+						}}}}
+ {actions {"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -13199,57 +13486,14 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
-}
-							}
-						}
-						{drop orders}
-						{weapon_prepare on}
-						{ai_move
-							{mode enable}
-						}
-					}
-					{"delay"
-						{time 0.1}
-					}
-					{"entity_state"
-						{selector
-							{source advanced}
-							{group
-								{select
-									{tag
-										{tag _ai_wounded_carrier_abort}
-									}
-								}
-								{include
-									{state
-										{state operatable}
-									}
-								}
-								{exclude
-									{with_item
-										{type existance}
-										{item "human"}
-									}
-								
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
 
-{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{tag_remove _ai_wounded_carrier_abort}
 					}
-					{"delay"
-						{time 5}
-					}
-					{"trigger"
-						{name "hf inf ai/wounded evac/wounded carrier anim check"}
-					}
-				}
-			}
+ {"delay" {time 5}} {"trigger" {name "hf inf ai/wounded evac/wounded carrier anim check"}}}}
 
 ;// Flanking AI
 			{"hf flanking ai/detect and action"
@@ -13336,6 +13580,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -13417,6 +13663,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -13543,10 +13791,10 @@
 
 
 			{"hf flanking infantry ai/detect and action"
-				{condition
-					{terms
-						{"1.entities"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0.25s
+{"delay" {time 0.25}}
+{"if" {condition {type entities} {selector
 								{source advanced}
 								{group
 									{select
@@ -13595,21 +13843,18 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-							{count
+							} {count
 								{op ">"}
 								{value 1}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -13659,24 +13904,26 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{tag_add bot_inf_flanker}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag bot_inf_flanker}
 						}
 						{tag_add _lua_mi}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"actor_state"
+{"actor_state"
 						{selector
 							{tag bot_inf_flanker}
 							{type human}
@@ -13694,10 +13941,10 @@
 							{follow_commander off}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 0.5}
 					}
-					{"switch"
+{"switch"
 						{"case"
 							{condition
 								{type rand}
@@ -13761,10 +14008,10 @@
 							}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag bot_inf_flanker}
 							{type human}
@@ -13772,22 +14019,23 @@
 						}
 						{tag_add bot_inf_flank_in_progress}
 					}
-					{"delay"
+{"delay"
 						{time 300}
 					}
-					{"trigger"
+}
+{"delay" {time 0.75}}
+{"trigger"
 						{name "hf flanking infantry ai/detect and action"}
 					}
-				}
+  }
 			}
 			
 			
 ;// Melee AI
 			{"hf inf ai/melee/melee"
-				{condition
-					{terms
-						{"1.see_actors"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"if" {condition {type see_actors} {selector
 								{source advanced}
 								{group
 									{include
@@ -13831,10 +14079,11 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-							{enemy
+							} {enemy
 								{source advanced}
 								{group
 									{include
@@ -13878,31 +14127,24 @@
 										}
 									}
 								}
-							}
-							{distance
+							} {distance
 								{mode near_than}
 								{meters 10}
-							}
-							{detection located}
-							{tag
+							} {detection located} {tag
 								{"tag pair"}
 								{"for selector" ai_close_inf}
 								{"for enemy" ai_close_inf_target}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag ai_close_inf}
 						}
 						{tag_add _lua_mi}
 					}
-					{"inventory"
+{"inventory"
 						{selector
 							{source advanced}
 							{group
@@ -13923,16 +14165,18 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{action take}
 						{item "sword"}
 					}
-					{"delay"
+{"delay"
 						{time 0.25}
 					}
-					{"actor_state"
+{"actor_state"
 						{selector
 							{tag ai_close_inf}
 						}
@@ -13945,17 +14189,17 @@
 							{follow_commander off}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 0.25}
 					}
-					{"talk"
+{"talk"
 						{selector
 							{tag ai_close_inf}
 						}
 						{say attack}
 						{text ""}
 					}
-					{"action"
+{"action"
 						{selector
 							{tag ai_close_inf}
 						}
@@ -13965,46 +14209,47 @@
 							{tag ai_close_inf_target}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag ai_close_inf}
 						}
 						{tag_remove _lua_mi}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag ai_close_inf}
 						}
 						{tag_remove ai_close_inf}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag ai_close_inf_target}
 						}
 						{tag_remove ai_close_inf_target}
 					}
-					{"delay"
+{"delay"
 						{time 0.75}
 					}
-					{"trigger"
+}
+{"delay" {time 0.5}}
+{"trigger"
 						{name "hf inf ai/melee/melee"}
 					}
-				}
+  }
 			}
 
 
 ;// Obnoxious grenade spam
 			{"hf inf ai/grenade ap"
-				{condition
-					{terms
-						{"1.see_actors"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"if" {condition {type see_actors} {selector
 								{source advanced}
 								{group
 									{select
@@ -14072,10 +14317,11 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-							{enemy
+							} {enemy
 								{source advanced}
 								{group
 									{select
@@ -14139,26 +14385,19 @@
 										}
 									}
 								}
-							}
-							{distance
+							} {distance
 								{mode in_range}
 								{min 18}
 								{max 26}
-							}
-							{detection located}
-							{tag
+							} {detection located} {tag
 								{"tag pair"}
 								{"for selector" _ai_ap_grenade}
 								{"for enemy" _ai_ap_target}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"action"
+{"action"
 						{selector
 							{tag _ai_ap_grenade}
 							{type human}
@@ -14167,10 +14406,10 @@
 						{drop orders}
 						{action cancel}
 					}
-					{"delay"
+{"delay"
 						{time 0.2}
 					}
-					{"inventory"
+{"inventory"
 						{selector
 							{source advanced}
 							{group
@@ -14197,16 +14436,18 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{action take}
 						{item "fg"}
 					}
-					{"delay"
+{"delay"
 						{time 1}
 					}
-					{"action"
+{"action"
 						{selector
 							{amount 1
 							}
@@ -14220,10 +14461,10 @@
 							{tag _ai_ap_target}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 3}
 					}
-					{"action"
+{"action"
 						{selector
 							{tag _ai_ap_grenade}
 							{type human}
@@ -14235,31 +14476,33 @@
 							{tag _ai_ap_target}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_ap_grenade}
 						}
 						{tag_remove _ai_ap_grenade}
 					}
-					{"delay"
+{"delay"
 						{time 0.25}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_ap_target}
 						}
 						{tag_remove _ai_ap_target}
 					}
-					{"delay"
+{"delay"
 						{time 0.25}
 					}
-					{"trigger"
+}
+{"delay" {time 0.5}}
+{"trigger"
 						{name "hf inf ai/grenade ap"}
 					}
-				}
+  }
 			}
 			{"hf inf ai/grenade smoke 120m"
 				{condition
@@ -14368,6 +14611,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -14486,6 +14731,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -14620,12 +14867,36 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"actor_to_cover"
-														{selector
-															{tag _ufb_smoke_120m_actor}
-														}
+													{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_120m_actor"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}} {effect ufb_hf_cover_prepare}}
+{"actor_to_cover"
+														{selector {source advanced}  {group {select {tag {tag "_ufb_smoke_120m_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}}
 														{drop orders}
 													}
+{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_120m_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}} {effect ufb_hf_cover_committed}}
 												}
 											}
 										}
@@ -14769,6 +15040,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -14887,6 +15160,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -15021,12 +15296,36 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"actor_to_cover"
-														{selector
-															{tag _ufb_smoke_60m_actor}
-														}
+													{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_60m_actor"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}} {effect ufb_hf_cover_prepare}}
+{"actor_to_cover"
+														{selector {source advanced}  {group {select {tag {tag "_ufb_smoke_60m_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}}
 														{drop orders}
 													}
+{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_60m_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}} {effect ufb_hf_cover_committed}}
 												}
 											}
 										}
@@ -15064,10 +15363,9 @@
 				}
 			}
 			{"hf inf ai/near player"
-				{condition
-					{terms
-						{"1.see_actors"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"if" {condition {type see_actors} {selector
 								{source advanced}
 								{group
 									{select
@@ -15143,10 +15441,11 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-							{enemy
+							} {enemy
 								{source advanced}
 								{group
 									{select
@@ -15201,24 +15500,17 @@
 										}
 									}
 								}
-							}
-							{distance
+							} {distance
 								{mode near_than}
 								{meters 13}
-							}
-							{detection visible}
-							{tag
+							} {detection visible} {tag
 								{"tag pair"}
 								{"for selector" _ai_near_player}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"actor_state"
+{"actor_state"
 						{selector
 							{source advanced}
 							{group
@@ -15277,43 +15569,47 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{drop orders}
 						{fire_mode open}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"effect"
+{"effect"
 						{selector
 							{tag _ai_near_player}
 						}
 						{effect ai_near_player_cooldown}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_near_player}
 						}
 						{tag_remove _ai_near_player}
 					}
-					{"delay"
+{"delay"
 						{time 1}
 					}
-					{"trigger"
+}
+{"delay" {time 0.5}}
+{"trigger"
 						{name "hf inf ai/near player"}
 					}
-				}
+  }
 			}
 			{"hf inf ai/antitank/grenade at"
-				{condition
-					{terms
-						{"1.see_actors"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0.25s
+{"delay" {time 0.25}}
+{"if" {condition {type see_actors} {selector
 								{source advanced}
 								{group
 									{select
@@ -15381,10 +15677,11 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-							{enemy
+							} {enemy
 								{source advanced}
 								{group
 									{select
@@ -15418,25 +15715,18 @@
 										}
 									}
 								}
-							}
-							{distance
+							} {distance
 								{mode near_than}
 								{meters 25}
-							}
-							{detection visible}
-							{tag
+							} {detection visible} {tag
 								{"tag pair"}
 								{"for selector" _ai_at_grenade}
 								{"for enemy" _ai_at_target}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"action"
+{"action"
 						{selector
 							{source advanced}
 							{group
@@ -15471,16 +15761,18 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
 						{drop orders}
 						{action cancel}
 					}
-					{"delay"
+{"delay"
 						{time 0.2}
 					}
-					{"action"
+{"action"
 						{selector
 							{source advanced}
 							{group
@@ -15519,6 +15811,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -15529,39 +15823,41 @@
 						}
 						{volume body1}
 					}
-					{"delay"
+{"delay"
 						{time 3}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_at_grenade}
 						}
 						{tag_remove _ai_at_grenade}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_at_target}
 						}
 						{tag_remove _ai_at_target}
 					}
-					{"delay"
+{"delay"
 						{time 1.5}
 					}
-					{"trigger"
+}
+{"delay" {time 0.25}}
+{"trigger"
 						{name "hf inf ai/antitank/grenade at"}
 					}
-				}
+  }
 			}
 
 (define "hf_rocketlauncher"			
 			{"hf inf ai/antitank/rocketlauncher %meters"
-				{condition
-					{terms
-						{"1.see_actors"
-							{selector
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0.25s
+{"delay" {time 0.25}}
+{"if" {condition {type see_actors} {selector
 								{source advanced}
 								{group
 									{select
@@ -15629,10 +15925,11 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
-							}
-							{enemy
+							} {enemy
 								{source advanced}
 								{group
 									{select
@@ -15666,28 +15963,22 @@
 										}
 									}
 								}
-							}
-							{distance
+							} {distance
 								{mode in_range}
 								{min %r1}
 								{max %meters}
-							}
-							{detection visible}
-							{tag
+							} {detection visible} {tag
 								{"tag pair"}
 								{"for selector" _ai_at_launcher_%meters}
 								{"for enemy" _ai_at_launcher_target_%meters}
-							}
-						}
-					}
-				}
-				{actions
-					{"delay"
+							}}
+{"delay"
 						{time 0.1}
 					}
-					; UFB: recheck native AT range before drawing or issuing an attack.
 {"if" {condition {type see_actors} {selector {source advanced} {ignore_captured_by_user 1} {group {select {tag {tag _ai_at_launcher_%meters}}} {include {prop {prop human}} {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state user_control}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_healing_active}} {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }}} {enemy {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag _ai_at_launcher_target_%meters}}} {include {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}}}}} {distance {mode in_range} {min 0} {max %meters}} {detection visible}}
 {"inventory"
 						{selector
@@ -15716,6 +16007,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -15723,12 +16016,13 @@
 						{item "range_%meters"}
 					}
 }
-					{"delay"
+{"delay"
 						{time 1.25}
 					}
-					; UFB: recheck native AT range before drawing or issuing an attack.
 {"if" {condition {type see_actors} {selector {source advanced} {ignore_captured_by_user 1} {group {select {tag {tag _ai_at_launcher_%meters}}} {include {prop {prop human}} {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {state {state user_control}} {tag {tag _ufb_job_reserved}} {tag {tag _ufb_combat_busy}} {tag {tag _ufb_healing_active}} {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }}} {enemy {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag _ai_at_launcher_target_%meters}}} {include {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}}}}} {distance {mode in_range} {min 0} {max %meters}} {detection visible}}
 {"action"
 						{selector
@@ -15746,31 +16040,33 @@
 						{volume body1}
 					}
 }
-					{"delay"
+{"delay"
 						{time 1.5}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_at_launcher_%meters}
 						}
 						{tag_remove _ai_at_launcher_%meters}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					{"entity_state"
+{"entity_state"
 						{selector
 							{tag _ai_at_launcher_target_%meters}
 						}
 						{tag_remove _ai_at_launcher_target_%meters}
 					}
-					{"delay"
+{"delay"
 						{time 1.5}
 					}
-					{"trigger"
+}
+{"delay" {time 0.25}}
+{"trigger"
 						{name "hf inf ai/antitank/rocketlauncher %meters"}
 					}
-				}
+  }
 			}
 )
 ("hf_rocketlauncher" r1(16) r2(50) meters(30))
@@ -15869,6 +16165,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -15965,61 +16263,6 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"actor_to_cover"
-														{selector
-															{source advanced}
-															{group
-																{select
-																	{tag
-																		{tag _ai_suppressed_by_mg}
-																	}
-																}
-																{exclude
-																	{tag
-																		{tag reloading}
-																	}
-																	{tag
-																		{tag _ai_ap_grenade}
-																	}
-																	{tag
-																		{tag _ai_at_grenade}
-																	}
-																
-{tag {tag _ufb_smoke_120m_actor}}
-{tag {tag _ufb_smoke_60m_actor}}
-{tag {tag _ufb_smoke_wirecutter_actor}}
-
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-}
-															}
-														}
-														{drop orders}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
 													{"effect" {selector
 															{source advanced}
 															{group
@@ -16049,9 +16292,106 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
+															{include {prop {prop human}}}
+															}
+														} {effect ufb_hf_cover_prepare}}
+{"actor_to_cover"
+														{selector
+															{source advanced}
+															{group
+																{select
+																	{tag
+																		{tag _ai_suppressed_by_mg}
+																	}
+																}
+																{exclude
+																	{tag
+																		{tag reloading}
+																	}
+																	{tag
+																		{tag _ai_ap_grenade}
+																	}
+																	{tag
+																		{tag _ai_at_grenade}
+																	}
+																
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+}
+															{include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}}
+															}
+														}
+														{drop orders}
+													}
+{"effect" {selector
+															{source advanced}
+															{group
+																{select
+																	{tag
+																		{tag _ai_suppressed_by_mg}
+																	}
+																}
+																{exclude
+																	{tag
+																		{tag reloading}
+																	}
+																	{tag
+																		{tag _ai_ap_grenade}
+																	}
+																	{tag
+																		{tag _ai_at_grenade}
+																	}
+																
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+}
+															{include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}}
 															}
 														} {effect ufb_hf_cover_committed}}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					{"switch"
+						{"case"
+							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
+							{"switch"
+								{"case"
+									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
+									{"switch"
+										{"case"
+											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
+											{"switch"
+												{"case"
+													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
+													
 												}
 											}
 										}
@@ -16170,6 +16510,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -16259,61 +16601,6 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"actor_to_cover"
-														{selector
-															{source advanced}
-															{group
-																{select
-																	{tag
-																		{tag _ai_mgunner}
-																	}
-																}
-																{exclude
-																	{tag
-																		{tag reloading}
-																	}
-																	{tag
-																		{tag _ai_ap_grenade}
-																	}
-																	{tag
-																		{tag _ai_at_grenade}
-																	}
-																
-{tag {tag _ufb_smoke_120m_actor}}
-{tag {tag _ufb_smoke_60m_actor}}
-{tag {tag _ufb_smoke_wirecutter_actor}}
-
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-}
-															}
-														}
-														{drop orders}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
 													{"effect" {selector
 															{source advanced}
 															{group
@@ -16343,9 +16630,106 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
+															{include {prop {prop human}}}
+															}
+														} {effect ufb_hf_cover_prepare}}
+{"actor_to_cover"
+														{selector
+															{source advanced}
+															{group
+																{select
+																	{tag
+																		{tag _ai_mgunner}
+																	}
+																}
+																{exclude
+																	{tag
+																		{tag reloading}
+																	}
+																	{tag
+																		{tag _ai_ap_grenade}
+																	}
+																	{tag
+																		{tag _ai_at_grenade}
+																	}
+																
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+}
+															{include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}}
+															}
+														}
+														{drop orders}
+													}
+{"effect" {selector
+															{source advanced}
+															{group
+																{select
+																	{tag
+																		{tag _ai_mgunner}
+																	}
+																}
+																{exclude
+																	{tag
+																		{tag reloading}
+																	}
+																	{tag
+																		{tag _ai_ap_grenade}
+																	}
+																	{tag
+																		{tag _ai_at_grenade}
+																	}
+																
+{tag {tag _ufb_smoke_120m_actor}}
+{tag {tag _ufb_smoke_60m_actor}}
+{tag {tag _ufb_smoke_wirecutter_actor}}
+
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+
+{tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
+}
+															{include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}}
 															}
 														} {effect ufb_hf_cover_committed}}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					{"switch"
+						{"case"
+							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
+							{"switch"
+								{"case"
+									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
+									{"switch"
+										{"case"
+											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
+											{"switch"
+												{"case"
+													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
+													
 												}
 											}
 										}
@@ -16444,6 +16828,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -16530,12 +16916,36 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"actor_to_cover"
-														{selector
-															{tag _ai_reloading}
-														}
+													{"effect" {selector {source advanced}  {group {select {tag {tag "_ai_reloading"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}} {effect ufb_hf_cover_prepare}}
+{"actor_to_cover"
+														{selector {source advanced}  {group {select {tag {tag "_ai_reloading"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}}
 														{drop orders}
 													}
+{"effect" {selector {source advanced}  {group {select {tag {tag "_ai_reloading"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}} {effect ufb_hf_cover_committed}}
 												}
 											}
 										}
@@ -16556,9 +16966,7 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"effect" {selector
-															{tag _ai_reloading}
-														} {effect ufb_hf_cover_committed}}
+													
 												}
 											}
 										}
@@ -16635,6 +17043,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -16682,6 +17092,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -16746,6 +17158,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -16795,6 +17209,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -16844,6 +17260,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -16893,6 +17311,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -16942,6 +17362,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -16991,6 +17413,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -17040,6 +17464,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -17085,6 +17511,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -17132,6 +17560,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -17191,6 +17621,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -17254,6 +17686,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
@@ -17293,6 +17727,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -17344,6 +17780,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -17368,6 +17806,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
@@ -17407,6 +17847,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -17457,6 +17899,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -17495,6 +17939,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -17540,6 +17986,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -17573,6 +18021,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							{amount 1
@@ -17685,6 +18135,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -17819,6 +18271,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -17953,12 +18407,36 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"actor_to_cover"
-														{selector
-															{tag _ufb_smoke_wirecutter_actor}
-														}
+													{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_wirecutter_actor"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}} {effect ufb_hf_cover_prepare}}
+{"actor_to_cover"
+														{selector {source advanced}  {group {select {tag {tag "_ufb_smoke_wirecutter_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}}
 														{drop orders}
 													}
+{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_wirecutter_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
+}}} {effect ufb_hf_cover_committed}}
 												}
 											}
 										}
@@ -18106,6 +18584,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{amount 1
@@ -18139,6 +18619,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							{amount 4
@@ -18193,6 +18675,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
@@ -18252,6 +18736,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 							{sort
@@ -18290,6 +18776,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -18337,6 +18825,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -18394,6 +18884,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -18504,6 +18996,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 															{sort
@@ -18610,6 +19104,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 															{sort
@@ -18662,6 +19158,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 															{sort
@@ -18737,6 +19235,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -18794,6 +19294,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -18847,6 +19349,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}
@@ -18910,6 +19414,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 																{amount 1
@@ -19018,6 +19524,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -19075,6 +19583,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19124,6 +19634,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19173,6 +19685,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19222,6 +19736,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19267,6 +19783,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19326,6 +19844,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19375,6 +19895,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19424,6 +19946,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19473,6 +19997,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -19518,6 +20044,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 										}
 									}
@@ -20227,6 +20755,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 									{amount 1
@@ -20298,6 +20828,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 									{amount 1
@@ -20354,6 +20886,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -20394,6 +20928,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 							}
@@ -20459,6 +20995,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -20498,6 +21036,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -20556,6 +21096,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -20609,6 +21151,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -20856,6 +21400,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 									}
 								}
@@ -20909,6 +21455,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -20966,6 +21514,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21023,6 +21573,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21080,6 +21632,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21131,6 +21685,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21189,6 +21745,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21240,6 +21798,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21291,6 +21851,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21342,6 +21904,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21387,6 +21951,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 											}
 											{sort
@@ -21572,6 +22138,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -21614,6 +22182,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -21654,6 +22224,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -21700,6 +22272,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -21774,6 +22348,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 								{amount 1
@@ -22034,6 +22610,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -22100,6 +22678,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -22131,6 +22711,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -22157,6 +22739,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -22190,6 +22774,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 						}
@@ -22220,6 +22806,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 							}
 						}
@@ -22303,6 +22891,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 								}
 							}
@@ -22391,6 +22981,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+ {state {state dead}} {state {state inactive}} {state {state linked}} 
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -22442,6 +23034,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -22488,6 +23082,8 @@
 {tag {tag medic}}
 
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 															}
 														}
@@ -22541,6 +23137,8 @@
 {tag {tag _ufb_healing_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
+
+{tag {tag _ufb_gun_job_active}}
 }
 }
 														}

@@ -62,3 +62,11 @@ BotApi.Commands.TimeToSpawnUnit=function(_,unit)if unit=='candidate1' and now>=2
 TrySpawnUnit();advance(5500)
 assert(buys==1 and selections==2,'a newly locked unit must release its wait so another eligible unit can be bought')
 `);
+run('the purchase filling the CP cap is still committed exactly once',`
+availableAt=0;local committed=0
+OnUnitPurchased=function()committed=committed+1 end
+TrySpawnUnit();assert(buys==1 and spawningUnit,'initial purchase did not spawn')
+BotApi.Commands.CanSpawn=function()return false end
+TrySpawnUnit();assert(committed==1 and not spawningUnit and Context.SpawnInfo==nil,'a full CP cap blocked accounting for an already spawned unit')
+advance(5000);assert(committed==1 and buys==1 and selections==1,'cap handling duplicated or lost a completed purchase')
+`);

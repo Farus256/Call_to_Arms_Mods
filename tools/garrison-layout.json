@@ -9,5 +9,6 @@
   "coverPreferenceMetres": 15,
   "fallbackSpreadMetres": 30,
   "spacingCellMetres": 10,
-  "reusePenaltyMetres": 35
+  "reusePenaltyMetres": 35,
+  "vehicleSpacingMetres": 20
 }

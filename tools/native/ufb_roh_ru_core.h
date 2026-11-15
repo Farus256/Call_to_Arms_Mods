@@ -11,7 +11,7 @@ namespace roh {
 inline const std::unordered_map<std::string, std::string>& words() {
     static const std::unordered_map<std::string, std::string> map = {
         // Roles
-        {"Rifleman", "Стрелок"}, {"Medic", "Санитар"}, {"Sniper", "Снайпер"},
+        {"Rifleman", "Стрелок"}, {"Medic", "Санитар"}, {"Sniper", "Снайпер"}, {"Commissar", "Комиссар"},
         {"Machine Gunner", "Пулемётчик"}, {"MG", "Пулемётчик"}, {"Asst. MG", "Пом. пулемётчика"},
         {"Pilot", "Лётчик"}, {"Officer", "Офицер"}, {"NCO", "Сержант"}, {"Assistant NCO", "Мл. командир"},
         {"Flamer", "Огнемётчик"}, {"Radio", "Радист"}, {"Pioneer", "Сапёр"}, {"Engineer", "Инженер"},
@@ -77,6 +77,17 @@ inline constexpr Affix kPrefixes[] = {
 };
 
 inline bool startsWith(const std::string& s, const char* p) { return s.rfind(p, 0) == 0; }
+// HF breed job codes which the original memorial treats as generic Rifleman.
+// Other jobs keep the native formatter, including its detailed vehicle labels.
+inline std::string roleAlias(std::string job) {
+    for (char& c : job) if (c >= 'A' && c <= 'Z') c = static_cast<char>(c + ('a' - 'A'));
+    if (job == "commisar" || job == "commissar" || job == "politruk") return "Commissar";
+    if (job == "officer") return "Officer";
+    if (job == "mgun_asst" || startsWith(job, "mgun_asst_")) return "Asst. MG";
+    if (startsWith(job, "mgun_") && job.size() > 5
+        && job.find_first_not_of("0123456789", 5) == std::string::npos) return "Machine Gunner";
+    return {};
+}
 inline bool endsWith(const std::string& s, const std::string& p) {
     return s.size() >= p.size() && s.compare(s.size() - p.size(), p.size(), p) == 0;
 }

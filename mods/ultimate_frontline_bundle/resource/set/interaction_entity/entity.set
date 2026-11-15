@@ -53,4 +53,6 @@
 	(include "tank/entity-HF.inc")
 	(include "tank/script-HF.inc")
 	(include "shells-HF.inc")
+
+ (include "ufb_gun_bindings.inc")
 }

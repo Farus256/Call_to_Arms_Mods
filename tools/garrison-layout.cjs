@@ -12,6 +12,7 @@ for(const value of Object.values(config.weaponEnvelopeMetres))assert(Number.isFi
 for(const key of ['startZoneMetres','marginMetres','randomScatterMetres','coverMatchMetres','coverPreferenceMetres','reusePenaltyMetres','fallbackSpreadMetres','spacingCellMetres'])
     assert(Number.isFinite(config[key])&&config[key]>0,'Invalid layout setting '+key);
 assert(Number.isFinite(config.botRangeScale)&&config.botRangeScale>=1);
+assert(Number.isFinite(config.vehicleSpacingMetres)&&config.vehicleSpacingMetres>0);
 const dir = path.join(resource, 'map/multi');
 const val = (n, key) => s.child(n, key)?.tokens[1]?.value;
 const pos = n => s.child(n, 'position') || s.child(n, 'Position');
@@ -72,6 +73,32 @@ function choose(original, candidates, entry, required, objective, usage, cover) 
     const c = safe[0], key=occupancyKey(c.point); usage.set(key,(usage.get(key)||0)+1);
     return {point:c.point,changed:true,safe:guaranteed};
 }
+// Firing slots must not collapse onto one authored coordinate when the range
+// envelope leaves only a small rear area. Keep Z and terrain authored by the map.
+// Dispatch hubs are excluded: they are not simultaneous gun positions.
+function chooseVehicle(original,candidates,entry,required,objective,occupied){
+    assert(candidates.length,'No authored vehicle firing positions');
+    const clearance=point=>occupied.length?Math.min(...occupied.map(p=>distance(point,p))):Infinity;
+    const range=point=>distance(point,entry)>=required;
+    let pool=candidates.filter(c=>!c.hub&&clearance(c.point)>0.5);
+    // Only when authored firing choices are exhausted, use an unused authored
+    // vehicle hub. Never fabricate a point/height or silently stack two slots.
+    if(!pool.length)pool=candidates.filter(c=>clearance(c.point)>0.5);
+    const unique=pool.length>0;
+    if(!unique)pool=[...candidates]; // Explicitly reported, never a silent guarantee.
+    const safe=pool.filter(c=>range(c.point));
+    if(safe.length)pool=safe;
+    const spaced=pool.filter(c=>clearance(c.point)>=config.vehicleSpacingMetres);
+    if(spaced.length)pool=spaced;
+    else{
+        const best=Math.max(...pool.map(c=>clearance(c.point)));
+        pool=pool.filter(c=>clearance(c.point)>=best-0.001);
+    }
+    const score=c=>distance(c.point,original)+distance(c.point,objective)*0.35;
+    pool.sort((a,b)=>score(a)-score(b)||a.id.localeCompare(b.id));
+    const point=pool[0].point,gap=clearance(point);occupied.push(point);
+    return {point,changed:point.some((v,i)=>v!==original[i]),safe:range(point),spacingSafe:gap>=config.vehicleSpacingMetres,clearanceMetres:gap,unique};
+}
 function mapData(text) {
     const mission = s.parse(text).children[0];
     const entities = new Map(mission.children.filter(n=>['Entity','Human'].includes(s.name(n))).map(n=>[n.tokens.at(-1).value,n]));
@@ -114,18 +141,22 @@ function layout(text) {
         }
         for (const [id,body] of selected) for (const ref of references(s.parse(body)))
             assert(selected.has(ref.tokens[1].value), 'Waypoint escapes garrison: '+id+' -> '+ref.tokens[1].value);
-        const candidates={infantry:[],vehicle:[]};
+        const candidates={infantry:[],vehicle:[]},firing=new Set();
         for (const [id] of selected) {
-            // Dispatch hubs are not candidate cover or firing positions.
+            // Def-spawn anchors are not candidate cover or firing positions.
             const group=data.groups.get(id); if(!group.includes('_def_inf')&&!group.includes('_def_vehicle'))continue;
             const point=xyz(data.points.get(id)), kind=kinds.get(id);
-            candidates[kind].push({id,point,cover:kind==='infantry' && data.covers.some(c=>distance(c,point)<=config.coverMatchMetres)});
+            if(kind==='vehicle'){
+                const n=data.points.get(id);
+                if(Number(val(n,'RandomPosition')||0)||!references(n).length)firing.add(id);
+            }
+            candidates[kind].push({id,point,hub:kind==='vehicle'&&!firing.has(id),cover:kind==='infantry' && data.covers.some(c=>distance(c,point)<=config.coverMatchMetres)});
         }
         // Only authored three-dimensional garrison waypoints are relocation candidates.
         // Spawn markers often omit height; inventing their Z risks underground placements.
         for(const kind of ['infantry','vehicle'])
             candidates[kind]=candidates[kind].filter(c=>c.point.length===3&&c.point.every(Number.isFinite));
-        const usage=new Map(), variant={entry:entryName, relocated:0, unsupported:[], minClearanceMetres:Infinity};
+        const usage=new Map(),occupied=[], variant={entry:entryName, relocated:0, unsupported:[], spacingUnsupported:[], duplicateFiringSlots:0, minFiringSpacingMetres:Infinity, minClearanceMetres:Infinity};
         for(const kind of ['infantry','vehicle']) for(const c of candidates[kind])
             usage.set(occupancyKey(c.point),1); // Count physical places, including duplicate authored IDs.
         const records=[];
@@ -136,7 +167,12 @@ function layout(text) {
             const random=Number(val(n,'RandomPosition')||0)>0?config.randomScatterMetres:0;
             const required=config.weaponEnvelopeMetres[kind]*config.botRangeScale+config.startZoneMetres+config.marginMetres+spread+random;
             const objective=data.flags[flagOf.get(id)]; assert(objective,'Missing objective for '+id);
-            const result=choose(original,candidates[kind],entry,required,objective,usage,kind==='infantry');
+            const result=firing.has(id)?chooseVehicle(original,candidates.vehicle,entry,required,objective,occupied):choose(original,candidates[kind],entry,required,objective,usage,kind==='infantry');
+            if(firing.has(id)){
+                variant.minFiringSpacingMetres=Math.min(variant.minFiringSpacingMetres,result.clearanceMetres);
+                if(!result.spacingSafe)variant.spacingUnsupported.push({id,availableMetres:result.clearanceMetres});
+                if(!result.unique)variant.duplicateFiringSlots++;
+            }
             assert(!data.points.has(alias(spawn,id)),'Garrison alias collides with original ID');
             const edits=[{start:n.tokens[0].start,end:n.tokens[0].end,text:'"'+alias(spawn,id)+'"'}];
             for (const r of references(ast)) edits.push({start:r.tokens[1].start,end:r.tokens[1].end,text:'"'+alias(spawn,r.tokens[1].value)+'"'});
@@ -148,7 +184,8 @@ function layout(text) {
         output.push('; player entry '+entryName+'\r\n'+records.map(x=>x.body).join('\r\n'));
         report.variants.push(variant);
     }
-    return {text:'; Generated by tools/garrison-layout.cjs. Do not edit by hand.\r\n'+output.join('\r\n'),report};
+    const generated='; Generated by tools/garrison-layout.cjs. Do not edit by hand.\r\n'+output.join('\r\n');
+    return {text:generated.replace(/\r?\n/g,'\r\n'),report};
 }
 function routeActions(text, predicate, command, key) {
     const ast=s.parse(text), edits=[];let count=0;
@@ -182,7 +219,8 @@ function run(baselineDir, apply=false) {
     const funcs=routeActions(functions,n=>/^flag[1-5]_bots_d$/.test(s.name(n)),'waypoint','waypoint');
     // Native forwardN selectors discover bought defenders at the staging
     // anchors 15..24. Only their subsequent combat destinations are relocated.
-    const generated=new Map([['map/multi/ufb_garrison_functions.inc',funcs.text],['map/multi/ufb_garrison_script.inc',missionScript]]),report={maps:[],functionActions:funcs.count,spawnPlacements:0};
+    const safeScript=require('./garrison-safety.cjs').repair(missionScript,funcs.text);
+    const generated=new Map([['map/multi/ufb_garrison_functions.inc',funcs.text],['map/multi/ufb_garrison_script.inc',safeScript]]),report={maps:[],functionActions:funcs.count,spawnPlacements:0};
     for(const folder of fs.readdirSync(dir,{withFileTypes:true}).filter(x=>x.isDirectory()&&x.name.startsWith('dcg_'))) {
         const rel='map/multi/'+folder.name+'/campaign_capture_the_flag.mi', file=path.join(baselineDir,rel);
         if(!fs.existsSync(file))continue;
@@ -202,11 +240,25 @@ function run(baselineDir, apply=false) {
     if(apply) for(const [rel,text] of generated) fs.writeFileSync(path.join(resource,rel),text,'latin1');
     return {generated,report};
 }
-if(require.main===module){
+function rebuildLayouts(root=resource,apply=false){
+    const multi=path.join(root,'map/multi'),report=[];
+    for(const entry of fs.readdirSync(multi,{withFileTypes:true}).filter(e=>e.isDirectory())){
+        const folder=path.join(multi,entry.name),file=path.join(folder,'ufb_garrison_layout.inc');
+        if(!fs.existsSync(file))continue;
+        const built=layout(fs.readFileSync(path.join(folder,'campaign_capture_the_flag.mi'),'latin1'));
+        if(apply)fs.writeFileSync(file,built.text,'latin1');
+        report.push({map:entry.name,...built.report});
+    }
+    assert.equal(report.length,117,'Supported garrison map missing');return report;
+}
+if(require.main===module&&process.argv.includes('--build')){
+    const report=rebuildLayouts(resource,true);
+    console.log(JSON.stringify({maps:report.length,duplicateFiringSlots:report.reduce((a,m)=>a+m.variants.reduce((n,v)=>n+v.duplicateFiringSlots,0),0),rangeUnsupported:report.reduce((a,m)=>a+m.unresolved,0)}));
+}else if(require.main===module){
     const baseline=process.argv[2];assert(baseline,'Pass backed-up baseline directory');
     const {report}=run(path.resolve(baseline),process.argv.includes('--apply'));
     const reportFile=path.join(root,'docs/realism/GARRISON_LAYOUT_REPORT.json');
     fs.writeFileSync(reportFile,JSON.stringify(report,null,2)+'\n');
     console.log(JSON.stringify({maps:report.maps.length,relocated:report.maps.reduce((a,m)=>a+m.changed,0),unresolved:report.maps.reduce((a,m)=>a+m.unresolved,0),functionActions:report.functionActions,spawnPlacements:report.spawnPlacements}));
 }
-module.exports={run,layout,mapData,selectSide,routeActions,choose,alias,aliasParts,distance,occupancyKey,config,resource};
+module.exports={run,rebuildLayouts,layout,mapData,selectSide,routeActions,choose,chooseVehicle,alias,aliasParts,distance,occupancyKey,config,resource};

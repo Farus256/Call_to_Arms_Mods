@@ -25,14 +25,13 @@ function rescue(){
  const origin=tagged('_ufb_rescue_origin_%team'),destination=tagged(goal);
  const threatProbe=`{"if" {condition {type see_actors} ${see(active,enemy,90,role,threat,true)}}}`;
  const returnSafe=`{"switch" {"case" {condition {type near} ${near(origin,tagged(threat),30)}}} {"default" ${action(active,'move',origin)}}}`;
+ // Timed 1s scan replaces the polled rand+see_actors condition (engine short-circuit is unknown); success still waits 10s.
  return `(define "ufb_rescue"
  {"ufb/rescue/acquire %team"
-  {condition {expression "1 & 2 & !3"} {terms
-   {"1.rand" {value 0.2}}
-   {"2.see_actors" ${see(idle,hurt,6)}}
-   {"3.see_actors" ${see(idle,enemy,15,null,null,true)}}
-  }}
+  {condition {terms {"1.rand" {value 1}}}}
   {actions
+   {"if" {condition {type see_actors} ${see(idle,hurt,6)}}
+   {"switch" {"case" {condition {type see_actors} ${see(idle,enemy,15,null,null,true)}}} {"default"
    {"if" {condition {type see_actors} ${see(idle,hurt,6,'_ufb_rescue_carrier_pick_%team')}}}
    ${state('{amount 1} '+tagged('_ufb_rescue_carrier_pick_%team'),'tag_add',role)}
    ${clear('_ufb_rescue_carrier_pick_%team')}
@@ -77,7 +76,9 @@ function rescue(){
    ${clear(role)} ${clear(patient)} ${clear(goal)} ${clear(threat)}
    {"delete" {selector ${origin}}}
    {"delete" {selector ${tagged('_ufb_rescue_rear_%team')}}}
-   ${loop('ufb/rescue/acquire %team',10)}
+   ${pause(9)}
+   }}}
+   ${loop('ufb/rescue/acquire %team',1)}
   }
  }
  ; Once the user captures the carrier, this job can never resume later on deselection.

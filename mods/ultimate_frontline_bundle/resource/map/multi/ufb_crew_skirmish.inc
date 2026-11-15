@@ -8,7 +8,7 @@
     {source advanced}
     {ignore_captured_by_user 0}
     {group
-        {select {prop {prop crew}} {tag {tag crew}}}
+        {select {tag {tag _ufb_k_crew}} {tag {tag crew}}}
         {include {prop {prop human}} {state {state operatable}}}
         {exclude
             {state {state linked}} {state {state inactive}} {state {state dead}}
@@ -39,7 +39,7 @@
             {player {player "0"}}
             {state {state user_control}} {state {state linked}}
             {state {state inactive}} {state {state dead}}
-            {tag {tag _ufb_crew_safe}} {tag {tag _lua_mi}}
+            {tag {tag _ufb_crew_safe}} {tag {tag _ufb_crew_cover_retry}} {tag {tag _lua_mi}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_healing_active}} {tag {tag _ufb_job_reserved}}
             {tag {tag repairing}} {tag {tag tcrew}} {tag {tag ecrew}}
             {tag {tag ecrew_a}} {tag {tag ecrew_b}}
             {tag {tag bleeding}} {tag {tag wounded_animation_playing}}
@@ -55,15 +55,15 @@
     {actions
         {"entity_state" {selector ("ufb_bot_crew_candidates")} {tag_add _ufb_crew_pending}}
         {"actor_state"
-            {selector {tag _ufb_crew_pending}}
+            {selector {source advanced}  {group {select {tag {tag "_ufb_crew_pending"}}}  {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_healing_active}}}}}
             {drop orders}
             {fire_mode open}
             {move_mode zone} {move_radius 12}
             {ai_move {mode enable}}
             {ai {advance_ratio "0.1"} {retreat_ratio 2} {no_retreat off}}
         }
-        {"actor_to_cover" {selector {tag _ufb_crew_pending}} {drop orders}}
-        {"entity_state" {selector {tag _ufb_crew_pending}} {tag_add _ufb_crew_safe}}
+        {"actor_to_cover" {selector {source advanced}  {group {select {tag {tag "_ufb_crew_pending"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}} {tag {tag _ufb_gun_job_active}} {tag {tag _ufb_healing_active}}}}} {drop orders}}
+        {"effect" {selector {tag _ufb_crew_pending}} {effect ufb_crew_cover_lease}}
         {"entity_state" {selector {tag _ufb_crew_pending}} {tag_remove _ufb_crew_pending}}
         {"delay" {time 3}}
         {"trigger" {name "ufb/crew/take cover"}}

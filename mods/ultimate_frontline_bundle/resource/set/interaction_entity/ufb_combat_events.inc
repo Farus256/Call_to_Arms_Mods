@@ -18,9 +18,10 @@
  {delay 12 {if tagged "_ufb_launcher_seen" {tags add "_ufb_launcher_ready"}}}
  {delay 24 {tags remove "_ufb_launcher_seen"} {tags remove "_ufb_launcher_ready"}}
 }
-{on "ufb_autonomy_move_on" {tags add "_ufb_autonomy_moving"}}
+{on "ufb_autonomy_move_on" {tags add "_ufb_autonomy_moving"} {tags remove "_ufb_hf_cover_retry"} {kill_delay "ufb_hf_cover_retry_expiry"}}
 {on "ufb_autonomy_move_off" {tags remove "_ufb_autonomy_moving"}}
 {on "ufb_combat_hit"
+ {if not dead {if not linked {if tagged "_ufb_shaken" {call "ufb_morale_quiet"}}}}
  {if not dead {if not linked {if not tagged "_ufb_recent_hit"
   {tags add "_ufb_recent_hit"}
   {tags add "_ufb_was_hit"}

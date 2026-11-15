@@ -27,15 +27,18 @@ template <typename T> T read(const void* base, std::ptrdiff_t offset) {
     return value;
 }
 
-inline bool isHatchRequest(const char* action) {
-    static const char name[] = "ufb_hatch";
-    const std::size_t length = sizeof(name) - 1;
+inline bool isNamedRequest(const char* action, const char* name) {
+    const std::size_t length = std::strlen(name);
     if (read<bool>(action, kModeIsPlace) || read<std::size_t>(action, kNameSize) != length)
         return false;
     const char* text = read<std::size_t>(action, kNameCapacity) > 0xf
         ? read<const char*>(action, kNameBuffer)
         : action + kNameBuffer;
     return text && std::memcmp(text, name, length) == 0;
+}
+
+inline bool isHatchRequest(const char* action) {
+    return isNamedRequest(action, "ufb_hatch") || isNamedRequest(action, "ufb_hatch_reset");
 }
 
 inline bool anySeatSealed(const char* crew) {
@@ -47,20 +50,21 @@ inline bool anySeatSealed(const char* crew) {
 }
 
 // Remembers only what UFB closed, so a hatch closed with the player's button stays closed.
-// ponytail: fixed ring, a tank pushed out after 256 closures just stays shut until its next close.
+// Bounded ownership: capacity exhaustion refuses a new close, never evicts an owner.
 class Closed {
     const void* slots_[256] = {};
-    unsigned next_ = 0;
 public:
+    void clear() { for (auto& slot : slots_) slot = nullptr; }
     bool has(const void* entity) const {
         for (auto slot : slots_)
             if (slot == entity)
                 return true;
         return false;
     }
-    void add(const void* entity) {
-        if (!has(entity))
-            slots_[next_++ % 256] = entity;
+    bool add(const void* entity) {
+        if (has(entity)) return true;
+        for (auto& slot : slots_) if (!slot) { slot = entity; return true; }
+        return false;
     }
     void remove(const void* entity) {
         for (auto& slot : slots_)
@@ -70,6 +74,7 @@ public:
 };
 
 inline void apply(const char* action, char* entity, SetSealedFn setSealed, Closed& closed) {
+    if (isNamedRequest(action, "ufb_hatch_reset")) { closed.remove(entity); return; }
     char* crew = read<char*>(entity, kCrew);
     if (!crew)
         return;
@@ -78,9 +83,9 @@ inline void apply(const char* action, char* entity, SetSealedFn setSealed, Close
             closed.remove(entity);
             setSealed(crew, false);
         }
-    } else if (!anySeatSealed(crew)) { // already shut by the player's button: leave it to him
-        setSealed(crew, true);
-        closed.add(entity);
+    } else {
+        // Repeated close commands preserve their lease. Spawn resets reused addresses.
+        if (!anySeatSealed(crew) && closed.add(entity)) setSealed(crew, true);
     }
 }
 } // namespace ufb

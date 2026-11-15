@@ -2,7 +2,8 @@ const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=requi
 const repo=p.resolve(__dirname,'..'),rel='map/multi/HF-dcg_script.inc';
 const root=p.join(repo,'mods/ultimate_frontline_bundle/resource');
 const names=['hf inf ai/medics/medics spawn','hf inf ai/medics/medic passive','hf inf ai/medics/medic active move'];
-const shape=n=>({kind:n.kind,tokens:n.tokens.map(t=>t.value),children:n.children.map(shape)});
+// Exclusions are an unordered OR; an added job guard may be appended by an incremental build.
+const shape=n=>({kind:n.kind,tokens:n.tokens.map(t=>t.value),children:s.name(n)==='exclude'?n.children.map(shape).sort((a,b)=>JSON.stringify(a).localeCompare(JSON.stringify(b))):n.children.map(shape)});
 function repair(text){
  const tree=s.parse(text),edits=[];
  for(const name of names){

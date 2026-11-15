@@ -2216,11 +2216,7 @@
  }
 }
 
-{on "ufb_hf_cover_committed" sync
- {kill_delay "ufb_hf_cover_expiry"}
- {tags add "_ufb_hf_cover_active"}
- {delay 3 "ufb_hf_cover_expiry" {tags remove "_ufb_hf_cover_active"}}
-}
+
 
 
 {on "bm_explosion"
@@ -2920,6 +2916,32 @@
 		}	;end of set3			
 
 	}
+
+{on "ufb_hf_cover_prepare" sync
+ {tags remove "_ufb_hf_cover_attempt"}
+ {if not dead {if not linked {if not in_cover
+  {if not tagged "_ufb_hf_cover_retry" {if not tagged "_ufb_hf_cover_active" {tags add "_ufb_hf_cover_attempt"}}}
+ }}}
+}
+{on "ufb_hf_cover_committed" sync
+ {tags remove "_ufb_hf_cover_attempt"}
+ {kill_delay "ufb_hf_cover_expiry"}
+ {kill_delay "ufb_hf_cover_result"}
+ {tags add "_ufb_hf_cover_active"}
+ {delay 3 "ufb_hf_cover_expiry" {tags remove "_ufb_hf_cover_active"}}
+ {delay 0.5 "ufb_hf_cover_result"
+  {if not dead {if not linked {if not in_cover {if not tagged "_ufb_autonomy_moving"
+   {tags remove "_ufb_hf_cover_active"}
+   {tags add "_ufb_hf_cover_retry"}
+   {kill_delay "ufb_hf_cover_retry_expiry"}
+   {delay 12 "ufb_hf_cover_retry_expiry" {tags remove "_ufb_hf_cover_retry"}}
+  }}}}
+ }
+}
+
+(include "ufb_crew_cover_events.inc")
 }
 
 ;{change_obstacle "nothing"}  ;// command that might be useful in future. Changes to a specific obstacle defined in .mdl
+
+

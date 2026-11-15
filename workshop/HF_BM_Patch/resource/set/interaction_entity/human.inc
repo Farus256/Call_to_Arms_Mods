@@ -86,6 +86,48 @@
 		{call "dead_personage"}
 		{if tagged "_anim_loop" {call "check_animation"}}	;// for mission scripts
 	}
+
+	{on animation_event "deflect_release_pose"
+		{if "deflect_ani_playing"
+			{call_synced "deflect_human_spawn_helper"}
+		}
+	}
+
+	{on animation_end "grenade_deflect"
+		{if "deflect_ani_playing"
+			{call_synced "deflect_human_release"}
+			{set "deflect_ani_playing" 0}
+			{tags add "deflect_ani_played"}
+		}
+	}
+
+	{on "deflect_human_spawn_helper"
+		{if not dead
+			{if not senseless
+				{if not linked
+					{spawn "deflect_contact"}
+				}
+			}
+		}
+	}
+
+	{on "deflect_human_release"
+		{if not dead
+			{if not senseless
+				{if not linked
+					{delay 0.25
+						{if tagged "deflect_ani_played"
+							{if not dead
+								{chassis_work 1}
+								{tags remove "deflect_ani_played"}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	{on "dead_personage"
 		{delay 0.5
 			{if tagged "_bleedout_"
@@ -93,56 +135,89 @@
 			}
 		}
 	}
-
-    {on "ai_near_player_cooldown"
-	    {tags add "_ai_near_player_cooldown"}
-		{delay 10
-		    {if tagged "_ai_near_player_cooldown" {tags remove "_ai_near_player_cooldown"}}
+	
+    {on "ai_medic_passive_build_tent"
+		{if not user_control
+			{tags add "_ai_medic_passive_building"}
+			{delay 4
+				{if not dead
+					{if tagged "_ai_medic_passive_building" {tags remove "_ai_medic_passive_building"}}
+					{spawn "medic_rally_ai"}
+					{tags add "_ai_medic_passive_built_tent"}
+				}
+			}
 		}
 	}
 
-    {on "ai_medic_cooldown"
-	    {tags add "_ai_medic_cooldown"}
-		{delay 20
-		    {if tagged "_ai_medic_cooldown" {tags remove "_ai_medic_cooldown"}}
+    {on "ai_near_player_cooldown"
+		{if not user_control
+			{tags add "_ai_near_player_cooldown"}
+			{delay 10
+				{if tagged "_ai_near_player_cooldown" {tags remove "_ai_near_player_cooldown"}}
+			}
 		}
 	}
 
     {on "ai_wirecutter_animation"
-	    {tags add "_ai_wirecutter_animation"}
-		{delay 5
-		    {if tagged "_ai_wirecutter_animation" {tags remove "_ai_wirecutter_animation"}}
+		{if not user_control
+			{tags add "_ai_wirecutter_animation"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 5
+				{if tagged "_ai_wirecutter_animation" {tags remove "_ai_wirecutter_animation"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 
     {on "ai_generic_cooldown_5sec"
-	    {tags add "_ai_generic_cooldown_5sec"}
-		{delay 5
-		    {if tagged "_ai_generic_cooldown_5sec" {tags remove "_ai_generic_cooldown_5sec"}}
+		{if not user_control
+			{tags add "_ai_generic_cooldown_5sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 5
+				{if tagged "_ai_generic_cooldown_5sec" {tags remove "_ai_generic_cooldown_5sec"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 
     {on "ai_generic_cooldown_10sec"
-	    {tags add "_ai_generic_cooldown_10sec"}
-		{delay 10
-		   {if tagged "_ai_generic_cooldown_10sec" {tags remove "_ai_generic_cooldown_10sec"}}
+		{if not user_control
+			{tags add "_ai_generic_cooldown_10sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 10
+			   {if tagged "_ai_generic_cooldown_10sec" {tags remove "_ai_generic_cooldown_10sec"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 
     {on "ai_generic_cooldown_15sec"
-	    {tags add "_ai_generic_cooldown_15sec"}
-		{delay 15
-		    {if tagged "_ai_generic_cooldown_15sec" {tags remove "_ai_generic_cooldown_15sec"}}
+		{if not user_control
+			{tags add "_ai_generic_cooldown_15sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 15
+				{if tagged "_ai_generic_cooldown_15sec" {tags remove "_ai_generic_cooldown_15sec"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 
     {on "ai_generic_cooldown_20sec"
-	    {tags add "_ai_generic_cooldown_20sec"}
-		{delay 20
-		    {if tagged "_ai_generic_cooldown_20sec" {tags remove "_ai_generic_cooldown_20sec"}}
+		{if not user_control
+			{tags add "_ai_generic_cooldown_20sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 20
+				{if tagged "_ai_generic_cooldown_20sec" {tags remove "_ai_generic_cooldown_20sec"} {tags remove "_ai_do_not_disturb"}}
+			}
 		}
 	}
 	
+    {on "ai_generic_cooldown_60sec"
+		{if not user_control	
+			{tags add "_ai_generic_cooldown_60sec"}
+			{tags add "_ai_do_not_disturb"}
+			{delay 20
+				{if tagged "_ai_generic_cooldown_60sec" {tags remove "_ai_generic_cooldown_60sec"} {tags remove "_ai_do_not_disturb"}}
+			}
+		}		
+	}
+
 	{on "ai_drop_orders"
 		{drop_orders}
 	}
@@ -294,23 +369,34 @@
 			{if volume_armored
 				{bullet_detonate}
 				{spawn "helmet_hit_bul"}
+				{if rand 0.10
+					{take_off "head"
+						{impulse up 5 2 dir 7 3}
+					}
+				}
 			}
 			{call "process_bullet_hit"}
 			{if tagged "start_personage"
-				{if rand 0.5
-					{call_synced "unhealable"}
-					{if not terrain_fx "water"
-						{ani_play "lie_die"}
-						{ani_stop "lie_wounded"}
-						{ani_stop "lie_wounded_1"}
-						{ani_stop "lie_wounded_2"}
-						{tags add "wounded_dead"}
-					}					
+				{if not tagged "hf_wounded_carry_pose"
+					{if rand 0.5
+						{call_synced "unhealable"}
+					}
+				else
+					;// do nothing
 				}
 			}
 		else stuff "shell"
 			{call "process_bullet_hit"}
-			{call "unhealable"}
+			{if tagged "start_personage"
+				{if not tagged "hf_wounded_carry_pose"
+					{call_synced "unhealable"}
+				else
+					;// do nothing
+				}
+			else not tagged "start_personage"
+				{call_synced "unhealable"}
+			}
+			
 		else stuff "flare"
 			{tags add "_flare_hit"}
 			{call "_burn"}
@@ -710,7 +796,21 @@
 
 	{on "hf_clear_tags"
 		;// HF conquest specific tags
-		{if tagged "_ai_medic_target"				{tags remove "_ai_medic_target"}}
+		{if tagged "_ai_do_not_disturb"				{tags remove "_ai_do_not_disturb"}}
+		{if tagged "_ai_medic"						{tags remove "_ai_medic"}}
+		{if tagged "_ai_medic_passive"				{tags remove "_ai_medic_passive"}}
+		{if tagged "_ai_medic_passive_building"		{tags remove "_ai_medic_passive_building"}}
+		{if tagged "_ai_medic_passive_built_tent"	{tags remove "_ai_medic_passive_built_tent"}}
+		{if tagged "_ai_medic_target" 		  		{tags remove "_ai_medic_target"}}
+		{if tagged "_ai_medic_target_in_range"		{tags remove "_ai_medic_target_in_range"}}
+		{if tagged "_ai_medic_active"				{tags remove "_ai_medic_active"}}
+		{if tagged "_ai_medic_active_working" 		{tags remove "_ai_medic_active_working"}}
+		{if tagged "_ai_medic_active_in_range" 		{tags remove "_ai_medic_active_in_range"}}
+		{if tagged "_ai_wounded_carrier"			{tags remove "_ai_wounded_carrier"}}
+		{if tagged "_ai_wounded_carrier_selected"	{tags remove "_ai_wounded_carrier_selected"}}
+		{if tagged "_ai_wounded_carrier_linked"		{tags remove "_ai_wounded_carrier_linked"}}
+		{if tagged "_ai_wounded_target"				{tags remove "_ai_wounded_target"}}
+		{if tagged "_ai_wounded_target_linked"		{tags remove "_ai_wounded_target_linked"}}		
 		{if tagged "_ai_near_player" 				{tags remove "_ai_near_player"}}
 		{if tagged "_ai_near_player_cooldown" 		{tags remove "_ai_near_player_cooldown"}}
 		{if tagged "_ai_ap_target" 					{tags remove "_ai_ap_target"}}
@@ -727,16 +827,12 @@
 		{if tagged "_ai_pilot_surrender" 			{tags remove "_ai_pilot_surrender"}}
 		{if tagged "_ai_pilot_surrendered" 			{tags remove "_ai_pilot_surrendered"}}
 		{if tagged "_ai_pilot_escaping" 			{tags remove "_ai_pilot_escaping"}}
-		{if tagged "_ai_medic_work" 				{tags remove "_ai_medic_work"}}
-		{if tagged "_ai_medic" 						{tags remove "_ai_medic"}}
-		{if tagged "_ai_medic_near" 				{tags remove "_ai_medic_near"}}
-		{if tagged "_ai_medic_cooldown" 			{tags remove "_ai_medic_cooldown"}}
-		{if tagged "_ai_medic_target" 				{tags remove "_ai_medic_target"}}
-		{if tagged "_ai_medic_target_being_healed" 	{tags remove "_ai_medic_target_being_healed"}}
 		{if tagged "_ai_wirecutter" 				{tags remove "_ai_wirecutter"}}
 		{if tagged "_ai_wirecutter_do" 				{tags remove "_ai_wirecutter"}}
 		{if tagged "_ai_wirecutter_in_action" 		{tags remove "_ai_wirecutter"}}
-		;//
+		;// Vanilla LUA tags
+		{if tagged "_lua_mi" 						{tags remove "_lua_mi"}}
+		{if tagged "_lua_ignore" 					{tags remove "_lua_ignore"}}
 	}
 
 	{on "die"
@@ -822,6 +918,10 @@
 			{kill_flags piercing}
 		}
 		{call "stop_bagpipes"}
+		{call "hf_clear_tags"}
+		{if tagged "start_personage"
+			{call "hf_wounded_queue_death"}
+		}
 		{die}
 		{delay 5
 			{volumes enable contact}
@@ -1249,7 +1349,7 @@
 		else effector "stuff weapon"	
 			{with_effector
 				{call "link_human"}
-			}			
+			}		
 		}
 	}
 
@@ -1729,55 +1829,203 @@
 	}
 
 	{on "start_personage"
+		{call "stop_wounded_animation"}
+		{kill_delay "hf_wounded_finish"}
+		{tags remove "hf_wounded_death_temp"}
+		{tags remove "hf_wounded_death_played"}
 		{view pause "marker_repair"}
 		{view pause "marker_personage_acute"}
 		{view start ally neutral "marker_personage"}
 		{tags add "start_personage"}
-		{if not terrain_fx "water"
-			{delay 3
-				{if rand 0.33
-					{ani_play "lie_wounded" loop}
-					{if not tagged "wounded_animation_playing"
-						{tags add "wounded_animation_playing"}
-					}
-				else rand 0.33
-					{ani_play "lie_wounded_1" loop}
-					{if not tagged "wounded_animation_playing"
-						{tags add "wounded_animation_playing"}
-					}
-				else
-					{ani_play "lie_wounded_2" loop}
-					{if not tagged "wounded_animation_playing"
-						{tags add "wounded_animation_playing"}
+		{delay 3 "hf_wounded_animation_start"
+			{call "hf_wounded_update"}
+		}
+	}
+
+	{on "hf_wounded_play"
+		{if not tagged "wounded_animation_playing"
+			{if personage
+				{if tagged "start_personage"
+					{if not linked
+						{if not inactive
+							{if not tagged "hf_wounded_death_temp"
+								{if not terrain_fx "water"
+									{if not tagged "_bleedout_"
+										{if not tagged "no_revive"
+											{if rand 0.33
+												{ani_play "lie_wounded" loop}
+											else rand 0.33
+												{ani_play "lie_wounded_1" loop}
+											else
+												{ani_play "lie_wounded_2" loop}
+											}
+											{tags add "wounded_animation_playing"}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
-			}		
+			}
 		}
+	}
+
+	{on "hf_wounded_pause"
+		{if tagged "wounded_animation_playing"
+			{ani_stop "lie_wounded"}
+			{ani_stop "lie_wounded_1"}
+			{ani_stop "lie_wounded_2"}
+			{tags remove "wounded_animation_playing"}
+		}
+	}
+
+	{on "hf_wounded_carry_stop"
+		{if tagged "hf_wounded_carry_pose"
+			{ani_stop "corpse_move"}
+			{tags remove "hf_wounded_carry_pose"}
+		}
+	}
+
+	{on "hf_wounded_transport_pause"
+		{if not tagged "hf_wounded_carry_pose"
+			{kill_delay "hf_wounded_resume"}
+			{tags remove "hf_wounded_resume_temp"}
+			{call "hf_wounded_pause"}
+			{ani_play "corpse_move" loop}
+			{tags add "hf_wounded_carry_pose"}
+		}
+		{tags add "hf_wounded_carry_paused"}
+		{call "hf_wounded_check_loop"}
+	}
+
+	{on "hf_wounded_check_loop"
+		{kill_delay "hf_wounded_check"}
+		{delay 1 "hf_wounded_check"
+			{call "hf_wounded_update"}
+		}
+	}
+
+	{on "hf_wounded_update"
+		{if linked
+			{call "hf_wounded_transport_pause"}
+		else inactive
+			{call "hf_wounded_transport_pause"}
+		else
+			{call "hf_wounded_carry_stop"}
+			{if tagged "hf_wounded_death_temp"
+				{call "hf_wounded_finish"}
+			else personage
+				{if tagged "start_personage"
+					{if tagged "hf_wounded_carry_paused"
+						{if not tagged "hf_wounded_resume_temp"
+							{tags add "hf_wounded_resume_temp"}
+							{delay 1 "hf_wounded_resume"
+								{tags remove "hf_wounded_resume_temp"}
+								{if not linked
+									{if not inactive
+										{tags remove "hf_wounded_carry_paused"}
+										{call "hf_wounded_play"}
+									}
+								}
+							}
+						}
+					else
+						{call "hf_wounded_play"}
+					}
+					{call "hf_wounded_check_loop"}
+				}
+			else
+				{call "stop_wounded_animation"}
+			}
+		}
+	}
+
+	{on "stop_wounded_animation"
+		{kill_delay "hf_wounded_animation_start"}
+		{kill_delay "hf_wounded_check"}
+		{kill_delay "hf_wounded_resume"}
+		{call "hf_wounded_pause"}
+		{if not linked
+			{if not inactive
+				{call "hf_wounded_carry_stop"}
+			}
+		}
+		{tags remove "hf_wounded_carry_paused"}
+		{tags remove "hf_wounded_resume_temp"}
+	}
+
+	{on "hf_wounded_queue_death"
+		{if tagged "wounded_animation_playing"
+			{tags add "hf_wounded_death_temp"}
+		else tagged "hf_wounded_carry_pose"
+			{tags add "hf_wounded_death_temp"}
+		}
+		{call "stop_wounded_animation"}
+		{if tagged "hf_wounded_death_temp"
+			{kill_delay "hf_wounded_finish"}
+			{delay 0.1 "hf_wounded_finish"
+				{call "hf_wounded_finish"}
+			}
+		}
+	}
+
+	{on "hf_wounded_finish"
+		{if dead
+			{if linked
+				{call "hf_wounded_transport_pause"}
+			else inactive
+				{call "hf_wounded_transport_pause"}
+			else
+				{call "stop_wounded_animation"}
+				{if not terrain_fx "water"
+					{if not tagged "hf_wounded_death_played"
+						{ani_play "lie_die" norestart}
+						{tags add "hf_wounded_death_played"}
+						{tags add "wounded_dead"}
+					}
+				}
+				{tags remove "hf_wounded_death_temp"}
+			}
+		else
+			{tags remove "hf_wounded_death_temp"}
+		}
+	}
+	
+	{on "hf_wounded_tags_clear"
+		{if tagged "_ai_wounded_carrier" 	  		{tags remove "_ai_wounded_carrier"}}
+		{if tagged "_ai_wounded_carrier_selected"   {tags remove "_ai_wounded_carrier_selected"}}
+		{if tagged "_ai_wounded_carrier_linked" 	{tags remove "_ai_wounded_carrier_linked"}}
+		{if tagged "_ai_wounded_target" 	  		{tags remove "_ai_wounded_target"}}
+		{if tagged "_ai_wounded_target_linked" 		{tags remove "_ai_wounded_target_linked"}}
+		{if tagged "_ai_medic_target" 		  		{tags remove "_ai_medic_target"}}
+		{if tagged "_ai_medic_target_in_range"		{tags remove "_ai_medic_target_in_range"}}
+		{call "ai_generic_cooldown_20sec"}
 	}
 
 	{on "stop_personage"
 		{set "die_sound" 0}
 		{view pause "marker_personage"}
 		{view pause "marker_personage_acute"}
-		{if not terrain_fx "water"
-			{ani_play "lie_die"}
-			{ani_stop "lie_wounded"}
-			{ani_stop "lie_wounded_1"}
-			{ani_stop "lie_wounded_2"}
-			{tags add "wounded_dead"}
-		}
+		{call "hf_wounded_queue_death"}
 		{if tagged "start_personage"
 			{delay 1
 				{if dead
 					{spawn "bloodstain" "basis" x}		;// spawns a pool of blood that spreads
 					{tags add "_bleedout_"}
 					{call "hf_clear_tags"}
+				else not dead
+					{delay 1
+						{if not tagged "bleeding"
+							{call "hf_wounded_tags_clear"}
+						}
+					}
 				}
 			}
+			{tags remove "start_personage"}
 		}
-		{tags remove "start_personage"}
 	}
-
+	
 	{on "start_personage_acute"
 		{view pause "marker_personage"}
 		{view start ally neutral "marker_personage_acute"}

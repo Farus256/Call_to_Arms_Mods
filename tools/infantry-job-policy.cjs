@@ -4,5 +4,6 @@ const protectedHumanTags=['_ufb_surrendered','_lua_mi','_lua_ignore','_ai_do_not
 // Multiplayer missions define no diplomacy: relation selectors match nothing there,
 // while {team {team a}} exists in every mode. Each routine runs once per side.
 protectedHumanTags.push('_ufb_rescue_active');
+protectedHumanTags.push('_ufb_gun_job_active');
 const sides=[['a','b'],['b','a']];
 module.exports={protectedHumanTags,sides};

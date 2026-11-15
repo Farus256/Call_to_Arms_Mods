@@ -5,6 +5,7 @@
 *.temp
 *.dmp
 node_modules/
+__pycache__/
 _ai_work/
 .env
 .env.*

@@ -253,7 +253,10 @@
 				(include "killzones.inc")
 				{if stuff "grenade fire"							; Molotov Grenades
 					{spawn "ex_molot_ground"}
-
+					
+				else stuff "grenade thermite"						; Thermite Grenades		
+					{spawn "ex_molot_ground"}
+					
 				else stuff "grapple_fx"								; grapple hook
 					{if rain
 						{spawn "ex_ap_size2"}

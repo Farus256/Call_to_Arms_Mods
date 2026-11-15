@@ -3042,12 +3042,12 @@
 				{transition "1743"}
 			}
 {"1370"
-				{position -1198.18 -5497.35 -15}
+				{position -1330.58 -5235.17 -17.313}
 				{RandomPosition 1}
 				{transition "1290"}
 			}
 {"1371"
-				{position -1330.58 -5235.17 -17.313}
+				{position -1678.17 -5406.17 -31}
 				{RandomPosition 1}
 				{transition "1290"}
 			}
@@ -3057,7 +3057,7 @@
 				{transition "1290"}
 			}
 {"1373"
-				{position -1678.17 -5406.17 -31}
+				{position -322.426 -920.417 5.75769}
 				{RandomPosition 1}
 				{transition "1291"}
 				{commands
@@ -3074,7 +3074,7 @@
 				}
 			}
 {"1374"
-				{position -1330.58 -5235.17 -17.313}
+				{position -78.4548 -476.058 4}
 				{RandomPosition 1}
 				{transition "1291"}
 				{commands
@@ -3091,7 +3091,7 @@
 				}
 			}
 {"1375"
-				{position -1198.18 -5497.35 -15}
+				{position 393.575 -299.518 3.00121}
 				{RandomPosition 1}
 				{transition "1291"}
 				{commands
@@ -3108,7 +3108,7 @@
 				}
 			}
 {"1376"
-				{position -1678.17 -5406.17 -31}
+				{position 804.943 150.659 14}
 				{RandomPosition 1}
 				{transition "1292"}
 				{commands
@@ -3125,7 +3125,7 @@
 				}
 			}
 {"1377"
-				{position -1330.58 -5235.17 -17.313}
+				{position 951.996 -305.861 12.7332}
 				{RandomPosition 1}
 				{transition "1292"}
 				{commands
@@ -3142,7 +3142,7 @@
 				}
 			}
 {"1378"
-				{position -1198.18 -5497.35 -15}
+				{position 1250.65 127.659 3}
 				{RandomPosition 1}
 				{transition "1292"}
 				{commands
@@ -3159,7 +3159,7 @@
 				}
 			}
 {"1379"
-				{position -1678.17 -5406.17 -31}
+				{position 539.359 -1054.25 23.7339}
 				{RandomPosition 1}
 				{transition "1293"}
 				{commands
@@ -3176,7 +3176,7 @@
 				}
 			}
 {"1380"
-				{position -1330.58 -5235.17 -17.313}
+				{position 222.035 -1463.97 1.38954}
 				{RandomPosition 1}
 				{transition "1293"}
 				{commands
@@ -3193,7 +3193,7 @@
 				}
 			}
 {"1381"
-				{position -1198.18 -5497.35 -15}
+				{position 1401.26 -905.815 -5}
 				{RandomPosition 1}
 				{transition "1293"}
 				{commands
@@ -3210,7 +3210,7 @@
 				}
 			}
 {"1435"
-				{position -1678.17 -5406.17 -31}
+				{position 3932.33 -1914.61 -25}
 				{RandomPosition 1}
 				{transition "1290"}
 			}
@@ -3221,16 +3221,16 @@
 				{position 998.088 -4368.84 9.47693}
 			}
 {"1740"
-				{position 3086.22 -3401.81 -22.1492}
+				{position -2842.26 -5113.55 -39.1964}
 			}
 {"1741"
-				{position 998.088 -4368.84 9.47693}
+				{position -1953.58 -5129.15 -21.8107}
 			}
 {"1742"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 1849.5 -2357.64 16}
 			}
 {"1743"
-				{position 998.088 -4368.84 9.47693}
+				{position 1047.05 -2155.57 13}
 			}
 {"1744"
 				{position 3086.22 -3401.81 -22.1492}
@@ -3239,13 +3239,13 @@
 				{transition "1747"}
 			}
 {"1745"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 2590.43 -576.415 0}
 			}
 {"1746"
-				{position 998.088 -4368.84 9.47693}
+				{position 1820.9 -1541.17 2}
 			}
 {"1747"
-				{position -1953.58 -5129.15 -21.8107}
+				{position 1657.02 790.247 -12.9688}
 			}
 {"1209"
 				{position 3086.22 -3401.81 -22.1492}
@@ -3254,11 +3254,11 @@
 				{transition "1740"}
 			}
 {"1290"
-				{position -1330.58 -5235.17 -17.313}
+				{position 3567.91 -2548.49 -30}
 				{RandomPosition 1}
 			}
 {"1291"
-				{position -1198.18 -5497.35 -15}
+				{position -221.637 -1474.44 15}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -3356,7 +3356,7 @@
 				}
 			}
 {"1292"
-				{position -1678.17 -5406.17 -31}
+				{position 1101.49 -1677.63 -18.7573}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -3454,7 +3454,7 @@
 				}
 			}
 {"1293"
-				{position -1330.58 -5235.17 -17.313}
+				{position 649.946 -1955.31 18}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -3718,28 +3718,28 @@
 				{transition "1763"}
 			}
 {"1214"
-				{position -1953.58 -5129.15 -21.8107}
+				{position 998.088 -4368.84 9.47693}
 				{transition "1758"}
 				{transition "1759"}
 				{transition "1760"}
 			}
 {"1382"
-				{position -1198.18 -5497.35 -15}
+				{position 947.936 -3876.32 3}
 				{RandomPosition 1}
 				{transition "1294"}
 			}
 {"1383"
-				{position -1678.17 -5406.17 -31}
+				{position 1336.89 -3412.83 23.3397}
 				{RandomPosition 1}
 				{transition "1294"}
 			}
 {"1384"
-				{position -1330.58 -5235.17 -17.313}
+				{position -132.797 -3930.89 13.4754}
 				{RandomPosition 1}
 				{transition "1294"}
 			}
 {"1385"
-				{position -1678.17 -5406.17 -31}
+				{position -1427.17 -1995.59 4}
 				{RandomPosition 1}
 				{transition "1295"}
 				{commands
@@ -3756,7 +3756,7 @@
 				}
 			}
 {"1386"
-				{position -1198.18 -5497.35 -15}
+				{position -1032.64 -2168.85 5.62292}
 				{RandomPosition 1}
 				{transition "1295"}
 				{commands
@@ -3773,7 +3773,7 @@
 				}
 			}
 {"1387"
-				{position -1330.58 -5235.17 -17.313}
+				{position -2025.76 -2041.17 5}
 				{RandomPosition 1}
 				{transition "1295"}
 				{commands
@@ -3790,7 +3790,7 @@
 				}
 			}
 {"1388"
-				{position -1198.18 -5497.35 -15}
+				{position -182.55 -1907.22 24.6045}
 				{RandomPosition 1}
 				{transition "1296"}
 				{commands
@@ -3807,7 +3807,7 @@
 				}
 			}
 {"1389"
-				{position -1678.17 -5406.17 -31}
+				{position -816.568 -1532.79 36.4081}
 				{RandomPosition 1}
 				{transition "1296"}
 				{commands
@@ -3824,7 +3824,7 @@
 				}
 			}
 {"1390"
-				{position -1330.58 -5235.17 -17.313}
+				{position -575.119 -2804.38 9.85555}
 				{RandomPosition 1}
 				{transition "1296"}
 				{commands
@@ -3841,7 +3841,7 @@
 				}
 			}
 {"1391"
-				{position -1198.18 -5497.35 -15}
+				{position 477.34 -2540.02 16.191}
 				{RandomPosition 1}
 				{transition "1297"}
 				{commands
@@ -3858,7 +3858,7 @@
 				}
 			}
 {"1392"
-				{position -1678.17 -5406.17 -31}
+				{position 138.105 -2768.8 -3.92302}
 				{RandomPosition 1}
 				{transition "1297"}
 				{commands
@@ -3875,7 +3875,7 @@
 				}
 			}
 {"1393"
-				{position -1330.58 -5235.17 -17.313}
+				{position 489.849 -3001.84 8}
 				{RandomPosition 1}
 				{transition "1297"}
 				{commands
@@ -3892,49 +3892,49 @@
 				}
 			}
 {"1436"
-				{position -1198.18 -5497.35 -15}
+				{position 510.398 -4011.77 -3.55127}
 				{RandomPosition 1}
 				{transition "1294"}
 			}
 {"1758"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 1149.98 -3001.84 6}
 			}
 {"1759"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -1295.56 -2617.3 -15.4398}
 			}
 {"1760"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -1399.41 -3684.01 14}
 			}
 {"1761"
-				{position 998.088 -4368.84 9.47693}
+				{position -1705.4 -3347.97 19}
 			}
 {"1762"
-				{position 998.088 -4368.84 9.47693}
+				{position -1141.52 -1097.05 21.3994}
 			}
 {"1763"
-				{position -1953.58 -5129.15 -21.8107}
+				{position 3056.87 -2755.45 -12}
 			}
 {"1764"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 998.088 -4368.84 9.47693}
 				{transition "1765"}
 				{transition "1766"}
 				{transition "1767"}
 			}
 {"1765"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -1161.87 -430.316 12.4694}
 			}
 {"1766"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -1923.62 -2570.21 5}
 			}
 {"1767"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -1829.53 -820.054 50}
 			}
 {"1294"
-				{position -1678.17 -5406.17 -31}
+				{position -2141.55 -4211.63 -8}
 				{RandomPosition 1}
 			}
 {"1295"
-				{position -1330.58 -5235.17 -17.313}
+				{position -2432.92 -2513.73 27.3219}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -4032,7 +4032,7 @@
 				}
 			}
 {"1296"
-				{position -1198.18 -5497.35 -15}
+				{position -705.341 12.1395 26.2791}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -4130,7 +4130,7 @@
 				}
 			}
 {"1297"
-				{position -1678.17 -5406.17 -31}
+				{position 3457.09 -2139.63 -19.3237}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -4388,7 +4388,7 @@
 				}
 			}
 {"1300"
-				{position -1330.58 -5235.17 -17.313}
+				{position -2349.55 -3089.7 28}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -4486,7 +4486,7 @@
 				}
 			}
 {"1301"
-				{position -1678.17 -5406.17 -31}
+				{position -2799.49 -4489.59 0}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -4584,22 +4584,22 @@
 				}
 			}
 {"1394"
-				{position -1330.58 -5235.17 -17.313}
+				{position -2271.25 -3483.51 26}
 				{RandomPosition 1}
 				{transition "1298"}
 			}
 {"1395"
-				{position -1198.18 -5497.35 -15}
+				{position -2779.85 -3217.62 10}
 				{RandomPosition 1}
 				{transition "1298"}
 			}
 {"1396"
-				{position -1678.17 -5406.17 -31}
+				{position -2778.51 -1561.68 26}
 				{RandomPosition 1}
 				{transition "1298"}
 			}
 {"1397"
-				{position -1330.58 -5235.17 -17.313}
+				{position -3422.9 -1449.69 23.3155}
 				{RandomPosition 1}
 				{transition "1299"}
 				{commands
@@ -4616,7 +4616,7 @@
 				}
 			}
 {"1398"
-				{position -1198.18 -5497.35 -15}
+				{position -4067.89 -1298.41 -5.52201}
 				{RandomPosition 1}
 				{transition "1299"}
 				{commands
@@ -4633,7 +4633,7 @@
 				}
 			}
 {"1399"
-				{position -1678.17 -5406.17 -31}
+				{position -3106.39 -585.106 19.8844}
 				{RandomPosition 1}
 				{transition "1299"}
 				{commands
@@ -4650,7 +4650,7 @@
 				}
 			}
 {"1400"
-				{position -1330.58 -5235.17 -17.313}
+				{position -1752.85 -330.093 25}
 				{RandomPosition 1}
 				{transition "1300"}
 				{commands
@@ -4667,7 +4667,7 @@
 				}
 			}
 {"1401"
-				{position -1198.18 -5497.35 -15}
+				{position -1358.92 -78.3467 23}
 				{RandomPosition 1}
 				{transition "1300"}
 				{commands
@@ -4684,7 +4684,7 @@
 				}
 			}
 {"1402"
-				{position -1330.58 -5235.17 -17.313}
+				{position -2225.57 236.749 19}
 				{RandomPosition 1}
 				{transition "1300"}
 				{commands
@@ -4701,7 +4701,7 @@
 				}
 			}
 {"1403"
-				{position -1678.17 -5406.17 -31}
+				{position -4600.86 -1176.92 -36}
 				{RandomPosition 1}
 				{transition "1301"}
 				{commands
@@ -4718,7 +4718,7 @@
 				}
 			}
 {"1404"
-				{position -1198.18 -5497.35 -15}
+				{position -1701.47 441.692 20}
 				{RandomPosition 1}
 				{transition "1301"}
 				{commands
@@ -4735,7 +4735,7 @@
 				}
 			}
 {"1405"
-				{position -1678.17 -5406.17 -31}
+				{position -2157.37 763.294 28.2439}
 				{RandomPosition 1}
 				{transition "1301"}
 				{commands
@@ -4752,7 +4752,7 @@
 				}
 			}
 {"1437"
-				{position -1198.18 -5497.35 -15}
+				{position -203.17 179.623 7}
 				{RandomPosition 1}
 				{transition "1298"}
 			}
@@ -4769,22 +4769,22 @@
 				{transition "1780"}
 			}
 {"1778"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -451.947 601.256 2.48376}
 			}
 {"1779"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -1387.49 848.339 43}
 			}
 {"1780"
-				{position -1953.58 -5129.15 -21.8107}
+				{position 379.524 623.752 3.65588}
 			}
 {"1781"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 881.203 790.816 0.204697}
 			}
 {"1782"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 2746.74 113.779 14.2527}
 			}
 {"1783"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 1288.42 1424.01 35.2915}
 			}
 {"1784"
 				{position -1953.58 -5129.15 -21.8107}
@@ -4793,20 +4793,20 @@
 				{transition "1787"}
 			}
 {"1785"
-				{position 998.088 -4368.84 9.47693}
+				{position 1945.33 1309.12 -2}
 			}
 {"1786"
-				{position 998.088 -4368.84 9.47693}
+				{position 1727.04 2343.64 36.1984}
 			}
 {"1787"
-				{position -1953.58 -5129.15 -21.8107}
+				{position 2332.05 2082.62 50}
 			}
 {"1298"
-				{position -1678.17 -5406.17 -31}
+				{position 3139.74 1750.68 76}
 				{RandomPosition 1}
 			}
 {"1299"
-				{position -1330.58 -5235.17 -17.313}
+				{position 1966.65 2709.43 81}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -5064,11 +5064,11 @@
 				}
 			}
 {"1302"
-				{position -1198.18 -5497.35 -15}
+				{position 5039 1147.43 33}
 				{RandomPosition 1}
 			}
 {"1303"
-				{position -1330.58 -5235.17 -17.313}
+				{position 2752.58 2691.64 95}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -5166,7 +5166,7 @@
 				}
 			}
 {"1304"
-				{position -1198.18 -5497.35 -15}
+				{position 2373.7 2881.19 105.354}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -5264,7 +5264,7 @@
 				}
 			}
 {"1305"
-				{position -1678.17 -5406.17 -31}
+				{position 2714.55 3225.82 104.171}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -5362,22 +5362,22 @@
 				}
 			}
 {"1406"
-				{position -1330.58 -5235.17 -17.313}
+				{position 5501.58 1780.27 42.0323}
 				{RandomPosition 1}
 				{transition "1302"}
 			}
 {"1407"
-				{position -1198.18 -5497.35 -15}
+				{position 4797.57 755.289 27}
 				{RandomPosition 1}
 				{transition "1302"}
 			}
 {"1408"
-				{position -1678.17 -5406.17 -31}
+				{position 3547.42 2219.78 98}
 				{RandomPosition 1}
 				{transition "1302"}
 			}
 {"1409"
-				{position -1330.58 -5235.17 -17.313}
+				{position 3174.81 2762.48 109}
 				{RandomPosition 1}
 				{transition "1303"}
 				{commands
@@ -5394,7 +5394,7 @@
 				}
 			}
 {"1410"
-				{position -1198.18 -5497.35 -15}
+				{position 3657.84 3329.96 80}
 				{RandomPosition 1}
 				{transition "1303"}
 				{commands
@@ -5411,7 +5411,7 @@
 				}
 			}
 {"1411"
-				{position -1678.17 -5406.17 -31}
+				{position 3129.71 3754.76 69}
 				{RandomPosition 1}
 				{transition "1303"}
 				{commands
@@ -5428,7 +5428,7 @@
 				}
 			}
 {"1412"
-				{position -1330.58 -5235.17 -17.313}
+				{position 1452.77 -2310.64 9.57995}
 				{RandomPosition 1}
 				{transition "1304"}
 				{commands
@@ -5445,7 +5445,7 @@
 				}
 			}
 {"1413"
-				{position -1198.18 -5497.35 -15}
+				{position -493.997 -2155.18 21.7779}
 				{RandomPosition 1}
 				{transition "1304"}
 				{commands
@@ -5462,7 +5462,7 @@
 				}
 			}
 {"1414"
-				{position -1678.17 -5406.17 -31}
+				{position 1616.77 -572.009 21.7637}
 				{RandomPosition 1}
 				{transition "1304"}
 				{commands
@@ -5479,7 +5479,7 @@
 				}
 			}
 {"1415"
-				{position -1330.58 -5235.17 -17.313}
+				{position -2700.54 -2847.18 16.892}
 				{RandomPosition 1}
 				{transition "1305"}
 				{commands
@@ -5496,7 +5496,7 @@
 				}
 			}
 {"1416"
-				{position -1198.18 -5497.35 -15}
+				{position -74.5761 602.994 6.50427}
 				{RandomPosition 1}
 				{transition "1305"}
 				{commands
@@ -5513,7 +5513,7 @@
 				}
 			}
 {"1417"
-				{position -1678.17 -5406.17 -31}
+				{position -2458.76 -4011.82 17}
 				{RandomPosition 1}
 				{transition "1305"}
 				{commands
@@ -5530,7 +5530,7 @@
 				}
 			}
 {"1438"
-				{position -1330.58 -5235.17 -17.313}
+				{position 1992.08 -2019.96 7.05853}
 				{RandomPosition 1}
 				{transition "1302"}
 			}
@@ -5547,22 +5547,22 @@
 				{transition "1803"}
 			}
 {"1798"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 2717.26 -909.991 -4}
 			}
 {"1799"
-				{position 3086.22 -3401.81 -22.1492}
+				{position -924.206 -2507.15 -16.5242}
 			}
 {"1800"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 1418.34 1752.66 9.74843}
 			}
 {"1801"
-				{position 998.088 -4368.84 9.47693}
+				{position -2459.43 -4571.28 -21}
 			}
 {"1802"
-				{position 3086.22 -3401.81 -22.1492}
+				{position -1699.6 -4890.95 -12}
 			}
 {"1803"
-				{position 998.088 -4368.84 9.47693}
+				{position -1589.15 -1690.86 25.7545}
 			}
 {"1804"
 				{position 3086.22 -3401.81 -22.1492}
@@ -5571,13 +5571,13 @@
 				{transition "1807"}
 			}
 {"1805"
-				{position 998.088 -4368.84 9.47693}
+				{position 1441.67 410.528 -1.23877}
 			}
 {"1806"
-				{position 998.088 -4368.84 9.47693}
+				{position -1657.66 -2779.45 8}
 			}
 {"1807"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 953.084 1120.26 22.957}
 			}
 {"1476"
 				{position -3503.09 -810.392 43.1235}
@@ -5740,11 +5740,11 @@
 				}
 			}
 {"1306"
-				{position -1678.17 -5406.17 -31}
+				{position 2053.33 1626.65 2.13471}
 				{RandomPosition 1}
 			}
 {"1307"
-				{position -1198.18 -5497.35 -15}
+				{position 5307.38 1508.17 37}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -5842,7 +5842,7 @@
 				}
 			}
 {"1308"
-				{position -1330.58 -5235.17 -17.313}
+				{position -495.055 -1649.88 35.0703}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -5940,7 +5940,7 @@
 				}
 			}
 {"1309"
-				{position -1678.17 -5406.17 -31}
+				{position -1785.02 -2281.32 1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -6038,22 +6038,22 @@
 				}
 			}
 {"1418"
-				{position -1198.18 -5497.35 -15}
+				{position 4620.91 491.952 19}
 				{RandomPosition 1}
 				{transition "1306"}
 			}
 {"1419"
-				{position -1330.58 -5235.17 -17.313}
+				{position -3077.1 -4919.47 -15}
 				{RandomPosition 1}
 				{transition "1306"}
 			}
 {"1420"
-				{position -1678.17 -5406.17 -31}
+				{position -137.962 -2680.55 -3.2041}
 				{RandomPosition 1}
 				{transition "1306"}
 			}
 {"1421"
-				{position -1198.18 -5497.35 -15}
+				{position 2949.75 3533.04 86.1438}
 				{RandomPosition 1}
 				{transition "1307"}
 				{commands
@@ -6070,7 +6070,7 @@
 				}
 			}
 {"1422"
-				{position -1330.58 -5235.17 -17.313}
+				{position 1527.5 61.1204 -23.5183}
 				{RandomPosition 1}
 				{transition "1307"}
 				{commands
@@ -6087,7 +6087,7 @@
 				}
 			}
 {"1423"
-				{position -1678.17 -5406.17 -31}
+				{position -2655.85 -4245.54 12.736}
 				{RandomPosition 1}
 				{transition "1307"}
 				{commands
@@ -6104,7 +6104,7 @@
 				}
 			}
 {"1424"
-				{position -1198.18 -5497.35 -15}
+				{position 671.644 -352.507 25.4041}
 				{RandomPosition 1}
 				{transition "1308"}
 				{commands
@@ -6121,7 +6121,7 @@
 				}
 			}
 {"1425"
-				{position -1330.58 -5235.17 -17.313}
+				{position -1639.48 -56.2613 15.6562}
 				{RandomPosition 1}
 				{transition "1308"}
 				{commands
@@ -6138,7 +6138,7 @@
 				}
 			}
 {"1426"
-				{position -1678.17 -5406.17 -31}
+				{position 906.263 403.747 9.8418}
 				{RandomPosition 1}
 				{transition "1308"}
 				{commands
@@ -6155,7 +6155,7 @@
 				}
 			}
 {"1427"
-				{position -1198.18 -5497.35 -15}
+				{position 648.959 -2783.64 -1}
 				{RandomPosition 1}
 				{transition "1309"}
 				{commands
@@ -6172,7 +6172,7 @@
 				}
 			}
 {"1428"
-				{position -1678.17 -5406.17 -31}
+				{position 838.119 -1629.71 15.0196}
 				{RandomPosition 1}
 				{transition "1309"}
 				{commands
@@ -6189,7 +6189,7 @@
 				}
 			}
 {"1429"
-				{position -1330.58 -5235.17 -17.313}
+				{position 592.758 -7.58398 38}
 				{RandomPosition 1}
 				{transition "1309"}
 				{commands
@@ -6206,7 +6206,7 @@
 				}
 			}
 {"1439"
-				{position -1198.18 -5497.35 -15}
+				{position -82.6895 -873 -29}
 				{RandomPosition 1}
 				{transition "1306"}
 			}
@@ -6217,28 +6217,28 @@
 				{transition "1820"}
 			}
 {"1727"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -1198.18 -5497.35 -15}
 				{transition "1821"}
 				{transition "1822"}
 				{transition "1823"}
 			}
 {"1818"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 25.0118 -1329.9 6}
 			}
 {"1819"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -1257.82 -1852.88 14.5575}
 			}
 {"1820"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -875.493 -2015.42 11.9655}
 			}
 {"1821"
-				{position -1953.58 -5129.15 -21.8107}
+				{position 877.599 -1777.72 16}
 			}
 {"1822"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 1060.45 -2281.5 6.60559}
 			}
 {"1823"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -1117.93 -2083.31 11}
 			}
 {"1824"
 				{position 998.088 -4368.84 9.47693}
@@ -6247,13 +6247,13 @@
 				{transition "1827"}
 			}
 {"1825"
-				{position 998.088 -4368.84 9.47693}
+				{position -282.938 -1021.15 11.6823}
 			}
 {"1826"
-				{position 998.088 -4368.84 9.47693}
+				{position -1950.39 -2111.04 3}
 			}
 {"1827"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -1438.08 -2051.83 1.38276}
 			}
 ; player entry a2
 {"2051"
@@ -9330,7 +9330,7 @@
 				}
 			}
 {"2224"
-				{position 1849.5 -2357.64 16}
+				{position 1149.98 -3001.84 6}
 				{RandomPosition 1}
 				{transition "2141"}
 				{commands
@@ -9347,7 +9347,7 @@
 				}
 			}
 {"2225"
-				{position 1992.08 -2019.96 7.05853}
+				{position 1336.89 -3412.83 23.3397}
 				{RandomPosition 1}
 				{transition "2141"}
 				{commands
@@ -9364,7 +9364,7 @@
 				}
 			}
 {"2226"
-				{position 2517.62 -1780.05 4}
+				{position 3932.33 -1914.61 -25}
 				{RandomPosition 1}
 				{transition "2142"}
 				{commands
@@ -9381,7 +9381,7 @@
 				}
 			}
 {"2227"
-				{position 1849.5 -2357.64 16}
+				{position 3567.91 -2548.49 -30}
 				{RandomPosition 1}
 				{transition "2142"}
 				{commands
@@ -9398,7 +9398,7 @@
 				}
 			}
 {"2228"
-				{position 3457.09 -2139.63 -19.3237}
+				{position 4620.91 491.952 19}
 				{RandomPosition 1}
 				{transition "2142"}
 				{commands
@@ -9415,7 +9415,7 @@
 				}
 			}
 {"2229"
-				{position 1336.89 -3412.83 23.3397}
+				{position 947.936 -3876.32 3}
 				{RandomPosition 1}
 				{transition "2143"}
 				{commands
@@ -9432,7 +9432,7 @@
 				}
 			}
 {"2230"
-				{position 1149.98 -3001.84 6}
+				{position 510.398 -4011.77 -3.55127}
 				{RandomPosition 1}
 				{transition "2143"}
 				{commands
@@ -9449,7 +9449,7 @@
 				}
 			}
 {"2231"
-				{position 1992.08 -2019.96 7.05853}
+				{position -132.797 -3930.89 13.4754}
 				{RandomPosition 1}
 				{transition "2143"}
 				{commands
@@ -9466,7 +9466,7 @@
 				}
 			}
 {"2285"
-				{position 3932.33 -1914.61 -25}
+				{position 5039 1147.43 33}
 				{RandomPosition 1}
 				{transition "2140"}
 			}
@@ -9477,16 +9477,16 @@
 				{position 1452.77 -2310.64 9.57995}
 			}
 {"2590"
-				{position 1992.08 -2019.96 7.05853}
+				{position 648.959 -2783.64 -1}
 			}
 {"2591"
-				{position 1342.09 -2289.23 2.30391}
+				{position 998.088 -4368.84 9.47693}
 			}
 {"2592"
-				{position 1849.5 -2357.64 16}
+				{position -1330.58 -5235.17 -17.313}
 			}
 {"2593"
-				{position 648.959 -2783.64 -1}
+				{position -1699.6 -4890.95 -12}
 			}
 {"2594"
 				{position 2717.26 -909.991 -4}
@@ -9495,13 +9495,13 @@
 				{transition "2597"}
 			}
 {"2595"
-				{position 2717.26 -909.991 -4}
+				{position 5307.38 1508.17 37}
 			}
 {"2596"
-				{position 1342.09 -2289.23 2.30391}
+				{position -2459.43 -4571.28 -21}
 			}
 {"2597"
-				{position 2717.26 -909.991 -4}
+				{position -2842.26 -5113.55 -39.1964}
 			}
 {"2059"
 				{position 2517.62 -1780.05 4}
@@ -9510,11 +9510,11 @@
 				{transition "2590"}
 			}
 {"2140"
-				{position 3567.91 -2548.49 -30}
+				{position -1678.17 -5406.17 -31}
 				{RandomPosition 1}
 			}
 {"2141"
-				{position 766.81 -3219.46 7}
+				{position 1849.5 -2357.64 16}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -9612,7 +9612,7 @@
 				}
 			}
 {"2142"
-				{position 2517.62 -1780.05 4}
+				{position -1953.58 -5129.15 -21.8107}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -9710,7 +9710,7 @@
 				}
 			}
 {"2143"
-				{position 1849.5 -2357.64 16}
+				{position 5501.58 1780.27 42.0323}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -9980,22 +9980,22 @@
 				{transition "2610"}
 			}
 {"2232"
-				{position 947.936 -3876.32 3}
+				{position 4797.57 755.289 27}
 				{RandomPosition 1}
 				{transition "2144"}
 			}
 {"2233"
-				{position 1336.89 -3412.83 23.3397}
+				{position -1198.18 -5497.35 -15}
 				{RandomPosition 1}
 				{transition "2144"}
 			}
 {"2234"
-				{position -132.797 -3930.89 13.4754}
+				{position 138.105 -2768.8 -3.92302}
 				{RandomPosition 1}
 				{transition "2144"}
 			}
 {"2235"
-				{position -132.797 -3930.89 13.4754}
+				{position -1427.17 -1995.59 4}
 				{RandomPosition 1}
 				{transition "2145"}
 				{commands
@@ -10012,7 +10012,7 @@
 				}
 			}
 {"2236"
-				{position 510.398 -4011.77 -3.55127}
+				{position -1032.64 -2168.85 5.62292}
 				{RandomPosition 1}
 				{transition "2145"}
 				{commands
@@ -10029,7 +10029,7 @@
 				}
 			}
 {"2237"
-				{position -132.797 -3930.89 13.4754}
+				{position -2025.76 -2041.17 5}
 				{RandomPosition 1}
 				{transition "2145"}
 				{commands
@@ -10046,7 +10046,7 @@
 				}
 			}
 {"2238"
-				{position 947.936 -3876.32 3}
+				{position 25.0118 -1329.9 6}
 				{RandomPosition 1}
 				{transition "2146"}
 				{commands
@@ -10063,7 +10063,7 @@
 				}
 			}
 {"2239"
-				{position 1336.89 -3412.83 23.3397}
+				{position -182.55 -1907.22 24.6045}
 				{RandomPosition 1}
 				{transition "2146"}
 				{commands
@@ -10080,7 +10080,7 @@
 				}
 			}
 {"2240"
-				{position 510.398 -4011.77 -3.55127}
+				{position -495.055 -1649.88 35.0703}
 				{RandomPosition 1}
 				{transition "2146"}
 				{commands
@@ -10097,7 +10097,7 @@
 				}
 			}
 {"2241"
-				{position 1149.98 -3001.84 6}
+				{position 1047.05 -2155.57 13}
 				{RandomPosition 1}
 				{transition "2147"}
 				{commands
@@ -10114,7 +10114,7 @@
 				}
 			}
 {"2242"
-				{position 766.81 -3219.46 7}
+				{position 877.599 -1777.72 16}
 				{RandomPosition 1}
 				{transition "2147"}
 				{commands
@@ -10131,7 +10131,7 @@
 				}
 			}
 {"2243"
-				{position 998.088 -4368.84 9.47693}
+				{position -575.119 -2804.38 9.85555}
 				{RandomPosition 1}
 				{transition "2147"}
 				{commands
@@ -10148,49 +10148,49 @@
 				}
 			}
 {"2286"
-				{position 510.398 -4011.77 -3.55127}
+				{position -1399.41 -3684.01 14}
 				{RandomPosition 1}
 				{transition "2144"}
 			}
 {"2608"
-				{position 489.849 -3001.84 8}
+				{position -3077.1 -4919.47 -15}
 			}
 {"2609"
-				{position 648.959 -2783.64 -1}
+				{position 489.849 -3001.84 8}
 			}
 {"2610"
-				{position 489.849 -3001.84 8}
+				{position -1295.56 -2617.3 -15.4398}
 			}
 {"2611"
-				{position 489.849 -3001.84 8}
+				{position 539.359 -1054.25 23.7339}
 			}
 {"2612"
-				{position 648.959 -2783.64 -1}
+				{position 1820.9 -1541.17 2}
 			}
 {"2613"
-				{position 1149.98 -3001.84 6}
+				{position 1401.26 -905.815 -5}
 			}
 {"2614"
-				{position 1452.77 -2310.64 9.57995}
+				{position 648.959 -2783.64 -1}
 				{transition "2615"}
 				{transition "2616"}
 				{transition "2617"}
 			}
 {"2615"
-				{position 648.959 -2783.64 -1}
+				{position -282.938 -1021.15 11.6823}
 			}
 {"2616"
-				{position 1342.09 -2289.23 2.30391}
+				{position -1141.52 -1097.05 21.3994}
 			}
 {"2617"
-				{position 947.936 -3876.32 3}
+				{position -1923.62 -2570.21 5}
 			}
 {"2144"
-				{position 998.088 -4368.84 9.47693}
+				{position -1705.4 -3347.97 19}
 				{RandomPosition 1}
 			}
 {"2145"
-				{position -1699.6 -4890.95 -12}
+				{position -2432.92 -2513.73 27.3219}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -10288,7 +10288,7 @@
 				}
 			}
 {"2146"
-				{position -132.797 -3930.89 13.4754}
+				{position -78.4548 -476.058 4}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -10386,7 +10386,7 @@
 				}
 			}
 {"2147"
-				{position 3056.87 -2755.45 -12}
+				{position 671.644 -352.507 25.4041}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -10644,7 +10644,7 @@
 				}
 			}
 {"2150"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -2349.55 -3089.7 28}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -10742,7 +10742,7 @@
 				}
 			}
 {"2151"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -2458.76 -4011.82 17}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -10840,22 +10840,22 @@
 				}
 			}
 {"2244"
-				{position -1330.58 -5235.17 -17.313}
+				{position -2271.25 -3483.51 26}
 				{RandomPosition 1}
 				{transition "2148"}
 			}
 {"2245"
-				{position -1699.6 -4890.95 -12}
+				{position -2779.85 -3217.62 10}
 				{RandomPosition 1}
 				{transition "2148"}
 			}
 {"2246"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -2778.51 -1561.68 26}
 				{RandomPosition 1}
 				{transition "2148"}
 			}
 {"2247"
-				{position -2151.09 -4819.95 -20.3119}
+				{position -3422.9 -1449.69 23.3155}
 				{RandomPosition 1}
 				{transition "2149"}
 				{commands
@@ -10872,7 +10872,7 @@
 				}
 			}
 {"2248"
-				{position -1330.58 -5235.17 -17.313}
+				{position -4067.89 -1298.41 -5.52201}
 				{RandomPosition 1}
 				{transition "2149"}
 				{commands
@@ -10889,7 +10889,7 @@
 				}
 			}
 {"2249"
-				{position -1678.17 -5406.17 -31}
+				{position -1829.53 -820.054 50}
 				{RandomPosition 1}
 				{transition "2149"}
 				{commands
@@ -10906,7 +10906,7 @@
 				}
 			}
 {"2250"
-				{position -1699.6 -4890.95 -12}
+				{position -1161.87 -430.316 12.4694}
 				{RandomPosition 1}
 				{transition "2150"}
 				{commands
@@ -10923,7 +10923,7 @@
 				}
 			}
 {"2251"
-				{position -1198.18 -5497.35 -15}
+				{position -1752.85 -330.093 25}
 				{RandomPosition 1}
 				{transition "2150"}
 				{commands
@@ -10940,7 +10940,7 @@
 				}
 			}
 {"2252"
-				{position -1953.58 -5129.15 -21.8107}
+				{position -3106.39 -585.106 19.8844}
 				{RandomPosition 1}
 				{transition "2150"}
 				{commands
@@ -10957,7 +10957,7 @@
 				}
 			}
 {"2253"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -4600.86 -1176.92 -36}
 				{RandomPosition 1}
 				{transition "2151"}
 				{commands
@@ -10974,7 +10974,7 @@
 				}
 			}
 {"2254"
-				{position -2151.09 -4819.95 -20.3119}
+				{position -1358.92 -78.3467 23}
 				{RandomPosition 1}
 				{transition "2151"}
 				{commands
@@ -10991,7 +10991,7 @@
 				}
 			}
 {"2255"
-				{position -2842.26 -5113.55 -39.1964}
+				{position -2225.57 236.749 19}
 				{RandomPosition 1}
 				{transition "2151"}
 				{commands
@@ -11008,7 +11008,7 @@
 				}
 			}
 {"2287"
-				{position -1198.18 -5497.35 -15}
+				{position -705.341 12.1395 26.2791}
 				{RandomPosition 1}
 				{transition "2148"}
 			}
@@ -11025,44 +11025,44 @@
 				{transition "2630"}
 			}
 {"2628"
-				{position -2459.43 -4571.28 -21}
+				{position -1701.47 441.692 20}
 			}
 {"2629"
-				{position -3077.1 -4919.47 -15}
+				{position -203.17 179.623 7}
 			}
 {"2630"
-				{position -2459.43 -4571.28 -21}
+				{position -2157.37 763.294 28.2439}
 			}
 {"2631"
-				{position -3077.1 -4919.47 -15}
+				{position -451.947 601.256 2.48376}
 			}
 {"2632"
-				{position -2459.43 -4571.28 -21}
+				{position -1387.49 848.339 43}
 			}
 {"2633"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 804.943 150.659 14}
 			}
 {"2634"
-				{position -1330.58 -5235.17 -17.313}
+				{position -132.797 -3930.89 13.4754}
 				{transition "2635"}
 				{transition "2636"}
 				{transition "2637"}
 			}
 {"2635"
-				{position -1678.17 -5406.17 -31}
+				{position 379.524 623.752 3.65588}
 			}
 {"2636"
-				{position 510.398 -4011.77 -3.55127}
+				{position 1250.65 127.659 3}
 			}
 {"2637"
-				{position -1699.6 -4890.95 -12}
+				{position 881.203 790.816 0.204697}
 			}
 {"2148"
-				{position -1678.17 -5406.17 -31}
+				{position 1657.02 790.247 -12.9688}
 				{RandomPosition 1}
 			}
 {"2149"
-				{position -1953.58 -5129.15 -21.8107}
+				{position 1288.42 1424.01 35.2915}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -11320,11 +11320,11 @@
 				}
 			}
 {"2152"
-				{position 5039 1147.43 33}
+				{position 3139.74 1750.68 76}
 				{RandomPosition 1}
 			}
 {"2153"
-				{position 4620.91 491.952 19}
+				{position 1945.33 1309.12 -2}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -11422,7 +11422,7 @@
 				}
 			}
 {"2154"
-				{position 4797.57 755.289 27}
+				{position 1727.04 2343.64 36.1984}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -11520,7 +11520,7 @@
 				}
 			}
 {"2155"
-				{position 5307.38 1508.17 37}
+				{position 2714.55 3225.82 104.171}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -11618,22 +11618,22 @@
 				}
 			}
 {"2256"
-				{position 5501.58 1780.27 42.0323}
+				{position 3547.42 2219.78 98}
 				{RandomPosition 1}
 				{transition "2152"}
 			}
 {"2257"
-				{position 4797.57 755.289 27}
+				{position 2746.74 113.779 14.2527}
 				{RandomPosition 1}
 				{transition "2152"}
 			}
 {"2258"
-				{position 4620.91 491.952 19}
+				{position 2332.05 2082.62 50}
 				{RandomPosition 1}
 				{transition "2152"}
 			}
 {"2259"
-				{position 4620.91 491.952 19}
+				{position 1966.65 2709.43 81}
 				{RandomPosition 1}
 				{transition "2153"}
 				{commands
@@ -11650,7 +11650,7 @@
 				}
 			}
 {"2260"
-				{position 3932.33 -1914.61 -25}
+				{position 2373.7 2881.19 105.354}
 				{RandomPosition 1}
 				{transition "2153"}
 				{commands
@@ -11667,7 +11667,7 @@
 				}
 			}
 {"2261"
-				{position 4797.57 755.289 27}
+				{position 2752.58 2691.64 95}
 				{RandomPosition 1}
 				{transition "2153"}
 				{commands
@@ -11684,7 +11684,7 @@
 				}
 			}
 {"2262"
-				{position 5501.58 1780.27 42.0323}
+				{position 3174.81 2762.48 109}
 				{RandomPosition 1}
 				{transition "2154"}
 				{commands
@@ -11701,7 +11701,7 @@
 				}
 			}
 {"2263"
-				{position 5039 1147.43 33}
+				{position 3129.71 3754.76 69}
 				{RandomPosition 1}
 				{transition "2154"}
 				{commands
@@ -11718,7 +11718,7 @@
 				}
 			}
 {"2264"
-				{position 5307.38 1508.17 37}
+				{position 3657.84 3329.96 80}
 				{RandomPosition 1}
 				{transition "2154"}
 				{commands
@@ -11735,7 +11735,7 @@
 				}
 			}
 {"2265"
-				{position 5501.58 1780.27 42.0323}
+				{position -493.997 -2155.18 21.7779}
 				{RandomPosition 1}
 				{transition "2155"}
 				{commands
@@ -11752,7 +11752,7 @@
 				}
 			}
 {"2266"
-				{position 5039 1147.43 33}
+				{position 1616.77 -572.009 21.7637}
 				{RandomPosition 1}
 				{transition "2155"}
 				{commands
@@ -11769,7 +11769,7 @@
 				}
 			}
 {"2267"
-				{position 5307.38 1508.17 37}
+				{position -2700.54 -2847.18 16.892}
 				{RandomPosition 1}
 				{transition "2155"}
 				{commands
@@ -11786,12 +11786,12 @@
 				}
 			}
 {"2288"
-				{position 5307.38 1508.17 37}
+				{position -74.5761 602.994 6.50427}
 				{RandomPosition 1}
 				{transition "2152"}
 			}
 {"2572"
-				{position 4797.57 755.289 27}
+				{position 5307.38 1508.17 37}
 				{transition "2648"}
 				{transition "2649"}
 				{transition "2650"}
@@ -11803,37 +11803,37 @@
 				{transition "2653"}
 			}
 {"2648"
-				{position 5501.58 1780.27 42.0323}
+				{position -2141.55 -4211.63 -8}
 			}
 {"2649"
-				{position 5039 1147.43 33}
+				{position 2590.43 -576.415 0}
 			}
 {"2650"
-				{position 4797.57 755.289 27}
+				{position -924.206 -2507.15 -16.5242}
 			}
 {"2651"
-				{position 4620.91 491.952 19}
+				{position 1418.34 1752.66 9.74843}
 			}
 {"2652"
-				{position 5307.38 1508.17 37}
+				{position -2799.49 -4489.59 0}
 			}
 {"2653"
-				{position 2717.26 -909.991 -4}
+				{position -1589.15 -1690.86 25.7545}
 			}
 {"2654"
-				{position 3567.91 -2548.49 -30}
+				{position 4797.57 755.289 27}
 				{transition "2655"}
 				{transition "2656"}
 				{transition "2657"}
 			}
 {"2655"
-				{position 5501.58 1780.27 42.0323}
+				{position -816.568 -1532.79 36.4081}
 			}
 {"2656"
-				{position 3932.33 -1914.61 -25}
+				{position 1441.67 410.528 -1.23877}
 			}
 {"2657"
-				{position 3457.09 -2139.63 -19.3237}
+				{position -1657.66 -2779.45 8}
 			}
 {"2326"
 				{position -3503.09 -810.392 43.1235}
@@ -11996,11 +11996,11 @@
 				}
 			}
 {"2156"
-				{position 766.81 -3219.46 7}
+				{position 953.084 1120.26 22.957}
 				{RandomPosition 1}
 			}
 {"2157"
-				{position 1992.08 -2019.96 7.05853}
+				{position 2053.33 1626.65 2.13471}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -12098,7 +12098,7 @@
 				}
 			}
 {"2158"
-				{position 1336.89 -3412.83 23.3397}
+				{position -1785.02 -2281.32 1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -12196,7 +12196,7 @@
 				}
 			}
 {"2159"
-				{position -1198.18 -5497.35 -15}
+				{position 477.34 -2540.02 16.191}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -12294,22 +12294,22 @@
 				}
 			}
 {"2268"
-				{position 998.088 -4368.84 9.47693}
+				{position -137.962 -2680.55 -3.2041}
 				{RandomPosition 1}
 				{transition "2156"}
 			}
 {"2269"
-				{position -132.797 -3930.89 13.4754}
+				{position 649.946 -1955.31 18}
 				{RandomPosition 1}
 				{transition "2156"}
 			}
 {"2270"
-				{position 947.936 -3876.32 3}
+				{position -221.637 -1474.44 15}
 				{RandomPosition 1}
 				{transition "2156"}
 			}
 {"2271"
-				{position 1849.5 -2357.64 16}
+				{position 2949.75 3533.04 86.1438}
 				{RandomPosition 1}
 				{transition "2157"}
 				{commands
@@ -12326,7 +12326,7 @@
 				}
 			}
 {"2272"
-				{position 2517.62 -1780.05 4}
+				{position 1527.5 61.1204 -23.5183}
 				{RandomPosition 1}
 				{transition "2157"}
 				{commands
@@ -12343,7 +12343,7 @@
 				}
 			}
 {"2273"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 951.996 -305.861 12.7332}
 				{RandomPosition 1}
 				{transition "2157"}
 				{commands
@@ -12360,7 +12360,7 @@
 				}
 			}
 {"2274"
-				{position 1149.98 -3001.84 6}
+				{position -2655.85 -4245.54 12.736}
 				{RandomPosition 1}
 				{transition "2158"}
 				{commands
@@ -12377,7 +12377,7 @@
 				}
 			}
 {"2275"
-				{position 3056.87 -2755.45 -12}
+				{position 393.575 -299.518 3.00121}
 				{RandomPosition 1}
 				{transition "2158"}
 				{commands
@@ -12394,7 +12394,7 @@
 				}
 			}
 {"2276"
-				{position 1336.89 -3412.83 23.3397}
+				{position -1639.48 -56.2613 15.6562}
 				{RandomPosition 1}
 				{transition "2158"}
 				{commands
@@ -12411,7 +12411,7 @@
 				}
 			}
 {"2277"
-				{position -2151.09 -4819.95 -20.3119}
+				{position 906.263 403.747 9.8418}
 				{RandomPosition 1}
 				{transition "2159"}
 				{commands
@@ -12428,7 +12428,7 @@
 				}
 			}
 {"2278"
-				{position -2842.26 -5113.55 -39.1964}
+				{position 592.758 -7.58398 38}
 				{RandomPosition 1}
 				{transition "2159"}
 				{commands
@@ -12445,7 +12445,7 @@
 				}
 			}
 {"2279"
-				{position -1330.58 -5235.17 -17.313}
+				{position -82.6895 -873 -29}
 				{RandomPosition 1}
 				{transition "2159"}
 				{commands
@@ -12462,54 +12462,54 @@
 				}
 			}
 {"2289"
-				{position 766.81 -3219.46 7}
+				{position 1101.49 -1677.63 -18.7573}
 				{RandomPosition 1}
 				{transition "2156"}
 			}
 {"2576"
-				{position 1452.77 -2310.64 9.57995}
+				{position 1342.09 -2289.23 2.30391}
 				{transition "2668"}
 				{transition "2669"}
 				{transition "2670"}
 			}
 {"2577"
-				{position 648.959 -2783.64 -1}
+				{position 1452.77 -2310.64 9.57995}
 				{transition "2671"}
 				{transition "2672"}
 				{transition "2673"}
 			}
 {"2668"
-				{position 489.849 -3001.84 8}
+				{position 222.035 -1463.97 1.38954}
 			}
 {"2669"
-				{position 1342.09 -2289.23 2.30391}
+				{position -1257.82 -1852.88 14.5575}
 			}
 {"2670"
-				{position 1452.77 -2310.64 9.57995}
+				{position -875.493 -2015.42 11.9655}
 			}
 {"2671"
-				{position 648.959 -2783.64 -1}
+				{position 838.119 -1629.71 15.0196}
 			}
 {"2672"
-				{position 489.849 -3001.84 8}
+				{position 1060.45 -2281.5 6.60559}
 			}
 {"2673"
-				{position -3077.1 -4919.47 -15}
+				{position -1117.93 -2083.31 11}
 			}
 {"2674"
-				{position 1342.09 -2289.23 2.30391}
+				{position 1992.08 -2019.96 7.05853}
 				{transition "2675"}
 				{transition "2676"}
 				{transition "2677"}
 			}
 {"2675"
-				{position 1452.77 -2310.64 9.57995}
+				{position -322.426 -920.417 5.75769}
 			}
 {"2676"
-				{position 3567.91 -2548.49 -30}
+				{position -1950.39 -2111.04 3}
 			}
 {"2677"
-				{position 1992.08 -2019.96 7.05853}
+				{position -1438.08 -2051.83 1.38276}
 			}
 ; player entry a3
 {"2901"
@@ -15554,22 +15554,22 @@
 				{transition "3443"}
 			}
 {"3070"
-				{position 5501.58 1780.27 42.0323}
+				{position 5307.38 1508.17 37}
 				{RandomPosition 1}
 				{transition "2990"}
 			}
 {"3071"
-				{position 5307.38 1508.17 37}
-				{RandomPosition 1}
-				{transition "2990"}
-			}
-{"3072"
 				{position 5501.58 1780.27 42.0323}
 				{RandomPosition 1}
 				{transition "2990"}
 			}
+{"3072"
+				{position 3056.87 -2755.45 -12}
+				{RandomPosition 1}
+				{transition "2990"}
+			}
 {"3073"
-				{position 5307.38 1508.17 37}
+				{position -322.426 -920.417 5.75769}
 				{RandomPosition 1}
 				{transition "2991"}
 				{commands
@@ -15586,7 +15586,7 @@
 				}
 			}
 {"3074"
-				{position 5501.58 1780.27 42.0323}
+				{position -78.4548 -476.058 4}
 				{RandomPosition 1}
 				{transition "2991"}
 				{commands
@@ -15603,7 +15603,7 @@
 				}
 			}
 {"3075"
-				{position 5307.38 1508.17 37}
+				{position 393.575 -299.518 3.00121}
 				{RandomPosition 1}
 				{transition "2991"}
 				{commands
@@ -15620,7 +15620,7 @@
 				}
 			}
 {"3076"
-				{position 5501.58 1780.27 42.0323}
+				{position 804.943 150.659 14}
 				{RandomPosition 1}
 				{transition "2992"}
 				{commands
@@ -15637,7 +15637,7 @@
 				}
 			}
 {"3077"
-				{position 5307.38 1508.17 37}
+				{position 951.996 -305.861 12.7332}
 				{RandomPosition 1}
 				{transition "2992"}
 				{commands
@@ -15654,7 +15654,7 @@
 				}
 			}
 {"3078"
-				{position 5501.58 1780.27 42.0323}
+				{position 1250.65 127.659 3}
 				{RandomPosition 1}
 				{transition "2992"}
 				{commands
@@ -15671,7 +15671,7 @@
 				}
 			}
 {"3079"
-				{position 5307.38 1508.17 37}
+				{position 539.359 -1054.25 23.7339}
 				{RandomPosition 1}
 				{transition "2993"}
 				{commands
@@ -15688,7 +15688,7 @@
 				}
 			}
 {"3080"
-				{position 5501.58 1780.27 42.0323}
+				{position 222.035 -1463.97 1.38954}
 				{RandomPosition 1}
 				{transition "2993"}
 				{commands
@@ -15705,7 +15705,7 @@
 				}
 			}
 {"3081"
-				{position 5307.38 1508.17 37}
+				{position 1401.26 -905.815 -5}
 				{RandomPosition 1}
 				{transition "2993"}
 				{commands
@@ -15722,42 +15722,42 @@
 				}
 			}
 {"3135"
-				{position 5501.58 1780.27 42.0323}
+				{position 3932.33 -1914.61 -25}
 				{RandomPosition 1}
 				{transition "2990"}
 			}
 {"3438"
-				{position 3932.33 -1914.61 -25}
+				{position 3567.91 -2548.49 -30}
 			}
 {"3439"
-				{position 3567.91 -2548.49 -30}
+				{position 3086.22 -3401.81 -22.1492}
 			}
 {"3440"
-				{position 3567.91 -2548.49 -30}
+				{position 4797.57 755.289 27}
 			}
 {"3441"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 5039 1147.43 33}
 			}
 {"3442"
-				{position 3932.33 -1914.61 -25}
+				{position 1849.5 -2357.64 16}
 			}
 {"3443"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 1047.05 -2155.57 13}
 			}
 {"3444"
-				{position 4797.57 755.289 27}
+				{position 3932.33 -1914.61 -25}
 				{transition "3445"}
 				{transition "3446"}
 				{transition "3447"}
 			}
 {"3445"
-				{position 3932.33 -1914.61 -25}
+				{position 2590.43 -576.415 0}
 			}
 {"3446"
-				{position 3567.91 -2548.49 -30}
+				{position 1820.9 -1541.17 2}
 			}
 {"3447"
-				{position 5039 1147.43 33}
+				{position 1657.02 790.247 -12.9688}
 			}
 {"2909"
 				{position 3567.91 -2548.49 -30}
@@ -15766,11 +15766,11 @@
 				{transition "3440"}
 			}
 {"2990"
-				{position 5307.38 1508.17 37}
+				{position 3457.09 -2139.63 -19.3237}
 				{RandomPosition 1}
 			}
 {"2991"
-				{position 5501.58 1780.27 42.0323}
+				{position -221.637 -1474.44 15}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -15868,7 +15868,7 @@
 				}
 			}
 {"2992"
-				{position 5307.38 1508.17 37}
+				{position 1101.49 -1677.63 -18.7573}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -15966,7 +15966,7 @@
 				}
 			}
 {"2993"
-				{position 5501.58 1780.27 42.0323}
+				{position 649.946 -1955.31 18}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -16230,28 +16230,28 @@
 				{transition "3463"}
 			}
 {"2914"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 3567.91 -2548.49 -30}
 				{transition "3458"}
 				{transition "3459"}
 				{transition "3460"}
 			}
 {"3082"
-				{position 5307.38 1508.17 37}
+				{position 947.936 -3876.32 3}
 				{RandomPosition 1}
 				{transition "2994"}
 			}
 {"3083"
-				{position 5501.58 1780.27 42.0323}
+				{position 1336.89 -3412.83 23.3397}
 				{RandomPosition 1}
 				{transition "2994"}
 			}
 {"3084"
-				{position 5307.38 1508.17 37}
+				{position -132.797 -3930.89 13.4754}
 				{RandomPosition 1}
 				{transition "2994"}
 			}
 {"3085"
-				{position 5501.58 1780.27 42.0323}
+				{position -1427.17 -1995.59 4}
 				{RandomPosition 1}
 				{transition "2995"}
 				{commands
@@ -16268,7 +16268,7 @@
 				}
 			}
 {"3086"
-				{position 5307.38 1508.17 37}
+				{position -1032.64 -2168.85 5.62292}
 				{RandomPosition 1}
 				{transition "2995"}
 				{commands
@@ -16285,7 +16285,7 @@
 				}
 			}
 {"3087"
-				{position 5501.58 1780.27 42.0323}
+				{position -2025.76 -2041.17 5}
 				{RandomPosition 1}
 				{transition "2995"}
 				{commands
@@ -16302,7 +16302,7 @@
 				}
 			}
 {"3088"
-				{position 5307.38 1508.17 37}
+				{position -182.55 -1907.22 24.6045}
 				{RandomPosition 1}
 				{transition "2996"}
 				{commands
@@ -16319,7 +16319,7 @@
 				}
 			}
 {"3089"
-				{position 5501.58 1780.27 42.0323}
+				{position -816.568 -1532.79 36.4081}
 				{RandomPosition 1}
 				{transition "2996"}
 				{commands
@@ -16336,7 +16336,7 @@
 				}
 			}
 {"3090"
-				{position 5307.38 1508.17 37}
+				{position -575.119 -2804.38 9.85555}
 				{RandomPosition 1}
 				{transition "2996"}
 				{commands
@@ -16353,7 +16353,7 @@
 				}
 			}
 {"3091"
-				{position 5501.58 1780.27 42.0323}
+				{position 477.34 -2540.02 16.191}
 				{RandomPosition 1}
 				{transition "2997"}
 				{commands
@@ -16370,7 +16370,7 @@
 				}
 			}
 {"3092"
-				{position 5307.38 1508.17 37}
+				{position 138.105 -2768.8 -3.92302}
 				{RandomPosition 1}
 				{transition "2997"}
 				{commands
@@ -16387,7 +16387,7 @@
 				}
 			}
 {"3093"
-				{position 5501.58 1780.27 42.0323}
+				{position 489.849 -3001.84 8}
 				{RandomPosition 1}
 				{transition "2997"}
 				{commands
@@ -16404,49 +16404,49 @@
 				}
 			}
 {"3136"
-				{position 5307.38 1508.17 37}
+				{position 510.398 -4011.77 -3.55127}
 				{RandomPosition 1}
 				{transition "2994"}
 			}
 {"3458"
-				{position 3932.33 -1914.61 -25}
+				{position 1149.98 -3001.84 6}
 			}
 {"3459"
-				{position 3567.91 -2548.49 -30}
+				{position -1295.56 -2617.3 -15.4398}
 			}
 {"3460"
-				{position 3086.22 -3401.81 -22.1492}
+				{position -1399.41 -3684.01 14}
 			}
 {"3461"
-				{position 3932.33 -1914.61 -25}
+				{position 998.088 -4368.84 9.47693}
 			}
 {"3462"
-				{position 3567.91 -2548.49 -30}
+				{position -1141.52 -1097.05 21.3994}
 			}
 {"3463"
-				{position 3086.22 -3401.81 -22.1492}
+				{position -1705.4 -3347.97 19}
 			}
 {"3464"
-				{position 4797.57 755.289 27}
+				{position 3086.22 -3401.81 -22.1492}
 				{transition "3465"}
 				{transition "3466"}
 				{transition "3467"}
 			}
 {"3465"
-				{position 3932.33 -1914.61 -25}
+				{position -1161.87 -430.316 12.4694}
 			}
 {"3466"
-				{position 5039 1147.43 33}
+				{position -1923.62 -2570.21 5}
 			}
 {"3467"
-				{position 4797.57 755.289 27}
+				{position -1829.53 -820.054 50}
 			}
 {"2994"
-				{position 5501.58 1780.27 42.0323}
+				{position -1330.58 -5235.17 -17.313}
 				{RandomPosition 1}
 			}
 {"2995"
-				{position 5307.38 1508.17 37}
+				{position -2432.92 -2513.73 27.3219}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -16544,7 +16544,7 @@
 				}
 			}
 {"2996"
-				{position 5501.58 1780.27 42.0323}
+				{position -705.341 12.1395 26.2791}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -16642,7 +16642,7 @@
 				}
 			}
 {"2997"
-				{position 5307.38 1508.17 37}
+				{position -203.17 179.623 7}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -16900,7 +16900,7 @@
 				}
 			}
 {"3000"
-				{position 5501.58 1780.27 42.0323}
+				{position -2349.55 -3089.7 28}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -16998,7 +16998,7 @@
 				}
 			}
 {"3001"
-				{position 5307.38 1508.17 37}
+				{position -2799.49 -4489.59 0}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -17096,22 +17096,22 @@
 				}
 			}
 {"3094"
-				{position 5501.58 1780.27 42.0323}
+				{position -1699.6 -4890.95 -12}
 				{RandomPosition 1}
 				{transition "2998"}
 			}
 {"3095"
-				{position 5307.38 1508.17 37}
+				{position -2141.55 -4211.63 -8}
 				{RandomPosition 1}
 				{transition "2998"}
 			}
 {"3096"
-				{position 5501.58 1780.27 42.0323}
+				{position -2842.26 -5113.55 -39.1964}
 				{RandomPosition 1}
 				{transition "2998"}
 			}
 {"3097"
-				{position 5307.38 1508.17 37}
+				{position -2700.54 -2847.18 16.892}
 				{RandomPosition 1}
 				{transition "2999"}
 				{commands
@@ -17128,7 +17128,7 @@
 				}
 			}
 {"3098"
-				{position 5501.58 1780.27 42.0323}
+				{position -2271.25 -3483.51 26}
 				{RandomPosition 1}
 				{transition "2999"}
 				{commands
@@ -17145,7 +17145,7 @@
 				}
 			}
 {"3099"
-				{position 5307.38 1508.17 37}
+				{position -2778.51 -1561.68 26}
 				{RandomPosition 1}
 				{transition "2999"}
 				{commands
@@ -17162,7 +17162,7 @@
 				}
 			}
 {"3100"
-				{position 5501.58 1780.27 42.0323}
+				{position -1752.85 -330.093 25}
 				{RandomPosition 1}
 				{transition "3000"}
 				{commands
@@ -17179,7 +17179,7 @@
 				}
 			}
 {"3101"
-				{position 5307.38 1508.17 37}
+				{position -3422.9 -1449.69 23.3155}
 				{RandomPosition 1}
 				{transition "3000"}
 				{commands
@@ -17196,7 +17196,7 @@
 				}
 			}
 {"3102"
-				{position 5501.58 1780.27 42.0323}
+				{position -3106.39 -585.106 19.8844}
 				{RandomPosition 1}
 				{transition "3000"}
 				{commands
@@ -17213,7 +17213,7 @@
 				}
 			}
 {"3103"
-				{position 5307.38 1508.17 37}
+				{position -4067.89 -1298.41 -5.52201}
 				{RandomPosition 1}
 				{transition "3001"}
 				{commands
@@ -17230,7 +17230,7 @@
 				}
 			}
 {"3104"
-				{position 5501.58 1780.27 42.0323}
+				{position -4600.86 -1176.92 -36}
 				{RandomPosition 1}
 				{transition "3001"}
 				{commands
@@ -17247,7 +17247,7 @@
 				}
 			}
 {"3105"
-				{position 5307.38 1508.17 37}
+				{position -1358.92 -78.3467 23}
 				{RandomPosition 1}
 				{transition "3001"}
 				{commands
@@ -17264,7 +17264,7 @@
 				}
 			}
 {"3137"
-				{position 5501.58 1780.27 42.0323}
+				{position -2225.57 236.749 19}
 				{RandomPosition 1}
 				{transition "2998"}
 			}
@@ -17275,50 +17275,50 @@
 				{transition "3483"}
 			}
 {"2928"
-				{position 3567.91 -2548.49 -30}
+				{position 3932.33 -1914.61 -25}
 				{transition "3478"}
 				{transition "3479"}
 				{transition "3480"}
 			}
 {"3478"
-				{position 3932.33 -1914.61 -25}
+				{position -1701.47 441.692 20}
 			}
 {"3479"
-				{position 3086.22 -3401.81 -22.1492}
+				{position -451.947 601.256 2.48376}
 			}
 {"3480"
-				{position 3567.91 -2548.49 -30}
+				{position -2157.37 763.294 28.2439}
 			}
 {"3481"
-				{position 5039 1147.43 33}
+				{position -1387.49 848.339 43}
 			}
 {"3482"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 379.524 623.752 3.65588}
 			}
 {"3483"
-				{position 3567.91 -2548.49 -30}
+				{position 881.203 790.816 0.204697}
 			}
 {"3484"
-				{position 4797.57 755.289 27}
+				{position 3567.91 -2548.49 -30}
 				{transition "3485"}
 				{transition "3486"}
 				{transition "3487"}
 			}
 {"3485"
-				{position 3932.33 -1914.61 -25}
+				{position 1288.42 1424.01 35.2915}
 			}
 {"3486"
-				{position 5039 1147.43 33}
+				{position 2746.74 113.779 14.2527}
 			}
 {"3487"
-				{position 4797.57 755.289 27}
+				{position 1945.33 1309.12 -2}
 			}
 {"2998"
-				{position 5307.38 1508.17 37}
+				{position 1727.04 2343.64 36.1984}
 				{RandomPosition 1}
 			}
 {"2999"
-				{position 5501.58 1780.27 42.0323}
+				{position 2332.05 2082.62 50}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -17576,11 +17576,11 @@
 				}
 			}
 {"3002"
-				{position 5307.38 1508.17 37}
+				{position 3139.74 1750.68 76}
 				{RandomPosition 1}
 			}
 {"3003"
-				{position 5501.58 1780.27 42.0323}
+				{position 1966.65 2709.43 81}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -17678,7 +17678,7 @@
 				}
 			}
 {"3004"
-				{position 5307.38 1508.17 37}
+				{position 2373.7 2881.19 105.354}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -17776,7 +17776,7 @@
 				}
 			}
 {"3005"
-				{position 5501.58 1780.27 42.0323}
+				{position 2714.55 3225.82 104.171}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -17874,22 +17874,22 @@
 				}
 			}
 {"3106"
-				{position 5501.58 1780.27 42.0323}
+				{position 3547.42 2219.78 98}
 				{RandomPosition 1}
 				{transition "3002"}
 			}
 {"3107"
-				{position 5307.38 1508.17 37}
+				{position 3174.81 2762.48 109}
 				{RandomPosition 1}
 				{transition "3002"}
 			}
 {"3108"
-				{position 5501.58 1780.27 42.0323}
+				{position 2752.58 2691.64 95}
 				{RandomPosition 1}
 				{transition "3002"}
 			}
 {"3109"
-				{position 5307.38 1508.17 37}
+				{position 3129.71 3754.76 69}
 				{RandomPosition 1}
 				{transition "3003"}
 				{commands
@@ -17906,7 +17906,7 @@
 				}
 			}
 {"3110"
-				{position 5501.58 1780.27 42.0323}
+				{position 3657.84 3329.96 80}
 				{RandomPosition 1}
 				{transition "3003"}
 				{commands
@@ -17923,7 +17923,7 @@
 				}
 			}
 {"3111"
-				{position 5307.38 1508.17 37}
+				{position 1452.77 -2310.64 9.57995}
 				{RandomPosition 1}
 				{transition "3003"}
 				{commands
@@ -17940,7 +17940,7 @@
 				}
 			}
 {"3112"
-				{position 5501.58 1780.27 42.0323}
+				{position -493.997 -2155.18 21.7779}
 				{RandomPosition 1}
 				{transition "3004"}
 				{commands
@@ -17957,7 +17957,7 @@
 				}
 			}
 {"3113"
-				{position 5307.38 1508.17 37}
+				{position 1616.77 -572.009 21.7637}
 				{RandomPosition 1}
 				{transition "3004"}
 				{commands
@@ -17974,7 +17974,7 @@
 				}
 			}
 {"3114"
-				{position 5501.58 1780.27 42.0323}
+				{position -1678.17 -5406.17 -31}
 				{RandomPosition 1}
 				{transition "3004"}
 				{commands
@@ -17991,7 +17991,7 @@
 				}
 			}
 {"3115"
-				{position 5307.38 1508.17 37}
+				{position -2779.85 -3217.62 10}
 				{RandomPosition 1}
 				{transition "3005"}
 				{commands
@@ -18008,7 +18008,7 @@
 				}
 			}
 {"3116"
-				{position 5501.58 1780.27 42.0323}
+				{position -74.5761 602.994 6.50427}
 				{RandomPosition 1}
 				{transition "3005"}
 				{commands
@@ -18025,7 +18025,7 @@
 				}
 			}
 {"3117"
-				{position 5307.38 1508.17 37}
+				{position -2458.76 -4011.82 17}
 				{RandomPosition 1}
 				{transition "3005"}
 				{commands
@@ -18042,7 +18042,7 @@
 				}
 			}
 {"3138"
-				{position 5307.38 1508.17 37}
+				{position 1992.08 -2019.96 7.05853}
 				{RandomPosition 1}
 				{transition "3002"}
 			}
@@ -18059,37 +18059,37 @@
 				{transition "3503"}
 			}
 {"3498"
-				{position 5039 1147.43 33}
+				{position 2717.26 -909.991 -4}
 			}
 {"3499"
-				{position 5039 1147.43 33}
+				{position -924.206 -2507.15 -16.5242}
 			}
 {"3500"
-				{position 4797.57 755.289 27}
+				{position 1418.34 1752.66 9.74843}
 			}
 {"3501"
-				{position 5039 1147.43 33}
+				{position -2459.43 -4571.28 -21}
 			}
 {"3502"
-				{position 4797.57 755.289 27}
+				{position -1953.58 -5129.15 -21.8107}
 			}
 {"3503"
-				{position 4797.57 755.289 27}
+				{position -1589.15 -1690.86 25.7545}
 			}
 {"3504"
-				{position 5039 1147.43 33}
+				{position 4797.57 755.289 27}
 				{transition "3505"}
 				{transition "3506"}
 				{transition "3507"}
 			}
 {"3505"
-				{position 4797.57 755.289 27}
+				{position 1441.67 410.528 -1.23877}
 			}
 {"3506"
-				{position 5039 1147.43 33}
+				{position -1657.66 -2779.45 8}
 			}
 {"3507"
-				{position 3932.33 -1914.61 -25}
+				{position 953.084 1120.26 22.957}
 			}
 {"3176"
 				{position -3503.09 -810.392 43.1235}
@@ -18252,11 +18252,11 @@
 				}
 			}
 {"3006"
-				{position 5501.58 1780.27 42.0323}
+				{position 2053.33 1626.65 2.13471}
 				{RandomPosition 1}
 			}
 {"3007"
-				{position 5307.38 1508.17 37}
+				{position -495.055 -1649.88 35.0703}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -18354,7 +18354,7 @@
 				}
 			}
 {"3008"
-				{position 5501.58 1780.27 42.0323}
+				{position -1785.02 -2281.32 1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -18452,7 +18452,7 @@
 				}
 			}
 {"3009"
-				{position 5307.38 1508.17 37}
+				{position 4620.91 491.952 19}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -18550,22 +18550,22 @@
 				}
 			}
 {"3118"
-				{position 5501.58 1780.27 42.0323}
+				{position -3077.1 -4919.47 -15}
 				{RandomPosition 1}
 				{transition "3006"}
 			}
 {"3119"
-				{position 5307.38 1508.17 37}
+				{position -1198.18 -5497.35 -15}
 				{RandomPosition 1}
 				{transition "3006"}
 			}
 {"3120"
-				{position 5501.58 1780.27 42.0323}
+				{position -137.962 -2680.55 -3.2041}
 				{RandomPosition 1}
 				{transition "3006"}
 			}
 {"3121"
-				{position 5307.38 1508.17 37}
+				{position 2949.75 3533.04 86.1438}
 				{RandomPosition 1}
 				{transition "3007"}
 				{commands
@@ -18582,7 +18582,7 @@
 				}
 			}
 {"3122"
-				{position 5501.58 1780.27 42.0323}
+				{position 1527.5 61.1204 -23.5183}
 				{RandomPosition 1}
 				{transition "3007"}
 				{commands
@@ -18599,7 +18599,7 @@
 				}
 			}
 {"3123"
-				{position 5307.38 1508.17 37}
+				{position -2655.85 -4245.54 12.736}
 				{RandomPosition 1}
 				{transition "3007"}
 				{commands
@@ -18616,7 +18616,7 @@
 				}
 			}
 {"3124"
-				{position 5501.58 1780.27 42.0323}
+				{position 671.644 -352.507 25.4041}
 				{RandomPosition 1}
 				{transition "3008"}
 				{commands
@@ -18633,7 +18633,7 @@
 				}
 			}
 {"3125"
-				{position 5307.38 1508.17 37}
+				{position -1639.48 -56.2613 15.6562}
 				{RandomPosition 1}
 				{transition "3008"}
 				{commands
@@ -18650,7 +18650,7 @@
 				}
 			}
 {"3126"
-				{position 5501.58 1780.27 42.0323}
+				{position 906.263 403.747 9.8418}
 				{RandomPosition 1}
 				{transition "3008"}
 				{commands
@@ -18667,7 +18667,7 @@
 				}
 			}
 {"3127"
-				{position 5307.38 1508.17 37}
+				{position 648.959 -2783.64 -1}
 				{RandomPosition 1}
 				{transition "3009"}
 				{commands
@@ -18684,7 +18684,7 @@
 				}
 			}
 {"3128"
-				{position 5501.58 1780.27 42.0323}
+				{position 838.119 -1629.71 15.0196}
 				{RandomPosition 1}
 				{transition "3009"}
 				{commands
@@ -18701,7 +18701,7 @@
 				}
 			}
 {"3129"
-				{position 5307.38 1508.17 37}
+				{position 592.758 -7.58398 38}
 				{RandomPosition 1}
 				{transition "3009"}
 				{commands
@@ -18718,54 +18718,54 @@
 				}
 			}
 {"3139"
-				{position 5501.58 1780.27 42.0323}
+				{position -82.6895 -873 -29}
 				{RandomPosition 1}
 				{transition "3006"}
 			}
 {"3426"
-				{position 3567.91 -2548.49 -30}
+				{position 3932.33 -1914.61 -25}
 				{transition "3518"}
 				{transition "3519"}
 				{transition "3520"}
 			}
 {"3427"
-				{position 3932.33 -1914.61 -25}
+				{position 3567.91 -2548.49 -30}
 				{transition "3521"}
 				{transition "3522"}
 				{transition "3523"}
 			}
 {"3518"
-				{position 3086.22 -3401.81 -22.1492}
+				{position 25.0118 -1329.9 6}
 			}
 {"3519"
-				{position 3567.91 -2548.49 -30}
+				{position -1257.82 -1852.88 14.5575}
 			}
 {"3520"
-				{position 3932.33 -1914.61 -25}
+				{position -875.493 -2015.42 11.9655}
 			}
 {"3521"
-				{position 3567.91 -2548.49 -30}
+				{position 877.599 -1777.72 16}
 			}
 {"3522"
-				{position 4797.57 755.289 27}
+				{position 1060.45 -2281.5 6.60559}
 			}
 {"3523"
-				{position 3086.22 -3401.81 -22.1492}
+				{position -1117.93 -2083.31 11}
 			}
 {"3524"
-				{position 3932.33 -1914.61 -25}
+				{position 5039 1147.43 33}
 				{transition "3525"}
 				{transition "3526"}
 				{transition "3527"}
 			}
 {"3525"
-				{position 5039 1147.43 33}
+				{position -282.938 -1021.15 11.6823}
 			}
 {"3526"
-				{position 4797.57 755.289 27}
+				{position -1950.39 -2111.04 3}
 			}
 {"3527"
-				{position 3567.91 -2548.49 -30}
+				{position -1438.08 -2051.83 1.38276}
 			}
 ; player entry a4
 {"3751"
@@ -19944,7 +19944,7 @@
 				}
 			}
 {"3770"
-				{position 2454.02 1140.43 13.9976}
+				{position 3457.09 -2139.63 -19.3237}
 				{radius 300}
 				{commands
 					{"switch"
@@ -20284,7 +20284,7 @@
 				}
 			}
 {"3771"
-				{position 2053.33 1626.65 2.13471}
+				{position 3056.87 -2755.45 -12}
 				{radius 300}
 				{commands
 					{"switch"
@@ -20624,7 +20624,7 @@
 				}
 			}
 {"3772"
-				{position 3105.84 1132.52 29}
+				{position 3086.22 -3401.81 -22.1492}
 				{radius 300}
 				{commands
 					{"switch"
@@ -20964,7 +20964,7 @@
 				}
 			}
 {"3773"
-				{position 3685.65 2065.13 98}
+				{position 5039 1147.43 33}
 				{radius 300}
 				{commands
 					{"switch"
@@ -21304,7 +21304,7 @@
 				}
 			}
 {"3774"
-				{position 1727.04 2343.64 36.1984}
+				{position 3567.91 -2548.49 -30}
 				{radius 300}
 				{commands
 					{"switch"
@@ -21804,28 +21804,28 @@
 				}
 			}
 {"3760"
-				{position 1945.33 1309.12 -2}
+				{position 3056.87 -2755.45 -12}
 				{transition "4291"}
 				{transition "4292"}
 				{transition "4293"}
 			}
 {"3920"
-				{position 4620.91 491.952 19}
+				{position 3457.09 -2139.63 -19.3237}
 				{RandomPosition 1}
 				{transition "3840"}
 			}
 {"3921"
-				{position 4797.57 755.289 27}
+				{position 3086.22 -3401.81 -22.1492}
 				{RandomPosition 1}
 				{transition "3840"}
 			}
 {"3922"
-				{position 4620.91 491.952 19}
+				{position 3056.87 -2755.45 -12}
 				{RandomPosition 1}
 				{transition "3840"}
 			}
 {"3923"
-				{position 2454.02 1140.43 13.9976}
+				{position 3567.91 -2548.49 -30}
 				{RandomPosition 1}
 				{transition "3841"}
 				{commands
@@ -21842,7 +21842,7 @@
 				}
 			}
 {"3924"
-				{position 2332.05 2082.62 50}
+				{position 3932.33 -1914.61 -25}
 				{RandomPosition 1}
 				{transition "3841"}
 				{commands
@@ -21859,7 +21859,7 @@
 				}
 			}
 {"3925"
-				{position 2053.33 1626.65 2.13471}
+				{position 4620.91 491.952 19}
 				{RandomPosition 1}
 				{transition "3841"}
 				{commands
@@ -21876,7 +21876,7 @@
 				}
 			}
 {"3926"
-				{position 3139.74 1750.68 76}
+				{position 5039 1147.43 33}
 				{RandomPosition 1}
 				{transition "3842"}
 				{commands
@@ -21893,7 +21893,7 @@
 				}
 			}
 {"3927"
-				{position 3105.84 1132.52 29}
+				{position 5307.38 1508.17 37}
 				{RandomPosition 1}
 				{transition "3842"}
 				{commands
@@ -21910,7 +21910,7 @@
 				}
 			}
 {"3928"
-				{position 2454.02 1140.43 13.9976}
+				{position 5501.58 1780.27 42.0323}
 				{RandomPosition 1}
 				{transition "3842"}
 				{commands
@@ -21927,7 +21927,7 @@
 				}
 			}
 {"3929"
-				{position 1966.65 2709.43 81}
+				{position 4797.57 755.289 27}
 				{RandomPosition 1}
 				{transition "3843"}
 				{commands
@@ -21944,7 +21944,7 @@
 				}
 			}
 {"3930"
-				{position 2053.33 1626.65 2.13471}
+				{position 222.035 -1463.97 1.38954}
 				{RandomPosition 1}
 				{transition "3843"}
 				{commands
@@ -21961,7 +21961,7 @@
 				}
 			}
 {"3931"
-				{position 2332.05 2082.62 50}
+				{position 1401.26 -905.815 -5}
 				{RandomPosition 1}
 				{transition "3843"}
 				{commands
@@ -21978,55 +21978,55 @@
 				}
 			}
 {"3985"
-				{position 5039 1147.43 33}
+				{position 2717.26 -909.991 -4}
 				{RandomPosition 1}
 				{transition "3840"}
 			}
 {"4288"
-				{position 1945.33 1309.12 -2}
+				{position 998.088 -4368.84 9.47693}
 			}
 {"4289"
-				{position 1945.33 1309.12 -2}
+				{position 1820.9 -1541.17 2}
 			}
 {"4290"
-				{position 3105.84 1132.52 29}
+				{position 1992.08 -2019.96 7.05853}
 			}
 {"4291"
-				{position 3139.74 1750.68 76}
+				{position 1101.49 -1677.63 -18.7573}
 			}
 {"4292"
-				{position 3547.42 2219.78 98}
+				{position 1452.77 -2310.64 9.57995}
 			}
 {"4293"
-				{position 1727.04 2343.64 36.1984}
+				{position 1047.05 -2155.57 13}
 			}
 {"4294"
-				{position 2454.02 1140.43 13.9976}
+				{position 3932.33 -1914.61 -25}
 				{transition "4295"}
 				{transition "4296"}
 				{transition "4297"}
 			}
 {"4295"
-				{position 4797.57 755.289 27}
+				{position 2746.74 113.779 14.2527}
 			}
 {"4296"
-				{position 2752.58 2691.64 95}
+				{position 1527.5 61.1204 -23.5183}
 			}
 {"4297"
-				{position 1945.33 1309.12 -2}
+				{position 951.996 -305.861 12.7332}
 			}
 {"3759"
-				{position 4620.91 491.952 19}
+				{position 3457.09 -2139.63 -19.3237}
 				{transition "4288"}
 				{transition "4289"}
 				{transition "4290"}
 			}
 {"3840"
-				{position 5307.38 1508.17 37}
+				{position 1149.98 -3001.84 6}
 				{RandomPosition 1}
 			}
 {"3841"
-				{position 2373.7 2881.19 105.354}
+				{position -82.6895 -873 -29}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -22124,7 +22124,7 @@
 				}
 			}
 {"3842"
-				{position 1966.65 2709.43 81}
+				{position 592.758 -7.58398 38}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -22222,7 +22222,7 @@
 				}
 			}
 {"3843"
-				{position 3174.81 2762.48 109}
+				{position 649.946 -1955.31 18}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -22480,34 +22480,34 @@
 				}
 			}
 {"3763"
-				{position 3105.84 1132.52 29}
+				{position 998.088 -4368.84 9.47693}
 				{transition "4311"}
 				{transition "4312"}
 				{transition "4313"}
 			}
 {"3764"
-				{position 2053.33 1626.65 2.13471}
+				{position 998.088 -4368.84 9.47693}
 				{transition "4308"}
 				{transition "4309"}
 				{transition "4310"}
 			}
 {"3932"
-				{position 3139.74 1750.68 76}
+				{position 947.936 -3876.32 3}
 				{RandomPosition 1}
 				{transition "3844"}
 			}
 {"3933"
-				{position 5039 1147.43 33}
+				{position 1336.89 -3412.83 23.3397}
 				{RandomPosition 1}
 				{transition "3844"}
 			}
 {"3934"
-				{position 2332.05 2082.62 50}
+				{position -132.797 -3930.89 13.4754}
 				{RandomPosition 1}
 				{transition "3844"}
 			}
 {"3935"
-				{position 1727.04 2343.64 36.1984}
+				{position -1427.17 -1995.59 4}
 				{RandomPosition 1}
 				{transition "3845"}
 				{commands
@@ -22524,7 +22524,7 @@
 				}
 			}
 {"3936"
-				{position 2714.55 3225.82 104.171}
+				{position -1032.64 -2168.85 5.62292}
 				{RandomPosition 1}
 				{transition "3845"}
 				{commands
@@ -22541,7 +22541,7 @@
 				}
 			}
 {"3937"
-				{position 2373.7 2881.19 105.354}
+				{position -2025.76 -2041.17 5}
 				{RandomPosition 1}
 				{transition "3845"}
 				{commands
@@ -22558,7 +22558,7 @@
 				}
 			}
 {"3938"
-				{position 2752.58 2691.64 95}
+				{position -221.637 -1474.44 15}
 				{RandomPosition 1}
 				{transition "3846"}
 				{commands
@@ -22575,7 +22575,7 @@
 				}
 			}
 {"3939"
-				{position 3506.22 2817.43 108.333}
+				{position -182.55 -1907.22 24.6045}
 				{RandomPosition 1}
 				{transition "3846"}
 				{commands
@@ -22592,7 +22592,7 @@
 				}
 			}
 {"3940"
-				{position 1966.65 2709.43 81}
+				{position -816.568 -1532.79 36.4081}
 				{RandomPosition 1}
 				{transition "3846"}
 				{commands
@@ -22609,7 +22609,7 @@
 				}
 			}
 {"3941"
-				{position 3547.42 2219.78 98}
+				{position 477.34 -2540.02 16.191}
 				{RandomPosition 1}
 				{transition "3847"}
 				{commands
@@ -22626,7 +22626,7 @@
 				}
 			}
 {"3942"
-				{position 2454.02 1140.43 13.9976}
+				{position 539.359 -1054.25 23.7339}
 				{RandomPosition 1}
 				{transition "3847"}
 				{commands
@@ -22643,7 +22643,7 @@
 				}
 			}
 {"3943"
-				{position 3174.81 2762.48 109}
+				{position 138.105 -2768.8 -3.92302}
 				{RandomPosition 1}
 				{transition "3847"}
 				{commands
@@ -22660,49 +22660,49 @@
 				}
 			}
 {"3986"
-				{position 4797.57 755.289 27}
+				{position 510.398 -4011.77 -3.55127}
 				{RandomPosition 1}
 				{transition "3844"}
 			}
 {"4308"
-				{position 1945.33 1309.12 -2}
+				{position 489.849 -3001.84 8}
 			}
 {"4309"
-				{position 1727.04 2343.64 36.1984}
+				{position -575.119 -2804.38 9.85555}
 			}
 {"4310"
-				{position 2053.33 1626.65 2.13471}
+				{position -1295.56 -2617.3 -15.4398}
 			}
 {"4311"
-				{position 2332.05 2082.62 50}
+				{position -1399.41 -3684.01 14}
 			}
 {"4312"
-				{position 2949.75 3533.04 86.1438}
+				{position -1141.52 -1097.05 21.3994}
 			}
 {"4313"
-				{position 5501.58 1780.27 42.0323}
+				{position -1705.4 -3347.97 19}
 			}
 {"4314"
-				{position 3139.74 1750.68 76}
+				{position 998.088 -4368.84 9.47693}
 				{transition "4315"}
 				{transition "4316"}
 				{transition "4317"}
 			}
 {"4315"
-				{position 3105.84 1132.52 29}
+				{position -1161.87 -430.316 12.4694}
 			}
 {"4316"
-				{position 2714.55 3225.82 104.171}
+				{position -1923.62 -2570.21 5}
 			}
 {"4317"
-				{position 1945.33 1309.12 -2}
+				{position -1829.53 -820.054 50}
 			}
 {"3844"
-				{position 4620.91 491.952 19}
+				{position -1330.58 -5235.17 -17.313}
 				{RandomPosition 1}
 			}
 {"3845"
-				{position 2373.7 2881.19 105.354}
+				{position -2432.92 -2513.73 27.3219}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -22800,7 +22800,7 @@
 				}
 			}
 {"3846"
-				{position 2752.58 2691.64 95}
+				{position -705.341 12.1395 26.2791}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -22898,7 +22898,7 @@
 				}
 			}
 {"3847"
-				{position 3506.22 2817.43 108.333}
+				{position -203.17 179.623 7}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -23106,10 +23106,10 @@
 				{position -3744.2 -2265.25 2}
 			}
 {"4172"
-				{position -3233.54 -3048.56 4}
+				{position -3587.61 -3490.28 -11.9422}
 			}
 {"4173"
-				{position -2248.78 -3329.24 9.14536}
+				{position -3356.52 -4237.82 -30.6005}
 			}
 {"3808"
 				{position -3078.23 -1587.9 25}
@@ -23156,7 +23156,7 @@
 				}
 			}
 {"3850"
-				{position 3129.71 3754.76 69}
+				{position -2349.55 -3089.7 28}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -23254,7 +23254,7 @@
 				}
 			}
 {"3851"
-				{position 3657.84 3329.96 80}
+				{position -2799.49 -4489.59 0}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -23352,22 +23352,22 @@
 				}
 			}
 {"3944"
-				{position 3547.42 2219.78 98}
+				{position -1699.6 -4890.95 -12}
 				{RandomPosition 1}
 				{transition "3848"}
 			}
 {"3945"
-				{position 2454.02 1140.43 13.9976}
+				{position -2141.55 -4211.63 -8}
 				{RandomPosition 1}
 				{transition "3848"}
 			}
 {"3946"
-				{position 1966.65 2709.43 81}
+				{position -2842.26 -5113.55 -39.1964}
 				{RandomPosition 1}
 				{transition "3848"}
 			}
 {"3947"
-				{position 1727.04 2343.64 36.1984}
+				{position -2700.54 -2847.18 16.892}
 				{RandomPosition 1}
 				{transition "3849"}
 				{commands
@@ -23384,7 +23384,7 @@
 				}
 			}
 {"3948"
-				{position 2949.75 3533.04 86.1438}
+				{position -2271.25 -3483.51 26}
 				{RandomPosition 1}
 				{transition "3849"}
 				{commands
@@ -23401,7 +23401,7 @@
 				}
 			}
 {"3949"
-				{position 2053.33 1626.65 2.13471}
+				{position -2778.51 -1561.68 26}
 				{RandomPosition 1}
 				{transition "3849"}
 				{commands
@@ -23418,7 +23418,7 @@
 				}
 			}
 {"3950"
-				{position 2332.05 2082.62 50}
+				{position -1752.85 -330.093 25}
 				{RandomPosition 1}
 				{transition "3850"}
 				{commands
@@ -23435,7 +23435,7 @@
 				}
 			}
 {"3951"
-				{position 3174.81 2762.48 109}
+				{position -3422.9 -1449.69 23.3155}
 				{RandomPosition 1}
 				{transition "3850"}
 				{commands
@@ -23452,7 +23452,7 @@
 				}
 			}
 {"3952"
-				{position 2714.55 3225.82 104.171}
+				{position -3106.39 -585.106 19.8844}
 				{RandomPosition 1}
 				{transition "3850"}
 				{commands
@@ -23469,7 +23469,7 @@
 				}
 			}
 {"3953"
-				{position 2373.7 2881.19 105.354}
+				{position -4067.89 -1298.41 -5.52201}
 				{RandomPosition 1}
 				{transition "3851"}
 				{commands
@@ -23486,7 +23486,7 @@
 				}
 			}
 {"3954"
-				{position 2752.58 2691.64 95}
+				{position -4600.86 -1176.92 -36}
 				{RandomPosition 1}
 				{transition "3851"}
 				{commands
@@ -23503,7 +23503,7 @@
 				}
 			}
 {"3955"
-				{position 5307.38 1508.17 37}
+				{position -1358.92 -78.3467 23}
 				{RandomPosition 1}
 				{transition "3851"}
 				{commands
@@ -23520,61 +23520,61 @@
 				}
 			}
 {"3987"
-				{position 5039 1147.43 33}
+				{position -2225.57 236.749 19}
 				{RandomPosition 1}
 				{transition "3848"}
 			}
 {"3777"
-				{position 1945.33 1309.12 -2}
+				{position 998.088 -4368.84 9.47693}
 				{transition "4331"}
 				{transition "4332"}
 				{transition "4333"}
 			}
 {"3778"
-				{position 3657.84 3329.96 80}
+				{position 998.088 -4368.84 9.47693}
 				{transition "4328"}
 				{transition "4329"}
 				{transition "4330"}
 			}
 {"4328"
-				{position 3129.71 3754.76 69}
+				{position -1701.47 441.692 20}
 			}
 {"4329"
-				{position 3139.74 1750.68 76}
+				{position -451.947 601.256 2.48376}
 			}
 {"4330"
-				{position 1966.65 2709.43 81}
+				{position -2157.37 763.294 28.2439}
 			}
 {"4331"
-				{position 3506.22 2817.43 108.333}
+				{position -1387.49 848.339 43}
 			}
 {"4332"
-				{position 3105.84 1132.52 29}
+				{position 379.524 623.752 3.65588}
 			}
 {"4333"
-				{position 4797.57 755.289 27}
+				{position 906.263 403.747 9.8418}
 			}
 {"4334"
-				{position 3547.42 2219.78 98}
+				{position 3086.22 -3401.81 -22.1492}
 				{transition "4335"}
 				{transition "4336"}
 				{transition "4337"}
 			}
 {"4335"
-				{position 1727.04 2343.64 36.1984}
+				{position 953.084 1120.26 22.957}
 			}
 {"4336"
-				{position 2454.02 1140.43 13.9976}
+				{position 1657.02 790.247 -12.9688}
 			}
 {"4337"
-				{position 2949.75 3533.04 86.1438}
+				{position 1288.42 1424.01 35.2915}
 			}
 {"3848"
-				{position 5501.58 1780.27 42.0323}
+				{position 1945.33 1309.12 -2}
 				{RandomPosition 1}
 			}
 {"3849"
-				{position 2053.33 1626.65 2.13471}
+				{position 1727.04 2343.64 36.1984}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -23832,11 +23832,11 @@
 				}
 			}
 {"3852"
-				{position 5039 1147.43 33}
+				{position 3139.74 1750.68 76}
 				{RandomPosition 1}
 			}
 {"3853"
-				{position 3174.81 2762.48 109}
+				{position 2332.05 2082.62 50}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -23934,7 +23934,7 @@
 				}
 			}
 {"3854"
-				{position 1727.04 2343.64 36.1984}
+				{position 1966.65 2709.43 81}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -24130,22 +24130,22 @@
 				}
 			}
 {"3956"
-				{position 5501.58 1780.27 42.0323}
+				{position 3547.42 2219.78 98}
 				{RandomPosition 1}
 				{transition "3852"}
 			}
 {"3957"
-				{position 4797.57 755.289 27}
+				{position 3174.81 2762.48 109}
 				{RandomPosition 1}
 				{transition "3852"}
 			}
 {"3958"
-				{position 4620.91 491.952 19}
+				{position 2752.58 2691.64 95}
 				{RandomPosition 1}
 				{transition "3852"}
 			}
 {"3959"
-				{position 2332.05 2082.62 50}
+				{position 2373.7 2881.19 105.354}
 				{RandomPosition 1}
 				{transition "3853"}
 				{commands
@@ -24162,7 +24162,7 @@
 				}
 			}
 {"3960"
-				{position 2714.55 3225.82 104.171}
+				{position 3657.84 3329.96 80}
 				{RandomPosition 1}
 				{transition "3853"}
 				{commands
@@ -24179,7 +24179,7 @@
 				}
 			}
 {"3961"
-				{position 3657.84 3329.96 80}
+				{position 3129.71 3754.76 69}
 				{RandomPosition 1}
 				{transition "3853"}
 				{commands
@@ -24196,7 +24196,7 @@
 				}
 			}
 {"3962"
-				{position 2373.7 2881.19 105.354}
+				{position -493.997 -2155.18 21.7779}
 				{RandomPosition 1}
 				{transition "3854"}
 				{commands
@@ -24213,7 +24213,7 @@
 				}
 			}
 {"3963"
-				{position 1966.65 2709.43 81}
+				{position 1616.77 -572.009 21.7637}
 				{RandomPosition 1}
 				{transition "3854"}
 				{commands
@@ -24230,7 +24230,7 @@
 				}
 			}
 {"3964"
-				{position 3129.71 3754.76 69}
+				{position -78.4548 -476.058 4}
 				{RandomPosition 1}
 				{transition "3854"}
 				{commands
@@ -24247,7 +24247,7 @@
 				}
 			}
 {"3965"
-				{position 2949.75 3533.04 86.1438}
+				{position -1678.17 -5406.17 -31}
 				{RandomPosition 1}
 				{transition "3855"}
 				{commands
@@ -24264,7 +24264,7 @@
 				}
 			}
 {"3966"
-				{position 2373.7 2881.19 105.354}
+				{position -2779.85 -3217.62 10}
 				{RandomPosition 1}
 				{transition "3855"}
 				{commands
@@ -24281,7 +24281,7 @@
 				}
 			}
 {"3967"
-				{position 3129.71 3754.76 69}
+				{position -74.5761 602.994 6.50427}
 				{RandomPosition 1}
 				{transition "3855"}
 				{commands
@@ -24298,54 +24298,54 @@
 				}
 			}
 {"3988"
-				{position 5307.38 1508.17 37}
+				{position -2458.76 -4011.82 17}
 				{RandomPosition 1}
 				{transition "3852"}
 			}
 {"4272"
-				{position 3506.22 2817.43 108.333}
+				{position 5307.38 1508.17 37}
 				{transition "4348"}
 				{transition "4349"}
 				{transition "4350"}
 			}
 {"4273"
-				{position 3105.84 1132.52 29}
+				{position 4620.91 491.952 19}
 				{transition "4351"}
 				{transition "4352"}
 				{transition "4353"}
 			}
 {"4348"
-				{position 3657.84 3329.96 80}
+				{position 1849.5 -2357.64 16}
 			}
 {"4349"
-				{position 3174.81 2762.48 109}
+				{position 1441.67 410.528 -1.23877}
 			}
 {"4350"
-				{position 2752.58 2691.64 95}
+				{position 2590.43 -576.415 0}
 			}
 {"4351"
-				{position 3547.42 2219.78 98}
+				{position -924.206 -2507.15 -16.5242}
 			}
 {"4352"
-				{position 3139.74 1750.68 76}
+				{position 1418.34 1752.66 9.74843}
 			}
 {"4353"
-				{position 5307.38 1508.17 37}
+				{position 393.575 -299.518 3.00121}
 			}
 {"4354"
-				{position 2454.02 1140.43 13.9976}
+				{position 4797.57 755.289 27}
 				{transition "4355"}
 				{transition "4356"}
 				{transition "4357"}
 			}
 {"4355"
-				{position 2332.05 2082.62 50}
+				{position -2459.43 -4571.28 -21}
 			}
 {"4356"
-				{position 2053.33 1626.65 2.13471}
+				{position -1953.58 -5129.15 -21.8107}
 			}
 {"4357"
-				{position 1945.33 1309.12 -2}
+				{position -1589.15 -1690.86 25.7545}
 			}
 {"4026"
 				{position -3503.09 -810.392 43.1235}
@@ -24508,11 +24508,11 @@
 				}
 			}
 {"3856"
-				{position 2752.58 2691.64 95}
+				{position -1657.66 -2779.45 8}
 				{RandomPosition 1}
 			}
 {"3857"
-				{position 1966.65 2709.43 81}
+				{position 881.203 790.816 0.204697}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -24610,7 +24610,7 @@
 				}
 			}
 {"3858"
-				{position 1727.04 2343.64 36.1984}
+				{position 2053.33 1626.65 2.13471}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -24708,7 +24708,7 @@
 				}
 			}
 {"3859"
-				{position 2949.75 3533.04 86.1438}
+				{position -495.055 -1649.88 35.0703}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -24806,22 +24806,22 @@
 				}
 			}
 {"3968"
-				{position 3506.22 2817.43 108.333}
+				{position -1785.02 -2281.32 1}
 				{RandomPosition 1}
 				{transition "3856"}
 			}
 {"3969"
-				{position 3139.74 1750.68 76}
+				{position -3077.1 -4919.47 -15}
 				{RandomPosition 1}
 				{transition "3856"}
 			}
 {"3970"
-				{position 2332.05 2082.62 50}
+				{position -1198.18 -5497.35 -15}
 				{RandomPosition 1}
 				{transition "3856"}
 			}
 {"3971"
-				{position 2714.55 3225.82 104.171}
+				{position -137.962 -2680.55 -3.2041}
 				{RandomPosition 1}
 				{transition "3857"}
 				{commands
@@ -24838,7 +24838,7 @@
 				}
 			}
 {"3972"
-				{position 2053.33 1626.65 2.13471}
+				{position 2949.75 3533.04 86.1438}
 				{RandomPosition 1}
 				{transition "3857"}
 				{commands
@@ -24855,7 +24855,7 @@
 				}
 			}
 {"3973"
-				{position 2373.7 2881.19 105.354}
+				{position 1250.65 127.659 3}
 				{RandomPosition 1}
 				{transition "3857"}
 				{commands
@@ -24872,7 +24872,7 @@
 				}
 			}
 {"3974"
-				{position 3174.81 2762.48 109}
+				{position -2655.85 -4245.54 12.736}
 				{RandomPosition 1}
 				{transition "3858"}
 				{commands
@@ -24889,7 +24889,7 @@
 				}
 			}
 {"3975"
-				{position 3129.71 3754.76 69}
+				{position 671.644 -352.507 25.4041}
 				{RandomPosition 1}
 				{transition "3858"}
 				{commands
@@ -24906,7 +24906,7 @@
 				}
 			}
 {"3976"
-				{position 1966.65 2709.43 81}
+				{position -1639.48 -56.2613 15.6562}
 				{RandomPosition 1}
 				{transition "3858"}
 				{commands
@@ -24923,7 +24923,7 @@
 				}
 			}
 {"3977"
-				{position 3547.42 2219.78 98}
+				{position 648.959 -2783.64 -1}
 				{RandomPosition 1}
 				{transition "3859"}
 				{commands
@@ -24940,7 +24940,7 @@
 				}
 			}
 {"3978"
-				{position 1727.04 2343.64 36.1984}
+				{position 838.119 -1629.71 15.0196}
 				{RandomPosition 1}
 				{transition "3859"}
 				{commands
@@ -24957,7 +24957,7 @@
 				}
 			}
 {"3979"
-				{position 2454.02 1140.43 13.9976}
+				{position 804.943 150.659 14}
 				{RandomPosition 1}
 				{transition "3859"}
 				{commands
@@ -24974,54 +24974,54 @@
 				}
 			}
 {"3989"
-				{position 3105.84 1132.52 29}
+				{position -282.938 -1021.15 11.6823}
 				{RandomPosition 1}
 				{transition "3856"}
 			}
 {"4276"
-				{position 1945.33 1309.12 -2}
+				{position 3567.91 -2548.49 -30}
 				{transition "4368"}
 				{transition "4369"}
 				{transition "4370"}
 			}
 {"4277"
-				{position 2752.58 2691.64 95}
+				{position 3056.87 -2755.45 -12}
 				{transition "4371"}
 				{transition "4372"}
 				{transition "4373"}
 			}
 {"4368"
-				{position 3657.84 3329.96 80}
+				{position 25.0118 -1329.9 6}
 			}
 {"4369"
-				{position 2949.75 3533.04 86.1438}
+				{position -1257.82 -1852.88 14.5575}
 			}
 {"4370"
-				{position 1945.33 1309.12 -2}
+				{position -875.493 -2015.42 11.9655}
 			}
 {"4371"
-				{position 3506.22 2817.43 108.333}
+				{position 877.599 -1777.72 16}
 			}
 {"4372"
-				{position 2714.55 3225.82 104.171}
+				{position 1060.45 -2281.5 6.60559}
 			}
 {"4373"
-				{position 2373.7 2881.19 105.354}
+				{position -1117.93 -2083.31 11}
 			}
 {"4374"
-				{position 4620.91 491.952 19}
+				{position 3932.33 -1914.61 -25}
 				{transition "4375"}
 				{transition "4376"}
 				{transition "4377"}
 			}
 {"4375"
-				{position 2332.05 2082.62 50}
+				{position -322.426 -920.417 5.75769}
 			}
 {"4376"
-				{position 5039 1147.43 33}
+				{position -1950.39 -2111.04 3}
 			}
 {"4377"
-				{position 3139.74 1750.68 76}
+				{position -1438.08 -2051.83 1.38276}
 			}
 ; player entry b1
 {"4601"
@@ -28060,22 +28060,22 @@
 				}
 			}
 {"4710"
-				{position -2019.47 1646.29 53.0215}
+				{position 734.199 128.554 22}
 				{RandomPosition 1}
 				{transition "4670"}
 			}
 {"4711"
-				{position -1633.51 2219.41 68}
+				{position 498.145 649.264 1}
 				{RandomPosition 1}
 				{transition "4670"}
 			}
 {"4712"
-				{position -3218.98 1306.97 35}
+				{position -224.634 -336.982 1}
 				{RandomPosition 1}
 				{transition "4670"}
 			}
 {"4713"
-				{position -3322.99 398.019 30}
+				{position 1903.33 -2146.68 10}
 				{RandomPosition 1}
 				{transition "4671"}
 				{commands
@@ -28092,7 +28092,7 @@
 				}
 			}
 {"4714"
-				{position 2188.82 4001.08 122.33}
+				{position 2715.73 -955.065 -3.84757}
 				{RandomPosition 1}
 				{transition "4671"}
 				{commands
@@ -28109,7 +28109,7 @@
 				}
 			}
 {"4715"
-				{position -2019.47 1646.29 53.0215}
+				{position 2115.09 -1566.66 3.53008}
 				{RandomPosition 1}
 				{transition "4671"}
 				{commands
@@ -28126,7 +28126,7 @@
 				}
 			}
 {"4716"
-				{position -3267.57 928.712 30.3912}
+				{position 1190.46 -2968.86 3.86719}
 				{RandomPosition 1}
 				{transition "4672"}
 				{commands
@@ -28143,7 +28143,7 @@
 				}
 			}
 {"4717"
-				{position -3218.98 1306.97 35}
+				{position 1606.64 -2735.18 6}
 				{RandomPosition 1}
 				{transition "4672"}
 				{commands
@@ -28160,7 +28160,7 @@
 				}
 			}
 {"4718"
-				{position -1633.51 2219.41 68}
+				{position 1431.12 -2316.66 9.42603}
 				{RandomPosition 1}
 				{transition "4672"}
 				{commands
@@ -28177,7 +28177,7 @@
 				}
 			}
 {"4719"
-				{position 2188.82 4001.08 122.33}
+				{position 3928.76 174.663 12.6577}
 				{RandomPosition 1}
 				{transition "4673"}
 				{commands
@@ -28194,7 +28194,7 @@
 				}
 			}
 {"4720"
-				{position 2188.82 4001.08 122.33}
+				{position 3599.27 -254.816 3}
 				{RandomPosition 1}
 				{transition "4673"}
 				{commands
@@ -28211,7 +28211,7 @@
 				}
 			}
 {"4721"
-				{position -1633.51 2219.41 68}
+				{position 2548.79 -556.869 0.53186}
 				{RandomPosition 1}
 				{transition "4673"}
 				{commands
@@ -28228,7 +28228,7 @@
 				}
 			}
 {"4830"
-				{position -2019.47 1646.29 53.0215}
+				{position 505.795 -227.331 20.0645}
 				{RandomPosition 1}
 				{transition "4670"}
 			}
@@ -28242,28 +28242,28 @@
 				{position -3218.98 1306.97 35}
 			}
 {"5130"
-				{position -3218.98 1306.97 35}
+				{position 1033.12 -2176.17 12.8452}
 			}
 {"5131"
-				{position -3218.98 1306.97 35}
+				{position 1693.29 -1517.39 4.25069}
 			}
 {"5132"
-				{position -3218.98 1306.97 35}
+				{position 3420.51 785.092 15}
 			}
 {"5133"
-				{position -3218.98 1306.97 35}
+				{position 3034.83 443.68 2.48584}
 			}
 {"5134"
-				{position -3218.98 1306.97 35}
+				{position 2813.45 17.0238 17}
 			}
 {"5135"
-				{position -3218.98 1306.97 35}
+				{position 1976.32 -798.394 12.8117}
 			}
 {"5136"
-				{position -3218.98 1306.97 35}
+				{position 876.477 -1741.29 17}
 			}
 {"5137"
-				{position -3218.98 1306.97 35}
+				{position 2601.46 1002.2 6}
 			}
 {"4607"
 				{position -3218.98 1306.97 35}
@@ -28272,11 +28272,11 @@
 				{transition "5131"}
 			}
 {"4670"
-				{position -3267.57 928.712 30.3912}
+				{position -165.477 767.32 17}
 				{RandomPosition 1}
 			}
 {"4671"
-				{position -3322.99 398.019 30}
+				{position 273.726 -2316.64 9}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -28374,7 +28374,7 @@
 				}
 			}
 {"4672"
-				{position -3322.99 398.019 30}
+				{position 459.246 -2696.61 5.143}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -28472,7 +28472,7 @@
 				}
 			}
 {"4673"
-				{position 2188.82 4001.08 122.33}
+				{position 3620.26 1260.87 60}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -28748,22 +28748,22 @@
 				{transition "5153"}
 			}
 {"4722"
-				{position -3267.57 928.712 30.3912}
+				{position -1284.7 -1732.91 27.0109}
 				{RandomPosition 1}
 				{transition "4674"}
 			}
 {"4723"
-				{position -3322.99 398.019 30}
+				{position -637.848 -1235.93 37.2811}
 				{RandomPosition 1}
 				{transition "4674"}
 			}
 {"4724"
-				{position -3267.57 928.712 30.3912}
+				{position -1708.86 -1247.62 49.464}
 				{RandomPosition 1}
 				{transition "4674"}
 			}
 {"4725"
-				{position -2019.47 1646.29 53.0215}
+				{position 818.414 -3295.98 4.29182}
 				{RandomPosition 1}
 				{transition "4675"}
 				{commands
@@ -28780,7 +28780,7 @@
 				}
 			}
 {"4726"
-				{position -1633.51 2219.41 68}
+				{position -234.013 -1940.64 22.7766}
 				{RandomPosition 1}
 				{transition "4675"}
 				{commands
@@ -28797,7 +28797,7 @@
 				}
 			}
 {"4727"
-				{position -2019.47 1646.29 53.0215}
+				{position -215.137 -3668.63 22.1218}
 				{RandomPosition 1}
 				{transition "4675"}
 				{commands
@@ -28814,7 +28814,7 @@
 				}
 			}
 {"4728"
-				{position -3322.99 398.019 30}
+				{position -563.43 -3442.52 16}
 				{RandomPosition 1}
 				{transition "4676"}
 				{commands
@@ -28831,7 +28831,7 @@
 				}
 			}
 {"4729"
-				{position -3267.57 928.712 30.3912}
+				{position -590.225 -3903.53 14}
 				{RandomPosition 1}
 				{transition "4676"}
 				{commands
@@ -28848,7 +28848,7 @@
 				}
 			}
 {"4730"
-				{position -1633.51 2219.41 68}
+				{position -923.026 -2309.2 3.06494}
 				{RandomPosition 1}
 				{transition "4676"}
 				{commands
@@ -28865,7 +28865,7 @@
 				}
 			}
 {"4731"
-				{position -3322.99 398.019 30}
+				{position -1072.41 -3337.09 20.2953}
 				{RandomPosition 1}
 				{transition "4677"}
 				{commands
@@ -28882,7 +28882,7 @@
 				}
 			}
 {"4732"
-				{position -3267.57 928.712 30.3912}
+				{position -1432.62 -3895.8 11}
 				{RandomPosition 1}
 				{transition "4677"}
 				{commands
@@ -28899,7 +28899,7 @@
 				}
 			}
 {"4733"
-				{position -2019.47 1646.29 53.0215}
+				{position -1358.03 -2660.18 -11.3901}
 				{RandomPosition 1}
 				{transition "4677"}
 				{commands
@@ -28916,27 +28916,27 @@
 				}
 			}
 {"4831"
-				{position -3322.99 398.019 30}
+				{position -1316.1 -719.056 27.3142}
 				{RandomPosition 1}
 				{transition "4674"}
 			}
 {"5148"
-				{position -3218.98 1306.97 35}
+				{position -1919.09 -4609.07 -9.99207}
 			}
 {"5149"
-				{position -3218.98 1306.97 35}
+				{position -2403.92 -3039.28 21.9573}
 			}
 {"5150"
-				{position -3218.98 1306.97 35}
+				{position -2311.05 -2629.01 40.7266}
 			}
 {"5151"
-				{position -3218.98 1306.97 35}
+				{position -1142.82 -1209.54 31}
 			}
 {"5152"
-				{position -3218.98 1306.97 35}
+				{position -755.454 71.5994 30.3689}
 			}
 {"5153"
-				{position -3218.98 1306.97 35}
+				{position -2239.06 -1745.22 33}
 			}
 {"5154"
 				{position -3218.98 1306.97 35}
@@ -28945,20 +28945,20 @@
 				{transition "5157"}
 			}
 {"5155"
-				{position -3218.98 1306.97 35}
+				{position -1826.69 -779.395 48.9734}
 			}
 {"5156"
-				{position -3218.98 1306.97 35}
+				{position -1300.99 -98.0289 18}
 			}
 {"5157"
-				{position -3218.98 1306.97 35}
+				{position -2573.43 -3969.91 6.01686}
 			}
 {"4674"
-				{position -1633.51 2219.41 68}
+				{position -1790.02 -219.938 17}
 				{RandomPosition 1}
 			}
 {"4675"
-				{position -2019.47 1646.29 53.0215}
+				{position -764.016 631 32.8978}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -29056,7 +29056,7 @@
 				}
 			}
 {"4676"
-				{position -3267.57 928.712 30.3912}
+				{position -2379.28 -630.989 24.2924}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -29154,7 +29154,7 @@
 				}
 			}
 {"4677"
-				{position -3322.99 398.019 30}
+				{position -2920.73 -4440.23 -17.8937}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -29412,22 +29412,22 @@
 				}
 			}
 {"4734"
-				{position -3322.99 398.019 30}
+				{position -3444.41 -3349.68 -5.97692}
 				{RandomPosition 1}
 				{transition "4678"}
 			}
 {"4735"
-				{position -3267.57 928.712 30.3912}
+				{position -3247.37 -1653.13 29}
 				{RandomPosition 1}
 				{transition "4678"}
 			}
 {"4736"
-				{position -3322.99 398.019 30}
+				{position -3324.17 -4003.66 -27.8267}
 				{RandomPosition 1}
 				{transition "4678"}
 			}
 {"4737"
-				{position -3267.57 928.712 30.3912}
+				{position -3553.05 -2654.27 -1}
 				{RandomPosition 1}
 				{transition "4679"}
 				{commands
@@ -29444,7 +29444,7 @@
 				}
 			}
 {"4738"
-				{position -2019.47 1646.29 53.0215}
+				{position -3390.15 -2053.55 24}
 				{RandomPosition 1}
 				{transition "4679"}
 				{commands
@@ -29461,7 +29461,7 @@
 				}
 			}
 {"4739"
-				{position -1633.51 2219.41 68}
+				{position -3543.62 -569.392 13}
 				{RandomPosition 1}
 				{transition "4679"}
 				{commands
@@ -29478,7 +29478,7 @@
 				}
 			}
 {"4740"
-				{position -3267.57 928.712 30.3912}
+				{position -2548.23 -5314.81 -9}
 				{RandomPosition 1}
 				{transition "4680"}
 				{commands
@@ -29495,7 +29495,7 @@
 				}
 			}
 {"4741"
-				{position -3322.99 398.019 30}
+				{position -2879.45 -5713.29 -33.7416}
 				{RandomPosition 1}
 				{transition "4680"}
 				{commands
@@ -29512,7 +29512,7 @@
 				}
 			}
 {"4742"
-				{position -2019.47 1646.29 53.0215}
+				{position -3481.66 -6054.39 -79.9722}
 				{RandomPosition 1}
 				{transition "4680"}
 				{commands
@@ -29529,7 +29529,7 @@
 				}
 			}
 {"4743"
-				{position -1633.51 2219.41 68}
+				{position -3382.45 -81.6962 32}
 				{RandomPosition 1}
 				{transition "4681"}
 				{commands
@@ -29546,7 +29546,7 @@
 				}
 			}
 {"4744"
-				{position -2019.47 1646.29 53.0215}
+				{position -2728.25 294.219 46}
 				{RandomPosition 1}
 				{transition "4681"}
 				{commands
@@ -29563,7 +29563,7 @@
 				}
 			}
 {"4745"
-				{position -1633.51 2219.41 68}
+				{position -2149.22 513.615 21.3717}
 				{RandomPosition 1}
 				{transition "4681"}
 				{commands
@@ -29597,22 +29597,22 @@
 				{transition "5170"}
 			}
 {"5168"
-				{position -3218.98 1306.97 35}
+				{position -1282.97 1159.86 35}
 			}
 {"5169"
-				{position -3218.98 1306.97 35}
+				{position -232.64 1231.05 19}
 			}
 {"5170"
-				{position -3218.98 1306.97 35}
+				{position -1100.66 1794.77 61}
 			}
 {"5171"
-				{position -3218.98 1306.97 35}
+				{position -1633.51 2219.41 68}
 			}
 {"5172"
-				{position -3218.98 1306.97 35}
+				{position 2012.87 1292.73 -2}
 			}
 {"5173"
-				{position -3218.98 1306.97 35}
+				{position 2340.72 2006.34 46}
 			}
 {"5174"
 				{position -3218.98 1306.97 35}
@@ -29621,20 +29621,20 @@
 				{transition "5177"}
 			}
 {"5175"
-				{position -3218.98 1306.97 35}
+				{position 1366.11 2857.13 56.4164}
 			}
 {"5176"
-				{position -3218.98 1306.97 35}
+				{position 3197.14 1360.58 48.3474}
 			}
 {"5177"
-				{position -3218.98 1306.97 35}
+				{position 2841.03 2014.49 90}
 			}
 {"4678"
-				{position -3267.57 928.712 30.3912}
+				{position 2139.8 3234.22 112.966}
 				{RandomPosition 1}
 			}
 {"4679"
-				{position -3267.57 928.712 30.3912}
+				{position 3245.39 2132.4 94}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -29732,7 +29732,7 @@
 				}
 			}
 {"4680"
-				{position -3322.99 398.019 30}
+				{position 2835.74 2767.22 95.0532}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -29830,7 +29830,7 @@
 				}
 			}
 {"4681"
-				{position -2019.47 1646.29 53.0215}
+				{position 2622 3123.68 107}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -30088,7 +30088,7 @@
 				}
 			}
 {"4746"
-				{position 2188.82 4001.08 122.33}
+				{position 2457.38 3668.1 105}
 				{RandomPosition 1}
 				{transition "4682"}
 			}
@@ -30098,12 +30098,12 @@
 				{transition "4682"}
 			}
 {"4748"
-				{position 2188.82 4001.08 122.33}
+				{position 1876.47 3605.41 116}
 				{RandomPosition 1}
 				{transition "4682"}
 			}
 {"4749"
-				{position 2188.82 4001.08 122.33}
+				{position 3321.22 2702.3 104}
 				{RandomPosition 1}
 				{transition "4683"}
 				{commands
@@ -30120,7 +30120,7 @@
 				}
 			}
 {"4750"
-				{position 2188.82 4001.08 122.33}
+				{position 3616.9 3352.66 79}
 				{RandomPosition 1}
 				{transition "4683"}
 				{commands
@@ -30137,7 +30137,7 @@
 				}
 			}
 {"4751"
-				{position 2188.82 4001.08 122.33}
+				{position 3290.98 3720.39 66}
 				{RandomPosition 1}
 				{transition "4683"}
 				{commands
@@ -30154,7 +30154,7 @@
 				}
 			}
 {"4752"
-				{position 2188.82 4001.08 122.33}
+				{position 34.0817 1528.2 15.2781}
 				{RandomPosition 1}
 				{transition "4684"}
 				{commands
@@ -30171,7 +30171,7 @@
 				}
 			}
 {"4753"
-				{position 2188.82 4001.08 122.33}
+				{position -426.555 282.83 9.52856}
 				{RandomPosition 1}
 				{transition "4684"}
 				{commands
@@ -30188,7 +30188,7 @@
 				}
 			}
 {"4754"
-				{position -1633.51 2219.41 68}
+				{position 1970.62 1678.71 0}
 				{RandomPosition 1}
 				{transition "4684"}
 				{commands
@@ -30205,7 +30205,7 @@
 				}
 			}
 {"4755"
-				{position 2188.82 4001.08 122.33}
+				{position -3267.57 928.712 30.3912}
 				{RandomPosition 1}
 				{transition "4685"}
 				{commands
@@ -30222,7 +30222,7 @@
 				}
 			}
 {"4756"
-				{position 2188.82 4001.08 122.33}
+				{position 91.4355 -2783.91 -2.93066}
 				{RandomPosition 1}
 				{transition "4685"}
 				{commands
@@ -30239,7 +30239,7 @@
 				}
 			}
 {"4757"
-				{position -1633.51 2219.41 68}
+				{position -2170.05 -4891.52 -22}
 				{RandomPosition 1}
 				{transition "4685"}
 				{commands
@@ -30256,7 +30256,7 @@
 				}
 			}
 {"4833"
-				{position 2188.82 4001.08 122.33}
+				{position -1657.15 -1672.14 21.7254}
 				{RandomPosition 1}
 				{transition "4682"}
 			}
@@ -30273,22 +30273,22 @@
 				{transition "5193"}
 			}
 {"5188"
-				{position -3218.98 1306.97 35}
+				{position -1395.56 -2090.72 -0.843364}
 			}
 {"5189"
-				{position -3218.98 1306.97 35}
+				{position 1184.37 -2585.66 1}
 			}
 {"5190"
-				{position -3218.98 1306.97 35}
+				{position 3659.2 2568.47 100}
 			}
 {"5191"
-				{position -3218.98 1306.97 35}
+				{position -475.679 930.793 4}
 			}
 {"5192"
-				{position -3218.98 1306.97 35}
+				{position -2130.02 -953.38 39}
 			}
 {"5193"
-				{position -3218.98 1306.97 35}
+				{position 490.291 -3400.12 13.8812}
 			}
 {"5194"
 				{position -3218.98 1306.97 35}
@@ -30297,20 +30297,20 @@
 				{transition "5197"}
 			}
 {"5195"
-				{position -3218.98 1306.97 35}
+				{position 2939.68 1022.79 20.3894}
 			}
 {"5196"
-				{position -3218.98 1306.97 35}
+				{position -1128.94 -442.413 11}
 			}
 {"5197"
-				{position -3218.98 1306.97 35}
+				{position -2570.85 -2449.14 21}
 			}
 {"4682"
-				{position 2188.82 4001.08 122.33}
+				{position -1542.96 -4189.03 4.03116}
 				{RandomPosition 1}
 			}
 {"4683"
-				{position 2188.82 4001.08 122.33}
+				{position 3490.82 480.922 9}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -30408,7 +30408,7 @@
 				}
 			}
 {"4684"
-				{position -1633.51 2219.41 68}
+				{position 3517.12 2311.28 98}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -30506,7 +30506,7 @@
 				}
 			}
 {"4685"
-				{position -2019.47 1646.29 53.0215}
+				{position -2700.19 -3720.12 -1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -30764,22 +30764,22 @@
 				{position -2377.55 -1636.29 44}
 			}
 {"4758"
-				{position -3267.57 928.712 30.3912}
+				{position 674.487 -1934.31 18}
 				{RandomPosition 1}
 				{transition "4686"}
 			}
 {"4759"
-				{position -3322.99 398.019 30}
+				{position 1766.53 -2387.02 18}
 				{RandomPosition 1}
 				{transition "4686"}
 			}
 {"4760"
-				{position -2019.47 1646.29 53.0215}
+				{position -1315.76 -3652.79 19}
 				{RandomPosition 1}
 				{transition "4686"}
 			}
 {"4761"
-				{position -1633.51 2219.41 68}
+				{position -2476.78 -3294.54 24}
 				{RandomPosition 1}
 				{transition "4687"}
 				{commands
@@ -30796,7 +30796,7 @@
 				}
 			}
 {"4762"
-				{position -2019.47 1646.29 53.0215}
+				{position 533.097 -2945.17 4.54233}
 				{RandomPosition 1}
 				{transition "4687"}
 				{commands
@@ -30813,7 +30813,7 @@
 				}
 			}
 {"4763"
-				{position -1633.51 2219.41 68}
+				{position 2934.67 -824.29 0}
 				{RandomPosition 1}
 				{transition "4687"}
 				{commands
@@ -30830,7 +30830,7 @@
 				}
 			}
 {"4764"
-				{position -2019.47 1646.29 53.0215}
+				{position -748.776 -3716.52 18}
 				{RandomPosition 1}
 				{transition "4688"}
 				{commands
@@ -30847,7 +30847,7 @@
 				}
 			}
 {"4765"
-				{position -1633.51 2219.41 68}
+				{position 2582.71 -332.493 9.44653}
 				{RandomPosition 1}
 				{transition "4688"}
 				{commands
@@ -30864,7 +30864,7 @@
 				}
 			}
 {"4766"
-				{position -1633.51 2219.41 68}
+				{position 2004.39 -1951.77 4}
 				{RandomPosition 1}
 				{transition "4688"}
 				{commands
@@ -30881,7 +30881,7 @@
 				}
 			}
 {"4767"
-				{position -3267.57 928.712 30.3912}
+				{position -359.104 -3824.34 15.1196}
 				{RandomPosition 1}
 				{transition "4689"}
 				{commands
@@ -30898,7 +30898,7 @@
 				}
 			}
 {"4768"
-				{position -3322.99 398.019 30}
+				{position -2445.96 -1728.76 39}
 				{RandomPosition 1}
 				{transition "4689"}
 				{commands
@@ -30915,7 +30915,7 @@
 				}
 			}
 {"4769"
-				{position -3267.57 928.712 30.3912}
+				{position -1595.45 -1405 41}
 				{RandomPosition 1}
 				{transition "4689"}
 				{commands
@@ -30932,7 +30932,7 @@
 				}
 			}
 {"4834"
-				{position -3267.57 928.712 30.3912}
+				{position -703.379 -3309.29 11}
 				{RandomPosition 1}
 				{transition "4686"}
 			}
@@ -30949,22 +30949,22 @@
 				{transition "5213"}
 			}
 {"5208"
-				{position -3218.98 1306.97 35}
+				{position 2539.76 -886.844 11.1418}
 			}
 {"5209"
-				{position -3218.98 1306.97 35}
+				{position -1443.66 -592.136 33}
 			}
 {"5210"
-				{position -3218.98 1306.97 35}
+				{position 2871.49 437.087 0.526733}
 			}
 {"5211"
-				{position -3218.98 1306.97 35}
+				{position 1043.41 -3011.62 5}
 			}
 {"5212"
-				{position -3218.98 1306.97 35}
+				{position 2684.44 36.8975 19}
 			}
 {"5213"
-				{position -3218.98 1306.97 35}
+				{position 2920.32 81.3816 5}
 			}
 {"5214"
 				{position -3218.98 1306.97 35}
@@ -30973,20 +30973,20 @@
 				{transition "5217"}
 			}
 {"5215"
-				{position -3218.98 1306.97 35}
+				{position -1154.5 -3250.86 11}
 			}
 {"5216"
-				{position -3218.98 1306.97 35}
+				{position 1351.86 -2248.98 -0.109741}
 			}
 {"5217"
-				{position -3218.98 1306.97 35}
+				{position 1128.63 -2152.85 12.1237}
 			}
 {"4686"
-				{position -3322.99 398.019 30}
+				{position 3424.8 882.719 17}
 				{RandomPosition 1}
 			}
 {"4687"
-				{position -2019.47 1646.29 53.0215}
+				{position -2370.42 -1722.75 43}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -31084,7 +31084,7 @@
 				}
 			}
 {"4688"
-				{position -2019.47 1646.29 53.0215}
+				{position -252.127 -280.671 0.629726}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -31182,7 +31182,7 @@
 				}
 			}
 {"4689"
-				{position -3322.99 398.019 30}
+				{position 1186.31 -2917.28 1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -32456,7 +32456,7 @@
 				}
 			}
 {"5465"
-				{position -1274.4 -2601.9 -15.4738}
+				{position -1633.51 2219.41 68}
 				{radius 300}
 				{commands
 					{"switch"
@@ -32796,7 +32796,7 @@
 				}
 			}
 {"5466"
-				{position -1358.03 -2660.18 -11.3901}
+				{position -3267.57 928.712 30.3912}
 				{radius 300}
 				{commands
 					{"switch"
@@ -33136,7 +33136,7 @@
 				}
 			}
 {"5467"
-				{position -3075.8 -3505.46 -3}
+				{position -3218.98 1306.97 35}
 				{radius 300}
 				{commands
 					{"switch"
@@ -33476,7 +33476,7 @@
 				}
 			}
 {"5468"
-				{position -2989.43 -622.818 27}
+				{position 2822.36 3489.42 99}
 				{radius 300}
 				{commands
 					{"switch"
@@ -33816,7 +33816,7 @@
 				}
 			}
 {"5469"
-				{position -3382.45 -81.6962 32}
+				{position -1633.51 2219.41 68}
 				{radius 300}
 				{commands
 					{"switch"
@@ -34156,7 +34156,7 @@
 				}
 			}
 {"5690"
-				{position 1201.63 -3058.69 7.64035}
+				{position 924.247 -2724.8 -20.0422}
 				{transition "5739"}
 				{transition "5740"}
 				{transition "5741"}
@@ -34209,7 +34209,7 @@
 				{position 2933.34 -486.799 4}
 			}
 {"5733"
-				{position 1428.48 -2591.49 -23}
+				{position 1662.73 -2157.27 -18.4521}
 			}
 {"5734"
 				{position 873.973 -1983.89 -19.2196}
@@ -34227,22 +34227,22 @@
 				{position 1737.44 -1797.27 -22.4279}
 			}
 {"5739"
-				{position 1031.12 -3248.35 0}
+				{position 336.426 -3068.11 1.5567}
 			}
 {"5740"
-				{position 839.283 -3547.12 -9.47583}
+				{position 713.812 -2053.05 2.52887}
 			}
 {"5741"
-				{position 1393.14 -3933 14}
+				{position 1728.58 -2057.39 -17.2437}
 			}
 {"5742"
-				{position 2437.31 -2774.52 -5}
+				{position 1951.97 -1613.11 -21.2047}
 			}
 {"5743"
-				{position 2929.37 -3641.25 -15.656}
+				{position 2205.92 -1385.07 -20.2767}
 			}
 {"5744"
-				{position 2210.6 -3412.19 2.0135}
+				{position 1737.44 -1797.27 -22.4279}
 			}
 {"5745"
 				{position 4091.82 -506.41 4}
@@ -34257,7 +34257,7 @@
 				{position 3933.02 -1419.71 1}
 			}
 {"5749"
-				{position 2931.34 -2052.57 -10.1726}
+				{position 2871.06 -1648.96 -3}
 			}
 {"5480"
 				{position 2751.19 13.5153 18}
@@ -34283,7 +34283,7 @@
 				{position 845.007 -1288.1 -9.35284}
 			}
 {"5481"
-				{position 2113.55 -3057.05 -8}
+				{position 942.44 -1959.53 -22}
 				{transition "5742"}
 				{transition "5743"}
 				{transition "5744"}
@@ -34316,22 +34316,22 @@
 				}
 			}
 {"5560"
-				{position -703.379 -3309.29 11}
+				{position 734.199 128.554 22}
 				{RandomPosition 1}
 				{transition "5520"}
 			}
 {"5561"
-				{position -2239.06 -1745.22 33}
+				{position 498.145 649.264 1}
 				{RandomPosition 1}
 				{transition "5520"}
 			}
 {"5562"
-				{position -1989.65 -2257.62 7}
+				{position -224.634 -336.982 1}
 				{RandomPosition 1}
 				{transition "5520"}
 			}
 {"5563"
-				{position -215.137 -3668.63 22.1218}
+				{position 1903.33 -2146.68 10}
 				{RandomPosition 1}
 				{transition "5521"}
 				{commands
@@ -34348,7 +34348,7 @@
 				}
 			}
 {"5564"
-				{position -563.43 -3442.52 16}
+				{position 2715.73 -955.065 -3.84757}
 				{RandomPosition 1}
 				{transition "5521"}
 				{commands
@@ -34365,7 +34365,7 @@
 				}
 			}
 {"5565"
-				{position -359.104 -3824.34 15.1196}
+				{position 2115.09 -1566.66 3.53008}
 				{RandomPosition 1}
 				{transition "5521"}
 				{commands
@@ -34382,7 +34382,7 @@
 				}
 			}
 {"5566"
-				{position -590.225 -3903.53 14}
+				{position 1190.46 -2968.86 3.86719}
 				{RandomPosition 1}
 				{transition "5522"}
 				{commands
@@ -34399,7 +34399,7 @@
 				}
 			}
 {"5567"
-				{position -748.776 -3716.52 18}
+				{position 1606.64 -2735.18 6}
 				{RandomPosition 1}
 				{transition "5522"}
 				{commands
@@ -34416,7 +34416,7 @@
 				}
 			}
 {"5568"
-				{position -215.137 -3668.63 22.1218}
+				{position 1431.12 -2316.66 9.42603}
 				{RandomPosition 1}
 				{transition "5522"}
 				{commands
@@ -34433,7 +34433,7 @@
 				}
 			}
 {"5569"
-				{position -1072.41 -3337.09 20.2953}
+				{position 3928.76 174.663 12.6577}
 				{RandomPosition 1}
 				{transition "5523"}
 				{commands
@@ -34450,7 +34450,7 @@
 				}
 			}
 {"5570"
-				{position -1154.5 -3250.86 11}
+				{position 3599.27 -254.816 3}
 				{RandomPosition 1}
 				{transition "5523"}
 				{commands
@@ -34467,7 +34467,7 @@
 				}
 			}
 {"5571"
-				{position -563.43 -3442.52 16}
+				{position 2548.79 -556.869 0.53186}
 				{RandomPosition 1}
 				{transition "5523"}
 				{commands
@@ -34484,55 +34484,55 @@
 				}
 			}
 {"5680"
-				{position -2370.42 -1722.75 43}
+				{position 505.795 -227.331 20.0645}
 				{RandomPosition 1}
 				{transition "5520"}
 			}
 {"5978"
-				{position 490.291 -3400.12 13.8812}
+				{position 1876.47 3605.41 116}
 				{transition "5985"}
 				{transition "5986"}
 				{transition "5987"}
 			}
 {"5979"
-				{position -923.026 -2309.2 3.06494}
+				{position 674.487 -1934.31 18}
 			}
 {"5980"
-				{position 490.291 -3400.12 13.8812}
+				{position 1033.12 -2176.17 12.8452}
 			}
 {"5981"
-				{position -1395.56 -2090.72 -0.843364}
+				{position 1693.29 -1517.39 4.25069}
 			}
 {"5982"
-				{position -1657.15 -1672.14 21.7254}
+				{position 3420.51 785.092 15}
 			}
 {"5983"
-				{position -923.026 -2309.2 3.06494}
+				{position 3034.83 443.68 2.48584}
 			}
 {"5984"
-				{position 490.291 -3400.12 13.8812}
+				{position 2813.45 17.0238 17}
 			}
 {"5985"
-				{position -1395.56 -2090.72 -0.843364}
+				{position 1976.32 -798.394 12.8117}
 			}
 {"5986"
-				{position -703.379 -3309.29 11}
+				{position 2601.46 1002.2 6}
 			}
 {"5987"
-				{position -1274.4 -2601.9 -15.4738}
+				{position 273.726 -2316.64 9}
 			}
 {"5457"
-				{position -923.026 -2309.2 3.06494}
+				{position 2457.38 3668.1 105}
 				{transition "5979"}
 				{transition "5980"}
 				{transition "5981"}
 			}
 {"5520"
-				{position -2239.06 -1745.22 33}
+				{position -165.477 767.32 17}
 				{RandomPosition 1}
 			}
 {"5521"
-				{position -359.104 -3824.34 15.1196}
+				{position 459.246 -2696.61 5.143}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -34630,7 +34630,7 @@
 				}
 			}
 {"5522"
-				{position -1315.76 -3652.79 19}
+				{position 818.414 -3295.98 4.29182}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -34728,7 +34728,7 @@
 				}
 			}
 {"5523"
-				{position -1358.03 -2660.18 -11.3901}
+				{position 3620.26 1260.87 60}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -34826,7 +34826,7 @@
 				}
 			}
 {"5458"
-				{position -1657.15 -1672.14 21.7254}
+				{position 3290.98 3720.39 66}
 				{transition "5982"}
 				{transition "5983"}
 				{transition "5984"}
@@ -34843,7 +34843,7 @@
 				}
 			}
 {"5695"
-				{position 435.896 -3278.97 13.0847}
+				{position 22.0649 -2485.07 0}
 				{transition "5799"}
 				{transition "5800"}
 				{transition "5801"}
@@ -34888,10 +34888,10 @@
 				{position 924.247 -2724.8 -20.0422}
 			}
 {"5782"
-				{position 995.495 -3259.46 0}
+				{position 924.247 -2724.8 -20.0422}
 			}
 {"5783"
-				{position 864.009 -3498.24 2.07518}
+				{position -64.177 -2753.24 -8.69098}
 			}
 {"5784"
 				{position 1728.58 -2057.39 -17.2437}
@@ -34900,7 +34900,7 @@
 				{position 1662.73 -2157.27 -18.4521}
 			}
 {"5786"
-				{position 1438.31 -2602.74 -23}
+				{position 1157.26 -2050.09 9.07268}
 			}
 {"5787"
 				{position -474.685 -2993.55 -21.0315}
@@ -34912,7 +34912,7 @@
 				{position -713.117 -3060.57 -22}
 			}
 {"5484"
-				{position 716.332 -3085.54 0}
+				{position 336.426 -3068.11 1.5567}
 				{transition "5781"}
 				{transition "5782"}
 				{transition "5783"}
@@ -34941,16 +34941,16 @@
 				{position 88.3287 -2422.92 3}
 			}
 {"5796"
-				{position -39.9995 -4765.49 2.90552}
+				{position -634.762 -4236.26 24.3463}
 			}
 {"5797"
-				{position -532.642 -5232.41 4}
+				{position -1005.3 -5010.69 5.76837}
 			}
 {"5798"
-				{position 288.269 -4296.79 1.19944}
+				{position -524.309 -4016.01 15.2834}
 			}
 {"5799"
-				{position 333.824 -3578.72 -22}
+				{position -474.685 -2993.55 -21.0315}
 			}
 {"5485"
 				{position -646.775 -2149.47 31.0112}
@@ -34964,10 +34964,10 @@
 				}
 			}
 {"5800"
-				{position 131.631 -3701.36 -20.7005}
+				{position -713.117 -3060.57 -22}
 			}
 {"5801"
-				{position 611.293 -3671.09 -23.4261}
+				{position -564.167 -2459.99 0}
 			}
 {"5486"
 				{position -676.404 -2754.51 0}
@@ -34992,34 +34992,34 @@
 				}
 			}
 {"5461"
-				{position -1274.4 -2601.9 -15.4738}
+				{position -3267.57 928.712 30.3912}
 				{transition "5998"}
 				{transition "5999"}
 				{transition "6000"}
 			}
 {"5462"
-				{position -1072.41 -3337.09 20.2953}
+				{position -3218.98 1306.97 35}
 				{transition "6001"}
 				{transition "6002"}
 				{transition "6003"}
 			}
 {"5572"
-				{position -2311.05 -2629.01 40.7266}
+				{position -1284.7 -1732.91 27.0109}
 				{RandomPosition 1}
 				{transition "5524"}
 			}
 {"5573"
-				{position -1989.65 -2257.62 7}
+				{position -637.848 -1235.93 37.2811}
 				{RandomPosition 1}
 				{transition "5524"}
 			}
 {"5574"
-				{position -2370.42 -1722.75 43}
+				{position -1708.86 -1247.62 49.464}
 				{RandomPosition 1}
 				{transition "5524"}
 			}
 {"5575"
-				{position -590.225 -3903.53 14}
+				{position -234.013 -1940.64 22.7766}
 				{RandomPosition 1}
 				{transition "5525"}
 				{commands
@@ -35036,7 +35036,7 @@
 				}
 			}
 {"5576"
-				{position -748.776 -3716.52 18}
+				{position -215.137 -3668.63 22.1218}
 				{RandomPosition 1}
 				{transition "5525"}
 				{commands
@@ -35053,7 +35053,7 @@
 				}
 			}
 {"5577"
-				{position -215.137 -3668.63 22.1218}
+				{position -563.43 -3442.52 16}
 				{RandomPosition 1}
 				{transition "5525"}
 				{commands
@@ -35070,7 +35070,7 @@
 				}
 			}
 {"5578"
-				{position -1432.62 -3895.8 11}
+				{position -923.026 -2309.2 3.06494}
 				{RandomPosition 1}
 				{transition "5526"}
 				{commands
@@ -35087,7 +35087,7 @@
 				}
 			}
 {"5579"
-				{position -1154.5 -3250.86 11}
+				{position -590.225 -3903.53 14}
 				{RandomPosition 1}
 				{transition "5526"}
 				{commands
@@ -35104,7 +35104,7 @@
 				}
 			}
 {"5580"
-				{position -563.43 -3442.52 16}
+				{position -1072.41 -3337.09 20.2953}
 				{RandomPosition 1}
 				{transition "5526"}
 				{commands
@@ -35121,7 +35121,7 @@
 				}
 			}
 {"5581"
-				{position -359.104 -3824.34 15.1196}
+				{position -1432.62 -3895.8 11}
 				{RandomPosition 1}
 				{transition "5527"}
 				{commands
@@ -35138,7 +35138,7 @@
 				}
 			}
 {"5582"
-				{position -590.225 -3903.53 14}
+				{position -1358.03 -2660.18 -11.3901}
 				{RandomPosition 1}
 				{transition "5527"}
 				{commands
@@ -35155,7 +35155,7 @@
 				}
 			}
 {"5583"
-				{position -215.137 -3668.63 22.1218}
+				{position -1919.09 -4609.07 -9.99207}
 				{RandomPosition 1}
 				{transition "5527"}
 				{commands
@@ -35172,49 +35172,49 @@
 				}
 			}
 {"5681"
-				{position -2570.85 -2449.14 21}
+				{position -1316.1 -719.056 27.3142}
 				{RandomPosition 1}
 				{transition "5524"}
 			}
 {"5998"
-				{position -748.776 -3716.52 18}
+				{position -2403.92 -3039.28 21.9573}
 			}
 {"5999"
-				{position -1072.41 -3337.09 20.2953}
+				{position -2311.05 -2629.01 40.7266}
 			}
 {"6000"
-				{position -703.379 -3309.29 11}
+				{position -1142.82 -1209.54 31}
 			}
 {"6001"
-				{position -703.379 -3309.29 11}
+				{position -2239.06 -1745.22 33}
 			}
 {"6002"
-				{position -1274.4 -2601.9 -15.4738}
+				{position -755.454 71.5994 30.3689}
 			}
 {"6003"
-				{position -1315.76 -3652.79 19}
+				{position -1826.69 -779.395 48.9734}
 			}
 {"6004"
-				{position -1395.56 -2090.72 -0.843364}
+				{position -3267.57 928.712 30.3912}
 				{transition "6005"}
 				{transition "6006"}
 				{transition "6007"}
 			}
 {"6005"
-				{position -923.026 -2309.2 3.06494}
+				{position -1300.99 -98.0289 18}
 			}
 {"6006"
-				{position -923.026 -2309.2 3.06494}
+				{position -1790.02 -219.938 17}
 			}
 {"6007"
-				{position -1542.96 -4189.03 4.03116}
+				{position -2573.43 -3969.91 6.01686}
 			}
 {"5524"
-				{position -2403.92 -3039.28 21.9573}
+				{position -2379.28 -630.989 24.2924}
 				{RandomPosition 1}
 			}
 {"5525"
-				{position -359.104 -3824.34 15.1196}
+				{position -764.016 631 32.8978}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -35312,7 +35312,7 @@
 				}
 			}
 {"5526"
-				{position -748.776 -3716.52 18}
+				{position -2920.73 -4440.23 -17.8937}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -35410,7 +35410,7 @@
 				}
 			}
 {"5527"
-				{position -563.43 -3442.52 16}
+				{position -2548.23 -5314.81 -9}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -35619,13 +35619,13 @@
 				{position -1912.06 -3255.61 22}
 			}
 {"5841"
-				{position -584.753 -5189.2 3}
+				{position -1358.7 -4769.79 11.1116}
 			}
 {"5842"
-				{position 51.0731 -3637.45 0}
+				{position -1109.24 -3092.38 -17}
 			}
 {"5843"
-				{position 181.147 -4260.92 1.27911}
+				{position -524.309 -4016.01 15.2834}
 			}
 {"5844"
 				{position -2010.95 -6617.46 -74}
@@ -35683,7 +35683,7 @@
 				{transition "5528"}
 			}
 {"5587"
-				{position -2476.78 -3294.54 24}
+				{position -3553.05 -2654.27 -1}
 				{RandomPosition 1}
 				{transition "5529"}
 				{commands
@@ -35700,7 +35700,7 @@
 				}
 			}
 {"5588"
-				{position -2403.92 -3039.28 21.9573}
+				{position -3390.15 -2053.55 24}
 				{RandomPosition 1}
 				{transition "5529"}
 				{commands
@@ -35717,7 +35717,7 @@
 				}
 			}
 {"5589"
-				{position -2239.06 -1745.22 33}
+				{position -3543.62 -569.392 13}
 				{RandomPosition 1}
 				{transition "5529"}
 				{commands
@@ -35734,23 +35734,6 @@
 				}
 			}
 {"5590"
-				{position -1919.09 -4609.07 -9.99207}
-				{RandomPosition 1}
-				{transition "5530"}
-				{commands
-					{"delay"
-						{time 0.5}
-					}
-					{"action"
-						{action rotate}
-						{target
-							{ignore_captured_by_user 0}
-							{tag player_spawn}
-						}
-					}
-				}
-			}
-{"5591"
 				{position -2879.45 -5713.29 -33.7416}
 				{RandomPosition 1}
 				{transition "5530"}
@@ -35767,8 +35750,25 @@
 					}
 				}
 			}
+{"5591"
+				{position -3481.66 -6054.39 -79.9722}
+				{RandomPosition 1}
+				{transition "5530"}
+				{commands
+					{"delay"
+						{time 0.5}
+					}
+					{"action"
+						{action rotate}
+						{target
+							{ignore_captured_by_user 0}
+							{tag player_spawn}
+						}
+					}
+				}
+			}
 {"5592"
-				{position -2548.23 -5314.81 -9}
+				{position -3382.45 -81.6962 32}
 				{RandomPosition 1}
 				{transition "5530"}
 				{commands
@@ -35785,7 +35785,7 @@
 				}
 			}
 {"5593"
-				{position -1542.96 -4189.03 4.03116}
+				{position -2728.25 294.219 46}
 				{RandomPosition 1}
 				{transition "5531"}
 				{commands
@@ -35802,7 +35802,7 @@
 				}
 			}
 {"5594"
-				{position -1315.76 -3652.79 19}
+				{position -2149.22 513.615 21.3717}
 				{RandomPosition 1}
 				{transition "5531"}
 				{commands
@@ -35819,7 +35819,7 @@
 				}
 			}
 {"5595"
-				{position -1154.5 -3250.86 11}
+				{position -3322.99 398.019 30}
 				{RandomPosition 1}
 				{transition "5531"}
 				{commands
@@ -35836,61 +35836,61 @@
 				}
 			}
 {"5682"
-				{position -3390.15 -2053.55 24}
+				{position -3267.57 928.712 30.3912}
 				{RandomPosition 1}
 				{transition "5528"}
 			}
 {"5475"
-				{position -3188.08 -4820.61 -31.557}
+				{position -3218.98 1306.97 35}
 				{transition "6021"}
 				{transition "6022"}
 				{transition "6023"}
 			}
 {"5476"
-				{position -1989.65 -2257.62 7}
+				{position -3267.57 928.712 30.3912}
 				{transition "6018"}
 				{transition "6019"}
 				{transition "6020"}
 			}
 {"6018"
-				{position -1358.03 -2660.18 -11.3901}
+				{position -1282.97 1159.86 35}
 			}
 {"6019"
-				{position -1395.56 -2090.72 -0.843364}
+				{position -232.64 1231.05 19}
 			}
 {"6020"
-				{position -1657.15 -1672.14 21.7254}
+				{position -1100.66 1794.77 61}
 			}
 {"6021"
-				{position -3481.66 -6054.39 -79.9722}
+				{position -1633.51 2219.41 68}
 			}
 {"6022"
-				{position -2573.43 -3969.91 6.01686}
+				{position 2012.87 1292.73 -2}
 			}
 {"6023"
-				{position -2920.73 -4440.23 -17.8937}
+				{position 2340.72 2006.34 46}
 			}
 {"6024"
-				{position -2665.28 -2936.26 13.6526}
+				{position -3218.98 1306.97 35}
 				{transition "6025"}
 				{transition "6026"}
 				{transition "6027"}
 			}
 {"6025"
-				{position -2570.85 -2449.14 21}
+				{position 1366.11 2857.13 56.4164}
 			}
 {"6026"
-				{position -2700.19 -3720.12 -1}
+				{position 3197.14 1360.58 48.3474}
 			}
 {"6027"
-				{position -2445.96 -1728.76 39}
+				{position 2841.03 2014.49 90}
 			}
 {"5528"
-				{position -3553.05 -2654.27 -1}
+				{position 2139.8 3234.22 112.966}
 				{RandomPosition 1}
 			}
 {"5529"
-				{position -2311.05 -2629.01 40.7266}
+				{position 3245.39 2132.4 94}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -35988,7 +35988,7 @@
 				}
 			}
 {"5530"
-				{position -2170.05 -4891.52 -22}
+				{position 2835.74 2767.22 95.0532}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -36086,7 +36086,7 @@
 				}
 			}
 {"5531"
-				{position -1432.62 -3895.8 11}
+				{position 2622 3123.68 107}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -36309,10 +36309,10 @@
 				}
 			}
 {"5890"
-				{position 3364.05 3107.22 69.4001}
+				{position 3608.98 3052.23 77}
 			}
 {"5891"
-				{position 3112.69 2410.7 99}
+				{position 3798.25 3188.36 88.4224}
 			}
 {"5892"
 				{position 2144.25 1954.96 32}
@@ -36333,7 +36333,7 @@
 				{position 2850.78 1339.37 24}
 			}
 {"5495"
-				{position 2911.62 2774.85 100}
+				{position 3554.1 3497.18 68}
 				{transition "5889"}
 				{transition "5890"}
 				{transition "5891"}
@@ -36344,22 +36344,22 @@
 				}
 			}
 {"5596"
-				{position -3543.62 -569.392 13}
+				{position 2457.38 3668.1 105}
 				{RandomPosition 1}
 				{transition "5532"}
 			}
 {"5597"
-				{position -2989.43 -622.818 27}
+				{position 2188.82 4001.08 122.33}
 				{RandomPosition 1}
 				{transition "5532"}
 			}
 {"5598"
-				{position -3382.45 -81.6962 32}
+				{position 1876.47 3605.41 116}
 				{RandomPosition 1}
 				{transition "5532"}
 			}
 {"5599"
-				{position -3247.37 -1653.13 29}
+				{position 3321.22 2702.3 104}
 				{RandomPosition 1}
 				{transition "5533"}
 				{commands
@@ -36376,7 +36376,7 @@
 				}
 			}
 {"5600"
-				{position -1358.03 -2660.18 -11.3901}
+				{position 3616.9 3352.66 79}
 				{RandomPosition 1}
 				{transition "5533"}
 				{commands
@@ -36393,7 +36393,7 @@
 				}
 			}
 {"5601"
-				{position -2239.06 -1745.22 33}
+				{position 3290.98 3720.39 66}
 				{RandomPosition 1}
 				{transition "5533"}
 				{commands
@@ -36410,7 +36410,7 @@
 				}
 			}
 {"5602"
-				{position -2665.28 -2936.26 13.6526}
+				{position 34.0817 1528.2 15.2781}
 				{RandomPosition 1}
 				{transition "5534"}
 				{commands
@@ -36427,7 +36427,7 @@
 				}
 			}
 {"5603"
-				{position -2311.05 -2629.01 40.7266}
+				{position -426.555 282.83 9.52856}
 				{RandomPosition 1}
 				{transition "5534"}
 				{commands
@@ -36444,7 +36444,7 @@
 				}
 			}
 {"5604"
-				{position -1072.41 -3337.09 20.2953}
+				{position 1970.62 1678.71 0}
 				{RandomPosition 1}
 				{transition "5534"}
 				{commands
@@ -36461,7 +36461,7 @@
 				}
 			}
 {"5605"
-				{position -2476.78 -3294.54 24}
+				{position -3218.98 1306.97 35}
 				{RandomPosition 1}
 				{transition "5535"}
 				{commands
@@ -36478,7 +36478,7 @@
 				}
 			}
 {"5606"
-				{position -1154.5 -3250.86 11}
+				{position 91.4355 -2783.91 -2.93066}
 				{RandomPosition 1}
 				{transition "5535"}
 				{commands
@@ -36495,7 +36495,7 @@
 				}
 			}
 {"5607"
-				{position -1989.65 -2257.62 7}
+				{position -2170.05 -4891.52 -22}
 				{RandomPosition 1}
 				{transition "5535"}
 				{commands
@@ -36512,61 +36512,61 @@
 				}
 			}
 {"5683"
-				{position -3543.62 -569.392 13}
+				{position -1657.15 -1672.14 21.7254}
 				{RandomPosition 1}
 				{transition "5532"}
 			}
 {"5970"
-				{position -3322.99 398.019 30}
+				{position 2822.36 3489.42 99}
 				{transition "6038"}
 				{transition "6039"}
 				{transition "6040"}
 			}
 {"5971"
-				{position -3322.99 398.019 30}
+				{position 2188.82 4001.08 122.33}
 				{transition "6041"}
 				{transition "6042"}
 				{transition "6043"}
 			}
 {"6038"
-				{position -1657.15 -1672.14 21.7254}
+				{position -1395.56 -2090.72 -0.843364}
 			}
 {"6039"
-				{position -3322.99 398.019 30}
+				{position 1184.37 -2585.66 1}
 			}
 {"6040"
-				{position -1657.15 -1672.14 21.7254}
+				{position 3659.2 2568.47 100}
 			}
 {"6041"
-				{position -2989.43 -622.818 27}
+				{position -475.679 930.793 4}
 			}
 {"6042"
-				{position -3390.15 -2053.55 24}
+				{position -2130.02 -953.38 39}
 			}
 {"6043"
-				{position -3382.45 -81.6962 32}
+				{position 490.291 -3400.12 13.8812}
 			}
 {"6044"
-				{position -1395.56 -2090.72 -0.843364}
+				{position 1876.47 3605.41 116}
 				{transition "6045"}
 				{transition "6046"}
 				{transition "6047"}
 			}
 {"6045"
-				{position -2370.42 -1722.75 43}
+				{position 2939.68 1022.79 20.3894}
 			}
 {"6046"
-				{position -2570.85 -2449.14 21}
+				{position -1128.94 -442.413 11}
 			}
 {"6047"
-				{position 490.291 -3400.12 13.8812}
+				{position -2570.85 -2449.14 21}
 			}
 {"5532"
-				{position -3247.37 -1653.13 29}
+				{position -1542.96 -4189.03 4.03116}
 				{RandomPosition 1}
 			}
 {"5533"
-				{position -1274.4 -2601.9 -15.4738}
+				{position 3490.82 480.922 9}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -36664,7 +36664,7 @@
 				}
 			}
 {"5534"
-				{position -590.225 -3903.53 14}
+				{position 3517.12 2311.28 98}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -36762,7 +36762,7 @@
 				}
 			}
 {"5535"
-				{position -1432.62 -3895.8 11}
+				{position -2700.19 -3720.12 -1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -37020,22 +37020,22 @@
 				{position -2377.55 -1636.29 44}
 			}
 {"5608"
-				{position -3543.62 -569.392 13}
+				{position 876.477 -1741.29 17}
 				{RandomPosition 1}
 				{transition "5536"}
 			}
 {"5609"
-				{position -3382.45 -81.6962 32}
+				{position 1766.53 -2387.02 18}
 				{RandomPosition 1}
 				{transition "5536"}
 			}
 {"5610"
-				{position -3382.45 -81.6962 32}
+				{position -1315.76 -3652.79 19}
 				{RandomPosition 1}
 				{transition "5536"}
 			}
 {"5611"
-				{position -2239.06 -1745.22 33}
+				{position -2476.78 -3294.54 24}
 				{RandomPosition 1}
 				{transition "5537"}
 				{commands
@@ -37052,7 +37052,7 @@
 				}
 			}
 {"5612"
-				{position -3553.05 -2654.27 -1}
+				{position 533.097 -2945.17 4.54233}
 				{RandomPosition 1}
 				{transition "5537"}
 				{commands
@@ -37069,7 +37069,7 @@
 				}
 			}
 {"5613"
-				{position -2989.43 -622.818 27}
+				{position 2934.67 -824.29 0}
 				{RandomPosition 1}
 				{transition "5537"}
 				{commands
@@ -37086,7 +37086,7 @@
 				}
 			}
 {"5614"
-				{position -3390.15 -2053.55 24}
+				{position -748.776 -3716.52 18}
 				{RandomPosition 1}
 				{transition "5538"}
 				{commands
@@ -37103,7 +37103,7 @@
 				}
 			}
 {"5615"
-				{position -2370.42 -1722.75 43}
+				{position 2582.71 -332.493 9.44653}
 				{RandomPosition 1}
 				{transition "5538"}
 				{commands
@@ -37120,7 +37120,7 @@
 				}
 			}
 {"5616"
-				{position -3247.37 -1653.13 29}
+				{position 2004.39 -1951.77 4}
 				{RandomPosition 1}
 				{transition "5538"}
 				{commands
@@ -37137,7 +37137,7 @@
 				}
 			}
 {"5617"
-				{position -2403.92 -3039.28 21.9573}
+				{position -359.104 -3824.34 15.1196}
 				{RandomPosition 1}
 				{transition "5539"}
 				{commands
@@ -37154,7 +37154,7 @@
 				}
 			}
 {"5618"
-				{position -2665.28 -2936.26 13.6526}
+				{position -2445.96 -1728.76 39}
 				{RandomPosition 1}
 				{transition "5539"}
 				{commands
@@ -37171,7 +37171,7 @@
 				}
 			}
 {"5619"
-				{position -2570.85 -2449.14 21}
+				{position -1595.45 -1405 41}
 				{RandomPosition 1}
 				{transition "5539"}
 				{commands
@@ -37188,61 +37188,61 @@
 				}
 			}
 {"5684"
-				{position -3543.62 -569.392 13}
+				{position -703.379 -3309.29 11}
 				{RandomPosition 1}
 				{transition "5536"}
 			}
 {"5974"
-				{position -3322.99 398.019 30}
+				{position -1633.51 2219.41 68}
 				{transition "6058"}
 				{transition "6059"}
 				{transition "6060"}
 			}
 {"5975"
-				{position -3322.99 398.019 30}
+				{position -1633.51 2219.41 68}
 				{transition "6061"}
 				{transition "6062"}
 				{transition "6063"}
 			}
 {"6058"
-				{position -3382.45 -81.6962 32}
+				{position 2539.76 -886.844 11.1418}
 			}
 {"6059"
-				{position -2989.43 -622.818 27}
+				{position -1443.66 -592.136 33}
 			}
 {"6060"
-				{position -1657.15 -1672.14 21.7254}
+				{position 2871.49 437.087 0.526733}
 			}
 {"6061"
-				{position -2311.05 -2629.01 40.7266}
+				{position 1043.41 -3011.62 5}
 			}
 {"6062"
-				{position -1989.65 -2257.62 7}
+				{position 2684.44 36.8975 19}
 			}
 {"6063"
-				{position -3390.15 -2053.55 24}
+				{position 2920.32 81.3816 5}
 			}
 {"6064"
-				{position -2989.43 -622.818 27}
+				{position -3267.57 928.712 30.3912}
 				{transition "6065"}
 				{transition "6066"}
 				{transition "6067"}
 			}
 {"6065"
-				{position -2370.42 -1722.75 43}
+				{position -1154.5 -3250.86 11}
 			}
 {"6066"
-				{position -3543.62 -569.392 13}
+				{position 1351.86 -2248.98 -0.109741}
 			}
 {"6067"
-				{position -3553.05 -2654.27 -1}
+				{position 1128.63 -2152.85 12.1237}
 			}
 {"5536"
-				{position -3543.62 -569.392 13}
+				{position 3424.8 882.719 17}
 				{RandomPosition 1}
 			}
 {"5537"
-				{position -2700.19 -3720.12 -1}
+				{position -2370.42 -1722.75 43}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -37340,7 +37340,7 @@
 				}
 			}
 {"5538"
-				{position -2476.78 -3294.54 24}
+				{position -252.127 -280.671 0.629726}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -37438,7 +37438,7 @@
 				}
 			}
 {"5539"
-				{position -3444.41 -3349.68 -5.97692}
+				{position 1186.31 -2917.28 1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -40572,22 +40572,22 @@
 				}
 			}
 {"6410"
-				{position -3322.99 398.019 30}
+				{position 734.199 128.554 22}
 				{RandomPosition 1}
 				{transition "6370"}
 			}
 {"6411"
-				{position -3267.57 928.712 30.3912}
+				{position 498.145 649.264 1}
 				{RandomPosition 1}
 				{transition "6370"}
 			}
 {"6412"
-				{position -3382.45 -81.6962 32}
+				{position -224.634 -336.982 1}
 				{RandomPosition 1}
 				{transition "6370"}
 			}
 {"6413"
-				{position -3543.62 -569.392 13}
+				{position 1903.33 -2146.68 10}
 				{RandomPosition 1}
 				{transition "6371"}
 				{commands
@@ -40604,7 +40604,7 @@
 				}
 			}
 {"6414"
-				{position -3218.98 1306.97 35}
+				{position 2715.73 -955.065 -3.84757}
 				{RandomPosition 1}
 				{transition "6371"}
 				{commands
@@ -40621,7 +40621,7 @@
 				}
 			}
 {"6415"
-				{position -3382.45 -81.6962 32}
+				{position 2115.09 -1566.66 3.53008}
 				{RandomPosition 1}
 				{transition "6371"}
 				{commands
@@ -40638,7 +40638,7 @@
 				}
 			}
 {"6416"
-				{position -3543.62 -569.392 13}
+				{position 1190.46 -2968.86 3.86719}
 				{RandomPosition 1}
 				{transition "6372"}
 				{commands
@@ -40655,7 +40655,7 @@
 				}
 			}
 {"6417"
-				{position -3322.99 398.019 30}
+				{position 1606.64 -2735.18 6}
 				{RandomPosition 1}
 				{transition "6372"}
 				{commands
@@ -40672,7 +40672,7 @@
 				}
 			}
 {"6418"
-				{position -3267.57 928.712 30.3912}
+				{position 1431.12 -2316.66 9.42603}
 				{RandomPosition 1}
 				{transition "6372"}
 				{commands
@@ -40689,7 +40689,7 @@
 				}
 			}
 {"6419"
-				{position -3218.98 1306.97 35}
+				{position 3928.76 174.663 12.6577}
 				{RandomPosition 1}
 				{transition "6373"}
 				{commands
@@ -40706,7 +40706,7 @@
 				}
 			}
 {"6420"
-				{position -3322.99 398.019 30}
+				{position 3599.27 -254.816 3}
 				{RandomPosition 1}
 				{transition "6373"}
 				{commands
@@ -40723,7 +40723,7 @@
 				}
 			}
 {"6421"
-				{position -3382.45 -81.6962 32}
+				{position 2548.79 -556.869 0.53186}
 				{RandomPosition 1}
 				{transition "6373"}
 				{commands
@@ -40740,55 +40740,55 @@
 				}
 			}
 {"6530"
-				{position -3267.57 928.712 30.3912}
+				{position 505.795 -227.331 20.0645}
 				{RandomPosition 1}
 				{transition "6370"}
 			}
 {"6828"
-				{position -3543.62 -569.392 13}
+				{position -3382.45 -81.6962 32}
 				{transition "6835"}
 				{transition "6836"}
 				{transition "6837"}
 			}
 {"6829"
-				{position -3382.45 -81.6962 32}
+				{position 674.487 -1934.31 18}
 			}
 {"6830"
-				{position -3218.98 1306.97 35}
+				{position 1033.12 -2176.17 12.8452}
 			}
 {"6831"
-				{position -3543.62 -569.392 13}
+				{position 1693.29 -1517.39 4.25069}
 			}
 {"6832"
-				{position -3267.57 928.712 30.3912}
+				{position 3420.51 785.092 15}
 			}
 {"6833"
-				{position -3322.99 398.019 30}
+				{position 3034.83 443.68 2.48584}
 			}
 {"6834"
-				{position -3218.98 1306.97 35}
+				{position 2813.45 17.0238 17}
 			}
 {"6835"
-				{position -3382.45 -81.6962 32}
+				{position 1976.32 -798.394 12.8117}
 			}
 {"6836"
-				{position -3322.99 398.019 30}
+				{position 2601.46 1002.2 6}
 			}
 {"6837"
-				{position -3543.62 -569.392 13}
+				{position 273.726 -2316.64 9}
 			}
 {"6307"
-				{position -3267.57 928.712 30.3912}
+				{position -3543.62 -569.392 13}
 				{transition "6829"}
 				{transition "6830"}
 				{transition "6831"}
 			}
 {"6370"
-				{position -3218.98 1306.97 35}
+				{position -165.477 767.32 17}
 				{RandomPosition 1}
 			}
 {"6371"
-				{position -3382.45 -81.6962 32}
+				{position 459.246 -2696.61 5.143}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -40886,7 +40886,7 @@
 				}
 			}
 {"6372"
-				{position -3543.62 -569.392 13}
+				{position 818.414 -3295.98 4.29182}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -40984,7 +40984,7 @@
 				}
 			}
 {"6373"
-				{position -3322.99 398.019 30}
+				{position 3620.26 1260.87 60}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -41254,28 +41254,28 @@
 				{transition "6850"}
 			}
 {"6312"
-				{position -3382.45 -81.6962 32}
+				{position -3322.99 398.019 30}
 				{transition "6851"}
 				{transition "6852"}
 				{transition "6853"}
 			}
 {"6422"
-				{position -3322.99 398.019 30}
+				{position -1284.7 -1732.91 27.0109}
 				{RandomPosition 1}
 				{transition "6374"}
 			}
 {"6423"
-				{position -3218.98 1306.97 35}
+				{position -637.848 -1235.93 37.2811}
 				{RandomPosition 1}
 				{transition "6374"}
 			}
 {"6424"
-				{position -3543.62 -569.392 13}
+				{position -1708.86 -1247.62 49.464}
 				{RandomPosition 1}
 				{transition "6374"}
 			}
 {"6425"
-				{position -3382.45 -81.6962 32}
+				{position -234.013 -1940.64 22.7766}
 				{RandomPosition 1}
 				{transition "6375"}
 				{commands
@@ -41292,7 +41292,7 @@
 				}
 			}
 {"6426"
-				{position -3267.57 928.712 30.3912}
+				{position -215.137 -3668.63 22.1218}
 				{RandomPosition 1}
 				{transition "6375"}
 				{commands
@@ -41309,7 +41309,7 @@
 				}
 			}
 {"6427"
-				{position -3218.98 1306.97 35}
+				{position -563.43 -3442.52 16}
 				{RandomPosition 1}
 				{transition "6375"}
 				{commands
@@ -41326,7 +41326,7 @@
 				}
 			}
 {"6428"
-				{position -3322.99 398.019 30}
+				{position -923.026 -2309.2 3.06494}
 				{RandomPosition 1}
 				{transition "6376"}
 				{commands
@@ -41343,7 +41343,7 @@
 				}
 			}
 {"6429"
-				{position -3543.62 -569.392 13}
+				{position -590.225 -3903.53 14}
 				{RandomPosition 1}
 				{transition "6376"}
 				{commands
@@ -41360,7 +41360,7 @@
 				}
 			}
 {"6430"
-				{position -3382.45 -81.6962 32}
+				{position -1072.41 -3337.09 20.2953}
 				{RandomPosition 1}
 				{transition "6376"}
 				{commands
@@ -41377,7 +41377,7 @@
 				}
 			}
 {"6431"
-				{position -3267.57 928.712 30.3912}
+				{position -1432.62 -3895.8 11}
 				{RandomPosition 1}
 				{transition "6377"}
 				{commands
@@ -41394,7 +41394,7 @@
 				}
 			}
 {"6432"
-				{position -3543.62 -569.392 13}
+				{position -1358.03 -2660.18 -11.3901}
 				{RandomPosition 1}
 				{transition "6377"}
 				{commands
@@ -41411,7 +41411,7 @@
 				}
 			}
 {"6433"
-				{position -3322.99 398.019 30}
+				{position -1919.09 -4609.07 -9.99207}
 				{RandomPosition 1}
 				{transition "6377"}
 				{commands
@@ -41428,49 +41428,49 @@
 				}
 			}
 {"6531"
-				{position -3218.98 1306.97 35}
+				{position -1316.1 -719.056 27.3142}
 				{RandomPosition 1}
 				{transition "6374"}
 			}
 {"6848"
-				{position -3382.45 -81.6962 32}
+				{position -2403.92 -3039.28 21.9573}
 			}
 {"6849"
-				{position -3267.57 928.712 30.3912}
+				{position -2311.05 -2629.01 40.7266}
 			}
 {"6850"
-				{position -3543.62 -569.392 13}
+				{position -1142.82 -1209.54 31}
 			}
 {"6851"
-				{position -3322.99 398.019 30}
+				{position -2239.06 -1745.22 33}
 			}
 {"6852"
-				{position -3218.98 1306.97 35}
+				{position -755.454 71.5994 30.3689}
 			}
 {"6853"
-				{position -3382.45 -81.6962 32}
+				{position -1826.69 -779.395 48.9734}
 			}
 {"6854"
-				{position -3267.57 928.712 30.3912}
+				{position -3382.45 -81.6962 32}
 				{transition "6855"}
 				{transition "6856"}
 				{transition "6857"}
 			}
 {"6855"
-				{position -3322.99 398.019 30}
+				{position -1300.99 -98.0289 18}
 			}
 {"6856"
-				{position -3218.98 1306.97 35}
+				{position -1790.02 -219.938 17}
 			}
 {"6857"
-				{position -3543.62 -569.392 13}
+				{position -2573.43 -3969.91 6.01686}
 			}
 {"6374"
-				{position -3382.45 -81.6962 32}
+				{position -2379.28 -630.989 24.2924}
 				{RandomPosition 1}
 			}
 {"6375"
-				{position -3267.57 928.712 30.3912}
+				{position -764.016 631 32.8978}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -41568,7 +41568,7 @@
 				}
 			}
 {"6376"
-				{position -3322.99 398.019 30}
+				{position -2920.73 -4440.23 -17.8937}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -41666,7 +41666,7 @@
 				}
 			}
 {"6377"
-				{position -3543.62 -569.392 13}
+				{position -2548.23 -5314.81 -9}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -41924,22 +41924,22 @@
 				}
 			}
 {"6434"
-				{position -3382.45 -81.6962 32}
+				{position -3444.41 -3349.68 -5.97692}
 				{RandomPosition 1}
 				{transition "6378"}
 			}
 {"6435"
-				{position -3543.62 -569.392 13}
+				{position -3247.37 -1653.13 29}
 				{RandomPosition 1}
 				{transition "6378"}
 			}
 {"6436"
-				{position -3218.98 1306.97 35}
+				{position -3324.17 -4003.66 -27.8267}
 				{RandomPosition 1}
 				{transition "6378"}
 			}
 {"6437"
-				{position -3267.57 928.712 30.3912}
+				{position -3553.05 -2654.27 -1}
 				{RandomPosition 1}
 				{transition "6379"}
 				{commands
@@ -41956,7 +41956,7 @@
 				}
 			}
 {"6438"
-				{position -3322.99 398.019 30}
+				{position -3390.15 -2053.55 24}
 				{RandomPosition 1}
 				{transition "6379"}
 				{commands
@@ -41973,7 +41973,7 @@
 				}
 			}
 {"6439"
-				{position -3382.45 -81.6962 32}
+				{position -3543.62 -569.392 13}
 				{RandomPosition 1}
 				{transition "6379"}
 				{commands
@@ -41990,7 +41990,7 @@
 				}
 			}
 {"6440"
-				{position -3543.62 -569.392 13}
+				{position -2879.45 -5713.29 -33.7416}
 				{RandomPosition 1}
 				{transition "6380"}
 				{commands
@@ -42007,7 +42007,7 @@
 				}
 			}
 {"6441"
-				{position -3218.98 1306.97 35}
+				{position -3481.66 -6054.39 -79.9722}
 				{RandomPosition 1}
 				{transition "6380"}
 				{commands
@@ -42024,7 +42024,7 @@
 				}
 			}
 {"6442"
-				{position -3267.57 928.712 30.3912}
+				{position -3382.45 -81.6962 32}
 				{RandomPosition 1}
 				{transition "6380"}
 				{commands
@@ -42041,7 +42041,7 @@
 				}
 			}
 {"6443"
-				{position -3322.99 398.019 30}
+				{position -2728.25 294.219 46}
 				{RandomPosition 1}
 				{transition "6381"}
 				{commands
@@ -42058,7 +42058,7 @@
 				}
 			}
 {"6444"
-				{position -3382.45 -81.6962 32}
+				{position -2149.22 513.615 21.3717}
 				{RandomPosition 1}
 				{transition "6381"}
 				{commands
@@ -42075,7 +42075,7 @@
 				}
 			}
 {"6445"
-				{position -3218.98 1306.97 35}
+				{position -3322.99 398.019 30}
 				{RandomPosition 1}
 				{transition "6381"}
 				{commands
@@ -42092,61 +42092,61 @@
 				}
 			}
 {"6532"
-				{position -3543.62 -569.392 13}
+				{position -3267.57 928.712 30.3912}
 				{RandomPosition 1}
 				{transition "6378"}
 			}
 {"6325"
-				{position -3322.99 398.019 30}
+				{position -3543.62 -569.392 13}
 				{transition "6871"}
 				{transition "6872"}
 				{transition "6873"}
 			}
 {"6326"
-				{position -3267.57 928.712 30.3912}
+				{position -3322.99 398.019 30}
 				{transition "6868"}
 				{transition "6869"}
 				{transition "6870"}
 			}
 {"6868"
-				{position -3382.45 -81.6962 32}
+				{position -1282.97 1159.86 35}
 			}
 {"6869"
-				{position -3218.98 1306.97 35}
+				{position -232.64 1231.05 19}
 			}
 {"6870"
-				{position -3267.57 928.712 30.3912}
+				{position -1100.66 1794.77 61}
 			}
 {"6871"
-				{position -3543.62 -569.392 13}
+				{position -1633.51 2219.41 68}
 			}
 {"6872"
-				{position -3322.99 398.019 30}
+				{position 2012.87 1292.73 -2}
 			}
 {"6873"
-				{position -3382.45 -81.6962 32}
+				{position 2340.72 2006.34 46}
 			}
 {"6874"
-				{position -3543.62 -569.392 13}
+				{position -3382.45 -81.6962 32}
 				{transition "6875"}
 				{transition "6876"}
 				{transition "6877"}
 			}
 {"6875"
-				{position -3218.98 1306.97 35}
+				{position 1366.11 2857.13 56.4164}
 			}
 {"6876"
-				{position -3267.57 928.712 30.3912}
+				{position 3197.14 1360.58 48.3474}
 			}
 {"6877"
-				{position -3322.99 398.019 30}
+				{position 2841.03 2014.49 90}
 			}
 {"6378"
-				{position -3382.45 -81.6962 32}
+				{position 2139.8 3234.22 112.966}
 				{RandomPosition 1}
 			}
 {"6379"
-				{position -3543.62 -569.392 13}
+				{position 3245.39 2132.4 94}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -42244,7 +42244,7 @@
 				}
 			}
 {"6380"
-				{position -3218.98 1306.97 35}
+				{position 2835.74 2767.22 95.0532}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -42342,7 +42342,7 @@
 				}
 			}
 {"6381"
-				{position -3267.57 928.712 30.3912}
+				{position 2622 3123.68 107}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -42600,22 +42600,22 @@
 				}
 			}
 {"6446"
-				{position -3218.98 1306.97 35}
+				{position 2457.38 3668.1 105}
 				{RandomPosition 1}
 				{transition "6382"}
 			}
 {"6447"
-				{position -3218.98 1306.97 35}
+				{position 2188.82 4001.08 122.33}
 				{RandomPosition 1}
 				{transition "6382"}
 			}
 {"6448"
-				{position -3267.57 928.712 30.3912}
+				{position 1876.47 3605.41 116}
 				{RandomPosition 1}
 				{transition "6382"}
 			}
 {"6449"
-				{position -3322.99 398.019 30}
+				{position 3321.22 2702.3 104}
 				{RandomPosition 1}
 				{transition "6383"}
 				{commands
@@ -42632,7 +42632,7 @@
 				}
 			}
 {"6450"
-				{position -3218.98 1306.97 35}
+				{position 3616.9 3352.66 79}
 				{RandomPosition 1}
 				{transition "6383"}
 				{commands
@@ -42649,7 +42649,7 @@
 				}
 			}
 {"6451"
-				{position -3267.57 928.712 30.3912}
+				{position 3290.98 3720.39 66}
 				{RandomPosition 1}
 				{transition "6383"}
 				{commands
@@ -42666,7 +42666,7 @@
 				}
 			}
 {"6452"
-				{position -3322.99 398.019 30}
+				{position 34.0817 1528.2 15.2781}
 				{RandomPosition 1}
 				{transition "6384"}
 				{commands
@@ -42683,7 +42683,7 @@
 				}
 			}
 {"6453"
-				{position -3382.45 -81.6962 32}
+				{position -426.555 282.83 9.52856}
 				{RandomPosition 1}
 				{transition "6384"}
 				{commands
@@ -42700,7 +42700,7 @@
 				}
 			}
 {"6454"
-				{position -3218.98 1306.97 35}
+				{position 1970.62 1678.71 0}
 				{RandomPosition 1}
 				{transition "6384"}
 				{commands
@@ -42717,7 +42717,7 @@
 				}
 			}
 {"6455"
-				{position -3267.57 928.712 30.3912}
+				{position -3218.98 1306.97 35}
 				{RandomPosition 1}
 				{transition "6385"}
 				{commands
@@ -42734,7 +42734,7 @@
 				}
 			}
 {"6456"
-				{position -3322.99 398.019 30}
+				{position 91.4355 -2783.91 -2.93066}
 				{RandomPosition 1}
 				{transition "6385"}
 				{commands
@@ -42751,7 +42751,7 @@
 				}
 			}
 {"6457"
-				{position -3382.45 -81.6962 32}
+				{position -2170.05 -4891.52 -22}
 				{RandomPosition 1}
 				{transition "6385"}
 				{commands
@@ -42768,61 +42768,61 @@
 				}
 			}
 {"6533"
-				{position -3218.98 1306.97 35}
+				{position -1657.15 -1672.14 21.7254}
 				{RandomPosition 1}
 				{transition "6382"}
 			}
 {"6820"
-				{position -3267.57 928.712 30.3912}
+				{position -3218.98 1306.97 35}
 				{transition "6888"}
 				{transition "6889"}
 				{transition "6890"}
 			}
 {"6821"
-				{position -3322.99 398.019 30}
+				{position -3218.98 1306.97 35}
 				{transition "6891"}
 				{transition "6892"}
 				{transition "6893"}
 			}
 {"6888"
-				{position -3543.62 -569.392 13}
+				{position -1395.56 -2090.72 -0.843364}
 			}
 {"6889"
-				{position -3218.98 1306.97 35}
+				{position 1184.37 -2585.66 1}
 			}
 {"6890"
-				{position -3382.45 -81.6962 32}
+				{position 3659.2 2568.47 100}
 			}
 {"6891"
-				{position -3267.57 928.712 30.3912}
+				{position -475.679 930.793 4}
 			}
 {"6892"
-				{position -3322.99 398.019 30}
+				{position -2130.02 -953.38 39}
 			}
 {"6893"
-				{position -3543.62 -569.392 13}
+				{position 490.291 -3400.12 13.8812}
 			}
 {"6894"
-				{position -3382.45 -81.6962 32}
+				{position -3267.57 928.712 30.3912}
 				{transition "6895"}
 				{transition "6896"}
 				{transition "6897"}
 			}
 {"6895"
-				{position -3218.98 1306.97 35}
+				{position 2939.68 1022.79 20.3894}
 			}
 {"6896"
-				{position -3267.57 928.712 30.3912}
+				{position -1128.94 -442.413 11}
 			}
 {"6897"
-				{position -3543.62 -569.392 13}
+				{position -2570.85 -2449.14 21}
 			}
 {"6382"
-				{position -3322.99 398.019 30}
+				{position -1542.96 -4189.03 4.03116}
 				{RandomPosition 1}
 			}
 {"6383"
-				{position -3218.98 1306.97 35}
+				{position 3490.82 480.922 9}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -42920,7 +42920,7 @@
 				}
 			}
 {"6384"
-				{position -3382.45 -81.6962 32}
+				{position 3517.12 2311.28 98}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -43018,7 +43018,7 @@
 				}
 			}
 {"6385"
-				{position -3267.57 928.712 30.3912}
+				{position -2700.19 -3720.12 -1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -43276,22 +43276,22 @@
 				{position -2377.55 -1636.29 44}
 			}
 {"6458"
-				{position -3543.62 -569.392 13}
+				{position 876.477 -1741.29 17}
 				{RandomPosition 1}
 				{transition "6386"}
 			}
 {"6459"
-				{position -3382.45 -81.6962 32}
+				{position 1766.53 -2387.02 18}
 				{RandomPosition 1}
 				{transition "6386"}
 			}
 {"6460"
-				{position -3218.98 1306.97 35}
+				{position -1315.76 -3652.79 19}
 				{RandomPosition 1}
 				{transition "6386"}
 			}
 {"6461"
-				{position -3322.99 398.019 30}
+				{position -2476.78 -3294.54 24}
 				{RandomPosition 1}
 				{transition "6387"}
 				{commands
@@ -43308,7 +43308,7 @@
 				}
 			}
 {"6462"
-				{position -3543.62 -569.392 13}
+				{position 533.097 -2945.17 4.54233}
 				{RandomPosition 1}
 				{transition "6387"}
 				{commands
@@ -43325,7 +43325,7 @@
 				}
 			}
 {"6463"
-				{position -3322.99 398.019 30}
+				{position 2934.67 -824.29 0}
 				{RandomPosition 1}
 				{transition "6387"}
 				{commands
@@ -43342,7 +43342,7 @@
 				}
 			}
 {"6464"
-				{position -3267.57 928.712 30.3912}
+				{position -748.776 -3716.52 18}
 				{RandomPosition 1}
 				{transition "6388"}
 				{commands
@@ -43359,7 +43359,7 @@
 				}
 			}
 {"6465"
-				{position -3382.45 -81.6962 32}
+				{position 2582.71 -332.493 9.44653}
 				{RandomPosition 1}
 				{transition "6388"}
 				{commands
@@ -43376,7 +43376,7 @@
 				}
 			}
 {"6466"
-				{position -3218.98 1306.97 35}
+				{position 2004.39 -1951.77 4}
 				{RandomPosition 1}
 				{transition "6388"}
 				{commands
@@ -43393,7 +43393,7 @@
 				}
 			}
 {"6467"
-				{position -3543.62 -569.392 13}
+				{position -359.104 -3824.34 15.1196}
 				{RandomPosition 1}
 				{transition "6389"}
 				{commands
@@ -43410,7 +43410,7 @@
 				}
 			}
 {"6468"
-				{position -3382.45 -81.6962 32}
+				{position -2445.96 -1728.76 39}
 				{RandomPosition 1}
 				{transition "6389"}
 				{commands
@@ -43427,7 +43427,7 @@
 				}
 			}
 {"6469"
-				{position -3543.62 -569.392 13}
+				{position -1595.45 -1405 41}
 				{RandomPosition 1}
 				{transition "6389"}
 				{commands
@@ -43444,12 +43444,12 @@
 				}
 			}
 {"6534"
-				{position -3267.57 928.712 30.3912}
+				{position -703.379 -3309.29 11}
 				{RandomPosition 1}
 				{transition "6386"}
 			}
 {"6824"
-				{position -3322.99 398.019 30}
+				{position -3218.98 1306.97 35}
 				{transition "6908"}
 				{transition "6909"}
 				{transition "6910"}
@@ -43461,44 +43461,44 @@
 				{transition "6913"}
 			}
 {"6908"
-				{position -3218.98 1306.97 35}
+				{position 2539.76 -886.844 11.1418}
 			}
 {"6909"
-				{position -3322.99 398.019 30}
+				{position -1443.66 -592.136 33}
 			}
 {"6910"
-				{position -3382.45 -81.6962 32}
+				{position 2871.49 437.087 0.526733}
 			}
 {"6911"
-				{position -3543.62 -569.392 13}
+				{position 1043.41 -3011.62 5}
 			}
 {"6912"
-				{position -3322.99 398.019 30}
+				{position 2684.44 36.8975 19}
 			}
 {"6913"
-				{position -3267.57 928.712 30.3912}
+				{position 2920.32 81.3816 5}
 			}
 {"6914"
-				{position -3543.62 -569.392 13}
+				{position -3322.99 398.019 30}
 				{transition "6915"}
 				{transition "6916"}
 				{transition "6917"}
 			}
 {"6915"
-				{position -3382.45 -81.6962 32}
+				{position -1154.5 -3250.86 11}
 			}
 {"6916"
-				{position -3543.62 -569.392 13}
+				{position 1351.86 -2248.98 -0.109741}
 			}
 {"6917"
-				{position -3382.45 -81.6962 32}
+				{position 1128.63 -2152.85 12.1237}
 			}
 {"6386"
-				{position -3322.99 398.019 30}
+				{position 3424.8 882.719 17}
 				{RandomPosition 1}
 			}
 {"6387"
-				{position -3218.98 1306.97 35}
+				{position -2370.42 -1722.75 43}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -43596,7 +43596,7 @@
 				}
 			}
 {"6388"
-				{position -3218.98 1306.97 35}
+				{position -252.127 -280.671 0.629726}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -43694,7 +43694,7 @@
 				}
 			}
 {"6389"
-				{position -3267.57 928.712 30.3912}
+				{position 1186.31 -2917.28 1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -46833,17 +46833,17 @@
 				{transition "7220"}
 			}
 {"7261"
-				{position -3218.98 1306.97 35}
+				{position 498.145 649.264 1}
 				{RandomPosition 1}
 				{transition "7220"}
 			}
 {"7262"
-				{position -3218.98 1306.97 35}
+				{position -224.634 -336.982 1}
 				{RandomPosition 1}
 				{transition "7220"}
 			}
 {"7263"
-				{position -3218.98 1306.97 35}
+				{position 1903.33 -2146.68 10}
 				{RandomPosition 1}
 				{transition "7221"}
 				{commands
@@ -46860,7 +46860,7 @@
 				}
 			}
 {"7264"
-				{position -3218.98 1306.97 35}
+				{position 2715.73 -955.065 -3.84757}
 				{RandomPosition 1}
 				{transition "7221"}
 				{commands
@@ -46877,7 +46877,7 @@
 				}
 			}
 {"7265"
-				{position -3218.98 1306.97 35}
+				{position 2115.09 -1566.66 3.53008}
 				{RandomPosition 1}
 				{transition "7221"}
 				{commands
@@ -46894,7 +46894,7 @@
 				}
 			}
 {"7266"
-				{position -3218.98 1306.97 35}
+				{position 1190.46 -2968.86 3.86719}
 				{RandomPosition 1}
 				{transition "7222"}
 				{commands
@@ -46911,7 +46911,7 @@
 				}
 			}
 {"7267"
-				{position -3218.98 1306.97 35}
+				{position 1606.64 -2735.18 6}
 				{RandomPosition 1}
 				{transition "7222"}
 				{commands
@@ -46928,7 +46928,7 @@
 				}
 			}
 {"7268"
-				{position -3218.98 1306.97 35}
+				{position 1431.12 -2316.66 9.42603}
 				{RandomPosition 1}
 				{transition "7222"}
 				{commands
@@ -46945,7 +46945,7 @@
 				}
 			}
 {"7269"
-				{position -3218.98 1306.97 35}
+				{position 3928.76 174.663 12.6577}
 				{RandomPosition 1}
 				{transition "7223"}
 				{commands
@@ -46962,7 +46962,7 @@
 				}
 			}
 {"7270"
-				{position -3218.98 1306.97 35}
+				{position 3599.27 -254.816 3}
 				{RandomPosition 1}
 				{transition "7223"}
 				{commands
@@ -46979,7 +46979,7 @@
 				}
 			}
 {"7271"
-				{position -3218.98 1306.97 35}
+				{position 2548.79 -556.869 0.53186}
 				{RandomPosition 1}
 				{transition "7223"}
 				{commands
@@ -46996,7 +46996,7 @@
 				}
 			}
 {"7380"
-				{position -3218.98 1306.97 35}
+				{position 505.795 -227.331 20.0645}
 				{RandomPosition 1}
 				{transition "7220"}
 			}
@@ -47010,28 +47010,28 @@
 				{position -3267.57 928.712 30.3912}
 			}
 {"7680"
-				{position -3267.57 928.712 30.3912}
+				{position 1033.12 -2176.17 12.8452}
 			}
 {"7681"
-				{position -3267.57 928.712 30.3912}
+				{position 1693.29 -1517.39 4.25069}
 			}
 {"7682"
-				{position -3267.57 928.712 30.3912}
+				{position 3420.51 785.092 15}
 			}
 {"7683"
-				{position -3267.57 928.712 30.3912}
+				{position 3034.83 443.68 2.48584}
 			}
 {"7684"
-				{position -3267.57 928.712 30.3912}
+				{position 2813.45 17.0238 17}
 			}
 {"7685"
-				{position -3267.57 928.712 30.3912}
+				{position 1976.32 -798.394 12.8117}
 			}
 {"7686"
-				{position -3267.57 928.712 30.3912}
+				{position 876.477 -1741.29 17}
 			}
 {"7687"
-				{position -3267.57 928.712 30.3912}
+				{position 734.199 128.554 22}
 			}
 {"7157"
 				{position -3267.57 928.712 30.3912}
@@ -47040,11 +47040,11 @@
 				{transition "7681"}
 			}
 {"7220"
-				{position -3218.98 1306.97 35}
+				{position -165.477 767.32 17}
 				{RandomPosition 1}
 			}
 {"7221"
-				{position -3218.98 1306.97 35}
+				{position 273.726 -2316.64 9}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -47142,7 +47142,7 @@
 				}
 			}
 {"7222"
-				{position -3218.98 1306.97 35}
+				{position 459.246 -2696.61 5.143}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -47240,7 +47240,7 @@
 				}
 			}
 {"7223"
-				{position -3218.98 1306.97 35}
+				{position 2939.68 1022.79 20.3894}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -47516,22 +47516,22 @@
 				{transition "7703"}
 			}
 {"7272"
-				{position -3218.98 1306.97 35}
+				{position -1284.7 -1732.91 27.0109}
 				{RandomPosition 1}
 				{transition "7224"}
 			}
 {"7273"
-				{position -3218.98 1306.97 35}
+				{position -637.848 -1235.93 37.2811}
 				{RandomPosition 1}
 				{transition "7224"}
 			}
 {"7274"
-				{position -3218.98 1306.97 35}
+				{position -1708.86 -1247.62 49.464}
 				{RandomPosition 1}
 				{transition "7224"}
 			}
 {"7275"
-				{position -3218.98 1306.97 35}
+				{position 818.414 -3295.98 4.29182}
 				{RandomPosition 1}
 				{transition "7225"}
 				{commands
@@ -47548,7 +47548,7 @@
 				}
 			}
 {"7276"
-				{position -3218.98 1306.97 35}
+				{position -234.013 -1940.64 22.7766}
 				{RandomPosition 1}
 				{transition "7225"}
 				{commands
@@ -47565,7 +47565,7 @@
 				}
 			}
 {"7277"
-				{position -3218.98 1306.97 35}
+				{position -215.137 -3668.63 22.1218}
 				{RandomPosition 1}
 				{transition "7225"}
 				{commands
@@ -47582,7 +47582,7 @@
 				}
 			}
 {"7278"
-				{position -3218.98 1306.97 35}
+				{position -563.43 -3442.52 16}
 				{RandomPosition 1}
 				{transition "7226"}
 				{commands
@@ -47599,7 +47599,7 @@
 				}
 			}
 {"7279"
-				{position -3218.98 1306.97 35}
+				{position -590.225 -3903.53 14}
 				{RandomPosition 1}
 				{transition "7226"}
 				{commands
@@ -47616,7 +47616,7 @@
 				}
 			}
 {"7280"
-				{position -3218.98 1306.97 35}
+				{position -923.026 -2309.2 3.06494}
 				{RandomPosition 1}
 				{transition "7226"}
 				{commands
@@ -47633,7 +47633,7 @@
 				}
 			}
 {"7281"
-				{position -3218.98 1306.97 35}
+				{position -1072.41 -3337.09 20.2953}
 				{RandomPosition 1}
 				{transition "7227"}
 				{commands
@@ -47650,7 +47650,7 @@
 				}
 			}
 {"7282"
-				{position -3218.98 1306.97 35}
+				{position -1432.62 -3895.8 11}
 				{RandomPosition 1}
 				{transition "7227"}
 				{commands
@@ -47667,7 +47667,7 @@
 				}
 			}
 {"7283"
-				{position -3218.98 1306.97 35}
+				{position -1358.03 -2660.18 -11.3901}
 				{RandomPosition 1}
 				{transition "7227"}
 				{commands
@@ -47684,27 +47684,27 @@
 				}
 			}
 {"7381"
-				{position -3218.98 1306.97 35}
+				{position -1316.1 -719.056 27.3142}
 				{RandomPosition 1}
 				{transition "7224"}
 			}
 {"7698"
-				{position -3267.57 928.712 30.3912}
+				{position -1919.09 -4609.07 -9.99207}
 			}
 {"7699"
-				{position -3267.57 928.712 30.3912}
+				{position -2403.92 -3039.28 21.9573}
 			}
 {"7700"
-				{position -3267.57 928.712 30.3912}
+				{position -2311.05 -2629.01 40.7266}
 			}
 {"7701"
-				{position -3267.57 928.712 30.3912}
+				{position -1142.82 -1209.54 31}
 			}
 {"7702"
-				{position -3267.57 928.712 30.3912}
+				{position -755.454 71.5994 30.3689}
 			}
 {"7703"
-				{position -3267.57 928.712 30.3912}
+				{position -2239.06 -1745.22 33}
 			}
 {"7704"
 				{position -3267.57 928.712 30.3912}
@@ -47713,20 +47713,20 @@
 				{transition "7707"}
 			}
 {"7705"
-				{position -3267.57 928.712 30.3912}
+				{position -1826.69 -779.395 48.9734}
 			}
 {"7706"
-				{position -3267.57 928.712 30.3912}
+				{position -1300.99 -98.0289 18}
 			}
 {"7707"
-				{position -3267.57 928.712 30.3912}
+				{position -2573.43 -3969.91 6.01686}
 			}
 {"7224"
-				{position -3218.98 1306.97 35}
+				{position -1790.02 -219.938 17}
 				{RandomPosition 1}
 			}
 {"7225"
-				{position -3218.98 1306.97 35}
+				{position -764.016 631 32.8978}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -47824,7 +47824,7 @@
 				}
 			}
 {"7226"
-				{position -3218.98 1306.97 35}
+				{position -2379.28 -630.989 24.2924}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -47922,7 +47922,7 @@
 				}
 			}
 {"7227"
-				{position -3218.98 1306.97 35}
+				{position -2920.73 -4440.23 -17.8937}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -48180,22 +48180,22 @@
 				}
 			}
 {"7284"
-				{position -3218.98 1306.97 35}
+				{position -3444.41 -3349.68 -5.97692}
 				{RandomPosition 1}
 				{transition "7228"}
 			}
 {"7285"
-				{position -3218.98 1306.97 35}
+				{position -3247.37 -1653.13 29}
 				{RandomPosition 1}
 				{transition "7228"}
 			}
 {"7286"
-				{position -3218.98 1306.97 35}
+				{position -3324.17 -4003.66 -27.8267}
 				{RandomPosition 1}
 				{transition "7228"}
 			}
 {"7287"
-				{position -3218.98 1306.97 35}
+				{position -3553.05 -2654.27 -1}
 				{RandomPosition 1}
 				{transition "7229"}
 				{commands
@@ -48212,7 +48212,7 @@
 				}
 			}
 {"7288"
-				{position -3218.98 1306.97 35}
+				{position -3390.15 -2053.55 24}
 				{RandomPosition 1}
 				{transition "7229"}
 				{commands
@@ -48229,7 +48229,7 @@
 				}
 			}
 {"7289"
-				{position -3218.98 1306.97 35}
+				{position -3543.62 -569.392 13}
 				{RandomPosition 1}
 				{transition "7229"}
 				{commands
@@ -48246,7 +48246,7 @@
 				}
 			}
 {"7290"
-				{position -3218.98 1306.97 35}
+				{position -2548.23 -5314.81 -9}
 				{RandomPosition 1}
 				{transition "7230"}
 				{commands
@@ -48263,7 +48263,7 @@
 				}
 			}
 {"7291"
-				{position -3218.98 1306.97 35}
+				{position -2879.45 -5713.29 -33.7416}
 				{RandomPosition 1}
 				{transition "7230"}
 				{commands
@@ -48280,7 +48280,7 @@
 				}
 			}
 {"7292"
-				{position -3218.98 1306.97 35}
+				{position -3481.66 -6054.39 -79.9722}
 				{RandomPosition 1}
 				{transition "7230"}
 				{commands
@@ -48297,7 +48297,7 @@
 				}
 			}
 {"7293"
-				{position -3218.98 1306.97 35}
+				{position -3382.45 -81.6962 32}
 				{RandomPosition 1}
 				{transition "7231"}
 				{commands
@@ -48314,7 +48314,7 @@
 				}
 			}
 {"7294"
-				{position -3218.98 1306.97 35}
+				{position -2728.25 294.219 46}
 				{RandomPosition 1}
 				{transition "7231"}
 				{commands
@@ -48331,7 +48331,7 @@
 				}
 			}
 {"7295"
-				{position -3218.98 1306.97 35}
+				{position -2149.22 513.615 21.3717}
 				{RandomPosition 1}
 				{transition "7231"}
 				{commands
@@ -48348,12 +48348,12 @@
 				}
 			}
 {"7382"
-				{position -3218.98 1306.97 35}
+				{position -3322.99 398.019 30}
 				{RandomPosition 1}
 				{transition "7228"}
 			}
 {"7175"
-				{position -3267.57 928.712 30.3912}
+				{position -3218.98 1306.97 35}
 				{transition "7721"}
 				{transition "7722"}
 				{transition "7723"}
@@ -48365,44 +48365,44 @@
 				{transition "7720"}
 			}
 {"7718"
-				{position -3267.57 928.712 30.3912}
+				{position -1282.97 1159.86 35}
 			}
 {"7719"
-				{position -3267.57 928.712 30.3912}
+				{position -232.64 1231.05 19}
 			}
 {"7720"
-				{position -3267.57 928.712 30.3912}
+				{position -1100.66 1794.77 61}
 			}
 {"7721"
-				{position -3267.57 928.712 30.3912}
+				{position -1633.51 2219.41 68}
 			}
 {"7722"
-				{position -3267.57 928.712 30.3912}
+				{position 2012.87 1292.73 -2}
 			}
 {"7723"
-				{position -3267.57 928.712 30.3912}
+				{position 2340.72 2006.34 46}
 			}
 {"7724"
-				{position -3267.57 928.712 30.3912}
+				{position -3218.98 1306.97 35}
 				{transition "7725"}
 				{transition "7726"}
 				{transition "7727"}
 			}
 {"7725"
-				{position -3267.57 928.712 30.3912}
+				{position 1366.11 2857.13 56.4164}
 			}
 {"7726"
-				{position -3267.57 928.712 30.3912}
+				{position 3197.14 1360.58 48.3474}
 			}
 {"7727"
-				{position -3267.57 928.712 30.3912}
+				{position 2841.03 2014.49 90}
 			}
 {"7228"
-				{position -3218.98 1306.97 35}
+				{position 3620.26 1260.87 60}
 				{RandomPosition 1}
 			}
 {"7229"
-				{position -3218.98 1306.97 35}
+				{position 3245.39 2132.4 94}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -48500,7 +48500,7 @@
 				}
 			}
 {"7230"
-				{position -3218.98 1306.97 35}
+				{position 2835.74 2767.22 95.0532}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -48598,7 +48598,7 @@
 				}
 			}
 {"7231"
-				{position -3218.98 1306.97 35}
+				{position 2139.8 3234.22 112.966}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -48856,22 +48856,22 @@
 				}
 			}
 {"7296"
-				{position -3218.98 1306.97 35}
+				{position 2457.38 3668.1 105}
 				{RandomPosition 1}
 				{transition "7232"}
 			}
 {"7297"
-				{position -3218.98 1306.97 35}
+				{position 2188.82 4001.08 122.33}
 				{RandomPosition 1}
 				{transition "7232"}
 			}
 {"7298"
-				{position -3218.98 1306.97 35}
+				{position 1876.47 3605.41 116}
 				{RandomPosition 1}
 				{transition "7232"}
 			}
 {"7299"
-				{position -3218.98 1306.97 35}
+				{position 3321.22 2702.3 104}
 				{RandomPosition 1}
 				{transition "7233"}
 				{commands
@@ -48888,7 +48888,7 @@
 				}
 			}
 {"7300"
-				{position -3218.98 1306.97 35}
+				{position 3616.9 3352.66 79}
 				{RandomPosition 1}
 				{transition "7233"}
 				{commands
@@ -48905,7 +48905,7 @@
 				}
 			}
 {"7301"
-				{position -3218.98 1306.97 35}
+				{position 2622 3123.68 107}
 				{RandomPosition 1}
 				{transition "7233"}
 				{commands
@@ -48922,7 +48922,7 @@
 				}
 			}
 {"7302"
-				{position -3218.98 1306.97 35}
+				{position 3290.98 3720.39 66}
 				{RandomPosition 1}
 				{transition "7234"}
 				{commands
@@ -48939,7 +48939,7 @@
 				}
 			}
 {"7303"
-				{position -3218.98 1306.97 35}
+				{position 34.0817 1528.2 15.2781}
 				{RandomPosition 1}
 				{transition "7234"}
 				{commands
@@ -48956,7 +48956,7 @@
 				}
 			}
 {"7304"
-				{position -3218.98 1306.97 35}
+				{position -426.555 282.83 9.52856}
 				{RandomPosition 1}
 				{transition "7234"}
 				{commands
@@ -48973,7 +48973,7 @@
 				}
 			}
 {"7305"
-				{position -3218.98 1306.97 35}
+				{position 1970.62 1678.71 0}
 				{RandomPosition 1}
 				{transition "7235"}
 				{commands
@@ -48990,7 +48990,7 @@
 				}
 			}
 {"7306"
-				{position -3218.98 1306.97 35}
+				{position 91.4355 -2783.91 -2.93066}
 				{RandomPosition 1}
 				{transition "7235"}
 				{commands
@@ -49007,7 +49007,7 @@
 				}
 			}
 {"7307"
-				{position -3218.98 1306.97 35}
+				{position -2170.05 -4891.52 -22}
 				{RandomPosition 1}
 				{transition "7235"}
 				{commands
@@ -49024,12 +49024,12 @@
 				}
 			}
 {"7383"
-				{position -3218.98 1306.97 35}
+				{position -1657.15 -1672.14 21.7254}
 				{RandomPosition 1}
 				{transition "7232"}
 			}
 {"7670"
-				{position -3267.57 928.712 30.3912}
+				{position -3218.98 1306.97 35}
 				{transition "7738"}
 				{transition "7739"}
 				{transition "7740"}
@@ -49041,44 +49041,44 @@
 				{transition "7743"}
 			}
 {"7738"
-				{position -3267.57 928.712 30.3912}
+				{position -1395.56 -2090.72 -0.843364}
 			}
 {"7739"
-				{position -3267.57 928.712 30.3912}
+				{position 1184.37 -2585.66 1}
 			}
 {"7740"
-				{position -3267.57 928.712 30.3912}
+				{position 3659.2 2568.47 100}
 			}
 {"7741"
-				{position -3267.57 928.712 30.3912}
+				{position -475.679 930.793 4}
 			}
 {"7742"
-				{position -3267.57 928.712 30.3912}
+				{position -2130.02 -953.38 39}
 			}
 {"7743"
-				{position -3267.57 928.712 30.3912}
+				{position 490.291 -3400.12 13.8812}
 			}
 {"7744"
-				{position -3267.57 928.712 30.3912}
+				{position -3218.98 1306.97 35}
 				{transition "7745"}
 				{transition "7746"}
 				{transition "7747"}
 			}
 {"7745"
-				{position -3267.57 928.712 30.3912}
+				{position 2601.46 1002.2 6}
 			}
 {"7746"
-				{position -3267.57 928.712 30.3912}
+				{position -1128.94 -442.413 11}
 			}
 {"7747"
-				{position -3267.57 928.712 30.3912}
+				{position -2570.85 -2449.14 21}
 			}
 {"7232"
-				{position -3218.98 1306.97 35}
+				{position -1542.96 -4189.03 4.03116}
 				{RandomPosition 1}
 			}
 {"7233"
-				{position -3218.98 1306.97 35}
+				{position 3490.82 480.922 9}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -49176,7 +49176,7 @@
 				}
 			}
 {"7234"
-				{position -3218.98 1306.97 35}
+				{position 3517.12 2311.28 98}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -49274,7 +49274,7 @@
 				}
 			}
 {"7235"
-				{position -3218.98 1306.97 35}
+				{position -2700.19 -3720.12 -1}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -49532,22 +49532,22 @@
 				{position -2377.55 -1636.29 44}
 			}
 {"7308"
-				{position -3218.98 1306.97 35}
+				{position 674.487 -1934.31 18}
 				{RandomPosition 1}
 				{transition "7236"}
 			}
 {"7309"
-				{position -3218.98 1306.97 35}
+				{position 1766.53 -2387.02 18}
 				{RandomPosition 1}
 				{transition "7236"}
 			}
 {"7310"
-				{position -3218.98 1306.97 35}
+				{position -1315.76 -3652.79 19}
 				{RandomPosition 1}
 				{transition "7236"}
 			}
 {"7311"
-				{position -3218.98 1306.97 35}
+				{position -2476.78 -3294.54 24}
 				{RandomPosition 1}
 				{transition "7237"}
 				{commands
@@ -49564,7 +49564,7 @@
 				}
 			}
 {"7312"
-				{position -3218.98 1306.97 35}
+				{position 533.097 -2945.17 4.54233}
 				{RandomPosition 1}
 				{transition "7237"}
 				{commands
@@ -49581,7 +49581,7 @@
 				}
 			}
 {"7313"
-				{position -3218.98 1306.97 35}
+				{position 2934.67 -824.29 0}
 				{RandomPosition 1}
 				{transition "7237"}
 				{commands
@@ -49598,7 +49598,7 @@
 				}
 			}
 {"7314"
-				{position -3218.98 1306.97 35}
+				{position -748.776 -3716.52 18}
 				{RandomPosition 1}
 				{transition "7238"}
 				{commands
@@ -49615,7 +49615,7 @@
 				}
 			}
 {"7315"
-				{position -3218.98 1306.97 35}
+				{position 2582.71 -332.493 9.44653}
 				{RandomPosition 1}
 				{transition "7238"}
 				{commands
@@ -49632,7 +49632,7 @@
 				}
 			}
 {"7316"
-				{position -3218.98 1306.97 35}
+				{position 2004.39 -1951.77 4}
 				{RandomPosition 1}
 				{transition "7238"}
 				{commands
@@ -49649,7 +49649,7 @@
 				}
 			}
 {"7317"
-				{position -3218.98 1306.97 35}
+				{position -359.104 -3824.34 15.1196}
 				{RandomPosition 1}
 				{transition "7239"}
 				{commands
@@ -49666,7 +49666,7 @@
 				}
 			}
 {"7318"
-				{position -3218.98 1306.97 35}
+				{position -2445.96 -1728.76 39}
 				{RandomPosition 1}
 				{transition "7239"}
 				{commands
@@ -49683,7 +49683,7 @@
 				}
 			}
 {"7319"
-				{position -3218.98 1306.97 35}
+				{position -1595.45 -1405 41}
 				{RandomPosition 1}
 				{transition "7239"}
 				{commands
@@ -49700,7 +49700,7 @@
 				}
 			}
 {"7384"
-				{position -3218.98 1306.97 35}
+				{position -703.379 -3309.29 11}
 				{RandomPosition 1}
 				{transition "7236"}
 			}
@@ -49717,44 +49717,44 @@
 				{transition "7763"}
 			}
 {"7758"
-				{position -3267.57 928.712 30.3912}
+				{position 2539.76 -886.844 11.1418}
 			}
 {"7759"
-				{position -3267.57 928.712 30.3912}
+				{position -1443.66 -592.136 33}
 			}
 {"7760"
-				{position -3267.57 928.712 30.3912}
+				{position 2871.49 437.087 0.526733}
 			}
 {"7761"
-				{position -3267.57 928.712 30.3912}
+				{position 1043.41 -3011.62 5}
 			}
 {"7762"
-				{position -3267.57 928.712 30.3912}
+				{position 2684.44 36.8975 19}
 			}
 {"7763"
-				{position -3267.57 928.712 30.3912}
+				{position 2920.32 81.3816 5}
 			}
 {"7764"
-				{position -3267.57 928.712 30.3912}
+				{position -3218.98 1306.97 35}
 				{transition "7765"}
 				{transition "7766"}
 				{transition "7767"}
 			}
 {"7765"
-				{position -3267.57 928.712 30.3912}
+				{position -1154.5 -3250.86 11}
 			}
 {"7766"
-				{position -3267.57 928.712 30.3912}
+				{position 1351.86 -2248.98 -0.109741}
 			}
 {"7767"
-				{position -3267.57 928.712 30.3912}
+				{position 1128.63 -2152.85 12.1237}
 			}
 {"7236"
-				{position -3218.98 1306.97 35}
+				{position 3424.8 882.719 17}
 				{RandomPosition 1}
 			}
 {"7237"
-				{position -3218.98 1306.97 35}
+				{position -2370.42 -1722.75 43}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -49852,7 +49852,7 @@
 				}
 			}
 {"7238"
-				{position -3218.98 1306.97 35}
+				{position -252.127 -280.671 0.629726}
 				{RandomPosition 1}
 				{commands
 					{"switch"
@@ -49950,7 +49950,7 @@
 				}
 			}
 {"7239"
-				{position -3218.98 1306.97 35}
+				{position 1186.31 -2917.28 1}
 				{RandomPosition 1}
 				{commands
 					{"switch"

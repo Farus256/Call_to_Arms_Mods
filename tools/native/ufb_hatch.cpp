@@ -20,8 +20,10 @@ using ExecuteFn = void(__fastcall*)(void* action, void* context, char* entity);
 ExecuteFn g_execute = nullptr;
 ufb::SetSealedFn g_setSealed = nullptr;
 ufb::Closed g_closed;
+volatile LONG g_resetPending = 0;
 
 void __fastcall hook(void* action, void* context, char* entity) {
+    if (InterlockedExchange(&g_resetPending,0)) g_closed.clear();
     if (!ufb::isHatchRequest(static_cast<const char*>(action))) {
         g_execute(action, context, entity);
         return;
@@ -70,3 +72,8 @@ BOOL WINAPI DllMain(HINSTANCE module, DWORD reason, LPVOID) {
 
 // package.loadlib needs a C function; the real work already happened on load.
 extern "C" __declspec(dllexport) int luaopen_ufb_hatch(void*) { return 0; }
+
+// Lua requests a reset; ownership is cleared only by the simulation-thread hook.
+extern "C" __declspec(dllexport) int luaopen_ufb_hatch_reset(void*) {
+    InterlockedExchange(&g_resetPending,1); return 0;
+}
