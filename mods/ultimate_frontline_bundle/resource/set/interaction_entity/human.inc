@@ -2226,7 +2226,7 @@
 			{impulse up 2.5 0.5 dir 3 1 com}
 		}
 		{spawn "bm_blood_small_b"}	
-		{spawn "blood_big"}
+		{spawn "ufb_gore_blood_big"}
 		{spawn "bm_bodyblast_a"}
 		{spawn "bm_blood_splash_b"}
 		{if rand 0.5 {spawn "bm_blood_ex_a"}}

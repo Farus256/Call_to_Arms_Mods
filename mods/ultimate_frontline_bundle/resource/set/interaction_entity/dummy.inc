@@ -412,13 +412,13 @@
 	}
 
 	{on "blood_stain"					;// Small landing trace; corpse pools use their own timer.
-		{spawn "ground_blood_small" "basis" x}
+		{spawn "ufb_gore_ground_blood_small" "basis" x}
 	}
 	
 	{on "blood"						;// stock GoH ground blood
-		{if rand 0.35 {spawn "ground_blood01"}}
-		{if rand 0.30 {spawn "ground_blood02"}}
-		{if rand 0.25 {spawn "ground_blood03"}}
+		{if rand 0.35 {spawn "ufb_gore_ground_blood01"}}
+		{if rand 0.30 {spawn "ufb_gore_ground_blood02"}}
+		{if rand 0.25 {spawn "ufb_gore_ground_blood03"}}
 	}
 }
 
