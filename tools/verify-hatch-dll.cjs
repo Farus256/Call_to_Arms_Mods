@@ -17,10 +17,12 @@ const execute=constant('kExecute'),setSealed=constant('kSetSealed');
 const slot=Number(source.match(/kExecuteSlot = (0x[0-9a-f]+) \+ 9 \* 8/)[1])+9*8;
 assert.equal(exe.readBigUInt64LE(offset(slot))-imageBase,BigInt(execute),'eCrewEnable vtable slot moved: game updated?');
 for(const [name,rva]of [['kExecuteStart',execute],['kSetSealedStart',setSealed]]){const want=signature(name);assert(exe.subarray(offset(rva),offset(rva)+want.length).equals(want),name+' changed: game updated?');}
-// Button handler: entity from the command, 0x1a means sealed, tail call to SetSealed.
-const handler=exe.subarray(offset(0xb7b2d0),offset(0xb7b2d0)+0x25);
-assert.equal(handler.subarray(0x12,0x16).toString('hex'),'80794'.slice(0,4)+'421a','Hatch command code changed');
-assert.equal(handler.readInt32LE(0x21)+0xb7b2f5,setSealed,'Button no longer calls SetSealed');
+// Button handler: last selected entity, 0x1a means sealed, crew at +0x568, tail jump to SetSealed.
+const handlerRva=0xb9b760;
+const handler=exe.subarray(offset(handlerRva),offset(handlerRva)+0x26);
+assert.equal(handler.subarray(0x12,0x16).toString('hex'),'8079421a','Hatch command code changed');
+assert.equal(handler.subarray(0x16,0x1d).toString('hex'),'498b8868050000','Crew offset changed');
+assert.equal(handlerRva+0x25+handler.readInt32LE(0x21),setSealed,'Button no longer calls SetSealed');
 const dll=fs.readFileSync(dllPath);
 assert(dll.includes('luaopen_ufb_hatch'),'Missing Lua entry');
 assert.equal(dll.readUInt16LE(dll.readUInt32LE(0x3c)+4),0x8664,'DLL must be x64');

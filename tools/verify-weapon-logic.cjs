@@ -1,5 +1,5 @@
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
-const repo=p.resolve(__dirname,'..'),root=p.resolve(process.argv[2]||p.join(repo,'mods/ultimate_frontline_bundle/resource')),reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
+const repo=p.resolve(__dirname,'..'),root=p.resolve(process.argv[2]||p.join(repo,'mods/ultimate_frontline_bundle/resource')),reference=p.resolve(repo,'../_survival_work/hf-update-20261117/reference/resource');
 const shape=n=>({kind:n.kind,tokens:n.tokens.map(t=>t.value),children:n.children.map(shape)}),read=(base,f)=>fs.readFileSync(p.join(base,f),'latin1');
 const values=n=>n.children.map(c=>c.tokens.map(t=>Number(t.value)));
 const cases={'107mm_m1910':{apcbche:[190,97.4]},'107mm_m1910_30':{apcbche:[200,95.8]},'28mm_pzb41':{apcr:[150,44.18181818]},'77mm_qf_hv':{apcbc:[200,118.1],apds:[200,162]},'85mm_zis53':{aphe:[200,93.5],aphebc:[200,96.9],apcr:[200,75.7]},'88mm_rw43':{heat:[120,185]}};
@@ -22,7 +22,8 @@ for(const [name,[range,start,end]]of Object.entries(other)){
  assert.deepEqual(values(table),[[0,start],[range,end],[range*5,0]]);checks++;
  table.children=old.children;assert.deepEqual(shape(tree),shape(native),'Launcher range, damage or other fields changed: '+name);checks++;
 }
-const bad=read(reference,'set/stuff/gun/105mm_m10525'),fixed=read(root,'set/stuff/gun/105mm_m10525'),at=bad.lastIndexOf('\t)');assert.equal(fixed,bad.slice(0,at)+bad.slice(at+2));s.parse(fixed);checks++;
+// HF 4.0.2 ships a valid 105mm_m10525; a UFB copy would shadow HF's own fixes.
+assert(!fs.existsSync(p.join(root,'set/stuff/gun/105mm_m10525')),'UFB must not override 105mm_m10525');s.parse(read(reference,'set/stuff/gun/105mm_m10525'));checks++;
 const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(p.join(d,e.name)):[p.join(d,e.name)]);let parsed=0;
 for(const f of walk(p.join(reference,'set/stuff')).filter(f=>!f.endsWith('.fsm'))){const rel=p.relative(reference,f),local=p.join(root,rel);s.parse(fs.readFileSync(fs.existsSync(local)?local:f,'latin1'));parsed++;}
 console.log(JSON.stringify({checks,gunCurves:curves,otherATCurves:5,weaponAndItemFilesParsed:parsed,unrelatedWeaponDataPreserved:true,gemBattleTested:false}));

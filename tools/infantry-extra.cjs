@@ -14,7 +14,7 @@ function selector({kind,acquire=false,item,player=true,extra=[],exclude=[],using
  ${acquire?[T('_ufb_job_reserved'),T(actorTag('suppress')),...['mgun','assaultrifle','battlerifle','autorifle','semirifle'].map(k=>T(actorTag('loot_'+k))),...['launcher','at','critical','ap','smoke'].map(k=>T(`_ufb_combat_${k}_actor_%team`))].join(' '):''}
  }}`;
 }
-function support(ref=p.resolve(__dirname,'../../_survival_work/hf-update-20261107/reference/resource')){
+function support(ref=p.resolve(__dirname,'../../_survival_work/hf-update-20261117/reference/resource')){
  const init=(medic=false)=>`{source advanced} {ignore_captured_by_user 0} {group
  ${medic?`{select ${T('medic')}}`:''}
  {include ${P('human')} ${S('user_control')} ${S('operatable')}}

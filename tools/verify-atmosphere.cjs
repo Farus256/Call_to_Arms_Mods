@@ -1,7 +1,7 @@
 // Audit the effective HF + atmosphere + final UFB stack, not just generated output.
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs'),a=require('./atmosphere-addons.cjs');
 const e=a.expected(),work=a.work,comp=p.join(a.output,'resource'),repo=p.resolve(__dirname,'..');
-const ufb=p.join(repo,'mods/ultimate_frontline_bundle/resource'),reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
+const ufb=p.join(repo,'mods/ultimate_frontline_bundle/resource'),reference=p.resolve(repo,'../_survival_work/hf-update-20261117/reference/resource');
 const read=f=>fs.readFileSync(f,'latin1');
 const base=new Set(JSON.parse(fs.readFileSync(p.join(work,'base-paths.json'),'utf8')));
 const assets=JSON.parse(fs.readFileSync(p.join(work,'asset-manifest.json'),'utf8'));

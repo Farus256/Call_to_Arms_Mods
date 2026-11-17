@@ -4,7 +4,7 @@
 // Without --build, verify generated files only. Never writes into the game installation.
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const s=require('./lib/sdl.cjs'),config=require('./cp-multiplier.json');
-const repo=p.resolve(__dirname,'..'),defaultReference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
+const repo=p.resolve(__dirname,'..'),defaultReference=p.resolve(repo,'../_survival_work/hf-update-20261117/reference/resource');
 const defaultResource=p.join(repo,'mods/ultimate_frontline_bundle/resource');
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(p.join(d,e.name)):[p.join(d,e.name)]);

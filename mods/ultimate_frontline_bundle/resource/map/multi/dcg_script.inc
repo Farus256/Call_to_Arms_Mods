@@ -13791,6 +13791,31 @@
 										}
 										{effect smoke_screen}
 									}
+									{"delay"
+										{time 0.1}
+									}
+									{"effect"
+										{selector
+											{source advanced}
+											{ignore_captured_by_user 0}
+											{group
+												{select
+													{tag
+														{tag e_tank_alt}
+													}
+												}
+												{include
+													{tag
+														{tag smoke_generator}
+													}
+													{state
+														{state operatable}
+													}
+												}
+											}
+										}
+										{effect smoke_screen_toggle}
+									}
 								}
 								{"default"}
 							}

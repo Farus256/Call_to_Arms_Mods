@@ -70,7 +70,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk37" filling "bulletger_75_l24 apcbche" 1}
+			{weapon "75mm_stuk37" filling "bulletger_75_l24 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger"}
 			("abm_dymamic_td"

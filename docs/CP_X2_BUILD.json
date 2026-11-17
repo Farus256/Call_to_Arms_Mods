@@ -1,5 +1,5 @@
 {
-  "reference": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\hf-update-20261107\\reference\\resource",
+  "reference": "D:\\Programs\\Steam\\steamapps\\workshop\\content\\400750\\_survival_work\\hf-update-20261117\\reference\\resource",
   "config": {
     "enabled": true,
     "multiplier": 2,
@@ -8,20 +8,20 @@
   "files": [
     {
       "file": "set/multiplayer/games/presets/annihilation_early.inc",
-      "sourceSHA256": "7d4a0d5f9075ddc6f7e046df58e1d7bacc3bdf26213a72f374f40a90838453ab",
-      "generatedSHA256": "3d04e80c3d25c8cc372daad3a13bdd210d3694ea6db8cd57a2766d9985c8dd29",
+      "sourceSHA256": "abba39c5ba08a04fc7cbe7cf347bbbe836b466a212716a194c67310261dc3a5e",
+      "generatedSHA256": "a115d3c9ac01821c68c91eb01728ffc99ba36c50372af984353b1e0d398937c4",
       "schedules": 8
     },
     {
       "file": "set/multiplayer/games/presets/annihilation_late.inc",
-      "sourceSHA256": "77cb7b4e820df481afe723dd3648223929426c12e2354858e3e140500cddc7d1",
-      "generatedSHA256": "c283336ad17ec5231dba8f35105045939f4cef9211253ce2ab7ec6bdfb29be43",
+      "sourceSHA256": "f32fc70ddfb765c508fc53dd39784055172697775fefaf590218725d83be2e5b",
+      "generatedSHA256": "67645b3e6b5e9a476274fa1f71f4ab2624fdd7b772e5a98a883ff802ea787f97",
       "schedules": 8
     },
     {
       "file": "set/multiplayer/games/presets/annihilation_mid.inc",
-      "sourceSHA256": "1aeee227ee5d19169e3d689a6fbb3e60f92476462dac6ba609423c5ce95e273b",
-      "generatedSHA256": "106734ecfed45d7fecdebc8323c2f8c560456bef6aa5c9e1c1bb27ad3e2ed469",
+      "sourceSHA256": "3bed9e76632b2c95babd168f06b12dc738579f7880065a65058f8e5c2783f1e7",
+      "generatedSHA256": "846d18de87f6fec61e999eb343ee51a0a3c2f39cf6cbeb69b52da71ef3cfde34",
       "schedules": 8
     },
     {

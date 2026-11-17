@@ -85,15 +85,12 @@
                         </StackPanel>
                     </Children>
                 </DockPanel>
-                        <FlowPanel placement="right" halign="right" valign="bottom" justify="false">
-                            <Insets right="25" bottom="25"/>
-                            <Children>
-                               <DialogRef resource="components/Changelog.xml">
-                                    <MinSize x="270" y="64"/>
-                                    <MaxSize x="270" y="64"/>
-                               </DialogRef>
-                            </Children>
-                        </FlowPanel>
+				<FlowPanel placement="right" halign="right" valign="bottom" justify="false">
+					<Insets right="25" bottom="25"/>
+						<Children>
+						<DialogRef resource="components/Changelog.xml" placement="center"/>
+						</Children>
+				</FlowPanel>
             </Children>
         </StackPanel>
     </Content>

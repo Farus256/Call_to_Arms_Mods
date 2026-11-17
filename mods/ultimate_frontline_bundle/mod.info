@@ -3,7 +3,7 @@
 	{tags "Bundle, Compatibility, Patch"}
 	{desc "Ultimate Frontline Bundle on Horten's Frontline 4.0.1. CP limits x2 in multiplayer modes; Conquest keeps HF values. Reviewed weapon penetration and infantry/vehicle AI fixes; native health, weapon ranges, damage, vision, supply, veterancy, prices and other economy retained. Compatible Conquest maps/garrisons, blood/persistence, sound and PBR anti-glare. Load LAST after Horten's Frontline and WAVE-HF patch."}
 	{minGameVersion "1.066"}
-	{maxGameVersion "1.068"}
+	{maxGameVersion "1.069"}
 
 	;{require "mod_2562731625"}	; Immersive UI
 	;{require "mod_3079405930"}	; Colditz Germany Uncensored

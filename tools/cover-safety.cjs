@@ -77,7 +77,7 @@ function verify(resource=p.resolve(__dirname,'../mods/ultimate_frontline_bundle/
  const shape=n=>[n.kind,n.tokens.map(t=>t.value),n.children.map(shape)];
  assert.deepEqual(shape(s.parse(repair(mission))),shape(s.parse(mission)),'Cover guards missing');
  assert.deepEqual(shape(s.parse(human(entity))),shape(s.parse(entity)),'Cover result events missing');
- const commands=s.all(s.parse(mission),n=>s.name(n)==='actor_to_cover').length;assert.equal(commands,6);
+ const commands=s.all(s.parse(mission),n=>s.name(n)==='actor_to_cover').length;assert.equal(commands,5); // HF 4.0.2 merged smoke 120m+60m into one trigger
  return {coverCommandsGuarded:commands,failedCoverReservationReleasedAfterSeconds:0.5,failedCoverRetrySeconds:12};
 }
 module.exports={repair,human,verify,prepare,committed,attempt};

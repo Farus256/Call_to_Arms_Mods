@@ -209,7 +209,7 @@
 					}
 				}
 			}
-			{## "hf debugging/error 03"
+			{## "hf debugging/error 03" ;//disabled because there is no more big LUA changes in the mod
 				{condition
 					{expression "1 & 2 & !3"}
 					{terms
@@ -249,11 +249,11 @@
 			}
 
 ;//LUA related scripts
-			{"hf lua/lua forced order"
-				{condition {terms {"1.rand" {value 1}}}}
-  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0.25s
-{"delay" {time 0.25}}
-{"if" {condition {type entities} {selector
+			{## "hf lua/lua forced order" ;//disabled until further notice
+				{condition
+					{terms
+						{"1.entities"
+							{selector
 								{source advanced}
 								{group
 									{select
@@ -304,18 +304,20 @@
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
-							}}
-{"delay"
+							}
+						}
+					}
+				}
+				{actions
+					{"delay"
 						{time 300}
 					}
-{"entity_state"
+					{"entity_state"
 						{selector
 							{source advanced}
 							{group
@@ -358,34 +360,30 @@
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
 						{tag_add _lua_need_next_order}
 					}
-{"delay"
+					{"delay"
 						{time 60}
 					}
-{"entity_state"
+					{"entity_state"
 						{selector
 							{tag _lua_need_next_order}
 						}
 						{tag_remove _lua_need_next_order}
 					}
-{"delay"
+					{"delay"
 						{time 1}
 					}
-}
-{"delay" {time 0.75}}
-{"trigger"
+					{"trigger"
 						{name "hf lua/lua forced order"}
 					}
-  }
+				}
 			}
 
 ;// Officers and other RP elements
@@ -5781,19 +5779,36 @@
 										{tag
 											{tag hidden}
 										}
+										{tag
+											{tag _ai_medic}
+										}
 										{with_item
 											{type existance}
 											{item "loot_%tag"}
+										}
+										{with_item
+											{type existance}
+											{item "loot_%exception1"}
+										}
+										{with_item
+											{type existance}
+											{item "loot_%exception2"}
+										}
+										{with_item
+											{type existance}
+											{item "loot_%exception3"}
+										}
+										{with_item
+											{type using}
+											{item "loot_rocketlauncher"}
 										}
 									
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
 								{amount 1
@@ -5887,6 +5902,7 @@
 						}
 						{tag_add _ai_looting_weapon}
 					}
+; UFB: retain the soldier's existing stance and squad following.
 {"delay"
 						{time 0.1}
 					}
@@ -5908,11 +5924,9 @@
 {exclude {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
-}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}}
 }
 						}
 						{action take_from}
@@ -5976,15 +5990,17 @@
 			}
 )
 
-("hf_looting_body" tag(rocketlauncher))
-("hf_looting_body" tag(atrifle))
-("hf_looting_body" tag(riflegrenade))
-("hf_looting_body" tag(mgun))
-("hf_looting_body" tag(smg))
-("hf_looting_body" tag(semirifle))
-("hf_looting_body" tag(autorifle))
-("hf_looting_body" tag(battlerifle))
-("hf_looting_body" tag(assaultrifle))
+;// rifle_all is semirifle, autorifle, battlerifle and assaultrifle combined
+("hf_looting_body" tag(rocketlauncher)		exception1(none) 		 exception2(none) 			exception3(none))
+("hf_looting_body" tag(atrifle)				exception1(mgun) 		 exception2(riflegrenade) 	exception3(none))
+("hf_looting_body" tag(riflegrenade)		exception1(mgun) 		 exception2(atrifle) 		exception3(none))
+("hf_looting_body" tag(mgun)				exception1(riflegrenade) exception2(atrifle) 		exception3(none))
+("hf_looting_body" tag(smg)					exception1(mgun) 		 exception2(rifle_all) 		exception3(none))
+("hf_looting_body" tag(semirifle)			exception1(mgun) 		 exception2(smg) 			exception3(none))
+("hf_looting_body" tag(autorifle)			exception1(mgun) 		 exception2(smg) 			exception3(none))
+("hf_looting_body" tag(battlerifle)			exception1(mgun) 		 exception2(none) 			exception3(none))
+("hf_looting_body" tag(assaultrifle)		exception1(mgun) 		 exception2(none) 			exception3(none))
+("hf_looting_body" tag(boltaction)			exception1(mgun) 		 exception2(smg) 			exception3(rifle_all))
 
 (define "hf_looting_ground"
 			{"hf inf ai/looting weapon/looting ground: %tag"
@@ -6022,6 +6038,9 @@
 											{tag _lua_mi}
 										}
 										{tag
+											{tag _ai_medic}
+										}
+										{tag
 											{tag _ai_do_not_disturb}
 										}
 										{state
@@ -6030,6 +6049,18 @@
 										{with_item
 											{type existance}
 											{item "loot_%tag"}
+										}
+										{with_item
+											{type existance}
+											{item "loot_%exception1"}
+										}
+										{with_item
+											{type existance}
+											{item "loot_%exception2"}
+										}
+										{with_item
+											{type using}
+											{item "loot_rocketlauncher"}
 										}
 									}
 								}
@@ -6087,6 +6118,18 @@
 									{with_item
 										{type existance}
 										{item "loot_%tag"}
+									}
+									{with_item
+										{type existance}
+										{item "loot_%exception1"}
+									}
+									{with_item
+										{type existance}
+										{item "loot_%exception2"}
+									}
+									{with_item
+										{type using}
+										{item "loot_rocketlauncher"}
 									}
 									{state
 										{state dead}
@@ -6215,8 +6258,9 @@
 			}
 )
 
-("hf_looting_ground" tag(rocketlauncher))
-("hf_looting_ground" tag(atrifle))
+("hf_looting_ground" tag(rocketlauncher)	exception1(none) 		 exception2(none))
+("hf_looting_ground" tag(atrifle)			exception1(mgun) 		 exception2(riflegrenade))
+("hf_looting_ground" tag(riflegrenade)		exception1(mgun) 		 exception2(atrifle))
 
 ;//Mine clearing
 			{"hf inf ai/mine clearing/clear mines"
@@ -8389,6 +8433,11 @@
 							{near_to
 								{source advanced}
 								{group
+									{select
+										{zone_ex
+											{zone "combat"}
+										}
+									}
 									{include
 										{state
 											{state user_control}
@@ -9197,6 +9246,11 @@
 							{near_to
 								{source advanced}
 								{group
+									{select
+										{zone_ex
+											{zone "combat"}
+										}
+									}
 									{include
 										{state
 											{state user_control}
@@ -9980,6 +10034,11 @@
 							{near_to
 								{source advanced}
 								{group
+									{select
+										{zone_ex
+											{zone "combat"}
+										}
+									}
 									{include
 										{state
 											{state user_control}
@@ -11305,11 +11364,9 @@
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							} {enemy
@@ -11333,7 +11390,7 @@
 								}
 							} {distance
 								{mode near_than}
-								{meters 30}
+								{meters 26}
 							}} {"2.see_actors" {selector
 								{source advanced}
 								{group
@@ -11361,11 +11418,9 @@
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							} {enemy
@@ -11398,7 +11453,7 @@
 								}
 							} {distance
 								{mode near_than}
-								{meters 30}
+								{meters 26}
 							}}}}
   {actions ; UFB quant spread: heavy terms checked every 1s, phase 0s
 {"if" {condition {type see_actors} {selector
@@ -11448,15 +11503,29 @@
 										{tag
 											{tag bleeding}
 										}
+										{with_item
+											{type using}
+											{item "loot_rocketlauncher"}
+										}
+										{with_item
+											{type using}
+											{item "loot_atrifle"}
+										}
+										{with_item
+											{type using}
+											{item "loot_mgun"}
+										}
+										{with_item
+											{type using}
+											{item "flame_thrower"}
+										}
 									
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							} {enemy
@@ -11492,7 +11561,7 @@
 								}
 							} {distance
 								{mode near_than}
-								{meters 10}
+								{meters 9}
 							} {tag
 								{"tag pair"}
 								{"for selector" _ai_wounded_carrier}
@@ -12383,6 +12452,544 @@
 					}
 				}
 			}
+			{"hf inf ai/medics/medic active spawn"
+				{condition
+					{terms
+						{"1.cmp_i"
+							{var "medical_tent_active$"}
+							{op "=="}
+							{value 1}
+						}
+						{"2.entities"
+							{selector
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag _ai_medic_active}
+										}
+									}
+									{include
+										{state
+											{state operatable}
+										}
+									}
+								
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}}
+}
+							}
+							{count
+								{op "<<"}
+								{value 1}
+							}
+						}
+						{"3.cmp_i"
+							{var "attacker_retreat_requested$"}
+							{op "=="}
+							{value 0}
+						}
+						{"4.cmp_i"
+							{var "defender_retreat_requested$"}
+							{op "=="}
+							{value 0}
+						}
+					}
+				}
+				{actions
+					{"delay"
+						{time 0.1}
+					}
+					{"switch"
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bot_army$"}
+								{op "=="}
+								{value 1}
+							}
+							{"delay"
+								{time 0.1}
+							}
+							{"actor_to_waypoint"
+								{selector
+									{source advanced}
+									{group
+										{select
+											{tag
+												{tag bot_medic}
+											}
+										}
+										{include
+											{tag
+												{tag hidden}
+											}
+											{tag
+												{tag rus}
+											}
+										}
+									
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}}
+}
+									{amount 1
+									}
+								}
+								{waypoint "1090"}
+								{clone}
+								{approach "safe teleport & rotate"}
+							}
+						}
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bot_army$"}
+								{op "=="}
+								{value 2}
+							}
+							{"delay"
+								{time 0.1}
+							}
+							{"actor_to_waypoint"
+								{selector
+									{source advanced}
+									{group
+										{select
+											{tag
+												{tag bot_medic}
+											}
+										}
+										{include
+											{tag
+												{tag hidden}
+											}
+											{tag
+												{tag ger}
+											}
+										}
+									
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}}
+}
+									{amount 1
+									}
+								}
+								{waypoint "1090"}
+								{clone}
+								{approach "safe teleport & rotate"}
+							}
+						}
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bot_army$"}
+								{op "=="}
+								{value 3}
+							}
+							{"delay"
+								{time 0.1}
+							}
+							{"actor_to_waypoint"
+								{selector
+									{source advanced}
+									{group
+										{select
+											{tag
+												{tag bot_medic}
+											}
+										}
+										{include
+											{tag
+												{tag hidden}
+											}
+											{tag
+												{tag fin}
+											}
+										}
+									
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}}
+}
+									{amount 1
+									}
+								}
+								{waypoint "1090"}
+								{clone}
+								{approach "safe teleport & rotate"}
+							}
+						}
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bot_army$"}
+								{op "=="}
+								{value 4}
+							}
+							{"delay"
+								{time 0.1}
+							}
+							{"actor_to_waypoint"
+								{selector
+									{source advanced}
+									{group
+										{select
+											{tag
+												{tag bot_medic}
+											}
+										}
+										{include
+											{tag
+												{tag hidden}
+											}
+											{tag
+												{tag usa}
+											}
+										}
+									
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}}
+}
+									{amount 1
+									}
+								}
+								{waypoint "1090"}
+								{clone}
+								{approach "safe teleport & rotate"}
+							}
+						}
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bot_army$"}
+								{op "=="}
+								{value 5}
+							}
+							{"delay"
+								{time 0.1}
+							}
+							{"actor_to_waypoint"
+								{selector
+									{source advanced}
+									{group
+										{select
+											{tag
+												{tag bot_medic}
+											}
+										}
+										{include
+											{tag
+												{tag hidden}
+											}
+											{tag
+												{tag eng}
+											}
+										}
+									
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}}
+}
+									{amount 1
+									}
+								}
+								{waypoint "1090"}
+								{clone}
+								{approach "safe teleport & rotate"}
+							}
+						}
+					}
+					{"delay"
+						{time 0.1}
+					}
+					{"switch"
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bots_spawnside$"}
+								{op "=="}
+								{value 1}
+							}
+							{"delay"
+								{time 0.1}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{group
+										{select
+											{zone_ex
+												{zone "gamezone"}
+											}
+										}
+										{include
+											{tag
+												{tag bot_medic}
+											}
+										}
+										{exclude
+											{tag
+												{tag hidden}
+											}
+										
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
+}
+									}
+									{amount 1
+									}
+								}
+								{target
+									{source advanced}
+									{group
+										{select
+											{tag
+												{tag spawn_a}
+											}
+										}
+									}
+									{sort
+										{type shuffle}
+									}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type cmp_i}
+								{var "bots_spawnside$"}
+								{op "=="}
+								{value 2}
+							}
+							{"delay"
+								{time 0.1}
+							}
+							{"placement"
+								{selector
+									{source advanced}
+									{group
+										{select
+											{zone_ex
+												{zone "gamezone"}
+											}
+										}
+										{include
+											{tag
+												{tag bot_medic}
+											}
+										}
+										{exclude
+											{tag
+												{tag hidden}
+											}
+										
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
+}
+									}
+									{amount 1
+									}
+								}
+								{target
+									{source advanced}
+									{group
+										{select
+											{tag
+												{tag spawn_b}
+											}
+										}
+									}
+									{sort
+										{type shuffle}
+									}
+								}
+							}
+						}
+					}
+					{"delay"
+						{time 0.1}
+					}
+					{"player"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{zone_ex
+										{zone "gamezone"}
+									}
+								}
+								{include
+									{tag
+										{tag bot_medic}
+									}
+								}
+								{exclude
+									{tag
+										{tag hidden}
+									}
+								
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
+}
+							}
+						}
+						{operation set}
+						{player "1"}
+					}
+					{"delay"
+						{time 0.1}
+					}
+					{"entity_state"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{zone_ex
+										{zone "gamezone"}
+									}
+								}
+								{include
+									{tag
+										{tag bot_medic}
+									}
+								}
+								{exclude
+									{tag
+										{tag hidden}
+									}
+								
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
+}
+							}
+							{amount 1
+							}
+						}
+						{tag_add _ai_medic}
+					}
+					{"actor_state"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{zone_ex
+										{zone "gamezone"}
+									}
+								}
+								{include
+									{tag
+										{tag bot_medic}
+									}
+								}
+								{exclude
+									{tag
+										{tag hidden}
+									}
+								
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
+}
+							}
+						}
+						{human
+							{health 200}
+						}
+					}
+					{"delay"
+						{time 0.1}
+					}
+					{"entity_state"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{zone_ex
+										{zone "gamezone"}
+									}
+								}
+								{include
+									{tag
+										{tag bot_medic}
+									}
+								}
+								{exclude
+									{tag
+										{tag hidden}
+									}
+									{tag
+										{tag _ai_medic_passive}
+									}
+								
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_rescue_active}}
+{tag {tag _ufb_gun_job_active}}
+}
+							}
+							{amount 1
+							}
+						}
+						{tag_add _ai_medic_active}
+						{tag_remove bot_medic}
+					}
+					{"delay"
+						{time 0.1}
+					}
+					{"action"
+						{selector
+							{tag _ai_medic_active}
+							{type human}
+							{state "not dead"}
+						}
+						{drop "orders sensor senseless"}
+						{action advance}
+						{target
+							{source advanced}
+							{group
+								{select
+									{zone_ex
+										{zone "combat"}
+									}
+								}
+								{include
+									{tag
+										{tag _bot}
+									}
+									{tag
+										{tag bleeding}
+									}
+								}
+							}
+						}
+					}
+					{"delay"
+						{time 300}
+					}
+					{"trigger"
+						{name "hf inf ai/medics/medic active spawn"}
+					}
+				}
+			}			
 			{"hf inf ai/medics/medic passive"
 				{condition {terms {"1.rand" {value 1}}}}
   {actions ; UFB quant spread: heavy terms checked every 1s, phase 0s
@@ -13495,6 +14102,293 @@
 					}
  {"delay" {time 5}} {"trigger" {name "hf inf ai/wounded evac/wounded carrier anim check"}}}}
 
+;//AI Patrols
+			{"hf inf ai/patrols/patrol setup"
+				{condition
+					{terms
+						{"1.cmp_i"
+							{var "hf_ai_patrols$"}
+							{op "=="}
+							{value 1}
+						}
+						{"2.cmp_i"
+							{var "user_is_defender$"}
+							{op "!="}
+							{value 1}
+						}
+					}
+				}
+				{actions
+					{"delay"
+						{time 1}
+					}
+					{"entity_state"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{tag
+										{tag cmp_def}
+									}
+								}
+								{include
+									{prop
+										{prop human}
+									}
+									{state
+										{state operatable}
+									}
+								}
+								{exclude
+									{state
+										{state user_control}
+									}
+									{state
+										{state dead}
+									}
+									{state
+										{state inactive}
+									}
+									{state
+										{state linked}
+									}
+									{with_item
+										{type using}
+										{item "loot_mgun"}
+									}
+									{with_item
+										{type using}
+										{item "loot_riflegrenade"}
+									}
+									{with_item
+										{type using}
+										{item "loot_rocketlauncher"}
+									}
+									{with_item
+										{type using}
+										{item "loot_atrifle"}
+									}
+									{tag
+										{tag _ai_patrol}
+									}
+									{tag
+										{tag _lua_mi}
+									}
+								
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
+							}
+							{amount 16
+							}
+						}
+						{tag_add _ai_patrol_pool}
+					}
+					{"delay"
+						{time 1}
+					}
+					{"entity_state"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{tag
+										{tag _ai_patrol_pool}
+									}
+								}
+							
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}}
+}
+							{amount 8
+							}
+						}
+						{tag_add _ai_patrol}
+						{tag_remove _ai_patrol_pool}
+					}
+					{"delay"
+						{time 0.1}
+					}
+					{"entity_state"
+						{selector
+							{tag _ai_patrol}
+						}
+						{tag_add _lua_mi}
+					}
+					{"delay"
+						{time 1}
+					}
+					{"actor_state"
+						{selector
+							{tag _ai_patrol}
+						}
+						{fire_mode return}
+						{move_mode zone}
+						{move_radius 70}
+						{ai_move
+							{mode disable}
+							{enable_on "injure enemy"}
+						}
+						{movement
+							{speed walk}
+							{type normal}
+						}
+						{ai
+							{advance_ratio 2}
+							{retreat_ratio "0.5"}
+						}
+					}
+				}
+			}
+			{"hf inf ai/patrols/patrol start"
+				{condition
+					{terms
+						{"1.cmp_i"
+							{var "hf_ai_patrols$"}
+							{op "=="}
+							{value 1}
+						}
+						{"2.cmp_i"
+							{var "user_is_defender$"}
+							{op "!="}
+							{value 1}
+						}
+					}
+				}
+				{actions
+					{"delay"
+						{time 10}
+					}
+					{"actor_to_waypoint"
+						{selector
+							{tag _ai_patrol}
+							{type human}
+							{state "not dead"}
+						}
+						{waypoint "2000"}
+						{approach "safe teleport & rotate"}
+					}
+				}
+			}
+			{"hf inf ai/patrols/patrol chance"
+				{condition
+					{terms
+						{"1.cmp_i"
+							{var "user_is_defender$"}
+							{op "!="}
+							{value 1}
+						}
+					}
+				}
+				{actions
+					{"delay"
+						{time 30}
+					}
+					{"switch"
+						{"case"
+							{condition
+								{type rand}
+								{value 0.5}
+							}
+							{"set_i"
+								{var "hf_ai_patrols$"}
+								{op "="}
+								{value 1}
+							}
+							{"con"
+								{text "(mission script) - hf_ai_patrols is set to 1"}
+							}
+						}
+						{"default"}
+					}
+				}
+			}
+			{"hf inf ai/patrols/patrol alert"
+				{condition
+					{terms
+						{"1.see_actors"
+							{selector
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag _ai_patrol}
+										}
+									}
+									{include
+										{state
+											{state operatable}
+										}
+									}
+								
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}}
+}
+							}
+							{enemy
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag player}
+										}
+									}
+								}
+							}
+							{detection visible}
+							{tag
+								{"tag pair"}
+								{"for selector" _ai_patrol_alert}
+								{"for enemy" player_noticed_by_patrol}
+							}
+						}
+						{"2.cmp_i"
+							{var "hf_ai_patrols$"}
+							{op "=="}
+							{value 1}
+						}
+						{"3.cmp_i"
+							{var "user_is_defender$"}
+							{op "!="}
+							{value 1}
+						}
+					}
+				}
+				{actions
+					{"delay"
+						{time 1}
+					}
+					{"actor_state"
+						{selector
+							{tag _ai_patrol_alert}
+							{type human}
+							{state "not dead"}
+						}
+						{fire_mode open}
+						{move_mode free}
+						{movement
+							{speed assault}
+						}
+						{ai
+							{advance_ratio 1}
+							{retreat_ratio "2"}
+						}
+					}
+				}
+			}
+
 ;// Flanking AI
 			{"hf flanking ai/detect and action"
 				{condition
@@ -13788,247 +14682,6 @@
 					}
 				}
 			}
-
-
-			{"hf flanking infantry ai/detect and action"
-				{condition {terms {"1.rand" {value 1}}}}
-  {actions ; UFB quant spread: heavy terms checked every 1s, phase 0.25s
-{"delay" {time 0.25}}
-{"if" {condition {type entities} {selector
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _bot}
-										}
-										{tag
-											{tag bot}
-										}
-									}
-									{include
-										{prop
-											{prop human}
-										}
-										{with_item
-											{type existance}
-											{item "knife"}
-										}
-										{state
-											{state operatable}
-										}
-									}
-									{exclude
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{state
-											{state user_control}
-										}
-										{tag
-											{tag bot_inf_flank_finished}
-										}
-										{tag
-											{tag bot_inf_flank_in_progress}
-										}
-										{zone
-											{zone "combat"}
-										}
-									
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
-}
-								}
-							} {count
-								{op ">"}
-								{value 1}
-							}}
-{"delay"
-						{time 0.1}
-					}
-{"entity_state"
-						{selector
-							{source advanced}
-							{group
-								{select
-									{tag
-										{tag _bot}
-									}
-									{tag
-										{tag bot}
-									}
-								}
-								{include
-									{prop
-										{prop human}
-									}
-									{with_item
-										{type existance}
-										{item "knife"}
-									}
-									{state
-										{state operatable}
-									}
-								}
-								{exclude
-									{state
-										{state dead}
-									}
-									{state
-										{state inactive}
-									}
-									{state
-										{state user_control}
-									}
-									{tag
-										{tag bot_inf_flank_finished}
-									}
-									{tag
-										{tag bot_inf_flank_in_progress}
-									}
-									{zone
-										{zone "combat"}
-									}
-								
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
-}
-							}
-						}
-						{tag_add bot_inf_flanker}
-					}
-{"delay"
-						{time 0.1}
-					}
-{"entity_state"
-						{selector
-							{tag bot_inf_flanker}
-						}
-						{tag_add _lua_mi}
-					}
-{"delay"
-						{time 0.1}
-					}
-{"actor_state"
-						{selector
-							{tag bot_inf_flanker}
-							{type human}
-							{state "not dead"}
-						}
-						{fire_mode return}
-						{movement
-							{speed fast}
-						}
-						{human
-							{stamina 200}
-						}
-						{ai
-							{no_retreat on}
-							{follow_commander off}
-						}
-					}
-{"delay"
-						{time 0.5}
-					}
-{"switch"
-						{"case"
-							{condition
-								{type rand}
-								{value 0.4}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"actor_to_waypoint"
-								{selector
-									{tag bot_inf_flanker}
-									{type human}
-									{state "not dead"}
-								}
-								{waypoint "1015"}
-							}
-						}
-						{"case"
-							{condition
-								{type rand}
-								{value 0.4}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"actor_to_waypoint"
-								{selector
-									{tag bot_inf_flanker}
-									{type human}
-									{state "not dead"}
-								}
-								{waypoint "1021"}
-							}
-						}
-						{"default"
-							{"delay"
-								{time 0.1}
-							}
-							{"actor_to_waypoint"
-								{selector
-									{amount 4
-									}
-									{tag bot_inf_flanker}
-									{type human}
-									{state "not dead"}
-								}
-								{waypoint "1015"}
-							}
-							{"delay"
-								{time 0.1}
-							}
-							{"actor_to_waypoint"
-								{selector
-									{amount 4
-									}
-									{tag bot_inf_flanker}
-									{type human}
-									{state "not dead"}
-								}
-								{waypoint "1021"}
-							}
-						}
-					}
-{"delay"
-						{time 0.1}
-					}
-{"entity_state"
-						{selector
-							{tag bot_inf_flanker}
-							{type human}
-							{state "not dead"}
-						}
-						{tag_add bot_inf_flank_in_progress}
-					}
-{"delay"
-						{time 300}
-					}
-}
-{"delay" {time 0.75}}
-{"trigger"
-						{name "hf flanking infantry ai/detect and action"}
-					}
-  }
-			}
 			
 			
 ;// Melee AI
@@ -14067,20 +14720,15 @@
 											{state user_control}
 										}
 										{tag
-											{tag _user}
-										}
-										{tag
-											{tag _user_ally}
+											{tag player}
 										}
 									
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							} {enemy
@@ -14091,10 +14739,13 @@
 											{prop human}
 										}
 										{tag
-											{tag _user}
+											{tag player}
 										}
 										{state
 											{state operatable}
+										}
+										{state
+											{state user_control}
 										}
 									}
 									{exclude
@@ -14104,14 +14755,14 @@
 										{state
 											{state inactive}
 										}
-										{state
-											{state user_control}
-										}
 										{tag
 											{tag _bleedout_}
 										}
 										{tag
 											{tag bleeding}
+										}
+										{tag
+											{tag _bot}
 										}
 										{tag
 											{tag bot}
@@ -14129,7 +14780,7 @@
 								}
 							} {distance
 								{mode near_than}
-								{meters 10}
+								{meters 12}
 							} {detection located} {tag
 								{"tag pair"}
 								{"for selector" ai_close_inf}
@@ -14162,11 +14813,9 @@
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -14314,17 +14963,18 @@
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							} {enemy
 								{source advanced}
 								{group
 									{select
+										{tag
+											{tag player}
+										}
 										{tag
 											{tag _user}
 										}
@@ -14387,7 +15037,7 @@
 								}
 							} {distance
 								{mode in_range}
-								{min 18}
+								{min 16}
 								{max 26}
 							} {detection located} {tag
 								{"tag pair"}
@@ -14407,7 +15057,7 @@
 						{action cancel}
 					}
 {"delay"
-						{time 0.2}
+						{time 0.1}
 					}
 {"inventory"
 						{selector
@@ -14433,11 +15083,9 @@
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -14445,36 +15093,23 @@
 						{item "fg"}
 					}
 {"delay"
-						{time 1}
+						{time 0.5}
 					}
-{"action"
+{"actor_fire"
 						{selector
-							{amount 1
-							}
 							{tag _ai_ap_grenade}
 							{type human}
-							{state "not dead"}
+							{state operatable}
 						}
 						{drop "orders sensor senseless"}
-						{action attack_ground}
-						{target
+						{deviate}
+						{enemies
+							{ignore_captured_by_user 0}
 							{tag _ai_ap_target}
 						}
-					}
-{"delay"
-						{time 3}
-					}
-{"action"
-						{selector
-							{tag _ai_ap_grenade}
-							{type human}
-							{state "not dead"}
-						}
-						{drop orders}
-						{action rotate}
-						{target
-							{tag _ai_ap_target}
-						}
+						{interval 0}
+						{time 0}
+						{burst_mode once}
 					}
 {"delay"
 						{time 0.1}
@@ -14486,7 +15121,7 @@
 						{tag_remove _ai_ap_grenade}
 					}
 {"delay"
-						{time 0.25}
+						{time 0.5}
 					}
 {"entity_state"
 						{selector
@@ -14495,7 +15130,7 @@
 						{tag_remove _ai_ap_target}
 					}
 {"delay"
-						{time 0.25}
+						{time 0.1}
 					}
 }
 {"delay" {time 0.5}}
@@ -14504,12 +15139,10 @@
 					}
   }
 			}
-			{"hf inf ai/grenade smoke 120m"
-				{condition
-					{expression "2 & 3 & 4 & 5 & (1)"}
-					{terms
-						{"1.see_actors"
-							{selector
+			{"hf inf ai/grenade smoke"
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"if" {condition {type see_actors} {selector
 								{source advanced}
 								{group
 									{select
@@ -14583,43 +15216,21 @@
 											{tag reloading}
 										}
 									
-{tag {tag _ai_ap_grenade}}
-{tag {tag _ai_at_grenade}}
-{tag {tag _ufb_smoke_120m_actor}}
-{tag {tag ai_close_inf}}
-{tag {tag _ai_wirecutter_in_action}}
-{tag {tag bot_inf_flank_in_progress}}
-{tag {tag _lua_ignore}}
-{tag {tag bot_arty}}
-{tag {tag bot_aa_guard}}
-{tag {tag crew}}
-{tag {tag _ai_medic}}
-{tag {tag bot_medic}}
-{tag {tag tcrew}}
-{tag {tag ecrew}}
-{tag {tag ecrew_a}}
-{tag {tag ecrew_b}}
-{prop {prop crew}}
-
-{tag {tag _ufb_smoke_120m_actor}}
-{tag {tag _ufb_smoke_60m_actor}}
-{tag {tag _ufb_smoke_wirecutter_actor}}
-
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
-							}
-							{enemy
+							} {enemy
 								{source advanced}
 								{group
 									{select
+										{tag
+											{tag player}
+										}
 										{tag
 											{tag _user}
 										}
@@ -14663,704 +15274,234 @@
 										{prop
 											{prop airborne}
 										}
-
-{tag {tag _ufb_smoke_120m_target}}
-{tag {tag _ufb_smoke_60m_target}}
-{tag {tag _ufb_smoke_wirecutter_target}}
-}
+									}
 								}
-							}
-							{distance
+							} {distance
 								{mode in_range}
-								{min 65}
+								{min 45}
 								{max 120}
-							}
-							{detection visible}
-							{tag
+							} {detection located} {tag
 								{"tag pair"}
-								{"for selector" _ufb_smoke_120m_actor}
-								{"for enemy" _ufb_smoke_120m_target}
-							}
-						}
-						{"2.cmp_i" {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-						{"3.cmp_i" {var "defender_retreat_requested$"} {op "=="} {value 0}}
-						{"4.cmp_i" {var "bot_retreat_active$"} {op "=="} {value 0}}
-						{"5.cmp_i" {var "winner_decided$"} {op "=="} {value 0}}
-					}
-				}
-				{actions
-					{"delay"
+								{"for selector" _ai_smoke_grenade}
+								{"for enemy" _ai_smoke_target}
+							}}
+{"delay"
 						{time 0.1}
 					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"inventory"
-														{selector
-															{source advanced}
-															{group
-																{select
-																	{tag
-																		{tag _ufb_smoke_120m_actor}
-																	}
-																}
-																{exclude
-																	{with_item
-																		{type using}
-																		{item "smoke"}
-																	}
-																	{state
-																		{state dead}
-																	}
-																	{state
-																		{state inactive}
-																	}
-																
+{"inventory"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{tag
+										{tag _ai_smoke_grenade}
+									}
+								}
+								{exclude
+									{with_item
+										{type using}
+										{item "smoke"}
+									}
+									{state
+										{state dead}
+									}
+									{state
+										{state inactive}
+									}
+								
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
-															}
-														}
-														{action take}
-														{item "smoke"}
-													}
-												}
-											}
-										}
-									}
-								}
 							}
 						}
+						{action take}
+						{item "smoke"}
 					}
-					{"delay"
+{"delay"
 						{time 0.5}
 					}
-					{"switch"
+{"switch"
 						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"action"
-														{selector
-															{amount 1
-															}
-															{tag _ufb_smoke_120m_actor}
-															{type human}
-															{state "not dead"}
-														}
-														{drop orders}
-														{action rotate}
-														{target
-															{ignore_captured_by_user 0}
-															{tag _ufb_smoke_120m_target}
-														}
-													}
-												}
+							{condition
+								{type cmp_i}
+								{var "user_is_defender$"}
+								{op "=="}
+								{value 1}
+							}
+							{"delay"
+								{time 0.1}
+							}
+							{"actor_fire"
+								{selector
+									{tag _ai_smoke_grenade}
+									{type human}
+									{state operatable}
+								}
+								{drop "orders sensor senseless"}
+								{deviate}
+								{enemies
+									{source advanced}
+									{ignore_captured_by_user 0}
+									{group
+										{select
+											{tag
+												{tag flag}
 											}
 										}
 									}
-								}
-							}
-						}
-					}
-					{"delay"
-						{time 1}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													; UFB: throw toward a 10 m ground point after facing the distant threat.
-													{"effect" {selector
-															{amount 1
-															}
-															{tag _ufb_smoke_120m_actor}
-															{type human}
-															{state "not dead"}
-														} {effect ufb_smoke_screen_120m}}
-												}
-											}
+									{sort
+										{type entity}
+										{entity
+											{ignore_captured_by_user 0}
+											{tag _ai_smoke_grenade}
 										}
 									}
-								}
-							}
-						}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													; UFB: throw toward a 10 m ground point after facing the distant threat.
-													{"action"
-														{selector
-															{amount 1
-															}
-															{tag _ufb_smoke_120m_actor}
-															{type human}
-															{state "not dead"}
-														}
-														{drop orders}
-														{action throw_sk_grenade}
-														{target
-															{ignore_captured_by_user 0}
-															{tag _ufb_smoke_120m_screen}
-														}
-													}
-												}
-											}
-										}
+									{amount 1
 									}
 								}
+								{interval 0}
+								{time 0}
+								{burst_mode once}
 							}
-						}
-					}
-					{"delay"
-						{time 2.5}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_120m_actor"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+							{"delay"
+								{time 8}
+							}
+							{"action"
+								{selector
+									{tag _ai_smoke_grenade}
+									{type human}
+									{state operatable}
+								}
+								{action advance}
+								{target
+									{ignore_captured_by_user 0}
+									{tag _ai_smoke_target}
+								}
+							}
+							{"delay"
+								{time 3}
+							}
+							{"actor_state"
+								{selector {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag "_ai_smoke_grenade"}}} {include {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
-
+}}}
+								{drop orders}
+								{fire_mode open}
+								{move_mode free}
+								{ai_move
+									{mode enable}
+								}
+								{ai
+									{advance_ratio "0.2"}
+								}
+							}
+						}
+						{"default"
+							{"delay"
+								{time 0.1}
+							}
+							{"actor_fire"
+								{selector
+									{tag _ai_smoke_grenade}
+									{type human}
+									{state operatable}
+								}
+								{drop "orders sensor senseless"}
+								{deviate}
+								{enemies
+									{ignore_captured_by_user 0}
+									{tag _ai_smoke_target}
+								}
+								{interval 0}
+								{time 0}
+								{burst_mode once}
+							}
+							{"delay"
+								{time 2}
+							}
+							{"actor_state"
+								{selector {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag "_ai_smoke_grenade"}}} {include {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}}}
+								{drop orders}
+								{fire_mode open}
+								{move_mode free}
+								{ai_move
+									{mode enable}
+								}
+								{ai
+									{advance_ratio 1}
+								}
+							}
+							{"delay"
+								{time 1}
+							}
+							{"effect" {selector {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag "_ai_smoke_grenade"}}} {include {prop {prop human}} {state {state operatable}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }}} {effect ufb_hf_cover_prepare}}
 {"actor_to_cover"
-														{selector {source advanced}  {group {select {tag {tag "_ufb_smoke_120m_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+								{selector {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag "_ai_smoke_grenade"}}} {include {prop {prop human}} {state {state operatable}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
 }}}
-														{drop orders}
-													}
-{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_120m_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+							}
+{"effect" {selector {source advanced} {ignore_captured_by_user 0} {group {select {tag {tag "_ai_smoke_grenade"}}} {include {prop {prop human}} {state {state operatable}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
 {tag {tag medic}}
 {tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
 }}} {effect ufb_hf_cover_committed}}
-												}
-											}
-										}
-									}
-								}
-							}
 						}
 					}
-					{"delay"
+{"delay"
 						{time 0.1}
 					}
-					; UFB: keep this threat reserved through the smoke retry interval.
-
-					{"delay"
-						{time 0.1}
-					}
-					{"entity_state"
+{"entity_state"
 						{selector
-							{tag _ufb_smoke_120m_actor}
+							{tag _ai_smoke_target}
 						}
-						{tag_remove _ufb_smoke_120m_actor}
+						{tag_remove _ai_smoke_target}
 					}
-					{"delay"
-						{time 18}
-					}
-					{"entity_state"
+{"entity_state"
 						{selector
-							{tag _ufb_smoke_120m_target}
+							{tag _ai_smoke_grenade}
 						}
-						{tag_remove _ufb_smoke_120m_target}
+						{tag_remove _ai_smoke_grenade}
 					}
+{"delay"
+						{time 5}
+					}
+}
+{"delay" {time 0.5}}
 {"trigger"
-						{name "hf inf ai/grenade smoke 120m"}
+						{name "hf inf ai/grenade smoke"}
 					}
-				}
-			}
-			{"hf inf ai/grenade smoke 60m"
-				{condition
-					{expression "2 & 3 & 4 & 5 & (1)"}
-					{terms
-						{"1.see_actors"
-							{selector
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _bot}
-										}
-										{tag
-											{tag bot}
-										}
-									}
-									{include
-										{with_item
-											{type amount}
-											{item "smoke"}
-											{min 1}
-										}
-										{state
-											{state operatable}
-										}
-										{prop
-											{prop human}
-										}
-									}
-									{exclude
-										{with_item
-											{type existance}
-											{item "m15_wp" "grenade"}
-										}
-										{with_item
-											{type existance}
-											{item "m42_wp" "grenade"}
-										}
-										{with_item
-											{type existance}
-											{item "no77_wp" "grenade"}
-										}
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{state
-											{state user_control}
-										}
-										{state
-											{state linked}
-										}
-										{tag
-											{tag _lua_mi}
-										}
-										{tag
-											{tag _ai_do_not_disturb}
-										}
-										{tag
-											{tag wounded}
-										}
-										{tag
-											{tag bleeding}
-										}
-										{tag
-											{tag _bleeding}
-										}
-										{tag
-											{tag wounded_animation_playing}
-										}
-										{tag
-											{tag repairing}
-										}
-										{tag
-											{tag reloading}
-										}
-									
-{tag {tag _ai_ap_grenade}}
-{tag {tag _ai_at_grenade}}
-{tag {tag _ufb_smoke_60m_actor}}
-{tag {tag ai_close_inf}}
-{tag {tag _ai_wirecutter_in_action}}
-{tag {tag bot_inf_flank_in_progress}}
-{tag {tag _lua_ignore}}
-{tag {tag bot_arty}}
-{tag {tag bot_aa_guard}}
-{tag {tag crew}}
-{tag {tag _ai_medic}}
-{tag {tag bot_medic}}
-{tag {tag tcrew}}
-{tag {tag ecrew}}
-{tag {tag ecrew_a}}
-{tag {tag ecrew_b}}
-{prop {prop crew}}
-
-{tag {tag _ufb_smoke_120m_actor}}
-{tag {tag _ufb_smoke_60m_actor}}
-{tag {tag _ufb_smoke_wirecutter_actor}}
-
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
-}
-								}
-							}
-							{enemy
-								{source advanced}
-								{group
-									{select
-										{tag
-											{tag _user}
-										}
-									}
-									{include
-										{state
-											{state user_control}
-										}
-									}
-									{exclude
-										{state
-											{state dead}
-										}
-										{state
-											{state inactive}
-										}
-										{tag
-											{tag _bot}
-										}
-										{tag
-											{tag bot}
-										}
-										{tag
-											{tag bleeding}
-										}
-										{tag
-											{tag _bleeding}
-										}
-										{tag
-											{tag _bleedout_}
-										}
-										{tag
-											{tag wounded_animation_playing}
-										}
-										{tag
-											{tag wounded_dead}
-										}
-										{tag
-											{tag wounded}
-										}
-										{prop
-											{prop airborne}
-										}
-
-{tag {tag _ufb_smoke_120m_target}}
-{tag {tag _ufb_smoke_60m_target}}
-{tag {tag _ufb_smoke_wirecutter_target}}
-}
-								}
-							}
-							{distance
-								{mode in_range}
-								{min 33}
-								{max 60}
-							}
-							{detection visible}
-							{tag
-								{"tag pair"}
-								{"for selector" _ufb_smoke_60m_actor}
-								{"for enemy" _ufb_smoke_60m_target}
-							}
-						}
-						{"2.cmp_i" {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-						{"3.cmp_i" {var "defender_retreat_requested$"} {op "=="} {value 0}}
-						{"4.cmp_i" {var "bot_retreat_active$"} {op "=="} {value 0}}
-						{"5.cmp_i" {var "winner_decided$"} {op "=="} {value 0}}
-					}
-				}
-				{actions
-					{"delay"
-						{time 0.1}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"inventory"
-														{selector
-															{source advanced}
-															{group
-																{select
-																	{tag
-																		{tag _ufb_smoke_60m_actor}
-																	}
-																}
-																{exclude
-																	{with_item
-																		{type using}
-																		{item "smoke"}
-																	}
-																	{state
-																		{state dead}
-																	}
-																	{state
-																		{state inactive}
-																	}
-																
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
-}
-															}
-														}
-														{action take}
-														{item "smoke"}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					{"delay"
-						{time 0.5}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"action"
-														{selector
-															{amount 1
-															}
-															{tag _ufb_smoke_60m_actor}
-															{type human}
-															{state "not dead"}
-														}
-														{drop orders}
-														{action rotate}
-														{target
-															{ignore_captured_by_user 0}
-															{tag _ufb_smoke_60m_target}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					{"delay"
-						{time 1}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													; UFB: throw toward a 10 m ground point after facing the distant threat.
-													{"effect" {selector
-															{amount 1
-															}
-															{tag _ufb_smoke_60m_actor}
-															{type human}
-															{state "not dead"}
-														} {effect ufb_smoke_screen_60m}}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													; UFB: throw toward a 10 m ground point after facing the distant threat.
-													{"action"
-														{selector
-															{amount 1
-															}
-															{tag _ufb_smoke_60m_actor}
-															{type human}
-															{state "not dead"}
-														}
-														{drop orders}
-														{action throw_sk_grenade}
-														{target
-															{ignore_captured_by_user 0}
-															{tag _ufb_smoke_60m_screen}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					{"delay"
-						{time 2.5}
-					}
-					{"switch"
-						{"case"
-							{condition {type cmp_i} {var "attacker_retreat_requested$"} {op "=="} {value 0}}
-							{"switch"
-								{"case"
-									{condition {type cmp_i} {var "defender_retreat_requested$"} {op "=="} {value 0}}
-									{"switch"
-										{"case"
-											{condition {type cmp_i} {var "bot_retreat_active$"} {op "=="} {value 0}}
-											{"switch"
-												{"case"
-													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_60m_actor"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-{tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
-}}} {effect ufb_hf_cover_prepare}}
-{"actor_to_cover"
-														{selector {source advanced}  {group {select {tag {tag "_ufb_smoke_60m_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-{tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
-}}}
-														{drop orders}
-													}
-{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_60m_actor"}}} {include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
-{tag {tag _ufb_job_reserved}}
-{tag {tag _ufb_combat_busy}}
-{tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-{tag {tag _ufb_rescue_active}}
-
-{tag {tag _ufb_gun_job_active}}
-}}} {effect ufb_hf_cover_committed}}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					{"delay"
-						{time 0.1}
-					}
-					; UFB: keep this threat reserved through the smoke retry interval.
-
-					{"delay"
-						{time 0.1}
-					}
-					{"entity_state"
-						{selector
-							{tag _ufb_smoke_60m_actor}
-						}
-						{tag_remove _ufb_smoke_60m_actor}
-					}
-					{"delay"
-						{time 18}
-					}
-					{"entity_state"
-						{selector
-							{tag _ufb_smoke_60m_target}
-						}
-						{tag_remove _ufb_smoke_60m_target}
-					}
-{"trigger"
-						{name "hf inf ai/grenade smoke 60m"}
-					}
-				}
+  }
 			}
 			{"hf inf ai/near player"
 				{condition {terms {"1.rand" {value 1}}}}
@@ -15438,17 +15579,18 @@
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
-
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 								}
 							} {enemy
 								{source advanced}
 								{group
 									{select
+										{tag
+											{tag player}
+										}
 										{tag
 											{tag _user}
 										}
@@ -15502,10 +15644,11 @@
 								}
 							} {distance
 								{mode near_than}
-								{meters 13}
+								{meters 19}
 							} {detection visible} {tag
 								{"tag pair"}
 								{"for selector" _ai_near_player}
+								{"for enemy" _ai_near_player_target}
 							}}
 {"delay"
 						{time 0.1}
@@ -15562,15 +15705,13 @@
 										{type existance}
 										{item "sword"}
 									}
-								
+								 {state {state linked}} 
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
-{tag {tag medic}}
-
-{tag {tag _ufb_rescue_active}}
- {state {state linked}} 
 {tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
 }
 							}
 						}
@@ -15580,6 +15721,30 @@
 {"delay"
 						{time 0.1}
 					}
+{"action"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{tag
+										{tag _ai_near_player}
+									}
+								}
+							
+{exclude {tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}}
+}
+						}
+						{drop orders}
+						{action attack}
+						{target
+							{tag _ai_near_player_target}
+						}
+					}
 {"effect"
 						{selector
 							{tag _ai_near_player}
@@ -15587,7 +15752,7 @@
 						{effect ai_near_player_cooldown}
 					}
 {"delay"
-						{time 0.1}
+						{time 0.25}
 					}
 {"entity_state"
 						{selector
@@ -15595,8 +15760,14 @@
 						}
 						{tag_remove _ai_near_player}
 					}
+{"entity_state"
+						{selector
+							{tag _ai_near_player_target}
+						}
+						{tag_remove _ai_near_player_target}
+					}
 {"delay"
-						{time 1}
+						{time 0.25}
 					}
 }
 {"delay" {time 0.5}}
@@ -15685,6 +15856,9 @@
 								{source advanced}
 								{group
 									{select
+										{tag
+											{tag player}
+										}
 										{tag
 											{tag _user}
 										}
@@ -15934,6 +16108,9 @@
 								{group
 									{select
 										{tag
+											{tag player}
+										}
+										{tag
 											{tag _user}
 										}
 									}
@@ -16175,6 +16352,9 @@
 								{group
 									{select
 										{tag
+											{tag player}
+										}
+										{tag
 											{tag _user}
 										}
 									}
@@ -16263,7 +16443,8 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"effect" {selector
+													
+{"effect" {selector
 															{source advanced}
 															{group
 																{select
@@ -16371,6 +16552,7 @@
 															{include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}}
 															}
 														} {effect ufb_hf_cover_committed}}
+
 												}
 											}
 										}
@@ -16520,6 +16702,9 @@
 								{group
 									{select
 										{tag
+											{tag player}
+										}
+										{tag
 											{tag _user}
 										}
 									}
@@ -16601,7 +16786,8 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"effect" {selector
+													
+{"effect" {selector
 															{source advanced}
 															{group
 																{select
@@ -16709,6 +16895,7 @@
 															{include {prop {prop human}}{tag {tag _ufb_hf_cover_attempt}}}
 															}
 														} {effect ufb_hf_cover_committed}}
+
 												}
 											}
 										}
@@ -16838,6 +17025,9 @@
 								{group
 									{select
 										{tag
+											{tag player}
+										}
+										{tag
 											{tag _user}
 										}
 									}
@@ -16916,7 +17106,8 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"effect" {selector {source advanced}  {group {select {tag {tag "_ai_reloading"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+													
+{"effect" {selector {source advanced}  {group {select {tag {tag "_ai_reloading"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
@@ -16946,6 +17137,7 @@
 
 {tag {tag _ufb_gun_job_active}}
 }}} {effect ufb_hf_cover_committed}}
+
 												}
 											}
 										}
@@ -17630,6 +17822,9 @@
 								{source advanced}
 								{group
 									{select
+										{tag
+											{tag player}
+										}
 										{tag
 											{tag _user}
 										}
@@ -18407,7 +18602,8 @@
 											{"switch"
 												{"case"
 													{condition {type cmp_i} {var "winner_decided$"} {op "=="} {value 0}}
-													{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_wirecutter_actor"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
+													
+{"effect" {selector {source advanced}  {group {select {tag {tag "_ufb_smoke_wirecutter_actor"}}} {include {prop {prop human}}} {exclude {state {state dead}} {state {state inactive}} {state {state linked}}
 {tag {tag _ufb_job_reserved}}
 {tag {tag _ufb_combat_busy}}
 {tag {tag _ufb_healing_active}}
@@ -18437,6 +18633,7 @@
 
 {tag {tag _ufb_gun_job_active}}
 }}} {effect ufb_hf_cover_committed}}
+
 												}
 											}
 										}
@@ -22289,6 +22486,189 @@
 			}
 
 ;// Tank AI
+			{"hf tank ai/smoke generator toggle"
+				{condition {terms {"1.rand" {value 1}}}}
+  {actions ; UFB quant spread: heavy terms checked every 0.5s, phase 0s
+{"if" {condition {type near} {units
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag bot}
+										}
+										{tag
+											{tag _bot}
+										}
+									}
+									{include
+										{tag
+											{tag smoke_generator}
+										}
+										{state
+											{state operatable}
+										}
+										{state
+											{state inhabited}
+										}
+										{state
+											{state chassis_work}
+										}
+									}
+									{exclude
+										{state
+											{state user_control}
+										}
+										{state
+											{state dead}
+										}
+									}
+								}
+							} {near_to
+								{source advanced}
+								{group
+									{select
+										{tag
+											{tag player}
+										}
+									}
+									{include
+										{state
+											{state operatable}
+										}
+										{state
+											{state user_control}
+										}
+									}
+									{exclude
+										{state
+											{state dead}
+										}
+										{state
+											{state inactive}
+										}
+									}
+								}
+							} {distance 170}}
+{"delay"
+						{time 0.1}
+					}
+{"effect"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{tag
+										{tag _bot}
+									}
+									{tag
+										{tag bot}
+									}
+								}
+								{include
+									{tag
+										{tag smoke_generator}
+									}
+									{state
+										{state operatable}
+									}
+									{state
+										{state chassis_work}
+									}
+									{state
+										{state inhabited}
+									}
+								}
+								{exclude
+									{state
+										{state user_control}
+									}
+									{state
+										{state dead}
+									}
+									{state
+										{state inactive}
+									}
+								
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
+							}
+						}
+						{effect smoke_screen_toggle}
+					}
+{"delay"
+						{time 0.1}
+					}
+{"actor_state"
+						{selector
+							{source advanced}
+							{group
+								{select
+									{tag
+										{tag _bot}
+									}
+									{tag
+										{tag bot}
+									}
+								}
+								{include
+									{tag
+										{tag smoke_generator}
+									}
+									{state
+										{state operatable}
+									}
+									{state
+										{state chassis_work}
+									}
+									{state
+										{state inhabited}
+									}
+								}
+								{exclude
+									{state
+										{state user_control}
+									}
+									{state
+										{state dead}
+									}
+									{state
+										{state inactive}
+									}
+									{tag
+										{tag flamethrower_vehicle}
+									}
+								
+{tag {tag _ufb_job_reserved}}
+{tag {tag _ufb_combat_busy}}
+{tag {tag _ufb_healing_active}}
+{tag {tag _ufb_gun_job_active}}
+{tag {tag medic}}
+{tag {tag _ufb_rescue_active}}
+}
+							}
+						}
+						{movement
+							{speed normal}
+						}
+						{ai
+							{advance_ratio "0.2"}
+						}
+					}
+{"delay"
+						{time 300}
+					}
+}
+{"delay" {time 0.5}}
+{"trigger"
+						{name "hf tank ai/smoke generator toggle"}
+					}
+  }
+			}
 			{"hf tank ai/finish off"
 				{condition
 					{expression "2 & 3 & 4 & 5 & (1)"}

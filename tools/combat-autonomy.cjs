@@ -1,7 +1,7 @@
 // HF 4 targeting and native mission commands, with reviewed weapon-only fixes.
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
 const repo=p.resolve(__dirname,'..');
-const reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
+const reference=p.resolve(repo,'../_survival_work/hf-update-20261117/reference/resource');
 const resource=p.join(repo,'mods/ultimate_frontline_bundle/resource');
 const read=(root,rel)=>fs.readFileSync(p.join(root,rel),'latin1');
 const shape=n=>({kind:n.kind,tokens:n.tokens.map(t=>t.value),children:n.children.map(shape)});

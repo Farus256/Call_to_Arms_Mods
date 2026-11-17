@@ -41,14 +41,14 @@
 		{unitMode "early"}
 		{specMode "cp_annih_standard"}
 		{apply "only_roster_early"}
-		("custom_all"			start(2000) finish(2000) doctrine(0) cp(0:360,180:0))
+		("custom_all"			start(1800) finish(1800) doctrine(0) cp(0:400,180:0))
 	}
 	{"c:early_custom_160"
 		{gameMode "custom"}
 		{unitMode "early"}
 		{specMode "cp_annih_less_1"}
 		{apply "only_roster_early"}
-		("custom_all"			start(1600) finish(1600) doctrine(0) cp(0:300,180:0))
+		("custom_all"			start(1500) finish(1500) doctrine(0) cp(0:320,180:0))
 	}
 	{"c:early_custom_140"
 		{gameMode "custom"}
@@ -69,14 +69,14 @@
 		{unitMode "early"}
 		{specMode "cp_annih_more_1"}
 		{apply "only_roster_early"}
-		("custom_all"			start(2400) finish(2400) doctrine(0) cp(0:420,180:0))
+		("custom_all"			start(2100) finish(2100) doctrine(0) cp(0:480,180:0))
 	}
 	{"c:early_custom_250"
 		{gameMode "custom"}
 		{unitMode "early"}
 		{specMode "cp_annih_more_2"}
 		{apply "only_roster_early"}
-		("custom_all"			start(2800) finish(2800) doctrine(0) cp(0:500,180:0))
+		("custom_all"			start(2500) finish(2500) doctrine(0) cp(0:550,180:0))
 	}
 	{"c:early_custom_100"
 		{gameMode "custom"}

@@ -39,10 +39,26 @@ function normalize(text){
  }
  return tree.children.map(n=>visit(n)).filter(x=>x!==null);
 }
+// The snapshot predates HF 4.0.2. Triggers HF itself changed since then (4.0.1 -> 4.0.2) are taken from the
+// current file: repair-hf-support and hf-logic-fixes verify those against the 4.0.2 reference instead.
+function rebase(a,b){
+ const rel='map/multi/HF-dcg_script.inc',key=n=>s.name(n)==='define'?'define '+n.tokens[1].value:s.name(n);
+ const sh=n=>JSON.stringify([n.kind,n.tokens.map(t=>t.value),n.children.map(c=>JSON.parse(sh(c)))]);
+ const nodes=f=>new Map(s.parse(fs.readFileSync(f,'latin1')).children.map(n=>[key(n),sh(n)]));
+ const h1=nodes(p.resolve(repo,'../_survival_work/hf-update-20261107/upstream/resource',rel)),h2=nodes(p.resolve(repo,'../_survival_work/hf-update-20261117/upstream402',rel));
+ const changed=new Set([...h1.keys(),...h2.keys()].filter(k=>h1.get(k)!==h2.get(k)));
+ const indexed=(t,seen=new Map())=>s.parse(t).children.map(n=>{const k=key(n)+'#'+(seen.get(key(n))||0);seen.set(key(n),(seen.get(key(n))||0)+1);return [k,t.slice(n.start,n.end),key(n)];});
+ const old=new Map(indexed(a).map(([k,t])=>[k,t])),cur=indexed(b);
+ // Follow the current order: HF-changed nodes from the current file, all others from the snapshot.
+ // Snapshot nodes missing now (and not retired by HF) are appended, so a dropped UFB node still fails.
+ const out=cur.map(([k,t,name])=>changed.has(name)?t:old.get(k)).filter(t=>t!==undefined);
+ for(const [k,t] of old)if(!cur.some(([c])=>c===k)&&!changed.has(k.replace(/#\d+$/,'')))out.push(t);
+ return out.join('\n');
+}
 for(const file of safety.files){
  let a=fs.readFileSync(p.join(before,file),'latin1');const b=fs.readFileSync(p.join(after,file),'latin1');
  if(/ufb_crew_(safety|skirmish)\.inc$/.test(file))a=require('./crew-cover-safety.cjs').mission(a);
- if(file==='map/multi/HF-dcg_script.inc')a=require('./wounded-evac-safety.cjs').repair(a);
+ if(file==='map/multi/HF-dcg_script.inc')a=rebase(require('./wounded-evac-safety.cjs').repair(a),b);
  assert.deepEqual(normalize(a),normalize(b),'Changes outside reviewed actor selectors: '+file);
  assert.equal(safety.repair(b),b,'Non-idempotent command guards: '+file);
 }

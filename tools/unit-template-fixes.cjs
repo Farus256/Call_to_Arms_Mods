@@ -1,6 +1,6 @@
 // Correct only the malformed HF squad template; preserve its ten men and all prices.
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
-const repo=p.resolve(__dirname,'..'),reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
+const repo=p.resolve(__dirname,'..'),reference=p.resolve(repo,'../_survival_work/hf-update-20261117/reference/resource');
 const file='set/multiplayer/units/other_gamemodes/late/units_ger.set',unit='squad_waffen_sturmpio_late_def2';
 const shape=n=>[n.kind,n.tokens.map(t=>t.value),n.children.map(shape)];
 function expected(ref=reference){

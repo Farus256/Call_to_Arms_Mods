@@ -2,7 +2,7 @@
 // node tools/verify-hf4-update.cjs [UFB resource] [reference resource]
 const fs=require('fs'),p=require('path'),assert=require('assert/strict');
 const s=require('./lib/sdl.cjs'),lua=require('luaparse');
-const repo=p.resolve(__dirname,'..'),work=p.resolve(repo,'../_survival_work/hf-update-20261107');
+const repo=p.resolve(__dirname,'..'),work=p.resolve(repo,'../_survival_work/hf-update-20261117');
 const resource=p.resolve(process.argv[2]||p.join(repo,'mods/ultimate_frontline_bundle/resource'));
 const reference=p.resolve(process.argv[3]||p.join(work,'reference/resource'));
 const walk=d=>fs.existsSync(d)?fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(p.join(d,e.name)):[p.join(d,e.name)]):[];
@@ -22,7 +22,11 @@ const unitTemplates=require('./unit-template-fixes.cjs'),unitTemplateFiles=new S
 // Entities HF references but does not ship. If HF adds its own, this copy must go.
 const missingBreeds=new Set(['set/breed/mp/ger/mid/driver.set','entity/-vehicle/+germany/cannon/mg08_fin/heavy_mg_mg08.def']);
 for(const f of missingBreeds)assert(!fs.existsSync(p.join(reference,f)),'HF now ships '+f);
-for(const f of local)assert(!balance.test(relative(f))||missingBreeds.has(relative(f))||cpFiles.has(relative(f))||combatFiles.has(relative(f))||weaponFiles.has(relative(f))||bleedoutFiles.has(relative(f))||unitTemplateFiles.has(relative(f)),'Old balance override: '+relative(f));
+// Campaign PPD-40 ammo fix (2026-11-16): a single-player template may differ from HF only by ppd_drum -> ppd40_drum
+// and the atmosphere voice variant ({voice X}) it keeps.
+const campaignAmmo=f=>{const rel=relative(f),ref=p.join(reference,rel);if(!/^set\/breed\/single\//.test(rel)||!fs.existsSync(ref))return false;
+ const norm=t=>t.replace(/ ?\{voice [\w-]+\}/g,'').replace(/\s+/g,' ').trim();return read(f).includes('ppd40_drum ammo')&&norm(read(f))===norm(read(ref).replaceAll('ppd_drum ammo','ppd40_drum ammo'));};
+for(const f of local)assert(!balance.test(relative(f))||campaignAmmo(f)||missingBreeds.has(relative(f))||cpFiles.has(relative(f))||combatFiles.has(relative(f))||weaponFiles.has(relative(f))||bleedoutFiles.has(relative(f))||unitTemplateFiles.has(relative(f)),'Old balance override: '+relative(f));
 const unitTemplateResult=unitTemplates.verify(resource,reference);
 const cpResult=cp.verify(resource,reference);
 const combatResult=combat.verify(resource,reference);

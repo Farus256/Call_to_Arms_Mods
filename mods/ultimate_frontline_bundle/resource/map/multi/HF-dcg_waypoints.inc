@@ -1,3 +1,6 @@
+			{"1090"
+				{position 0 0 0}
+			}
 			{"1007"
 				{position 6284.75 6505.07 0}
 				{transition "1008"}
@@ -551,8 +554,98 @@
 					{"delete"}
 				}
 			}
-			
-			
-			{"1090"
-				{position 0 0 0}
+			{"2000"
+				{position -333.319 652.273 0}
+				{transition "2001"}
+				{transition "2007"}
+				{transition "2013"}
+				{transition "2018"}
+			}
+			{"2001"
+				{position 30.0463 6579.23 0}
+				{transition "2002"}
+			}
+			{"2010"
+				{position 3004.08 1205.65 0}
+				{transition "2011"}
+			}
+			{"2011"
+				{position 2396.95 4701.27 0}
+				{transition "2012"}
+			}
+			{"2012"
+				{position 1444.01 5981.19 0}
+				{transition "2001"}
+			}
+			{"2013"
+				{position -6979.52 475.192 0}
+				{transition "2014"}
+			}
+			{"2014"
+				{position -6618.75 -861.741 0}
+				{transition "2015"}
+			}
+			{"2015"
+				{position -3771.28 -2753.39 0}
+				{transition "2016"}
+			}
+			{"2016"
+				{position 2820.65 -2688.46 0}
+				{transition "2017"}
+			}
+			{"2017"
+				{position 5535.65 -1320.06 0}
+				{transition "2018"}
+			}
+			{"2018"
+				{position 6184.97 633.864 0}
+				{transition "2019"}
+			}
+			{"2019"
+				{position 5267.07 2536.72 0}
+				{transition "2020"}
+			}
+			{"2002"
+				{position -1299.76 6064.16 0}
+				{transition "2003"}
+			}
+			{"2020"
+				{position 2528.36 3353.03 0}
+				{transition "2021"}
+			}
+			{"2021"
+				{position -4467.04 3334.61 0}
+				{transition "2022"}
+			}
+			{"2022"
+				{position -6733.33 1771.22 0}
+				{transition "2013"}
+			}
+			{"2003"
+				{position -2156.73 4808.71 0}
+				{transition "2004"}
+			}
+			{"2004"
+				{position -2972.73 1452.37 0}
+				{transition "2005"}
+			}
+			{"2005"
+				{position -2938.52 -1900.85 0}
+				{transition "2006"}
+			}
+			{"2006"
+				{position -2210.92 -5211.14 0}
+				{transition "2007"}
+			}
+			{"2007"
+				{position -448.615 -5997.09 0}
+				{transition "2008"}
+			}
+			{"2008"
+				{position 1603.84 -5581.87 0}
+				{transition "2009"}
+			}
+			{"2009"
+				{position 2624.31 -2461.26 0}
+				{transition "2010"}
 			}

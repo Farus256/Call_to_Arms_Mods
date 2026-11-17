@@ -3,7 +3,7 @@
 // node tools/bleedout.cjs           verify only
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
 const repo=p.resolve(__dirname,'..'),resource=p.join(repo,'mods/ultimate_frontline_bundle/resource');
-const reference=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
+const reference=p.resolve(repo,'../_survival_work/hf-update-20261117/reference/resource');
 const files=['easy','normal','hard','heroic','multiplayer'].map(n=>`set/difficulty/${n}.dl`);
 const fallback={min:1320,max:1380},slowestTier=1200;
 assert(fallback.min>slowestTier);

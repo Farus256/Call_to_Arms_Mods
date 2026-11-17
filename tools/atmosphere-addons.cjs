@@ -3,7 +3,7 @@
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),crypto=require('crypto'),s=require('./lib/sdl.cjs');
 const repo=p.resolve(__dirname,'..'),root=p.dirname(repo);
 const work=p.join(root,'_ai_work/workshop-atmosphere-20261107');
-const ref=p.join(root,'_survival_work/hf-update-20261107/reference/resource');
+const ref=p.join(root,'_survival_work/hf-update-20261117/reference/resource');
 const ufb=p.join(repo,'mods/ultimate_frontline_bundle/resource');
 const output=p.join(work,'package/ufb_atmosphere');
 const read=f=>fs.readFileSync(f,'latin1'),sha=t=>crypto.createHash('sha256').update(t).digest('hex');
@@ -95,7 +95,7 @@ function expected(){
 function build(){const e=expected();fs.mkdirSync(output,{recursive:true});
  for(const file of retiredIdleFiles){assert(!e.texts.has(file));const dest=p.join(output,'resource',file);if(fs.existsSync(dest))fs.unlinkSync(dest);}
  for(const [file,text] of e.texts){const dest=p.join(output,'resource',file);fs.mkdirSync(p.dirname(dest),{recursive:true});fs.writeFileSync(dest,text,'latin1');}
- fs.writeFileSync(p.join(output,'mod.info'),'{mod\n {name "UFB Atmosphere - HF 4 compatibility"}\n {desc "Private compatibility build: crater cover, engine/tracks audio, Red Orchestra OST, bushes, expanded voices, wind/smoke, captured textures and one passenger head idle clip. WAVE/HF/native foot and crew poses retained. Load after HF/WAVE/Colditz, BEFORE ultimate_frontline_bundle. Original authors retain their assets. Do not enable original eight mods alongside this layer."}\n {minGameVersion "1.066"}\n {maxGameVersion "1.068"}\n {require "mod_3359417100"}\n}\n');
+ fs.writeFileSync(p.join(output,'mod.info'),'{mod\n {name "UFB Atmosphere - HF 4 compatibility"}\n {desc "Private compatibility build: crater cover, engine/tracks audio, Red Orchestra OST, bushes, expanded voices, wind/smoke, captured textures and one passenger head idle clip. WAVE/HF/native foot and crew poses retained. Load after HF/WAVE/Colditz, BEFORE ultimate_frontline_bundle. Original authors retain their assets. Do not enable original eight mods alongside this layer."}\n {minGameVersion "1.066"}\n {maxGameVersion "1.069"}\n {require "mod_3359417100"}\n}\n');
  fs.writeFileSync(p.join(work,'assets-plan.json'),JSON.stringify(e.assets,null,2));
  const manifest=[...e.texts].map(([file,text])=>({file,sha256:sha(Buffer.from(text,'latin1'))}));
  fs.writeFileSync(p.join(work,'text-manifest.json'),JSON.stringify(manifest,null,2));

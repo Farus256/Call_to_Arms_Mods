@@ -2,3 +2,4 @@
 			{"hf_check_compat"}
 			{"wounded_quota_met"}
 			{"medical_tent_active"}
+			{"hf_ai_patrols"}

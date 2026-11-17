@@ -250,7 +250,7 @@
 ; // 37mm flak
 {"doctrine_37mm_flak37_late"
 	("towed_gun3_doctrine" side(ger) period(late) vehicle(blitz3_6) crew_v(rifleman_1:2) cannon(37mm_flak37) crew1(lw_flak_nco:1) crew2(lw_flak_crew:1) crew3(lw_flak_rifle:1))
-	("doctrine_t1" cool(300) d(late_ger_defensive) cost(20))
+	("doctrine_t1" cool(300) d(late_ger_defensive) cost(15))
 }
 
 ; // 120mm mortar
@@ -1585,8 +1585,8 @@
 	{doctrine late_ger_allround2}
 }
 {"stuh42"
-	("vehicle2" period(late) cd(750) ci(300) t(medium) side(ger) crew1(tankman_stug:3) crew2(tank_commander_stug:1) g(spg7) b(tank) cw(1) cp(27)
-	cost(635)) ;// +25 for crew
+	("vehicle2" period(late) cd(750) ci(300) t(medium) side(ger) crew1(tankman_stug:3) crew2(tank_commander_stug:1) g(spg7) b(tank) cw(1) cp(22)
+	cost(615)) ;// +25 for crew
 }
 {"stuh42_late_allround"
 	("squad_vehicle2" period(late) cd(900) ci(450) t(medium) side(ger) vehicle(stuh42_late) crew1(tankman_stug:3) crew2(tank_commander_stug:1) g(doctrineonly) b(tank))
@@ -1607,7 +1607,7 @@
 	cost(620)) ;// +25 for crew
 }
 {"stuh42_late"
-	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman_stug:3) crew2(tank_commander_stug:1) g(spg4) b(tank) cw(1) cp(27)
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman_stug:3) crew2(tank_commander_stug:1) g(spg4) b(tank) cw(1) cp(22)
 	cost(660)) ;// +25 for crew
 }
 {"stug4_last"

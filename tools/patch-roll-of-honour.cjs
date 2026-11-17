@@ -13,14 +13,15 @@ const dll=p.join(mod,'fallen_memorial.dll'),lua=p.join(mod,'resource/script/mult
 const xml=p.join(mod,'resource/interface/layout/PageGameResult.xml');
 const backup=p.join(workshop,'_ai_work/roll-of-honour-20261106/backup');
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
-const gameBuild='4b6a807a';
+const gameBuild='81a13de7';
 const sources={dll:'cc2882beeb3f14402f8c',lua:'4b3032f7f27161961011',xml:'7ff9387c9b926d9432f4'};
 const title='Погибшие в бою';
-// File offset in fallen_memorial.dll, value for the build it targets, value for gameBuild.
+// File offset in fallen_memorial.dll. Earlier immediates are the published DLL and the 1.068 patch.
+// Page stack is the static GUI manager at RVA 0x15628a0, vector begin/end at +0x30/+0x38.
 const edits=[
- [0x10e41,0x1531c80,0x153b150,'GUI page stack begin'],
- [0x10ec5,0x1531c88,0x153b158,'GUI page stack end'],
- [0x1100e,0x1039870,0x10403c0,'eGUI_PageGameResult vtable'],
+ [0x10e41,[0x1531c80,0x153b150],0x15628d0,'GUI page stack begin'],
+ [0x10ec5,[0x1531c88,0x153b158],0x15628d8,'GUI page stack end'],
+ [0x1100e,[0x1039870,0x10403c0],0x10619d0,'eGUI_PageGameResult vtable'],
  [0x33919,0xfde9,0,'zip path size: ANSI instead of UTF-8'],
  [0x33947,0xfde9,0,'zip path text: ANSI instead of UTF-8']
 ];
@@ -38,9 +39,15 @@ function patchColumns(buffer){const out=Buffer.from(buffer);for(const [rva,befor
 const columnsDone=buffer=>columnEdits.every(([rva,,after])=>{const value=Buffer.from(after,'hex'),offset=rvaOffset(buffer,rva);return buffer.subarray(offset,offset+value.length).equals(value);});
 const modeLine='        ammunition = "battlezones", -- ammuntion aka "domination"\n';
 const addedMode='        annihilation = "battlezones",\n';
+function accepted(value){return Array.isArray(value)?value:[value];}
 function patchDll(buffer){
  const out=Buffer.from(buffer);
- for(const [offset,before,after,what]of edits){assert.equal(out.readUInt32LE(offset),before,what);out.writeUInt32LE(after,offset);}
+ for(const [offset,before,after,what]of edits){
+  const value=out.readUInt32LE(offset);
+  if(value===after)continue;
+  assert(accepted(before).includes(value),what);
+  out.writeUInt32LE(after,offset);
+ }
  return out;
 }
 function patchLua(text){
@@ -63,10 +70,16 @@ function patchXml(text){
  assert.equal(columns,5,'memorial columns');assert(text.includes(title),'title');
  return text;
 }
+function siteKnown(buffer){
+ // The three address immediates stay inside the same instructions across our patches.
+ const ops=[[0x10e3e,'488d9f'],[0x10ec2,'4881c7'],[0x1100b,'4981c6']];
+ return ops.every(([off,hex])=>buffer.subarray(off,off+3).toString('hex')===hex)
+  && edits.every(([o,before,after])=>{const value=buffer.readUInt32LE(o);return value===after||accepted(before).includes(value);});
+}
 function state(){
  const d=fs.readFileSync(dll),l=fs.readFileSync(lua,'latin1');
  const patched=edits.every(([o,,after])=>d.readUInt32LE(o)===after);
- assert(patched||sha(d).startsWith(sources.dll),'Unknown fallen_memorial.dll: the mod was updated, recheck the offsets');
+ assert(patched||siteKnown(d)||sha(d).startsWith(sources.dll),'Unknown fallen_memorial.dll: the mod was updated, recheck the offsets');
  const luaDone=l.includes('annihilation = "battlezones"');
  assert(luaDone||sha(Buffer.from(l,'latin1')).startsWith(sources.lua),'Unknown bot.main.lua: the mod was updated');
  const x=fs.readFileSync(xml,'utf8'),xmlDone=x.includes(title);

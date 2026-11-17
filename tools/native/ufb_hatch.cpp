@@ -9,10 +9,10 @@
 #include "ufb_hatch_core.h"
 
 namespace {
-// RVAs in call_to_arms.exe 1.067, build 2026.09.23.
-constexpr DWORD kExecuteSlot = 0x10d29a0 + 9 * 8; // eCrewEnable vtable, action execute
-constexpr DWORD kExecute = 0x743030;
-constexpr DWORD kSetSealed = 0x77b4e0;
+// RVAs in call_to_arms.exe 1.069.0, build 2026.11.17 (fd5c5ce0f).
+constexpr DWORD kExecuteSlot = 0x10f4ba8 + 9 * 8; // eCrewEnable vtable, action execute
+constexpr DWORD kExecute = 0x753d70;
+constexpr DWORD kSetSealed = 0x78e670;
 const unsigned char kExecuteStart[] = {0x48, 0x89, 0x5C, 0x24, 0x18, 0x48, 0x89, 0x74, 0x24, 0x20, 0x57};
 const unsigned char kSetSealedStart[] = {0x48, 0x89, 0x5C, 0x24, 0x08, 0x48, 0x89, 0x6C, 0x24, 0x10, 0x48, 0x89, 0x74, 0x24, 0x18};
 

@@ -1,7 +1,7 @@
 // This hub is included by WAVE's movement registration only. With WAVE disabled
 // the native HF registration stays in charge, without duplicate sequence names.
 const fs=require('fs'),p=require('path'),assert=require('assert/strict'),s=require('./lib/sdl.cjs');
-const repo=p.resolve(__dirname,'..'),ref=p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource');
+const repo=p.resolve(__dirname,'..'),ref=p.resolve(repo,'../_survival_work/hf-update-20261117/reference/resource');
 const file='properties/animation/human/##core_activator.inc';
 const patch=p.resolve(repo,'../3566110308/resource/properties/animation/human/##CORE_ACTIVATOR.inc');
 const names=['stand_fire_gun_down_1','stand_fire_gun_up_1','grenade_deflect'];

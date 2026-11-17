@@ -1,5 +1,5 @@
 // Hatch logic with no engine dependency, so ufb_hatch_test.cpp can run it on fake objects.
-// Layouts verified by disassembly of call_to_arms.exe 1.067 (build 2026.09.23).
+// Layouts verified by disassembly of call_to_arms.exe 1.069.0 (build 2026.11.17).
 #pragma once
 #include <cstddef>
 #include <cstring>

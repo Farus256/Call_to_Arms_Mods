@@ -3,7 +3,7 @@ const fs=require('fs'),p=require('path'),assert=require('assert/strict');
 const {lua,lauxlib,lualib,to_luastring,to_jsstring}=require('fengari');
 const repo=p.resolve(__dirname,'..'),work=p.resolve(repo,'../_ai_work/conquest-audit-20261109');
 const resource=p.resolve(process.argv.find(a=>a.startsWith('--resource='))?.slice(11)||p.join(repo,'mods/ultimate_frontline_bundle/resource'));
-const roots=[resource,p.join(work,'effective-resource'),p.resolve(repo,'../_survival_work/hf-update-20261107/reference/resource')];
+const roots=[resource,p.join(work,'effective-resource'),p.resolve(repo,'../_survival_work/hf-update-20261117/reference/resource')];
 const load=file=>{const path=roots.map(root=>p.join(root,file)).find(f=>fs.existsSync(f));assert(path,file);return `dofile([[${path.replaceAll('\\','/')} ]])`.replace(' ]])',']])');};
 const moduleLoad=name=>load('script/multiplayer/modes/conquest/'+name+'.lua');
 const setup=`

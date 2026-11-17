@@ -1,7 +1,7 @@
 // Structural/data-flow regression. This does not simulate GEM animation or inventory.
 const fs=require('fs'),p=require('path'),a=require('assert/strict'),s=require('./lib/sdl.cjs'),fix=require('./wounded-evac-safety.cjs');
 const root=p.resolve(__dirname,'..'),rel='map/multi/HF-dcg_script.inc';
-const old=fs.readFileSync(p.resolve(root,'../_survival_work/hf-update-20261107/reference/resource',rel),'latin1');
+const old=fs.readFileSync(p.resolve(root,'../_survival_work/hf-update-20261117/reference/resource',rel),'latin1');
 const next=fix.repair(old),current=fs.readFileSync(p.join(root,'mods/ultimate_frontline_bundle/resource',rel),'latin1');
 a.equal(fix.repair(next),next);a.equal(fix.repair(current),current);
 const owner=(text,name)=>s.parse(text).children.find(n=>s.name(n)===fix.prefix+name);
